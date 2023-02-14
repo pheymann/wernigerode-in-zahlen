@@ -21,28 +21,54 @@ func main() {
 	defer file.Close()
 
 	scanner := bufio.NewScanner(file)
+	costCenterFinancePlans := []CostCenterFinancePlan{}
 
 	for scanner.Scan() {
 		line := scanner.Text()
-		parser.parse(line)
+
+		costCenterFinancePlans = append(costCenterFinancePlans, parser.parse(line))
+	}
+	fmt.Println(costCenterFinancePlans)
+}
+
+// Raw CSV to in-memory representation
+type Parser struct {
+	csvParser         CSVParser
+	financePlanParser CostCenterFinancePlanParser
+}
+
+func NewParser() Parser {
+	return Parser{
+		csvParser:         NewCSVParser(),
+		financePlanParser: NewCostCenterFinancePlanParser(),
 	}
 }
 
-type Parser struct {
+func (p Parser) parse(line string) CostCenterFinancePlan {
+	matches, regex := p.csvParser.parse(line)
+	financePlan := p.financePlanParser.parse(matches, regex)
+
+	if false {
+		fmt.Printf("------------------------\n%s\n%+v\n\n", line, financePlan)
+	}
+	return financePlan
+}
+
+type CSVParser struct {
 	regexParsers []*regexp.Regexp
 }
 
-func NewParser() *Parser {
-	return &Parser{
+func NewCSVParser() CSVParser {
+	return CSVParser{
 		regexParsers: []*regexp.Regexp{
-			unsafeCompileParser(rxBasis("\\\"?\\d\\.\\d\\.\\d\\.\\d{2}\\.(?P<id>\\d+) ")),
-			unsafeCompileParser(rxBasis("(?P<id>\\d+)")),
-			unsafeCompileParser(rxBasis("\\\"?(?P<id>[0-9][0-9]?) \\+? ")),
+			compileParser(rxBasis("\\\"?\\d\\.\\d\\.\\d\\.\\d{2}\\.(?P<id>\\d+) ")),
+			compileParser(rxBasis("(?P<id>\\d+)")),
+			compileParser(rxBasis("\\\"?(?P<id>[0-9][0-9]?) \\+? ")),
 		},
 	}
 }
 
-func unsafeCompileParser(regex string) *regexp.Regexp {
+func compileParser(regex string) *regexp.Regexp {
 	fmt.Println(regex)
 
 	parser, err := regexp.Compile(regex)
@@ -76,7 +102,7 @@ func rxNumber(name string) string {
 	return fmt.Sprintf("(?P<%s>-?\\d+(\\.\\d+)*)", name)
 }
 
-func (p *Parser) parse(line string) Row {
+func (p *CSVParser) parse(line string) ([]string, *regexp.Regexp) {
 	for _, parser := range p.regexParsers {
 		matches := parser.FindStringSubmatch(line)
 
@@ -84,18 +110,13 @@ func (p *Parser) parse(line string) Row {
 			continue
 		}
 
-		row := parseRow(parser, line, matches)
-
-		if false {
-			fmt.Printf("------------------------\n%s\n%+v\n\n", line, row)
-		}
-		return row
+		return matches, parser
 	}
 
 	panic(fmt.Sprintf("No parser found for line '%s'", line))
 }
 
-type Row struct {
+type CostCenterFinancePlan struct {
 	id         string
 	desc       string
 	budget2020 float64
@@ -106,8 +127,15 @@ type Row struct {
 	budget2025 float64
 }
 
-func parseRow(parser *regexp.Regexp, line string, matches []string) Row {
-	return Row{
+type CostCenterFinancePlanParser struct {
+}
+
+func NewCostCenterFinancePlanParser() CostCenterFinancePlanParser {
+	return CostCenterFinancePlanParser{}
+}
+
+func (p CostCenterFinancePlanParser) parse(matches []string, parser *regexp.Regexp) CostCenterFinancePlan {
+	return CostCenterFinancePlan{
 		id:         parseString(parser, "id", matches),
 		desc:       parseString(parser, "desc", matches),
 		budget2020: parseBudget(parser, "_2020", matches),
@@ -141,3 +169,5 @@ func parseBudget(parser *regexp.Regexp, matchLabel string, matches []string) flo
 func parseString(parser *regexp.Regexp, matchLabel string, matches []string) string {
 	return matches[parser.SubexpIndex(matchLabel)]
 }
+
+// CostCenterFinancePlan to CSV
