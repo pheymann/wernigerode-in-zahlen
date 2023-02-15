@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"regexp"
 
+	"wernigode-in-zahlen.de/internal/pkg/decoder"
 	"wernigode-in-zahlen.de/internal/pkg/model"
 )
 
@@ -63,12 +64,11 @@ func rxBasis(rxID string) string {
 }
 
 const (
-	rxFloatNumber  = "\"(?P<_2020>-?\\d+(\\.\\d+)*(,\\d+)?)\""
-	rxGermanLetter = "\\w\u00c4\u00e4\u00d6\u00f6\u00dc\u00fc\u00df"
+	rxFloatNumber = "\"(?P<_2020>-?\\d+(\\.\\d+)*(,\\d+)?)\""
 )
 
 var (
-	rxDesc = fmt.Sprintf("(?P<desc>[ %s\\-\\.\\\",\\)\\(\\d]*)", rxGermanLetter)
+	rxDesc = fmt.Sprintf("(?P<desc>[ %s\\-\\.\\\",\\)\\(\\d]*)", decoder.RxGermanLetter)
 )
 
 func rxNumber(name string) string {
