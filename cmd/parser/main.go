@@ -272,7 +272,7 @@ const (
 func writeCostCenterGroupFinancePlansAsCSV(financePlans []CostCenterFinancePlan, metadata FinancePlanMetadata) {
 	content := CSVHeader
 	filepath := fmt.Sprintf("assets/data/processed/%s/%s/%s/%s/", metadata.productClass, metadata.productDomain, metadata.productGroup, metadata.product)
-	filename := "data.csv"
+	filename := fmt.Sprintf("%s.csv", metadata.fileName)
 
 	for _, financePlan := range financePlans {
 		content += financePlan.toCSV() + "\n"
@@ -289,7 +289,7 @@ func writeCostCenterUnitFinancePlansAsCSV(financePlans map[string][]CostCenterFi
 
 		content := CSVHeader
 		filepath := fmt.Sprintf("assets/data/processed/%s/%s/%s/%s/%s/", metadata.productClass, metadata.productDomain, metadata.productGroup, metadata.product, costCenterGroup)
-		filename := "data.csv"
+		filename := fmt.Sprintf("%s.csv", metadata.fileName)
 
 		for _, financePlan := range financePlans {
 			content += financePlan.toCSV() + "\n"
