@@ -9,6 +9,10 @@ import (
 	"strings"
 )
 
+var (
+	debug = false
+)
+
 func main() {
 	filename := os.Args[1]
 	file, err := os.Open(filename)
@@ -16,9 +20,13 @@ func main() {
 		panic(err)
 	}
 
-	parser := NewParser()
-
 	defer file.Close()
+
+	metadataParser := NewFinancePlanMetadataParser()
+	rawCSVParser := NewRawCSVParser()
+	financePlanParser := NewCostCenterFinancePlanParser()
+
+	metadata := metadataParser.parse(filename)
 
 	scanner := bufio.NewScanner(file)
 	costCenterFinancePlans := []CostCenterFinancePlan{}
@@ -26,40 +34,65 @@ func main() {
 	for scanner.Scan() {
 		line := scanner.Text()
 
-		costCenterFinancePlans = append(costCenterFinancePlans, parser.parse(line))
+		matches, regex := rawCSVParser.parse(line)
+		financePlan := financePlanParser.parse(matches, regex)
+
+		if debug {
+			fmt.Printf("------------------------\n%s\n%+v\n\n", line, financePlan)
+		}
+
+		costCenterFinancePlans = append(costCenterFinancePlans, financePlan)
 	}
-	fmt.Println(costCenterFinancePlans)
+
+	processedFilepath := fmt.Sprintf("assets/data/processed/%s/%s/%s/%s/", metadata.productClass, metadata.productDomain, metadata.productGroup, metadata.product)
+	processedFilename := fmt.Sprintf("%s.csv", metadata.fileName)
+	writeFinancePlansAsCSV(costCenterFinancePlans, processedFilepath, processedFilename)
 }
 
-// Raw CSV to in-memory representation
-type Parser struct {
-	csvParser         CSVParser
-	financePlanParser CostCenterFinancePlanParser
+type FinancePlanMetadata struct {
+	department    string
+	productClass  string
+	productDomain string
+	productGroup  string
+	product       string
+	fileName      string
+	fileType      string
 }
 
-func NewParser() Parser {
-	return Parser{
-		csvParser:         NewCSVParser(),
-		financePlanParser: NewCostCenterFinancePlanParser(),
+type FinancePlanMetadataParser struct {
+	regexParser *regexp.Regexp
+}
+
+const (
+	rxFileClassification = "^assets/data/raw/(?P<department>\\d+)/(?P<product_class>\\d+)/(?P<product_domain>\\d+)/(?P<product_group>\\d+)/(?P<product>\\d+)/(?P<file_name>\\w+)\\.(?P<file_type>\\w+)"
+)
+
+func NewFinancePlanMetadataParser() FinancePlanMetadataParser {
+	return FinancePlanMetadataParser{
+		regexParser: compileParser(rxFileClassification),
 	}
 }
 
-func (p Parser) parse(line string) CostCenterFinancePlan {
-	matches, regex := p.csvParser.parse(line)
-	financePlan := p.financePlanParser.parse(matches, regex)
+func (p FinancePlanMetadataParser) parse(filename string) FinancePlanMetadata {
+	matches := p.regexParser.FindStringSubmatch(filename)
 
-	if false {
-		fmt.Printf("------------------------\n%s\n%+v\n\n", line, financePlan)
+	return FinancePlanMetadata{
+		department:    parseString(p.regexParser, "department", matches),
+		productClass:  parseString(p.regexParser, "product_class", matches),
+		productDomain: parseString(p.regexParser, "product_domain", matches),
+		productGroup:  parseString(p.regexParser, "product_group", matches),
+		product:       parseString(p.regexParser, "product", matches),
+		fileName:      parseString(p.regexParser, "file_name", matches),
+		fileType:      parseString(p.regexParser, "file_type", matches),
 	}
-	return financePlan
 }
 
-type CSVParser struct {
+type RawCSVParser struct {
 	regexParsers []*regexp.Regexp
 }
 
-func NewCSVParser() CSVParser {
-	return CSVParser{
+func NewRawCSVParser() RawCSVParser {
+	return RawCSVParser{
 		regexParsers: []*regexp.Regexp{
 			compileParser(rxBasis("\\\"?\\d\\.\\d\\.\\d\\.\\d{2}\\.(?P<id>\\d+) ")),
 			compileParser(rxBasis("(?P<id>\\d+)")),
@@ -69,7 +102,9 @@ func NewCSVParser() CSVParser {
 }
 
 func compileParser(regex string) *regexp.Regexp {
-	fmt.Println(regex)
+	if debug {
+		fmt.Println(regex)
+	}
 
 	parser, err := regexp.Compile(regex)
 	if err != nil {
@@ -102,7 +137,7 @@ func rxNumber(name string) string {
 	return fmt.Sprintf("(?P<%s>-?\\d+(\\.\\d+)*)", name)
 }
 
-func (p *CSVParser) parse(line string) ([]string, *regexp.Regexp) {
+func (p *RawCSVParser) parse(line string) ([]string, *regexp.Regexp) {
 	for _, parser := range p.regexParsers {
 		matches := parser.FindStringSubmatch(line)
 
@@ -170,4 +205,45 @@ func parseString(parser *regexp.Regexp, matchLabel string, matches []string) str
 	return matches[parser.SubexpIndex(matchLabel)]
 }
 
-// CostCenterFinancePlan to CSV
+func (financePlan CostCenterFinancePlan) toCSV() string {
+	return fmt.Sprintf(
+		"%s,%s,%f,%f,%f,%f,%f,%f",
+		financePlan.id,
+		financePlan.desc,
+		financePlan.budget2020,
+		financePlan.budget2021,
+		financePlan.budget2022,
+		financePlan.budget2023,
+		financePlan.budget2024,
+		financePlan.budget2025,
+	)
+}
+
+func writeFinancePlansAsCSV(financePlans []CostCenterFinancePlan, filepath string, filename string) {
+	content := "id,desc,_2020,_2021,_2022,_2023,_2024,_2025\n"
+
+	for _, financePlan := range financePlans {
+		content += financePlan.toCSV() + "\n"
+	}
+
+	writeFile(filepath, filename, content)
+}
+
+func writeFile(filepath string, filename string, content string) {
+	if _, err := os.Stat(filepath); os.IsNotExist(err) {
+		os.MkdirAll(filepath, 0700)
+	}
+
+	file, err := os.Create(filepath + filename)
+	if err != nil {
+		panic(err)
+	}
+
+	defer file.Close()
+
+	_, err = file.WriteString(content)
+	if err != nil {
+		panic(err)
+	}
+	file.Sync()
+}
