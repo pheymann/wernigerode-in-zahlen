@@ -34,8 +34,8 @@ func main() {
 	for scanner.Scan() {
 		line := scanner.Text()
 
-		matches, regex := rawCSVParser.parse(line)
-		financePlan := financePlanParser.parse(matches, regex)
+		tpe, matches, regex := rawCSVParser.parse(line)
+		financePlan := financePlanParser.parse(tpe, matches, regex)
 
 		if debug {
 			fmt.Printf("------------------------\n%s\n%+v\n\n", line, financePlan)
@@ -44,9 +44,10 @@ func main() {
 		costCenterFinancePlans = append(costCenterFinancePlans, financePlan)
 	}
 
-	processedFilepath := fmt.Sprintf("assets/data/processed/%s/%s/%s/%s/", metadata.productClass, metadata.productDomain, metadata.productGroup, metadata.product)
-	processedFilename := fmt.Sprintf("%s.csv", metadata.fileName)
-	writeFinancePlansAsCSV(costCenterFinancePlans, processedFilepath, processedFilename)
+	costCenterGroups, perGroupCostCenterUnits := separateCostCenterUnits(costCenterFinancePlans)
+
+	writeCostCenterGroupFinancePlansAsCSV(costCenterGroups, metadata)
+	writeCostCenterUnitFinancePlansAsCSV(perGroupCostCenterUnits, metadata)
 }
 
 type FinancePlanMetadata struct {
@@ -88,15 +89,18 @@ func (p FinancePlanMetadataParser) parse(filename string) FinancePlanMetadata {
 }
 
 type RawCSVParser struct {
-	regexParsers []*regexp.Regexp
+	groupCostCenterBudgetParsers []*regexp.Regexp
+	unitCostCenterBudgetParsers  []*regexp.Regexp
 }
 
 func NewRawCSVParser() RawCSVParser {
 	return RawCSVParser{
-		regexParsers: []*regexp.Regexp{
-			compileParser(rxBasis("\\\"?\\d\\.\\d\\.\\d\\.\\d{2}\\.(?P<id>\\d+) ")),
+		groupCostCenterBudgetParsers: []*regexp.Regexp{
 			compileParser(rxBasis("(?P<id>\\d+)")),
 			compileParser(rxBasis("\\\"?(?P<id>[0-9][0-9]?) \\+? ")),
+		},
+		unitCostCenterBudgetParsers: []*regexp.Regexp{
+			compileParser(rxBasis("\\\"?\\d\\.\\d\\.\\d\\.\\d{2}\\.(?P<id>\\d+) ")),
 		},
 	}
 }
@@ -137,22 +141,40 @@ func rxNumber(name string) string {
 	return fmt.Sprintf("(?P<%s>-?\\d+(\\.\\d+)*)", name)
 }
 
-func (p *RawCSVParser) parse(line string) ([]string, *regexp.Regexp) {
-	for _, parser := range p.regexParsers {
+func (p *RawCSVParser) parse(line string) (CostCenterType, []string, *regexp.Regexp) {
+	for _, parser := range p.unitCostCenterBudgetParsers {
 		matches := parser.FindStringSubmatch(line)
 
 		if len(matches) == 0 {
 			continue
 		}
 
-		return matches, parser
+		return CostCenterUnit, matches, parser
+	}
+
+	for _, parser := range p.groupCostCenterBudgetParsers {
+		matches := parser.FindStringSubmatch(line)
+
+		if len(matches) == 0 {
+			continue
+		}
+
+		return CostCenterGroup, matches, parser
 	}
 
 	panic(fmt.Sprintf("No parser found for line '%s'", line))
 }
 
+type CostCenterType = string
+
+const (
+	CostCenterGroup CostCenterType = "group"
+	CostCenterUnit  CostCenterType = "unit"
+)
+
 type CostCenterFinancePlan struct {
 	id         string
+	tpe        CostCenterType
 	desc       string
 	budget2020 float64
 	budget2021 float64
@@ -169,9 +191,10 @@ func NewCostCenterFinancePlanParser() CostCenterFinancePlanParser {
 	return CostCenterFinancePlanParser{}
 }
 
-func (p CostCenterFinancePlanParser) parse(matches []string, parser *regexp.Regexp) CostCenterFinancePlan {
+func (p CostCenterFinancePlanParser) parse(tpe CostCenterType, matches []string, parser *regexp.Regexp) CostCenterFinancePlan {
 	return CostCenterFinancePlan{
 		id:         parseString(parser, "id", matches),
+		tpe:        tpe,
 		desc:       parseString(parser, "desc", matches),
 		budget2020: parseBudget(parser, "_2020", matches),
 		budget2021: parseBudget(parser, "_2021", matches),
@@ -205,6 +228,29 @@ func parseString(parser *regexp.Regexp, matchLabel string, matches []string) str
 	return matches[parser.SubexpIndex(matchLabel)]
 }
 
+// separate CostCenter groups from units
+func separateCostCenterUnits(financePlans []CostCenterFinancePlan) ([]CostCenterFinancePlan, map[string][]CostCenterFinancePlan) {
+	var groups []CostCenterFinancePlan
+	perGroupUnits := make(map[string][]CostCenterFinancePlan)
+
+	currentCostCenterGroupID := ""
+	currentGroupUnits := []CostCenterFinancePlan{}
+
+	for _, financePlan := range financePlans {
+		if financePlan.tpe == CostCenterGroup {
+			perGroupUnits[currentCostCenterGroupID] = currentGroupUnits
+			groups = append(groups, financePlan)
+
+			currentCostCenterGroupID = financePlan.id
+			currentGroupUnits = []CostCenterFinancePlan{}
+		} else {
+			currentGroupUnits = append(currentGroupUnits, financePlan)
+		}
+	}
+
+	return groups, perGroupUnits
+}
+
 func (financePlan CostCenterFinancePlan) toCSV() string {
 	return fmt.Sprintf(
 		"%s,%s,%f,%f,%f,%f,%f,%f",
@@ -219,14 +265,38 @@ func (financePlan CostCenterFinancePlan) toCSV() string {
 	)
 }
 
-func writeFinancePlansAsCSV(financePlans []CostCenterFinancePlan, filepath string, filename string) {
-	content := "id,desc,_2020,_2021,_2022,_2023,_2024,_2025\n"
+const (
+	CSVHeader = "id,desc,_2020,_2021,_2022,_2023,_2024,_2025\n"
+)
+
+func writeCostCenterGroupFinancePlansAsCSV(financePlans []CostCenterFinancePlan, metadata FinancePlanMetadata) {
+	content := CSVHeader
+	filepath := fmt.Sprintf("assets/data/processed/%s/%s/%s/%s/", metadata.productClass, metadata.productDomain, metadata.productGroup, metadata.product)
+	filename := "data.csv"
 
 	for _, financePlan := range financePlans {
 		content += financePlan.toCSV() + "\n"
 	}
 
 	writeFile(filepath, filename, content)
+}
+
+func writeCostCenterUnitFinancePlansAsCSV(financePlans map[string][]CostCenterFinancePlan, metadata FinancePlanMetadata) {
+	for costCenterGroup, financePlans := range financePlans {
+		if len(financePlans) == 0 {
+			continue
+		}
+
+		content := CSVHeader
+		filepath := fmt.Sprintf("assets/data/processed/%s/%s/%s/%s/%s/", metadata.productClass, metadata.productDomain, metadata.productGroup, metadata.product, costCenterGroup)
+		filename := "data.csv"
+
+		for _, financePlan := range financePlans {
+			content += financePlan.toCSV() + "\n"
+		}
+
+		writeFile(filepath, filename, content)
+	}
 }
 
 func writeFile(filepath string, filename string, content string) {
