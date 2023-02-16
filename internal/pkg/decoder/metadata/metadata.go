@@ -3,17 +3,20 @@ package metadata
 import (
 	"fmt"
 	"regexp"
+	"strings"
 
 	"wernigode-in-zahlen.de/internal/pkg/decoder"
 	"wernigode-in-zahlen.de/internal/pkg/model"
 )
 
 type MetadataDecoder struct {
-	departmentRegex    *regexp.Regexp
-	productClassRegex  *regexp.Regexp
-	productDomainRegex *regexp.Regexp
-	productGroupRegex  *regexp.Regexp
-	productRegex       *regexp.Regexp
+	departmentRegex       *regexp.Regexp
+	productClassRegex     *regexp.Regexp
+	productDomainRegex    *regexp.Regexp
+	productGroupRegex     *regexp.Regexp
+	productRegex          *regexp.Regexp
+	descriptionRegex      *regexp.Regexp
+	missionAndTargetRegex *regexp.Regexp
 }
 
 func NewMetadataDecoder() MetadataDecoder {
@@ -53,10 +56,12 @@ func NewMetadataDecoder() MetadataDecoder {
 				decoder.RxGermanLetter,
 			),
 		),
+		descriptionRegex:      regexp.MustCompile("^Beschreibung,+"),
+		missionAndTargetRegex: regexp.MustCompile("^Auftrag,+Zielgruppe,+"),
 	}
 }
 
-func (p MetadataDecoder) DecodeV2(lines []string) model.Metadata {
+func (p MetadataDecoder) Decode(lines []string) model.Metadata {
 	metadata := &model.Metadata{}
 
 	if !p.decodeDepartment(metadata, lines[0]) {
@@ -72,13 +77,33 @@ func (p MetadataDecoder) DecodeV2(lines []string) model.Metadata {
 		panic(fmt.Sprintf("Expected product group but got '%s'.\nregex: %v", lines[3], p.productGroupRegex))
 	}
 
-	for _, line := range lines[4:] {
-		if p.decodeProduct(metadata, line) {
+	var dropToLine = 4
+	if p.decodeProduct(metadata, lines[4]) {
+		dropToLine = 5
+	}
+
+	var state = ""
+	var content = []string{}
+	for _, line := range lines[dropToLine:] {
+		if p.descriptionRegex.MatchString(line) {
+			state = "description"
+			continue
+		}
+		if p.missionAndTargetRegex.MatchString(line) {
+			metadata.Description = strings.Join(content, "")
+			content = []string{}
+
+			state = "missionAndTarget"
+			continue
+		}
+
+		if state == "description" {
+			content = append(content, descriptionCleanupRegex.ReplaceAllString(line, "$1"))
 			continue
 		}
 
 		fmt.Printf(">>> %+v\n", *metadata)
-
+		fmt.Printf("=== %+v\n", content)
 		panic(fmt.Sprintf("No parser found for line '%s'", line))
 	}
 
@@ -164,3 +189,9 @@ func (p MetadataDecoder) decodeProduct(metadata *model.Metadata, line string) bo
 
 	return true
 }
+
+var (
+	descriptionCleanupRegex = regexp.MustCompile(
+		fmt.Sprintf("\"([ %s,-]+)\",+", decoder.RxGermanLetter),
+	)
+)

@@ -6,6 +6,7 @@ type Metadata struct {
 	ProductDomain ProductDomain
 	ProductGroup  ProductGroup
 	Product       Product
+	Description   string
 	FileName      string
 	FileType      string
 }
