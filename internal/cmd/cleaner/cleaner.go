@@ -6,18 +6,13 @@ import (
 	"os"
 
 	"wernigode-in-zahlen.de/internal/pkg/decoder/financeplan_a"
-	"wernigode-in-zahlen.de/internal/pkg/decoder/metadata"
 	"wernigode-in-zahlen.de/internal/pkg/decoder/rawcsv"
-	encoder "wernigode-in-zahlen.de/internal/pkg/encoder/financeplan_a"
 	"wernigode-in-zahlen.de/internal/pkg/model"
 )
 
 func CleanUp(filename string, file *os.File, debug bool) {
-	metadataDecoder := metadata.NewMetadataDecoder()
 	rawCSVDecoder := rawcsv.NewDecoder()
 	financePlanACostCenterDecoder := financeplan_a.NewFinancePlanACostCenterDecoder()
-
-	metadata := metadataDecoder.Decode(filename)
 
 	scanner := bufio.NewScanner(file)
 	costCenter := []model.FinancePlanACostCenter{}
@@ -35,8 +30,8 @@ func CleanUp(filename string, file *os.File, debug bool) {
 		costCenter = append(costCenter, financePlan)
 	}
 
-	financePlanA := financeplan_a.Decode(costCenter)
+	fmt.Println(financeplan_a.Decode(costCenter))
 
-	encoder.EncodeAndWriteGroup(financePlanA.Groups, metadata)
-	encoder.EncodeAndWriteUnit(financePlanA.Units, metadata)
+	// encoder.EncodeAndWriteGroup(financePlanA.Groups, metadata)
+	// encoder.EncodeAndWriteUnit(financePlanA.Units, metadata)
 }

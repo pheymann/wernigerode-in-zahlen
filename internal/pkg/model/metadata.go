@@ -1,11 +1,41 @@
 package model
 
 type Metadata struct {
-	Department    string
-	ProductClass  string
-	ProductDomain string
-	ProductGroup  string
-	Product       string
+	Department    Department
+	ProductClass  ProductClass
+	ProductDomain ProductDomain
+	ProductGroup  ProductGroup
+	Product       Product
 	FileName      string
 	FileType      string
+}
+
+type Department struct {
+	ID          string
+	Name        string
+	Accountable string
+}
+
+type ProductClass struct {
+	ID          string
+	Name        string
+	Accountable string
+}
+
+type ProductDomain struct {
+	ID          string
+	Name        string
+	Responsible string
+}
+
+type ProductGroup struct {
+	ID   string
+	Name string
+	Desc string
+}
+
+type Product struct {
+	ID               string
+	Name             string
+	LegalRequirement string
 }
