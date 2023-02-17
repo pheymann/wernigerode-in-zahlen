@@ -73,7 +73,7 @@ const (
 )
 
 var (
-	rxDesc = fmt.Sprintf("(?P<desc>[ %s\\-\\.\\\",\\)\\(\\d]*)", decoder.RxGermanLetter)
+	rxDesc = fmt.Sprintf(`(?P<desc>[ %s\-\.,\)\(\d&]*)`, decoder.RxGermanLetter)
 )
 
 func rxNumber(name string) string {
