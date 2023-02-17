@@ -24,7 +24,7 @@ func toCSVRow(financePlan model.FinancePlanACostCenter) string {
 	)
 }
 
-func EncodeGroup(financePlans []model.FinancePlanACostCenter, metadata model.Metadata) string {
+func EncodeGroup(financePlans []model.FinancePlanACostCenter) string {
 	content := CSVHeader
 
 	for _, financePlan := range financePlans {
@@ -34,7 +34,7 @@ func EncodeGroup(financePlans []model.FinancePlanACostCenter, metadata model.Met
 	return content
 }
 
-func EncodeUnit(financePlans map[string][]model.FinancePlanACostCenter, metadata model.Metadata) map[string]string {
+func EncodeUnit(financePlans map[string][]model.FinancePlanACostCenter) map[string]string {
 	groupBasedUnits := map[string]string{}
 
 	for costCenterGroup, financePlans := range financePlans {
@@ -49,5 +49,6 @@ func EncodeUnit(financePlans map[string][]model.FinancePlanACostCenter, metadata
 		}
 		groupBasedUnits[costCenterGroup] = content
 	}
+
 	return groupBasedUnits
 }

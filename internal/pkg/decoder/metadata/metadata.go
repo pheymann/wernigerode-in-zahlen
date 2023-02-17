@@ -73,6 +73,8 @@ func NewMetadataDecoder() MetadataDecoder {
 	}
 }
 
+const ()
+
 func (p MetadataDecoder) Decode(lines []string) model.Metadata {
 	metadata := &model.Metadata{}
 

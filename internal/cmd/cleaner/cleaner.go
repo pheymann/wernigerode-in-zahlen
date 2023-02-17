@@ -2,7 +2,6 @@ package cleaner
 
 import (
 	"bufio"
-	"fmt"
 	"os"
 
 	decodeFpa "wernigode-in-zahlen.de/internal/pkg/decoder/financeplan_a"
@@ -11,7 +10,7 @@ import (
 	"wernigode-in-zahlen.de/internal/pkg/model"
 )
 
-func CleanUp(metadataFile *os.File, financeplan_a_file *os.File, debug bool) (model.Metadata, model.FinancePlanA) {
+func CleanUp(metadataFile *os.File, financeplan_a_file *os.File) (model.Metadata, model.FinancePlanA) {
 	metadataScanner := bufio.NewScanner(metadataFile)
 	metadataLines := []string{}
 
@@ -34,9 +33,6 @@ func CleanUp(metadataFile *os.File, financeplan_a_file *os.File, debug bool) (mo
 		tpe, matches, regex := rawCSVDecoder.Decode(line)
 		financePlan := financePlanACostCenterDecoder.Decode(tpe, matches, regex)
 
-		if debug {
-			fmt.Printf("------------------\n%s\n%+v\n", line, financePlan)
-		}
 		costCenter = append(costCenter, financePlan)
 	}
 
