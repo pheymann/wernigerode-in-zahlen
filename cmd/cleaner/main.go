@@ -30,7 +30,7 @@ func main() {
 	}
 
 	metadataDecoder := metadata.NewMetadataDecoder()
-	fmt.Println(metadataDecoder.Decode(lines))
+	fmt.Printf("%+v\n", metadataDecoder.Decode(lines))
 
 	cleaner.CleanUp(filename, file, debug)
 }

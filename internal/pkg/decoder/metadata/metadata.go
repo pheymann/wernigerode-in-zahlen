@@ -10,13 +10,16 @@ import (
 )
 
 type MetadataDecoder struct {
-	departmentRegex       *regexp.Regexp
-	productClassRegex     *regexp.Regexp
-	productDomainRegex    *regexp.Regexp
-	productGroupRegex     *regexp.Regexp
-	productRegex          *regexp.Regexp
-	descriptionRegex      *regexp.Regexp
-	missionAndTargetRegex *regexp.Regexp
+	departmentRegex                *regexp.Regexp
+	productClassRegex              *regexp.Regexp
+	productDomainRegex             *regexp.Regexp
+	productGroupRegex              *regexp.Regexp
+	productRegex                   *regexp.Regexp
+	descriptionDetectionRegex      *regexp.Regexp
+	missionAndTargetDetectionRegex *regexp.Regexp
+	missionAndTargetRegex          *regexp.Regexp
+	objectivesDetectionRegex       *regexp.Regexp
+	servicesDetectionRegex         *regexp.Regexp
 }
 
 func NewMetadataDecoder() MetadataDecoder {
@@ -56,8 +59,17 @@ func NewMetadataDecoder() MetadataDecoder {
 				decoder.RxGermanLetter,
 			),
 		),
-		descriptionRegex:      regexp.MustCompile("^Beschreibung,+"),
-		missionAndTargetRegex: regexp.MustCompile("^Auftrag,+Zielgruppe,+"),
+		descriptionDetectionRegex:      regexp.MustCompile("^Beschreibung,+"),
+		missionAndTargetDetectionRegex: regexp.MustCompile("^Auftrag,+Zielgruppe,+"),
+		missionAndTargetRegex: regexp.MustCompile(
+			fmt.Sprintf(
+				"^\"?(?P<mission>[ %s,:\\-]*)\"?,+\"?(?P<target>[ %s,:\\-]*)\"?",
+				decoder.RxGermanLetter,
+				decoder.RxGermanLetter,
+			),
+		),
+		objectivesDetectionRegex: regexp.MustCompile("^Ziele,+"),
+		servicesDetectionRegex:   regexp.MustCompile("^Leistung,+"),
 	}
 }
 
@@ -83,28 +95,79 @@ func (p MetadataDecoder) Decode(lines []string) model.Metadata {
 	}
 
 	var state = ""
-	var content = []string{}
 	for _, line := range lines[dropToLine:] {
-		if p.descriptionRegex.MatchString(line) {
+		if p.descriptionDetectionRegex.MatchString(line) {
 			state = "description"
 			continue
 		}
-		if p.missionAndTargetRegex.MatchString(line) {
-			metadata.Description = strings.Join(content, "")
-			content = []string{}
-
+		if p.missionAndTargetDetectionRegex.MatchString(line) {
 			state = "missionAndTarget"
+			continue
+		}
+		if p.objectivesDetectionRegex.MatchString(line) {
+			state = "objectives"
+			continue
+		}
+		if p.servicesDetectionRegex.MatchString(line) {
+			state = "services"
 			continue
 		}
 
 		if state == "description" {
-			content = append(content, descriptionCleanupRegex.ReplaceAllString(line, "$1"))
+			metadata.Description = strings.Join(
+				[]string{
+					metadata.Description,
+					descriptionCleanupRegex.ReplaceAllString(line, "$1"),
+				},
+				" ",
+			)
+			continue
+		}
+		if state == "missionAndTarget" {
+			mission, target := p.decodeMissionAndTargets(line)
+
+			metadata.Mission = strings.Join(
+				[]string{
+					metadata.Mission,
+					strings.Trim(mission, ","),
+				},
+				" ",
+			)
+			metadata.Target = strings.Join(
+				[]string{
+					metadata.Target,
+					strings.Trim(target, ","),
+				},
+				"",
+			)
+			continue
+		}
+		if state == "objectives" {
+			metadata.Objectives = strings.Join(
+				[]string{
+					metadata.Objectives,
+					objectivesCleanupRegex.ReplaceAllString(line, "$1"),
+				},
+				" ",
+			)
+			continue
+		}
+		if state == "services" {
+			metadata.Services = strings.Join(
+				[]string{
+					metadata.Services,
+					line,
+				},
+				" ",
+			)
 			continue
 		}
 
-		fmt.Printf(">>> %+v\n", *metadata)
-		fmt.Printf("=== %+v\n", content)
-		panic(fmt.Sprintf("No parser found for line '%s'", line))
+		panic(fmt.Sprintf("No parser found for line '%s'\nmetadata: %+v", line, *metadata))
+	}
+
+	if !metadata.Validate() {
+		panic(fmt.Sprintf("Invalid metadata: %+v", *metadata))
 	}
 
 	return *metadata
@@ -192,6 +255,22 @@ func (p MetadataDecoder) decodeProduct(metadata *model.Metadata, line string) bo
 
 var (
 	descriptionCleanupRegex = regexp.MustCompile(
+		fmt.Sprintf("\"([ %s,-]+)\",+", decoder.RxGermanLetter),
+	)
+)
+
+func (p MetadataDecoder) decodeMissionAndTargets(line string) (string, string) {
+	matches := p.missionAndTargetRegex.FindStringSubmatch(line)
+
+	if len(matches) == 0 {
+		panic(fmt.Sprintf("Expected mission and targets but got '%s'.\n%v", line, p.missionAndTargetRegex))
+	}
+
+	return decoder.DecodeString(p.missionAndTargetRegex, "mission", matches), decoder.DecodeString(p.missionAndTargetRegex, "target", matches)
+}
+
+var (
+	objectivesCleanupRegex = regexp.MustCompile(
 		fmt.Sprintf("\"([ %s,-]+)\",+", decoder.RxGermanLetter),
 	)
 )
