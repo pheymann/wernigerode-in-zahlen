@@ -12,13 +12,15 @@ func WriteGroup(financePlans string, target model.TargetFile) {
 }
 
 func WriteUnit(financePlans map[string]string, target model.TargetFile) {
-	for _, financePlans := range financePlans {
+	for costCenterUnit, financePlans := range financePlans {
 		if len(financePlans) == 0 {
 			continue
 		}
 
-		target.Tpe = "csv"
+		targetCpy := target
+		targetCpy.Tpe = "csv"
+		targetCpy.Path = target.Path + costCenterUnit + "/"
 
-		io.Write(target, financePlans)
+		io.Write(targetCpy, financePlans)
 	}
 }

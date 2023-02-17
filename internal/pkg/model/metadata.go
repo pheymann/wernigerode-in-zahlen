@@ -11,8 +11,6 @@ type Metadata struct {
 	Target        string
 	Objectives    string
 	Services      string
-	FileName      string
-	FileType      string
 }
 
 type Department struct {

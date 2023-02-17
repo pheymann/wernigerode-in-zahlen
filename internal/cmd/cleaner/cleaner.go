@@ -10,7 +10,7 @@ import (
 	"wernigode-in-zahlen.de/internal/pkg/model"
 )
 
-func CleanUp(metadataFile *os.File, financeplan_a_file *os.File) (model.Metadata, model.FinancePlanA) {
+func CleanUpMetadata(metadataFile *os.File) model.Metadata {
 	metadataScanner := bufio.NewScanner(metadataFile)
 	metadataLines := []string{}
 
@@ -21,6 +21,10 @@ func CleanUp(metadataFile *os.File, financeplan_a_file *os.File) (model.Metadata
 	metadataDecoder := decodeMeta.NewMetadataDecoder()
 	metadata := metadataDecoder.Decode(metadataLines)
 
+	return metadata
+}
+
+func CleanUpFinancePlanA(financeplan_a_file *os.File) model.FinancePlanA {
 	rawCSVDecoder := rawcsv.NewDecoder()
 	financePlanACostCenterDecoder := decodeFpa.NewFinancePlanACostCenterDecoder()
 	costCenter := []model.FinancePlanACostCenter{}
@@ -38,5 +42,5 @@ func CleanUp(metadataFile *os.File, financeplan_a_file *os.File) (model.Metadata
 
 	financePlan_a := decodeFpa.Decode(costCenter)
 
-	return metadata, financePlan_a
+	return financePlan_a
 }

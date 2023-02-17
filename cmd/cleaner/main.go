@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"os"
 
 	"wernigode-in-zahlen.de/internal/cmd/cleaner"
@@ -12,24 +13,37 @@ import (
 )
 
 func main() {
-	directory := os.Args[1]
-	metadataFile, err := os.Open(directory + "/metadata.csv")
-	if err != nil {
-		panic(err)
+	directory := flag.String("dir", "", "directory to clean up")
+	existsMetadata := flag.Bool("metadata", false, "exists metadata file")
+
+	flag.Parse()
+
+	if *directory == "" {
+		panic("directory is required")
 	}
 
-	defer metadataFile.Close()
+	if *existsMetadata {
+		metadataFile, err := os.Open(*directory + "/metadata.csv")
+		if err != nil {
+			panic(err)
+		}
 
-	financePlan_a_file, err := os.Open(directory + "/finance_plan_a.csv")
+		defer metadataFile.Close()
+
+		metadata := cleaner.CleanUpMetadata(metadataFile)
+
+		writeMeta.Write(encodeMeta.Encode(metadata), decodeTarget.Decode(metadataFile))
+	}
+
+	financePlan_a_file, err := os.Open(*directory + "/finance_plan_a.csv")
 	if err != nil {
 		panic(err)
 	}
 
 	defer financePlan_a_file.Close()
 
-	metadata, financePlan_a := cleaner.CleanUp(metadataFile, financePlan_a_file)
+	financePlan_a := cleaner.CleanUpFinancePlanA(financePlan_a_file)
 
 	writeFpa.WriteGroup(encodeFpa.EncodeGroup(financePlan_a.Groups), decodeTarget.Decode(financePlan_a_file))
 	writeFpa.WriteUnit(encodeFpa.EncodeUnit(financePlan_a.Units), decodeTarget.Decode(financePlan_a_file))
-	writeMeta.Write(encodeMeta.Encode(metadata), decodeTarget.Decode(metadataFile))
 }
