@@ -1,12 +1,11 @@
 package main
 
 import (
-	"bufio"
 	"fmt"
 	"os"
 
 	"wernigode-in-zahlen.de/internal/cmd/cleaner"
-	decodeMeta "wernigode-in-zahlen.de/internal/pkg/decoder/metadata"
+	encodeFpa "wernigode-in-zahlen.de/internal/pkg/encoder/financeplan_a"
 	encodeMeta "wernigode-in-zahlen.de/internal/pkg/encoder/metadata"
 )
 
@@ -15,23 +14,22 @@ var (
 )
 
 func main() {
-	filename := os.Args[1]
-	file, err := os.Open(filename)
+	directory := os.Args[1]
+	metadataFile, err := os.Open(directory + "/metadata.csv")
 	if err != nil {
 		panic(err)
 	}
 
-	defer file.Close()
+	defer metadataFile.Close()
 
-	scanner := bufio.NewScanner(file)
-	lines := []string{}
-
-	for scanner.Scan() {
-		lines = append(lines, scanner.Text())
+	financePlan_a_file, err := os.Open(directory + "/data.csv")
+	if err != nil {
+		panic(err)
 	}
 
-	metadataDecoder := decodeMeta.NewMetadataDecoder()
-	fmt.Printf("%+v\n", string(encodeMeta.Encode(metadataDecoder.Decode(lines))))
+	defer financePlan_a_file.Close()
 
-	cleaner.CleanUp(filename, file, debug)
+	metadata, financePlan_a := cleaner.CleanUp(metadataFile, financePlan_a_file, debug)
+
+	fmt.Printf("%s\n%s\n%s", encodeMeta.Encode(metadata), encodeFpa.EncodeGroup(financePlan_a.Groups, metadata), encodeFpa.EncodeUnit(financePlan_a.Units, metadata))
 }

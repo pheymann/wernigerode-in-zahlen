@@ -1,13 +1,13 @@
-package financeplan_a
+package metadata
 
 import (
 	"fmt"
 
+	"wernigode-in-zahlen.de/internal/pkg/io"
 	"wernigode-in-zahlen.de/internal/pkg/model"
 )
 
-func EncodeAndWriteGroup(financePlans []model.FinancePlanACostCenter, metadata model.Metadata) {
-	content := CSVHeader
+func Write(metadataJSON string, metadata model.Metadata) {
 	filepath := fmt.Sprintf(
 		"assets/data/processed/%s/%s/%s/%s/",
 		metadata.ProductClass,
@@ -17,9 +17,5 @@ func EncodeAndWriteGroup(financePlans []model.FinancePlanACostCenter, metadata m
 	)
 	filename := fmt.Sprintf("%s.csv", metadata.FileName)
 
-	for _, financePlan := range financePlans {
-		content += toCSVRow(financePlan) + "\n"
-	}
-
-	writeFile(filepath, filename, content)
+	io.WriteFile(filepath, filename, metadataJSON)
 }
