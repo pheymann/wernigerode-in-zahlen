@@ -19,6 +19,9 @@ func CleanUpMetadata(metadataFile *os.File) model.Metadata {
 	}
 
 	metadataDecoder := decodeMeta.NewMetadataDecoder()
+
+	metadataDecoder.Debug()
+
 	metadata := metadataDecoder.Decode(metadataLines)
 
 	return metadata
@@ -28,6 +31,8 @@ func CleanUpFinancePlanA(financeplan_a_file *os.File) model.FinancePlanA {
 	rawCSVDecoder := rawcsv.NewDecoder()
 	financePlanACostCenterDecoder := decodeFpa.NewFinancePlanACostCenterDecoder()
 	costCenter := []model.FinancePlanACostCenter{}
+
+	rawCSVDecoder.Debug()
 
 	financePlan_a_Scanner := bufio.NewScanner(financeplan_a_file)
 

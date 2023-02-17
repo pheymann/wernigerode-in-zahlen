@@ -35,7 +35,7 @@ func main() {
 		writeMeta.Write(encodeMeta.Encode(metadata), decodeTarget.Decode(metadataFile))
 	}
 
-	financePlan_a_file, err := os.Open(*directory + "/finance_plan_a.csv")
+	financePlan_a_file, err := os.Open(*directory + "/financial_plan_a.csv")
 	if err != nil {
 		panic(err)
 	}

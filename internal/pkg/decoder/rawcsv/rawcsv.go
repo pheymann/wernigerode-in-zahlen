@@ -16,13 +16,18 @@ type Decoder struct {
 func NewDecoder() Decoder {
 	return Decoder{
 		groupCostCenterBudgetParsers: []*regexp.Regexp{
-			regexp.MustCompile(rxBasis("(?P<id>\\d+)")),
-			regexp.MustCompile(rxBasis("\\\"?(?P<id>[0-9][0-9]?) \\+? ")),
+			regexp.MustCompile(rxBasis(`(?P<id>\d+)`)),
+			regexp.MustCompile(rxBasis(`"?(?P<id>[0-9][0-9]?) \+? `)),
 		},
 		unitCostCenterBudgetParsers: []*regexp.Regexp{
-			regexp.MustCompile(rxBasis("\\\"?\\d\\.\\d\\.\\d\\.\\d{2}\\.(?P<id>\\d+) ")),
+			regexp.MustCompile(rxBasis(`"?\d\.\d\.\d\.\d{2}\.(?P<id>\d+) `)),
 		},
 	}
+}
+
+func (d *Decoder) Debug() {
+	fmt.Printf("%+v\n", d.groupCostCenterBudgetParsers)
+	fmt.Printf("%+v\n", d.unitCostCenterBudgetParsers)
 }
 
 func (p *Decoder) Decode(line string) (model.CostCenterType, []string, *regexp.Regexp) {
