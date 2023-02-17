@@ -156,7 +156,7 @@ func (p MetadataDecoder) Decode(lines []string) model.Metadata {
 			metadata.Services = strings.Join(
 				[]string{
 					metadata.Services,
-					line,
+					strings.ReplaceAll(strings.ReplaceAll(line, "\"", ""), ",,,", ""),
 				},
 				" ",
 			)

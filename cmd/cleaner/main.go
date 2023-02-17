@@ -6,7 +6,8 @@ import (
 	"os"
 
 	"wernigode-in-zahlen.de/internal/cmd/cleaner"
-	"wernigode-in-zahlen.de/internal/pkg/decoder/metadata"
+	decodeMeta "wernigode-in-zahlen.de/internal/pkg/decoder/metadata"
+	encodeMeta "wernigode-in-zahlen.de/internal/pkg/encoder/metadata"
 )
 
 var (
@@ -29,8 +30,8 @@ func main() {
 		lines = append(lines, scanner.Text())
 	}
 
-	metadataDecoder := metadata.NewMetadataDecoder()
-	fmt.Printf("%+v\n", metadataDecoder.Decode(lines))
+	metadataDecoder := decodeMeta.NewMetadataDecoder()
+	fmt.Printf("%+v\n", string(encodeMeta.Encode(metadataDecoder.Decode(lines))))
 
 	cleaner.CleanUp(filename, file, debug)
 }
