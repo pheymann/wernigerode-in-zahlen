@@ -20,7 +20,7 @@ func (p FinancePlanACostCenterDecoder) Decode(tpe model.CostCenterType, matches 
 	return model.FinancePlanACostCenter{
 		Id:         decoder.DecodeString(parser, "id", matches),
 		Tpe:        tpe,
-		Desc:       decoder.DecodeString(parser, "desc", matches),
+		Desc:       strings.TrimSpace(decoder.DecodeString(parser, "desc", matches)),
 		Budget2020: decodeBudget(parser, "_2020", matches),
 		Budget2021: decodeBudget(parser, "_2021", matches),
 		Budget2022: decodeBudget(parser, "_2022", matches),

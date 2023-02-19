@@ -17,10 +17,34 @@ func NewDecoder() Decoder {
 	return Decoder{
 		groupCostCenterBudgetParsers: []*regexp.Regexp{
 			regexp.MustCompile(rxBasis(`(?P<id>\d+)`)),
-			regexp.MustCompile(rxBasis(`"?(?P<id>[0-9][0-9]?) \+? `)),
+			regexp.MustCompile(rxBasis(`(?P<id>[0-9][0-9]?) \+? `)),
+			regexp.MustCompile(
+				fmt.Sprintf(
+					`^"(?P<id>[0-9][0-9]?) \+? (?P<desc>[ %s\-\.,\)\(\d&]*)",%s,%s,%s,%s,%s,%s`,
+					decoder.RxGermanLetter,
+					rxFloatNumber,
+					rxNumber("_2021"),
+					rxNumber("_2022"),
+					rxNumber("_2023"),
+					rxNumber("_2024"),
+					rxNumber("_2025"),
+				),
+			),
 		},
 		unitCostCenterBudgetParsers: []*regexp.Regexp{
-			regexp.MustCompile(rxBasis(`"?\d\.\d\.\d\.\d{2}\.(?P<id>\d+) `)),
+			regexp.MustCompile(rxBasis(`\d\.\d\.\d\.\d{2}\.(?P<id>\d+) `)),
+			regexp.MustCompile(
+				fmt.Sprintf(
+					`^"\d\.\d\.\d\.\d{2}\.(?P<id>\d+) (?P<desc>[ %s\-\.,\)\(\d&]*)",%s,%s,%s,%s,%s,%s`,
+					decoder.RxGermanLetter,
+					rxFloatNumber,
+					rxNumber("_2021"),
+					rxNumber("_2022"),
+					rxNumber("_2023"),
+					rxNumber("_2024"),
+					rxNumber("_2025"),
+				),
+			),
 		},
 	}
 }
@@ -73,7 +97,7 @@ const (
 )
 
 var (
-	rxDesc = fmt.Sprintf(`(?P<desc>[ %s\-\.,\)\(\d&]*)`, decoder.RxGermanLetter)
+	rxDesc = fmt.Sprintf(`(?P<desc>[ %s\-\.\)\(\d&]*)`, decoder.RxGermanLetter)
 )
 
 func rxNumber(name string) string {

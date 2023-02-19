@@ -15,6 +15,7 @@ type MetadataDecoder struct {
 	productDomainRegex             *regexp.Regexp
 	productGroupRegex              *regexp.Regexp
 	productRegex                   *regexp.Regexp
+	productRegex2                  *regexp.Regexp
 	descriptionDetectionRegex      *regexp.Regexp
 	missionAndTargetDetectionRegex *regexp.Regexp
 	missionAndTargetRegex          *regexp.Regexp
@@ -26,35 +27,42 @@ func NewMetadataDecoder() MetadataDecoder {
 	return MetadataDecoder{
 		departmentRegex: regexp.MustCompile(
 			fmt.Sprintf(
-				`^Dezernat/( )+Fachbereich (?P<department>\d+),+(?P<department_name>[ %s\-]+),+verantwortlich:,+( )*(?P<accountable>[ %s\-]+)`,
+				`^Dezernat/( )+Fachbereich (?P<department>\d+),+(?P<department_name>[ %s\-]+),+verantwortlich:,*( )*(?P<accountable>[ %s\-]+)`,
 				decoder.RxGermanLetter,
 				decoder.RxGermanLetter,
 			),
 		),
 		productClassRegex: regexp.MustCompile(
 			fmt.Sprintf(
-				`^Produktklasse (?P<product_class>\d+),+(?P<product_class_name>[ %s-]+),+verantwortlich:,+( )*(?P<accountable>[ %s-]+)`,
+				`^Produktklasse (?P<product_class>\d+),+(?P<product_class_name>[ %s-]+),+verantwortlich:,*( )*(?P<accountable>[ %s-]+)`,
 				decoder.RxGermanLetter,
 				decoder.RxGermanLetter,
 			),
 		),
 		productDomainRegex: regexp.MustCompile(
 			fmt.Sprintf(
-				`^Produktbereich (?P<product_domain>\d+\.\d+),+(?P<product_domain_name>[ %s-]+),+zuständig:,+( )*(?P<responsible>[ %s-]+)`,
+				`^Produktbereich (?P<product_domain>\d+\.\d+),+(?P<product_domain_name>[ %s-]+),+zuständig:,*( )*(?P<responsible>[ %s-]+)`,
 				decoder.RxGermanLetter,
 				decoder.RxGermanLetter,
 			),
 		),
 		productGroupRegex: regexp.MustCompile(
 			fmt.Sprintf(
-				`^Produktgruppe (?P<product_group>\d+\.\d+\.\d+),+(?P<product_group_name>[ %s-]+),+Produktart:,+( )*(?P<desc>[ %s-]+)`,
+				`^Produktgruppe (?P<product_group>\d+\.\d+\.\d+),+(?P<product_group_name>[ %s-]+),+Produktart:,*( )*(?P<desc>[ %s-]+)`,
 				decoder.RxGermanLetter,
 				decoder.RxGermanLetter,
 			),
 		),
 		productRegex: regexp.MustCompile(
 			fmt.Sprintf(
-				`^Produkt (?P<product>\d+\.\d+\.\d+\.\d+),+"?(?P<product_name>[ %s\-,]+)"?,+Rechtsbindung:,+( )*(?P<legal_requirement>[ %s-]+)`,
+				`^Produkt (?P<product>\d+\.\d+\.\d+\.\d+),+(?P<product_name>[ %s\-]+),+Rechtsbindung:,*( )*(?P<legal_requirement>[ %s-]+)`,
+				decoder.RxGermanLetter,
+				decoder.RxGermanLetter,
+			),
+		),
+		productRegex2: regexp.MustCompile(
+			fmt.Sprintf(
+				`^Produkt (?P<product>\d+\.\d+\.\d+\.\d+),+"(?P<product_name>[ %s\-,]+)",+Rechtsbindung:,*( )*(?P<legal_requirement>[ %s-]+)`,
 				decoder.RxGermanLetter,
 				decoder.RxGermanLetter,
 			),
@@ -79,6 +87,7 @@ func (d MetadataDecoder) Debug() {
 	fmt.Printf("%+v\n", d.productDomainRegex)
 	fmt.Printf("%+v\n", d.productGroupRegex)
 	fmt.Printf("%+v\n", d.productRegex)
+	fmt.Printf("%+v\n", d.productRegex2)
 }
 
 func (p MetadataDecoder) Decode(lines []string) model.Metadata {
@@ -98,7 +107,9 @@ func (p MetadataDecoder) Decode(lines []string) model.Metadata {
 	}
 
 	var dropToLine = 4
-	if p.decodeProduct(metadata, lines[4]) {
+	if p.decodeProduct(metadata, lines[4], p.productRegex) {
+		dropToLine = 5
+	} else if p.decodeProduct(metadata, lines[4], p.productRegex2) {
 		dropToLine = 5
 	}
 
@@ -245,17 +256,17 @@ func (p MetadataDecoder) decodeProductGroup(metadata *model.Metadata, line strin
 	return true
 }
 
-func (p MetadataDecoder) decodeProduct(metadata *model.Metadata, line string) bool {
-	matches := p.productRegex.FindStringSubmatch(line)
+func (p MetadataDecoder) decodeProduct(metadata *model.Metadata, line string, selectedRegex *regexp.Regexp) bool {
+	matches := selectedRegex.FindStringSubmatch(line)
 
 	if len(matches) == 0 {
 		return false
 	}
 
 	metadata.Product = model.Product{
-		ID:               decoder.DecodeString(p.productRegex, "product", matches),
-		Name:             decoder.DecodeString(p.productRegex, "product_name", matches),
-		LegalRequirement: decoder.DecodeString(p.productRegex, "legal_requirement", matches),
+		ID:               decoder.DecodeString(selectedRegex, "product", matches),
+		Name:             decoder.DecodeString(selectedRegex, "product_name", matches),
+		LegalRequirement: decoder.DecodeString(selectedRegex, "legal_requirement", matches),
 	}
 
 	return true
