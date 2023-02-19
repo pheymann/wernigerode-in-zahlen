@@ -24,7 +24,7 @@ fi
 if [ -z "${financial_plan_b}" ]; then
   echo "No financial plan b"
 else
-  mkdir -p assets/data/raw/${dir}; mv ~/Downloads/tabula-wernigerode_haushaltsplan_2022\ /tabula-wernigerode_haushaltsplan_2022\ -${metadata}.csv $_/financial_plan_b.csv
+  mkdir -p assets/data/raw/${dir}; mv ~/Downloads/tabula-wernigerode_haushaltsplan_2022\ /tabula-wernigerode_haushaltsplan_2022\ -${financial_plan_b}.csv $_/financial_plan_b.csv
 fi
 
 mkdir -p assets/data/raw/${dir}; mv ~/Downloads/tabula-wernigerode_haushaltsplan_2022\ /tabula-wernigerode_haushaltsplan_2022\ -${financial_plan_a}.csv $_/financial_plan_a.csv
