@@ -35,7 +35,19 @@ func NewDecoder() Decoder {
 			regexp.MustCompile(rxBasis(`\d\.\d\.\d\.\d{2}\.(?P<id>\d+) `)),
 			regexp.MustCompile(
 				fmt.Sprintf(
-					`^"\d\.\d\.\d\.\d{2}\.(?P<id>\d+) (?P<desc>[ %s\-\.,\)\(\d&]*)",%s,%s,%s,%s,%s,%s`,
+					`^"\d\.\d\.\d\.\d{2}\.(?P<id>\d+) (?P<desc>[ %s\-\.,\)\(\d&]*)",+%s,%s,%s,%s,%s,%s`,
+					decoder.RxGermanLetter,
+					rxFloatNumber,
+					rxNumber("_2021"),
+					rxNumber("_2022"),
+					rxNumber("_2023"),
+					rxNumber("_2024"),
+					rxNumber("_2025"),
+				),
+			),
+			regexp.MustCompile(
+				fmt.Sprintf(
+					`^\d\.\d\.\d\.\d{2}(?P<id>/\d+\.\d+) (?P<desc>[ %s\-\.\)\(\d&]*),+%s,%s,%s,%s,%s,%s`,
 					decoder.RxGermanLetter,
 					rxFloatNumber,
 					rxNumber("_2021"),
@@ -48,7 +60,7 @@ func NewDecoder() Decoder {
 		},
 		separateLineParser: regexp.MustCompile(
 			fmt.Sprintf(
-				`^"?(?P<desc>[ %s\.&]+)"?,+`,
+				`^"?(?P<desc>[ %s\.&\(\)/>]+)"?,+`,
 				decoder.RxGermanLetter,
 			),
 		),
@@ -101,7 +113,7 @@ func (p *Decoder) Decode(line string) (DecodeType, []string, *regexp.Regexp) {
 
 func rxBasis(rxID string) string {
 	return fmt.Sprintf(
-		"^%s%s,%s,%s,%s,%s,%s,%s",
+		"^%s%s,+%s,%s,%s,%s,%s,%s",
 		rxID,
 		rxDesc,
 		rxFloatNumber,
