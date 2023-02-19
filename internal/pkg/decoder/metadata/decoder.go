@@ -71,7 +71,7 @@ func NewMetadataDecoder() MetadataDecoder {
 		missionAndTargetDetectionRegex: regexp.MustCompile("^Auftrag,+Zielgruppe,+"),
 		missionAndTargetRegex: regexp.MustCompile(
 			fmt.Sprintf(
-				"^\"?(?P<mission>[ %s,:\\-]*)\"?,+\"?(?P<target>[ %s,:\\-]*)\"?",
+				"^\"?(?P<mission>[ %s,;:\\-]*)\"?,+\"?(?P<target>[ %s,:\\-]*)\"?",
 				decoder.RxGermanLetter,
 				decoder.RxGermanLetter,
 			),
@@ -148,14 +148,14 @@ func (p MetadataDecoder) Decode(lines []string) model.Metadata {
 			metadata.Mission = strings.Join(
 				[]string{
 					metadata.Mission,
-					strings.Trim(mission, ","),
+					strings.TrimSpace(strings.Trim(mission, ",")),
 				},
 				" ",
 			)
 			metadata.Target = strings.Join(
 				[]string{
 					metadata.Target,
-					strings.Trim(target, ","),
+					strings.TrimSpace(strings.Trim(target, ",")),
 				},
 				"",
 			)
