@@ -48,7 +48,7 @@ func NewDecoder() Decoder {
 		},
 		separateLineParser: regexp.MustCompile(
 			fmt.Sprintf(
-				`^"?(?P<desc>[ %s]+)"?,+`,
+				`^"?(?P<desc>[ %s\.&]+)"?,+`,
 				decoder.RxGermanLetter,
 			),
 		),
@@ -56,8 +56,10 @@ func NewDecoder() Decoder {
 }
 
 func (d *Decoder) Debug() {
+	fmt.Println("=== DEBUG rawcsv ===")
 	fmt.Printf("%+v\n", d.groupCostCenterBudgetParsers)
 	fmt.Printf("%+v\n", d.unitCostCenterBudgetParsers)
+	fmt.Printf("%+v\n", d.separateLineParser)
 }
 
 type DecodeType = string

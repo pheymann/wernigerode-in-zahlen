@@ -1,7 +1,6 @@
 package financeplan_a
 
 import (
-	"fmt"
 	"regexp"
 	"strconv"
 	"strings"
@@ -18,8 +17,6 @@ func NewFinancePlanACostCenterDecoder() FinancePlanACostCenterDecoder {
 }
 
 func (p FinancePlanACostCenterDecoder) Decode(tpe model.CostCenterType, matches []string, parser *regexp.Regexp) model.FinancePlanACostCenter {
-	fmt.Printf("matches: %+v\n", matches)
-
 	return model.FinancePlanACostCenter{
 		Id:         decoder.DecodeString(parser, "id", matches),
 		Tpe:        tpe,
