@@ -1,0 +1,30 @@
+80 Software,,,,,,,,
+40 -Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen,,"95.401,83",94.800,90.000,170.000,100.000,100.000,0
+1.1.1.10/0080.7834000 Auszahlung für den Erwerb immaterieller,,"95.401,83",94.800,90.000,170.000,100.000,100.000,0
+Vermögensgegenstände,,,,,,,,
+60  Saldo aus Einzahlungen und Auszahlungen,,"-95.401,83",-94.800,-90.000,-170.000,-100.000,-100.000,0
+"",,,,,,,,
+100 Anschaffungen 150 €  bis 1.000 € netto,,,,,,,,
+10 +  Einzahlungen aus Investitionszuwendungen,,"1.733,63",0,0,0,0,0,0
+1.1.1.10/0100.6811000 Einz. a. Zuweisungen f. Investitionen,,"1.733,63",0,0,0,0,0,0
+u.Investitionsfördermaßnahmen Land,,,,,,,,
+40 -Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen,,"65.324,93",141.200,140.000,155.000,155.000,155.000,0
+1.1.1.10/0100.7832000 Ausz. f.d. Erw. v. beweg. Vermögensgegenständen,,"23.658,41",66.000,50.000,65.000,65.000,65.000,0
+v. > 150  bis 1000 € o. UStr.,,,,,,,,
+1.1.1.10/0100.7832001 Ausz. f.d. Erw. v. beweg. Vermögensgegenständen,,"41.666,52",75.200,90.000,90.000,90.000,90.000,0
+v. > 150  bis 1000 € EDV o.Ustr.,,,,,,,,
+60  Saldo aus Einzahlungen und Auszahlungen,,"-63.591,30",-141.200,-140.000,-155.000,-155.000,-155.000,0
+"",,,,,,,,
+200 Betriebs-und Geschäftsausstattungen,,,,,,,,
+40 -Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen,,"5.709,30",40.300,53.000,316.000,36.000,36.000,0
+1.1.1.10/0200.7831000 Auszahl. f.d. Erw. von bewegl. Vermögengeg.st.,,"3.975,67",20.300,28.000,16.000,16.000,16.000,0
+von mehr als 1000 Euro ohne UStr.,,,,,,,,
+1.1.1.10/0200.7831001 Auszahl. f.d. Erw. von bewegl. Vermögengeg.st.,,"1.733,63",20.000,25.000,300.000,20.000,20.000,0
+von mehr als 1000 Euro EDVo.Ustr.,,,,,,,,
+60  Saldo aus Einzahlungen und Auszahlungen,,"-5.709,30",-40.300,-53.000,-316.000,-36.000,-36.000,0
+"",,,,,,,,
+500 Fahrzeuge,,,,,,,,
+40 -Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen,,"6.320,00",25.000,0,0,0,0,0
+1.1.1.10/0500.7831000 Auszahl. f.d. Erw. von bewegl. Vermögengeg.st.,,"6.320,00",25.000,0,0,0,0,0
+von mehr als 1000 Euro ohne UStr.,,,,,,,,
+60  Saldo aus Einzahlungen und Auszahlungen,,"-6.320,00",-25.000,0,0,0,0,0
