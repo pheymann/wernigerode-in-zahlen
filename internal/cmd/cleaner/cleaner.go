@@ -40,9 +40,18 @@ func CleanUpFinancePlanA(financeplan_a_file *os.File) model.FinancePlanA {
 		line := financePlan_a_Scanner.Text()
 
 		tpe, matches, regex := rawCSVDecoder.Decode(line)
-		financePlan := financePlanACostCenterDecoder.Decode(tpe, matches, regex)
 
-		costCenter = append(costCenter, financePlan)
+		switch tpe {
+		case rawcsv.DecodeTypeGroup:
+			financePlan := financePlanACostCenterDecoder.Decode(model.CostCenterGroup, matches, regex)
+			costCenter = append(costCenter, financePlan)
+		case rawcsv.DecodeTypeUnit:
+			financePlan := financePlanACostCenterDecoder.Decode(model.CostCenterUnit, matches, regex)
+			costCenter = append(costCenter, financePlan)
+		case rawcsv.DeocdeTypeSeparateLine:
+			separateLine := matches[regex.SubexpIndex("desc")]
+			costCenter[len(costCenter)-1].Desc = costCenter[len(costCenter)-1].Desc + " " + separateLine
+		}
 	}
 
 	financePlan_a := decodeFpa.Decode(costCenter)

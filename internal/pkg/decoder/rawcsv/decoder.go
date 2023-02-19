@@ -5,12 +5,12 @@ import (
 	"regexp"
 
 	"wernigode-in-zahlen.de/internal/pkg/decoder"
-	"wernigode-in-zahlen.de/internal/pkg/model"
 )
 
 type Decoder struct {
 	groupCostCenterBudgetParsers []*regexp.Regexp
 	unitCostCenterBudgetParsers  []*regexp.Regexp
+	separateLineParser           *regexp.Regexp
 }
 
 func NewDecoder() Decoder {
@@ -46,6 +46,12 @@ func NewDecoder() Decoder {
 				),
 			),
 		},
+		separateLineParser: regexp.MustCompile(
+			fmt.Sprintf(
+				`^"?(?P<desc>[ %s]+)"?,+`,
+				decoder.RxGermanLetter,
+			),
+		),
 	}
 }
 
@@ -54,7 +60,15 @@ func (d *Decoder) Debug() {
 	fmt.Printf("%+v\n", d.unitCostCenterBudgetParsers)
 }
 
-func (p *Decoder) Decode(line string) (model.CostCenterType, []string, *regexp.Regexp) {
+type DecodeType = string
+
+const (
+	DecodeTypeGroup        DecodeType = "group"
+	DecodeTypeUnit         DecodeType = "unit"
+	DeocdeTypeSeparateLine DecodeType = "separate"
+)
+
+func (p *Decoder) Decode(line string) (DecodeType, []string, *regexp.Regexp) {
 	for _, parser := range p.unitCostCenterBudgetParsers {
 		matches := parser.FindStringSubmatch(line)
 
@@ -62,7 +76,7 @@ func (p *Decoder) Decode(line string) (model.CostCenterType, []string, *regexp.R
 			continue
 		}
 
-		return model.CostCenterUnit, matches, parser
+		return DecodeTypeUnit, matches, parser
 	}
 
 	for _, parser := range p.groupCostCenterBudgetParsers {
@@ -72,7 +86,12 @@ func (p *Decoder) Decode(line string) (model.CostCenterType, []string, *regexp.R
 			continue
 		}
 
-		return model.CostCenterGroup, matches, parser
+		return DecodeTypeGroup, matches, parser
+	}
+
+	matches := p.separateLineParser.FindStringSubmatch(line)
+	if len(matches) > 0 {
+		return DeocdeTypeSeparateLine, matches, p.separateLineParser
 	}
 
 	panic(fmt.Sprintf("No parser found for line '%s'", line))

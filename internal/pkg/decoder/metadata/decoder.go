@@ -185,9 +185,7 @@ func (p MetadataDecoder) Decode(lines []string) model.Metadata {
 		panic(fmt.Sprintf("No parser found for line '%s'\nmetadata: %+v", line, *metadata))
 	}
 
-	if !metadata.Validate() {
-		panic(fmt.Sprintf("Invalid metadata: %+v", *metadata))
-	}
+	metadata.Validate()
 
 	return *metadata
 }
