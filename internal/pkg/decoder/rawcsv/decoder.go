@@ -35,7 +35,7 @@ func NewDecoder() Decoder {
 			regexp.MustCompile(rxBasis(`\d\.\d\.\d\.\d{2}\.(?P<id>\d+) `)),
 			regexp.MustCompile(
 				fmt.Sprintf(
-					`^"\d\.\d\.\d\.\d{2}\.(?P<id>\d+) (?P<desc>[ %s\-\.,\)\(\d&]*)",+%s,%s,%s,%s,%s,%s`,
+					`^"\d\.\d\.\d\.\d{2}\.(?P<id>\d+) (?P<desc>[ %s\-\.,\)\(\d&%%]*)",+%s,%s,%s,%s,%s,%s`,
 					decoder.RxGermanLetter,
 					rxFloatNumber,
 					rxNumber("_2021"),
@@ -47,7 +47,7 @@ func NewDecoder() Decoder {
 			),
 			regexp.MustCompile(
 				fmt.Sprintf(
-					`^\d\.\d\.\d\.\d{2}(?P<id>/\d+\.\d+) (?P<desc>[ %s\-\.\)\(\d&]*),+%s,%s,%s,%s,%s,%s`,
+					`^\d\.\d\.\d\.\d{2}(?P<id>/\d+\.\d+) (?P<desc>[ %s\-\.\)\(\d&%%]*),+%s,%s,%s,%s,%s,%s`,
 					decoder.RxGermanLetter,
 					rxFloatNumber,
 					rxNumber("_2021"),
@@ -130,7 +130,7 @@ const (
 )
 
 var (
-	rxDesc = fmt.Sprintf(`(?P<desc>[ %s\-\.\)\(\d&]*)`, decoder.RxGermanLetter)
+	rxDesc = fmt.Sprintf(`(?P<desc>[ %s\-\.\)\(\d&%%]*)`, decoder.RxGermanLetter)
 )
 
 func rxNumber(name string) string {

@@ -2,6 +2,7 @@ package cleaner
 
 import (
 	"bufio"
+	"fmt"
 	"os"
 
 	decodeFpa "wernigode-in-zahlen.de/internal/pkg/decoder/financeplan_a"
@@ -20,7 +21,13 @@ func CleanUpMetadata(metadataFile *os.File) model.Metadata {
 
 	metadataDecoder := decodeMeta.NewMetadataDecoder()
 
-	metadataDecoder.Debug()
+	defer func() {
+		if r := recover(); r != nil {
+			metadataDecoder.Debug()
+			fmt.Printf("\n%+v\n", r)
+			os.Exit(1)
+		}
+	}()
 
 	metadata := metadataDecoder.Decode(metadataLines)
 
@@ -32,7 +39,13 @@ func CleanUpFinancePlanA(financeplan_a_file *os.File) model.FinancePlanA {
 	financePlanACostCenterDecoder := decodeFpa.NewFinancePlanACostCenterDecoder()
 	costCenter := []model.FinancePlanACostCenter{}
 
-	rawCSVDecoder.Debug()
+	defer func() {
+		if r := recover(); r != nil {
+			rawCSVDecoder.Debug()
+			fmt.Printf("\n%+v\n", r)
+			os.Exit(2)
+		}
+	}()
 
 	financePlan_a_Scanner := bufio.NewScanner(financeplan_a_file)
 
