@@ -6,46 +6,45 @@ import (
 	"wernigode-in-zahlen.de/internal/pkg/model"
 )
 
-const (
-	CSVHeader = "id;desc;_2020;_2021;_2022;_2023;_2024;_2025\n"
+var (
+	CSVHeader = []string{"id", "desc", "_2020", "_2021", "_2022", "_2023", "_2024", "_2025"}
 )
 
-func toCSVRow(financePlan model.FinancePlanACostCenter) string {
-	return fmt.Sprintf(
-		"%s;%s;%f;%f;%f;%f;%f;%f",
+func toCSVRow(financePlan model.FinancePlanACostCenter) []string {
+	return []string{
 		financePlan.Id,
 		financePlan.Desc,
-		financePlan.Budget2020,
-		financePlan.Budget2021,
-		financePlan.Budget2022,
-		financePlan.Budget2023,
-		financePlan.Budget2024,
-		financePlan.Budget2025,
-	)
+		fmt.Sprintf("%f", financePlan.Budget2020),
+		fmt.Sprintf("%f", financePlan.Budget2021),
+		fmt.Sprintf("%f", financePlan.Budget2022),
+		fmt.Sprintf("%f", financePlan.Budget2023),
+		fmt.Sprintf("%f", financePlan.Budget2024),
+		fmt.Sprintf("%f", financePlan.Budget2025),
+	}
 }
 
-func EncodeGroup(financePlans []model.FinancePlanACostCenter) string {
-	content := CSVHeader
+func EncodeGroup(financePlans []model.FinancePlanACostCenter) [][]string {
+	var content = [][]string{CSVHeader}
 
 	for _, financePlan := range financePlans {
-		content += toCSVRow(financePlan) + "\n"
+		content = append(content, toCSVRow(financePlan))
 	}
 
 	return content
 }
 
-func EncodeUnit(financePlans map[string][]model.FinancePlanACostCenter) map[string]string {
-	groupBasedUnits := map[string]string{}
+func EncodeUnit(financePlans map[string][]model.FinancePlanACostCenter) map[string][][]string {
+	groupBasedUnits := map[string][][]string{}
 
 	for costCenterGroup, financePlans := range financePlans {
 		if len(financePlans) == 0 {
 			continue
 		}
 
-		content := CSVHeader
+		var content = [][]string{CSVHeader}
 
 		for _, financePlan := range financePlans {
-			content += toCSVRow(financePlan) + "\n"
+			content = append(content, toCSVRow(financePlan))
 		}
 		groupBasedUnits[costCenterGroup] = content
 	}

@@ -18,7 +18,7 @@ type MetadataDecoder struct {
 	productRegex2                  *regexp.Regexp
 	descriptionDetectionRegex      *regexp.Regexp
 	missionAndTargetDetectionRegex *regexp.Regexp
-	missionAndTargetRegex          *regexp.Regexp
+	missionAndTargetRegex          []*regexp.Regexp
 	objectivesDetectionRegex       *regexp.Regexp
 	servicesDetectionRegex         *regexp.Regexp
 }
@@ -69,25 +69,50 @@ func NewMetadataDecoder() MetadataDecoder {
 		),
 		descriptionDetectionRegex:      regexp.MustCompile("^Beschreibung,+"),
 		missionAndTargetDetectionRegex: regexp.MustCompile("^Auftrag,+Zielgruppe,+"),
-		missionAndTargetRegex: regexp.MustCompile(
-			fmt.Sprintf(
-				"^\"?(?P<mission>[ %s,;:\\-]*)\"?,+\"?(?P<target>[ %s,:\\-]*)\"?",
-				decoder.RxGermanLetter,
-				decoder.RxGermanLetter,
+		missionAndTargetRegex: []*regexp.Regexp{
+			regexp.MustCompile(
+				fmt.Sprintf(
+					`^"(?P<mission>[ %s,;:\-]*)",+"(?P<target>[ %s,:\-]*)"`,
+					decoder.RxGermanLetter,
+					decoder.RxGermanLetter,
+				),
 			),
-		),
+			regexp.MustCompile(
+				fmt.Sprintf(
+					`^"(?P<mission>[ %s,;:\-]*)",+(?P<target>[ %s:\-]*)`,
+					decoder.RxGermanLetter,
+					decoder.RxGermanLetter,
+				),
+			),
+			regexp.MustCompile(
+				fmt.Sprintf(
+					`^(?P<mission>[ %s;:\-]*),+"(?P<target>[ %s,:\-]*)"`,
+					decoder.RxGermanLetter,
+					decoder.RxGermanLetter,
+				),
+			),
+			regexp.MustCompile(
+				fmt.Sprintf(
+					`^(?P<mission>[ %s;:\-]*),+(?P<target>[ %s:\-]*)`,
+					decoder.RxGermanLetter,
+					decoder.RxGermanLetter,
+				),
+			),
+		},
 		objectivesDetectionRegex: regexp.MustCompile("^Ziele,+"),
 		servicesDetectionRegex:   regexp.MustCompile("^Leistung,+"),
 	}
 }
 
 func (d MetadataDecoder) Debug() {
+	fmt.Println("=== Debug Metadata ===")
 	fmt.Printf("%+v\n", d.departmentRegex)
 	fmt.Printf("%+v\n", d.productClassRegex)
 	fmt.Printf("%+v\n", d.productDomainRegex)
 	fmt.Printf("%+v\n", d.productGroupRegex)
 	fmt.Printf("%+v\n", d.productRegex)
 	fmt.Printf("%+v\n", d.productRegex2)
+	fmt.Printf("%+v\n", d.missionAndTargetRegex)
 }
 
 func (p MetadataDecoder) Decode(lines []string) model.Metadata {
@@ -277,13 +302,17 @@ var (
 )
 
 func (p MetadataDecoder) decodeMissionAndTargets(line string) (string, string) {
-	matches := p.missionAndTargetRegex.FindStringSubmatch(line)
+	for _, regex := range p.missionAndTargetRegex {
+		matches := regex.FindStringSubmatch(line)
 
-	if len(matches) == 0 {
-		panic(fmt.Sprintf("Expected mission and targets but got '%s'.\n%v", line, p.missionAndTargetRegex))
+		if len(matches) == 0 {
+			continue
+		}
+
+		return decoder.DecodeString(regex, "mission", matches), decoder.DecodeString(regex, "target", matches)
 	}
 
-	return decoder.DecodeString(p.missionAndTargetRegex, "mission", matches), decoder.DecodeString(p.missionAndTargetRegex, "target", matches)
+	panic(fmt.Sprintf("Expected mission and targets but got '%s'.", line))
 }
 
 var (

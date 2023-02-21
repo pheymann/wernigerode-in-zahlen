@@ -6,7 +6,7 @@ import (
 	"wernigode-in-zahlen.de/internal/pkg/model"
 )
 
-func Write(target model.TargetFile, content string) {
+func WriteFile(target model.TargetFile, content string) {
 	if _, err := os.Stat(target.Path); os.IsNotExist(err) {
 		os.MkdirAll(target.Path, 0700)
 	}
