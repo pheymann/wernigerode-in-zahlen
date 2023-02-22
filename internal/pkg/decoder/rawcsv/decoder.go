@@ -77,7 +77,7 @@ func (d *Decoder) Debug() {
 type DecodeType = string
 
 const (
-	DecodeTypeGroup        DecodeType = "group"
+	DecodeTypeAccount      DecodeType = "account"
 	DecodeTypeUnit         DecodeType = "unit"
 	DeocdeTypeSeparateLine DecodeType = "separate"
 )
@@ -100,7 +100,7 @@ func (p *Decoder) Decode(line string) (DecodeType, []string, *regexp.Regexp) {
 			continue
 		}
 
-		return DecodeTypeGroup, matches, parser
+		return DecodeTypeAccount, matches, parser
 	}
 
 	matches := p.separateLineParser.FindStringSubmatch(line)

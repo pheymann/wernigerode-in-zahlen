@@ -36,7 +36,7 @@ func CleanUpMetadata(metadataFile *os.File) model.Metadata {
 
 func CleanUpFinancePlanA(financeplan_a_file *os.File) model.FinancePlanA {
 	rawCSVDecoder := rawcsv.NewDecoder()
-	financePlanACostCenterDecoder := decodeFpa.NewFinancePlanACostCenterDecoder()
+	financePlanACostCenterDecoder := decodeFpa.New()
 	costCenter := []model.FinancePlanACostCenter{}
 
 	defer func() {
@@ -55,7 +55,7 @@ func CleanUpFinancePlanA(financeplan_a_file *os.File) model.FinancePlanA {
 		tpe, matches, regex := rawCSVDecoder.Decode(line)
 
 		switch tpe {
-		case rawcsv.DecodeTypeGroup:
+		case rawcsv.DecodeTypeAccount:
 			financePlan := financePlanACostCenterDecoder.Decode(model.CostCenterGroup, matches, regex)
 			costCenter = append(costCenter, financePlan)
 		case rawcsv.DecodeTypeUnit:
