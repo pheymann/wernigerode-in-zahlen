@@ -1,6 +1,9 @@
 package financialplan_a
 
 import (
+	"fmt"
+	"regexp"
+
 	"wernigode-in-zahlen.de/internal/pkg/decoder"
 	"wernigode-in-zahlen.de/internal/pkg/model"
 )
@@ -20,32 +23,91 @@ var (
 	}
 )
 
+type rowTpeState = string
+
+const (
+	rowTpeStateBalance     rowTpeState = "balance"
+	rowTpeStateAccount     rowTpeState = "account"
+	rowTpeStateSubAccount  rowTpeState = "sub"
+	rowTpeStateUnitAccount rowTpeState = "unit"
+)
+
 func Decode(rows []model.RawCSVRow) model.FinancialPlanA {
-	financialPlanA := model.FinancialPlanA{}
+	financialPlanA := &model.FinancialPlanA{}
+
+	var lastTpe rowTpeState = ""
 
 	for _, row := range rows {
 		id := decoder.DecodeString(row.Regexp, "id", row.Matches)
 
-		if row.Tpe == model.RowTypeUnitAccount {
+		if row.Tpe == model.RowTypeOther {
 			if class, ok := accountBalanceClassifier[id]; ok {
-				financialPlanA.Balances = append(financialPlanA.Balances, decodeAccountBalance(row, id, class))
+				lastTpe = rowTpeStateBalance
+
+				financialPlanA.UpdateLastAccountBalance(func(_ model.AccountBalance) model.AccountBalance {
+					return decodeAccountBalance(row, id, class)
+				})
 			} else if _, ok := accountClassifier[id]; ok {
-				lastBalanceIndex := len(financialPlanA.Balances) - 1
+				lastTpe = rowTpeStateAccount
 
-				financialPlanA.Balances[lastBalanceIndex].Accounts = append(
-					financialPlanA.Balances[lastBalanceIndex].Accounts,
-					decodeAccount(row, id),
-				)
+				financialPlanA.UpdateLastAccount(func(_ model.Account) model.Account {
+					return decodeAccount(row, id)
+				})
 			} else {
-				// sub-account
+				lastTpe = rowTpeStateSubAccount
 
+				financialPlanA.UpdateLastSubAccount(func(_ model.SubAccount) model.SubAccount {
+					return decodeSubAccount(row, id)
+				})
 			}
+		} else if row.Tpe == model.RowTypeUnitAccount {
+			lastTpe = rowTpeStateUnitAccount
+
+			financialPlanA.UpdateLastUnitAccount(func(_ model.UnitAccount) model.UnitAccount {
+				return decodeUnitAccount(row, id)
+			})
 		} else {
-			// sub-account unit
+			// separate line
+			switch lastTpe {
+			case rowTpeStateBalance:
+				financialPlanA.UpdateLastAccountBalance(func(balance model.AccountBalance) model.AccountBalance {
+					balance.Desc = updateDesc(balance.Desc, row.Regexp, row.Matches)
+
+					return balance
+				})
+
+			case rowTpeStateAccount:
+				financialPlanA.UpdateLastAccount(func(account model.Account) model.Account {
+					account.Desc = updateDesc(account.Desc, row.Regexp, row.Matches)
+
+					return account
+				})
+
+			case rowTpeStateSubAccount:
+				financialPlanA.UpdateLastSubAccount(func(subAccount model.SubAccount) model.SubAccount {
+					subAccount.Desc = updateDesc(subAccount.Desc, row.Regexp, row.Matches)
+
+					return subAccount
+				})
+
+			case rowTpeStateUnitAccount:
+				financialPlanA.UpdateLastUnitAccount(func(unitAccount model.UnitAccount) model.UnitAccount {
+					unitAccount.Desc = updateDesc(unitAccount.Desc, row.Regexp, row.Matches)
+
+					return unitAccount
+				})
+
+			default:
+				panic(fmt.Sprintf("unknown RawCSVRow type '%s'", lastTpe))
+			}
 		}
 	}
 
-	return financialPlanA
+	return *financialPlanA
+}
+
+func updateDesc(original string, regex *regexp.Regexp, matches []string) string {
+	return fmt.Sprintf("%s %s", original, decoder.DecodeString(regex, "desc", matches))
 }
 
 func decodeAccountBalance(row model.RawCSVRow, id string, class model.AccountClass) model.AccountBalance {
@@ -64,6 +126,32 @@ func decodeAccountBalance(row model.RawCSVRow, id string, class model.AccountCla
 
 func decodeAccount(row model.RawCSVRow, id string) model.Account {
 	return model.Account{
+		Id:         id,
+		Desc:       decoder.DecodeString(row.Regexp, "desc", row.Matches),
+		Budget2020: decoder.DecodeBudget(row.Regexp, "_2020", row.Matches),
+		Budget2021: decoder.DecodeBudget(row.Regexp, "_2021", row.Matches),
+		Budget2022: decoder.DecodeBudget(row.Regexp, "_2022", row.Matches),
+		Budget2023: decoder.DecodeBudget(row.Regexp, "_2023", row.Matches),
+		Budget2024: decoder.DecodeBudget(row.Regexp, "_2024", row.Matches),
+		Budget2025: decoder.DecodeBudget(row.Regexp, "_2025", row.Matches),
+	}
+}
+
+func decodeSubAccount(row model.RawCSVRow, id string) model.SubAccount {
+	return model.SubAccount{
+		Id:         id,
+		Desc:       decoder.DecodeString(row.Regexp, "desc", row.Matches),
+		Budget2020: decoder.DecodeBudget(row.Regexp, "_2020", row.Matches),
+		Budget2021: decoder.DecodeBudget(row.Regexp, "_2021", row.Matches),
+		Budget2022: decoder.DecodeBudget(row.Regexp, "_2022", row.Matches),
+		Budget2023: decoder.DecodeBudget(row.Regexp, "_2023", row.Matches),
+		Budget2024: decoder.DecodeBudget(row.Regexp, "_2024", row.Matches),
+		Budget2025: decoder.DecodeBudget(row.Regexp, "_2025", row.Matches),
+	}
+}
+
+func decodeUnitAccount(row model.RawCSVRow, id string) model.UnitAccount {
+	return model.UnitAccount{
 		Id:         id,
 		Desc:       decoder.DecodeString(row.Regexp, "desc", row.Matches),
 		Budget2020: decoder.DecodeBudget(row.Regexp, "_2020", row.Matches),

@@ -5,8 +5,9 @@ import "regexp"
 type RowType = string
 
 const (
-	RowTypeUnitAccount RowType = "unit"
-	RowTypeOther       RowType = "other"
+	RowTypeUnitAccount  RowType = "unit"
+	RowTypeSeparateLine RowType = "separate"
+	RowTypeOther        RowType = "other"
 )
 
 type RawCSVRow struct {

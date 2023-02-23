@@ -5,6 +5,7 @@ import (
 	"regexp"
 
 	"wernigode-in-zahlen.de/internal/pkg/decoder"
+	"wernigode-in-zahlen.de/internal/pkg/model"
 )
 
 type Decoder struct {
@@ -106,6 +107,47 @@ func (p *Decoder) Decode(line string) (DecodeType, []string, *regexp.Regexp) {
 	matches := p.separateLineParser.FindStringSubmatch(line)
 	if len(matches) > 0 {
 		return DeocdeTypeSeparateLine, matches, p.separateLineParser
+	}
+
+	panic(fmt.Sprintf("No parser found for line '%s'", line))
+}
+
+func (p *Decoder) Decode2(line string) model.RawCSVRow {
+	for _, regex := range p.unitCostCenterBudgetParsers {
+		matches := regex.FindStringSubmatch(line)
+
+		if len(matches) == 0 {
+			continue
+		}
+
+		return model.RawCSVRow{
+			Tpe:     model.RowTypeUnitAccount,
+			Matches: matches,
+			Regexp:  regex,
+		}
+	}
+
+	for _, regex := range p.groupCostCenterBudgetParsers {
+		matches := regex.FindStringSubmatch(line)
+
+		if len(matches) == 0 {
+			continue
+		}
+
+		return model.RawCSVRow{
+			Tpe:     model.RowTypeOther,
+			Matches: matches,
+			Regexp:  regex,
+		}
+	}
+
+	matches := p.separateLineParser.FindStringSubmatch(line)
+	if len(matches) > 0 {
+		return model.RawCSVRow{
+			Tpe:     model.RowTypeSeparateLine,
+			Matches: matches,
+			Regexp:  p.separateLineParser,
+		}
 	}
 
 	panic(fmt.Sprintf("No parser found for line '%s'", line))
