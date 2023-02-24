@@ -83,36 +83,7 @@ const (
 	DeocdeTypeSeparateLine DecodeType = "separate"
 )
 
-func (p *Decoder) Decode(line string) (DecodeType, []string, *regexp.Regexp) {
-	for _, parser := range p.unitCostCenterBudgetParsers {
-		matches := parser.FindStringSubmatch(line)
-
-		if len(matches) == 0 {
-			continue
-		}
-
-		return DecodeTypeUnit, matches, parser
-	}
-
-	for _, parser := range p.groupCostCenterBudgetParsers {
-		matches := parser.FindStringSubmatch(line)
-
-		if len(matches) == 0 {
-			continue
-		}
-
-		return DecodeTypeAccount, matches, parser
-	}
-
-	matches := p.separateLineParser.FindStringSubmatch(line)
-	if len(matches) > 0 {
-		return DeocdeTypeSeparateLine, matches, p.separateLineParser
-	}
-
-	panic(fmt.Sprintf("No parser found for line '%s'", line))
-}
-
-func (p *Decoder) Decode2(line string) model.RawCSVRow {
+func (p *Decoder) Decode(line string) model.RawCSVRow {
 	for _, regex := range p.unitCostCenterBudgetParsers {
 		matches := regex.FindStringSubmatch(line)
 

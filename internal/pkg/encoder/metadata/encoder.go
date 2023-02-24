@@ -7,7 +7,7 @@ import (
 )
 
 func Encode(metadata model.Metadata) string {
-	bytes, err := json.Marshal(metadata)
+	bytes, err := json.MarshalIndent(metadata, "", "  ")
 	if err != nil {
 		panic(err)
 	}
