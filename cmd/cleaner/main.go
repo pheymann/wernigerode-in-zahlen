@@ -38,17 +38,17 @@ func main() {
 		)
 	}
 
-	financePlan_a_file, err := os.Open(*directory + "/financial_plan_a.csv")
+	financialPlanAFile, err := os.Open(*directory + "/financial_plan_a.csv")
 	if err != nil {
 		panic(err)
 	}
 
-	defer financePlan_a_file.Close()
+	defer financialPlanAFile.Close()
 
 	writeFpa.Write(
 		encodeFpa.Encode(
-			cleaner.CleanUpFinancialPlanA(financePlan_a_file),
+			cleaner.CleanUpFinancialPlanA(financialPlanAFile),
 		),
-		decodeTarget.Decode(financePlan_a_file),
+		decodeTarget.Decode(financialPlanAFile),
 	)
 }

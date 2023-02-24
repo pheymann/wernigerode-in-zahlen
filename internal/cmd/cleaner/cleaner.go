@@ -34,7 +34,7 @@ func CleanUpMetadata(metadataFile *os.File) model.Metadata {
 	return metadata
 }
 
-func CleanUpFinancialPlanA(financeplan_a_file *os.File) model.FinancialPlanA {
+func CleanUpFinancialPlanA(financialPlaAFile *os.File) model.FinancialPlanA {
 	rawCSVDecoder := rawcsv.NewDecoder()
 
 	defer func() {
@@ -45,11 +45,11 @@ func CleanUpFinancialPlanA(financeplan_a_file *os.File) model.FinancialPlanA {
 		}
 	}()
 
-	financePlan_a_Scanner := bufio.NewScanner(financeplan_a_file)
+	financialPlanAScanner := bufio.NewScanner(financialPlaAFile)
 
 	var rawCSVRows = []model.RawCSVRow{}
-	for financePlan_a_Scanner.Scan() {
-		line := financePlan_a_Scanner.Text()
+	for financialPlanAScanner.Scan() {
+		line := financialPlanAScanner.Text()
 
 		rawCSVRows = append(rawCSVRows, rawCSVDecoder.Decode(line))
 	}
