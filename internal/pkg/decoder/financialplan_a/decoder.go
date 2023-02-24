@@ -38,36 +38,7 @@ func Decode(rows []model.RawCSVRow) model.FinancialPlanA {
 	var lastTpe rowTpeState = ""
 
 	for _, row := range rows {
-		id := decoder.DecodeString(row.Regexp, "id", row.Matches)
-
-		if row.Tpe == model.RowTypeOther {
-			if class, ok := accountBalanceClassifier[id]; ok {
-				lastTpe = rowTpeStateBalance
-
-				financialPlanA.UpdateLastAccountBalance(func(_ model.AccountBalance) model.AccountBalance {
-					return decodeAccountBalance(row, id, class)
-				})
-			} else if _, ok := accountClassifier[id]; ok {
-				lastTpe = rowTpeStateAccount
-
-				financialPlanA.UpdateLastAccount(func(_ model.Account) model.Account {
-					return decodeAccount(row, id)
-				})
-			} else {
-				lastTpe = rowTpeStateSubAccount
-
-				financialPlanA.UpdateLastSubAccount(func(_ model.SubAccount) model.SubAccount {
-					return decodeSubAccount(row, id)
-				})
-			}
-		} else if row.Tpe == model.RowTypeUnitAccount {
-			lastTpe = rowTpeStateUnitAccount
-
-			financialPlanA.UpdateLastUnitAccount(func(_ model.UnitAccount) model.UnitAccount {
-				return decodeUnitAccount(row, id)
-			})
-		} else {
-			// separate line
+		if row.Tpe == model.RowTypeSeparateLine {
 			switch lastTpe {
 			case rowTpeStateBalance:
 				financialPlanA.UpdateLastAccountBalance(func(balance model.AccountBalance) model.AccountBalance {
@@ -100,9 +71,40 @@ func Decode(rows []model.RawCSVRow) model.FinancialPlanA {
 			default:
 				panic(fmt.Sprintf("unknown RawCSVRow type '%s'", lastTpe))
 			}
+		} else {
+			id := decoder.DecodeString(row.Regexp, "id", row.Matches)
+
+			if row.Tpe == model.RowTypeOther {
+				if class, ok := accountBalanceClassifier[id]; ok {
+					lastTpe = rowTpeStateBalance
+
+					financialPlanA.UpdateLastAccountBalance(func(balance model.AccountBalance) model.AccountBalance {
+						return decodeAccountBalance(row, id, class, balance)
+					})
+					financialPlanA.RemoveLastAccount()
+					financialPlanA.AddAccountBalance(model.AccountBalance{})
+				} else if _, ok := accountClassifier[id]; ok {
+					lastTpe = rowTpeStateAccount
+
+					financialPlanA.UpdateLastAccount(func(account model.Account) model.Account {
+						return decodeAccount(row, id, account)
+					})
+					financialPlanA.AddAccount(model.Account{})
+				} else {
+					lastTpe = rowTpeStateSubAccount
+
+					financialPlanA.AddSubAccount(decodeSubAccount(row, id))
+				}
+			} else {
+				// UnitAccount
+				lastTpe = rowTpeStateUnitAccount
+
+				financialPlanA.AddUnitAccount(decodeUnitAccount(row, id))
+			}
 		}
 	}
 
+	financialPlanA.RemoveLastAccountBalance()
 	return *financialPlanA
 }
 
@@ -110,7 +112,7 @@ func updateDesc(original string, regex *regexp.Regexp, matches []string) string 
 	return fmt.Sprintf("%s %s", original, decoder.DecodeString(regex, "desc", matches))
 }
 
-func decodeAccountBalance(row model.RawCSVRow, id string, class model.AccountClass) model.AccountBalance {
+func decodeAccountBalance(row model.RawCSVRow, id string, class model.AccountClass, balance model.AccountBalance) model.AccountBalance {
 	return model.AccountBalance{
 		Id:         id,
 		Class:      class,
@@ -121,10 +123,11 @@ func decodeAccountBalance(row model.RawCSVRow, id string, class model.AccountCla
 		Budget2023: decoder.DecodeBudget(row.Regexp, "_2023", row.Matches),
 		Budget2024: decoder.DecodeBudget(row.Regexp, "_2024", row.Matches),
 		Budget2025: decoder.DecodeBudget(row.Regexp, "_2025", row.Matches),
+		Accounts:   balance.Accounts,
 	}
 }
 
-func decodeAccount(row model.RawCSVRow, id string) model.Account {
+func decodeAccount(row model.RawCSVRow, id string, account model.Account) model.Account {
 	return model.Account{
 		Id:         id,
 		Desc:       decoder.DecodeString(row.Regexp, "desc", row.Matches),
@@ -134,6 +137,7 @@ func decodeAccount(row model.RawCSVRow, id string) model.Account {
 		Budget2023: decoder.DecodeBudget(row.Regexp, "_2023", row.Matches),
 		Budget2024: decoder.DecodeBudget(row.Regexp, "_2024", row.Matches),
 		Budget2025: decoder.DecodeBudget(row.Regexp, "_2025", row.Matches),
+		Subs:       account.Subs,
 	}
 }
 
