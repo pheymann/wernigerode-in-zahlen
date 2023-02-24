@@ -1,13 +1,7 @@
 package model
 
 type FinancialPlanA struct {
-	RequiredMetadata RequiredMetadata
-	Balances         []AccountBalance
-}
-
-type RequiredMetadata struct {
-	Department  string
-	Accountable string
+	Balances []AccountBalance
 }
 
 type AccountClass = string
