@@ -1,1 +1,32 @@
-{"Department":{"ID":"1","Name":"Budget Oberbürgermeister","Accountable":"Herr Gaffert"},"ProductClass":{"ID":"1","Name":"Zentrale Verwaltung","Accountable":"Oberbürgermeister"},"ProductDomain":{"ID":"1.2","Name":"Sicherheit und Ordnung","Responsible":"Herr Radünzel"},"ProductGroup":{"ID":"1.2.1","Name":"Statistik und Wahlen","Desc":"externes Produkt"},"Product":{"ID":"1.2.1.01","Name":"Wahlen und Statistik","LegalRequirement":"Pflichtaufgabe"},"Description":" \"Vorbereitung, Durchführung und Nachbereitung sowie die öffentliche Darstellung von Wahlen und Abstimmungen; Statistische Angelegenheiten\",,,","Mission":" Bundes-, Landes- und Ortsrecht; Ratsbeschlüsse","Target":"EinwohnerInnen, Parteien und Wählergemeinschaften, Öffentlichkeit, Behörden und die Wirtschaft","Objectives":" Sicherung der Demokratie und Entgegenwirken der Politikverdrossenheit sowie Bereitstellung von,,, Informationen,,,","Services":" -Vorbereitung, Durchführung und Nachbereitung der Europa-, Bundestags-, Landtags-, Kommunalwahlen, Volksbegehren, Volksentscheiden, Bürgerbegehren, -  entscheiden und -anhörungen soweit es sich um kommunale Aufgaben handelt, sowie die öffentliche Präsentation und Darstellung -Alle Aufgaben der Gemeindewahlleitung -Zuarbeiten und Auswertungen von statistischen Erhebungen des Landesamtes für Statistik, für die Verwaltung, andere Behörden und die Wirtschaft"}
+{
+  "Department": {
+    "ID": "1",
+    "Name": "Budget Oberbürgermeister",
+    "Accountable": "Herr Gaffert"
+  },
+  "ProductClass": {
+    "ID": "1",
+    "Name": "Zentrale Verwaltung",
+    "Accountable": "Oberbürgermeister"
+  },
+  "ProductDomain": {
+    "ID": "1.2",
+    "Name": "Sicherheit und Ordnung",
+    "Responsible": "Herr Radünzel"
+  },
+  "ProductGroup": {
+    "ID": "1.2.1",
+    "Name": "Statistik und Wahlen",
+    "Desc": "externes Produkt"
+  },
+  "Product": {
+    "ID": "1.2.1.01",
+    "Name": "Wahlen und Statistik",
+    "LegalRequirement": "Pflichtaufgabe"
+  },
+  "Description": " \"Vorbereitung, Durchführung und Nachbereitung sowie die öffentliche Darstellung von Wahlen und Abstimmungen; Statistische Angelegenheiten\",,,",
+  "Mission": " Bundes-, Landes- und Ortsrecht; Ratsbeschlüsse",
+  "Target": "EinwohnerInnen, Parteien und Wählergemeinschaften, Öffentlichkeit, Behörden und die Wirtschaft",
+  "Objectives": " Sicherung der Demokratie und Entgegenwirken der Politikverdrossenheit sowie Bereitstellung von,,, Informationen,,,",
+  "Services": " -Vorbereitung, Durchführung und Nachbereitung der Europa-, Bundestags-, Landtags-, Kommunalwahlen, Volksbegehren, Volksentscheiden, Bürgerbegehren, -  entscheiden und -anhörungen soweit es sich um kommunale Aufgaben handelt, sowie die öffentliche Präsentation und Darstellung -Alle Aufgaben der Gemeindewahlleitung -Zuarbeiten und Auswertungen von statistischen Erhebungen des Landesamtes für Statistik, für die Verwaltung, andere Behörden und die Wirtschaft"
+}
