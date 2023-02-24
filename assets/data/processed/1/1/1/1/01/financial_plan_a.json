@@ -1,0 +1,330 @@
+{
+  "Balances": [
+    {
+      "Id": "16",
+      "Class": "admininstration",
+      "Desc": "  Saldo aus laufender Verwaltungstätigkeit (Saldo Zeilen 8 und 15)",
+      "Budget2020": -811594.2,
+      "Budget2021": -801900,
+      "Budget2022": -696400,
+      "Budget2023": -689000,
+      "Budget2024": -700200,
+      "Budget2025": -711800,
+      "Accounts": [
+        {
+          "Id": "8",
+          "Desc": "  Einzahlungen aus laufender Verwaltungstätigkeit",
+          "Budget2020": 0,
+          "Budget2021": 9600,
+          "Budget2022": 16100,
+          "Budget2023": 8100,
+          "Budget2024": 8100,
+          "Budget2025": 8100,
+          "Subs": [
+            {
+              "Id": "2",
+              "Desc": "Zuweisungen und allgemeine Umlagen",
+              "Budget2020": 0,
+              "Budget2021": 0,
+              "Budget2022": 8000,
+              "Budget2023": 0,
+              "Budget2024": 0,
+              "Budget2025": 0,
+              "Units": [
+                {
+                  "Id": "6140011",
+                  "Desc": "Zuweisungen für laufende Zwecke vom Bund",
+                  "Budget2020": 0,
+                  "Budget2021": 0,
+                  "Budget2022": 8000,
+                  "Budget2023": 0,
+                  "Budget2024": 0,
+                  "Budget2025": 0
+                }
+              ]
+            },
+            {
+              "Id": "4",
+              "Desc": "öffentlich-rechtliche Leistungsentgelte",
+              "Budget2020": 0,
+              "Budget2021": 8100,
+              "Budget2022": 8100,
+              "Budget2023": 8100,
+              "Budget2024": 8100,
+              "Budget2025": 8100,
+              "Units": [
+                {
+                  "Id": "6321000",
+                  "Desc": "Benutzungsgebühren und ähnliche Entgelte",
+                  "Budget2020": 0,
+                  "Budget2021": 8100,
+                  "Budget2022": 8100,
+                  "Budget2023": 8100,
+                  "Budget2024": 8100,
+                  "Budget2025": 8100
+                }
+              ]
+            },
+            {
+              "Id": "5",
+              "Desc": "privatrechtliche Leistungsentgelte, Kostenerstattungen, Kostenumlagen",
+              "Budget2020": 0,
+              "Budget2021": 1500,
+              "Budget2022": 0,
+              "Budget2023": 0,
+              "Budget2024": 0,
+              "Budget2025": 0,
+              "Units": [
+                {
+                  "Id": "6461000",
+                  "Desc": "Sonstige privatrechtliche Leistungsentgelte",
+                  "Budget2020": 0,
+                  "Budget2021": 1500,
+                  "Budget2022": 0,
+                  "Budget2023": 0,
+                  "Budget2024": 0,
+                  "Budget2025": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "15",
+          "Desc": "  Auszahlungen aus laufender Verwaltungstätigkeit",
+          "Budget2020": 811594.2,
+          "Budget2021": 811500,
+          "Budget2022": 712500,
+          "Budget2023": 697100,
+          "Budget2024": 708300,
+          "Budget2025": 719900,
+          "Subs": [
+            {
+              "Id": "9",
+              "Desc": "Personalauszahlungen",
+              "Budget2020": 655455.34,
+              "Budget2021": 639000,
+              "Budget2022": 540500,
+              "Budget2023": 545100,
+              "Budget2024": 556300,
+              "Budget2025": 567900,
+              "Units": [
+                {
+                  "Id": "7011000",
+                  "Desc": "Dienstauszahlungen und dgl. an Beamte",
+                  "Budget2020": 112241.32,
+                  "Budget2021": 113800,
+                  "Budget2022": 117100,
+                  "Budget2023": 118200,
+                  "Budget2024": 120600,
+                  "Budget2025": 123100
+                },
+                {
+                  "Id": "7012000",
+                  "Desc": "Dienstauszahlungen und dgl. an Arbeitnehmer",
+                  "Budget2020": 375804.9,
+                  "Budget2021": 356900,
+                  "Budget2022": 268700,
+                  "Budget2023": 274000,
+                  "Budget2024": 279600,
+                  "Budget2025": 285300
+                },
+                {
+                  "Id": "7021000",
+                  "Desc": "Beiträge zu Versorgungskassen für Beamte",
+                  "Budget2020": 80008.3,
+                  "Budget2021": 81200,
+                  "Budget2022": 87800,
+                  "Budget2023": 84400,
+                  "Budget2024": 86100,
+                  "Budget2025": 87900
+                },
+                {
+                  "Id": "7022000",
+                  "Desc": "Beiträge zu Versorgungskassen für Arbeitnehmer",
+                  "Budget2020": 15057.38,
+                  "Budget2021": 15000,
+                  "Budget2022": 11200,
+                  "Budget2023": 11500,
+                  "Budget2024": 11800,
+                  "Budget2025": 12100
+                },
+                {
+                  "Id": "7032000",
+                  "Desc": "Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer",
+                  "Budget2020": 70713.23,
+                  "Budget2021": 70100,
+                  "Budget2022": 54000,
+                  "Budget2023": 55200,
+                  "Budget2024": 56300,
+                  "Budget2025": 57500
+                },
+                {
+                  "Id": "7041000",
+                  "Desc": "Beihilfen, Unterstützungsleistungen für Beschäftigte",
+                  "Budget2020": 1630.21,
+                  "Budget2021": 2000,
+                  "Budget2022": 1700,
+                  "Budget2023": 1800,
+                  "Budget2024": 1900,
+                  "Budget2025": 2000
+                }
+              ]
+            },
+            {
+              "Id": "11",
+              "Desc": "Auszahlungen für Sach- und Dienstleistungen",
+              "Budget2020": 79644.25,
+              "Budget2021": 78500,
+              "Budget2022": 86500,
+              "Budget2023": 71500,
+              "Budget2024": 71500,
+              "Budget2025": 71500,
+              "Units": [
+                {
+                  "Id": "7231000",
+                  "Desc": "Auszahlungen für Mieten und Pachten",
+                  "Budget2020": 0,
+                  "Budget2021": 1000,
+                  "Budget2022": 0,
+                  "Budget2023": 0,
+                  "Budget2024": 0,
+                  "Budget2025": 0
+                },
+                {
+                  "Id": "7271000",
+                  "Desc": "Besondere Verwaltungs- und Betriebsauszahlungen",
+                  "Budget2020": 78991.03,
+                  "Budget2021": 76000,
+                  "Budget2022": 75000,
+                  "Budget2023": 70000,
+                  "Budget2024": 70000,
+                  "Budget2025": 70000
+                },
+                {
+                  "Id": "7271400",
+                  "Desc": "Auszahlungen aus Kleinprojektefonds",
+                  "Budget2020": 0,
+                  "Budget2021": 0,
+                  "Budget2022": 10000,
+                  "Budget2023": 0,
+                  "Budget2024": 0,
+                  "Budget2025": 0
+                },
+                {
+                  "Id": "7291000",
+                  "Desc": "Auszahlungen für sonstige Dienstleistungen",
+                  "Budget2020": 653.22,
+                  "Budget2021": 1500,
+                  "Budget2022": 1500,
+                  "Budget2023": 1500,
+                  "Budget2024": 1500,
+                  "Budget2025": 1500
+                }
+              ]
+            },
+            {
+              "Id": "13",
+              "Desc": "Sonstige Auszahlungen",
+              "Budget2020": 76494.61,
+              "Budget2021": 94000,
+              "Budget2022": 85500,
+              "Budget2023": 80500,
+              "Budget2024": 80500,
+              "Budget2025": 80500,
+              "Units": [
+                {
+                  "Id": "7411000",
+                  "Desc": "Sonstige Personal- und Versorgungsauszahlungen",
+                  "Budget2020": 786.95,
+                  "Budget2021": 0,
+                  "Budget2022": 0,
+                  "Budget2023": 0,
+                  "Budget2024": 0,
+                  "Budget2025": 0
+                },
+                {
+                  "Id": "7431000",
+                  "Desc": "Geschäftsauszahlungen",
+                  "Budget2020": 75586.51,
+                  "Budget2021": 93500,
+                  "Budget2022": 85000,
+                  "Budget2023": 80000,
+                  "Budget2024": 80000,
+                  "Budget2025": 80000
+                },
+                {
+                  "Id": "7491000",
+                  "Desc": "Verfügungsmittel",
+                  "Budget2020": 121.15,
+                  "Budget2021": 500,
+                  "Budget2022": 500,
+                  "Budget2023": 500,
+                  "Budget2024": 500,
+                  "Budget2025": 500
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "34",
+      "Class": "balance-investments",
+      "Desc": " Saldo aus Investitionstätigkeit",
+      "Budget2020": 0,
+      "Budget2021": 0,
+      "Budget2022": 0,
+      "Budget2023": 0,
+      "Budget2024": 0,
+      "Budget2025": 0,
+      "Accounts": [
+        {
+          "Id": "17",
+          "Desc": " Investitionstätigkeit - Einzahlungen",
+          "Budget2020": 0,
+          "Budget2021": 0,
+          "Budget2022": 0,
+          "Budget2023": 0,
+          "Budget2024": 0,
+          "Budget2025": 0,
+          "Subs": null
+        },
+        {
+          "Id": "25",
+          "Desc": " Einzahlungen aus Investitionstätigkeit",
+          "Budget2020": 0,
+          "Budget2021": 0,
+          "Budget2022": 0,
+          "Budget2023": 0,
+          "Budget2024": 0,
+          "Budget2025": 0,
+          "Subs": null
+        },
+        {
+          "Id": "26",
+          "Desc": " Investitionstätigkeit - Auszahlungen",
+          "Budget2020": 0,
+          "Budget2021": 0,
+          "Budget2022": 0,
+          "Budget2023": 0,
+          "Budget2024": 0,
+          "Budget2025": 0,
+          "Subs": null
+        },
+        {
+          "Id": "33",
+          "Desc": " Auszahlungen aus Investitionstätigkeit",
+          "Budget2020": 0,
+          "Budget2021": 0,
+          "Budget2022": 0,
+          "Budget2023": 0,
+          "Budget2024": 0,
+          "Budget2025": 0,
+          "Subs": null
+        }
+      ]
+    }
+  ]
+}

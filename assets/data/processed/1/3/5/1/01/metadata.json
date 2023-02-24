@@ -1,1 +1,32 @@
-{"Department":{"ID":"1","Name":"Budget Oberbürgermeister","Accountable":"Herr Gaffert"},"ProductClass":{"ID":"3","Name":"Soziales und Jugend","Accountable":"Oberbürgermeister"},"ProductDomain":{"ID":"3.5","Name":"Sonstige soziale Hilfen und Leistungen","Responsible":"Herr Radünzel"},"ProductGroup":{"ID":"3.5.1","Name":"Sonstige soziale Hilfen und Leistungen","Desc":"externes Produkt"},"Product":{"ID":"3.5.1.01","Name":"Förderung von zusätzlichen Arbeitsplätzen","LegalRequirement":"Freiwillige Aufgabe"},"Description":" Unterstützung von einzelnen Fachbereichen durch zusätzliche, nicht im Stellenplan enthaltene Stellen","Mission":" Bundesrecht","Target":"Personengruppen des öffentlichen Lebens","Objectives":" Mehrwert durch erhöhte Standards und Service in den Fachbereichen / Zurückführen von,,,, Arbeitssuchenden in den ersten Arbeitsmarkt,,,,","Services":" In den verschiedenen Fachbereichen werden verschiedene Projekte umgesetzt. die zu einer überobligatorischen Qualitätssteigerung zugunsten der Allgemeinheit führen.,"}
+{
+  "Department": {
+    "ID": "1",
+    "Name": "Budget Oberbürgermeister",
+    "Accountable": "Herr Gaffert"
+  },
+  "ProductClass": {
+    "ID": "3",
+    "Name": "Soziales und Jugend",
+    "Accountable": "Oberbürgermeister"
+  },
+  "ProductDomain": {
+    "ID": "3.5",
+    "Name": "Sonstige soziale Hilfen und Leistungen",
+    "Responsible": "Herr Radünzel"
+  },
+  "ProductGroup": {
+    "ID": "3.5.1",
+    "Name": "Sonstige soziale Hilfen und Leistungen",
+    "Desc": "externes Produkt"
+  },
+  "Product": {
+    "ID": "3.5.1.01",
+    "Name": "Förderung von zusätzlichen Arbeitsplätzen",
+    "LegalRequirement": "Freiwillige Aufgabe"
+  },
+  "Description": " Unterstützung von einzelnen Fachbereichen durch zusätzliche, nicht im Stellenplan enthaltene Stellen",
+  "Mission": " Bundesrecht",
+  "Target": "Personengruppen des öffentlichen Lebens",
+  "Objectives": " Mehrwert durch erhöhte Standards und Service in den Fachbereichen / Zurückführen von,,,, Arbeitssuchenden in den ersten Arbeitsmarkt,,,,",
+  "Services": " In den verschiedenen Fachbereichen werden verschiedene Projekte umgesetzt. die zu einer überobligatorischen Qualitätssteigerung zugunsten der Allgemeinheit führen.,"
+}
