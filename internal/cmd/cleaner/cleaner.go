@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	decodeFpa2 "wernigode-in-zahlen.de/internal/pkg/decoder/financialplan_a"
+	decodeFpa "wernigode-in-zahlen.de/internal/pkg/decoder/financialplan_a"
 	decodeMeta "wernigode-in-zahlen.de/internal/pkg/decoder/metadata"
 	"wernigode-in-zahlen.de/internal/pkg/decoder/rawcsv"
 	"wernigode-in-zahlen.de/internal/pkg/model"
@@ -29,7 +29,7 @@ func CleanUpMetadata(metadataFile *os.File) model.Metadata {
 		}
 	}()
 
-	metadata := metadataDecoder.Decode(metadataLines)
+	metadata := metadataDecoder.DecodeFromCSV(metadataLines)
 
 	return metadata
 }
@@ -54,5 +54,5 @@ func CleanUpFinancialPlanA(financialPlaAFile *os.File) model.FinancialPlanA {
 		rawCSVRows = append(rawCSVRows, rawCSVDecoder.Decode(line))
 	}
 
-	return decodeFpa2.Decode(rawCSVRows)
+	return decodeFpa.DecodeFromCSV(rawCSVRows)
 }

@@ -115,7 +115,7 @@ func (d MetadataDecoder) Debug() {
 	fmt.Printf("Mission/Target: %+v\n", d.missionAndTargetRegex)
 }
 
-func (p MetadataDecoder) Decode(lines []string) model.Metadata {
+func (p MetadataDecoder) DecodeFromCSV(lines []string) model.Metadata {
 	metadata := &model.Metadata{}
 
 	if !p.decodeDepartment(metadata, lines[0]) {
