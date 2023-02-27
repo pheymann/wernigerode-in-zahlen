@@ -10,17 +10,17 @@
     "Accountable": "Oberbürgermeister"
   },
   "ProductDomain": {
-    "ID": "5.5",
+    "ID": "5",
     "Name": "Natur- und Landschaftspflege",
     "Responsible": "Herr Kramer"
   },
   "ProductGroup": {
-    "ID": "5.5.1",
+    "ID": "1",
     "Name": "Öffentliches Grün/Landschaftsbau",
     "Desc": "externes Produkt"
   },
   "Product": {
-    "ID": "5.5.1.02",
+    "ID": "02",
     "Name": "Park-und Garten GmbH",
     "LegalRequirement": "Freiwillige Aufgabe"
   },

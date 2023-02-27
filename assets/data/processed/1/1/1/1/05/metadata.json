@@ -10,17 +10,17 @@
     "Accountable": "Personalrat"
   },
   "ProductDomain": {
-    "ID": "1.1",
+    "ID": "1",
     "Name": "Innere Verwaltung",
     "Responsible": "Herr Sauter"
   },
   "ProductGroup": {
-    "ID": "1.1.1",
+    "ID": "1",
     "Name": "Verwaltungssteuerung und -service",
     "Desc": "externes Produkt"
   },
   "Product": {
-    "ID": "1.1.1.05",
+    "ID": "05",
     "Name": "Personalvertretung",
     "LegalRequirement": "Pflichtaufgabe"
   },

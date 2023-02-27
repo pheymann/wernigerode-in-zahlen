@@ -150,3 +150,7 @@ func (fpa *FinancialPlanA) UpdateLastUnitAccount(f func(UnitAccount) UnitAccount
 		return subAccount
 	})
 }
+
+func (sub SubAccount) HasUnits() bool {
+	return len(sub.Units) > 0
+}

@@ -4,7 +4,33 @@
 </head>
 <html>
   <body>
-    <h1>{{.Product.ID}} - {{.Product.Name}}</h1>
-    <h2>Finanzplan A</h2>
+    <h1>Product - {{.Meta.Product.Name}}</h1>
+    <p class="bread-crumps">
+      /{{.Meta.Department.ID}}/{{.Meta.ProductClass.ID}}/{{.Meta.ProductDomain.ID}}/{{.Meta.ProductGroup.ID}}/{{.Meta.Product.ID}}
+    </a>
+
+    <h2 class="cash-flow-total-{{.CSS.TotalCashflowClass}}">{{.Copy.CashflowTotal}}</h2>
+
+    <div class="container">
+      {{range .ChartData}}
+        {{.Balance.Id}}
+        {{range .DataPoints}}
+          {{.}}
+        {{end}}
+      {{end}}
+    </div>
+
+    <a href="/{{.Meta.Department.ID}}">{{.Copy.BackLink}}</a>
+
+    <!-- metadata table -->
+    <ul>
+      <li>{{.Copy.MetaDepartment}}: {{.Meta.Department.Name}}</li>
+      <li>{{.Copy.MetaProductClass}}: {{.Meta.ProductClass.Name}}</li>
+      <li>{{.Copy.MetaProductDomain}}: {{.Meta.ProductDomain.Name}}</li>
+      <li>{{.Copy.MetaProductGroup}}: {{.Meta.ProductGroup.Name}}</li>
+      <li>{{.Copy.MetaProduct}}: {{.Meta.Product.Name}}</li>
+      <li>{{.Copy.MetaAccountable}}: {{.Meta.ProductClass.Accountable}}</li>
+      <li>{{.Copy.MetaResponsible}}: {{.Meta.ProductDomain.Responsible}}</li>
+    </ul>
   </body>
 </html>

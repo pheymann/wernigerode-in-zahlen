@@ -10,17 +10,17 @@
     "Accountable": "Oberbürgermeister"
   },
   "ProductDomain": {
-    "ID": "1.1",
+    "ID": "1",
     "Name": "Innere Verwaltung",
     "Responsible": "Herr Hamecher"
   },
   "ProductGroup": {
-    "ID": "1.1.1",
+    "ID": "1",
     "Name": "Verwaltungssteuerung und -service",
     "Desc": "internes Produkt"
   },
   "Product": {
-    "ID": "1.1.1.02",
+    "ID": "02",
     "Name": "Beteiligungen, Controlling",
     "LegalRequirement": "Pflichtaufgabe"
   },

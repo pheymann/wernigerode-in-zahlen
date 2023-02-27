@@ -40,14 +40,14 @@ func NewMetadataDecoder() MetadataDecoder {
 		),
 		productDomainRegex: regexp.MustCompile(
 			fmt.Sprintf(
-				`^Produktbereich (?P<product_domain>\d+\.\d+),+(?P<product_domain_name>[ %s-]+),+zuständig:,*( )*(?P<responsible>[ %s-]+)`,
+				`^Produktbereich \d+\.(?P<product_domain>\d+),+(?P<product_domain_name>[ %s-]+),+zuständig:,*( )*(?P<responsible>[ %s-]+)`,
 				decoder.RxGermanLetter,
 				decoder.RxGermanLetter,
 			),
 		),
 		productGroupRegex: regexp.MustCompile(
 			fmt.Sprintf(
-				`^Produktgruppe (?P<product_group>\d+\.\d+\.\d+),+(?P<product_group_name>[ %s\-/]+),+Produktart:,*( )*(?P<desc>[ %s-]+)`,
+				`^Produktgruppe \d+\.\d+\.(?P<product_group>\d+),+(?P<product_group_name>[ %s\-/]+),+Produktart:,*( )*(?P<desc>[ %s-]+)`,
 				decoder.RxGermanLetter,
 				decoder.RxGermanLetter,
 			),
@@ -55,14 +55,14 @@ func NewMetadataDecoder() MetadataDecoder {
 		productRegex: []*regexp.Regexp{
 			regexp.MustCompile(
 				fmt.Sprintf(
-					`^Produkt (?P<product>\d+\.\d+\.\d+\.\d+),+(?P<product_name>[ %s\-]+),+Rechtsbindung:,*( )*(?P<legal_requirement>[ %s-]+)`,
+					`^Produkt \d+\.\d+\.\d+\.(?P<product>\d+),+(?P<product_name>[ %s\-]+),+Rechtsbindung:,*( )*(?P<legal_requirement>[ %s-]+)`,
 					decoder.RxGermanLetter,
 					decoder.RxGermanLetter,
 				),
 			),
 			regexp.MustCompile(
 				fmt.Sprintf(
-					`^Produkt (?P<product>\d+\.\d+\.\d+\.\d+),+"(?P<product_name>[ %s\-,]+)",+Rechtsbindung:,*( )*(?P<legal_requirement>[ %s-]+)`,
+					`^Produkt \d+\.\d+\.\d+\.(?P<product>\d+),+"(?P<product_name>[ %s\-,]+)",+Rechtsbindung:,*( )*(?P<legal_requirement>[ %s-]+)`,
 					decoder.RxGermanLetter,
 					decoder.RxGermanLetter,
 				),

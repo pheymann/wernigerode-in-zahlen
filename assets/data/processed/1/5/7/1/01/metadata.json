@@ -10,17 +10,17 @@
     "Accountable": "Oberbürgermeister"
   },
   "ProductDomain": {
-    "ID": "5.7",
+    "ID": "7",
     "Name": "Wirtschaft und Tourismus",
     "Responsible": "Herr Quednau"
   },
   "ProductGroup": {
-    "ID": "5.7.1",
+    "ID": "1",
     "Name": "Wirtschaftsförderung",
     "Desc": "externes Produkt"
   },
   "Product": {
-    "ID": "5.7.1.01",
+    "ID": "01",
     "Name": "Wirtschaftsförderung",
     "LegalRequirement": "Freiwillige Aufgabe"
   },

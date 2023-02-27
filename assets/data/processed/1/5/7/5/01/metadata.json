@@ -10,17 +10,17 @@
     "Accountable": "Oberbürgermeister"
   },
   "ProductDomain": {
-    "ID": "5.7",
+    "ID": "7",
     "Name": "Wirtschaft und Tourismus",
     "Responsible": "Herr Hamecher"
   },
   "ProductGroup": {
-    "ID": "5.7.5",
+    "ID": "5",
     "Name": "Tourismus",
     "Desc": "externes Produkt"
   },
   "Product": {
-    "ID": "5.7.5.01",
+    "ID": "01",
     "Name": "Tourismusförderung",
     "LegalRequirement": "Freiwillige Aufgabe"
   },

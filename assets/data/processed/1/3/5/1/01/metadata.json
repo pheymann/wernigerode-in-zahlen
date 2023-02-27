@@ -10,17 +10,17 @@
     "Accountable": "Oberbürgermeister"
   },
   "ProductDomain": {
-    "ID": "3.5",
+    "ID": "5",
     "Name": "Sonstige soziale Hilfen und Leistungen",
     "Responsible": "Herr Radünzel"
   },
   "ProductGroup": {
-    "ID": "3.5.1",
+    "ID": "1",
     "Name": "Sonstige soziale Hilfen und Leistungen",
     "Desc": "externes Produkt"
   },
   "Product": {
-    "ID": "3.5.1.01",
+    "ID": "01",
     "Name": "Förderung von zusätzlichen Arbeitsplätzen",
     "LegalRequirement": "Freiwillige Aufgabe"
   },

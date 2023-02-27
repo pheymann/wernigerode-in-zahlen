@@ -10,17 +10,17 @@
     "Accountable": "Oberbürgermeister"
   },
   "ProductDomain": {
-    "ID": "1.2",
+    "ID": "2",
     "Name": "Sicherheit und Ordnung",
     "Responsible": "Herr Radünzel"
   },
   "ProductGroup": {
-    "ID": "1.2.1",
+    "ID": "1",
     "Name": "Statistik und Wahlen",
     "Desc": "externes Produkt"
   },
   "Product": {
-    "ID": "1.2.1.01",
+    "ID": "01",
     "Name": "Wahlen und Statistik",
     "LegalRequirement": "Pflichtaufgabe"
   },

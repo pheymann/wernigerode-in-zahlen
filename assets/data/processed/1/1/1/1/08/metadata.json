@@ -10,17 +10,17 @@
     "Accountable": "Oberbürgermeister"
   },
   "ProductDomain": {
-    "ID": "1.1",
+    "ID": "1",
     "Name": "Innere Verwaltung",
     "Responsible": "Herr Radünzel"
   },
   "ProductGroup": {
-    "ID": "1.1.1",
+    "ID": "1",
     "Name": "Verwaltungssteuerung und -service",
     "Desc": "internes Produkt"
   },
   "Product": {
-    "ID": "1.1.1.08",
+    "ID": "08",
     "Name": "Gemeindegremien",
     "LegalRequirement": "Pflichtaufgabe"
   },

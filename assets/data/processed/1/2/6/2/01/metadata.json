@@ -10,17 +10,17 @@
     "Accountable": "Oberbürgermeister"
   },
   "ProductDomain": {
-    "ID": "2.6",
+    "ID": "6",
     "Name": "Kultureinrichtungen",
     "Responsible": "Herr Hamecher"
   },
   "ProductGroup": {
-    "ID": "2.6.2",
+    "ID": "2",
     "Name": "Musikpflege",
     "Desc": "externes Produkt"
   },
   "Product": {
-    "ID": "2.6.2.01",
+    "ID": "01",
     "Name": "Philharmonisches Kammerorchester GmbH",
     "LegalRequirement": "Freiwillige Aufgabe"
   },
