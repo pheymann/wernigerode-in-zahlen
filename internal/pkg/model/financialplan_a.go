@@ -11,52 +11,43 @@ const (
 	AccountClassInvestments    AccountClass = "balance-investments"
 )
 
+type BudgetYear = string
+
+const (
+	BudgetYear2020 BudgetYear = "2020"
+	BudgetYear2021 BudgetYear = "2021"
+	BudgetYear2022 BudgetYear = "2022"
+	BudgetYear2023 BudgetYear = "2023"
+	BudgetYear2024 BudgetYear = "2024"
+	BudgetYear2025 BudgetYear = "2025"
+)
+
 type AccountBalance struct {
-	Id         string
-	Class      AccountClass
-	Desc       string
-	Budget2020 float64
-	Budget2021 float64
-	Budget2022 float64
-	Budget2023 float64
-	Budget2024 float64
-	Budget2025 float64
-	Accounts   []Account
+	Id       string
+	Class    AccountClass
+	Desc     string
+	Budgets  map[BudgetYear]float64
+	Accounts []Account
 }
 
 type Account struct {
-	Id         string
-	Desc       string
-	Budget2020 float64
-	Budget2021 float64
-	Budget2022 float64
-	Budget2023 float64
-	Budget2024 float64
-	Budget2025 float64
-	Subs       []SubAccount
+	Id      string
+	Desc    string
+	Budgets map[BudgetYear]float64
+	Subs    []SubAccount
 }
 
 type SubAccount struct {
-	Id         string
-	Desc       string
-	Budget2020 float64
-	Budget2021 float64
-	Budget2022 float64
-	Budget2023 float64
-	Budget2024 float64
-	Budget2025 float64
-	Units      []UnitAccount
+	Id      string
+	Desc    string
+	Budgets map[BudgetYear]float64
+	Units   []UnitAccount
 }
 
 type UnitAccount struct {
-	Id         string
-	Desc       string
-	Budget2020 float64
-	Budget2021 float64
-	Budget2022 float64
-	Budget2023 float64
-	Budget2024 float64
-	Budget2025 float64
+	Id      string
+	Desc    string
+	Budgets map[BudgetYear]float64
 }
 
 func (fpa *FinancialPlanA) AddAccountBalance(balance AccountBalance) {

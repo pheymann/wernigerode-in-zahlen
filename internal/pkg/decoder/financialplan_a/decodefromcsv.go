@@ -114,55 +114,63 @@ func updateDesc(original string, regex *regexp.Regexp, matches []string) string 
 
 func decodeAccountBalance(row model.RawCSVRow, id string, class model.AccountClass, balance model.AccountBalance) model.AccountBalance {
 	return model.AccountBalance{
-		Id:         id,
-		Class:      class,
-		Desc:       decoder.DecodeString(row.Regexp, "desc", row.Matches),
-		Budget2020: decoder.DecodeBudget(row.Regexp, "_2020", row.Matches),
-		Budget2021: decoder.DecodeBudget(row.Regexp, "_2021", row.Matches),
-		Budget2022: decoder.DecodeBudget(row.Regexp, "_2022", row.Matches),
-		Budget2023: decoder.DecodeBudget(row.Regexp, "_2023", row.Matches),
-		Budget2024: decoder.DecodeBudget(row.Regexp, "_2024", row.Matches),
-		Budget2025: decoder.DecodeBudget(row.Regexp, "_2025", row.Matches),
-		Accounts:   balance.Accounts,
+		Id:    id,
+		Class: class,
+		Desc:  decoder.DecodeString(row.Regexp, "desc", row.Matches),
+		Budgets: map[model.BudgetYear]float64{
+			model.BudgetYear2020: decoder.DecodeBudget(row.Regexp, "_2020", row.Matches),
+			model.BudgetYear2021: decoder.DecodeBudget(row.Regexp, "_2021", row.Matches),
+			model.BudgetYear2022: decoder.DecodeBudget(row.Regexp, "_2022", row.Matches),
+			model.BudgetYear2023: decoder.DecodeBudget(row.Regexp, "_2023", row.Matches),
+			model.BudgetYear2024: decoder.DecodeBudget(row.Regexp, "_2024", row.Matches),
+			model.BudgetYear2025: decoder.DecodeBudget(row.Regexp, "_2025", row.Matches),
+		},
+		Accounts: balance.Accounts,
 	}
 }
 
 func decodeAccount(row model.RawCSVRow, id string, account model.Account) model.Account {
 	return model.Account{
-		Id:         id,
-		Desc:       decoder.DecodeString(row.Regexp, "desc", row.Matches),
-		Budget2020: decoder.DecodeBudget(row.Regexp, "_2020", row.Matches),
-		Budget2021: decoder.DecodeBudget(row.Regexp, "_2021", row.Matches),
-		Budget2022: decoder.DecodeBudget(row.Regexp, "_2022", row.Matches),
-		Budget2023: decoder.DecodeBudget(row.Regexp, "_2023", row.Matches),
-		Budget2024: decoder.DecodeBudget(row.Regexp, "_2024", row.Matches),
-		Budget2025: decoder.DecodeBudget(row.Regexp, "_2025", row.Matches),
-		Subs:       account.Subs,
+		Id:   id,
+		Desc: decoder.DecodeString(row.Regexp, "desc", row.Matches),
+		Budgets: map[model.BudgetYear]float64{
+			model.BudgetYear2020: decoder.DecodeBudget(row.Regexp, "_2020", row.Matches),
+			model.BudgetYear2021: decoder.DecodeBudget(row.Regexp, "_2021", row.Matches),
+			model.BudgetYear2022: decoder.DecodeBudget(row.Regexp, "_2022", row.Matches),
+			model.BudgetYear2023: decoder.DecodeBudget(row.Regexp, "_2023", row.Matches),
+			model.BudgetYear2024: decoder.DecodeBudget(row.Regexp, "_2024", row.Matches),
+			model.BudgetYear2025: decoder.DecodeBudget(row.Regexp, "_2025", row.Matches),
+		},
+		Subs: account.Subs,
 	}
 }
 
 func decodeSubAccount(row model.RawCSVRow, id string) model.SubAccount {
 	return model.SubAccount{
-		Id:         id,
-		Desc:       decoder.DecodeString(row.Regexp, "desc", row.Matches),
-		Budget2020: decoder.DecodeBudget(row.Regexp, "_2020", row.Matches),
-		Budget2021: decoder.DecodeBudget(row.Regexp, "_2021", row.Matches),
-		Budget2022: decoder.DecodeBudget(row.Regexp, "_2022", row.Matches),
-		Budget2023: decoder.DecodeBudget(row.Regexp, "_2023", row.Matches),
-		Budget2024: decoder.DecodeBudget(row.Regexp, "_2024", row.Matches),
-		Budget2025: decoder.DecodeBudget(row.Regexp, "_2025", row.Matches),
+		Id:   id,
+		Desc: decoder.DecodeString(row.Regexp, "desc", row.Matches),
+		Budgets: map[model.BudgetYear]float64{
+			model.BudgetYear2020: decoder.DecodeBudget(row.Regexp, "_2020", row.Matches),
+			model.BudgetYear2021: decoder.DecodeBudget(row.Regexp, "_2021", row.Matches),
+			model.BudgetYear2022: decoder.DecodeBudget(row.Regexp, "_2022", row.Matches),
+			model.BudgetYear2023: decoder.DecodeBudget(row.Regexp, "_2023", row.Matches),
+			model.BudgetYear2024: decoder.DecodeBudget(row.Regexp, "_2024", row.Matches),
+			model.BudgetYear2025: decoder.DecodeBudget(row.Regexp, "_2025", row.Matches),
+		},
 	}
 }
 
 func decodeUnitAccount(row model.RawCSVRow, id string) model.UnitAccount {
 	return model.UnitAccount{
-		Id:         id,
-		Desc:       decoder.DecodeString(row.Regexp, "desc", row.Matches),
-		Budget2020: decoder.DecodeBudget(row.Regexp, "_2020", row.Matches),
-		Budget2021: decoder.DecodeBudget(row.Regexp, "_2021", row.Matches),
-		Budget2022: decoder.DecodeBudget(row.Regexp, "_2022", row.Matches),
-		Budget2023: decoder.DecodeBudget(row.Regexp, "_2023", row.Matches),
-		Budget2024: decoder.DecodeBudget(row.Regexp, "_2024", row.Matches),
-		Budget2025: decoder.DecodeBudget(row.Regexp, "_2025", row.Matches),
+		Id:   id,
+		Desc: decoder.DecodeString(row.Regexp, "desc", row.Matches),
+		Budgets: map[model.BudgetYear]float64{
+			model.BudgetYear2020: decoder.DecodeBudget(row.Regexp, "_2020", row.Matches),
+			model.BudgetYear2021: decoder.DecodeBudget(row.Regexp, "_2021", row.Matches),
+			model.BudgetYear2022: decoder.DecodeBudget(row.Regexp, "_2022", row.Matches),
+			model.BudgetYear2023: decoder.DecodeBudget(row.Regexp, "_2023", row.Matches),
+			model.BudgetYear2024: decoder.DecodeBudget(row.Regexp, "_2024", row.Matches),
+			model.BudgetYear2025: decoder.DecodeBudget(row.Regexp, "_2025", row.Matches),
+		},
 	}
 }

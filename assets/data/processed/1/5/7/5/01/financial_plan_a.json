@@ -4,116 +4,138 @@
       "Id": "16",
       "Class": "admininstration",
       "Desc": "  Saldo aus laufender Verwaltungstätigkeit (Saldo Zeilen 8 und 15)",
-      "Budget2020": -196046.22,
-      "Budget2021": -199500,
-      "Budget2022": -165600,
-      "Budget2023": 157300,
-      "Budget2024": 599400,
-      "Budget2025": 599400,
+      "Budgets": {
+        "2020": -196046.22,
+        "2021": -199500,
+        "2022": -165600,
+        "2023": 157300,
+        "2024": 599400,
+        "2025": 599400
+      },
       "Accounts": [
         {
           "Id": "8",
           "Desc": "  Einzahlungen aus laufender Verwaltungstätigkeit",
-          "Budget2020": 2440476.24,
-          "Budget2021": 2820100,
-          "Budget2022": 2581000,
-          "Budget2023": 2782000,
-          "Budget2024": 3245000,
-          "Budget2025": 3245000,
+          "Budgets": {
+            "2020": 2440476.24,
+            "2021": 2820100,
+            "2022": 2581000,
+            "2023": 2782000,
+            "2024": 3245000,
+            "2025": 3245000
+          },
           "Subs": [
             {
               "Id": "2",
               "Desc": "Zuweisungen und allgemeine Umlagen",
-              "Budget2020": 129486.08,
-              "Budget2021": 0,
-              "Budget2022": 0,
-              "Budget2023": 0,
-              "Budget2024": 0,
-              "Budget2025": 0,
+              "Budgets": {
+                "2020": 129486.08,
+                "2021": 0,
+                "2022": 0,
+                "2023": 0,
+                "2024": 0,
+                "2025": 0
+              },
               "Units": [
                 {
                   "Id": "6145000",
                   "Desc": "Zuschüsse für lfd. Zwecke von verbund. Untern., Beteiligungen und Sondervermögen",
-                  "Budget2020": 129486.08,
-                  "Budget2021": 0,
-                  "Budget2022": 0,
-                  "Budget2023": 0,
-                  "Budget2024": 0,
-                  "Budget2025": 0
+                  "Budgets": {
+                    "2020": 129486.08,
+                    "2021": 0,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
                 }
               ]
             },
             {
               "Id": "4",
               "Desc": "öffentlich-rechtliche Leistungsentgelte",
-              "Budget2020": 2180235.08,
-              "Budget2021": 2581000,
-              "Budget2022": 2581000,
-              "Budget2023": 2782000,
-              "Budget2024": 3245000,
-              "Budget2025": 3245000,
+              "Budgets": {
+                "2020": 2180235.08,
+                "2021": 2581000,
+                "2022": 2581000,
+                "2023": 2782000,
+                "2024": 3245000,
+                "2025": 3245000
+              },
               "Units": [
                 {
                   "Id": "6361000",
                   "Desc": "Zweckgebundene Abgaben (Kurbeitrag)",
-                  "Budget2020": 2180235.08,
-                  "Budget2021": 2581000,
-                  "Budget2022": 2581000,
-                  "Budget2023": 2782000,
-                  "Budget2024": 3245000,
-                  "Budget2025": 3245000
+                  "Budgets": {
+                    "2020": 2180235.08,
+                    "2021": 2581000,
+                    "2022": 2581000,
+                    "2023": 2782000,
+                    "2024": 3245000,
+                    "2025": 3245000
+                  }
                 }
               ]
             },
             {
               "Id": "6",
               "Desc": "sonstige Einzahlungen",
-              "Budget2020": 130755.08,
-              "Budget2021": 239100,
-              "Budget2022": 0,
-              "Budget2023": 0,
-              "Budget2024": 0,
-              "Budget2025": 0,
+              "Budgets": {
+                "2020": 130755.08,
+                "2021": 239100,
+                "2022": 0,
+                "2023": 0,
+                "2024": 0,
+                "2025": 0
+              },
               "Units": [
                 {
                   "Id": "6521100",
                   "Desc": "Einnahmen Mehrwertsteuer 7%",
-                  "Budget2020": 65232.71,
-                  "Budget2021": 180600,
-                  "Budget2022": 0,
-                  "Budget2023": 0,
-                  "Budget2024": 0,
-                  "Budget2025": 0
+                  "Budgets": {
+                    "2020": 65232.71,
+                    "2021": 180600,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
                 },
                 {
                   "Id": "6521105",
                   "Desc": "Einnahmen Mehrwertsteuer 5%",
-                  "Budget2020": 62416.96,
-                  "Budget2021": 0,
-                  "Budget2022": 0,
-                  "Budget2023": 0,
-                  "Budget2024": 0,
-                  "Budget2025": 0
+                  "Budgets": {
+                    "2020": 62416.96,
+                    "2021": 0,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
                 },
                 {
                   "Id": "6521200",
                   "Desc": "Einnahmen Mehrwertsteuer 19%",
-                  "Budget2020": 23.23,
-                  "Budget2021": 100,
-                  "Budget2022": 0,
-                  "Budget2023": 0,
-                  "Budget2024": 0,
-                  "Budget2025": 0
+                  "Budgets": {
+                    "2020": 23.23,
+                    "2021": 100,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
                 },
                 {
                   "Id": "6521300",
                   "Desc": "Erstattungen Vorsteuer",
-                  "Budget2020": 3082.18,
-                  "Budget2021": 58400,
-                  "Budget2022": 0,
-                  "Budget2023": 0,
-                  "Budget2024": 0,
-                  "Budget2025": 0
+                  "Budgets": {
+                    "2020": 3082.18,
+                    "2021": 58400,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
                 }
               ]
             }
@@ -122,114 +144,136 @@
         {
           "Id": "15",
           "Desc": "  Auszahlungen aus laufender Verwaltungstätigkeit",
-          "Budget2020": 2636522.46,
-          "Budget2021": 3019600,
-          "Budget2022": 2746600,
-          "Budget2023": 2624700,
-          "Budget2024": 2645600,
-          "Budget2025": 2645600,
+          "Budgets": {
+            "2020": 2636522.46,
+            "2021": 3019600,
+            "2022": 2746600,
+            "2023": 2624700,
+            "2024": 2645600,
+            "2025": 2645600
+          },
           "Subs": [
             {
               "Id": "12",
               "Desc": "Transferauszahlungen",
-              "Budget2020": 199403,
-              "Budget2021": 199500,
-              "Budget2022": 2630500,
-              "Budget2023": 2499500,
-              "Budget2024": 2499500,
-              "Budget2025": 2499500,
+              "Budgets": {
+                "2020": 199403,
+                "2021": 199500,
+                "2022": 2630500,
+                "2023": 2499500,
+                "2024": 2499500,
+                "2025": 2499500
+              },
               "Units": [
                 {
                   "Id": "7316000",
                   "Desc": "Zuschüsse an sonstige öffentliche Sonderrechnungen (HSB)",
-                  "Budget2020": 199403,
-                  "Budget2021": 199500,
-                  "Budget2022": 0,
-                  "Budget2023": 0,
-                  "Budget2024": 0,
-                  "Budget2025": 0
+                  "Budgets": {
+                    "2020": 199403,
+                    "2021": 199500,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
                 },
                 {
                   "Id": "7316100",
                   "Desc": "Zusch. öff. SondRechn. HSB",
-                  "Budget2020": 0,
-                  "Budget2021": 0,
-                  "Budget2022": 199500,
-                  "Budget2023": 199500,
-                  "Budget2024": 199500,
-                  "Budget2025": 199500
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 0,
+                    "2022": 199500,
+                    "2023": 199500,
+                    "2024": 199500,
+                    "2025": 199500
+                  }
                 },
                 {
                   "Id": "7316200",
                   "Desc": "Zusch. öff.SondRechn. HSB Kurb",
-                  "Budget2020": 0,
-                  "Budget2021": 0,
-                  "Budget2022": 2431000,
-                  "Budget2023": 2300000,
-                  "Budget2024": 2300000,
-                  "Budget2025": 2300000
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 0,
+                    "2022": 2431000,
+                    "2023": 2300000,
+                    "2024": 2300000,
+                    "2025": 2300000
+                  }
                 }
               ]
             },
             {
               "Id": "13",
               "Desc": "Sonstige Auszahlungen",
-              "Budget2020": 2437119.46,
-              "Budget2021": 2820100,
-              "Budget2022": 116100,
-              "Budget2023": 125200,
-              "Budget2024": 146100,
-              "Budget2025": 146100,
+              "Budgets": {
+                "2020": 2437119.46,
+                "2021": 2820100,
+                "2022": 116100,
+                "2023": 125200,
+                "2024": 146100,
+                "2025": 146100
+              },
               "Units": [
                 {
                   "Id": "7441200",
                   "Desc": "Abzugsfähige Vorsteuer 19%",
-                  "Budget2020": 28113.63,
-                  "Budget2021": 58400,
-                  "Budget2022": 0,
-                  "Budget2023": 0,
-                  "Budget2024": 0,
-                  "Budget2025": 0
+                  "Budgets": {
+                    "2020": 28113.63,
+                    "2021": 58400,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
                 },
                 {
                   "Id": "7441216",
                   "Desc": "Abzugsfähige Vorsteuer 16%",
-                  "Budget2020": 10965.22,
-                  "Budget2021": 0,
-                  "Budget2022": 0,
-                  "Budget2023": 0,
-                  "Budget2024": 0,
-                  "Budget2025": 0
+                  "Budgets": {
+                    "2020": 10965.22,
+                    "2021": 0,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
                 },
                 {
                   "Id": "7441300",
                   "Desc": "Abführung Mehrwertsteuer",
-                  "Budget2020": 113395.05,
-                  "Budget2021": 180700,
-                  "Budget2022": 0,
-                  "Budget2023": 0,
-                  "Budget2024": 0,
-                  "Budget2025": 0
+                  "Budgets": {
+                    "2020": 113395.05,
+                    "2021": 180700,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
                 },
                 {
                   "Id": "7455000",
                   "Desc": "Erstatt. f.d. Ausz. v. Dritte a. lfd VerwTät. an verb. Unternehmen (Kurbeitrag)",
-                  "Budget2020": 2284645.56,
-                  "Budget2021": 2464800,
-                  "Budget2022": 0,
-                  "Budget2023": 0,
-                  "Budget2024": 0,
-                  "Budget2025": 0
+                  "Budgets": {
+                    "2020": 2284645.56,
+                    "2021": 2464800,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
                 },
                 {
                   "Id": "7455001",
                   "Desc": "Einbehalt für Entgelt WTG",
-                  "Budget2020": 0,
-                  "Budget2021": 116200,
-                  "Budget2022": 116100,
-                  "Budget2023": 125200,
-                  "Budget2024": 146100,
-                  "Budget2025": 146100
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 116200,
+                    "2022": 116100,
+                    "2023": 125200,
+                    "2024": 146100,
+                    "2025": 146100
+                  }
                 }
               ]
             }
@@ -241,55 +285,65 @@
       "Id": "34",
       "Class": "balance-investments",
       "Desc": " Saldo aus Investitionstätigkeit",
-      "Budget2020": 0,
-      "Budget2021": 0,
-      "Budget2022": 0,
-      "Budget2023": 0,
-      "Budget2024": 0,
-      "Budget2025": 0,
+      "Budgets": {
+        "2020": 0,
+        "2021": 0,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
       "Accounts": [
         {
           "Id": "17",
           "Desc": " Investitionstätigkeit - Einzahlungen",
-          "Budget2020": 0,
-          "Budget2021": 0,
-          "Budget2022": 0,
-          "Budget2023": 0,
-          "Budget2024": 0,
-          "Budget2025": 0,
+          "Budgets": {
+            "2020": 0,
+            "2021": 0,
+            "2022": 0,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
           "Subs": null
         },
         {
           "Id": "25",
           "Desc": " Einzahlungen aus Investitionstätigkeit",
-          "Budget2020": 0,
-          "Budget2021": 0,
-          "Budget2022": 0,
-          "Budget2023": 0,
-          "Budget2024": 0,
-          "Budget2025": 0,
+          "Budgets": {
+            "2020": 0,
+            "2021": 0,
+            "2022": 0,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
           "Subs": null
         },
         {
           "Id": "26",
           "Desc": " Investitionstätigkeit - Auszahlungen",
-          "Budget2020": 0,
-          "Budget2021": 0,
-          "Budget2022": 0,
-          "Budget2023": 0,
-          "Budget2024": 0,
-          "Budget2025": 0,
+          "Budgets": {
+            "2020": 0,
+            "2021": 0,
+            "2022": 0,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
           "Subs": null
         },
         {
           "Id": "33",
           "Desc": " Auszahlungen aus Investitionstätigkeit",
-          "Budget2020": 0,
-          "Budget2021": 0,
-          "Budget2022": 0,
-          "Budget2023": 0,
-          "Budget2024": 0,
-          "Budget2025": 0,
+          "Budgets": {
+            "2020": 0,
+            "2021": 0,
+            "2022": 0,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
           "Subs": null
         }
       ]
