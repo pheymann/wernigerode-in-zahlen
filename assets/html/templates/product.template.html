@@ -20,6 +20,8 @@
           <h4>{{.Label}}</h4>
 
           {{if .HasIncomeAndExpenses}}
+            <canvas id="{{.ID}}"></canvas>
+
             <div class="col-6">
               <canvas id="{{.Income.ID}}"></canvas>
             </div>
@@ -55,26 +57,45 @@
     </ul>
 
     <script>
-      const ctx = document.getElementById('chartjs-');
+      {{range .BalanceSections}}
+        {{if .HasIncomeAndExpenses}}
+          new Chart(document.getElementById('{{.ID}}'), {
+            type: 'doughnut',
+            data: {
+              labels: ['Einnahmen', 'Ausgaben'],
+              datasets: [{
+                label: 'Euro',
+                data: [{{.IncomeCashflowTotal}}, {{.ExpensesCashflowTotal}}],
+                borderWidth: 1
+              }]
+            },
+          });
 
-      new Chart(ctx, {
-        type: 'bar',
-        data: {
-          labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-          datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
-            borderWidth: 1
-          }]
-        },
-        options: {
-          scales: {
-            y: {
-              beginAtZero: true
-            }
-          }
-        }
-      });
+          new Chart(document.getElementById('{{.Income.ID}}'), {
+            type: 'doughnut',
+            data: {
+              labels: {{.Income.Labels}},
+              datasets: [{
+                label: 'Euro',
+                data: {{.Income.Data}},
+                borderWidth: 1
+              }]
+            },
+          });
+
+          new Chart(document.getElementById('{{.Expenses.ID}}'), {
+            type: 'doughnut',
+            data: {
+              labels: {{.Expenses.Labels}},
+              datasets: [{
+                label: 'Euro',
+                data: {{.Expenses.Data}},
+                borderWidth: 1
+              }]
+            },
+          });
+        {{end}}
+      {{end}}
     </script>
   </body>
 </html>

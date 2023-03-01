@@ -7,6 +7,8 @@ import (
 	"os"
 	"strings"
 
+	"github.com/google/uuid"
+
 	fpaDecoder "wernigode-in-zahlen.de/internal/pkg/decoder/financialplan_a"
 	metaDecoder "wernigode-in-zahlen.de/internal/pkg/decoder/metadata"
 	"wernigode-in-zahlen.de/internal/pkg/model"
@@ -28,32 +30,41 @@ func GenerateHTMLForProduct(financialPlanAFile *os.File, metadataFile *os.File) 
 	for _, balance := range fpa.Balances {
 		cashflowTotal += balance.Budget2022
 
-		for _, account := range balance.Accounts {
-			// there are active accounts and not just placeholders
-			if account.Budget2022 < -0.001 || account.Budget2022 > 0.001 {
-				balanceData = append(balanceData, BalanceData{Balance: balance})
-				balanceIndex := len(balanceData) - 1
+		balanceData = append(balanceData, BalanceData{Balance: balance})
+		balanceIndex := len(balanceData) - 1
 
+		for _, account := range balance.Accounts {
+			accountClass := classifyAccount(account)
+
+			if isUnequal(account.Budget2022, 0) {
 				for _, sub := range account.Subs {
 					if len(sub.Units) > 0 {
 						for _, unit := range sub.Units {
-							dataPoint := DataPoint{
-								Label:  unit.Desc,
-								Budget: unit.Budget2022,
-							}
+							if isUnequal(unit.Budget2022, 0) {
+								dataPoint := DataPoint{
+									Label:  unit.Desc,
+									Budget: unit.Budget2022,
+								}
 
-							balanceData[balanceIndex].addDataPoint(dataPoint)
+								balanceData[balanceIndex].addDataPoint(dataPoint, accountClass)
+							}
 						}
 					} else {
-						dataPoint := DataPoint{
-							Label:  sub.Desc,
-							Budget: sub.Budget2022,
-						}
+						if isUnequal(sub.Budget2022, 0) {
+							dataPoint := DataPoint{
+								Label:  sub.Desc,
+								Budget: sub.Budget2022,
+							}
 
-						balanceData[balanceIndex].addDataPoint(dataPoint)
+							balanceData[balanceIndex].addDataPoint(dataPoint, accountClass)
+						}
 					}
 				}
 			}
+		}
+
+		if len(balanceData[balanceIndex].Expenses) == 0 || len(balanceData[balanceIndex].Income) == 0 {
+			balanceData = balanceData[:len(balanceData)-1]
 		}
 	}
 
@@ -82,6 +93,24 @@ func GenerateHTMLForProduct(financialPlanAFile *os.File, metadataFile *os.File) 
 	if err := productTmpl.Execute(outFile, productHtml); err != nil {
 		panic(err)
 	}
+}
+
+type AccountClass = string
+
+const (
+	AccountClassIncome   AccountClass = "income"
+	AccountClassExpenses AccountClass = "expenses"
+)
+
+func classifyAccount(account model.Account) string {
+	if strings.Contains(account.Desc, "Einzahlungen") {
+		return AccountClassIncome
+	}
+	return AccountClassExpenses
+}
+
+func isUnequal(a float64, b float64) bool {
+	return a < b-0.001 || a > b+0.001
 }
 
 func printBudget(budget float64) string {
@@ -117,8 +146,8 @@ type DataPoint struct {
 	Budget float64
 }
 
-func (b *BalanceData) addDataPoint(dataPoint DataPoint) {
-	if dataPoint.Budget > 0 {
+func (b *BalanceData) addDataPoint(dataPoint DataPoint, class AccountClass) {
+	if class == AccountClassIncome {
 		b.Income = append(b.Income, dataPoint)
 	} else {
 		b.Expenses = append(b.Expenses, dataPoint)
@@ -128,15 +157,27 @@ func (b *BalanceData) addDataPoint(dataPoint DataPoint) {
 func balanceDataToSections(data []BalanceData) []BalanceSection {
 	var sections = []BalanceSection{}
 	for _, balance := range data {
+		var incomeCashflowTotal float64
+		for _, income := range balance.Income {
+			incomeCashflowTotal += income.Budget
+		}
+		var expensesCashflowTotal float64
+		for _, expense := range balance.Expenses {
+			expensesCashflowTotal += expense.Budget
+		}
+
 		sections = append(sections, BalanceSection{
-			Label:                balance.Balance.Class,
-			CashflowTotal:        printBudget(balance.Balance.Budget2022),
-			CSSCashflowTotal:     cssCashflowClass(balance.Balance.Budget2022),
-			HasIncomeAndExpenses: len(balance.Income) > 0 && len(balance.Expenses) > 0,
-			HasIncome:            len(balance.Income) > 0,
-			Income:               dataPointsToChartJSDataset(balance.Income),
-			HasExpenses:          len(balance.Expenses) > 0,
-			Expenses:             dataPointsToChartJSDataset(balance.Expenses),
+			ID:                    "balance-" + uuid.New().String(),
+			Label:                 balance.Balance.Class,
+			CashflowTotal:         printBudget(balance.Balance.Budget2022),
+			CSSCashflowTotal:      cssCashflowClass(balance.Balance.Budget2022),
+			HasIncomeAndExpenses:  len(balance.Income) > 0 && len(balance.Expenses) > 0,
+			HasIncome:             len(balance.Income) > 0,
+			IncomeCashflowTotal:   incomeCashflowTotal,
+			Income:                dataPointsToChartJSDataset(balance.Income),
+			HasExpenses:           len(balance.Expenses) > 0,
+			ExpensesCashflowTotal: expensesCashflowTotal,
+			Expenses:              dataPointsToChartJSDataset(balance.Expenses),
 		})
 	}
 
@@ -145,18 +186,18 @@ func balanceDataToSections(data []BalanceData) []BalanceSection {
 
 func dataPointsToChartJSDataset(dataPoints []DataPoint) ChartJSDataset {
 	var labels = []string{}
-	var data = []string{}
+	var data = []float64{}
 
 	for _, dataPoint := range dataPoints {
-		labels = append(labels, fmt.Sprintf("'%s'", dataPoint.Label))
-		data = append(data, fmt.Sprintf("%.2f", dataPoint.Budget))
+		labels = append(labels, dataPoint.Label)
+		data = append(data, dataPoint.Budget)
 	}
 
 	return ChartJSDataset{
-		ID:           "chartjs-",
-		Labels:       "[" + strings.Join(labels, ",") + "]",
+		ID:           "chartjs-" + uuid.New().String(),
+		Labels:       labels,
 		DatasetLabel: "Budget",
-		Data:         "[" + strings.Join(data, ",") + "]",
+		Data:         data,
 	}
 }
 
@@ -168,21 +209,24 @@ type ProductHTML struct {
 }
 
 type BalanceSection struct {
-	Label                string
-	CashflowTotal        string
-	CSSCashflowTotal     string
-	HasIncomeAndExpenses bool
-	HasIncome            bool
-	Income               ChartJSDataset
-	HasExpenses          bool
-	Expenses             ChartJSDataset
+	ID                    string
+	Label                 string
+	CashflowTotal         string
+	CSSCashflowTotal      string
+	HasIncomeAndExpenses  bool
+	HasIncome             bool
+	IncomeCashflowTotal   float64
+	Income                ChartJSDataset
+	HasExpenses           bool
+	ExpensesCashflowTotal float64
+	Expenses              ChartJSDataset
 }
 
 type ChartJSDataset struct {
 	ID           string
-	Labels       string
+	Labels       []string
 	DatasetLabel string
-	Data         string
+	Data         []float64
 }
 
 type ProductCopy struct {
