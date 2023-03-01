@@ -14,7 +14,7 @@ import (
 	"wernigode-in-zahlen.de/internal/pkg/model"
 )
 
-func GenerateHTMLForProduct(financialPlanAFile *os.File, metadataFile *os.File) {
+func GenerateHTMLForProduct(financialPlanAFile *os.File, metadataFile *os.File, year model.BudgetYear) {
 	metadata := metaDecoder.DecodeFromJSON(readCompleteFile(metadataFile))
 	fpa := fpaDecoder.DecodeFromJSON(readCompleteFile(financialPlanAFile))
 
@@ -28,7 +28,7 @@ func GenerateHTMLForProduct(financialPlanAFile *os.File, metadataFile *os.File) 
 	var cashflowTotal float64
 	var balanceData = []BalanceData{}
 	for _, balance := range fpa.Balances {
-		cashflowTotal += balance.Budget2022
+		cashflowTotal += balance.Budgets[year]
 
 		balanceData = append(balanceData, BalanceData{Balance: balance})
 		balanceIndex := len(balanceData) - 1
@@ -36,24 +36,24 @@ func GenerateHTMLForProduct(financialPlanAFile *os.File, metadataFile *os.File) 
 		for _, account := range balance.Accounts {
 			accountClass := classifyAccount(account)
 
-			if isUnequal(account.Budget2022, 0) {
+			if isUnequal(account.Budgets[year], 0) {
 				for _, sub := range account.Subs {
 					if len(sub.Units) > 0 {
 						for _, unit := range sub.Units {
-							if isUnequal(unit.Budget2022, 0) {
+							if isUnequal(unit.Budgets[year], 0) {
 								dataPoint := DataPoint{
 									Label:  unit.Desc,
-									Budget: unit.Budget2022,
+									Budget: unit.Budgets[year],
 								}
 
 								balanceData[balanceIndex].addDataPoint(dataPoint, accountClass)
 							}
 						}
 					} else {
-						if isUnequal(sub.Budget2022, 0) {
+						if isUnequal(sub.Budgets[year], 0) {
 							dataPoint := DataPoint{
 								Label:  sub.Desc,
-								Budget: sub.Budget2022,
+								Budget: sub.Budgets[year],
 							}
 
 							balanceData[balanceIndex].addDataPoint(dataPoint, accountClass)
@@ -70,9 +70,12 @@ func GenerateHTMLForProduct(financialPlanAFile *os.File, metadataFile *os.File) 
 
 	productHtml := ProductHTML{
 		Meta:            metadata,
-		BalanceSections: balanceDataToSections(balanceData),
+		BalanceSections: balanceDataToSections(balanceData, year),
 		Copy: ProductCopy{
 			BackLink: "Zurück zur Bereichsübersicht",
+
+			IntroCashflowTotal: fmt.Sprintf("In %s haben wir", year),
+			IntroDescription:   printIntroDescription(cashflowTotal),
 
 			CashflowTotal: printBudget(cashflowTotal),
 
@@ -83,6 +86,10 @@ func GenerateHTMLForProduct(financialPlanAFile *os.File, metadataFile *os.File) 
 			MetaProduct:       "Produkt",
 			MetaAccountable:   "Verantwortlich",
 			MetaResponsible:   "Zuständig",
+			MetaMission:       "Aufgabe",
+			MetaTargets:       "Ziele",
+			MetaServices:      "Dienstleistungen",
+			MetaGrouping:      "Gruppierung",
 		},
 		CSS: ProductCSS{
 			TotalCashflowClass: cssCashflowClass(cashflowTotal),
@@ -95,18 +102,32 @@ func GenerateHTMLForProduct(financialPlanAFile *os.File, metadataFile *os.File) 
 	}
 }
 
-type AccountClass = string
+func printIntroDescription(cashflowTotal float64) string {
+	if cashflowTotal >= 0 {
+		return "eingenommen über"
+	}
+	return "ausgegeben für"
+}
+
+func printBalance(cashflowTotal float64) string {
+	if cashflowTotal >= 0 {
+		return "eingenommen"
+	}
+	return "gekostet"
+}
+
+type CashflowClass = string
 
 const (
-	AccountClassIncome   AccountClass = "income"
-	AccountClassExpenses AccountClass = "expenses"
+	CashflowClassIncome   CashflowClass = "income"
+	CashflowClassExpenses CashflowClass = "expenses"
 )
 
 func classifyAccount(account model.Account) string {
 	if strings.Contains(account.Desc, "Einzahlungen") {
-		return AccountClassIncome
+		return CashflowClassIncome
 	}
-	return AccountClassExpenses
+	return CashflowClassExpenses
 }
 
 func isUnequal(a float64, b float64) bool {
@@ -115,6 +136,16 @@ func isUnequal(a float64, b float64) bool {
 
 func printBudget(budget float64) string {
 	return fmt.Sprintf("%.2f EUR", budget)
+}
+
+func printAccountClass(class model.AccountClass) string {
+	switch class {
+	case model.AccountClassAdministration:
+		return "Die Verwaltung hat dabei"
+	case model.AccountClassInvestments:
+		return "Die Investitionen haben dabei"
+	}
+	panic(fmt.Sprintf("unknown account class '%s'", class))
 }
 
 func cssCashflowClass(budget float64) string {
@@ -146,15 +177,15 @@ type DataPoint struct {
 	Budget float64
 }
 
-func (b *BalanceData) addDataPoint(dataPoint DataPoint, class AccountClass) {
-	if class == AccountClassIncome {
+func (b *BalanceData) addDataPoint(dataPoint DataPoint, class CashflowClass) {
+	if class == CashflowClassIncome {
 		b.Income = append(b.Income, dataPoint)
 	} else {
 		b.Expenses = append(b.Expenses, dataPoint)
 	}
 }
 
-func balanceDataToSections(data []BalanceData) []BalanceSection {
+func balanceDataToSections(data []BalanceData, year model.BudgetYear) []BalanceSection {
 	var sections = []BalanceSection{}
 	for _, balance := range data {
 		var incomeCashflowTotal float64
@@ -168,9 +199,10 @@ func balanceDataToSections(data []BalanceData) []BalanceSection {
 
 		sections = append(sections, BalanceSection{
 			ID:                    "balance-" + uuid.New().String(),
-			Label:                 balance.Balance.Class,
-			CashflowTotal:         printBudget(balance.Balance.Budget2022),
-			CSSCashflowTotal:      cssCashflowClass(balance.Balance.Budget2022),
+			Label:                 printAccountClass(balance.Balance.Class),
+			CopyBalance:           printBalance(balance.Balance.Budgets[year]),
+			CashflowTotal:         printBudget(balance.Balance.Budgets[year]),
+			CSSCashflowTotal:      cssCashflowClass(balance.Balance.Budgets[year]),
 			HasIncomeAndExpenses:  len(balance.Income) > 0 && len(balance.Expenses) > 0,
 			HasIncome:             len(balance.Income) > 0,
 			IncomeCashflowTotal:   incomeCashflowTotal,
@@ -211,6 +243,7 @@ type ProductHTML struct {
 type BalanceSection struct {
 	ID                    string
 	Label                 string
+	CopyBalance           string
 	CashflowTotal         string
 	CSSCashflowTotal      string
 	HasIncomeAndExpenses  bool
@@ -232,6 +265,9 @@ type ChartJSDataset struct {
 type ProductCopy struct {
 	BackLink string
 
+	IntroCashflowTotal string
+	IntroDescription   string
+
 	CashflowTotal    string
 	CashflowIncome   string
 	CashflowExpenses string
@@ -243,6 +279,10 @@ type ProductCopy struct {
 	MetaProduct       string
 	MetaAccountable   string
 	MetaResponsible   string
+	MetaMission       string
+	MetaTargets       string
+	MetaServices      string
+	MetaGrouping      string
 }
 
 type ProductCSS struct {

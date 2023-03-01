@@ -5,6 +5,7 @@ import (
 	"os"
 
 	"wernigode-in-zahlen.de/internal/cmd/htmlgenerator"
+	"wernigode-in-zahlen.de/internal/pkg/model"
 )
 
 func main() {
@@ -28,5 +29,5 @@ func main() {
 	}
 	defer metadataFile.Close()
 
-	htmlgenerator.GenerateHTMLForProduct(financialPlanAFile, metadataFile)
+	htmlgenerator.GenerateHTMLForProduct(financialPlanAFile, metadataFile, model.BudgetYear2023)
 }
