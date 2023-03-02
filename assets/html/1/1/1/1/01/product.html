@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<head>
+  <title>Produkt</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<html>
+  <body>
+    <h1>Verwaltungssteuerung</h1>
+
+    <p>
+      In 2023 haben wir
+    </p>
+
+    <h2 class="total-cashflow-expenses">-689.000,00€</h2>
+
+    <p>
+      ausgegeben für:  Führung, Entwicklung und Überwachung der Verwaltung.
+    </p>
+
+    <div class="container">
+      
+        <div class="row">
+          <h3 class="total-cashflow-expenses">Die Verwaltung hat dabei -689.000,00€ gekostet</h3>
+
+          
+            <canvas id="balance-46322571-a150-4987-985d-ae7198968291"></canvas>
+
+            <div class="col-6">
+              <h5>Einnahmen: 8.100,00€</h5>
+              <canvas id="chartjs-3fd3c0e5-6307-40fc-af59-f69b298662b9"></canvas>
+            </div>
+            <div class="col-6">
+              <h5>Ausgaben: 697.100,00€</h5>
+              <canvas id="chartjs-d7930e0e-abc5-40e7-9250-19c7199c9f9a"></canvas>
+            </div>
+          
+        </div>
+      
+    </div>
+
+    <div class="info-sheet">
+      <h3>Aufgabe</h3>
+      <p> Bundes-, Landes- und Ortsrecht, Beschlüsse der politischen Gremien, bei Stiftungen: Satzungen und Vereinbarungen</p>
+
+      <h3>Ziele</h3>
+      <p>EinwohnerInnen, Institutionen, politischen Gremien, MitarbeiterInnen</p>
+
+      <h3>Dienstleistungen</h3>
+      <p> 1.Steuerung der Gesamtverwaltung -,Juristische Vertretung und Repräsentanz der Stadt nach außen -,Führung, Leitung und Steuerung der Geschäftsabläufe der gesamten Verwaltung -Strategische Zielsetzung -Vertretung in den politischen Gremien -,Koordination der Repräsentationsaufgaben der Stadt, Ehrungen -,,Mitwirkung und Vertretung in Verbänden (z.B. Abwasserverband, Regionale,, Planungsgemeinschaft, Vereinigungen, Behörden und Gremien) -,Pflege der partnerschaftlichen Beziehungen, Europaangelegenheiten -Vertretung der Stadt in allen Gesellschafterversammlungen der, Beteiligungsgesellschaften 2.Öffentlichkeitsarbeit -,Pressestelle -Koordination des Stadtmarketings, einschließlich Internetauftritt,</p>
+
+      <h3>Gruppierung</h3>
+      <ul>
+        <li>Fachbereich: Budget Oberbürgermeister</li>
+        <li>Produktklasse: Zentrale Verwaltung</li>
+        <li>Produktbereich: Innere Verwaltung</li>
+        <li>Produktgruppe: Verwaltungssteuerung und -service</li>
+        <li>Produkt: Verwaltungssteuerung</li>
+        <li>Verantwortlich: Oberbürgermeister</li>
+        <li>Zuständig: Frau Dormann</li>
+      </ul>
+    </div>
+
+    <a href="/1">Zurück zur Bereichsübersicht</a>
+
+    <script>
+      
+        
+          new Chart(document.getElementById('balance-46322571-a150-4987-985d-ae7198968291'), {
+            type: 'doughnut',
+            data: {
+              labels: ['Einnahmen', 'Ausgaben'],
+              datasets: [{
+                label: 'Euro',
+                data: [ 8100 ,  697100 ],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+
+          new Chart(document.getElementById('chartjs-3fd3c0e5-6307-40fc-af59-f69b298662b9'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Benutzungsgebühren und ähnliche Entgelte"],
+              datasets: [{
+                label: 'Euro',
+                data: [8100],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+
+          new Chart(document.getElementById('chartjs-d7930e0e-abc5-40e7-9250-19c7199c9f9a'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für sonstige Dienstleistungen","Geschäftsauszahlungen","Verfügungsmittel"],
+              datasets: [{
+                label: 'Euro',
+                data: [118200,274000,84400,11500,55200,1800,70000,1500,80000,500],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+    </script>
+  </body>
+</html>

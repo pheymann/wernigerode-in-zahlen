@@ -34,7 +34,7 @@ func main() {
 			encodeMeta.Encode(
 				cleaner.CleanUpMetadata(metadataFile),
 			),
-			decodeTarget.Decode(metadataFile),
+			decodeTarget.Decode(metadataFile, "data/processed"),
 		)
 	}
 
@@ -49,6 +49,6 @@ func main() {
 		encodeFpa.Encode(
 			cleaner.CleanUpFinancialPlanA(financialPlanAFile),
 		),
-		decodeTarget.Decode(financialPlanAFile),
+		decodeTarget.Decode(financialPlanAFile, "data/processed"),
 	)
 }

@@ -27,11 +27,11 @@
             <canvas id="{{.ID}}"></canvas>
 
             <div class="col-6">
-              <h5>{{.IncomeCashflowTotal}}</h5>
+              <h5>{{.Copy.IncomeCashflowTotal}}</h5>
               <canvas id="{{.Income.ID}}"></canvas>
             </div>
             <div class="col-6">
-              <h5>{{.ExpensesCashflowTotal}}</h5>
+              <h5>{{.Copy.ExpensesCashflowTotal}}</h5>
               <canvas id="{{.Expenses.ID}}"></canvas>
             </div>
           {{else}}
@@ -87,6 +87,13 @@
                 borderWidth: 1
               }]
             },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
           });
 
           new Chart(document.getElementById('{{.Income.ID}}'), {
@@ -99,6 +106,13 @@
                 borderWidth: 1
               }]
             },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
           });
 
           new Chart(document.getElementById('{{.Expenses.ID}}'), {
@@ -111,6 +125,13 @@
                 borderWidth: 1
               }]
             },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
           });
         {{end}}
       {{end}}

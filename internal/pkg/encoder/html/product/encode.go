@@ -73,8 +73,8 @@ func balanceDataToSections(data []html.BalanceData, year model.BudgetYear, p *me
 
 			Copy: html.BalanceSectionCopy{
 				Header:                encodeBalanceSectionHeader(balance.Balance, year, p),
-				IncomeCashflowTotal:   encodeHtml.EncodeBudget(incomeCashflowTotal, p),
-				ExpensesCashflowTotal: encodeHtml.EncodeBudget(expensesCashflowTotal, p),
+				IncomeCashflowTotal:   "Einnahmen: " + encodeHtml.EncodeBudget(incomeCashflowTotal, p),
+				ExpensesCashflowTotal: "Ausgaben: " + encodeHtml.EncodeBudget(expensesCashflowTotal, p),
 			},
 			CSS: html.BalanceSectionCSS{
 				CashflowTotalClass: encodeHtml.EncodeCSSCashflowClass(balance.Balance.Budgets[year]),

@@ -6,6 +6,8 @@ import (
 	"os"
 
 	"wernigode-in-zahlen.de/internal/cmd/htmlgenerator"
+	decodeTarget "wernigode-in-zahlen.de/internal/pkg/decoder/targetfile"
+	"wernigode-in-zahlen.de/internal/pkg/io"
 	"wernigode-in-zahlen.de/internal/pkg/model"
 )
 
@@ -42,7 +44,11 @@ func main() {
 	}
 	defer productHtmlFile.Close()
 
-	productHtmlFile.WriteString(productHtml)
+	target := decodeTarget.Decode(financialPlanAFile, "html")
+	target.Name = "product"
+	target.Tpe = "html"
+
+	io.WriteFile(target, productHtml)
 }
 
 func readCompleteFile(file *os.File) string {
