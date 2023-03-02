@@ -15,13 +15,13 @@
     <h2 class="{{.CSS.TotalCashflowClass}}">{{.Copy.CashflowTotal}}</h2>
 
     <p>
-      {{.Copy.IntroDescription}}: {{.Meta.Description}}.
+      {{.Copy.IntroDescription}}
     </p>
 
     <div class="container">
       {{range .BalanceSections}}
         <div class="row">
-          <h3 class="{{.CSSCashflowTotal}}">{{.Label}} {{.CashflowTotal}} {{.CopyBalance}}</h3>
+          <h3 class="{{.CSS.CashflowTotalClass}}">{{.Copy.Header}}</h3>
 
           {{if .HasIncomeAndExpenses}}
             <canvas id="{{.ID}}"></canvas>

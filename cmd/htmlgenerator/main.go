@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bufio"
 	"flag"
 	"os"
 
@@ -29,5 +30,28 @@ func main() {
 	}
 	defer metadataFile.Close()
 
-	htmlgenerator.GenerateHTMLForProduct(financialPlanAFile, metadataFile, model.BudgetYear2023)
+	productHtml := htmlgenerator.GenerateHTMLForProduct(
+		readCompleteFile(financialPlanAFile),
+		readCompleteFile(metadataFile),
+		model.BudgetYear2023,
+	)
+
+	productHtmlFile, err := os.Create("product.html")
+	if err != nil {
+		panic(err)
+	}
+	defer productHtmlFile.Close()
+
+	productHtmlFile.WriteString(productHtml)
+}
+
+func readCompleteFile(file *os.File) string {
+	scanner := bufio.NewScanner(file)
+
+	var content = ""
+	for scanner.Scan() {
+		content += scanner.Text()
+	}
+
+	return content
 }
