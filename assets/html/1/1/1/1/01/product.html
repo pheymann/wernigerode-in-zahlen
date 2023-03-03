@@ -2,6 +2,11 @@
 <head>
   <title>Produkt</title>
 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="../../../../../../css/simple-grid.css">
+
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <html>
@@ -20,22 +25,20 @@
 
     <div class="container">
       
-        <div class="row">
           <h3 class="total-cashflow-expenses">Die Verwaltung hat dabei -689.000,00€ gekostet</h3>
 
           
-            <canvas id="balance-46322571-a150-4987-985d-ae7198968291"></canvas>
-
-            <div class="col-6">
-              <h5>Einnahmen: 8.100,00€</h5>
-              <canvas id="chartjs-3fd3c0e5-6307-40fc-af59-f69b298662b9"></canvas>
-            </div>
-            <div class="col-6">
-              <h5>Ausgaben: 697.100,00€</h5>
-              <canvas id="chartjs-d7930e0e-abc5-40e7-9250-19c7199c9f9a"></canvas>
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 8.100,00€</h5>
+                <canvas id="chartjs-4ee8418a-3191-46ca-84a0-1d5c43cca92b"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: 697.100,00€</h5>
+                <canvas id="chartjs-9ddd557d-4b4b-4ff4-88bb-df14227b7399"></canvas>
+              </div>
             </div>
           
-        </div>
       
     </div>
 
@@ -66,26 +69,7 @@
     <script>
       
         
-          new Chart(document.getElementById('balance-46322571-a150-4987-985d-ae7198968291'), {
-            type: 'doughnut',
-            data: {
-              labels: ['Einnahmen', 'Ausgaben'],
-              datasets: [{
-                label: 'Euro',
-                data: [ 8100 ,  697100 ],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              }
-            }
-          });
-
-          new Chart(document.getElementById('chartjs-3fd3c0e5-6307-40fc-af59-f69b298662b9'), {
+          new Chart(document.getElementById('chartjs-4ee8418a-3191-46ca-84a0-1d5c43cca92b'), {
             type: 'doughnut',
             data: {
               labels: ["Benutzungsgebühren und ähnliche Entgelte"],
@@ -103,8 +87,9 @@
               }
             }
           });
-
-          new Chart(document.getElementById('chartjs-d7930e0e-abc5-40e7-9250-19c7199c9f9a'), {
+        
+        
+          new Chart(document.getElementById('chartjs-9ddd557d-4b4b-4ff4-88bb-df14227b7399'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für sonstige Dienstleistungen","Geschäftsauszahlungen","Verfügungsmittel"],

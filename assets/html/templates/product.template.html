@@ -2,6 +2,11 @@
 <head>
   <title>Produkt</title>
 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="../../../../../../css/simple-grid.css">
+
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <html>
@@ -20,33 +25,31 @@
 
     <div class="container">
       {{range .BalanceSections}}
-        <div class="row">
           <h3 class="{{.CSS.CashflowTotalClass}}">{{.Copy.Header}}</h3>
 
           {{if .HasIncomeAndExpenses}}
-            <canvas id="{{.ID}}"></canvas>
-
-            <div class="col-6">
-              <h5>{{.Copy.IncomeCashflowTotal}}</h5>
-              <canvas id="{{.Income.ID}}"></canvas>
-            </div>
-            <div class="col-6">
-              <h5>{{.Copy.ExpensesCashflowTotal}}</h5>
-              <canvas id="{{.Expenses.ID}}"></canvas>
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">{{.Copy.IncomeCashflowTotal}}</h5>
+                <canvas id="{{.Income.ID}}"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">{{.Copy.ExpensesCashflowTotal}}</h5>
+                <canvas id="{{.Expenses.ID}}"></canvas>
+              </div>
             </div>
           {{else}}
             {{if .HasIncome}}
-              <div class="col-12">
+              <div>
                 <canvas id="{{.Income.ID}}"></canvas>
               </div>
             {{end}}
             {{if .HasExpenses}}
-              <div class="col-12">
+              <div>
                 <canvas id="{{.Expenses.ID}}"></canvas>
               </div>
             {{end}}
           {{end}}
-        </div>
       {{end}}
     </div>
 
@@ -76,26 +79,7 @@
 
     <script>
       {{range .BalanceSections}}
-        {{if .HasIncomeAndExpenses}}
-          new Chart(document.getElementById('{{.ID}}'), {
-            type: 'doughnut',
-            data: {
-              labels: ['Einnahmen', 'Ausgaben'],
-              datasets: [{
-                label: 'Euro',
-                data: [{{.IncomeCashflowTotal}}, {{.ExpensesCashflowTotal}}],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              }
-            }
-          });
-
+        {{if .HasIncome}}
           new Chart(document.getElementById('{{.Income.ID}}'), {
             type: 'doughnut',
             data: {
@@ -114,7 +98,8 @@
               }
             }
           });
-
+        {{end}}
+        {{if .HasExpenses}}
           new Chart(document.getElementById('{{.Expenses.ID}}'), {
             type: 'doughnut',
             data: {
