@@ -1,11 +1,10 @@
 package main
 
 import (
-	"bufio"
 	"flag"
 	"os"
 
-	"wernigode-in-zahlen.de/internal/cmd/htmlgenerator"
+	htmlgenerator "wernigode-in-zahlen.de/internal/cmd/producthtmlgenerator"
 	decodeTarget "wernigode-in-zahlen.de/internal/pkg/decoder/targetfile"
 	"wernigode-in-zahlen.de/internal/pkg/io"
 	"wernigode-in-zahlen.de/internal/pkg/model"
@@ -33,8 +32,8 @@ func main() {
 	defer metadataFile.Close()
 
 	productHtml := htmlgenerator.GenerateHTMLForProduct(
-		readCompleteFile(financialPlanAFile),
-		readCompleteFile(metadataFile),
+		io.ReadCompleteFile(financialPlanAFile),
+		io.ReadCompleteFile(metadataFile),
 		model.BudgetYear2023,
 	)
 
@@ -49,15 +48,4 @@ func main() {
 	target.Tpe = "html"
 
 	io.WriteFile(target, productHtml)
-}
-
-func readCompleteFile(file *os.File) string {
-	scanner := bufio.NewScanner(file)
-
-	var content = ""
-	for scanner.Scan() {
-		content += scanner.Text()
-	}
-
-	return content
 }
