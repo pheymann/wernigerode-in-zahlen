@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<head>
+  <title>Produkt</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="../../../../../../css/simple-grid.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<html>
+  <body>
+    <h1>Förderung von zusätzlichen Arbeitsplätzen</h1>
+
+    <p>
+      In 2023 haben wir
+    </p>
+
+    <h2 class="total-cashflow-expenses center">-14.200,00€</h2>
+
+    <p>
+      ausgegeben für:  Unterstützung von einzelnen Fachbereichen durch zusätzliche, nicht im Stellenplan enthaltene Stellen.
+    </p>
+
+    <div class="container">
+      
+          <h3>Die Verwaltung hat dabei <span class="total-cashflow-expenses">-14.200,00€</span> gekostet</h3>
+
+          
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 36.000,00€</h5>
+                <canvas id="chartjs-02eee3ef-3824-4128-8bcf-07c78c1bee10"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: 50.200,00€</h5>
+                <canvas id="chartjs-e75d6fba-840d-4feb-bdfb-ae2760cf4546"></canvas>
+              </div>
+            </div>
+          
+      
+    </div>
+
+    <div class="info-sheet">
+      <h3>Aufgabe</h3>
+      <p> Bundesrecht</p>
+
+      <h3>Ziele</h3>
+      <p>Personengruppen des öffentlichen Lebens</p>
+
+      <h3>Dienstleistungen</h3>
+      <p> In den verschiedenen Fachbereichen werden verschiedene Projekte umgesetzt. die zu einer überobligatorischen Qualitätssteigerung zugunsten der Allgemeinheit führen.,</p>
+
+      <h3>Gruppierung</h3>
+      <ul>
+        <li>Fachbereich: Budget Oberbürgermeister</li>
+        <li>Produktklasse: Soziales und Jugend</li>
+        <li>Produktbereich: Sonstige soziale Hilfen und Leistungen</li>
+        <li>Produktgruppe: Sonstige soziale Hilfen und Leistungen</li>
+        <li>Produkt: Förderung von zusätzlichen Arbeitsplätzen</li>
+        <li>Verantwortlich: Oberbürgermeister</li>
+        <li>Zuständig: Herr Radünzel</li>
+      </ul>
+    </div>
+
+    <div class="back-link center">
+      <a href="/1">Zurück zur Bereichsübersicht</a>
+    </div>
+
+    <footer>
+      <p>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>
+      </p>
+    </footer>
+
+    <script>
+      
+        
+          new Chart(document.getElementById('chartjs-02eee3ef-3824-4128-8bcf-07c78c1bee10'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Zuweisungen für laufende Zwecke vom Bund"],
+              datasets: [{
+                label: 'Euro',
+                data: [36000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+        
+          new Chart(document.getElementById('chartjs-e75d6fba-840d-4feb-bdfb-ae2760cf4546'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Dienstauszahlungen und dgl. an sonstige Beschäftigte","Beiträge zu Versorgungskassen für sonstige Beschäftigte","Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschäft.","Beihilfen, Unterstützungsleistungen für Beschäftigte"],
+              datasets: [{
+                label: 'Euro',
+                data: [40100,1700,8100,300],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+    </script>
+  </body>
+</html>

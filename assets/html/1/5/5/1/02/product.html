@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+  <title>Produkt</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="../../../../../../css/simple-grid.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<html>
+  <body>
+    <h1>Park-und Garten GmbH</h1>
+
+    <p>
+      In 2023 haben wir
+    </p>
+
+    <h2 class="total-cashflow-expenses center">-510.000,00€</h2>
+
+    <p>
+      ausgegeben für:  &#34;Betreiben der aus der Landesgartenschau 2006 hervorgegangenen Park- und Freizeitanlage, des Miniaturenparks „Kleiner Harz“ sowie weiterer öffentlicher Erholungs- und Freizeitanlagen im Stadtgebiet von&#34; Wernigerode.
+    </p>
+
+    <div class="container">
+      
+          <h3>Die Verwaltung hat dabei <span class="total-cashflow-expenses">-510.000,00€</span> gekostet</h3>
+
+          
+            
+            
+              <div>
+                <canvas id="chartjs-ad0d6844-aa17-475d-a5fa-69a8ad4bf770"></canvas>
+              </div>
+            
+          
+      
+    </div>
+
+    <div class="info-sheet">
+      <h3>Aufgabe</h3>
+      <p> Gesellschaftsvertrag Vereinbarung zwischen der Stadt Wernigerode und der Park- und Garten GmbH über die unentgeltliche Nutzung der Grundstücken in seiner geltenden Fassung</p>
+
+      <h3>Ziele</h3>
+      <p>EinwohnerInnen und Touristen</p>
+
+      <h3>Dienstleistungen</h3>
+      <p> Städtischer finanzieller Zuschuss. Personeller und sächlicher Zuschuss in Form von vertraglich vereinbarten Leistungen</p>
+
+      <h3>Gruppierung</h3>
+      <ul>
+        <li>Fachbereich: Budget Oberbürgermeister</li>
+        <li>Produktklasse: Gestaltung der Umwelt</li>
+        <li>Produktbereich: Natur- und Landschaftspflege</li>
+        <li>Produktgruppe: Öffentliches Grün/Landschaftsbau</li>
+        <li>Produkt: Park-und Garten GmbH</li>
+        <li>Verantwortlich: Oberbürgermeister</li>
+        <li>Zuständig: Herr Kramer</li>
+      </ul>
+    </div>
+
+    <div class="back-link center">
+      <a href="/1">Zurück zur Bereichsübersicht</a>
+    </div>
+
+    <footer>
+      <p>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>
+      </p>
+    </footer>
+
+    <script>
+      
+        
+        
+          new Chart(document.getElementById('chartjs-ad0d6844-aa17-475d-a5fa-69a8ad4bf770'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Zuschüsse an verbundene Unternehmen, Sondervermögen und Beteiligungen"],
+              datasets: [{
+                label: 'Euro',
+                data: [510000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+    </script>
+  </body>
+</html>

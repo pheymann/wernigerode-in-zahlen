@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<head>
+  <title>Produkt</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="../../../../../../css/simple-grid.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<html>
+  <body>
+    <h1>Wirtschaftsförderung</h1>
+
+    <p>
+      In 2023 haben wir
+    </p>
+
+    <h2 class="total-cashflow-expenses center">-187.200,00€</h2>
+
+    <p>
+      ausgegeben für:  Entwicklung und Förderung des Wirtschaftsstandortes.
+    </p>
+
+    <div class="container">
+      
+          <h3>Die Verwaltung hat dabei <span class="total-cashflow-expenses">-337.200,00€</span> gekostet</h3>
+
+          
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 37.500,00€</h5>
+                <canvas id="chartjs-7c2716b0-4704-4a91-9a63-08849529791b"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: 374.700,00€</h5>
+                <canvas id="chartjs-938a24e2-1543-412b-a85f-65654426e0f7"></canvas>
+              </div>
+            </div>
+          
+      
+          <h3>Die Investitionen haben dabei <span class="total-cashflow-income">150.000,00€</span> eingenommen</h3>
+
+          
+            
+              <div>
+                <canvas id="chartjs-de88130d-8f63-47a1-ab64-0ff6ac644a71"></canvas>
+              </div>
+            
+            
+          
+      
+    </div>
+
+    <div class="info-sheet">
+      <h3>Aufgabe</h3>
+      <p> EU- und Landesrichtlinien, Beschlüsse politischer Gremien</p>
+
+      <h3>Ziele</h3>
+      <p>heimische und auswärtige Unternehmen, EinwohnerInnen, Investoren</p>
+
+      <h3>Dienstleistungen</h3>
+      <p> -Betreuung und Unterstützung heimischer und sich neu ansiedelnder Unternehmen, Beratung zur Erlangung von Mitteln aus der Gemeinschaftsaufgabe -Erschließung von Gewerbeflächen -Vermarktung eigener Gewerbeflächen -Vermittlung von Gewerbeflächen und -objekten -Marketing für den Wirtschaftsstandort -Wahrnehmung gemeindlicher Interessen bei der regionalen Wirtschaftsförderung und -entwicklung -Stadtmarketing -Koordination zwischen innerstädtischen Einzelhandel und Verwaltung -Gesellschaft für Innovation und Förderung der Wirtschaft im Landkreis Wernigerode/Harz mbH (IGZW) -Harz AG -Arbeitsförderungsgesellschaft Harz mbH</p>
+
+      <h3>Gruppierung</h3>
+      <ul>
+        <li>Fachbereich: Budget Oberbürgermeister</li>
+        <li>Produktklasse: Gestaltung der Umwelt</li>
+        <li>Produktbereich: Wirtschaft und Tourismus</li>
+        <li>Produktgruppe: Wirtschaftsförderung</li>
+        <li>Produkt: Wirtschaftsförderung</li>
+        <li>Verantwortlich: Oberbürgermeister</li>
+        <li>Zuständig: Herr Quednau</li>
+      </ul>
+    </div>
+
+    <div class="back-link center">
+      <a href="/1">Zurück zur Bereichsübersicht</a>
+    </div>
+
+    <footer>
+      <p>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>
+      </p>
+    </footer>
+
+    <script>
+      
+        
+          new Chart(document.getElementById('chartjs-7c2716b0-4704-4a91-9a63-08849529791b'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Erträge aus Kostenerstattungen von privaten Unternehmen (HarzAG)"],
+              datasets: [{
+                label: 'Euro',
+                data: [37500],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+        
+          new Chart(document.getElementById('chartjs-938a24e2-1543-412b-a85f-65654426e0f7'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfe, Unterstützungsleistung für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Besondere Verwaltungs- und Betriebsauszahlungen","Zuweisungen an Zweckverbände","Zuschüsse an sonstige öffentliche Sonderrechnungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten","Erstatt. für die Auszahl. von Dritten aus lfd. Verwaltungstät. an priv. Untern."],
+              datasets: [{
+                label: 'Euro',
+                data: [120400,5000,24100,700,5000,2100,1500,12000,150000,15000,900,13000,12000,13000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+        
+          new Chart(document.getElementById('chartjs-de88130d-8f63-47a1-ab64-0ff6ac644a71'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Veräußerung von Grundstücken, Gebäuden und Infrastrukturvermögen 5.7.1.01/0003.6821000 Einzahlungen aus Veräußerung von Grundstücken Gebäuden"],
+              datasets: [{
+                label: 'Euro',
+                data: [150000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+        
+      
+    </script>
+  </body>
+</html>

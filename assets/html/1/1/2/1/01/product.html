@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+  <title>Produkt</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="../../../../../../css/simple-grid.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<html>
+  <body>
+    <h1>Wahlen und Statistik</h1>
+
+    <p>
+      In 2023 haben wir
+    </p>
+
+    <h2 class="total-cashflow-expenses center">-500,00€</h2>
+
+    <p>
+      ausgegeben für:  &#34;Vorbereitung, Durchführung und Nachbereitung sowie die öffentliche Darstellung von Wahlen und Abstimmungen; Statistische Angelegenheiten&#34;.
+    </p>
+
+    <div class="container">
+      
+          <h3>Die Verwaltung hat dabei <span class="total-cashflow-expenses">-500,00€</span> gekostet</h3>
+
+          
+            
+            
+              <div>
+                <canvas id="chartjs-fcf9f8f7-7efd-4e29-9c50-4f637e9fcb86"></canvas>
+              </div>
+            
+          
+      
+    </div>
+
+    <div class="info-sheet">
+      <h3>Aufgabe</h3>
+      <p> Bundes-, Landes- und Ortsrecht; Ratsbeschlüsse</p>
+
+      <h3>Ziele</h3>
+      <p>EinwohnerInnen, Parteien und Wählergemeinschaften, Öffentlichkeit, Behörden und die Wirtschaft</p>
+
+      <h3>Dienstleistungen</h3>
+      <p> -Vorbereitung, Durchführung und Nachbereitung der Europa-, Bundestags-, Landtags-, Kommunalwahlen, Volksbegehren, Volksentscheiden, Bürgerbegehren, -  entscheiden und -anhörungen soweit es sich um kommunale Aufgaben handelt, sowie die öffentliche Präsentation und Darstellung -Alle Aufgaben der Gemeindewahlleitung -Zuarbeiten und Auswertungen von statistischen Erhebungen des Landesamtes für Statistik, für die Verwaltung, andere Behörden und die Wirtschaft</p>
+
+      <h3>Gruppierung</h3>
+      <ul>
+        <li>Fachbereich: Budget Oberbürgermeister</li>
+        <li>Produktklasse: Zentrale Verwaltung</li>
+        <li>Produktbereich: Sicherheit und Ordnung</li>
+        <li>Produktgruppe: Statistik und Wahlen</li>
+        <li>Produkt: Wahlen und Statistik</li>
+        <li>Verantwortlich: Oberbürgermeister</li>
+        <li>Zuständig: Herr Radünzel</li>
+      </ul>
+    </div>
+
+    <div class="back-link center">
+      <a href="/1">Zurück zur Bereichsübersicht</a>
+    </div>
+
+    <footer>
+      <p>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>
+      </p>
+    </footer>
+
+    <script>
+      
+        
+        
+          new Chart(document.getElementById('chartjs-fcf9f8f7-7efd-4e29-9c50-4f637e9fcb86'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Sonstige Personal- und Versorgungsauszahlungen","Geschäftsauszahlungen"],
+              datasets: [{
+                label: 'Euro',
+                data: [300,200],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+    </script>
+  </body>
+</html>

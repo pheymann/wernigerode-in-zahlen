@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+  <title>Produkt</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="../../../../../../css/simple-grid.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<html>
+  <body>
+    <h1>Personalvertretung</h1>
+
+    <p>
+      In 2023 haben wir
+    </p>
+
+    <h2 class="total-cashflow-expenses center">-95.800,00€</h2>
+
+    <p>
+      ausgegeben für:  Überwachung der Einhaltung von geltenden Rechtsvorschriften, Tarifverträgen und sonstigen Vorschriften, Mitbestimmung im Rahmen der rechtlichen Möglichkeiten.
+    </p>
+
+    <div class="container">
+      
+          <h3>Die Verwaltung hat dabei <span class="total-cashflow-expenses">-95.800,00€</span> gekostet</h3>
+
+          
+            
+            
+              <div>
+                <canvas id="chartjs-0c3966be-c22d-4829-87fe-a1b50096a52f"></canvas>
+              </div>
+            
+          
+      
+    </div>
+
+    <div class="info-sheet">
+      <h3>Aufgabe</h3>
+      <p> Personalvertretungsgesetz LSA; SGB IX, AGG, TVöD</p>
+
+      <h3>Ziele</h3>
+      <p>Dienstkräfte</p>
+
+      <h3>Dienstleistungen</h3>
+      <p> Personalrat -Mitwirkung bei allen Personalentscheidungen, die der  Mitbestimmung unterliegen -,,Beratung der Dienstkräfte in Personalangelegenheiten -,Hilfe bei speziellen Interessen der Dienstkräfte - Vorbereitung und Durchführung von Personalversammlungen Schwerbehindertenvertretung -,,Förderung der Eingliederung schwerbehinderter Men-schen -Beratung und Unterstützung der schwerbehinderten, Dienstkräfte in allen Bereichen des Beruf- und Arbeitslebens in der Dienststelle -,Unterstützung der Dienstkräfte bei Anträgen auf Feststellung eines Grades der Behinderung oder bei Anträgen auf,, Gleichstellung gegenüber den entsprechenden Behörden -,Überwachung der Einhaltung der Vorschriften des SGB IX durch die Dienststelle -,Vorbereitung und Durchführung von Versammlungen der, schwerbehinderten Dienstkräfte</p>
+
+      <h3>Gruppierung</h3>
+      <ul>
+        <li>Fachbereich: Budget Oberbürgermeister</li>
+        <li>Produktklasse: Zentrale Verwaltung</li>
+        <li>Produktbereich: Innere Verwaltung</li>
+        <li>Produktgruppe: Verwaltungssteuerung und -service</li>
+        <li>Produkt: Personalvertretung</li>
+        <li>Verantwortlich: Personalrat</li>
+        <li>Zuständig: Herr Sauter</li>
+      </ul>
+    </div>
+
+    <div class="back-link center">
+      <a href="/1">Zurück zur Bereichsübersicht</a>
+    </div>
+
+    <footer>
+      <p>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>
+      </p>
+    </footer>
+
+    <script>
+      
+        
+        
+          new Chart(document.getElementById('chartjs-0c3966be-c22d-4829-87fe-a1b50096a52f'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Dienstauszahlungen und dgl. an Beamte","Beiträge zu Versorgungskassen für Beamte","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Sonstige Personal- und Versorgungsauszahlungen","Geschäftsauszahlungen"],
+              datasets: [{
+                label: 'Euro',
+                data: [58500,31200,3000,700,1000,1400],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+    </script>
+  </body>
+</html>

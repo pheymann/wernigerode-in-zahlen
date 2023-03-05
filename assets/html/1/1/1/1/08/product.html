@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+  <title>Produkt</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="../../../../../../css/simple-grid.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<html>
+  <body>
+    <h1>Gemeindegremien</h1>
+
+    <p>
+      In 2023 haben wir
+    </p>
+
+    <h2 class="total-cashflow-expenses center">-135.200,00€</h2>
+
+    <p>
+      ausgegeben für:  Angelegenheiten des Stadtrates und seiner Ausschüsse.
+    </p>
+
+    <div class="container">
+      
+          <h3>Die Verwaltung hat dabei <span class="total-cashflow-expenses">-135.200,00€</span> gekostet</h3>
+
+          
+            
+            
+              <div>
+                <canvas id="chartjs-c1eb0267-32de-4bfa-940b-63653c5c922d"></canvas>
+              </div>
+            
+          
+      
+    </div>
+
+    <div class="info-sheet">
+      <h3>Aufgabe</h3>
+      <p> Bundes-, Landes- und Ortsrecht, Ratsbeschlüsse</p>
+
+      <h3>Ziele</h3>
+      <p>EinwohnerInnen, Ratsmitglieder, Verwaltungsangehörige</p>
+
+      <h3>Dienstleistungen</h3>
+      <p> -Geschäftsführung der politischen Gremien,-Vorbereitung, Einladung, Betreuung und Protokollierung von Rats- und Ausschusssitzungen,,-Abrechnung und Auszahlung von Aufwandsentschädigungen und, Sitzungsgeldern-Einsatz, Erweiterung und Pflege des Ratsinformationssystems,-Bearbeitung von kommunalverfassungsrechtlichen Fragen-Federführung bei der Erstellung und Ausfertigung von Satzungen zur Veröffentlichung und Verteilung sowie Mitwirkung bei Gesellschaftsverträgen,-Zusammenstellung, Pflege und Herausgabe des Stadtrechtes</p>
+
+      <h3>Gruppierung</h3>
+      <ul>
+        <li>Fachbereich: Budget Oberbürgermeister</li>
+        <li>Produktklasse: Zentrale Verwaltung</li>
+        <li>Produktbereich: Innere Verwaltung</li>
+        <li>Produktgruppe: Verwaltungssteuerung und -service</li>
+        <li>Produkt: Gemeindegremien</li>
+        <li>Verantwortlich: Oberbürgermeister</li>
+        <li>Zuständig: Herr Radünzel</li>
+      </ul>
+    </div>
+
+    <div class="back-link center">
+      <a href="/1">Zurück zur Bereichsübersicht</a>
+    </div>
+
+    <footer>
+      <p>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>
+      </p>
+    </footer>
+
+    <script>
+      
+        
+        
+          new Chart(document.getElementById('chartjs-c1eb0267-32de-4bfa-940b-63653c5c922d'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Zuschüsse an übrige Bereiche","Auszahlungen für ehrenamtliche und sonstige Tätigkeit","Auszahlungen für Honorare","Fraktionszuwendungen"],
+              datasets: [{
+                label: 'Euro',
+                data: [1200,115000,7000,12000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+    </script>
+  </body>
+</html>

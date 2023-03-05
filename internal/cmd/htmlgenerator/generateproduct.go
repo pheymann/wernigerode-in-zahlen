@@ -57,7 +57,7 @@ func GenerateHTMLForProduct(financialPlanAJSON string, metadataJSON string, year
 			}
 		}
 
-		if len(balanceData[balanceIndex].Expenses) == 0 || len(balanceData[balanceIndex].Income) == 0 {
+		if len(balanceData[balanceIndex].Expenses) == 0 && len(balanceData[balanceIndex].Income) == 0 {
 			balanceData = balanceData[:len(balanceData)-1]
 		}
 	}

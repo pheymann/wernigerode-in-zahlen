@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+  <title>Produkt</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="../../../../../../css/simple-grid.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<html>
+  <body>
+    <h1>Beteiligungen, Controlling</h1>
+
+    <p>
+      In 2023 haben wir
+    </p>
+
+    <h2 class="total-cashflow-income center">277.400,00€</h2>
+
+    <p>
+      eingenommen über:  Führungsunterstützung und- beratung.
+    </p>
+
+    <div class="container">
+      
+          <h3>Die Verwaltung hat dabei <span class="total-cashflow-income">277.400,00€</span> eingenommen</h3>
+
+          
+            
+              <div>
+                <canvas id="chartjs-3cb0bc8f-41f7-4986-88d0-2273ef6f2143"></canvas>
+              </div>
+            
+            
+          
+      
+    </div>
+
+    <div class="info-sheet">
+      <h3>Aufgabe</h3>
+      <p> Bundes-, Landes- und Ortsrecht, Beschlüsse der politischen Gremien</p>
+
+      <h3>Ziele</h3>
+      <p>Institutionen, politischen Gremien, MitarbeiterInnen</p>
+
+      <h3>Dienstleistungen</h3>
+      <p> 1. Beteiligungsmanagement (nach §119 KVG LSA) -Beteiligungsverwaltung und -berichtswesen -Beteiligungscontrolling -Mandatsträgerbetreuung (Aufsichtsrat u. Gesellschafter) -Strategisches, Beteiligungsmanagement -Portfoliosteuerung (u.a Ausgliederung,Ankauf) 2.Zentrale Stiftungsverwaltung 3. Entwicklung u. Aufbau Verwaltungscontrolling -Strategisches Controlling -Unterstützung der, Führungsfunktionen 4. Interkommnale Zusammenarbeit,</p>
+
+      <h3>Gruppierung</h3>
+      <ul>
+        <li>Fachbereich: Budget Oberbürgermeister</li>
+        <li>Produktklasse: Zentrale Verwaltung</li>
+        <li>Produktbereich: Innere Verwaltung</li>
+        <li>Produktgruppe: Verwaltungssteuerung und -service</li>
+        <li>Produkt: Beteiligungen, Controlling</li>
+        <li>Verantwortlich: Oberbürgermeister</li>
+        <li>Zuständig: Herr Hamecher</li>
+      </ul>
+    </div>
+
+    <div class="back-link center">
+      <a href="/1">Zurück zur Bereichsübersicht</a>
+    </div>
+
+    <footer>
+      <p>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>
+      </p>
+    </footer>
+
+    <script>
+      
+        
+          new Chart(document.getElementById('chartjs-3cb0bc8f-41f7-4986-88d0-2273ef6f2143'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Einz GewAnt a.vU\u0026 Bet. GWW","Einz GewAnt a.vU\u0026 Bet. KOWISA"],
+              datasets: [{
+                label: 'Euro',
+                data: [250000,27400],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+        
+      
+    </script>
+  </body>
+</html>

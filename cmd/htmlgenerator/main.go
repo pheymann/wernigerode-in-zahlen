@@ -20,13 +20,13 @@ func main() {
 		panic("directory is required")
 	}
 
-	financialPlanAFile, err := os.Open(*directory + "financial_plan_a.json")
+	financialPlanAFile, err := os.Open(*directory + "/financial_plan_a.json")
 	if err != nil {
 		panic(err)
 	}
 	defer financialPlanAFile.Close()
 
-	metadataFile, err := os.Open(*directory + "metadata.json")
+	metadataFile, err := os.Open(*directory + "/metadata.json")
 	if err != nil {
 		panic(err)
 	}

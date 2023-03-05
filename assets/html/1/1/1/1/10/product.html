@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<head>
+  <title>Produkt</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="../../../../../../css/simple-grid.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<html>
+  <body>
+    <h1>Zentrale Dienste</h1>
+
+    <p>
+      In 2023 haben wir
+    </p>
+
+    <h2 class="total-cashflow-expenses center">-2.585.600,00€</h2>
+
+    <p>
+      ausgegeben für:  Zentraler Service für alle Dezernate und Einrichtungen der Stadt.
+    </p>
+
+    <div class="container">
+      
+          <h3>Die Verwaltung hat dabei <span class="total-cashflow-expenses">-1.944.600,00€</span> gekostet</h3>
+
+          
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 700,00€</h5>
+                <canvas id="chartjs-8f2cc921-79b4-4978-9676-ab2fb5826811"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: 1.945.300,00€</h5>
+                <canvas id="chartjs-de28d984-11b3-4626-b7f0-0f47a2326fa6"></canvas>
+              </div>
+            </div>
+          
+      
+          <h3>Die Investitionen haben dabei <span class="total-cashflow-expenses">-641.000,00€</span> gekostet</h3>
+
+          
+            
+            
+              <div>
+                <canvas id="chartjs-7777aae0-03ae-48f9-991d-9cb886df8960"></canvas>
+              </div>
+            
+          
+      
+    </div>
+
+    <div class="info-sheet">
+      <h3>Aufgabe</h3>
+      <p> Bundes-, Landes- und Ortsrecht; Ratsbeschlüsse</p>
+
+      <h3>Ziele</h3>
+      <p>Beschäftigte der Verwaltung</p>
+
+      <h3>Dienstleistungen</h3>
+      <p> 1.Organisation -Durchführung eigener und Begleitung von externen -Organisationsuntersuchungen,Organisationsentwicklung -Erarbeitung von allgemeinen Dienst- und Geschäftsanweisungen bzw., Dienstvereinbarungen -Ermittlung des Stellenbedarfs, Stellen-und Dienstpostenbewertung -Beschaffung und Betreuung von technischen Ausrüstungen, Geräten und Fahrzeugen -Sicherstellung der räumlichen und, sächlichen Arbeitsplatzausstattung -Dienstreisen -zentrale Poststelle der Verwaltung 2.Informations- und Kommunikationstechnik -Netzverwaltung und Sysemtverwaltung, Betreuung Datenbanken und Telefonie, -Anwenderbetreuung; Störungsbeseitigung und Wartung von Arbeitsplatzhard-und software 3.Zentrale Beschaffung Bürobedarf,Kleintechnik, Büromöbel,Fachbücher, Zeitschriften und Online-Nachschlagwerke, 4.Arbeitssicherheit und Gesundheitsschutz Wahrnehmung der Aufgaben nach dem Arbeitssicherungsgesetz 5. E-Government - Einführung von E-Government-Prozessen in der Stadt Wernigerode;, Initiierung,Leitung und Koordination zentraler digitaler Prozesse,</p>
+
+      <h3>Gruppierung</h3>
+      <ul>
+        <li>Fachbereich: Budget Oberbürgermeister</li>
+        <li>Produktklasse: Zentrale Verwaltung</li>
+        <li>Produktbereich: Innere Verwaltung</li>
+        <li>Produktgruppe: Verwaltungssteuerung und -service</li>
+        <li>Produkt: Zentrale Dienste</li>
+        <li>Verantwortlich: Oberbürgermeister</li>
+        <li>Zuständig: Herr Radünzel</li>
+      </ul>
+    </div>
+
+    <div class="back-link center">
+      <a href="/1">Zurück zur Bereichsübersicht</a>
+    </div>
+
+    <footer>
+      <p>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>
+      </p>
+    </footer>
+
+    <script>
+      
+        
+          new Chart(document.getElementById('chartjs-8f2cc921-79b4-4978-9676-ab2fb5826811'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Einzahlungen aus dem Verkauf von beweglichen Sachen","Sonstige privatrechtliche Leistungsentgelte"],
+              datasets: [{
+                label: 'Euro',
+                data: [200,500],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+        
+          new Chart(document.getElementById('chartjs-de28d984-11b3-4626-b7f0-0f47a2326fa6'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für Mieten und Pachten","Auszahlungen für Mieten und Pachten EDV","Auszahlungen für Leasing","Auszahlungen für Leasing EDV","Haltung von Fahrzeugen","Erwerb geringwertiger Vermögensgegenstände","Erwerb geringwertiger Vermögensgegenstände EDV","Unterhaltung des sonstigen beweglichen Vermögens","Unterhaltung des sonstigen beweglichen Vermögens EDV","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für Getränke","Auszahlungen für sonstige Dienstleistungen (EDV)","Sonstige Personal- und Versorgungsauszahlungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen","Geschäftsauszahlungen EDV","Auszahlungen für Beitragsservice (GEZ)"],
+              datasets: [{
+                label: 'Euro',
+                data: [893700,37200,179700,4300,2300,76000,19100,52000,27000,7000,7000,1500,190000,2500,2000,2000,141500,28000,36000,176000,52500,8000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+        
+        
+          new Chart(document.getElementById('chartjs-7777aae0-03ae-48f9-991d-9cb886df8960'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Auszahlung für den Erwerb immaterieller Vermögensgegenstände","Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 EUR o. UStr.","Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 EUR EDV o.Ustr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro EDVo.Ustr."],
+              datasets: [{
+                label: 'Euro',
+                data: [170000,65000,90000,16000,300000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+    </script>
+  </body>
+</html>

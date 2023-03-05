@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<head>
+  <title>Produkt</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="../../../../../../css/simple-grid.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<html>
+  <body>
+    <h1>Personalangelegenheiten</h1>
+
+    <p>
+      In 2023 haben wir
+    </p>
+
+    <h2 class="total-cashflow-expenses center">-1.041.500,00€</h2>
+
+    <p>
+      ausgegeben für:  Wahrnehmung aller personalrelevanten Leistungen.
+    </p>
+
+    <div class="container">
+      
+          <h3>Die Verwaltung hat dabei <span class="total-cashflow-expenses">-1.041.500,00€</span> gekostet</h3>
+
+          
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 261.500,00€</h5>
+                <canvas id="chartjs-78696ff2-3ac0-4438-993c-13854ce05aaa"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: 1.303.000,00€</h5>
+                <canvas id="chartjs-90b30d53-6f39-4508-8072-e186f48eb097"></canvas>
+              </div>
+            </div>
+          
+      
+    </div>
+
+    <div class="info-sheet">
+      <h3>Aufgabe</h3>
+      <p> Bundes-, Landes- und Ortsrecht, Tarifrecht, Ratsbeschlüsse, Dienstanweisungen und -vereinbarungen</p>
+
+      <h3>Ziele</h3>
+      <p>A  n  g e  h  örige der Verwaltung</p>
+
+      <h3>Dienstleistungen</h3>
+      <p> -Personalentwicklung-Personalausbildung und Qualifizierung,-Personalbetreuung-Personalabrechnung, Familienkasse,,-Betriebsärztlicher Dienst  -Behindertengleichstellung nach §25, Behinderten-Gleichstellungsgesetz,</p>
+
+      <h3>Gruppierung</h3>
+      <ul>
+        <li>Fachbereich: Budget Oberbürgermeister</li>
+        <li>Produktklasse: Zentrale Verwaltung</li>
+        <li>Produktbereich: Innere Verwaltung</li>
+        <li>Produktgruppe: Verwaltungssteuerung und -service</li>
+        <li>Produkt: Personalangelegenheiten</li>
+        <li>Verantwortlich: Oberbürgermeister</li>
+        <li>Zuständig: Herr Radünzel</li>
+      </ul>
+    </div>
+
+    <div class="back-link center">
+      <a href="/1">Zurück zur Bereichsübersicht</a>
+    </div>
+
+    <footer>
+      <p>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>
+      </p>
+    </footer>
+
+    <script>
+      
+        
+          new Chart(document.getElementById('chartjs-78696ff2-3ac0-4438-993c-13854ce05aaa'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Sonstige privatrechtliche Leistungsentgelte","Einzahlungen aus Kostenerstattungen vom Bund","Einzahlungen aus Kostenerstattungen von gesetzlichen Sozialversicherungen"],
+              datasets: [{
+                label: 'Euro',
+                data: [5500,6000,250000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+        
+          new Chart(document.getElementById('chartjs-90b30d53-6f39-4508-8072-e186f48eb097'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Geschäftsauszahlungen","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten","Steuern, Versicherungen, Schadensfälle","Erstatt. f.d. Ausz. v. Dritten aus lfd. Verwaltungstätigkeit an Gemeinde\u0026 GV"],
+              datasets: [{
+                label: 'Euro',
+                data: [711700,29500,142800,3400,170000,2200,30000,207000,6400],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+    </script>
+  </body>
+</html>

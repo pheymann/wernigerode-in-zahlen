@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+  <title>Produkt</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="../../../../../../css/simple-grid.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<html>
+  <body>
+    <h1>Gleichstellungsbeauftragte</h1>
+
+    <p>
+      In 2023 haben wir
+    </p>
+
+    <h2 class="total-cashflow-expenses center">-36.700,00€</h2>
+
+    <p>
+      ausgegeben für:  Förderung der Gleichstellung, Beiträge zur Verwirklichung der Gleichberechtigung von Frauen und Männern auf kommunaler Ebene leisten.
+    </p>
+
+    <div class="container">
+      
+          <h3>Die Verwaltung hat dabei <span class="total-cashflow-expenses">-36.700,00€</span> gekostet</h3>
+
+          
+            
+            
+              <div>
+                <canvas id="chartjs-5f54fec8-49f2-446c-a5f3-addaa759e154"></canvas>
+              </div>
+            
+          
+      
+    </div>
+
+    <div class="info-sheet">
+      <h3>Aufgabe</h3>
+      <p> Bundes-, Landes- und Ortsrecht</p>
+
+      <h3>Ziele</h3>
+      <p>alle BürgerInnen, Beschäftigte</p>
+
+      <h3>Dienstleistungen</h3>
+      <p> -Beteiligung der Gleichstellungsbeauftragten bei allen kommunalen Planungen und Entscheidungen gem. Frauenfördergesetz,,-Förderung einer wirtschaftlichen Unabhängigkeit für Frauen und Mädchen durch:,, Zielgruppengerechte Beratung, Information und,Unterstützung von Gruppen und Einzelpersonen,-Intensivierung der Vernetzungsarbeit-Mitarbeit in Arbeitsgemeinschaften und Projekten,,-Presse- und Öffentlichkeitsarbeit-Durchführung von Veranstaltungen und Projekten zu gleichstellungsrelevanten Themenkreisen; z. B. Vereinbarkeit von Familie und Beruf-Beratung und Unterstützung von, MitarbeiterInnen-Beteiligung an Stellenbesetzungsverfahren,-Mitarbeit in Arbeitsgruppen und Projekten innerhalb der Verwaltung</p>
+
+      <h3>Gruppierung</h3>
+      <ul>
+        <li>Fachbereich: Budget Oberbürgermeister</li>
+        <li>Produktklasse: Zentrale Verwaltung</li>
+        <li>Produktbereich: Innere Verwaltung</li>
+        <li>Produktgruppe: Verwaltungssteuerung und -service</li>
+        <li>Produkt: Gleichstellungsbeauftragte</li>
+        <li>Verantwortlich: Oberbürgermeister</li>
+        <li>Zuständig: Frau Hofmann</li>
+      </ul>
+    </div>
+
+    <div class="back-link center">
+      <a href="/1">Zurück zur Bereichsübersicht</a>
+    </div>
+
+    <footer>
+      <p>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>
+      </p>
+    </footer>
+
+    <script>
+      
+        
+        
+          new Chart(document.getElementById('chartjs-5f54fec8-49f2-446c-a5f3-addaa759e154'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen fü Beschäftigter","Besondere Verwaltungs- und Betriebsauszahlungen","Zuschüsse an übrige Bereiche"],
+              datasets: [{
+                label: 'Euro',
+                data: [24700,1100,5000,300,2100,3500],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+    </script>
+  </body>
+</html>

@@ -159,7 +159,7 @@ func (p MetadataDecoder) DecodeFromCSV(lines []string) model.Metadata {
 			metadata.Description = strings.Join(
 				[]string{
 					metadata.Description,
-					descriptionCleanupRegex.ReplaceAllString(line, "$1"),
+					strings.TrimSpace(strings.Trim(descriptionCleanupRegex.ReplaceAllString(line, "$1"), ",")),
 				},
 				" ",
 			)
