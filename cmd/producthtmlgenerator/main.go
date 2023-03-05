@@ -37,12 +37,6 @@ func main() {
 		model.BudgetYear2023,
 	)
 
-	productHtmlFile, err := os.Create("product.html")
-	if err != nil {
-		panic(err)
-	}
-	defer productHtmlFile.Close()
-
 	target := decodeTarget.Decode(financialPlanAFile, "html")
 	target.Name = "product"
 	target.Tpe = "html"

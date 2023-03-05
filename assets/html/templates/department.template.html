@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+  <title>Fachbereich</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<html>
+  <body>
+    <h1>{{.Copy.Department}}</h1>
+
+    <p>
+      {{.Copy.IntroCashflowTotal}}
+    </p>
+
+    <h2 class="{{.CSS.TotalCashflowClass}} center">{{.Copy.CashflowTotal}}</h2>
+
+    <p>
+      {{.Copy.IntroDescription}}
+    </p>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <h5 class="center">{{.Copy.IncomeCashflowTotal}}</h5>
+          <canvas id="{{.Income.ID}}"></canvas>
+        </div>
+        <div class="col-6">
+          <h5 class="center">{{.Copy.ExpensesCashflowTotal}}</h5>
+          <canvas id="{{.Expenses.ID}}"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="back-link center">
+      <a href="">{{.Copy.BackLink}}</a>
+    </div>
+
+    <footer>
+      <p>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>
+      </p>
+    </footer>
+
+    <script>
+      var incomeProductLinks = {{.IncomeProductLinks}};
+      var incomeCanvas = document.getElementById('{{.Income.ID}}');
+      var incomeChart = new Chart(incomeCanvas, {
+        type: 'doughnut',
+        data: {
+          labels: {{.Income.Labels}},
+          datasets: [{
+            label: 'Euro',
+            data: {{.Income.Data}},
+            borderWidth: 1
+          }]
+        },
+        options: {
+          plugins: {
+            legend: {
+              display: false
+            }
+          },
+          onClick: function(e){
+            var activePoints = incomeChart.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
+            window.location.href = incomeProductLinks[activePoints[0].index];
+          },
+        }
+      });
+
+      var expenesesProductLinks = {{.ExpensesProductLinks}};
+      var expensesCanvas = document.getElementById('{{.Expenses.ID}}');
+      var expensesChart = new Chart(expensesCanvas, {
+        type: 'doughnut',
+        data: {
+          labels: {{.Expenses.Labels}},
+          datasets: [{
+            label: 'Euro',
+            data: {{.Expenses.Data}},
+            borderWidth: 1
+          }]
+        },
+        options: {
+          plugins: {
+            legend: {
+              display: false
+            }
+          },
+          onClick: function(e){
+            var activePoints = expensesChart.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
+            window.location.href = expenesesProductLinks[activePoints[0].index];
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

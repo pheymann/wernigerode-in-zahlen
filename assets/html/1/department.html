@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+  <title>Fachbereich</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<html>
+  <body>
+    <h1>Budget des Burgermeisters</h1>
+
+    <p>
+      In 2023 haben wir
+    </p>
+
+    <h2 class="total-cashflow-expenses center">-6.172.000,00€</h2>
+
+    <p>
+      für diesen Fachbereich ausgegeben ausgegeben.
+    </p>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <h5 class="center">Einnahmen: 434.700,00€</h5>
+          <canvas id="chartjs-521b6b7f-5393-42b7-aa73-c2d9f96c70bd"></canvas>
+        </div>
+        <div class="col-6">
+          <h5 class="center">Ausgaben: -6.606.700,00€</h5>
+          <canvas id="chartjs-314c6861-d39d-471b-9b53-8e46f185d40b"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="back-link center">
+      <a href="">Zurück zur Übersicht</a>
+    </div>
+
+    <footer>
+      <p>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>
+      </p>
+    </footer>
+
+    <script>
+      var incomeProductLinks = ["/html/1/1/1/1/02/product.html","/html/1/5/7/5/01/product.html"];
+      var incomeCanvas = document.getElementById('chartjs-521b6b7f-5393-42b7-aa73-c2d9f96c70bd');
+      var incomeChart = new Chart(incomeCanvas, {
+        type: 'doughnut',
+        data: {
+          labels: [" Führungsunterstützung und- beratung"," Förderung des Tourismus"],
+          datasets: [{
+            label: 'Euro',
+            data: [277400,157300],
+            borderWidth: 1
+          }]
+        },
+        options: {
+          plugins: {
+            legend: {
+              display: false
+            }
+          },
+          onClick: function(e){
+            var activePoints = incomeChart.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
+            window.location.href = incomeProductLinks[activePoints[0].index];
+          },
+        }
+      });
+
+      var expenesesProductLinks = ["/html/1/1/1/1/01/product.html","/html/1/1/1/1/04/product.html","/html/1/1/1/1/05/product.html","/html/1/1/1/1/06/product.html","/html/1/1/1/1/08/product.html","/html/1/1/1/1/09/product.html","/html/1/1/1/1/10/product.html","/html/1/1/1/1/16/product.html","/html/1/1/1/1/17/product.html","/html/1/1/2/1/01/product.html","/html/1/2/6/2/01/product.html","/html/1/3/5/1/01/product.html","/html/1/5/5/1/02/product.html","/html/1/5/7/1/01/product.html"];
+      var expensesCanvas = document.getElementById('chartjs-314c6861-d39d-471b-9b53-8e46f185d40b');
+      var expensesChart = new Chart(expensesCanvas, {
+        type: 'doughnut',
+        data: {
+          labels: [" Führung, Entwicklung und Überwachung der Verwaltung"," Förderung der Gleichstellung, Beiträge zur Verwirklichung der Gleichberechtigung von Frauen und Männern auf kommunaler Ebene leisten"," Überwachung der Einhaltung von geltenden Rechtsvorschriften, Tarifverträgen und sonstigen Vorschriften, Mitbestimmung im Rahmen der rechtlichen Möglichkeiten"," Prüfung der Rechtmäßigkeit des Verwaltungshandelns"," Angelegenheiten des Stadtrates und seiner Ausschüsse"," Wahrnehmung aller personalrelevanten Leistungen"," Zentraler Service für alle Dezernate und Einrichtungen der Stadt"," Abwicklung aller Rechtsangelegenheiten der Stadt, Versicherungs- und Datenschutz"," Führungsunterstützung und- beratung"," \"Vorbereitung, Durchführung und Nachbereitung sowie die öffentliche Darstellung von Wahlen und Abstimmungen; Statistische Angelegenheiten\""," Förderung der Musikpflege"," Unterstützung von einzelnen Fachbereichen durch zusätzliche, nicht im Stellenplan enthaltene Stellen"," \"Betreiben der aus der Landesgartenschau 2006 hervorgegangenen Park- und Freizeitanlage, des Miniaturenparks „Kleiner Harz“ sowie weiterer öffentlicher Erholungs- und Freizeitanlagen im Stadtgebiet von\" Wernigerode"," Entwicklung und Förderung des Wirtschaftsstandortes"],
+          datasets: [{
+            label: 'Euro',
+            data: [-689000,-36700,-95800,-159100,-135200,-1041500,-2585600,-432800,-358700,-500,-360400,-14200,-510000,-187200],
+            borderWidth: 1
+          }]
+        },
+        options: {
+          plugins: {
+            legend: {
+              display: false
+            }
+          },
+          onClick: function(e){
+            var activePoints = expensesChart.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
+            window.location.href = expenesesProductLinks[activePoints[0].index];
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

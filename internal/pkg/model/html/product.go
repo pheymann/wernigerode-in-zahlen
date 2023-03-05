@@ -19,9 +19,7 @@ type ProductCopy struct {
 	IntroCashflowTotal string
 	IntroDescription   string
 
-	CashflowTotal    string
-	CashflowIncome   string
-	CashflowExpenses string
+	CashflowTotal string
 
 	MetaDepartment    string
 	MetaProductClass  string
