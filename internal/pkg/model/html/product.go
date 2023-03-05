@@ -1,6 +1,10 @@
 package html
 
-import "wernigode-in-zahlen.de/internal/pkg/model"
+import (
+	"html/template"
+
+	"wernigode-in-zahlen.de/internal/pkg/model"
+)
 
 type Product struct {
 	Meta            model.Metadata
@@ -53,7 +57,7 @@ type BalanceSection struct {
 }
 
 type BalanceSectionCopy struct {
-	Header                string
+	Header                template.HTML
 	IncomeCashflowTotal   string
 	ExpensesCashflowTotal string
 }

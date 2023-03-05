@@ -17,7 +17,7 @@
       {{.Copy.IntroCashflowTotal}}
     </p>
 
-    <h2 class="{{.CSS.TotalCashflowClass}}">{{.Copy.CashflowTotal}}</h2>
+    <h2 class="{{.CSS.TotalCashflowClass}} center">{{.Copy.CashflowTotal}}</h2>
 
     <p>
       {{.Copy.IntroDescription}}
@@ -25,7 +25,7 @@
 
     <div class="container">
       {{range .BalanceSections}}
-          <h3 class="{{.CSS.CashflowTotalClass}}">{{.Copy.Header}}</h3>
+          <h3>{{.Copy.Header}}</h3>
 
           {{if .HasIncomeAndExpenses}}
             <div class="row">
@@ -75,7 +75,15 @@
       </ul>
     </div>
 
-    <a href="/{{.Meta.Department.ID}}">{{.Copy.BackLink}}</a>
+    <div class="back-link center">
+      <a href="/{{.Meta.Department.ID}}">{{.Copy.BackLink}}</a>
+    </div>
+
+    <footer>
+      <p>
+        You can find the code for this website on <a href="https://github.com/pheymann/paulheymann-website">Github</a>
+      </p>
+    </footer>
 
     <script>
       {{range .BalanceSections}}

@@ -2,6 +2,7 @@ package product
 
 import (
 	"fmt"
+	"html/template"
 
 	"github.com/google/uuid"
 	"golang.org/x/text/message"
@@ -102,13 +103,14 @@ func dataPointsToChartJSDataset(dataPoints []html.DataPoint) html.ChartJSDataset
 	}
 }
 
-func encodeBalanceSectionHeader(balance model.AccountBalance, year model.BudgetYear, p *message.Printer) string {
-	return fmt.Sprintf(
-		"%s %s %s",
+func encodeBalanceSectionHeader(balance model.AccountBalance, year model.BudgetYear, p *message.Printer) template.HTML {
+	return template.HTML(fmt.Sprintf(
+		`%s <span class="%s">%s</span> %s`,
 		encodeAccountClass(balance.Class),
+		encodeHtml.EncodeCSSCashflowClass(balance.Budgets[year]),
 		encodeHtml.EncodeBudget(balance.Budgets[year], p),
 		encodeBalance(balance.Budgets[year]),
-	)
+	))
 }
 
 func encodeAccountClass(class model.AccountClass) string {
