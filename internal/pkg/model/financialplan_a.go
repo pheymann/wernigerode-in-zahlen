@@ -9,6 +9,7 @@ type AccountClass = string
 const (
 	AccountClassAdministration AccountClass = "admininstration"
 	AccountClassInvestments    AccountClass = "balance-investments"
+	AccountClassOneOff         AccountClass = "one-off"
 )
 
 type BudgetYear = string

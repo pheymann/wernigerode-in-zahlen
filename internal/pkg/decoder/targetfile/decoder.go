@@ -10,7 +10,7 @@ import (
 
 var (
 	fileRegex = regexp.MustCompile(
-		`^assets/data/(raw)?(processed)?/(?P<path>(\d+/)+)(?P<file_name>\w+)\.(?P<file_type>\w+)`,
+		`^.+/assets/data/(raw)?(processed)?/(?P<path>(\d+/)+)(?P<file_name>\w+)\.(?P<file_type>\w+)`,
 	)
 )
 

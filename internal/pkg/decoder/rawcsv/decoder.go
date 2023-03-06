@@ -9,13 +9,23 @@ import (
 )
 
 type Decoder struct {
+	oneOffBudgetParsers          []*regexp.Regexp
 	groupCostCenterBudgetParsers []*regexp.Regexp
 	unitCostCenterBudgetParsers  []*regexp.Regexp
-	separateLineParser           *regexp.Regexp
+	separateLineParsers          []*regexp.Regexp
+	ignoreLineParsers            []*regexp.Regexp
 }
 
 func NewDecoder() Decoder {
 	return Decoder{
+		oneOffBudgetParsers: []*regexp.Regexp{
+			regexp.MustCompile(
+				fmt.Sprintf(
+					`^(?P<id>\d+)[ ]*(?P<desc>[ %s\-\.\)\(\d&€><]*),,,,,,+`,
+					decoder.RxGermanLetter,
+				),
+			),
+		},
 		groupCostCenterBudgetParsers: []*regexp.Regexp{
 			regexp.MustCompile(rxBasis(`(?P<id>\d+)`)),
 			regexp.MustCompile(rxBasis(`(?P<id>[0-9][0-9]?) \+? `)),
@@ -59,31 +69,64 @@ func NewDecoder() Decoder {
 				),
 			),
 		},
-		separateLineParser: regexp.MustCompile(
-			fmt.Sprintf(
-				`^"?(?P<desc>[ %s\.&\(\)/>]+)"?,+`,
-				decoder.RxGermanLetter,
+		separateLineParsers: []*regexp.Regexp{
+			regexp.MustCompile(
+				fmt.Sprintf(
+					`^"(?P<desc>[ %s\.&\(\)/>,]+)",+`,
+					decoder.RxGermanLetter,
+				),
 			),
-		),
+			regexp.MustCompile(
+				fmt.Sprintf(
+					`^(?P<desc>[ %s\.&\(\)/>€]+),+`,
+					decoder.RxGermanLetter,
+				),
+			),
+			regexp.MustCompile(
+				fmt.Sprintf(
+					`^,"?(?P<desc>[ %s\.&\(\)/>]+)"?,+`,
+					decoder.RxGermanLetter,
+				),
+			),
+		},
+		ignoreLineParsers: []*regexp.Regexp{
+			regexp.MustCompile(`^"",,,,,+`),
+		},
 	}
 }
 
 func (d *Decoder) Debug() {
 	fmt.Println("=== DEBUG rawcsv ===")
+	fmt.Printf("%+v\n", d.oneOffBudgetParsers)
 	fmt.Printf("%+v\n", d.groupCostCenterBudgetParsers)
 	fmt.Printf("%+v\n", d.unitCostCenterBudgetParsers)
-	fmt.Printf("%+v\n", d.separateLineParser)
+	fmt.Printf("%+v\n", d.separateLineParsers)
 }
 
 type DecodeType = string
 
 const (
+	DecodeTypeOneOffBudget DecodeType = "one-off"
 	DecodeTypeAccount      DecodeType = "account"
 	DecodeTypeUnit         DecodeType = "unit"
 	DeocdeTypeSeparateLine DecodeType = "separate"
 )
 
 func (p *Decoder) Decode(line string) model.RawCSVRow {
+	for _, regex := range p.oneOffBudgetParsers {
+		matches := regex.FindStringSubmatch(line)
+
+		if len(matches) == 0 {
+			continue
+		}
+
+		return model.RawCSVRow{
+			Tpe:     model.RowTypeOneOff,
+			Matches: matches,
+			Regexp:  regex,
+		}
+	}
+
 	for _, regex := range p.unitCostCenterBudgetParsers {
 		matches := regex.FindStringSubmatch(line)
 
@@ -112,12 +155,25 @@ func (p *Decoder) Decode(line string) model.RawCSVRow {
 		}
 	}
 
-	matches := p.separateLineParser.FindStringSubmatch(line)
-	if len(matches) > 0 {
+	for _, regex := range p.separateLineParsers {
+		matches := regex.FindStringSubmatch(line)
+
+		if len(matches) == 0 {
+			continue
+		}
+
 		return model.RawCSVRow{
 			Tpe:     model.RowTypeSeparateLine,
 			Matches: matches,
-			Regexp:  p.separateLineParser,
+			Regexp:  regex,
+		}
+	}
+
+	for _, regex := range p.ignoreLineParsers {
+		if regex.MatchString(line) {
+			return model.RawCSVRow{
+				Tpe: model.RowTypeIgnore,
+			}
 		}
 	}
 

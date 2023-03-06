@@ -6,6 +6,7 @@ import (
 	"os"
 
 	decodeFpa "wernigode-in-zahlen.de/internal/pkg/decoder/financialplan_a"
+	decodeFpb "wernigode-in-zahlen.de/internal/pkg/decoder/financialplan_b"
 	decodeMeta "wernigode-in-zahlen.de/internal/pkg/decoder/metadata"
 	"wernigode-in-zahlen.de/internal/pkg/decoder/rawcsv"
 	"wernigode-in-zahlen.de/internal/pkg/model"
@@ -55,4 +56,27 @@ func CleanUpFinancialPlanA(financialPlaAFile *os.File) model.FinancialPlanA {
 	}
 
 	return decodeFpa.DecodeFromCSV(rawCSVRows)
+}
+
+func CleanUpFinancialPlanB(financialPlaAFile *os.File) model.FinancialPlanA {
+	rawCSVDecoder := rawcsv.NewDecoder()
+
+	defer func() {
+		if r := recover(); r != nil {
+			rawCSVDecoder.Debug()
+			fmt.Printf("\n%+v\n", r)
+			os.Exit(2)
+		}
+	}()
+
+	financialPlanAScanner := bufio.NewScanner(financialPlaAFile)
+
+	var rawCSVRows = []model.RawCSVRow{}
+	for financialPlanAScanner.Scan() {
+		line := financialPlanAScanner.Text()
+
+		rawCSVRows = append(rawCSVRows, rawCSVDecoder.Decode(line))
+	}
+
+	return decodeFpb.DecodeFromCSV(rawCSVRows)
 }
