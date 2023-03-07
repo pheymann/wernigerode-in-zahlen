@@ -9,19 +9,31 @@ import (
 	encodeHtml "wernigode-in-zahlen.de/internal/pkg/encoder/html"
 	"wernigode-in-zahlen.de/internal/pkg/model"
 	"wernigode-in-zahlen.de/internal/pkg/model/html"
+	"wernigode-in-zahlen.de/internal/pkg/shared"
 )
 
-func Encode(metadata model.Metadata, balanceData []html.BalanceData, cashflowTotal float64, year model.BudgetYear, p *message.Printer) html.Product {
+func Encode(
+	metadata model.Metadata,
+	fpaBalanceData []html.BalanceData,
+	fpaCashflowTotal float64,
+	fpbBalanceDataOpt shared.Option[[]html.BalanceData],
+	fpbCashflowTotalOpt shared.Option[float64],
+	year model.BudgetYear,
+	p *message.Printer,
+) html.Product {
 	return html.Product{
-		Meta:            metadata,
-		BalanceSections: balanceDataToSections(balanceData, year, p),
+		Meta:               metadata,
+		FpaBalanceSections: balanceDataToSections(fpaBalanceData, year, p),
+		FpbBalanceSections: shared.Map(fpbBalanceDataOpt, func(fpbBalanceData []html.BalanceData) []html.BalanceSection {
+			return balanceDataToSections(fpbBalanceData, year, p)
+		}).GetOrElse([]html.BalanceSection{}),
 		Copy: html.ProductCopy{
 			BackLink: "Zurück zur Bereichsübersicht",
 
 			IntroCashflowTotal: fmt.Sprintf("In %s haben wir", year),
-			IntroDescription:   encodeIntroDescription(cashflowTotal, metadata),
+			IntroDescription:   encodeIntroDescription(fpaCashflowTotal+fpbCashflowTotalOpt.GetOrElse(0), metadata),
 
-			CashflowTotal: encodeHtml.EncodeBudget(cashflowTotal, p),
+			CashflowTotal: encodeHtml.EncodeBudget(fpaCashflowTotal, p),
 
 			MetaDepartment:    "Fachbereich",
 			MetaProductClass:  "Produktklasse",
@@ -36,7 +48,7 @@ func Encode(metadata model.Metadata, balanceData []html.BalanceData, cashflowTot
 			MetaGrouping:      "Gruppierung",
 		},
 		CSS: html.ProductCSS{
-			TotalCashflowClass: encodeHtml.EncodeCSSCashflowClass(cashflowTotal),
+			TotalCashflowClass: encodeHtml.EncodeCSSCashflowClass(fpaCashflowTotal),
 		},
 	}
 }
@@ -106,21 +118,24 @@ func dataPointsToChartJSDataset(dataPoints []html.DataPoint) html.ChartJSDataset
 func encodeBalanceSectionHeader(balance model.AccountBalance, year model.BudgetYear, p *message.Printer) template.HTML {
 	return template.HTML(fmt.Sprintf(
 		`%s <span class="%s">%s</span> %s`,
-		encodeAccountClass(balance.Class),
+		encodeAccountClass(balance.Class, balance.Desc),
 		encodeHtml.EncodeCSSCashflowClass(balance.Budgets[year]),
 		encodeHtml.EncodeBudget(balance.Budgets[year], p),
 		encodeBalance(balance.Budgets[year]),
 	))
 }
 
-func encodeAccountClass(class model.AccountClass) string {
+func encodeAccountClass(class model.AccountClass, oneOffDesc string) string {
 	switch class {
 	case model.AccountClassAdministration:
 		return "Die Verwaltung hat dabei"
 	case model.AccountClassInvestments:
 		return "Die Investitionen haben dabei"
+	case model.AccountClassOneOff:
+		return fmt.Sprintf("Das Budget \"%s\" hat dabei", oneOffDesc)
+	default:
+		panic(fmt.Sprintf("unknown account class '%s'", class))
 	}
-	panic(fmt.Sprintf("unknown account class '%s'", class))
 }
 
 func encodeBalance(cashflowTotal float64) string {

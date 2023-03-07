@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="../../../../../../css/simple-grid.css">
+  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -31,11 +31,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 700,00€</h5>
-                <canvas id="chartjs-8f2cc921-79b4-4978-9676-ab2fb5826811"></canvas>
+                <canvas id="chartjs-d5a5d8fe-313f-45f2-88cb-41aa363d2a6e"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: 1.945.300,00€</h5>
-                <canvas id="chartjs-de28d984-11b3-4626-b7f0-0f47a2326fa6"></canvas>
+                <canvas id="chartjs-607eec71-17e4-445a-93eb-87ead672c15a"></canvas>
               </div>
             </div>
           
@@ -46,7 +46,42 @@
             
             
               <div>
-                <canvas id="chartjs-7777aae0-03ae-48f9-991d-9cb886df8960"></canvas>
+                <canvas id="chartjs-8fb53ee0-47d9-4aeb-ae61-26812c3c8285"></canvas>
+              </div>
+            
+          
+      
+
+      
+          <h3>Das Budget "Software" hat dabei <span class="total-cashflow-expenses">-170.000,00€</span> gekostet</h3>
+
+          
+            
+            
+              <div>
+                <canvas id="chartjs-b091771c-6770-49a9-972a-5bfe8d84e0e3"></canvas>
+              </div>
+            
+          
+      
+          <h3>Das Budget "Anschaffungen 150 €  bis 1.000 € netto" hat dabei <span class="total-cashflow-expenses">-155.000,00€</span> gekostet</h3>
+
+          
+            
+            
+              <div>
+                <canvas id="chartjs-25ee9e10-6558-46ea-8afc-e3c29e9c8d36"></canvas>
+              </div>
+            
+          
+      
+          <h3>Das Budget "Betriebs-und Geschäftsausstattungen" hat dabei <span class="total-cashflow-expenses">-316.000,00€</span> gekostet</h3>
+
+          
+            
+            
+              <div>
+                <canvas id="chartjs-0b8ad132-7657-42b9-8d11-9189ec625a4c"></canvas>
               </div>
             
           
@@ -88,7 +123,7 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-8f2cc921-79b4-4978-9676-ab2fb5826811'), {
+          new Chart(document.getElementById('chartjs-d5a5d8fe-313f-45f2-88cb-41aa363d2a6e'), {
             type: 'doughnut',
             data: {
               labels: ["Einzahlungen aus dem Verkauf von beweglichen Sachen","Sonstige privatrechtliche Leistungsentgelte"],
@@ -108,7 +143,7 @@
           });
         
         
-          new Chart(document.getElementById('chartjs-de28d984-11b3-4626-b7f0-0f47a2326fa6'), {
+          new Chart(document.getElementById('chartjs-607eec71-17e4-445a-93eb-87ead672c15a'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für Mieten und Pachten","Auszahlungen für Mieten und Pachten EDV","Auszahlungen für Leasing","Auszahlungen für Leasing EDV","Haltung von Fahrzeugen","Erwerb geringwertiger Vermögensgegenstände","Erwerb geringwertiger Vermögensgegenstände EDV","Unterhaltung des sonstigen beweglichen Vermögens","Unterhaltung des sonstigen beweglichen Vermögens EDV","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für Getränke","Auszahlungen für sonstige Dienstleistungen (EDV)","Sonstige Personal- und Versorgungsauszahlungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen","Geschäftsauszahlungen EDV","Auszahlungen für Beitragsservice (GEZ)"],
@@ -130,13 +165,81 @@
       
         
         
-          new Chart(document.getElementById('chartjs-7777aae0-03ae-48f9-991d-9cb886df8960'), {
+          new Chart(document.getElementById('chartjs-8fb53ee0-47d9-4aeb-ae61-26812c3c8285'), {
             type: 'doughnut',
             data: {
               labels: ["Auszahlung für den Erwerb immaterieller Vermögensgegenstände","Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 EUR o. UStr.","Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 EUR EDV o.Ustr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro EDVo.Ustr."],
               datasets: [{
                 label: 'Euro',
                 data: [170000,65000,90000,16000,300000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+
+      
+        
+        
+          new Chart(document.getElementById('chartjs-b091771c-6770-49a9-972a-5bfe8d84e0e3'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Auszahlung für den Erwerb immaterieller Vermögensgegenstände"],
+              datasets: [{
+                label: 'Euro',
+                data: [170000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+        
+        
+          new Chart(document.getElementById('chartjs-25ee9e10-6558-46ea-8afc-e3c29e9c8d36'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.","Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € EDV o.Ustr."],
+              datasets: [{
+                label: 'Euro',
+                data: [65000,90000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+        
+        
+          new Chart(document.getElementById('chartjs-0b8ad132-7657-42b9-8d11-9189ec625a4c'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro EDVo.Ustr."],
+              datasets: [{
+                label: 'Euro',
+                data: [16000,300000],
                 borderWidth: 1
               }]
             },

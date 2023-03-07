@@ -8,6 +8,7 @@ import (
 	decodeTarget "wernigode-in-zahlen.de/internal/pkg/decoder/targetfile"
 	"wernigode-in-zahlen.de/internal/pkg/io"
 	"wernigode-in-zahlen.de/internal/pkg/model"
+	"wernigode-in-zahlen.de/internal/pkg/shared"
 )
 
 func main() {
@@ -25,6 +26,14 @@ func main() {
 	}
 	defer financialPlanAFile.Close()
 
+	financialPlanBJSONOpt := shared.Option[string]{IsSome: false}
+	financialPlanBFile, err := os.Open(*directory + "/financial_plan_b.json")
+	if err == nil {
+		financialPlanBJSONOpt.ToSome(io.ReadCompleteFile(financialPlanBFile))
+
+		defer financialPlanBFile.Close()
+	}
+
 	metadataFile, err := os.Open(*directory + "/metadata.json")
 	if err != nil {
 		panic(err)
@@ -33,6 +42,7 @@ func main() {
 
 	productHtml := htmlgenerator.GenerateHTMLForProduct(
 		io.ReadCompleteFile(financialPlanAFile),
+		financialPlanBJSONOpt,
 		io.ReadCompleteFile(metadataFile),
 		model.BudgetYear2023,
 	)

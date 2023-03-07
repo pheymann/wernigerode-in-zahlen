@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="../../../../../../css/simple-grid.css">
+  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -31,14 +31,16 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 36.000,00€</h5>
-                <canvas id="chartjs-02eee3ef-3824-4128-8bcf-07c78c1bee10"></canvas>
+                <canvas id="chartjs-c7566b7c-67cc-4a57-ad04-99105881ed43"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: 50.200,00€</h5>
-                <canvas id="chartjs-e75d6fba-840d-4feb-bdfb-ae2760cf4546"></canvas>
+                <canvas id="chartjs-f00cd4f8-eea5-475b-a11e-7954c5cdcfd4"></canvas>
               </div>
             </div>
           
+      
+
       
     </div>
 
@@ -77,7 +79,7 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-02eee3ef-3824-4128-8bcf-07c78c1bee10'), {
+          new Chart(document.getElementById('chartjs-c7566b7c-67cc-4a57-ad04-99105881ed43'), {
             type: 'doughnut',
             data: {
               labels: ["Zuweisungen für laufende Zwecke vom Bund"],
@@ -97,7 +99,7 @@
           });
         
         
-          new Chart(document.getElementById('chartjs-e75d6fba-840d-4feb-bdfb-ae2760cf4546'), {
+          new Chart(document.getElementById('chartjs-f00cd4f8-eea5-475b-a11e-7954c5cdcfd4'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an sonstige Beschäftigte","Beiträge zu Versorgungskassen für sonstige Beschäftigte","Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschäft.","Beihilfen, Unterstützungsleistungen für Beschäftigte"],
@@ -116,6 +118,8 @@
             }
           });
         
+      
+
       
     </script>
   </body>

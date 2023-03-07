@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="../../../../../../css/simple-grid.css">
+  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -31,14 +31,16 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 8.100,00€</h5>
-                <canvas id="chartjs-cc8c4760-db4a-43be-a898-95a809c85d5e"></canvas>
+                <canvas id="chartjs-ae8ac359-bb2a-490b-95d7-220048b7bd49"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: 697.100,00€</h5>
-                <canvas id="chartjs-cee608c8-47a3-4a9a-85fb-7a6fbbcaa81c"></canvas>
+                <canvas id="chartjs-897edeaf-3ccd-4db9-923d-36a4cadd0f6f"></canvas>
               </div>
             </div>
           
+      
+
       
     </div>
 
@@ -77,7 +79,7 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-cc8c4760-db4a-43be-a898-95a809c85d5e'), {
+          new Chart(document.getElementById('chartjs-ae8ac359-bb2a-490b-95d7-220048b7bd49'), {
             type: 'doughnut',
             data: {
               labels: ["Benutzungsgebühren und ähnliche Entgelte"],
@@ -97,7 +99,7 @@
           });
         
         
-          new Chart(document.getElementById('chartjs-cee608c8-47a3-4a9a-85fb-7a6fbbcaa81c'), {
+          new Chart(document.getElementById('chartjs-897edeaf-3ccd-4db9-923d-36a4cadd0f6f'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für sonstige Dienstleistungen","Geschäftsauszahlungen","Verfügungsmittel"],
@@ -116,6 +118,8 @@
             }
           });
         
+      
+
       
     </script>
   </body>

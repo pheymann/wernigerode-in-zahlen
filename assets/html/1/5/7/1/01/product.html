@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="../../../../../../css/simple-grid.css">
+  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -31,11 +31,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 37.500,00€</h5>
-                <canvas id="chartjs-7c2716b0-4704-4a91-9a63-08849529791b"></canvas>
+                <canvas id="chartjs-64ee27bd-fc3b-4c56-89e9-ee53fcf8741b"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: 374.700,00€</h5>
-                <canvas id="chartjs-938a24e2-1543-412b-a85f-65654426e0f7"></canvas>
+                <canvas id="chartjs-bb0c582a-0556-4904-8c58-fe236c18de95"></canvas>
               </div>
             </div>
           
@@ -45,11 +45,13 @@
           
             
               <div>
-                <canvas id="chartjs-de88130d-8f63-47a1-ab64-0ff6ac644a71"></canvas>
+                <canvas id="chartjs-a32ef3c3-3edc-4773-9f74-be509da7e0ab"></canvas>
               </div>
             
             
           
+      
+
       
     </div>
 
@@ -88,7 +90,7 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-7c2716b0-4704-4a91-9a63-08849529791b'), {
+          new Chart(document.getElementById('chartjs-64ee27bd-fc3b-4c56-89e9-ee53fcf8741b'), {
             type: 'doughnut',
             data: {
               labels: ["Erträge aus Kostenerstattungen von privaten Unternehmen (HarzAG)"],
@@ -108,7 +110,7 @@
           });
         
         
-          new Chart(document.getElementById('chartjs-938a24e2-1543-412b-a85f-65654426e0f7'), {
+          new Chart(document.getElementById('chartjs-bb0c582a-0556-4904-8c58-fe236c18de95'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfe, Unterstützungsleistung für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Besondere Verwaltungs- und Betriebsauszahlungen","Zuweisungen an Zweckverbände","Zuschüsse an sonstige öffentliche Sonderrechnungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten","Erstatt. für die Auszahl. von Dritten aus lfd. Verwaltungstät. an priv. Untern."],
@@ -129,10 +131,10 @@
         
       
         
-          new Chart(document.getElementById('chartjs-de88130d-8f63-47a1-ab64-0ff6ac644a71'), {
+          new Chart(document.getElementById('chartjs-a32ef3c3-3edc-4773-9f74-be509da7e0ab'), {
             type: 'doughnut',
             data: {
-              labels: ["Veräußerung von Grundstücken, Gebäuden und Infrastrukturvermögen 5.7.1.01/0003.6821000 Einzahlungen aus Veräußerung von Grundstücken Gebäuden"],
+              labels: ["Veräußerung von Grundstücken, Gebäuden und Infrastrukturvermögen 5.7.1.01/0003.6821000 Einzahlungen aus Veräußerung von Grundstücken, Gebäuden, Infrastrukturvermögen"],
               datasets: [{
                 label: 'Euro',
                 data: [150000],
@@ -149,6 +151,8 @@
           });
         
         
+      
+
       
     </script>
   </body>

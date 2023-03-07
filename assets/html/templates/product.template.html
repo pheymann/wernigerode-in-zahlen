@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="../../../../../../css/simple-grid.css">
+  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -24,7 +24,35 @@
     </p>
 
     <div class="container">
-      {{range .BalanceSections}}
+      {{range .FpaBalanceSections}}
+          <h3>{{.Copy.Header}}</h3>
+
+          {{if .HasIncomeAndExpenses}}
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">{{.Copy.IncomeCashflowTotal}}</h5>
+                <canvas id="{{.Income.ID}}"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">{{.Copy.ExpensesCashflowTotal}}</h5>
+                <canvas id="{{.Expenses.ID}}"></canvas>
+              </div>
+            </div>
+          {{else}}
+            {{if .HasIncome}}
+              <div>
+                <canvas id="{{.Income.ID}}"></canvas>
+              </div>
+            {{end}}
+            {{if .HasExpenses}}
+              <div>
+                <canvas id="{{.Expenses.ID}}"></canvas>
+              </div>
+            {{end}}
+          {{end}}
+      {{end}}
+
+      {{range .FpbBalanceSections}}
           <h3>{{.Copy.Header}}</h3>
 
           {{if .HasIncomeAndExpenses}}
@@ -86,7 +114,50 @@
     </footer>
 
     <script>
-      {{range .BalanceSections}}
+      {{range .FpaBalanceSections}}
+        {{if .HasIncome}}
+          new Chart(document.getElementById('{{.Income.ID}}'), {
+            type: 'doughnut',
+            data: {
+              labels: {{.Income.Labels}},
+              datasets: [{
+                label: 'Euro',
+                data: {{.Income.Data}},
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        {{end}}
+        {{if .HasExpenses}}
+          new Chart(document.getElementById('{{.Expenses.ID}}'), {
+            type: 'doughnut',
+            data: {
+              labels: {{.Expenses.Labels}},
+              datasets: [{
+                label: 'Euro',
+                data: {{.Expenses.Data}},
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        {{end}}
+      {{end}}
+
+      {{range .FpbBalanceSections}}
         {{if .HasIncome}}
           new Chart(document.getElementById('{{.Income.ID}}'), {
             type: 'doughnut',
