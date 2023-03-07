@@ -8,7 +8,7 @@
 html,
 body {
   height: 100%;
-  width: 80%;
+  width: 70%;
   margin: auto;
   padding: 0;
   left: 0;
@@ -59,6 +59,10 @@ footer a {
 .back-link {
   margin-top: 30px;
   margin-bottom: 50px;
+}
+
+.padded-chart {
+  padding: 0 20% 0 20%;
 }
 
 /* ROOT FONT STYLES */
@@ -241,9 +245,21 @@ p {
   body {
     width: 90%;
   }
+
+  .padded-chart {
+    padding: 0 0 0 0;
+  }
 }
 
 @media only screen and (min-width: 45em) {  /* 720px */
+  body {
+    width: 80%;
+  }
+
+  .padded-chart {
+    padding: 0 10% 0 10%;
+  }
+
   .col-1 {
     width: 4.33%;
   }
@@ -297,11 +313,22 @@ p {
   }
 }
 
-@media only screen and (min-width: 45em) {  /* 720px */
+@media only screen and (max-width: 45em) {  /* 720px */
   body {
-    width: 70%;
+    width: 90%;
+  }
+
+  .padded-chart {
+    padding: 0 0 0 0;
   }
 }
 
 @media only screen and (min-width: 60em) { /* 960px */
+  body {
+    width: 70%;
+  }
+
+  .padded-chart {
+    padding: 0 20% 0 20%;
+  }
 }
