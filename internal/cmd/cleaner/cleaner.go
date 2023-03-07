@@ -35,7 +35,7 @@ func CleanUpMetadata(metadataFile *os.File) model.Metadata {
 	return metadata
 }
 
-func CleanUpFinancialPlanA(financialPlaAFile *os.File) model.FinancialPlanA {
+func CleanUpFinancialPlanA(financialPlaAFile *os.File) model.FinancialPlan {
 	rawCSVDecoder := rawcsv.NewDecoder()
 
 	defer func() {
@@ -58,7 +58,7 @@ func CleanUpFinancialPlanA(financialPlaAFile *os.File) model.FinancialPlanA {
 	return decodeFpa.DecodeFromCSV(rawCSVRows)
 }
 
-func CleanUpFinancialPlanB(financialPlaAFile *os.File) model.FinancialPlanA {
+func CleanUpFinancialPlanB(financialPlaAFile *os.File) model.FinancialPlan {
 	rawCSVDecoder := rawcsv.NewDecoder()
 
 	defer func() {

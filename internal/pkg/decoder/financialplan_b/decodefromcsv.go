@@ -29,8 +29,8 @@ const (
 	rowTpeStateUnitAccount rowTpeState = "unit"
 )
 
-func DecodeFromCSV(rows []model.RawCSVRow) model.FinancialPlanA {
-	financialPlanA := &model.FinancialPlanA{}
+func DecodeFromCSV(rows []model.RawCSVRow) model.FinancialPlan {
+	financialPlanB := &model.FinancialPlan{}
 
 	var lastTpe rowTpeState = ""
 
@@ -38,28 +38,28 @@ func DecodeFromCSV(rows []model.RawCSVRow) model.FinancialPlanA {
 		if row.Tpe == model.RowTypeSeparateLine {
 			switch lastTpe {
 			case rowTpeStateBalance:
-				financialPlanA.UpdateLastAccountBalance(func(balance model.AccountBalance) model.AccountBalance {
+				financialPlanB.UpdateLastAccountBalance(func(balance model.AccountBalance) model.AccountBalance {
 					balance.Desc = updateDesc(balance.Desc, row.Regexp, row.Matches)
 
 					return balance
 				})
 
 			case rowTpeStateAccount:
-				financialPlanA.UpdateLastAccount(func(account model.Account) model.Account {
+				financialPlanB.UpdateLastAccount(func(account model.Account) model.Account {
 					account.Desc = updateDesc(account.Desc, row.Regexp, row.Matches)
 
 					return account
 				})
 
 			case rowTpeStateSubAccount:
-				financialPlanA.UpdateLastSubAccount(func(subAccount model.SubAccount) model.SubAccount {
+				financialPlanB.UpdateLastSubAccount(func(subAccount model.SubAccount) model.SubAccount {
 					subAccount.Desc = updateDesc(subAccount.Desc, row.Regexp, row.Matches)
 
 					return subAccount
 				})
 
 			case rowTpeStateUnitAccount:
-				financialPlanA.UpdateLastUnitAccount(func(unitAccount model.UnitAccount) model.UnitAccount {
+				financialPlanB.UpdateLastUnitAccount(func(unitAccount model.UnitAccount) model.UnitAccount {
 					unitAccount.Desc = updateDesc(unitAccount.Desc, row.Regexp, row.Matches)
 
 					return unitAccount
@@ -74,12 +74,12 @@ func DecodeFromCSV(rows []model.RawCSVRow) model.FinancialPlanA {
 			id := decoder.DecodeString(row.Regexp, "id", row.Matches)
 
 			if row.Tpe == model.RowTypeOneOff {
-				financialPlanA.AddAccountBalance(decodeAccountBalance(row, id, model.AccountClassOneOff, model.AccountBalance{}))
+				financialPlanB.AddAccountBalance(decodeAccountBalance(row, id, model.AccountClassOneOff, model.AccountBalance{}))
 			} else if row.Tpe == model.RowTypeOther {
 				if class, ok := accountBalanceClassifier[id]; ok {
 					lastTpe = rowTpeStateBalance
 
-					financialPlanA.UpdateLastAccountBalance(func(balance model.AccountBalance) model.AccountBalance {
+					financialPlanB.UpdateLastAccountBalance(func(balance model.AccountBalance) model.AccountBalance {
 						balance.Budgets = map[model.BudgetYear]float64{
 							model.BudgetYear2020: decoder.DecodeBudget(row.Regexp, "_2020", row.Matches),
 							model.BudgetYear2021: decoder.DecodeBudget(row.Regexp, "_2021", row.Matches),
@@ -95,23 +95,23 @@ func DecodeFromCSV(rows []model.RawCSVRow) model.FinancialPlanA {
 				} else if _, ok := accountClassifier[id]; ok {
 					lastTpe = rowTpeStateAccount
 
-					financialPlanA.AddAccount(decodeAccount(row, id, model.Account{}))
+					financialPlanB.AddAccount(decodeAccount(row, id, model.Account{}))
 				} else {
 					lastTpe = rowTpeStateSubAccount
 
-					financialPlanA.AddSubAccount(decodeSubAccount(row, id))
+					financialPlanB.AddSubAccount(decodeSubAccount(row, id))
 				}
 			} else {
 				// UnitAccount
 				lastTpe = rowTpeStateUnitAccount
 
-				financialPlanA.AddUnitAccount(decodeUnitAccount(row, id))
+				financialPlanB.AddUnitAccount(decodeUnitAccount(row, id))
 			}
 		}
 	}
 
-	financialPlanA.RemoveLastAccountBalance()
-	return *financialPlanA
+	financialPlanB.RemoveLastAccountBalance()
+	return *financialPlanB
 }
 
 func updateDesc(original string, regex *regexp.Regexp, matches []string) string {

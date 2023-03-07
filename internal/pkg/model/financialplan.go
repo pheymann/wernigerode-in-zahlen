@@ -1,6 +1,6 @@
 package model
 
-type FinancialPlanA struct {
+type FinancialPlan struct {
 	Balances []AccountBalance
 }
 
@@ -51,15 +51,15 @@ type UnitAccount struct {
 	Budgets map[BudgetYear]float64
 }
 
-func (fpa *FinancialPlanA) AddAccountBalance(balance AccountBalance) {
+func (fpa *FinancialPlan) AddAccountBalance(balance AccountBalance) {
 	fpa.Balances = append(fpa.Balances, balance)
 }
 
-func (fpa *FinancialPlanA) RemoveLastAccountBalance() {
+func (fpa *FinancialPlan) RemoveLastAccountBalance() {
 	fpa.Balances = fpa.Balances[:len(fpa.Balances)-1]
 }
 
-func (fpa *FinancialPlanA) UpdateLastAccountBalance(f func(AccountBalance) AccountBalance) {
+func (fpa *FinancialPlan) UpdateLastAccountBalance(f func(AccountBalance) AccountBalance) {
 	lastBalanceIndex := len(fpa.Balances) - 1
 
 	if lastBalanceIndex < 0 {
@@ -69,7 +69,7 @@ func (fpa *FinancialPlanA) UpdateLastAccountBalance(f func(AccountBalance) Accou
 	}
 }
 
-func (fpa *FinancialPlanA) AddAccount(account Account) {
+func (fpa *FinancialPlan) AddAccount(account Account) {
 	fpa.UpdateLastAccountBalance(func(balance AccountBalance) AccountBalance {
 		balance.Accounts = append(balance.Accounts, account)
 
@@ -77,7 +77,7 @@ func (fpa *FinancialPlanA) AddAccount(account Account) {
 	})
 }
 
-func (fpa *FinancialPlanA) RemoveLastAccount() {
+func (fpa *FinancialPlan) RemoveLastAccount() {
 	fpa.UpdateLastAccountBalance(func(balance AccountBalance) AccountBalance {
 		balance.Accounts = balance.Accounts[:len(balance.Accounts)-1]
 
@@ -85,7 +85,7 @@ func (fpa *FinancialPlanA) RemoveLastAccount() {
 	})
 }
 
-func (fpa *FinancialPlanA) UpdateLastAccount(f func(Account) Account) {
+func (fpa *FinancialPlan) UpdateLastAccount(f func(Account) Account) {
 	fpa.UpdateLastAccountBalance(func(balance AccountBalance) AccountBalance {
 		lastAccountIndex := len(balance.Accounts) - 1
 
@@ -99,7 +99,7 @@ func (fpa *FinancialPlanA) UpdateLastAccount(f func(Account) Account) {
 	})
 }
 
-func (fpa *FinancialPlanA) AddSubAccount(subAccount SubAccount) {
+func (fpa *FinancialPlan) AddSubAccount(subAccount SubAccount) {
 	fpa.UpdateLastAccount(func(account Account) Account {
 		account.Subs = append(account.Subs, subAccount)
 
@@ -107,7 +107,7 @@ func (fpa *FinancialPlanA) AddSubAccount(subAccount SubAccount) {
 	})
 }
 
-func (fpa *FinancialPlanA) UpdateLastSubAccount(f func(SubAccount) SubAccount) {
+func (fpa *FinancialPlan) UpdateLastSubAccount(f func(SubAccount) SubAccount) {
 	fpa.UpdateLastAccount(func(account Account) Account {
 		lastSubAccountIndex := len(account.Subs) - 1
 
@@ -121,7 +121,7 @@ func (fpa *FinancialPlanA) UpdateLastSubAccount(f func(SubAccount) SubAccount) {
 	})
 }
 
-func (fpa *FinancialPlanA) AddUnitAccount(unitAccount UnitAccount) {
+func (fpa *FinancialPlan) AddUnitAccount(unitAccount UnitAccount) {
 	fpa.UpdateLastSubAccount(func(subAccount SubAccount) SubAccount {
 		subAccount.Units = append(subAccount.Units, unitAccount)
 
@@ -129,7 +129,7 @@ func (fpa *FinancialPlanA) AddUnitAccount(unitAccount UnitAccount) {
 	})
 }
 
-func (fpa *FinancialPlanA) UpdateLastUnitAccount(f func(UnitAccount) UnitAccount) {
+func (fpa *FinancialPlan) UpdateLastUnitAccount(f func(UnitAccount) UnitAccount) {
 	fpa.UpdateLastSubAccount(func(subAccount SubAccount) SubAccount {
 		lastUnitAccountIndex := len(subAccount.Units) - 1
 

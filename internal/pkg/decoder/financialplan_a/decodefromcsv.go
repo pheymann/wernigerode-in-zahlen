@@ -32,8 +32,8 @@ const (
 	rowTpeStateUnitAccount rowTpeState = "unit"
 )
 
-func DecodeFromCSV(rows []model.RawCSVRow) model.FinancialPlanA {
-	financialPlanA := &model.FinancialPlanA{}
+func DecodeFromCSV(rows []model.RawCSVRow) model.FinancialPlan {
+	financialPlanA := &model.FinancialPlan{}
 
 	var lastTpe rowTpeState = ""
 

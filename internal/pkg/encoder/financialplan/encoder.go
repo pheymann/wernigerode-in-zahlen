@@ -6,8 +6,8 @@ import (
 	"wernigode-in-zahlen.de/internal/pkg/model"
 )
 
-func Encode(financialPlanA model.FinancialPlanA) string {
-	bytes, err := json.MarshalIndent(financialPlanA, "", "  ")
+func Encode(financialPlan model.FinancialPlan) string {
+	bytes, err := json.MarshalIndent(financialPlan, "", "  ")
 	if err != nil {
 		panic(err)
 	}

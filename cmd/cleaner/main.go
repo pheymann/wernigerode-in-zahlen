@@ -6,9 +6,9 @@ import (
 
 	"wernigode-in-zahlen.de/internal/cmd/cleaner"
 	decodeTarget "wernigode-in-zahlen.de/internal/pkg/decoder/targetfile"
-	encodeFpa "wernigode-in-zahlen.de/internal/pkg/encoder/financialplan_a"
+	encodeFp "wernigode-in-zahlen.de/internal/pkg/encoder/financialplan"
 	encodeMeta "wernigode-in-zahlen.de/internal/pkg/encoder/metadata"
-	writeFpa "wernigode-in-zahlen.de/internal/pkg/io/financialplan_a"
+	writeFp "wernigode-in-zahlen.de/internal/pkg/io/financialplan"
 	writeMeta "wernigode-in-zahlen.de/internal/pkg/io/metadata"
 )
 
@@ -44,8 +44,8 @@ func main() {
 		if err == nil {
 			defer financialPlanBFile.Close()
 
-			writeFpa.Write(
-				encodeFpa.Encode(
+			writeFp.Write(
+				encodeFp.Encode(
 					cleaner.CleanUpFinancialPlanB(financialPlanBFile),
 				),
 				decodeTarget.Decode(financialPlanBFile, "data/processed"),
@@ -60,8 +60,8 @@ func main() {
 
 	defer financialPlanAFile.Close()
 
-	writeFpa.Write(
-		encodeFpa.Encode(
+	writeFp.Write(
+		encodeFp.Encode(
 			cleaner.CleanUpFinancialPlanA(financialPlanAFile),
 		),
 		decodeTarget.Decode(financialPlanAFile, "data/processed"),

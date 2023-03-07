@@ -5,8 +5,8 @@ import (
 	"wernigode-in-zahlen.de/internal/pkg/model"
 )
 
-func Write(FinancialPlanA string, target model.TargetFile) {
+func Write(FinancialPlan string, target model.TargetFile) {
 	target.Tpe = "json"
 
-	io.WriteFile(target, FinancialPlanA)
+	io.WriteFile(target, FinancialPlan)
 }

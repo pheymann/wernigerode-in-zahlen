@@ -191,7 +191,7 @@ func encodeIntroDescription(cashflowTotal float64) string {
 }
 
 type ProductData struct {
-	FinancialPlanA model.FinancialPlanA
+	FinancialPlanA model.FinancialPlan
 	Metadata       model.Metadata
 }
 
