@@ -68,12 +68,12 @@
             </div>
           {{else}}
             {{if .HasIncome}}
-              <div>
+              <div class="padded-chart">
                 <canvas id="{{.Income.ID}}"></canvas>
               </div>
             {{end}}
             {{if .HasExpenses}}
-              <div>
+              <div class="padded-chart">
                 <canvas id="{{.Expenses.ID}}"></canvas>
               </div>
             {{end}}
