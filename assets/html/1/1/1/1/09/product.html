@@ -14,28 +14,28 @@
     <h1>Personalangelegenheiten</h1>
 
     <p>
-      In 2023 haben wir
+      Das Produkt -  Wahrnehmung aller personalrelevanten Leistungen - wird in 2023
     </p>
 
     <h2 class="total-cashflow-expenses center">-1.041.500,00€</h2>
 
     <p>
-      ausgegeben für:  Wahrnehmung aller personalrelevanten Leistungen.
+      kosten.
     </p>
 
     <div class="container">
       
-          <h3>Die Verwaltung hat dabei <span class="total-cashflow-expenses">-1.041.500,00€</span> gekostet</h3>
+          <h3>Die Verwaltung kostet <span class="total-cashflow-expenses">-1.041.500,00€</span></h3>
 
           
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 261.500,00€</h5>
-                <canvas id="chartjs-6233220a-c179-4dfd-ab2b-c594979243e2"></canvas>
+                <canvas id="chartjs-c27de36b-16d7-450b-b2c3-0b938f643388"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: 1.303.000,00€</h5>
-                <canvas id="chartjs-95b3214e-5e86-4805-b509-7aa47f5bb62c"></canvas>
+                <canvas id="chartjs-34842bad-b97e-49bf-9f54-88215b4c6540"></canvas>
               </div>
             </div>
           
@@ -61,14 +61,21 @@
         <li>Produktbereich: Innere Verwaltung</li>
         <li>Produktgruppe: Verwaltungssteuerung und -service</li>
         <li>Produkt: Personalangelegenheiten</li>
-        <li>Verantwortlich: Oberbürgermeister</li>
-        <li>Zuständig: Herr Radünzel</li>
       </ul>
     </div>
 
     <div class="back-link center">
-      <a href="/1">Zurück zur Bereichsübersicht</a>
+      <a href="/html/1/department.html">Zurück zur Bereichsübersicht</a>
     </div>
+
+    <p class="data-disclosure">
+      Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Statdt Wernigerode aus dem Jahr 2022.
+			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
+			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
+			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
+			<br><br>
+			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
+    </p>
 
     <footer>
       <p>
@@ -79,7 +86,7 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-6233220a-c179-4dfd-ab2b-c594979243e2'), {
+          new Chart(document.getElementById('chartjs-c27de36b-16d7-450b-b2c3-0b938f643388'), {
             type: 'doughnut',
             data: {
               labels: ["Sonstige privatrechtliche Leistungsentgelte","Einzahlungen aus Kostenerstattungen vom Bund","Einzahlungen aus Kostenerstattungen von gesetzlichen Sozialversicherungen"],
@@ -99,7 +106,7 @@
           });
         
         
-          new Chart(document.getElementById('chartjs-95b3214e-5e86-4805-b509-7aa47f5bb62c'), {
+          new Chart(document.getElementById('chartjs-34842bad-b97e-49bf-9f54-88215b4c6540'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Geschäftsauszahlungen","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten","Steuern, Versicherungen, Schadensfälle","Erstatt. f.d. Ausz. v. Dritten aus lfd. Verwaltungstätigkeit an Gemeinde\u0026 GV"],

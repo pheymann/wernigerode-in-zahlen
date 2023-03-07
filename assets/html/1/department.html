@@ -14,24 +14,24 @@
     <h1>Budget des Bürgermeisters</h1>
 
     <p>
-      In 2023 haben wir
+      In 2023 planen wir
     </p>
 
-    <h2 class="total-cashflow-expenses center">-6.172.000,00€</h2>
+    <h2 class="total-cashflow-expenses center">-12.344.000,00€</h2>
 
     <p>
-      für diesen Fachbereich ausgegeben ausgegeben.
+      für diesen Fachbereich auszugeben.
     </p>
 
     <div class="container">
       <div class="row">
         <div class="col-6">
-          <h5 class="center">Einnahmen: 434.700,00€</h5>
-          <canvas id="chartjs-002291b7-50fb-4e93-b595-40712ad570b2"></canvas>
+          <h5 class="center">Einnahmen: 869.400,00€</h5>
+          <canvas id="chartjs-7c92d519-2192-45f9-a59c-84140029226e"></canvas>
         </div>
         <div class="col-6">
-          <h5 class="center">Ausgaben: -6.606.700,00€</h5>
-          <canvas id="chartjs-b056b063-bec9-48ea-a1e3-972f83518c46"></canvas>
+          <h5 class="center">Ausgaben: -13.213.400,00€</h5>
+          <canvas id="chartjs-57af0ee6-4de5-4ed3-8173-e1fc287d3fd0"></canvas>
         </div>
       </div>
     </div>
@@ -39,6 +39,16 @@
     <div class="back-link center">
       <a href="">Zurück zur Übersicht</a>
     </div>
+
+    <p class="data-disclosure">
+      Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Statdt Wernigerode aus dem Jahr 2022.
+			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
+			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
+			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
+			<br><br>
+			Die Budgets auf dieser Webseite ergeben sich aus dem Teilfinanzplan A und B und weichen damit vom Haushaltsplan ab, der
+			nur Teilfinanzplan A Daten enthält.
+    </p>
 
     <footer>
       <p>
@@ -48,14 +58,14 @@
 
     <script>
       var incomeProductLinks = ["/html/1/1/1/1/02/product.html","/html/1/5/7/5/01/product.html"];
-      var incomeCanvas = document.getElementById('chartjs-002291b7-50fb-4e93-b595-40712ad570b2');
+      var incomeCanvas = document.getElementById('chartjs-7c92d519-2192-45f9-a59c-84140029226e');
       var incomeChart = new Chart(incomeCanvas, {
         type: 'doughnut',
         data: {
           labels: [" Führungsunterstützung und- beratung"," Förderung des Tourismus"],
           datasets: [{
             label: 'Euro',
-            data: [277400,157300],
+            data: [554800,314600],
             borderWidth: 1
           }]
         },
@@ -73,14 +83,14 @@
       });
 
       var expenesesProductLinks = ["/html/1/1/1/1/01/product.html","/html/1/1/1/1/04/product.html","/html/1/1/1/1/05/product.html","/html/1/1/1/1/06/product.html","/html/1/1/1/1/08/product.html","/html/1/1/1/1/09/product.html","/html/1/1/1/1/10/product.html","/html/1/1/1/1/16/product.html","/html/1/1/1/1/17/product.html","/html/1/1/2/1/01/product.html","/html/1/2/6/2/01/product.html","/html/1/3/5/1/01/product.html","/html/1/5/5/1/02/product.html","/html/1/5/7/1/01/product.html"];
-      var expensesCanvas = document.getElementById('chartjs-b056b063-bec9-48ea-a1e3-972f83518c46');
+      var expensesCanvas = document.getElementById('chartjs-57af0ee6-4de5-4ed3-8173-e1fc287d3fd0');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {
           labels: [" Führung, Entwicklung und Überwachung der Verwaltung"," Förderung der Gleichstellung, Beiträge zur Verwirklichung der Gleichberechtigung von Frauen und Männern auf kommunaler Ebene leisten"," Überwachung der Einhaltung von geltenden Rechtsvorschriften, Tarifverträgen und sonstigen Vorschriften, Mitbestimmung im Rahmen der rechtlichen Möglichkeiten"," Prüfung der Rechtmäßigkeit des Verwaltungshandelns"," Angelegenheiten des Stadtrates und seiner Ausschüsse"," Wahrnehmung aller personalrelevanten Leistungen"," Zentraler Service für alle Dezernate und Einrichtungen der Stadt"," Abwicklung aller Rechtsangelegenheiten der Stadt, Versicherungs- und Datenschutz"," Führungsunterstützung und- beratung"," \"Vorbereitung, Durchführung und Nachbereitung sowie die öffentliche Darstellung von Wahlen und Abstimmungen; Statistische Angelegenheiten\""," Förderung der Musikpflege"," Unterstützung von einzelnen Fachbereichen durch zusätzliche, nicht im Stellenplan enthaltene Stellen"," \"Betreiben der aus der Landesgartenschau 2006 hervorgegangenen Park- und Freizeitanlage, des Miniaturenparks „Kleiner Harz“ sowie weiterer öffentlicher Erholungs- und Freizeitanlagen im Stadtgebiet von\" Wernigerode"," Entwicklung und Förderung des Wirtschaftsstandortes"],
           datasets: [{
             label: 'Euro',
-            data: [-689000,-36700,-95800,-159100,-135200,-1041500,-2585600,-432800,-358700,-500,-360400,-14200,-510000,-187200],
+            data: [-1378000,-73400,-191600,-318200,-270400,-2083000,-5171200,-865600,-717400,-1000,-720800,-28400,-1020000,-374400],
             borderWidth: 1
           }]
         },

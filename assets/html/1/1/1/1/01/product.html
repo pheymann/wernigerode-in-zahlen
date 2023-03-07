@@ -14,28 +14,28 @@
     <h1>Verwaltungssteuerung</h1>
 
     <p>
-      In 2023 haben wir
+      Das Produkt -  Führung, Entwicklung und Überwachung der Verwaltung - wird in 2023
     </p>
 
     <h2 class="total-cashflow-expenses center">-689.000,00€</h2>
 
     <p>
-      ausgegeben für:  Führung, Entwicklung und Überwachung der Verwaltung.
+      kosten.
     </p>
 
     <div class="container">
       
-          <h3>Die Verwaltung hat dabei <span class="total-cashflow-expenses">-689.000,00€</span> gekostet</h3>
+          <h3>Die Verwaltung kostet <span class="total-cashflow-expenses">-689.000,00€</span></h3>
 
           
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 8.100,00€</h5>
-                <canvas id="chartjs-80048a71-3b7a-48a7-9fc0-859d59b6d1a5"></canvas>
+                <canvas id="chartjs-35420bba-0c9f-45c3-b13e-4a7c58cc7564"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: 697.100,00€</h5>
-                <canvas id="chartjs-ff7e75d1-800e-4002-ac82-065eeee607ac"></canvas>
+                <canvas id="chartjs-69949059-1120-419b-8baf-1052cb6a34e7"></canvas>
               </div>
             </div>
           
@@ -61,14 +61,21 @@
         <li>Produktbereich: Innere Verwaltung</li>
         <li>Produktgruppe: Verwaltungssteuerung und -service</li>
         <li>Produkt: Verwaltungssteuerung</li>
-        <li>Verantwortlich: Oberbürgermeister</li>
-        <li>Zuständig: Frau Dormann</li>
       </ul>
     </div>
 
     <div class="back-link center">
-      <a href="/1">Zurück zur Bereichsübersicht</a>
+      <a href="/html/1/department.html">Zurück zur Bereichsübersicht</a>
     </div>
+
+    <p class="data-disclosure">
+      Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Statdt Wernigerode aus dem Jahr 2022.
+			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
+			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
+			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
+			<br><br>
+			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
+    </p>
 
     <footer>
       <p>
@@ -79,7 +86,7 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-80048a71-3b7a-48a7-9fc0-859d59b6d1a5'), {
+          new Chart(document.getElementById('chartjs-35420bba-0c9f-45c3-b13e-4a7c58cc7564'), {
             type: 'doughnut',
             data: {
               labels: ["Benutzungsgebühren und ähnliche Entgelte"],
@@ -99,7 +106,7 @@
           });
         
         
-          new Chart(document.getElementById('chartjs-ff7e75d1-800e-4002-ac82-065eeee607ac'), {
+          new Chart(document.getElementById('chartjs-69949059-1120-419b-8baf-1052cb6a34e7'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für sonstige Dienstleistungen","Geschäftsauszahlungen","Verfügungsmittel"],

@@ -33,6 +33,8 @@ type ProductCopy struct {
 	MetaTargets       string
 	MetaServices      string
 	MetaGrouping      string
+
+	DataDisclosure template.HTML
 }
 
 type ProductCSS struct {

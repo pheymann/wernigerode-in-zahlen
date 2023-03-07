@@ -30,7 +30,7 @@ func Encode(
 		Copy: html.ProductCopy{
 			BackLink: "Zurück zur Bereichsübersicht",
 
-			IntroCashflowTotal: fmt.Sprintf("In %s haben wir", year),
+			IntroCashflowTotal: fmt.Sprintf("Das Produkt - %s - wird in %s", metadata.Description, year),
 			IntroDescription:   encodeIntroDescription(fpaCashflowTotal+fpbCashflowTotalOpt.GetOrElse(0), metadata),
 
 			CashflowTotal: encodeHtml.EncodeBudget(fpaCashflowTotal, p),
@@ -46,6 +46,13 @@ func Encode(
 			MetaTargets:       "Ziele",
 			MetaServices:      "Dienstleistungen",
 			MetaGrouping:      "Gruppierung",
+
+			DataDisclosure: `Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Statdt Wernigerode aus dem Jahr 2022.
+			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
+			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
+			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
+			<br><br>
+			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.`,
 		},
 		CSS: html.ProductCSS{
 			TotalCashflowClass: encodeHtml.EncodeCSSCashflowClass(fpaCashflowTotal),
@@ -55,9 +62,9 @@ func Encode(
 
 func encodeIntroDescription(cashflowTotal float64, meta model.Metadata) string {
 	if cashflowTotal >= 0 {
-		return fmt.Sprintf("eingenommen über: %s.", meta.Description)
+		return "einbringen."
 	}
-	return fmt.Sprintf("ausgegeben für: %s.", meta.Description)
+	return "kosten."
 }
 
 func balanceDataToSections(data []html.BalanceData, year model.BudgetYear, p *message.Printer) []html.BalanceSection {
@@ -117,30 +124,34 @@ func dataPointsToChartJSDataset(dataPoints []html.DataPoint) html.ChartJSDataset
 
 func encodeBalanceSectionHeader(balance model.AccountBalance, year model.BudgetYear, p *message.Printer) template.HTML {
 	return template.HTML(fmt.Sprintf(
-		`%s <span class="%s">%s</span> %s`,
-		encodeAccountClass(balance.Class, balance.Desc),
+		`%s <span class="%s">%s</span>`,
+		encodeAccountClass(balance.Class, balance.Budgets[year], balance.Desc),
 		encodeHtml.EncodeCSSCashflowClass(balance.Budgets[year]),
 		encodeHtml.EncodeBudget(balance.Budgets[year], p),
-		encodeBalance(balance.Budgets[year]),
 	))
 }
 
-func encodeAccountClass(class model.AccountClass, oneOffDesc string) string {
+func encodeAccountClass(class model.AccountClass, cashflowTotal float64, oneOffDesc string) string {
 	switch class {
 	case model.AccountClassAdministration:
-		return "Die Verwaltung hat dabei"
+		if cashflowTotal >= 0 {
+			return "Die Verwaltung erwirtschaftet"
+		}
+		return "Die Verwaltung kostet"
+
 	case model.AccountClassInvestments:
-		return "Die Investitionen haben dabei"
+		if cashflowTotal >= 0 {
+			return "Investitionen unterhalb der Wertgrenze erwirtschaften"
+		}
+		return "Investitionen unterhalb der Wertgrenze kosten"
+
 	case model.AccountClassOneOff:
-		return fmt.Sprintf("Das Budget \"%s\" hat dabei", oneOffDesc)
+		if cashflowTotal >= 0 {
+			return fmt.Sprintf("Die Investition \"%s\" erwirtschaftet", oneOffDesc)
+		}
+		return fmt.Sprintf("Die Investition \"%s\" kostet", oneOffDesc)
+
 	default:
 		panic(fmt.Sprintf("unknown account class '%s'", class))
 	}
-}
-
-func encodeBalance(cashflowTotal float64) string {
-	if cashflowTotal >= 0 {
-		return "eingenommen"
-	}
-	return "gekostet"
 }

@@ -14,38 +14,38 @@
     <h1>Wirtschaftsförderung</h1>
 
     <p>
-      In 2023 haben wir
+      Das Produkt -  Entwicklung und Förderung des Wirtschaftsstandortes - wird in 2023
     </p>
 
     <h2 class="total-cashflow-expenses center">-187.200,00€</h2>
 
     <p>
-      ausgegeben für:  Entwicklung und Förderung des Wirtschaftsstandortes.
+      kosten.
     </p>
 
     <div class="container">
       
-          <h3>Die Verwaltung hat dabei <span class="total-cashflow-expenses">-337.200,00€</span> gekostet</h3>
+          <h3>Die Verwaltung kostet <span class="total-cashflow-expenses">-337.200,00€</span></h3>
 
           
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 37.500,00€</h5>
-                <canvas id="chartjs-1c397e4e-e369-4703-bfe5-a867b4aa7b70"></canvas>
+                <canvas id="chartjs-daa48dec-877c-429e-a683-c5eb11f3e17e"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: 374.700,00€</h5>
-                <canvas id="chartjs-9273a5fe-27fe-4d25-8dd2-2deaf05e1f70"></canvas>
+                <canvas id="chartjs-07b41fd4-eea7-45dd-9431-c2692e3d0e2d"></canvas>
               </div>
             </div>
           
       
-          <h3>Die Investitionen haben dabei <span class="total-cashflow-income">150.000,00€</span> eingenommen</h3>
+          <h3>Investitionen unterhalb der Wertgrenze erwirtschaften <span class="total-cashflow-income">150.000,00€</span></h3>
 
           
             
               <div class="padded-chart">
-                <canvas id="chartjs-ac61fa44-7927-4cd2-bd16-a587c1fe5f1e"></canvas>
+                <canvas id="chartjs-abc057a5-0297-4299-8994-4558baa5601b"></canvas>
               </div>
             
             
@@ -72,14 +72,21 @@
         <li>Produktbereich: Wirtschaft und Tourismus</li>
         <li>Produktgruppe: Wirtschaftsförderung</li>
         <li>Produkt: Wirtschaftsförderung</li>
-        <li>Verantwortlich: Oberbürgermeister</li>
-        <li>Zuständig: Herr Quednau</li>
       </ul>
     </div>
 
     <div class="back-link center">
-      <a href="/1">Zurück zur Bereichsübersicht</a>
+      <a href="/html/1/department.html">Zurück zur Bereichsübersicht</a>
     </div>
+
+    <p class="data-disclosure">
+      Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Statdt Wernigerode aus dem Jahr 2022.
+			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
+			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
+			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
+			<br><br>
+			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
+    </p>
 
     <footer>
       <p>
@@ -90,7 +97,7 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-1c397e4e-e369-4703-bfe5-a867b4aa7b70'), {
+          new Chart(document.getElementById('chartjs-daa48dec-877c-429e-a683-c5eb11f3e17e'), {
             type: 'doughnut',
             data: {
               labels: ["Erträge aus Kostenerstattungen von privaten Unternehmen (HarzAG)"],
@@ -110,7 +117,7 @@
           });
         
         
-          new Chart(document.getElementById('chartjs-9273a5fe-27fe-4d25-8dd2-2deaf05e1f70'), {
+          new Chart(document.getElementById('chartjs-07b41fd4-eea7-45dd-9431-c2692e3d0e2d'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfe, Unterstützungsleistung für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Besondere Verwaltungs- und Betriebsauszahlungen","Zuweisungen an Zweckverbände","Zuschüsse an sonstige öffentliche Sonderrechnungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten","Erstatt. für die Auszahl. von Dritten aus lfd. Verwaltungstät. an priv. Untern."],
@@ -131,7 +138,7 @@
         
       
         
-          new Chart(document.getElementById('chartjs-ac61fa44-7927-4cd2-bd16-a587c1fe5f1e'), {
+          new Chart(document.getElementById('chartjs-abc057a5-0297-4299-8994-4558baa5601b'), {
             type: 'doughnut',
             data: {
               labels: ["Veräußerung von Grundstücken, Gebäuden und Infrastrukturvermögen 5.7.1.01/0003.6821000 Einzahlungen aus Veräußerung von Grundstücken, Gebäuden, Infrastrukturvermögen"],

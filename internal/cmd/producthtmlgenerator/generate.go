@@ -7,7 +7,7 @@ import (
 	"golang.org/x/text/language"
 	"golang.org/x/text/message"
 
-	fpaDecoder "wernigode-in-zahlen.de/internal/pkg/decoder/financialplan_a"
+	fpDecoder "wernigode-in-zahlen.de/internal/pkg/decoder/financialplan"
 	metaDecoder "wernigode-in-zahlen.de/internal/pkg/decoder/metadata"
 	htmlProductEncoder "wernigode-in-zahlen.de/internal/pkg/encoder/html/product"
 	"wernigode-in-zahlen.de/internal/pkg/model"
@@ -16,7 +16,7 @@ import (
 )
 
 func GenerateHTMLForProduct(financialPlanAJSON string, financialPlanBJSONOpt shared.Option[string], metadataJSON string, year model.BudgetYear) string {
-	fpa := fpaDecoder.DecodeFromJSON(financialPlanAJSON)
+	fpa := fpDecoder.DecodeFromJSON(financialPlanAJSON)
 	metadata := metaDecoder.DecodeFromJSON(metadataJSON)
 	p := message.NewPrinter(language.German)
 
@@ -25,7 +25,7 @@ func GenerateHTMLForProduct(financialPlanAJSON string, financialPlanBJSONOpt sha
 	fpbBalanceDataOpt := shared.None[[]html.BalanceData]()
 	fpbCashflowOpt := shared.None[float64]()
 	financialPlanBJSONOpt.ForEach(func(financialPlanBJSON string) {
-		fpb := fpaDecoder.DecodeFromJSON(financialPlanBJSON)
+		fpb := fpDecoder.DecodeFromJSON(financialPlanBJSON)
 
 		fpbBalanceData, fpbCashflow := readBalanceDataAndCashflow(fpb, year)
 

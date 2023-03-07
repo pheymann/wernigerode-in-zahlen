@@ -14,74 +14,74 @@
     <h1>Zentrale Dienste</h1>
 
     <p>
-      In 2023 haben wir
+      Das Produkt -  Zentraler Service für alle Dezernate und Einrichtungen der Stadt - wird in 2023
     </p>
 
     <h2 class="total-cashflow-expenses center">-2.585.600,00€</h2>
 
     <p>
-      ausgegeben für:  Zentraler Service für alle Dezernate und Einrichtungen der Stadt.
+      kosten.
     </p>
 
     <div class="container">
       
-          <h3>Die Verwaltung hat dabei <span class="total-cashflow-expenses">-1.944.600,00€</span> gekostet</h3>
+          <h3>Die Verwaltung kostet <span class="total-cashflow-expenses">-1.944.600,00€</span></h3>
 
           
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 700,00€</h5>
-                <canvas id="chartjs-e813fda8-8dae-494d-a57d-a22a0da60d36"></canvas>
+                <canvas id="chartjs-143f7bb5-a51d-4a98-a22c-d4d88c66eb7e"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: 1.945.300,00€</h5>
-                <canvas id="chartjs-f71809be-f80f-4252-b05f-c874b28694a3"></canvas>
+                <canvas id="chartjs-87ea7567-2698-4bf2-b18f-48236048a51f"></canvas>
               </div>
             </div>
           
       
-          <h3>Die Investitionen haben dabei <span class="total-cashflow-expenses">-641.000,00€</span> gekostet</h3>
+          <h3>Investitionen unterhalb der Wertgrenze kosten <span class="total-cashflow-expenses">-641.000,00€</span></h3>
 
           
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-5f333831-9ac8-49f5-85f2-ea0eb6ff4af7"></canvas>
+                <canvas id="chartjs-01f07f7b-333b-44a3-b5d2-01c061c763a5"></canvas>
               </div>
             
           
       
 
       
-          <h3>Das Budget "Software" hat dabei <span class="total-cashflow-expenses">-170.000,00€</span> gekostet</h3>
+          <h3>Die Investition "Software" kostet <span class="total-cashflow-expenses">-170.000,00€</span></h3>
 
           
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-a1aa4a6d-ff1a-4e0f-8d35-bbf73baca8f4"></canvas>
+                <canvas id="chartjs-5bfec193-939c-4c80-90de-fde170a4bcfc"></canvas>
               </div>
             
           
       
-          <h3>Das Budget "Anschaffungen 150 €  bis 1.000 € netto" hat dabei <span class="total-cashflow-expenses">-155.000,00€</span> gekostet</h3>
+          <h3>Die Investition "Anschaffungen 150 €  bis 1.000 € netto" kostet <span class="total-cashflow-expenses">-155.000,00€</span></h3>
 
           
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-e36b22f0-fce3-4286-a01b-7cfc39c5226f"></canvas>
+                <canvas id="chartjs-9606cb92-22c1-4402-96af-810900c3dcce"></canvas>
               </div>
             
           
       
-          <h3>Das Budget "Betriebs-und Geschäftsausstattungen" hat dabei <span class="total-cashflow-expenses">-316.000,00€</span> gekostet</h3>
+          <h3>Die Investition "Betriebs-und Geschäftsausstattungen" kostet <span class="total-cashflow-expenses">-316.000,00€</span></h3>
 
           
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-f61797ac-483e-4f2c-a65b-fb088d410569"></canvas>
+                <canvas id="chartjs-90f1dfe0-c825-4681-b642-958b30884eed"></canvas>
               </div>
             
           
@@ -105,14 +105,21 @@
         <li>Produktbereich: Innere Verwaltung</li>
         <li>Produktgruppe: Verwaltungssteuerung und -service</li>
         <li>Produkt: Zentrale Dienste</li>
-        <li>Verantwortlich: Oberbürgermeister</li>
-        <li>Zuständig: Herr Radünzel</li>
       </ul>
     </div>
 
     <div class="back-link center">
-      <a href="/1">Zurück zur Bereichsübersicht</a>
+      <a href="/html/1/department.html">Zurück zur Bereichsübersicht</a>
     </div>
+
+    <p class="data-disclosure">
+      Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Statdt Wernigerode aus dem Jahr 2022.
+			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
+			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
+			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
+			<br><br>
+			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
+    </p>
 
     <footer>
       <p>
@@ -123,7 +130,7 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-e813fda8-8dae-494d-a57d-a22a0da60d36'), {
+          new Chart(document.getElementById('chartjs-143f7bb5-a51d-4a98-a22c-d4d88c66eb7e'), {
             type: 'doughnut',
             data: {
               labels: ["Einzahlungen aus dem Verkauf von beweglichen Sachen","Sonstige privatrechtliche Leistungsentgelte"],
@@ -143,7 +150,7 @@
           });
         
         
-          new Chart(document.getElementById('chartjs-f71809be-f80f-4252-b05f-c874b28694a3'), {
+          new Chart(document.getElementById('chartjs-87ea7567-2698-4bf2-b18f-48236048a51f'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für Mieten und Pachten","Auszahlungen für Mieten und Pachten EDV","Auszahlungen für Leasing","Auszahlungen für Leasing EDV","Haltung von Fahrzeugen","Erwerb geringwertiger Vermögensgegenstände","Erwerb geringwertiger Vermögensgegenstände EDV","Unterhaltung des sonstigen beweglichen Vermögens","Unterhaltung des sonstigen beweglichen Vermögens EDV","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für Getränke","Auszahlungen für sonstige Dienstleistungen (EDV)","Sonstige Personal- und Versorgungsauszahlungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen","Geschäftsauszahlungen EDV","Auszahlungen für Beitragsservice (GEZ)"],
@@ -165,7 +172,7 @@
       
         
         
-          new Chart(document.getElementById('chartjs-5f333831-9ac8-49f5-85f2-ea0eb6ff4af7'), {
+          new Chart(document.getElementById('chartjs-01f07f7b-333b-44a3-b5d2-01c061c763a5'), {
             type: 'doughnut',
             data: {
               labels: ["Auszahlung für den Erwerb immaterieller Vermögensgegenstände","Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 EUR o. UStr.","Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 EUR EDV o.Ustr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro EDVo.Ustr."],
@@ -189,7 +196,7 @@
       
         
         
-          new Chart(document.getElementById('chartjs-a1aa4a6d-ff1a-4e0f-8d35-bbf73baca8f4'), {
+          new Chart(document.getElementById('chartjs-5bfec193-939c-4c80-90de-fde170a4bcfc'), {
             type: 'doughnut',
             data: {
               labels: ["Auszahlung für den Erwerb immaterieller Vermögensgegenstände"],
@@ -211,7 +218,7 @@
       
         
         
-          new Chart(document.getElementById('chartjs-e36b22f0-fce3-4286-a01b-7cfc39c5226f'), {
+          new Chart(document.getElementById('chartjs-9606cb92-22c1-4402-96af-810900c3dcce'), {
             type: 'doughnut',
             data: {
               labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.","Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € EDV o.Ustr."],
@@ -233,7 +240,7 @@
       
         
         
-          new Chart(document.getElementById('chartjs-f61797ac-483e-4f2c-a65b-fb088d410569'), {
+          new Chart(document.getElementById('chartjs-90f1dfe0-c825-4681-b642-958b30884eed'), {
             type: 'doughnut',
             data: {
               labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro EDVo.Ustr."],

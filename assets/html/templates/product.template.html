@@ -98,14 +98,16 @@
         <li>{{.Copy.MetaProductDomain}}: {{.Meta.ProductDomain.Name}}</li>
         <li>{{.Copy.MetaProductGroup}}: {{.Meta.ProductGroup.Name}}</li>
         <li>{{.Copy.MetaProduct}}: {{.Meta.Product.Name}}</li>
-        <li>{{.Copy.MetaAccountable}}: {{.Meta.ProductClass.Accountable}}</li>
-        <li>{{.Copy.MetaResponsible}}: {{.Meta.ProductDomain.Responsible}}</li>
       </ul>
     </div>
 
     <div class="back-link center">
-      <a href="/{{.Meta.Department.ID}}">{{.Copy.BackLink}}</a>
+      <a href="/html/{{.Meta.Department.ID}}/department.html">{{.Copy.BackLink}}</a>
     </div>
+
+    <p class="data-disclosure">
+      {{.Copy.DataDisclosure}}
+    </p>
 
     <footer>
       <p>
