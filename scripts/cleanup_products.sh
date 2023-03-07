@@ -6,5 +6,5 @@ products=$(find assets/data/raw/${department}/* -type f -name '*metadata*' -exec
 
 for product in $products; do
   echo "Cleaning up ${product}"
-  go run cmd/cleaner/main.go --dir ${product} --metadata
+  go run cmd/cleaner/main.go --dir ${product} --type=product
 done

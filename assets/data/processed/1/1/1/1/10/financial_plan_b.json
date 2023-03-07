@@ -1,0 +1,205 @@
+{
+  "Balances": [
+    {
+      "Id": "80",
+      "Class": "one-off",
+      "Desc": "Software",
+      "Budgets": {
+        "2020": -95401.83,
+        "2021": -94800,
+        "2022": -90000,
+        "2023": -170000,
+        "2024": -100000,
+        "2025": -100000
+      },
+      "Accounts": [
+        {
+          "Id": "40",
+          "Desc": " -Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen",
+          "Budgets": {
+            "2020": 95401.83,
+            "2021": 94800,
+            "2022": 90000,
+            "2023": 170000,
+            "2024": 100000,
+            "2025": 100000
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "/0080.7834000",
+                  "Desc": "Auszahlung für den Erwerb immaterieller Vermögensgegenstände",
+                  "Budgets": {
+                    "2020": 95401.83,
+                    "2021": 94800,
+                    "2022": 90000,
+                    "2023": 170000,
+                    "2024": 100000,
+                    "2025": 100000
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "100",
+      "Class": "one-off",
+      "Desc": "Anschaffungen 150 €  bis 1.000 € netto",
+      "Budgets": {
+        "2020": -63591.3,
+        "2021": -141200,
+        "2022": -140000,
+        "2023": -155000,
+        "2024": -155000,
+        "2025": -155000
+      },
+      "Accounts": [
+        {
+          "Id": "10",
+          "Desc": " Einzahlungen aus Investitionszuwendungen",
+          "Budgets": {
+            "2020": 1733.63,
+            "2021": 0,
+            "2022": 0,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "/0100.6811000",
+                  "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land",
+                  "Budgets": {
+                    "2020": 1733.63,
+                    "2021": 0,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "40",
+          "Desc": " -Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen",
+          "Budgets": {
+            "2020": 65324.93,
+            "2021": 141200,
+            "2022": 140000,
+            "2023": 155000,
+            "2024": 155000,
+            "2025": 155000
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "/0100.7832000",
+                  "Desc": "Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.",
+                  "Budgets": {
+                    "2020": 23658.41,
+                    "2021": 66000,
+                    "2022": 50000,
+                    "2023": 65000,
+                    "2024": 65000,
+                    "2025": 65000
+                  }
+                },
+                {
+                  "Id": "/0100.7832001",
+                  "Desc": "Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € EDV o.Ustr.",
+                  "Budgets": {
+                    "2020": 41666.52,
+                    "2021": 75200,
+                    "2022": 90000,
+                    "2023": 90000,
+                    "2024": 90000,
+                    "2025": 90000
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "200",
+      "Class": "one-off",
+      "Desc": "Betriebs-und Geschäftsausstattungen",
+      "Budgets": {
+        "2020": -5709.3,
+        "2021": -40300,
+        "2022": -53000,
+        "2023": -316000,
+        "2024": -36000,
+        "2025": -36000
+      },
+      "Accounts": [
+        {
+          "Id": "40",
+          "Desc": " -Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen",
+          "Budgets": {
+            "2020": 5709.3,
+            "2021": 40300,
+            "2022": 53000,
+            "2023": 316000,
+            "2024": 36000,
+            "2025": 36000
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "/0200.7831000",
+                  "Desc": "Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.",
+                  "Budgets": {
+                    "2020": 3975.67,
+                    "2021": 20300,
+                    "2022": 28000,
+                    "2023": 16000,
+                    "2024": 16000,
+                    "2025": 16000
+                  }
+                },
+                {
+                  "Id": "/0200.7831001",
+                  "Desc": "Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro EDVo.Ustr.",
+                  "Budgets": {
+                    "2020": 1733.63,
+                    "2021": 20000,
+                    "2022": 25000,
+                    "2023": 300000,
+                    "2024": 20000,
+                    "2025": 20000
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

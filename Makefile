@@ -1,4 +1,4 @@
-.PHONY: mv_product_financial_data
-mv_product_financial_data:
-	mkdir -p assets/data/raw/$(dir); mv ~/Downloads/tabula-wernigerode_haushaltsplan_2022\ /tabula-wernigerode_haushaltsplan_2022\ -$(metadata).csv $_/metadata.csv
-	mkdir -p assets/data/raw/$(dir); mv ~/Downloads/tabula-wernigerode_haushaltsplan_2022\ /tabula-wernigerode_haushaltsplan_2022\ -$(financial_plan_a).csv $_/financial_plan_a.csv
+.PHONY: clean-up
+clean-up:
+	./scripts/cleanup_products.sh 1
+	go run cmd/cleaner/main.go --dir=assets/data/raw/1 --type=department

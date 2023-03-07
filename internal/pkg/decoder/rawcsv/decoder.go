@@ -84,7 +84,7 @@ func NewDecoder() Decoder {
 			),
 			regexp.MustCompile(
 				fmt.Sprintf(
-					`^,"?(?P<desc>[ %s\.&\(\)/>]+)"?,+`,
+					`^("")?,"?(?P<desc>[ %s\.&\(\)/>]+)"?,+`,
 					decoder.RxGermanLetter,
 				),
 			),
