@@ -145,8 +145,8 @@ func main() {
 
 		Copy: DepartmentCopy{
 			Department:         *departmentName,
-			IntroCashflowTotal: fmt.Sprintf("In %s planen wir für die %d Produkte in diesem Fachbereich", year, len(productData)),
-			IntroDescription:   encodeIntroDescription(cashflowTotal),
+			IntroCashflowTotal: fmt.Sprintf("In %s planen wir", year),
+			IntroDescription:   encodeIntroDescription(cashflowTotal, len(productData)),
 
 			CashflowTotal:         htmlEncoder.EncodeBudget(cashflowTotal, p),
 			IncomeCashflowTotal:   "Einnahmen: " + htmlEncoder.EncodeBudget(incomeTotalCashFlow, p),
@@ -253,11 +253,17 @@ func populateChartData(
 	return productTotalCashflow, incomeTotalCashFlow, expensesTotalCashFlow
 }
 
-func encodeIntroDescription(cashflowTotal float64) string {
+func encodeIntroDescription(cashflowTotal float64, numberOfProducts int) template.HTML {
+	var earnOrExpese = "einzunehmen"
 	if cashflowTotal < 0 {
-		return "auszugeben."
+		earnOrExpese = "auszugeben"
 	}
-	return "einzunehmen."
+
+	return template.HTML(fmt.Sprintf(
+		"%s. Klick auf eines der <b>%d Produkte</b> in den Diagrammen um mehr zu erfahren.",
+		earnOrExpese,
+		numberOfProducts,
+	))
 }
 
 type ProductData struct {
@@ -280,7 +286,7 @@ type Department struct {
 type DepartmentCopy struct {
 	Department         string
 	IntroCashflowTotal string
-	IntroDescription   string
+	IntroDescription   template.HTML
 
 	CashflowTotal         string
 	IncomeCashflowTotal   string

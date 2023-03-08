@@ -14,24 +14,24 @@
     <h1>Budget des Bürgermeisters</h1>
 
     <p>
-      In 2023 planen wir für die 16 Produkte in diesem Fachbereich
+      In 2023 planen wir
     </p>
 
     <h2 class="total-cashflow-expenses center">-6.663.000,00€<sub style="font-size: 0.4em;">(A/B)</sub></h2>
 
     <p>
-      auszugeben.
+      auszugeben. Klick auf eines der <b>16 Produkte</b> in den Diagrammen um mehr zu erfahren.
     </p>
 
     <div class="container">
       <div class="row">
         <div class="col-6">
           <h5 class="center">Einnahmen: 434.700,00€<sub style="font-size: 0.4em;">(A/B)</sub></h5>
-          <canvas id="chartjs-2c119b2d-38cd-48df-a697-c46f646c1763"></canvas>
+          <canvas id="chartjs-dcc87f5b-8a77-4ca8-8a7f-42035cc9b941"></canvas>
         </div>
         <div class="col-6">
           <h5 class="center">Ausgaben: -7.097.700,00€<sub style="font-size: 0.4em;">(A/B)</sub></h5>
-          <canvas id="chartjs-2d3f525c-af9a-4142-a6ba-171941ea6be9"></canvas>
+          <canvas id="chartjs-71d1bbba-8679-4efa-b4b4-c19701b0d06a"></canvas>
         </div>
       </div>
     </div>
@@ -168,7 +168,7 @@
 
     <script>
       var incomeProductLinks = ["/html/1/1/1/1/02/product.html","/html/1/5/7/5/01/product.html"];
-      var incomeCanvas = document.getElementById('chartjs-2c119b2d-38cd-48df-a697-c46f646c1763');
+      var incomeCanvas = document.getElementById('chartjs-dcc87f5b-8a77-4ca8-8a7f-42035cc9b941');
       var incomeChart = new Chart(incomeCanvas, {
         type: 'doughnut',
         data: {
@@ -193,7 +193,7 @@
       });
 
       var expenesesProductLinks = ["/html/1/1/1/1/01/product.html","/html/1/1/1/1/04/product.html","/html/1/1/1/1/05/product.html","/html/1/1/1/1/06/product.html","/html/1/1/1/1/08/product.html","/html/1/1/1/1/09/product.html","/html/1/1/1/1/10/product.html","/html/1/1/1/1/16/product.html","/html/1/1/1/1/17/product.html","/html/1/1/2/1/01/product.html","/html/1/2/6/2/01/product.html","/html/1/3/5/1/01/product.html","/html/1/5/5/1/02/product.html","/html/1/5/7/1/01/product.html"];
-      var expensesCanvas = document.getElementById('chartjs-2d3f525c-af9a-4142-a6ba-171941ea6be9');
+      var expensesCanvas = document.getElementById('chartjs-71d1bbba-8679-4efa-b4b4-c19701b0d06a');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {
