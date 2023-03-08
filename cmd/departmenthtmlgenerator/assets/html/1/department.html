@@ -11,57 +11,55 @@
 </head>
 <html>
   <body>
-    <h1>{{.Copy.Department}}</h1>
+    <h1>Budget des Bürgermeisters</h1>
 
     <p>
-      {{.Copy.IntroCashflowTotal}}
+      In 2023 planen wir für die 0 Produkte in diesem Fachbereich
     </p>
 
-    <h2 class="{{.CSS.TotalCashflowClass}} center">{{.Copy.CashflowTotal}}<sub style="font-size: 0.4em;">(A/B)</sub></h2>
+    <h2 class="total-cashflow-income center">0,00€<sub style="font-size: 0.4em;">(A/B)</sub></h2>
 
     <p>
-      {{.Copy.IntroDescription}}
+      einzunehmen.
     </p>
 
     <div class="container">
       <div class="row">
         <div class="col-6">
-          <h5 class="center">{{.Copy.IncomeCashflowTotal}}<sub style="font-size: 0.4em;">(A/B)</sub></h5>
-          <canvas id="{{.Income.ID}}"></canvas>
+          <h5 class="center">Einnahmen: 0,00€<sub style="font-size: 0.4em;">(A/B)</sub></h5>
+          <canvas id="chartjs-72a41a5a-50e6-40b0-aab3-2369a87d29be"></canvas>
         </div>
         <div class="col-6">
-          <h5 class="center">{{.Copy.ExpensesCashflowTotal}}<sub style="font-size: 0.4em;">(A/B)</sub></h5>
-          <canvas id="{{.Expenses.ID}}"></canvas>
+          <h5 class="center">Ausgaben: 0,00€<sub style="font-size: 0.4em;">(A/B)</sub></h5>
+          <canvas id="chartjs-518ba8e5-3079-4c4b-9924-c093ca14ed54"></canvas>
         </div>
       </div>
     </div>
 
     <div class="info-sheet">
       <table>
-        <tbody>
-          <tr>
-            <th>Produkt</th>
-            <th>Teilfinanzplan A</th>
-            <th>Teilfinanzplan B</th>
-          </tr>
+        <tr>
+          <th>Produkt</th>
+          <th>Teilfinanzplan A</th>
+          <th>Teilfinanzplan B</th>
+        </tr>
 
-          {{range .Copy.Products}}
-            <tr>
-              <td><a href="{{.Link}}">{{.Name}}</a></td>
-              <td>{{.CashflowA}}</td>
-              <td>{{.CashflowB}}</td>
-            </tr>
-          {{end}}
-        </tbody>
+        
       </table>
     </div>
 
     <div class="back-link center">
-      <a href="">{{.Copy.BackLink}}</a>
+      <a href="">Zurück zur Übersicht</a>
     </div>
 
     <p class="data-disclosure">
-      {{.Copy.DataDisclosure}}
+      Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Statdt Wernigerode aus dem Jahr 2022.
+			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
+			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
+			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
+			<br><br>
+			Die Budgets auf dieser Webseite ergeben sich aus dem Teilfinanzplan A und B und weichen damit vom Haushaltsplan ab, der
+			nur Teilfinanzplan A Daten enthält.
     </p>
 
     <footer>
@@ -71,15 +69,15 @@
     </footer>
 
     <script>
-      var incomeProductLinks = {{.IncomeProductLinks}};
-      var incomeCanvas = document.getElementById('{{.Income.ID}}');
+      var incomeProductLinks = [];
+      var incomeCanvas = document.getElementById('chartjs-72a41a5a-50e6-40b0-aab3-2369a87d29be');
       var incomeChart = new Chart(incomeCanvas, {
         type: 'doughnut',
         data: {
-          labels: {{.Income.Labels}},
+          labels:  null ,
           datasets: [{
             label: 'Euro',
-            data: {{.Income.Data}},
+            data:  null ,
             borderWidth: 1
           }]
         },
@@ -96,15 +94,15 @@
         }
       });
 
-      var expenesesProductLinks = {{.ExpensesProductLinks}};
-      var expensesCanvas = document.getElementById('{{.Expenses.ID}}');
+      var expenesesProductLinks = [];
+      var expensesCanvas = document.getElementById('chartjs-518ba8e5-3079-4c4b-9924-c093ca14ed54');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {
-          labels: {{.Expenses.Labels}},
+          labels:  null ,
           datasets: [{
             label: 'Euro',
-            data: {{.Expenses.Data}},
+            data:  null ,
             borderWidth: 1
           }]
         },

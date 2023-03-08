@@ -22,12 +22,13 @@ import (
 )
 
 var (
-	productDirRegex = regexp.MustCompile(`^assets/data/processed/\d+/\d+/\d+/\d+/\d+$`)
+	productDirRegex = regexp.MustCompile(`assets/data/processed/\d+/\d+/\d+/\d+/\d+$`)
 )
 
 func main() {
 	department := flag.String("department", "", "department to generate a HTML file from")
 	departmentName := flag.String("name", "", "department name")
+	debugRootPath := flag.String("root-path", "", "Debug: root path")
 
 	flag.Parse()
 
@@ -40,7 +41,7 @@ func main() {
 	}
 
 	var productData = []ProductData{}
-	errWalk := filepath.Walk("assets/data/processed/"+*department, func(path string, info os.FileInfo, err error) error {
+	errWalk := filepath.Walk(*debugRootPath+"assets/data/processed/"+*department, func(path string, info os.FileInfo, err error) error {
 		if err != nil {
 			fmt.Println(err)
 			return err
@@ -56,7 +57,7 @@ func main() {
 			defer financialPlanAFile.Close()
 
 			var financialPlanBJSONOpt = shared.None[string]()
-			financialPlanBFile, err := os.Open(path + "/financial_plan_a.json")
+			financialPlanBFile, err := os.Open(path + "/financial_plan_b.json")
 			if err == nil {
 				defer financialPlanAFile.Close()
 
@@ -104,23 +105,32 @@ func main() {
 		DatasetLabel: "Ausgaben",
 	}
 
+	p := message.NewPrinter(language.German)
+
 	var cashflowTotal = 0.0
+	var productCopies = []DepartmentProductCopy{}
 	for _, product := range productData {
+		productCopy := DepartmentProductCopy{
+			Name: product.Metadata.Product.Name,
+		}
+
 		cashflow, incomeTotal, expensesTotal := populateChartData(
 			product,
 			&expensesProductLinks,
 			&chartExpensesDataPerProduct,
 			&incomeProductLinks,
 			&chartIncomeDataPerProduct,
+			&productCopy,
+			p,
 		)
 
 		cashflowTotal += cashflow
 		incomeTotalCashFlow += incomeTotal
 		expensesTotalCashFlow += expensesTotal
+		productCopies = append(productCopies, productCopy)
 	}
 
 	year := model.BudgetYear2023
-	p := message.NewPrinter(language.German)
 
 	departmentHTML := Department{
 		IncomeProductLinks: incomeProductLinks,
@@ -131,12 +141,14 @@ func main() {
 
 		Copy: DepartmentCopy{
 			Department:         *departmentName,
-			IntroCashflowTotal: fmt.Sprintf("In %s planen wir", year),
+			IntroCashflowTotal: fmt.Sprintf("In %s planen wir für die %d Produkte in diesem Fachbereich", year, len(productData)),
 			IntroDescription:   encodeIntroDescription(cashflowTotal),
 
 			CashflowTotal:         htmlEncoder.EncodeBudget(cashflowTotal, p),
 			IncomeCashflowTotal:   "Einnahmen: " + htmlEncoder.EncodeBudget(incomeTotalCashFlow, p),
 			ExpensesCashflowTotal: "Ausgaben: " + htmlEncoder.EncodeBudget(expensesTotalCashFlow, p),
+
+			Products: productCopies,
 
 			BackLink: "Zurück zur Übersicht",
 
@@ -153,7 +165,7 @@ func main() {
 		},
 	}
 
-	departmentTmpl := template.Must(template.ParseFiles("assets/html/templates/department.template.html"))
+	departmentTmpl := template.Must(template.ParseFiles(*debugRootPath + "assets/html/templates/department.template.html"))
 
 	var htmlBytes bytes.Buffer
 	if err := departmentTmpl.Execute(&htmlBytes, departmentHTML); err != nil {
@@ -176,45 +188,57 @@ func populateChartData(
 	chartExpensesDataPerProduct *html.ChartJSDataset,
 	incomeProductLinks *[]string,
 	chartIncomeDataPerProduct *html.ChartJSDataset,
+	productCopy *DepartmentProductCopy,
+	p *message.Printer,
 ) (float64, float64, float64) {
 	var productTotalCashflow = 0.0
 	var incomeTotalCashFlow = 0.0
 	var expensesTotalCashFlow = 0.0
 
+	var financialPlanACashflow = 0.0
 	for _, balance := range product.FinancialPlanA.Balances {
 		productTotalCashflow += balance.Budgets[model.BudgetYear2023]
+		financialPlanACashflow += balance.Budgets[model.BudgetYear2023]
 	}
+	productCopy.CashflowA = htmlEncoder.EncodeBudget(financialPlanACashflow, p)
 
 	if product.FinancialPlanBOpt.IsSome {
+		var financialPlanBCashflow = 0.0
 		for _, balance := range product.FinancialPlanBOpt.Value.Balances {
 			productTotalCashflow += balance.Budgets[model.BudgetYear2023]
+			financialPlanBCashflow += balance.Budgets[model.BudgetYear2023]
 		}
+		productCopy.CashflowB = htmlEncoder.EncodeBudget(financialPlanBCashflow, p)
 	}
 
 	if productTotalCashflow < 0 {
 		expensesTotalCashFlow += productTotalCashflow
-		*expensesProductLinks = append(*expensesProductLinks, fmt.Sprintf(
+		productLink := fmt.Sprintf(
 			"/html/%s/%s/%s/%s/%s/product.html",
 			product.Metadata.Department.ID,
 			product.Metadata.ProductClass.ID,
 			product.Metadata.ProductDomain.ID,
 			product.Metadata.ProductGroup.ID,
 			product.Metadata.Product.ID,
-		))
+		)
 
+		productCopy.Link = productLink
+		*expensesProductLinks = append(*expensesProductLinks, productLink)
 		chartExpensesDataPerProduct.Labels = append(chartExpensesDataPerProduct.Labels, product.Metadata.Description)
 		chartExpensesDataPerProduct.Data = append(chartExpensesDataPerProduct.Data, productTotalCashflow)
 	} else {
 		incomeTotalCashFlow += productTotalCashflow
-		*incomeProductLinks = append(*incomeProductLinks, fmt.Sprintf(
+		productLink := fmt.Sprintf(
 			"/html/%s/%s/%s/%s/%s/product.html",
 			product.Metadata.Department.ID,
 			product.Metadata.ProductClass.ID,
 			product.Metadata.ProductDomain.ID,
 			product.Metadata.ProductGroup.ID,
 			product.Metadata.Product.ID,
-		))
+		)
 
+		productCopy.Link = productLink
+		*incomeProductLinks = append(*incomeProductLinks, productLink)
 		chartIncomeDataPerProduct.Labels = append(chartIncomeDataPerProduct.Labels, product.Metadata.Description)
 		chartIncomeDataPerProduct.Data = append(chartIncomeDataPerProduct.Data, productTotalCashflow)
 	}
@@ -224,9 +248,9 @@ func populateChartData(
 
 func encodeIntroDescription(cashflowTotal float64) string {
 	if cashflowTotal < 0 {
-		return "für diesen Fachbereich auszugeben."
+		return "auszugeben."
 	}
-	return "über diesen Fachbereich einzunehmen."
+	return "einzunehmen."
 }
 
 type ProductData struct {
@@ -255,9 +279,18 @@ type DepartmentCopy struct {
 	IncomeCashflowTotal   string
 	ExpensesCashflowTotal string
 
+	Products []DepartmentProductCopy
+
 	BackLink string
 
 	DataDisclosure template.HTML
+}
+
+type DepartmentProductCopy struct {
+	Name      string
+	Link      string
+	CashflowA string
+	CashflowB string
 }
 
 type DepartmentCSS struct {
