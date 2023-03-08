@@ -8,6 +8,7 @@ import (
 	"os"
 	"path/filepath"
 	"regexp"
+	"sort"
 
 	"github.com/google/uuid"
 	"golang.org/x/text/language"
@@ -129,6 +130,9 @@ func main() {
 		expensesTotalCashFlow += expensesTotal
 		productCopies = append(productCopies, productCopy)
 	}
+	sort.Slice(productCopies, func(i, j int) bool {
+		return productCopies[i].Name < productCopies[j].Name
+	})
 
 	year := model.BudgetYear2023
 
@@ -208,7 +212,10 @@ func populateChartData(
 			productTotalCashflow += balance.Budgets[model.BudgetYear2023]
 			financialPlanBCashflow += balance.Budgets[model.BudgetYear2023]
 		}
-		productCopy.CashflowB = htmlEncoder.EncodeBudget(financialPlanBCashflow, p)
+
+		if shared.IsUnequal(financialPlanBCashflow, 0) {
+			productCopy.CashflowB = htmlEncoder.EncodeBudget(financialPlanBCashflow, p)
+		}
 	}
 
 	if productTotalCashflow < 0 {

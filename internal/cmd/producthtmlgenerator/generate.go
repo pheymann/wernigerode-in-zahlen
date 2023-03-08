@@ -58,11 +58,11 @@ func readBalanceDataAndCashflow(fp model.FinancialPlan, year model.BudgetYear) (
 		for _, account := range balance.Accounts {
 			accountClass := html.ClassifyAccount(account)
 
-			if isUnequal(account.Budgets[year], 0) {
+			if shared.IsUnequal(account.Budgets[year], 0) {
 				for _, sub := range account.Subs {
 					if len(sub.Units) > 0 {
 						for _, unit := range sub.Units {
-							if isUnequal(unit.Budgets[year], 0) {
+							if shared.IsUnequal(unit.Budgets[year], 0) {
 								dataPoint := html.DataPoint{
 									Label:  unit.Desc,
 									Budget: unit.Budgets[year],
@@ -72,7 +72,7 @@ func readBalanceDataAndCashflow(fp model.FinancialPlan, year model.BudgetYear) (
 							}
 						}
 					} else {
-						if isUnequal(sub.Budgets[year], 0) {
+						if shared.IsUnequal(sub.Budgets[year], 0) {
 							dataPoint := html.DataPoint{
 								Label:  sub.Desc,
 								Budget: sub.Budgets[year],
@@ -91,8 +91,4 @@ func readBalanceDataAndCashflow(fp model.FinancialPlan, year model.BudgetYear) (
 	}
 
 	return balanceData, cashflowTotal
-}
-
-func isUnequal(a float64, b float64) bool {
-	return a < b-0.001 || a > b+0.001
 }
