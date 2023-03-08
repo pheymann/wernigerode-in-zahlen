@@ -15,7 +15,7 @@ import (
 	"wernigode-in-zahlen.de/internal/pkg/shared"
 )
 
-func GenerateHTMLForProduct(financialPlanAJSON string, financialPlanBJSONOpt shared.Option[string], metadataJSON string, year model.BudgetYear) string {
+func GenerateProductHTML(financialPlanAJSON string, financialPlanBJSONOpt shared.Option[string], metadataJSON string, year model.BudgetYear) string {
 	fpa := fpDecoder.DecodeFromJSON(financialPlanAJSON)
 	metadata := metaDecoder.DecodeFromJSON(metadataJSON)
 	p := message.NewPrinter(language.German)

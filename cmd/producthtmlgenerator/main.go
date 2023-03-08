@@ -40,7 +40,7 @@ func main() {
 	}
 	defer metadataFile.Close()
 
-	productHtml := htmlgenerator.GenerateHTMLForProduct(
+	productHtml := htmlgenerator.GenerateProductHTML(
 		io.ReadCompleteFile(financialPlanAFile),
 		financialPlanBJSONOpt,
 		io.ReadCompleteFile(metadataFile),
