@@ -7,16 +7,13 @@ import (
 	"sort"
 
 	"github.com/google/uuid"
-	"golang.org/x/text/language"
-	"golang.org/x/text/message"
-	htmlEncoder "wernigode-in-zahlen.de/internal/pkg/encoder/html"
 	htmlDepartmentEncoder "wernigode-in-zahlen.de/internal/pkg/encoder/html/department"
 	"wernigode-in-zahlen.de/internal/pkg/model"
 	html "wernigode-in-zahlen.de/internal/pkg/model/html"
 	"wernigode-in-zahlen.de/internal/pkg/shared"
 )
 
-func GenerateDepartmentHTML(productData []html.ProductData, departmentName string, debugRootPath string) string {
+func GenerateDepartmentHTML(productData []html.ProductData, compressed *model.CompressedDepartment, debugRootPath string) string {
 	var incomeTotalCashFlow = 0.0
 	var incomeProductLinks = []string{}
 	chartIncomeDataPerProduct := html.ChartJSDataset{
@@ -31,33 +28,27 @@ func GenerateDepartmentHTML(productData []html.ProductData, departmentName strin
 		DatasetLabel: "Ausgaben",
 	}
 
-	p := message.NewPrinter(language.German)
-
-	var cashflowTotal = 0.0
-	var productCopies = []html.DepartmentProductCopy{}
+	var depProductData = []html.DepartmentProductData{}
 	for _, product := range productData {
-		productCopy := html.DepartmentProductCopy{
-			Name: product.Metadata.Product.Name,
-		}
-
-		cashflow, incomeTotal, expensesTotal := populateChartData(
+		incomeTotal, expensesTotal, data := populateChartData(
 			product,
+			compressed,
 			&expensesProductLinks,
 			&chartExpensesDataPerProduct,
 			&incomeProductLinks,
 			&chartIncomeDataPerProduct,
-			&productCopy,
-			p,
 		)
 
-		cashflowTotal += cashflow
+		data.Name = product.Metadata.Product.Name
 		incomeTotalCashFlow += incomeTotal
 		expensesTotalCashFlow += expensesTotal
-		productCopies = append(productCopies, productCopy)
+		depProductData = append(depProductData, data)
 	}
-	sort.Slice(productCopies, func(i, j int) bool {
-		return productCopies[i].Name < productCopies[j].Name
+	sort.Slice(depProductData, func(i, j int) bool {
+		return depProductData[i].Name < depProductData[j].Name
 	})
+
+	compressed.NumberOfProducts = len(productData)
 
 	year := model.BudgetYear2023
 
@@ -67,11 +58,9 @@ func GenerateDepartmentHTML(productData []html.ProductData, departmentName strin
 	if err := departmentTmpl.Execute(
 		&htmlBytes,
 		htmlDepartmentEncoder.Encode(
-			departmentName,
+			*compressed,
 			year,
-			cashflowTotal,
-			len(productData),
-			productCopies,
+			depProductData,
 
 			incomeTotalCashFlow,
 			incomeProductLinks,
@@ -80,8 +69,6 @@ func GenerateDepartmentHTML(productData []html.ProductData, departmentName strin
 			expensesTotalCashFlow,
 			expensesProductLinks,
 			chartExpensesDataPerProduct,
-
-			p,
 		),
 	); err != nil {
 		panic(err)
@@ -92,33 +79,38 @@ func GenerateDepartmentHTML(productData []html.ProductData, departmentName strin
 
 func populateChartData(
 	product html.ProductData,
+	compressed *model.CompressedDepartment,
+
 	expensesProductLinks *[]string,
 	chartExpensesDataPerProduct *html.ChartJSDataset,
+
 	incomeProductLinks *[]string,
 	chartIncomeDataPerProduct *html.ChartJSDataset,
-	productCopy *html.DepartmentProductCopy,
-	p *message.Printer,
-) (float64, float64, float64) {
+) (float64, float64, html.DepartmentProductData) {
+	data := html.DepartmentProductData{}
+
 	var productTotalCashflow = 0.0
 	var incomeTotalCashFlow = 0.0
 	var expensesTotalCashFlow = 0.0
 
-	var financialPlanACashflow = 0.0
+	var cashflowFinancialPlanA = 0.0
 	for _, balance := range product.FinancialPlanA.Balances {
 		productTotalCashflow += balance.Budgets[model.BudgetYear2023]
-		financialPlanACashflow += balance.Budgets[model.BudgetYear2023]
+		cashflowFinancialPlanA += balance.Budgets[model.BudgetYear2023]
 	}
-	productCopy.CashflowA = htmlEncoder.EncodeBudget(financialPlanACashflow, p)
+	compressed.CashflowFinancialPlanA += cashflowFinancialPlanA
+	data.CashflowFinancialPlanA = cashflowFinancialPlanA
 
 	if product.FinancialPlanBOpt.IsSome {
-		var financialPlanBCashflow = 0.0
+		var cashflowFinancialPlanB = 0.0
 		for _, balance := range product.FinancialPlanBOpt.Value.Balances {
 			productTotalCashflow += balance.Budgets[model.BudgetYear2023]
-			financialPlanBCashflow += balance.Budgets[model.BudgetYear2023]
+			cashflowFinancialPlanB += balance.Budgets[model.BudgetYear2023]
 		}
 
-		if shared.IsUnequal(financialPlanBCashflow, 0) {
-			productCopy.CashflowB = htmlEncoder.EncodeBudget(financialPlanBCashflow, p)
+		if shared.IsUnequal(cashflowFinancialPlanB, 0) {
+			compressed.CashflowFinancialPlanB += cashflowFinancialPlanB
+			data.CashflowFinancialPlanB = cashflowFinancialPlanB
 		}
 	}
 
@@ -133,9 +125,9 @@ func populateChartData(
 			product.Metadata.Product.ID,
 		)
 
-		productCopy.Link = productLink
+		data.Link = productLink
 		*expensesProductLinks = append(*expensesProductLinks, productLink)
-		chartExpensesDataPerProduct.Labels = append(chartExpensesDataPerProduct.Labels, product.Metadata.Description)
+		chartExpensesDataPerProduct.Labels = append(chartExpensesDataPerProduct.Labels, product.Metadata.Product.Name)
 		chartExpensesDataPerProduct.Data = append(chartExpensesDataPerProduct.Data, productTotalCashflow)
 	} else {
 		incomeTotalCashFlow += productTotalCashflow
@@ -148,11 +140,13 @@ func populateChartData(
 			product.Metadata.Product.ID,
 		)
 
-		productCopy.Link = productLink
+		data.Link = productLink
 		*incomeProductLinks = append(*incomeProductLinks, productLink)
-		chartIncomeDataPerProduct.Labels = append(chartIncomeDataPerProduct.Labels, product.Metadata.Description)
+		chartIncomeDataPerProduct.Labels = append(chartIncomeDataPerProduct.Labels, product.Metadata.Product.Name)
 		chartIncomeDataPerProduct.Data = append(chartIncomeDataPerProduct.Data, productTotalCashflow)
 	}
 
-	return productTotalCashflow, incomeTotalCashFlow, expensesTotalCashFlow
+	compressed.CashflowTotal += productTotalCashflow
+
+	return incomeTotalCashFlow, expensesTotalCashFlow, data
 }

@@ -4,18 +4,18 @@ import (
 	"fmt"
 	"html/template"
 
+	"golang.org/x/text/language"
 	"golang.org/x/text/message"
 	htmlEncoder "wernigode-in-zahlen.de/internal/pkg/encoder/html"
 	"wernigode-in-zahlen.de/internal/pkg/model"
 	"wernigode-in-zahlen.de/internal/pkg/model/html"
+	"wernigode-in-zahlen.de/internal/pkg/shared"
 )
 
 func Encode(
-	departmentName string,
+	compressed model.CompressedDepartment,
 	year model.BudgetYear,
-	cashflowTotal float64,
-	numberOfProducts int,
-	productCopies []html.DepartmentProductCopy,
+	productData []html.DepartmentProductData,
 
 	incomeTotalCashFlow float64,
 	incomeProductLinks []string,
@@ -24,9 +24,9 @@ func Encode(
 	expensesTotalCashFlow float64,
 	expensesProductLinks []string,
 	chartExpensesDataPerProduct html.ChartJSDataset,
-
-	p *message.Printer,
 ) html.Department {
+	p := message.NewPrinter(language.German)
+
 	return html.Department{
 		IncomeProductLinks: incomeProductLinks,
 		Income:             chartIncomeDataPerProduct,
@@ -35,15 +35,19 @@ func Encode(
 		Expenses:             chartExpensesDataPerProduct,
 
 		Copy: html.DepartmentCopy{
-			Department:         departmentName,
+			Department:         compressed.DepartmentName,
 			IntroCashflowTotal: fmt.Sprintf("In %s planen wir", year),
-			IntroDescription:   encodeIntroDescription(cashflowTotal, numberOfProducts),
+			IntroDescription:   encodeIntroDescription(compressed.CashflowTotal, compressed.NumberOfProducts),
 
-			CashflowTotal:         htmlEncoder.EncodeBudget(cashflowTotal, p),
-			IncomeCashflowTotal:   "Einnahmen: " + htmlEncoder.EncodeBudget(incomeTotalCashFlow, p),
-			ExpensesCashflowTotal: "Ausgaben: " + htmlEncoder.EncodeBudget(expensesTotalCashFlow, p),
+			CashflowTotal:          htmlEncoder.EncodeBudget(compressed.CashflowTotal, p),
+			CashflowFinancialPlanA: htmlEncoder.EncodeBudget(compressed.CashflowFinancialPlanA, p),
+			CashflowFinancialPlanB: htmlEncoder.EncodeBudget(compressed.CashflowFinancialPlanB, p),
+			IncomeCashflowTotal:    "Einnahmen: " + htmlEncoder.EncodeBudget(incomeTotalCashFlow, p),
+			ExpensesCashflowTotal:  "Ausgaben: " + htmlEncoder.EncodeBudget(expensesTotalCashFlow, p),
 
-			Products: productCopies,
+			Products: shared.MapSlice(productData, func(productData html.DepartmentProductData) html.DepartmentProductCopy {
+				return encodeDepartmentProductData(productData, p)
+			}),
 
 			BackLink: "Zurück zur Übersicht",
 
@@ -56,8 +60,17 @@ func Encode(
 			nur Teilfinanzplan A Daten enthält.`,
 		},
 		CSS: html.DepartmentCSS{
-			TotalCashflowClass: htmlEncoder.EncodeCSSCashflowClass(cashflowTotal),
+			TotalCashflowClass: htmlEncoder.EncodeCSSCashflowClass(compressed.CashflowTotal),
 		},
+	}
+}
+
+func encodeDepartmentProductData(data html.DepartmentProductData, p *message.Printer) html.DepartmentProductCopy {
+	return html.DepartmentProductCopy{
+		Name:      data.Name,
+		CashflowA: htmlEncoder.EncodeBudget(data.CashflowFinancialPlanA, p),
+		CashflowB: htmlEncoder.EncodeBudget(data.CashflowFinancialPlanB, p),
+		Link:      data.Link,
 	}
 }
 

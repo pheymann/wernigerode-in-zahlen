@@ -18,9 +18,11 @@ type DepartmentCopy struct {
 	IntroCashflowTotal string
 	IntroDescription   template.HTML
 
-	CashflowTotal         string
-	IncomeCashflowTotal   string
-	ExpensesCashflowTotal string
+	CashflowTotal          string
+	CashflowFinancialPlanA string
+	CashflowFinancialPlanB string
+	IncomeCashflowTotal    string
+	ExpensesCashflowTotal  string
 
 	Products []DepartmentProductCopy
 

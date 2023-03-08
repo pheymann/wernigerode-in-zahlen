@@ -27,11 +27,11 @@
       <div class="row">
         <div class="col-6">
           <h5 class="center">Einnahmen: 434.700,00€<sub style="font-size: 0.4em;">(A/B)</sub></h5>
-          <canvas id="chartjs-ee759ffc-0f22-4b5a-9d53-01dba38f8011"></canvas>
+          <canvas id="chartjs-3cb24038-699d-4d16-ae59-2202ba5cfd81"></canvas>
         </div>
         <div class="col-6">
           <h5 class="center">Ausgaben: -7.097.700,00€<sub style="font-size: 0.4em;">(A/B)</sub></h5>
-          <canvas id="chartjs-e9c98183-6f67-4fe3-b24a-a0f63e037708"></canvas>
+          <canvas id="chartjs-fd921d92-2e42-4f5a-9c30-e2ffef547d18"></canvas>
         </div>
       </div>
     </div>
@@ -44,90 +44,95 @@
             <th>Teilfinanzplan A</th>
             <th>Teilfinanzplan B</th>
           </tr>
+          <tr>
+            <th></th>
+            <th>-6.172.000,00€</th>
+            <th>-491.000,00€</th>
+          </tr>
 
           
             <tr>
               <td><a href="/html/1/1/1/1/02/product.html">Beteiligungen, Controlling</a></td>
               <td>277.400,00€</td>
-              <td></td>
+              <td>0,00€</td>
             </tr>
           
             <tr>
               <td><a href="/html/1/3/5/1/01/product.html">Förderung von zusätzlichen Arbeitsplätzen</a></td>
               <td>-14.200,00€</td>
-              <td></td>
+              <td>0,00€</td>
             </tr>
           
             <tr>
               <td><a href="/html/1/1/1/1/08/product.html">Gemeindegremien</a></td>
               <td>-135.200,00€</td>
-              <td></td>
+              <td>0,00€</td>
             </tr>
           
             <tr>
               <td><a href="/html/1/1/1/1/04/product.html">Gleichstellungsbeauftragte</a></td>
               <td>-36.700,00€</td>
-              <td></td>
+              <td>0,00€</td>
             </tr>
           
             <tr>
               <td><a href="/html/1/5/5/1/02/product.html">Park-und Garten GmbH</a></td>
               <td>-510.000,00€</td>
-              <td></td>
+              <td>0,00€</td>
             </tr>
           
             <tr>
               <td><a href="/html/1/1/1/1/09/product.html">Personalangelegenheiten</a></td>
               <td>-1.041.500,00€</td>
-              <td></td>
+              <td>0,00€</td>
             </tr>
           
             <tr>
               <td><a href="/html/1/1/1/1/05/product.html">Personalvertretung</a></td>
               <td>-95.800,00€</td>
-              <td></td>
+              <td>0,00€</td>
             </tr>
           
             <tr>
               <td><a href="/html/1/2/6/2/01/product.html">Philharmonisches Kammerorchester GmbH</a></td>
               <td>-360.400,00€</td>
-              <td></td>
+              <td>0,00€</td>
             </tr>
           
             <tr>
               <td><a href="/html/1/1/1/1/06/product.html">Rechnungsprüfung</a></td>
               <td>-159.100,00€</td>
-              <td></td>
+              <td>0,00€</td>
             </tr>
           
             <tr>
               <td><a href="/html/1/1/1/1/16/product.html">Rechtsangelegenheiten</a></td>
               <td>-432.800,00€</td>
-              <td></td>
+              <td>0,00€</td>
             </tr>
           
             <tr>
               <td><a href="/html/1/1/1/1/17/product.html">Stiftungen</a></td>
               <td>-358.700,00€</td>
-              <td></td>
+              <td>0,00€</td>
             </tr>
           
             <tr>
               <td><a href="/html/1/5/7/5/01/product.html">Tourismusförderung</a></td>
               <td>157.300,00€</td>
-              <td></td>
+              <td>0,00€</td>
             </tr>
           
             <tr>
               <td><a href="/html/1/1/1/1/01/product.html">Verwaltungssteuerung</a></td>
               <td>-689.000,00€</td>
-              <td></td>
+              <td>0,00€</td>
             </tr>
           
             <tr>
               <td><a href="/html/1/1/2/1/01/product.html">Wahlen und Statistik</a></td>
               <td>-500,00€</td>
-              <td></td>
+              <td>0,00€</td>
             </tr>
           
             <tr>
@@ -168,11 +173,11 @@
 
     <script>
       var incomeProductLinks = ["/html/1/1/1/1/02/product.html","/html/1/5/7/5/01/product.html"];
-      var incomeCanvas = document.getElementById('chartjs-ee759ffc-0f22-4b5a-9d53-01dba38f8011');
+      var incomeCanvas = document.getElementById('chartjs-3cb24038-699d-4d16-ae59-2202ba5cfd81');
       var incomeChart = new Chart(incomeCanvas, {
         type: 'doughnut',
         data: {
-          labels: [" Führungsunterstützung und- beratung"," Förderung des Tourismus"],
+          labels: ["Beteiligungen, Controlling","Tourismusförderung"],
           datasets: [{
             label: 'Euro',
             data: [277400,157300],
@@ -193,11 +198,11 @@
       });
 
       var expenesesProductLinks = ["/html/1/1/1/1/01/product.html","/html/1/1/1/1/04/product.html","/html/1/1/1/1/05/product.html","/html/1/1/1/1/06/product.html","/html/1/1/1/1/08/product.html","/html/1/1/1/1/09/product.html","/html/1/1/1/1/10/product.html","/html/1/1/1/1/16/product.html","/html/1/1/1/1/17/product.html","/html/1/1/2/1/01/product.html","/html/1/2/6/2/01/product.html","/html/1/3/5/1/01/product.html","/html/1/5/5/1/02/product.html","/html/1/5/7/1/01/product.html"];
-      var expensesCanvas = document.getElementById('chartjs-e9c98183-6f67-4fe3-b24a-a0f63e037708');
+      var expensesCanvas = document.getElementById('chartjs-fd921d92-2e42-4f5a-9c30-e2ffef547d18');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {
-          labels: [" Führung, Entwicklung und Überwachung der Verwaltung"," Förderung der Gleichstellung, Beiträge zur Verwirklichung der Gleichberechtigung von Frauen und Männern auf kommunaler Ebene leisten"," Überwachung der Einhaltung von geltenden Rechtsvorschriften, Tarifverträgen und sonstigen Vorschriften, Mitbestimmung im Rahmen der rechtlichen Möglichkeiten"," Prüfung der Rechtmäßigkeit des Verwaltungshandelns"," Angelegenheiten des Stadtrates und seiner Ausschüsse"," Wahrnehmung aller personalrelevanten Leistungen"," Zentraler Service für alle Dezernate und Einrichtungen der Stadt"," Abwicklung aller Rechtsangelegenheiten der Stadt, Versicherungs- und Datenschutz"," Führungsunterstützung und- beratung"," \"Vorbereitung, Durchführung und Nachbereitung sowie die öffentliche Darstellung von Wahlen und Abstimmungen; Statistische Angelegenheiten\""," Förderung der Musikpflege"," Unterstützung von einzelnen Fachbereichen durch zusätzliche, nicht im Stellenplan enthaltene Stellen"," \"Betreiben der aus der Landesgartenschau 2006 hervorgegangenen Park- und Freizeitanlage, des Miniaturenparks „Kleiner Harz“ sowie weiterer öffentlicher Erholungs- und Freizeitanlagen im Stadtgebiet von\" Wernigerode"," Entwicklung und Förderung des Wirtschaftsstandortes"],
+          labels: ["Verwaltungssteuerung","Gleichstellungsbeauftragte","Personalvertretung","Rechnungsprüfung","Gemeindegremien","Personalangelegenheiten","Zentrale Dienste","Rechtsangelegenheiten","Stiftungen","Wahlen und Statistik","Philharmonisches Kammerorchester GmbH","Förderung von zusätzlichen Arbeitsplätzen","Park-und Garten GmbH","Wirtschaftsförderung"],
           datasets: [{
             label: 'Euro',
             data: [-689000,-36700,-95800,-159100,-135200,-1041500,-3226600,-432800,-358700,-500,-360400,-14200,-510000,-37200],

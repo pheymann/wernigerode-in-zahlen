@@ -10,6 +10,7 @@ import (
 	"wernigode-in-zahlen.de/internal/cmd/departmenthtmlgenerator"
 	fpDecoder "wernigode-in-zahlen.de/internal/pkg/decoder/financialplan"
 	metaDecoder "wernigode-in-zahlen.de/internal/pkg/decoder/metadata"
+	compressedEncoder "wernigode-in-zahlen.de/internal/pkg/encoder/compresseddepartment"
 	"wernigode-in-zahlen.de/internal/pkg/io"
 	"wernigode-in-zahlen.de/internal/pkg/model"
 	html "wernigode-in-zahlen.de/internal/pkg/model/html"
@@ -86,14 +87,26 @@ func main() {
 		panic(errWalk)
 	}
 
-	target := model.TargetFile{
-		Path: "assets/html/" + *department + "/",
-		Name: "department",
-		Tpe:  "html",
+	compressed := &model.CompressedDepartment{
+		DepartmentName: *departmentName,
+		ID:             *department,
 	}
 
 	io.WriteFile(
-		target,
-		departmenthtmlgenerator.GenerateDepartmentHTML(productData, *departmentName, *debugRootPath),
+		model.TargetFile{
+			Path: "assets/html/" + *department + "/",
+			Name: "department",
+			Tpe:  "html",
+		},
+		departmenthtmlgenerator.GenerateDepartmentHTML(productData, compressed, *debugRootPath),
+	)
+
+	io.WriteFile(
+		model.TargetFile{
+			Path: "assets/data/processed/" + *department + "/",
+			Name: "compressed",
+			Tpe:  "json",
+		},
+		compressedEncoder.Encode(*compressed),
 	)
 }
