@@ -20,7 +20,7 @@
     <h2 class="total-cashflow-expenses center">-14.200,00€</h2>
 
     <p>
-      kosten. Untern werden die verschiedenen Ausgaben aufgeführt die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
+      kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
 		Auflistung von Kostenstellen. Ganz am Ende dieser Seite findest du noch eine Beschreibung des Produkts.
     </p>
 
@@ -32,11 +32,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 36.000,00€</h5>
-                <canvas id="chartjs-ffd5eb9a-d9c5-4938-a69f-a6dc53d1fe86"></canvas>
+                <canvas id="chartjs-a5d6ef27-4de1-4d13-8cdb-5ea1a79db2ac"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: 50.200,00€</h5>
-                <canvas id="chartjs-9e958cd3-6c19-49b7-9384-3381f5f23b14"></canvas>
+                <canvas id="chartjs-a30012c6-6fea-4795-b7ac-298afcb8349a"></canvas>
               </div>
             </div>
           
@@ -70,7 +70,7 @@
     </div>
 
     <p class="data-disclosure">
-      Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Statdt Wernigerode aus dem Jahr 2022.
+      Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2022.
 			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
 			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
 			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
@@ -80,14 +80,15 @@
 
     <footer>
       <p>
-        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Das Impression befindet sich <a href="/imprint.html">hier</a>.
       </p>
     </footer>
 
     <script>
       
         
-          new Chart(document.getElementById('chartjs-ffd5eb9a-d9c5-4938-a69f-a6dc53d1fe86'), {
+          new Chart(document.getElementById('chartjs-a5d6ef27-4de1-4d13-8cdb-5ea1a79db2ac'), {
             type: 'doughnut',
             data: {
               labels: ["Zuweisungen für laufende Zwecke vom Bund"],
@@ -107,7 +108,7 @@
           });
         
         
-          new Chart(document.getElementById('chartjs-9e958cd3-6c19-49b7-9384-3381f5f23b14'), {
+          new Chart(document.getElementById('chartjs-a30012c6-6fea-4795-b7ac-298afcb8349a'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an sonstige Beschäftigte","Beiträge zu Versorgungskassen für sonstige Beschäftigte","Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschäft.","Beihilfen, Unterstützungsleistungen für Beschäftigte"],

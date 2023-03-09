@@ -20,7 +20,7 @@
     <h2 class="total-cashflow-income center">157.300,00€</h2>
 
     <p>
-      einbringen. Untern werden die verschiedenen Ausgaben aufgeführt die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
+      einbringen. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
 		Auflistung von Kostenstellen. Ganz am Ende dieser Seite findest du noch eine Beschreibung des Produkts.
     </p>
 
@@ -32,11 +32,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 2.782.000,00€</h5>
-                <canvas id="chartjs-6896bb73-bc67-49ed-9158-d112ed0d0544"></canvas>
+                <canvas id="chartjs-658e9fdd-d796-4d2b-be73-20c14476eab2"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: 2.624.700,00€</h5>
-                <canvas id="chartjs-9ab80686-7130-4b52-aed4-53c9565e01ed"></canvas>
+                <canvas id="chartjs-167bf5fb-8641-4761-913c-c2bfbf78a92c"></canvas>
               </div>
             </div>
           
@@ -70,7 +70,7 @@
     </div>
 
     <p class="data-disclosure">
-      Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Statdt Wernigerode aus dem Jahr 2022.
+      Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2022.
 			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
 			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
 			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
@@ -80,14 +80,15 @@
 
     <footer>
       <p>
-        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Das Impression befindet sich <a href="/imprint.html">hier</a>.
       </p>
     </footer>
 
     <script>
       
         
-          new Chart(document.getElementById('chartjs-6896bb73-bc67-49ed-9158-d112ed0d0544'), {
+          new Chart(document.getElementById('chartjs-658e9fdd-d796-4d2b-be73-20c14476eab2'), {
             type: 'doughnut',
             data: {
               labels: ["Zweckgebundene Abgaben (Kurbeitrag)"],
@@ -107,7 +108,7 @@
           });
         
         
-          new Chart(document.getElementById('chartjs-9ab80686-7130-4b52-aed4-53c9565e01ed'), {
+          new Chart(document.getElementById('chartjs-167bf5fb-8641-4761-913c-c2bfbf78a92c'), {
             type: 'doughnut',
             data: {
               labels: ["Zusch. öff. SondRechn. HSB","Zusch. öff.SondRechn. HSB Kurb","Einbehalt für Entgelt WTG"],

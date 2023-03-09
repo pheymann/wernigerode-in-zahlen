@@ -15,11 +15,11 @@
 
     <p>
       Als Teil unserer Stadt und Gemeinde habe ich mich gefragt, wo wir eigentlich unser
-			Geld investieren und nach einigem Suchen habe ich den <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">Haushaltsplan</a> der Stadt gefunden. Der führt genau auf
-			wo Gelder gebraucht werden, ist aber alles andere als leicht zu lesen. Und so ist die Idee bei mir für diese Webseite entstanden.
-			Es soll eine Darstellung des Finanzhaushalts Wernigerodes sein die gut zu lesen und verstehen ist.
+			Geld investieren und nach einigem Suchen habe ich den <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">Haushaltsplan</a>
+			der Stadt gefunden. Der führt genau auf, wo Gelder gebraucht werden, ist aber alles andere als leicht zu lesen. Und so
+			ist die Idee bei mir für diese Webseite entstanden. Es soll eine Darstellung des Finanzhaushalts Wernigerodes sein, die gut zu lesen und verstehen ist.
 			<br><br>
-			Alles started mit der Gesamtübersicht. In 2023 planen wir
+			Alles startet mit der Gesamtübersicht. In 2023 planen wir
     </p>
 
     <h2 class="total-cashflow-expenses center">-6.663.000,00€<sub style="font-size: 0.4em;">(A/B)</sub></h2>
@@ -30,7 +30,7 @@
 
     
       <div class="padded-chart">
-        <canvas id="chartjs-607957dd-cb06-4235-95a7-83d4167f31e0"></canvas>
+        <canvas id="chartjs-d8dda99d-a7b1-40e6-b89d-043dc426f28a"></canvas>
       </div>
     
 
@@ -60,7 +60,7 @@
     </div>
 
     <p class="data-disclosure">
-      Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Statdt Wernigerode aus dem Jahr 2022.
+      Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2022.
 			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
 			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
 			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
@@ -71,7 +71,8 @@
 
     <footer>
       <p>
-        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Das Impression befindet sich <a href="/imprint.html">hier</a>.
       </p>
     </footer>
 
@@ -79,7 +80,7 @@
       
 
       var expensesDepartmentLinks = ["/1/department.html"];
-      var expensesCanvas = document.getElementById('chartjs-607957dd-cb06-4235-95a7-83d4167f31e0');
+      var expensesCanvas = document.getElementById('chartjs-d8dda99d-a7b1-40e6-b89d-043dc426f28a');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {

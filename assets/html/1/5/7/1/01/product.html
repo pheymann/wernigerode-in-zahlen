@@ -20,7 +20,7 @@
     <h2 class="total-cashflow-expenses center">-187.200,00€</h2>
 
     <p>
-      kosten. Untern werden die verschiedenen Ausgaben aufgeführt die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
+      kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
 		Auflistung von Kostenstellen. Ganz am Ende dieser Seite findest du noch eine Beschreibung des Produkts.
     </p>
 
@@ -32,11 +32,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 37.500,00€</h5>
-                <canvas id="chartjs-2ed0a311-3d35-468f-96ea-38bc20b69ab0"></canvas>
+                <canvas id="chartjs-5615af97-36e5-4333-88b6-91509691e094"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: 374.700,00€</h5>
-                <canvas id="chartjs-42a4f013-a5be-4738-86bd-6aa4f377131f"></canvas>
+                <canvas id="chartjs-d93ec885-3960-4583-8a80-35621a1ba535"></canvas>
               </div>
             </div>
           
@@ -46,7 +46,7 @@
           
             
               <div class="padded-chart">
-                <canvas id="chartjs-0d3ed2d3-5a0f-4cbc-b1e7-2743eab513a4"></canvas>
+                <canvas id="chartjs-cb606ba5-5b99-42ec-8342-d3c6bf4553a5"></canvas>
               </div>
             
             
@@ -81,7 +81,7 @@
     </div>
 
     <p class="data-disclosure">
-      Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Statdt Wernigerode aus dem Jahr 2022.
+      Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2022.
 			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
 			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
 			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
@@ -91,14 +91,15 @@
 
     <footer>
       <p>
-        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Das Impression befindet sich <a href="/imprint.html">hier</a>.
       </p>
     </footer>
 
     <script>
       
         
-          new Chart(document.getElementById('chartjs-2ed0a311-3d35-468f-96ea-38bc20b69ab0'), {
+          new Chart(document.getElementById('chartjs-5615af97-36e5-4333-88b6-91509691e094'), {
             type: 'doughnut',
             data: {
               labels: ["Erträge aus Kostenerstattungen von privaten Unternehmen (HarzAG)"],
@@ -118,7 +119,7 @@
           });
         
         
-          new Chart(document.getElementById('chartjs-42a4f013-a5be-4738-86bd-6aa4f377131f'), {
+          new Chart(document.getElementById('chartjs-d93ec885-3960-4583-8a80-35621a1ba535'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfe, Unterstützungsleistung für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Besondere Verwaltungs- und Betriebsauszahlungen","Zuweisungen an Zweckverbände","Zuschüsse an sonstige öffentliche Sonderrechnungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten","Erstatt. für die Auszahl. von Dritten aus lfd. Verwaltungstät. an priv. Untern."],
@@ -139,7 +140,7 @@
         
       
         
-          new Chart(document.getElementById('chartjs-0d3ed2d3-5a0f-4cbc-b1e7-2743eab513a4'), {
+          new Chart(document.getElementById('chartjs-cb606ba5-5b99-42ec-8342-d3c6bf4553a5'), {
             type: 'doughnut',
             data: {
               labels: ["Veräußerung von Grundstücken, Gebäuden und Infrastrukturvermögen 5.7.1.01/0003.6821000 Einzahlungen aus Veräußerung von Grundstücken, Gebäuden, Infrastrukturvermögen"],
