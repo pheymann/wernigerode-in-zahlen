@@ -20,7 +20,8 @@
     <h2 class="total-cashflow-expenses center">-689.000,00€</h2>
 
     <p>
-      kosten.
+      kosten. Untern werden die verschiedenen Ausgaben aufgeführt die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
+		Auflistung von Kostenstellen. Ganz am Ende dieser Seite findest du noch eine Beschreibung des Produkts.
     </p>
 
     <div class="container">
@@ -31,11 +32,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 8.100,00€</h5>
-                <canvas id="chartjs-95c599d0-f002-4957-83fc-53b53da4f851"></canvas>
+                <canvas id="chartjs-f8ca0f10-36fd-420b-8c21-6f2252f89a22"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: 697.100,00€</h5>
-                <canvas id="chartjs-691c1116-505b-4d34-935a-f1e4f2d1dbe6"></canvas>
+                <canvas id="chartjs-a5af909d-bb96-4c2e-9df3-818b8a7dcb49"></canvas>
               </div>
             </div>
           
@@ -86,7 +87,7 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-95c599d0-f002-4957-83fc-53b53da4f851'), {
+          new Chart(document.getElementById('chartjs-f8ca0f10-36fd-420b-8c21-6f2252f89a22'), {
             type: 'doughnut',
             data: {
               labels: ["Benutzungsgebühren und ähnliche Entgelte"],
@@ -106,7 +107,7 @@
           });
         
         
-          new Chart(document.getElementById('chartjs-691c1116-505b-4d34-935a-f1e4f2d1dbe6'), {
+          new Chart(document.getElementById('chartjs-a5af909d-bb96-4c2e-9df3-818b8a7dcb49'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für sonstige Dienstleistungen","Geschäftsauszahlungen","Verfügungsmittel"],

@@ -47,7 +47,7 @@ func Encode(
 			MetaServices:      "Dienstleistungen",
 			MetaGrouping:      "Gruppierung",
 
-			DataDisclosure: `Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Statdt Wernigerode aus dem Jahr 2022.
+			DataDisclosure: `Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2022.
 			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
 			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
 			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
@@ -61,10 +61,16 @@ func Encode(
 }
 
 func encodeIntroDescription(cashflowTotal float64, meta model.Metadata) string {
+	var expenseEarnCopy = "kosten"
 	if cashflowTotal >= 0 {
-		return "einbringen."
+		expenseEarnCopy = "einbringen"
 	}
-	return "kosten."
+
+	return fmt.Sprintf(
+		`%s. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
+		Auflistung von Kostenstellen. Ganz am Ende dieser Seite findest du noch eine Beschreibung des Produkts.`,
+		expenseEarnCopy,
+	)
 }
 
 func balanceDataToSections(data []html.BalanceData, year model.BudgetYear, p *message.Printer) []html.BalanceSection {

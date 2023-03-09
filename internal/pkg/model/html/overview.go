@@ -18,7 +18,7 @@ type Overview struct {
 
 type OverviewCopy struct {
 	Headline           string
-	IntroCashflowTotal string
+	IntroCashflowTotal template.HTML
 	IntroDescription   template.HTML
 
 	CashflowTotal          string

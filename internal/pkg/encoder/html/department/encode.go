@@ -51,7 +51,7 @@ func Encode(
 
 			BackLink: "Zurück zur Übersicht",
 
-			DataDisclosure: `Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Statdt Wernigerode aus dem Jahr 2022.
+			DataDisclosure: `Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2022.
 			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
 			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
 			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
@@ -75,13 +75,13 @@ func encodeDepartmentProductData(data html.DepartmentProductData, p *message.Pri
 }
 
 func encodeIntroDescription(cashflowTotal float64, numberOfProducts int) template.HTML {
-	var earnOrExpese = "einzunehmen"
+	var earnOrExpese = "über diesen Fachbereich einzunehmen"
 	if cashflowTotal < 0 {
-		earnOrExpese = "auszugeben"
+		earnOrExpese = "für diesen Fachbereich auszugeben"
 	}
 
 	return template.HTML(fmt.Sprintf(
-		"%s. Klick auf eines der <b>%d Produkte</b> in den Diagrammen um mehr zu erfahren.",
+		"%s. Dabei geht das Geld an die folgenden <b>%d Produkte</b>. Klicke auf eines in den Diagrammen, um mehr zu erfahren.",
 		earnOrExpese,
 		numberOfProducts,
 	))

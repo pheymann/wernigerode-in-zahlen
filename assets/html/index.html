@@ -11,21 +11,26 @@
 </head>
 <html>
   <body>
-    <h1>Übersicht</h1>
+    <h1>Wernigerode in Zahlen</h1>
 
     <p>
-      In 2023 planen wir
+      Als Teil unserer Stadt und Gemeinde habe ich mich gefragt, wo wir eigentlich unser
+			Geld investieren und nach einigem Suchen habe ich den <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">Haushaltsplan</a> der Stadt gefunden. Der führt genau auf
+			wo Gelder gebraucht werden, ist aber alles andere als leicht zu lesen. Und so ist die Idee bei mir für diese Webseite entstanden.
+			Es soll eine Darstellung des Finanzhaushalts Wernigerodes sein die gut zu lesen und verstehen ist.
+			<br><br>
+			Alles started mit der Gesamtübersicht. In 2023 planen wir
     </p>
 
     <h2 class="total-cashflow-expenses center">-6.663.000,00€<sub style="font-size: 0.4em;">(A/B)</sub></h2>
 
     <p>
-      auszugeben. Klick auf einen der <b>1 Fachbereiche</b> in den Diagrammen um mehr zu erfahren.
+      auszugeben. Die Gelder teilen sich auf <b>1 Fachbereiche</b> auf. Klicke auf einen in den Diagrammen um mehr zu erfahren.
     </p>
 
     
       <div class="padded-chart">
-        <canvas id="chartjs-00be6735-816b-4262-8c82-bdacd591f5fe"></canvas>
+        <canvas id="chartjs-607957dd-cb06-4235-95a7-83d4167f31e0"></canvas>
       </div>
     
 
@@ -74,7 +79,7 @@
       
 
       var expensesDepartmentLinks = ["/1/department.html"];
-      var expensesCanvas = document.getElementById('chartjs-00be6735-816b-4262-8c82-bdacd591f5fe');
+      var expensesCanvas = document.getElementById('chartjs-607957dd-cb06-4235-95a7-83d4167f31e0');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {
