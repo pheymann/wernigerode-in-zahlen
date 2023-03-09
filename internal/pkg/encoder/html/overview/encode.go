@@ -72,7 +72,7 @@ func encodeCompressedDepartment(department model.CompressedDepartment, p *messag
 		Name:      department.DepartmentName,
 		CashflowA: htmlEncoder.EncodeBudget(department.CashflowFinancialPlanA, p),
 		CashflowB: htmlEncoder.EncodeBudget(department.CashflowFinancialPlanB, p),
-		Link:      fmt.Sprintf("/html/%s/department.html", department.ID),
+		Link:      department.GetDepartmentLink(),
 	}
 }
 
