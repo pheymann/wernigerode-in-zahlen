@@ -12,5 +12,5 @@ type CompressedDepartment struct {
 }
 
 func (department CompressedDepartment) GetDepartmentLink() string {
-	return fmt.Sprintf("/html/%s/department.html", department.ID)
+	return fmt.Sprintf("/%s/department.html", department.ID)
 }

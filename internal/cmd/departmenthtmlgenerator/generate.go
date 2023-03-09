@@ -117,7 +117,7 @@ func populateChartData(
 	if productTotalCashflow < 0 {
 		expensesTotalCashFlow += productTotalCashflow
 		productLink := fmt.Sprintf(
-			"/html/%s/%s/%s/%s/%s/product.html",
+			"/%s/%s/%s/%s/%s/product.html",
 			product.Metadata.Department.ID,
 			product.Metadata.ProductClass.ID,
 			product.Metadata.ProductDomain.ID,
@@ -132,7 +132,7 @@ func populateChartData(
 	} else {
 		incomeTotalCashFlow += productTotalCashflow
 		productLink := fmt.Sprintf(
-			"/html/%s/%s/%s/%s/%s/product.html",
+			"/%s/%s/%s/%s/%s/product.html",
 			product.Metadata.Department.ID,
 			product.Metadata.ProductClass.ID,
 			product.Metadata.ProductDomain.ID,

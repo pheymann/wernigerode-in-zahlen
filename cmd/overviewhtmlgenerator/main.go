@@ -38,8 +38,6 @@ func main() {
 		departments = append(departments, compressedDecoder.Decode(io.ReadCompleteFile(compressedFile)))
 	}
 
-	fmt.Printf("%+v\n", departments)
-
 	io.WriteFile(
 		model.TargetFile{
 			Path: "assets/html/",
