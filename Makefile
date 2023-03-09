@@ -7,3 +7,4 @@ clean-up:
 generate-html:
 	./scripts/generate_html_products.sh 1
 	go run cmd/departmenthtmlgenerator/main.go --department=1 --name="Budget des Bürgermeisters"
+	go run cmd/overviewhtmlgenerator/main.go --departments="1"

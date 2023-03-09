@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head>
+  <title>Übersicht</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<html>
+  <body>
+    <h1>Übersicht</h1>
+
+    <p>
+      In 2023 planen wir
+    </p>
+
+    <h2 class="total-cashflow-expenses center">-6.663.000,00€<sub style="font-size: 0.4em;">(A/B)</sub></h2>
+
+    <p>
+      auszugeben. Klick auf einen der <b>1 Fachbereiche</b> in den Diagrammen um mehr zu erfahren.
+    </p>
+
+    
+      <div class="padded-chart">
+        <canvas id="chartjs-579a7897-c50d-460e-8cd1-e183edbd0375"></canvas>
+      </div>
+    
+
+    <div class="info-sheet">
+      <table>
+        <tbody>
+          <tr>
+            <th>Produkt</th>
+            <th>Teilfinanzplan A</th>
+            <th>Teilfinanzplan B</th>
+          </tr>
+          <tr>
+            <th></th>
+            <th>-6.172.000,00€</th>
+            <th>-491.000,00€</th>
+          </tr>
+
+          
+            <tr>
+              <td><a href="/html/1/department.html">Budget des Bürgermeisters</a></td>
+              <td>-6.172.000,00€</td>
+              <td>-491.000,00€</td>
+            </tr>
+          
+        </tbody>
+      </table>
+    </div>
+
+    <p class="data-disclosure">
+      Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Statdt Wernigerode aus dem Jahr 2022.
+			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
+			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
+			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
+			<br><br>
+			Die Budgets auf dieser Webseite ergeben sich aus dem Teilfinanzplan A und B und weichen damit vom Haushaltsplan ab, der
+			nur Teilfinanzplan A Daten enthält.
+    </p>
+
+    <footer>
+      <p>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>
+      </p>
+    </footer>
+
+    <script>
+      
+
+      var expensesDepartmentLinks = ["/html/1/department.html"];
+      var expensesCanvas = document.getElementById('chartjs-579a7897-c50d-460e-8cd1-e183edbd0375');
+      var expensesChart = new Chart(expensesCanvas, {
+        type: 'doughnut',
+        data: {
+          labels: ["Budget des Bürgermeisters"],
+          datasets: [{
+            label: 'Euro',
+            data: [-6663000],
+            borderWidth: 1
+          }]
+        },
+        options: {
+          plugins: {
+            legend: {
+              display: false
+            }
+          },
+          onClick: function(e){
+            var activePoints = expensesChart.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
+            window.location.href = expensesDepartmentLinks[activePoints[0].index];
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

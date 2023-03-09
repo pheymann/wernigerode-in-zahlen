@@ -1,5 +1,7 @@
 package model
 
+import "fmt"
+
 type CompressedDepartment struct {
 	ID                     string
 	DepartmentName         string
@@ -7,4 +9,8 @@ type CompressedDepartment struct {
 	CashflowFinancialPlanA float64
 	CashflowFinancialPlanB float64
 	NumberOfProducts       int
+}
+
+func (department CompressedDepartment) GetDepartmentLink() string {
+	return fmt.Sprintf("/html/%s/department.html", department.ID)
 }
