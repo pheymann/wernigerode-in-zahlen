@@ -22,10 +22,10 @@
 			Alles startet mit der Gesamtübersicht. In 2023 planen wir
     </p>
 
-    <h2 class="total-cashflow-income center">29.526.200,00€<sub style="font-size: 0.4em;">(A/B)</sub></h2>
+    <h2 class="total-cashflow-income center">26.331.100,00€<sub style="font-size: 0.4em;">(A/B)</sub></h2>
 
     <p>
-      einzunehmen. Die Gelder teilen sich auf <b>2 Fachbereiche</b> auf. Klicke auf einen in den Diagrammen um mehr zu erfahren.
+      einzunehmen. Die Gelder teilen sich auf <b>3 Fachbereiche</b> auf. Klicke auf einen in den Diagrammen um mehr zu erfahren.
     </p>
 
     
@@ -33,11 +33,11 @@
         <div class="row">
           <div class="col-6">
             <h5 class="center">Einnahmen: 36.189.200,00€<sub style="font-size: 0.4em;">(A/B)</sub></h5>
-            <canvas id="chartjs-ede8a3d2-246c-4d62-a2ca-f9852dfed7e9"></canvas>
+            <canvas id="chartjs-dd5cce32-f27c-44a5-937c-1af1cd215453"></canvas>
           </div>
           <div class="col-6">
-            <h5 class="center">Ausgaben: -6.663.000,00€<sub style="font-size: 0.4em;">(A/B)</sub></h5>
-            <canvas id="chartjs-ae9c680e-0a71-40bc-86cf-9e99fed60288"></canvas>
+            <h5 class="center">Ausgaben: -9.858.100,00€<sub style="font-size: 0.4em;">(A/B)</sub></h5>
+            <canvas id="chartjs-760269f7-e94f-4e4a-a26f-9ffcf0ea252e"></canvas>
           </div>
         </div>
       </div>
@@ -53,10 +53,16 @@
           </tr>
           <tr>
             <th></th>
-            <th>28.617.300,00€</th>
-            <th>908.900,00€</th>
+            <th>25.547.700,00€</th>
+            <th>783.400,00€</th>
           </tr>
 
+          
+            <tr>
+              <td><a href="/3/department.html">Budget Betriebsbereiche</a></td>
+              <td>-3.069.600,00€</td>
+              <td>-125.500,00€</td>
+            </tr>
           
             <tr>
               <td><a href="/2/department.html">Budget Finanzen</a></td>
@@ -94,7 +100,7 @@
     <script>
       
         var incomeDepartmentLinks = ["/2/department.html"];
-        var incomeCanvas = document.getElementById('chartjs-ede8a3d2-246c-4d62-a2ca-f9852dfed7e9');
+        var incomeCanvas = document.getElementById('chartjs-dd5cce32-f27c-44a5-937c-1af1cd215453');
         var incomeChart = new Chart(incomeCanvas, {
           type: 'doughnut',
           data: {
@@ -119,15 +125,15 @@
         });
       
 
-      var expensesDepartmentLinks = ["/1/department.html"];
-      var expensesCanvas = document.getElementById('chartjs-ae9c680e-0a71-40bc-86cf-9e99fed60288');
+      var expensesDepartmentLinks = ["/1/department.html","/3/department.html"];
+      var expensesCanvas = document.getElementById('chartjs-760269f7-e94f-4e4a-a26f-9ffcf0ea252e');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {
-          labels: ["Budget des Bürgermeisters"],
+          labels: ["Budget des Bürgermeisters","Budget Betriebsbereiche"],
           datasets: [{
             label: 'Euro',
-            data: [-6663000],
+            data: [-6663000,-3195100],
             borderWidth: 1
           }]
         },

@@ -1,0 +1,32 @@
+{
+  "Department": {
+    "ID": "3",
+    "Name": "Budget Betriebsbereiche",
+    "Accountable": "Herr Kramer"
+  },
+  "ProductClass": {
+    "ID": "2",
+    "Name": "Schule und Kultur",
+    "Accountable": "Dezernent II"
+  },
+  "ProductDomain": {
+    "ID": "5",
+    "Name": "Wissenschaft und Ausstellungen",
+    "Responsible": "Frau Wichmann"
+  },
+  "ProductGroup": {
+    "ID": "3",
+    "Name": "Zoologische und Botanische Gärten",
+    "Desc": "externes Produkt"
+  },
+  "Product": {
+    "ID": "01",
+    "Name": "Wildpark",
+    "LegalRequirement": "Freiwillige Aufgabe"
+  },
+  "Description": " Präsentation heimischer Tierarten",
+  "Mission": " EU Richtlinien zur Wildtierhaltung, BundesartenschutzVO, TierkörperbeseitigungG, BNatSchG, weitere fachspez. Richtlinien und DIN Vorschriften",
+  "Target": "Bevölkerung, Touristen, Kinder und Jugendliche",
+  "Objectives": " -naturnahe Präsentation heimischer Wildtiere -Darstellung und Erklärung der Tier und Pflanzenwelt -Biotop und Landschaftspflege -Erholung im Wohn- und Arbeitsumfeld",
+  "Services": " Hege, Pflege und Zucht heimischer Tierarten -Pflege und Fütterung von ca. 130 Wildtieren in 42 Wildtierarten, Gehegesäuberung und -dekoration. Aufnahme verletzter Wildtiere, Zuführung tierärztlicher, Hilfe,Auswilderung, Pflege und Unterhaltung der Rahmenanlagen -Sämtliche Unterhaltungsarbeiten außerhalb der Tiergehege wie Pflege und Instandhaltung der Teiche und Bachläufe, der Spielanlagen,, Grünanlagen, Naturdenkmalen, Wege- und Platzflächen,"
+}

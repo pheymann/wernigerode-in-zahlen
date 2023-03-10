@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<head>
+  <title>Produkt</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<html>
+  <body>
+    <h1>Dienstleistungen für Dritte (Bauhof)</h1>
+
+    <p>
+      Das Produkt -  Bereitstellung eines Recyclinghofes und Handwerkerleistungen - wird in 2023
+    </p>
+
+    <h2 class="total-cashflow-income center">78.900,00€</h2>
+
+    <p>
+      einbringen. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
+		Auflistung von Kostenstellen. Ganz am Ende dieser Seite findest du noch eine Beschreibung des Produkts.
+    </p>
+
+    <div class="container">
+      
+          <h3>Die Verwaltung erwirtschaftet <span class="total-cashflow-income">88.900,00€</span></h3>
+
+          
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 92.100,00€</h5>
+                <canvas id="chartjs-91b44ee1-aaa6-47d4-ad93-8e9b37bcd576"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: 3.200,00€</h5>
+                <canvas id="chartjs-52cf1ba9-fd75-4d4f-b781-09458ab01a5c"></canvas>
+              </div>
+            </div>
+          
+      
+          <h3>Investitionen unterhalb der Wertgrenze kosten <span class="total-cashflow-expenses">-10.000,00€</span></h3>
+
+          
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs-f46468df-dd0f-4080-9a56-e1a5fa64e4d2"></canvas>
+              </div>
+            
+          
+      
+
+      
+          <h3>Die Investition "Betriebs-und Geschäftsausstattungen" kostet <span class="total-cashflow-expenses">-10.000,00€</span></h3>
+
+          
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs-7bfd603a-9e49-4dde-afd9-7940faafe98b"></canvas>
+              </div>
+            
+          
+      
+    </div>
+
+    <div class="info-sheet">
+      <h3>Aufgabe</h3>
+      <p> Privatrechtliche Verträge und Auftragserteilung</p>
+
+      <h3>Ziele</h3>
+      <p>Gesellschaften der Stadt, private Unternehmen, Bürger und Bürgerinnen der Stadt Wernigerode</p>
+
+      <h3>Dienstleistungen</h3>
+      <p> Dienstleistungen für Dritte durch den Bauhof,</p>
+
+      <h3>Gruppierung</h3>
+      <ul>
+        <li>Fachbereich: Budget Betriebsbereiche</li>
+        <li>Produktklasse: Zentrale Verwaltung</li>
+        <li>Produktbereich: Innere Verwaltung</li>
+        <li>Produktgruppe: Verwaltungssteuerung und -service</li>
+        <li>Produkt: Dienstleistungen für Dritte (Bauhof)</li>
+      </ul>
+    </div>
+
+    <div class="back-link center">
+      <a href="/3/department.html">Zurück zur Bereichsübersicht</a>
+    </div>
+
+    <p class="data-disclosure">
+      Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2022.
+			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
+			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
+			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
+			<br><br>
+			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
+    </p>
+
+    <footer>
+      <p>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Das Impression befindet sich <a href="/imprint.html">hier</a>.
+      </p>
+    </footer>
+
+    <script>
+      
+        
+          new Chart(document.getElementById('chartjs-91b44ee1-aaa6-47d4-ad93-8e9b37bcd576'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Einzahlungen aus Mieten und Pachten","Sonstige privatrechtliche Leistungsentgelte","Einzahlungen aus Kostenerstattungen von Zweckverbänden","Einzahlungen aus Kostenerstattungen von sonstigen öffentlichen Sonderrechnungen"],
+              datasets: [{
+                label: 'Euro',
+                data: [600,7000,75500,9000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+        
+          new Chart(document.getElementById('chartjs-52cf1ba9-fd75-4d4f-b781-09458ab01a5c'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Unterhaltung des sonstigen unbeweglichen Vermögens","Besondere zahlungswirksame Aufwendungen für Beschäftigte"],
+              datasets: [{
+                label: 'Euro',
+                data: [1500,1700],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+        
+        
+          new Chart(document.getElementById('chartjs-f46468df-dd0f-4080-9a56-e1a5fa64e4d2'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
+              datasets: [{
+                label: 'Euro',
+                data: [10000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+
+      
+        
+        
+          new Chart(document.getElementById('chartjs-7bfd603a-9e49-4dde-afd9-7940faafe98b'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
+              datasets: [{
+                label: 'Euro',
+                data: [10000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<head>
+  <title>Produkt</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<html>
+  <body>
+    <h1>Weihnachtsmarkt</h1>
+
+    <p>
+      Das Produkt -  Veranstaltung des Wernigeröder Weihnachtsmarktes - wird in 2023
+    </p>
+
+    <h2 class="total-cashflow-income center">48.000,00€</h2>
+
+    <p>
+      einbringen. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
+		Auflistung von Kostenstellen. Ganz am Ende dieser Seite findest du noch eine Beschreibung des Produkts.
+    </p>
+
+    <div class="container">
+      
+          <h3>Die Verwaltung erwirtschaftet <span class="total-cashflow-income">48.000,00€</span></h3>
+
+          
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 73.000,00€</h5>
+                <canvas id="chartjs-48a2defb-d311-4e7e-b03f-1d181d6d53f4"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: 25.000,00€</h5>
+                <canvas id="chartjs-8c13a885-7c6b-429f-b9f0-9522ce6173b8"></canvas>
+              </div>
+            </div>
+          
+      
+
+      
+    </div>
+
+    <div class="info-sheet">
+      <h3>Aufgabe</h3>
+      <p> Gewerbeordnung</p>
+
+      <h3>Ziele</h3>
+      <p>Einwohner-/innen und Touristen</p>
+
+      <h3>Dienstleistungen</h3>
+      <p> -Verwaltung, Instandhaltung und Beschaffung von Inventar für den Weihnachtsmarkt -Auf-und Abbau des Weihnachtsmarktes nach Beauftragung durch die Wernigeröder Tourismus Gmbh -Organisation und, Kontrolle der Ordnung und Sauberkeit -Unterstützung der Wernigeröder Tourismus GmbH bei der Planung des Weihnachtsmarktes,</p>
+
+      <h3>Gruppierung</h3>
+      <ul>
+        <li>Fachbereich: Budget Betriebsbereiche</li>
+        <li>Produktklasse: Schule und Kultur</li>
+        <li>Produktbereich: Örtliche Kulturaufgaben</li>
+        <li>Produktgruppe: Heimat- und sonstige Kulturpflege</li>
+        <li>Produkt: Weihnachtsmarkt</li>
+      </ul>
+    </div>
+
+    <div class="back-link center">
+      <a href="/3/department.html">Zurück zur Bereichsübersicht</a>
+    </div>
+
+    <p class="data-disclosure">
+      Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2022.
+			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
+			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
+			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
+			<br><br>
+			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
+    </p>
+
+    <footer>
+      <p>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Das Impression befindet sich <a href="/imprint.html">hier</a>.
+      </p>
+    </footer>
+
+    <script>
+      
+        
+          new Chart(document.getElementById('chartjs-48a2defb-d311-4e7e-b03f-1d181d6d53f4'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Einzahlungen aus Mieten und Pachten","Einzahl. aus Kostenerstattungen von verbund. Untern., Sondervermö. und Beteilig."],
+              datasets: [{
+                label: 'Euro',
+                data: [33000,40000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+        
+          new Chart(document.getElementById('chartjs-8c13a885-7c6b-429f-b9f0-9522ce6173b8'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Bewirtschaftung der Grundstücke und baulichen Anlagen","Unterhaltung des sonstigen beweglichen Vermögens"],
+              datasets: [{
+                label: 'Euro',
+                data: [17500,7500],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+
+      
+    </script>
+  </body>
+</html>

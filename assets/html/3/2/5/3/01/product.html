@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<head>
+  <title>Produkt</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<html>
+  <body>
+    <h1>Wildpark</h1>
+
+    <p>
+      Das Produkt -  Präsentation heimischer Tierarten - wird in 2023
+    </p>
+
+    <h2 class="total-cashflow-expenses center">-319.800,00€</h2>
+
+    <p>
+      kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
+		Auflistung von Kostenstellen. Ganz am Ende dieser Seite findest du noch eine Beschreibung des Produkts.
+    </p>
+
+    <div class="container">
+      
+          <h3>Die Verwaltung kostet <span class="total-cashflow-expenses">-312.300,00€</span></h3>
+
+          
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 88.300,00€</h5>
+                <canvas id="chartjs-c1e7034a-09b6-4e68-a519-bc6b818e1adb"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: 400.600,00€</h5>
+                <canvas id="chartjs-315d0c90-5d5f-48c0-9ec3-498a2c99c6b9"></canvas>
+              </div>
+            </div>
+          
+      
+          <h3>Investitionen unterhalb der Wertgrenze kosten <span class="total-cashflow-expenses">-7.500,00€</span></h3>
+
+          
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs-e6d60aa1-c81d-49d1-abd9-7e4b39ad6e87"></canvas>
+              </div>
+            
+          
+      
+
+      
+          <h3>Die Investition "Anschaffungen 150 €  bis 1.000 € netto" kostet <span class="total-cashflow-expenses">-3.000,00€</span></h3>
+
+          
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs-33a3ebb5-1474-460b-9029-f8963aa6bbf9"></canvas>
+              </div>
+            
+          
+      
+          <h3>Die Investition "Betriebs-und Geschäftsausstattungen" kostet <span class="total-cashflow-expenses">-2.500,00€</span></h3>
+
+          
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs-5cefa241-b808-4287-9bd7-8d0a768530a3"></canvas>
+              </div>
+            
+          
+      
+          <h3>Die Investition "Fahrzeuge" kostet <span class="total-cashflow-expenses">-2.000,00€</span></h3>
+
+          
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs-28e50e63-f110-4cb8-b3c2-797dc49e9059"></canvas>
+              </div>
+            
+          
+      
+    </div>
+
+    <div class="info-sheet">
+      <h3>Aufgabe</h3>
+      <p> EU Richtlinien zur Wildtierhaltung, BundesartenschutzVO, TierkörperbeseitigungG, BNatSchG, weitere fachspez. Richtlinien und DIN Vorschriften</p>
+
+      <h3>Ziele</h3>
+      <p>Bevölkerung, Touristen, Kinder und Jugendliche</p>
+
+      <h3>Dienstleistungen</h3>
+      <p> Hege, Pflege und Zucht heimischer Tierarten -Pflege und Fütterung von ca. 130 Wildtieren in 42 Wildtierarten, Gehegesäuberung und -dekoration. Aufnahme verletzter Wildtiere, Zuführung tierärztlicher, Hilfe,Auswilderung, Pflege und Unterhaltung der Rahmenanlagen -Sämtliche Unterhaltungsarbeiten außerhalb der Tiergehege wie Pflege und Instandhaltung der Teiche und Bachläufe, der Spielanlagen,, Grünanlagen, Naturdenkmalen, Wege- und Platzflächen,</p>
+
+      <h3>Gruppierung</h3>
+      <ul>
+        <li>Fachbereich: Budget Betriebsbereiche</li>
+        <li>Produktklasse: Schule und Kultur</li>
+        <li>Produktbereich: Wissenschaft und Ausstellungen</li>
+        <li>Produktgruppe: Zoologische und Botanische Gärten</li>
+        <li>Produkt: Wildpark</li>
+      </ul>
+    </div>
+
+    <div class="back-link center">
+      <a href="/3/department.html">Zurück zur Bereichsübersicht</a>
+    </div>
+
+    <p class="data-disclosure">
+      Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2022.
+			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
+			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
+			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
+			<br><br>
+			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
+    </p>
+
+    <footer>
+      <p>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Das Impression befindet sich <a href="/imprint.html">hier</a>.
+      </p>
+    </footer>
+
+    <script>
+      
+        
+          new Chart(document.getElementById('chartjs-c1e7034a-09b6-4e68-a519-bc6b818e1adb'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Zuschüsse für laufende Zwecke von privaten Unternehmen (Spenden)","Zuschüsse für laufende Zwecke von übrigen Bereichen (Spenden)","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus dem Verkauf von beweglichen Sachen","Einzahlungen aus Kostenerstattungen vom Bund","Einzahlungen aus Kostenerstattungen von übrigen Bereichen"],
+              datasets: [{
+                label: 'Euro',
+                data: [2000,8000,70000,1000,7200,100],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+        
+          new Chart(document.getElementById('chartjs-315d0c90-5d5f-48c0-9ec3-498a2c99c6b9'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Dienstauszahlungen und dgl. an sonstige Beschäftigte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschäft.","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung des sonstigen unbeweglichen Vermögens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlage","Haltung von Fahrzeugen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für sonstige Dienstleistungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen","Erstatt. f.d. Ausz. v. Dritten aus lfd Verwaltungstät. an so. öff. Sonderrechn."],
+              datasets: [{
+                label: 'Euro',
+                data: [212000,30400,8800,42800,12300,1200,23000,600,10000,11000,1000,4000,700,10500,1000,300,1000,30000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+        
+        
+          new Chart(document.getElementById('chartjs-e6d60aa1-c81d-49d1-abd9-7e4b39ad6e87'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
+              datasets: [{
+                label: 'Euro',
+                data: [3000,2500,2000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+
+      
+        
+        
+          new Chart(document.getElementById('chartjs-33a3ebb5-1474-460b-9029-f8963aa6bbf9'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr."],
+              datasets: [{
+                label: 'Euro',
+                data: [3000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+        
+        
+          new Chart(document.getElementById('chartjs-5cefa241-b808-4287-9bd7-8d0a768530a3'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
+              datasets: [{
+                label: 'Euro',
+                data: [2500],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+        
+        
+          new Chart(document.getElementById('chartjs-28e50e63-f110-4cb8-b3c2-797dc49e9059'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
+              datasets: [{
+                label: 'Euro',
+                data: [2000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+    </script>
+  </body>
+</html>

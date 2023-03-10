@@ -8,10 +8,13 @@ clean-up:
 
 .PHONY: generate-html
 generate-html:
-	./scripts/generate_html_products.sh 1
-	go run cmd/departmenthtmlgenerator/main.go --department=1 --name="Budget des Bürgermeisters"
+	# ./scripts/generate_html_products.sh 1
+	# go run cmd/departmenthtmlgenerator/main.go --department=1 --name="Budget des Bürgermeisters"
 
-	./scripts/generate_html_products.sh 2
-	go run cmd/departmenthtmlgenerator/main.go --department=2 --name="Budget Finanzen"
+	# ./scripts/generate_html_products.sh 2
+	# go run cmd/departmenthtmlgenerator/main.go --department=2 --name="Budget Finanzen"
 
-	go run cmd/overviewhtmlgenerator/main.go --departments="1,2"
+	./scripts/generate_html_products.sh 3
+	go run cmd/departmenthtmlgenerator/main.go --department=3 --name="Budget Betriebsbereiche"
+
+	go run cmd/overviewhtmlgenerator/main.go --departments="1,2,3"

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<head>
+  <title>Produkt</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<html>
+  <body>
+    <h1>Bauhof</h1>
+
+    <p>
+      Das Produkt -  Erbringung interner Dienstleistungen in allen Produktbereichen der Verwaltung - wird in 2023
+    </p>
+
+    <h2 class="total-cashflow-expenses center">-2.876.700,00€</h2>
+
+    <p>
+      kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
+		Auflistung von Kostenstellen. Ganz am Ende dieser Seite findest du noch eine Beschreibung des Produkts.
+    </p>
+
+    <div class="container">
+      
+          <h3>Die Verwaltung kostet <span class="total-cashflow-expenses">-2.788.700,00€</span></h3>
+
+          
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 7.100,00€</h5>
+                <canvas id="chartjs-f73d3a30-602a-45c8-8c44-ac5413226b28"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: 3.203.900,00€</h5>
+                <canvas id="chartjs-b8152111-387c-441d-a530-fed1a1eb6841"></canvas>
+              </div>
+            </div>
+          
+      
+          <h3>Investitionen unterhalb der Wertgrenze kosten <span class="total-cashflow-expenses">-88.000,00€</span></h3>
+
+          
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 20.000,00€</h5>
+                <canvas id="chartjs-ede68792-d095-4c54-a5e2-0dc0dbca6504"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: 108.000,00€</h5>
+                <canvas id="chartjs-2ac559b7-9b99-4128-94ef-a19ab21cd42c"></canvas>
+              </div>
+            </div>
+          
+      
+
+      
+          <h3>Die Investition "Anschaffungen 150 €  bis 1.000 € netto" kostet <span class="total-cashflow-expenses">-15.000,00€</span></h3>
+
+          
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs-8ea7b630-2a2f-4bdd-8083-e090025f1e38"></canvas>
+              </div>
+            
+          
+      
+          <h3>Die Investition "Betriebs-und Geschäftsausstattungen" kostet <span class="total-cashflow-expenses">-53.000,00€</span></h3>
+
+          
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs-a5b96968-d222-4a4a-930a-322451022716"></canvas>
+              </div>
+            
+          
+      
+          <h3>Die Investition "Fahrzeuge" kostet <span class="total-cashflow-expenses">-40.000,00€</span></h3>
+
+          
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs-fdb1d8e1-603c-4264-995d-22d664911adf"></canvas>
+              </div>
+            
+          
+      
+    </div>
+
+    <div class="info-sheet">
+      <h3>Aufgabe</h3>
+      <p> Aufträge aus der Verwaltung</p>
+
+      <h3>Ziele</h3>
+      <p>Alle Produkte der Verwaltung</p>
+
+      <h3>Dienstleistungen</h3>
+      <p> -Unterstützung bei der Grünflächenpflege,-Unterstützung bei der Pflege der Friedhofsanlagen,-Unterstützung bei der Pflege der Sportanlagen,,-Pflege der Außenanlagen an städtischen Einrichtungen -Unterhaltung der Verkehrsflächen-Pflege der Seitenräume von Verkehrsflächen,-Gebäudeunterhaltung</p>
+
+      <h3>Gruppierung</h3>
+      <ul>
+        <li>Fachbereich: Budget Betriebsbereiche</li>
+        <li>Produktklasse: Zentrale Verwaltung</li>
+        <li>Produktbereich: Innere Verwaltung</li>
+        <li>Produktgruppe: Verwaltungssteuerung und -service</li>
+        <li>Produkt: Bauhof</li>
+      </ul>
+    </div>
+
+    <div class="back-link center">
+      <a href="/3/department.html">Zurück zur Bereichsübersicht</a>
+    </div>
+
+    <p class="data-disclosure">
+      Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2022.
+			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
+			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
+			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
+			<br><br>
+			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
+    </p>
+
+    <footer>
+      <p>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Das Impression befindet sich <a href="/imprint.html">hier</a>.
+      </p>
+    </footer>
+
+    <script>
+      
+        
+          new Chart(document.getElementById('chartjs-f73d3a30-602a-45c8-8c44-ac5413226b28'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Einzahlungen aus Kostenerstattungen vom Bund","Einzahlungen aus Kostenerstattungen von privaten Unternehmen","Einzahlungen aus Kostenerstattungen von übrigen Bereichen"],
+              datasets: [{
+                label: 'Euro',
+                data: [3600,1000,2500],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+        
+          new Chart(document.getElementById('chartjs-b8152111-387c-441d-a530-fed1a1eb6841'), {
+            type: 'doughnut',
+            data: {
+              labels: ["     Personalauszahlungen","Dienstauszahlungen und dgl. an sonstige Beschäftigte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschäft.","Beihilfen, Unterstützungsleistungen für Beschäftigte",".1.1.11.7221000Unterhaltung des sonstigen unbeweglichen Vermögens",".1.1.11.7231000Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen"],
+              datasets: [{
+                label: 'Euro',
+                data: [2380600,5300,79300,382200,2200,9100,15000,1500,14000,250000,10000,25000,22000,2500,200,5000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+        
+          new Chart(document.getElementById('chartjs-ede68792-d095-4c54-a5e2-0dc0dbca6504'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Einzahl.a.d.Veräuß.von bewegl. Vermögensgegenst. von mehr als 1000 € ohne UmStr."],
+              datasets: [{
+                label: 'Euro',
+                data: [20000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+        
+          new Chart(document.getElementById('chartjs-2ac559b7-9b99-4128-94ef-a19ab21cd42c'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
+              datasets: [{
+                label: 'Euro',
+                data: [15000,53000,40000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+
+      
+        
+        
+          new Chart(document.getElementById('chartjs-8ea7b630-2a2f-4bdd-8083-e090025f1e38'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr."],
+              datasets: [{
+                label: 'Euro',
+                data: [15000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+        
+        
+          new Chart(document.getElementById('chartjs-a5b96968-d222-4a4a-930a-322451022716'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
+              datasets: [{
+                label: 'Euro',
+                data: [53000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+        
+        
+          new Chart(document.getElementById('chartjs-fdb1d8e1-603c-4264-995d-22d664911adf'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
+              datasets: [{
+                label: 'Euro',
+                data: [40000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+    </script>
+  </body>
+</html>
