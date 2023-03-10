@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<head>
+  <title>Produkt</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<html>
+  <body>
+    <h1>Steuern, allgemeine Zuweisungen, allgemeine Umlagen</h1>
+
+    <p>
+      Das Produkt -  Zahlungsein- und -ausgänge aus Abgaben und Umlagen - wird in 2023
+    </p>
+
+    <h2 class="total-cashflow-income center">31.565.900,00€</h2>
+
+    <p>
+      einbringen. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
+		Auflistung von Kostenstellen. Ganz am Ende dieser Seite findest du noch eine Beschreibung des Produkts.
+    </p>
+
+    <div class="container">
+      
+          <h3>Die Verwaltung erwirtschaftet <span class="total-cashflow-income">30.166.000,00€</span></h3>
+
+          
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 44.376.700,00€</h5>
+                <canvas id="chartjs-6fb33250-b8b6-45cc-b66f-71635fe2bfaa"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: 14.210.700,00€</h5>
+                <canvas id="chartjs-8db3dcd4-cccd-4235-ae03-5dd38bbacb0a"></canvas>
+              </div>
+            </div>
+          
+      
+          <h3>Investitionen unterhalb der Wertgrenze erwirtschaften <span class="total-cashflow-income">1.399.900,00€</span></h3>
+
+          
+            
+              <div class="padded-chart">
+                <canvas id="chartjs-7ef608e9-14aa-47ed-9673-07ad7ebd94bd"></canvas>
+              </div>
+            
+            
+          
+      
+
+      
+          <h3>Die Investition "Investitionspauschale" erwirtschaftet <span class="total-cashflow-income">1.399.900,00€</span></h3>
+
+          
+            
+              <div class="padded-chart">
+                <canvas id="chartjs-03a16777-8570-4baf-b415-9d6635bcdbc9"></canvas>
+              </div>
+            
+            
+          
+      
+    </div>
+
+    <div class="info-sheet">
+      <h3>Aufgabe</h3>
+      <p> Bundes-, Landes- und Ortsrecht</p>
+
+      <h3>Ziele</h3>
+      <p>Verwaltung, Landkreis</p>
+
+      <h3>Dienstleistungen</h3>
+      <p> Erträge -Gewerbesteuer -Grundsteuer A und B -Gemeindeanteil an der Einkommenssteuer -Gemeindeanteil an der Umsatzsteuer -Vergnügungssteuer -Hundesteuer Transfererträge -Schlüsselzuweisungen vom Land -Zuweisungen für Aufgaben des übertragenen Wirkungskreises -Investitionsschlüsselzuweisungen -Zuweisungen vom Landkreis -Umlagen Transferaufwendungen -Gewerbesteuerumlage nach dem Gemeindefinanzreformgesetz -Finanzausgleichsumlage an das Land -Kreisumlage -Umlagen</p>
+
+      <h3>Gruppierung</h3>
+      <ul>
+        <li>Fachbereich: Budget Finanzen</li>
+        <li>Produktklasse: Zentrale Finanzleistungen</li>
+        <li>Produktbereich: Allgemeine Finanzwirtschaft</li>
+        <li>Produktgruppe: Steuern, allgemeine Zuweisungen, allgemeine Umlagen</li>
+        <li>Produkt: Steuern, allgemeine Zuweisungen, allgemeine Umlagen</li>
+      </ul>
+    </div>
+
+    <div class="back-link center">
+      <a href="/2/department.html">Zurück zur Bereichsübersicht</a>
+    </div>
+
+    <p class="data-disclosure">
+      Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2022.
+			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
+			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
+			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
+			<br><br>
+			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
+    </p>
+
+    <footer>
+      <p>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Das Impression befindet sich <a href="/imprint.html">hier</a>.
+      </p>
+    </footer>
+
+    <script>
+      
+        
+          new Chart(document.getElementById('chartjs-6fb33250-b8b6-45cc-b66f-71635fe2bfaa'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Steuern und ähnliche Abgaben 6.1.1.01.6011000 6.1.1.01.6012000 6.1.1.01.6013000 6.1.1.01.6021000 6.1.1.01.6022000 6.1.1.01.6031000 6.1.1.01.6032000","Zuweisungen und allgemeine Umlagen 6.1.1.01.6111000 Ergänzungszuweisungen vom Land 6.1.1.01.6131000","Zinsen und ähnliche Einzahlungen 6.1.1.01.6691000"],
+              datasets: [{
+                label: 'Euro',
+                data: [35976700,8300000,100000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+        
+          new Chart(document.getElementById('chartjs-8db3dcd4-cccd-4235-ae03-5dd38bbacb0a'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Transferauszahlungen 6.1.1.01.7341000 6.1.1.01.7372000","Zinsen und ähnliche Auszahlungen 6.1.1.01.7592000"],
+              datasets: [{
+                label: 'Euro',
+                data: [14160700,50000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+        
+          new Chart(document.getElementById('chartjs-7ef608e9-14aa-47ed-9673-07ad7ebd94bd'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Zuwendungen für Investitonen und Investitionsförderungsmaßnahmen 6.1.1.01/8000.6811000 u.Investitionsfördermaßnahmen Land 6.1.1.01/8001.6811000 u.Investitionsfördermaßnahmen Land"],
+              datasets: [{
+                label: 'Euro',
+                data: [1399900],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+        
+      
+
+      
+        
+          new Chart(document.getElementById('chartjs-03a16777-8570-4baf-b415-9d6635bcdbc9'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land"],
+              datasets: [{
+                label: 'Euro',
+                data: [1399900],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+        
+      
+    </script>
+  </body>
+</html>
