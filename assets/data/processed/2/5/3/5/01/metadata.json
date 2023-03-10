@@ -1,0 +1,32 @@
+{
+  "Department": {
+    "ID": "2",
+    "Name": "Budget Finanzen",
+    "Accountable": "Frau Leo"
+  },
+  "ProductClass": {
+    "ID": "5",
+    "Name": "Gestaltung der Umwelt",
+    "Accountable": "Amt für Finanzwesen"
+  },
+  "ProductDomain": {
+    "ID": "3",
+    "Name": "Ver-und Entsorgung",
+    "Responsible": "Frau Leo"
+  },
+  "ProductGroup": {
+    "ID": "5",
+    "Name": "Kombinierte Versorgung",
+    "Desc": "internes Produkt"
+  },
+  "Product": {
+    "ID": "01",
+    "Name": "Gewinnabführung Stadtwerke",
+    "LegalRequirement": "Pflichtaufgabe"
+  },
+  "Description": " Jahresüberschuss aus den Sparten Elektrizitäts-, Gas-, Fernwärme- und Wasserversorgung im Konzessionsgebiet der Stadtwerke Wernigerode GmbH",
+  "Mission": " § 17 Gesellschaftsvertrag der Stadtwerke GmbH",
+  "Target": "EinwohnerInnen im Versorgungsgebiet",
+  "Objectives": " Stetiger Zufluss von Gewinnanteilen an den städtischen Haushalt,,,",
+  "Services": " Nach Ermittlung des Jahresüberschuss und der Beschlussfassung durch die Gesellschafterversammlung an die Stadt abzuführender Betrag als Gewinnabführung. Der Betrag ergibt sich aus dem Ausschüttungsbetrag abzüglich Kapitalertragszuschuss und Solidaritätszuschlag zugunsten des städtischen Haushaltes. Der Gewinn umfasst das Ergebnis aller Sparten des Unternehmens."
+}

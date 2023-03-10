@@ -1,0 +1,193 @@
+{
+  "Balances": [
+    {
+      "Id": "16",
+      "Class": "admininstration",
+      "Desc": "  Saldo aus laufender Verwaltungstätigkeit (Saldo Zeilen 8 und 15)",
+      "Budgets": {
+        "2020": 27260411.15,
+        "2021": 28269700,
+        "2022": 30396500,
+        "2023": 30166000,
+        "2024": 31535800,
+        "2025": 32980000
+      },
+      "Accounts": [
+        {
+          "Id": "8",
+          "Desc": "  Einzahlungen aus laufender Verwaltungstätigkeit",
+          "Budgets": {
+            "2020": 41520431.4,
+            "2021": 42085200,
+            "2022": 44233000,
+            "2023": 44376700,
+            "2024": 45862700,
+            "2025": 47360600
+          },
+          "Subs": [
+            {
+              "Id": "1",
+              "Desc": "Steuern und ähnliche Abgaben 6.1.1.01.6011000 6.1.1.01.6012000 6.1.1.01.6013000 6.1.1.01.6021000 6.1.1.01.6022000 6.1.1.01.6031000 6.1.1.01.6032000",
+              "Budgets": {
+                "2020": 32340192.55,
+                "2021": 34339400,
+                "2022": 35738600,
+                "2023": 35976700,
+                "2024": 37462700,
+                "2025": 38910600
+              },
+              "Units": null
+            },
+            {
+              "Id": "2",
+              "Desc": "Zuweisungen und allgemeine Umlagen 6.1.1.01.6111000 Ergänzungszuweisungen vom Land 6.1.1.01.6131000",
+              "Budgets": {
+                "2020": 9097323,
+                "2021": 7645800,
+                "2022": 8394400,
+                "2023": 8300000,
+                "2024": 8300000,
+                "2025": 8350000
+              },
+              "Units": null
+            },
+            {
+              "Id": "7",
+              "Desc": "Zinsen und ähnliche Einzahlungen 6.1.1.01.6691000",
+              "Budgets": {
+                "2020": 82915.85,
+                "2021": 100000,
+                "2022": 100000,
+                "2023": 100000,
+                "2024": 100000,
+                "2025": 100000
+              },
+              "Units": null
+            }
+          ]
+        },
+        {
+          "Id": "15",
+          "Desc": "  Auszahlungen aus laufender Verwaltungstätigkeit",
+          "Budgets": {
+            "2020": 14260020.25,
+            "2021": 13815500,
+            "2022": 13836500,
+            "2023": 14210700,
+            "2024": 14326900,
+            "2025": 14380600
+          },
+          "Subs": [
+            {
+              "Id": "12",
+              "Desc": "Transferauszahlungen 6.1.1.01.7341000 6.1.1.01.7372000",
+              "Budgets": {
+                "2020": 14241747,
+                "2021": 13765500,
+                "2022": 13786500,
+                "2023": 14160700,
+                "2024": 14276900,
+                "2025": 14330600
+              },
+              "Units": null
+            },
+            {
+              "Id": "14",
+              "Desc": "Zinsen und ähnliche Auszahlungen 6.1.1.01.7592000",
+              "Budgets": {
+                "2020": 18273.25,
+                "2021": 50000,
+                "2022": 50000,
+                "2023": 50000,
+                "2024": 50000,
+                "2025": 50000
+              },
+              "Units": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "34",
+      "Class": "balance-investments",
+      "Desc": " Saldo aus Investitionstätigkeit",
+      "Budgets": {
+        "2020": 1920887,
+        "2021": 1920600,
+        "2022": 1819800,
+        "2023": 1399900,
+        "2024": 1399900,
+        "2025": 1399900
+      },
+      "Accounts": [
+        {
+          "Id": "17",
+          "Desc": " Investitionstätigkeit - Einzahlungen",
+          "Budgets": {
+            "2020": 0,
+            "2021": 0,
+            "2022": 0,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": null
+        },
+        {
+          "Id": "25",
+          "Desc": " Einzahlungen aus Investitionstätigkeit",
+          "Budgets": {
+            "2020": 1920887,
+            "2021": 1920600,
+            "2022": 1819800,
+            "2023": 1399900,
+            "2024": 1399900,
+            "2025": 1399900
+          },
+          "Subs": [
+            {
+              "Id": "18",
+              "Desc": "Zuwendungen für Investitonen und Investitionsförderungsmaßnahmen 6.1.1.01/8000.6811000 u.Investitionsfördermaßnahmen Land 6.1.1.01/8001.6811000 u.Investitionsfördermaßnahmen Land",
+              "Budgets": {
+                "2020": 1920887,
+                "2021": 1920600,
+                "2022": 1819800,
+                "2023": 1399900,
+                "2024": 1399900,
+                "2025": 1399900
+              },
+              "Units": null
+            }
+          ]
+        },
+        {
+          "Id": "26",
+          "Desc": " Investitionstätigkeit - Auszahlungen",
+          "Budgets": {
+            "2020": 0,
+            "2021": 0,
+            "2022": 0,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": null
+        },
+        {
+          "Id": "33",
+          "Desc": " Auszahlungen aus Investitionstätigkeit",
+          "Budgets": {
+            "2020": 0,
+            "2021": 0,
+            "2022": 0,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "Balances": [
+    {
+      "Id": "8000",
+      "Class": "one-off",
+      "Desc": "Investitionspauschale",
+      "Budgets": {
+        "2020": 1171684,
+        "2021": 1171100,
+        "2022": 1399900,
+        "2023": 1399900,
+        "2024": 1399900,
+        "2025": 1399900
+      },
+      "Accounts": [
+        {
+          "Id": "10",
+          "Desc": " Einzahlungen aus Investitionszuwendungen",
+          "Budgets": {
+            "2020": 1171684,
+            "2021": 1171100,
+            "2022": 1399900,
+            "2023": 1399900,
+            "2024": 1399900,
+            "2025": 1399900
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "/8000.6811000",
+                  "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land",
+                  "Budgets": {
+                    "2020": 1171684,
+                    "2021": 1171100,
+                    "2022": 1399900,
+                    "2023": 1399900,
+                    "2024": 1399900,
+                    "2025": 1399900
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

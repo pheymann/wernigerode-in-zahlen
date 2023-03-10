@@ -21,8 +21,8 @@ func NewDecoder() Decoder {
 		oneOffBudgetParsers: []*regexp.Regexp{
 			regexp.MustCompile(
 				fmt.Sprintf(
-					`^(?P<id>\d+)[ ]*(?P<desc>[ %s\-\.\)\(\d&€><]*),,,,,,+`,
-					decoder.RxGermanLetter,
+					`^(?P<id>\d+)[ ]*(?P<desc>[ %s]*),,,,,,+`,
+					decoder.RxGermanPlusSpecialLetter,
 				),
 			),
 		},
@@ -31,8 +31,8 @@ func NewDecoder() Decoder {
 			regexp.MustCompile(rxBasis(`(?P<id>[0-9][0-9]?) \+? `)),
 			regexp.MustCompile(
 				fmt.Sprintf(
-					`^"(?P<id>[0-9][0-9]?) \+? (?P<desc>[ %s\-\.,\)\(\d&]*)",%s,%s,%s,%s,%s,%s`,
-					decoder.RxGermanLetter,
+					`^"(?P<id>[0-9][0-9]?) \+? (?P<desc>[ %s,]*)",%s,%s,%s,%s,%s,%s`,
+					decoder.RxGermanPlusSpecialLetter,
 					rxFloatNumber,
 					rxNumber("_2021"),
 					rxNumber("_2022"),
@@ -46,8 +46,8 @@ func NewDecoder() Decoder {
 			regexp.MustCompile(rxBasis(`\d\.\d\.\d\.\d{2}\.(?P<id>\d+) `)),
 			regexp.MustCompile(
 				fmt.Sprintf(
-					`^"\d\.\d\.\d\.\d{2}\.(?P<id>\d+) (?P<desc>[ %s\-\.,\)\(\d&%%]*)",+%s,%s,%s,%s,%s,%s`,
-					decoder.RxGermanLetter,
+					`^"\d\.\d\.\d\.\d{2}\.(?P<id>\d+) (?P<desc>[ %s,]*)",+%s,%s,%s,%s,%s,%s`,
+					decoder.RxGermanPlusSpecialLetter,
 					rxFloatNumber,
 					rxNumber("_2021"),
 					rxNumber("_2022"),
@@ -58,8 +58,8 @@ func NewDecoder() Decoder {
 			),
 			regexp.MustCompile(
 				fmt.Sprintf(
-					`^\d\.\d\.\d\.\d{2}(?P<id>/\d+\.\d+) (?P<desc>[ %s\-\.\)\(\d&%%]*),+%s,%s,%s,%s,%s,%s`,
-					decoder.RxGermanLetter,
+					`^\d\.\d\.\d\.\d{2}(?P<id>/\d+\.\d+) (?P<desc>[ %s]*),+%s,%s,%s,%s,%s,%s`,
+					decoder.RxGermanPlusSpecialLetter,
 					rxFloatNumber,
 					rxNumber("_2021"),
 					rxNumber("_2022"),
@@ -72,20 +72,20 @@ func NewDecoder() Decoder {
 		separateLineParsers: []*regexp.Regexp{
 			regexp.MustCompile(
 				fmt.Sprintf(
-					`^"(?P<desc>[ %s\.&\(\)/>,]+)",+`,
-					decoder.RxGermanLetter,
+					`^"(?P<desc>[ %s,]+)",+`,
+					decoder.RxGermanPlusSpecialLetter,
 				),
 			),
 			regexp.MustCompile(
 				fmt.Sprintf(
-					`^(?P<desc>[ %s\.&\(\)/>€]+),+`,
-					decoder.RxGermanLetter,
+					`^(?P<desc>[ %s]+),+`,
+					decoder.RxGermanPlusSpecialLetter,
 				),
 			),
 			regexp.MustCompile(
 				fmt.Sprintf(
-					`^("")?,"?(?P<desc>[ %s\.&\(\)/>]+)"?,+`,
-					decoder.RxGermanLetter,
+					`^("")?,"?(?P<desc>[ %s]+)"?,+`,
+					decoder.RxGermanPlusSpecialLetter,
 				),
 			),
 		},
@@ -97,10 +97,10 @@ func NewDecoder() Decoder {
 
 func (d *Decoder) Debug() {
 	fmt.Println("=== DEBUG rawcsv ===")
-	fmt.Printf("%+v\n", d.oneOffBudgetParsers)
-	fmt.Printf("%+v\n", d.groupCostCenterBudgetParsers)
-	fmt.Printf("%+v\n", d.unitCostCenterBudgetParsers)
-	fmt.Printf("%+v\n", d.separateLineParsers)
+	fmt.Printf("One off: %+v\n", d.oneOffBudgetParsers)
+	fmt.Printf("Group: %+v\n", d.groupCostCenterBudgetParsers)
+	fmt.Printf("Unit: %+v\n", d.unitCostCenterBudgetParsers)
+	fmt.Printf("Separate line: %+v\n", d.separateLineParsers)
 }
 
 type DecodeType = string
@@ -112,18 +112,20 @@ const (
 	DeocdeTypeSeparateLine DecodeType = "separate"
 )
 
-func (p *Decoder) Decode(line string) model.RawCSVRow {
-	for _, regex := range p.oneOffBudgetParsers {
-		matches := regex.FindStringSubmatch(line)
+func (p *Decoder) Decode(line string, isFinancialPlanB bool) model.RawCSVRow {
+	if isFinancialPlanB {
+		for _, regex := range p.oneOffBudgetParsers {
+			matches := regex.FindStringSubmatch(line)
 
-		if len(matches) == 0 {
-			continue
-		}
+			if len(matches) == 0 {
+				continue
+			}
 
-		return model.RawCSVRow{
-			Tpe:     model.RowTypeOneOff,
-			Matches: matches,
-			Regexp:  regex,
+			return model.RawCSVRow{
+				Tpe:     model.RowTypeOneOff,
+				Matches: matches,
+				Regexp:  regex,
+			}
 		}
 	}
 

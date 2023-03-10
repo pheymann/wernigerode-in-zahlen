@@ -1,0 +1,32 @@
+{
+  "Department": {
+    "ID": "2",
+    "Name": "Budget Finanzen",
+    "Accountable": "Frau Leo"
+  },
+  "ProductClass": {
+    "ID": "6",
+    "Name": "Zentrale Finanzleistungen",
+    "Accountable": "Amt für Finanzwesen"
+  },
+  "ProductDomain": {
+    "ID": "1",
+    "Name": "Allgemeine Finanzwirtschaft",
+    "Responsible": "Frau Leo"
+  },
+  "ProductGroup": {
+    "ID": "2",
+    "Name": "Sonstige allgemeine Finanzwirtschaft",
+    "Desc": "externes Produkt"
+  },
+  "Product": {
+    "ID": "01",
+    "Name": "Sonstige allgemeine Finanzwirtschaft",
+    "LegalRequirement": "Pflichtaufgabe"
+  },
+  "Description": " Sonstige allgemeine Finanzwirtschaft",
+  "Mission": " Bundes-, Landes- und Ortsrecht, Beschlüsse der politischen Gremien",
+  "Target": "Verwaltung",
+  "Objectives": " Sicherung einer geordneten kommunalen Haushalts-wirtschaft und der Kassenliquidität,,,,,",
+  "Services": " Abbildung der Zahlungsströme aus der sonstigen allgemeinen Finanzwirtschaft,,"
+}

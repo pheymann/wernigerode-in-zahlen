@@ -1,0 +1,32 @@
+{
+  "Department": {
+    "ID": "2",
+    "Name": "Budget Finanzen",
+    "Accountable": "Frau Leo"
+  },
+  "ProductClass": {
+    "ID": "5",
+    "Name": "Gestaltung der Umwelt",
+    "Accountable": "Amt für Finanzwesen"
+  },
+  "ProductDomain": {
+    "ID": "3",
+    "Name": "Ver-und Entsorgung",
+    "Responsible": "Frau Leo"
+  },
+  "ProductGroup": {
+    "ID": "4",
+    "Name": "Fernwärmeversorgung",
+    "Desc": "externes Produkt"
+  },
+  "Product": {
+    "ID": "01",
+    "Name": "Fernwärmeversorgung (Konzessionsabgabe)",
+    "LegalRequirement": "Pflichtaufgabe"
+  },
+  "Description": " Sicherung der Wärmeversorgung der Haushalte der Stadt durch Fernwärme und entsprechende Wegenutzungsrechte für die dazu benötigten Leistungen",
+  "Mission": " Beschluss des Stadrates (43/2011) vom 09.06.2011 und abgeschlossener KAV ",
+  "Target": "EinwohnerInnen, Fernwärmeversorger",
+  "Objectives": " Versorgungssicherheit und Sicherung kommunaler Einnahmen,,,,",
+  "Services": " -Vergabeverfahren -Abschluss und Aktualisierung von Konzessionsverträgen -Abrechnung Konzessionsabgabe,"
+}

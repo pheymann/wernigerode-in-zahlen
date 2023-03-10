@@ -10,10 +10,10 @@ import (
 )
 
 type MetadataDecoder struct {
-	departmentRegex                *regexp.Regexp
-	productClassRegex              *regexp.Regexp
-	productDomainRegex             *regexp.Regexp
-	productGroupRegex              *regexp.Regexp
+	departmentRegex                []*regexp.Regexp
+	productClassRegex              []*regexp.Regexp
+	productDomainRegex             []*regexp.Regexp
+	productGroupRegex              []*regexp.Regexp
 	productRegex                   []*regexp.Regexp
 	descriptionDetectionRegex      *regexp.Regexp
 	missionAndTargetDetectionRegex *regexp.Regexp
@@ -24,47 +24,62 @@ type MetadataDecoder struct {
 
 func NewMetadataDecoder() MetadataDecoder {
 	return MetadataDecoder{
-		departmentRegex: regexp.MustCompile(
-			fmt.Sprintf(
-				`^Dezernat/( )+Fachbereich (?P<department>\d+),+(?P<department_name>[ %s\-]+),+verantwortlich:,*( )*(?P<accountable>[ %s\-]+)`,
-				decoder.RxGermanLetter,
-				decoder.RxGermanLetter,
-			),
-		),
-		productClassRegex: regexp.MustCompile(
-			fmt.Sprintf(
-				`^Produktklasse (?P<product_class>\d+),+(?P<product_class_name>[ %s-]+),+verantwortlich:,*( )*(?P<accountable>[ %s-]+)`,
-				decoder.RxGermanLetter,
-				decoder.RxGermanLetter,
-			),
-		),
-		productDomainRegex: regexp.MustCompile(
-			fmt.Sprintf(
-				`^Produktbereich \d+\.(?P<product_domain>\d+),+(?P<product_domain_name>[ %s-]+),+zuständig:,*( )*(?P<responsible>[ %s-]+)`,
-				decoder.RxGermanLetter,
-				decoder.RxGermanLetter,
-			),
-		),
-		productGroupRegex: regexp.MustCompile(
-			fmt.Sprintf(
-				`^Produktgruppe \d+\.\d+\.(?P<product_group>\d+),+(?P<product_group_name>[ %s\-/]+),+Produktart:,*( )*(?P<desc>[ %s-]+)`,
-				decoder.RxGermanLetter,
-				decoder.RxGermanLetter,
-			),
-		),
-		productRegex: []*regexp.Regexp{
+		departmentRegex: []*regexp.Regexp{
 			regexp.MustCompile(
 				fmt.Sprintf(
-					`^Produkt \d+\.\d+\.\d+\.(?P<product>\d+),+(?P<product_name>[ %s\-]+),+Rechtsbindung:,*( )*(?P<legal_requirement>[ %s-]+)`,
-					decoder.RxGermanLetter,
-					decoder.RxGermanLetter,
+					`^Dezernat/( )+Fachbereich (?P<department>\d+),+(?P<department_name>[ %s]+),+verantwortlich:,*( )*(?P<accountable>[ %s]+)`,
+					decoder.RxGermanPlusSpecialLetter,
+					decoder.RxGermanPlusSpecialLetter,
+				),
+			),
+		},
+		productClassRegex: []*regexp.Regexp{
+			regexp.MustCompile(
+				fmt.Sprintf(
+					`^Produktklasse (?P<product_class>\d+),+(?P<product_class_name>[ %s]+),+verantwortlich:,*( )*(?P<accountable>[ %s]+)`,
+					decoder.RxGermanPlusSpecialLetter,
+					decoder.RxGermanPlusSpecialLetter,
+				),
+			),
+		},
+		productDomainRegex: []*regexp.Regexp{
+			regexp.MustCompile(
+				fmt.Sprintf(
+					`^Produktbereich \d+\.(?P<product_domain>\d+),+(?P<product_domain_name>[ %s]+),+zuständig:,*( )*(?P<responsible>[ %s]+)`,
+					decoder.RxGermanPlusSpecialLetter,
+					decoder.RxGermanPlusSpecialLetter,
+				),
+			),
+		},
+		productGroupRegex: []*regexp.Regexp{
+			regexp.MustCompile(
+				fmt.Sprintf(
+					`^Produktgruppe \d+\.\d+\.(?P<product_group>\d+),+"(?P<product_group_name>[ %s,]+)",+Produktart:,*( )*(?P<desc>[ %s]+)`,
+					decoder.RxGermanPlusSpecialLetter,
+					decoder.RxGermanPlusSpecialLetter,
 				),
 			),
 			regexp.MustCompile(
 				fmt.Sprintf(
-					`^Produkt \d+\.\d+\.\d+\.(?P<product>\d+),+"(?P<product_name>[ %s\-,]+)",+Rechtsbindung:,*( )*(?P<legal_requirement>[ %s-]+)`,
-					decoder.RxGermanLetter,
-					decoder.RxGermanLetter,
+					`^Produktgruppe \d+\.\d+\.(?P<product_group>\d+),+(?P<product_group_name>[ %s]+),+Produktart:,*( )*(?P<desc>[ %s]+)`,
+					decoder.RxGermanPlusSpecialLetter,
+					decoder.RxGermanPlusSpecialLetter,
+				),
+			),
+		},
+		productRegex: []*regexp.Regexp{
+			regexp.MustCompile(
+				fmt.Sprintf(
+					`^Produkt \d+\.\d+\.\d+\.(?P<product>\d+),+(?P<product_name>[ %s]+),+Rechtsbindung:,*( )*(?P<legal_requirement>[ %s]+)`,
+					decoder.RxGermanPlusSpecialLetter,
+					decoder.RxGermanPlusSpecialLetter,
+				),
+			),
+			regexp.MustCompile(
+				fmt.Sprintf(
+					`^Produkt \d+\.\d+\.\d+\.(?P<product>\d+),+"(?P<product_name>[ %s,]+)",+Rechtsbindung:,*( )*(?P<legal_requirement>[ %s]+)`,
+					decoder.RxGermanPlusSpecialLetter,
+					decoder.RxGermanPlusSpecialLetter,
 				),
 			),
 		},
@@ -73,30 +88,30 @@ func NewMetadataDecoder() MetadataDecoder {
 		missionAndTargetRegex: []*regexp.Regexp{
 			regexp.MustCompile(
 				fmt.Sprintf(
-					`^"(?P<mission>[ %s,;:\-]*)",+"(?P<target>[ %s,:\-]*)"`,
-					decoder.RxGermanLetter,
-					decoder.RxGermanLetter,
+					`^"(?P<mission>[ %s,]*)",+"(?P<target>[ %s,]*)"`,
+					decoder.RxGermanPlusSpecialLetter,
+					decoder.RxGermanPlusSpecialLetter,
 				),
 			),
 			regexp.MustCompile(
 				fmt.Sprintf(
-					`^"(?P<mission>[ %s,;:\-]*)",+(?P<target>[ %s:\-]*)`,
-					decoder.RxGermanLetter,
-					decoder.RxGermanLetter,
+					`^"(?P<mission>[ %s,]*)",+(?P<target>[ %s]*)`,
+					decoder.RxGermanPlusSpecialLetter,
+					decoder.RxGermanPlusSpecialLetter,
 				),
 			),
 			regexp.MustCompile(
 				fmt.Sprintf(
-					`^(?P<mission>[ %s;:\-]*),+"(?P<target>[ %s,:\-]*)"`,
-					decoder.RxGermanLetter,
-					decoder.RxGermanLetter,
+					`^(?P<mission>[ %s]*),+"(?P<target>[ %s,]*)"`,
+					decoder.RxGermanPlusSpecialLetter,
+					decoder.RxGermanPlusSpecialLetter,
 				),
 			),
 			regexp.MustCompile(
 				fmt.Sprintf(
-					`^(?P<mission>[ %s;:\-]*),+(?P<target>[ %s:\-]*)`,
-					decoder.RxGermanLetter,
-					decoder.RxGermanLetter,
+					`^(?P<mission>[ %s]*),+(?P<target>[ %s]*)`,
+					decoder.RxGermanPlusSpecialLetter,
+					decoder.RxGermanPlusSpecialLetter,
 				),
 			),
 		},
@@ -214,67 +229,43 @@ func (p MetadataDecoder) DecodeFromCSV(lines []string) model.Metadata {
 }
 
 func (p MetadataDecoder) decodeDepartment(metadata *model.Metadata, line string) bool {
-	matches := p.departmentRegex.FindStringSubmatch(line)
-
-	if len(matches) == 0 {
-		return false
-	}
-
-	metadata.Department = model.Department{
-		ID:          decoder.DecodeString(p.departmentRegex, "department", matches),
-		Name:        decoder.DecodeString(p.departmentRegex, "department_name", matches),
-		Accountable: decoder.DecodeString(p.departmentRegex, "accountable", matches),
-	}
-
-	return true
+	return forMatchingRegex(p.departmentRegex, line, func(regex *regexp.Regexp, matches []string) {
+		metadata.Department = model.Department{
+			ID:          decoder.DecodeString(regex, "department", matches),
+			Name:        decoder.DecodeString(regex, "department_name", matches),
+			Accountable: decoder.DecodeString(regex, "accountable", matches),
+		}
+	})
 }
 
 func (p MetadataDecoder) decodeProductClass(metadata *model.Metadata, line string) bool {
-	matches := p.productClassRegex.FindStringSubmatch(line)
-
-	if len(matches) == 0 {
-		return false
-	}
-
-	metadata.ProductClass = model.ProductClass{
-		ID:          decoder.DecodeString(p.productClassRegex, "product_class", matches),
-		Name:        decoder.DecodeString(p.productClassRegex, "product_class_name", matches),
-		Accountable: decoder.DecodeString(p.productClassRegex, "accountable", matches),
-	}
-
-	return true
+	return forMatchingRegex(p.productClassRegex, line, func(regex *regexp.Regexp, matches []string) {
+		metadata.ProductClass = model.ProductClass{
+			ID:          decoder.DecodeString(regex, "product_class", matches),
+			Name:        decoder.DecodeString(regex, "product_class_name", matches),
+			Accountable: decoder.DecodeString(regex, "accountable", matches),
+		}
+	})
 }
 
 func (p MetadataDecoder) decodeProductDomain(metadata *model.Metadata, line string) bool {
-	matches := p.productDomainRegex.FindStringSubmatch(line)
-
-	if len(matches) == 0 {
-		return false
-	}
-
-	metadata.ProductDomain = model.ProductDomain{
-		ID:          decoder.DecodeString(p.productDomainRegex, "product_domain", matches),
-		Name:        decoder.DecodeString(p.productDomainRegex, "product_domain_name", matches),
-		Responsible: decoder.DecodeString(p.productDomainRegex, "responsible", matches),
-	}
-
-	return true
+	return forMatchingRegex(p.productDomainRegex, line, func(regex *regexp.Regexp, matches []string) {
+		metadata.ProductDomain = model.ProductDomain{
+			ID:          decoder.DecodeString(regex, "product_domain", matches),
+			Name:        decoder.DecodeString(regex, "product_domain_name", matches),
+			Responsible: decoder.DecodeString(regex, "responsible", matches),
+		}
+	})
 }
 
 func (p MetadataDecoder) decodeProductGroup(metadata *model.Metadata, line string) bool {
-	matches := p.productGroupRegex.FindStringSubmatch(line)
-
-	if len(matches) == 0 {
-		return false
-	}
-
-	metadata.ProductGroup = model.ProductGroup{
-		ID:   decoder.DecodeString(p.productGroupRegex, "product_group", matches),
-		Name: decoder.DecodeString(p.productGroupRegex, "product_group_name", matches),
-		Desc: decoder.DecodeString(p.productGroupRegex, "desc", matches),
-	}
-
-	return true
+	return forMatchingRegex(p.productGroupRegex, line, func(regex *regexp.Regexp, matches []string) {
+		metadata.ProductGroup = model.ProductGroup{
+			ID:   decoder.DecodeString(regex, "product_group", matches),
+			Name: decoder.DecodeString(regex, "product_group_name", matches),
+			Desc: decoder.DecodeString(regex, "desc", matches),
+		}
+	})
 }
 
 func (p MetadataDecoder) decodeProduct(metadata *model.Metadata, line string) bool {
@@ -304,17 +295,18 @@ var (
 )
 
 func (p MetadataDecoder) decodeMissionAndTargets(line string) (string, string) {
-	for _, regex := range p.missionAndTargetRegex {
-		matches := regex.FindStringSubmatch(line)
+	var mission = ""
+	var target = ""
 
-		if len(matches) == 0 {
-			continue
-		}
+	matched := forMatchingRegex(p.missionAndTargetRegex, line, func(regex *regexp.Regexp, matches []string) {
+		mission = decoder.DecodeString(regex, "mission", matches)
+		target = decoder.DecodeString(regex, "target", matches)
+	})
 
-		return decoder.DecodeString(regex, "mission", matches), decoder.DecodeString(regex, "target", matches)
+	if !matched {
+		panic(fmt.Sprintf("Expected mission and targets but got '%s'.", line))
 	}
-
-	panic(fmt.Sprintf("Expected mission and targets but got '%s'.", line))
+	return mission, target
 }
 
 var (
@@ -322,3 +314,19 @@ var (
 		fmt.Sprintf("\"([ %s,-]+)\",+", decoder.RxGermanLetter),
 	)
 )
+
+func forMatchingRegex(regex []*regexp.Regexp, line string, callback func(regex *regexp.Regexp, matches []string)) bool {
+	for _, regex := range regex {
+		matches := regex.FindStringSubmatch(line)
+
+		if len(matches) == 0 {
+			continue
+		}
+
+		callback(regex, matches)
+
+		return true
+	}
+
+	return false
+}
