@@ -38,13 +38,13 @@ func CleanUpMetadata(metadataFile *os.File) model.Metadata {
 func CleanUpFinancialPlanA(financialPlaAFile *os.File) model.FinancialPlan {
 	rawCSVDecoder := rawcsv.NewDecoder()
 
-	// defer func() {
-	// 	if r := recover(); r != nil {
-	// 		rawCSVDecoder.Debug()
-	// 		fmt.Printf("\n%+v\n", r)
-	// 		os.Exit(2)
-	// 	}
-	// }()
+	defer func() {
+		if r := recover(); r != nil {
+			rawCSVDecoder.Debug()
+			fmt.Printf("\n%+v\n", r)
+			os.Exit(2)
+		}
+	}()
 
 	financialPlanAScanner := bufio.NewScanner(financialPlaAFile)
 
@@ -61,13 +61,13 @@ func CleanUpFinancialPlanA(financialPlaAFile *os.File) model.FinancialPlan {
 func CleanUpFinancialPlanB(financialPlaAFile *os.File) model.FinancialPlan {
 	rawCSVDecoder := rawcsv.NewDecoder()
 
-	// defer func() {
-	// 	if r := recover(); r != nil {
-	// 		rawCSVDecoder.Debug()
-	// 		fmt.Printf("\n%+v\n", r)
-	// 		os.Exit(2)
-	// 	}
-	// }()
+	defer func() {
+		if r := recover(); r != nil {
+			rawCSVDecoder.Debug()
+			fmt.Printf("\n%+v\n", r)
+			os.Exit(2)
+		}
+	}()
 
 	financialPlanAScanner := bufio.NewScanner(financialPlaAFile)
 

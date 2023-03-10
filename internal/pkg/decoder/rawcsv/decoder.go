@@ -31,7 +31,7 @@ func NewDecoder() Decoder {
 			regexp.MustCompile(rxBasis(`(?P<id>[0-9][0-9]?) \+? `)),
 			regexp.MustCompile(
 				fmt.Sprintf(
-					`^"(?P<id>[0-9][0-9]?) \+? (?P<desc>[ %s,]*)",%s,%s,%s,%s,%s,%s`,
+					`^"(?P<id>[0-9][0-9]?) \+? (?P<desc>[ %s,]*)",+%s,%s,%s,%s,%s,%s`,
 					decoder.RxGermanPlusSpecialLetter,
 					rxFloatNumber,
 					rxNumber("_2021"),
@@ -201,7 +201,7 @@ const (
 )
 
 var (
-	rxDesc = fmt.Sprintf(`(?P<desc>[ %s\-\.\)\(\d&%%]*)`, decoder.RxGermanLetter)
+	rxDesc = fmt.Sprintf(`(?P<desc>[ %s]*)`, decoder.RxGermanPlusSpecialLetter)
 )
 
 func rxNumber(name string) string {
