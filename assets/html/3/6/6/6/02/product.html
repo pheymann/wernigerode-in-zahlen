@@ -11,56 +11,52 @@
 </head>
 <html>
   <body>
-    <h1>Dienstleistungen für Dritte (Bauhof)</h1>
+    <h1>Spielplätze</h1>
 
     <p>
-      Das Produkt -  Bereitstellung eines Recyclinghofes und Handwerkerleistungen - wird in 2023
+      Das Produkt -  Bereitstellung von öffentlichen Spielplätzen - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-income center">78.900,00€</h2>
+    <h2 class="total-cashflow-expenses center">-111.600,00€</h2>
 
     <p>
-      einbringen. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
+      kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
 		Auflistung von Kostenstellen. Ganz am Ende dieser Seite findest du noch eine Beschreibung des Produkts.
     </p>
 
     <div class="container">
       
-          <h3>Die Verwaltung erwirtschaftet <span class="total-cashflow-income">88.900,00€</span></h3>
-
-          
-            <div class="row">
-              <div class="col-6">
-                <h5 class="center">Einnahmen: 92.100,00€</h5>
-                <canvas id="chartjs-edf52423-995a-4a45-8955-e3ae10e9fe8b"></canvas>
-              </div>
-              <div class="col-6">
-                <h5 class="center">Ausgaben: 3.200,00€</h5>
-                <canvas id="chartjs-ef09099a-6270-405c-8cd3-1f1a0ca3a111"></canvas>
-              </div>
-            </div>
-          
-      
-          <h3>Investitionen unterhalb der Wertgrenze kosten <span class="total-cashflow-expenses">-10.000,00€</span></h3>
+          <h3>Die Verwaltung kostet <span class="total-cashflow-expenses">-51.600,00€</span></h3>
 
           
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-5104b52a-01cd-476b-aa16-c91c15cd8a0f"></canvas>
+                <canvas id="chartjs-2772e26a-f051-4979-b245-e539883d0d0f"></canvas>
+              </div>
+            
+          
+      
+          <h3>Investitionen unterhalb der Wertgrenze kosten <span class="total-cashflow-expenses">-60.000,00€</span></h3>
+
+          
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs-e74a8f6c-34c8-42a5-9b8a-68863a67be19"></canvas>
               </div>
             
           
       
 
       
-          <h3>Die Investition "Betriebs-und Geschäftsausstattungen" kostet <span class="total-cashflow-expenses">-10.000,00€</span></h3>
+          <h3>Die Investition "Betriebsvorrichtungen" kostet <span class="total-cashflow-expenses">-60.000,00€</span></h3>
 
           
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-b7588bbe-5244-4429-99f0-c466f245cb88"></canvas>
+                <canvas id="chartjs-6fff3388-bf3c-4e3d-b12d-472d54b3f36b"></canvas>
               </div>
             
           
@@ -69,21 +65,21 @@
 
     <div class="info-sheet">
       <h3>Aufgabe</h3>
-      <p> Privatrechtliche Verträge und Auftragserteilung</p>
+      <p> Beschlüsse der politischen Gremien</p>
 
       <h3>Ziele</h3>
-      <p>Gesellschaften der Stadt, private Unternehmen, Bürger und Bürgerinnen der Stadt Wernigerode</p>
+      <p>Kinder- und Jugendliche aus den Wohngebieten der Stadt Kinder der Touristen</p>
 
       <h3>Dienstleistungen</h3>
-      <p> Dienstleistungen für Dritte durch den Bauhof,</p>
+      <p> Offene Kinder- und Jugendarbeit durch Bereitstellung, Bau und Gestaltung, Unterhaltung und Bewirtschaftung von öffentlichen Spielplätzen im gesamten Stadtgebiet und den Ortsteilen</p>
 
       <h3>Gruppierung</h3>
       <ul>
         <li>Fachbereich: Budget Betriebsbereiche</li>
-        <li>Produktklasse: Zentrale Verwaltung</li>
-        <li>Produktbereich: Innere Verwaltung</li>
-        <li>Produktgruppe: Verwaltungssteuerung und -service</li>
-        <li>Produkt: Dienstleistungen für Dritte (Bauhof)</li>
+        <li>Produktklasse: Soziales und Jugend</li>
+        <li>Produktbereich: Kinder-, Jugend- und Familienhilfe</li>
+        <li>Produktgruppe: Einrichtungen der Jugendarbeit</li>
+        <li>Produkt: Spielplätze</li>
       </ul>
     </div>
 
@@ -110,33 +106,14 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-edf52423-995a-4a45-8955-e3ae10e9fe8b'), {
+        
+          new Chart(document.getElementById('chartjs-2772e26a-f051-4979-b245-e539883d0d0f'), {
             type: 'doughnut',
             data: {
-              labels: ["Einzahlungen aus Mieten und Pachten","Sonstige privatrechtliche Leistungsentgelte","Einzahlungen aus Kostenerstattungen von Zweckverbänden","Einzahlungen aus Kostenerstattungen von sonstigen öffentlichen Sonderrechnungen"],
+              labels: ["Unterhaltung des sonstigen unbeweglichen Vermögens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Geschäftsauszahlungen"],
               datasets: [{
                 label: 'Euro',
-                data: [600,7000,75500,9000],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              }
-            }
-          });
-        
-        
-          new Chart(document.getElementById('chartjs-ef09099a-6270-405c-8cd3-1f1a0ca3a111'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Unterhaltung des sonstigen unbeweglichen Vermögens","Besondere zahlungswirksame Aufwendungen für Beschäftigte"],
-              datasets: [{
-                label: 'Euro',
-                data: [1500,1700],
+                data: [30000,500,500,500,20000,100],
                 borderWidth: 1
               }]
             },
@@ -152,13 +129,13 @@
       
         
         
-          new Chart(document.getElementById('chartjs-5104b52a-01cd-476b-aa16-c91c15cd8a0f'), {
+          new Chart(document.getElementById('chartjs-e74a8f6c-34c8-42a5-9b8a-68863a67be19'), {
             type: 'doughnut',
             data: {
               labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
               datasets: [{
                 label: 'Euro',
-                data: [10000],
+                data: [60000],
                 borderWidth: 1
               }]
             },
@@ -176,13 +153,13 @@
       
         
         
-          new Chart(document.getElementById('chartjs-b7588bbe-5244-4429-99f0-c466f245cb88'), {
+          new Chart(document.getElementById('chartjs-6fff3388-bf3c-4e3d-b12d-472d54b3f36b'), {
             type: 'doughnut',
             data: {
               labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
               datasets: [{
                 label: 'Euro',
-                data: [10000],
+                data: [60000],
                 borderWidth: 1
               }]
             },

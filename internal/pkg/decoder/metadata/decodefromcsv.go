@@ -45,6 +45,13 @@ func NewMetadataDecoder() MetadataDecoder {
 		productDomainRegex: []*regexp.Regexp{
 			regexp.MustCompile(
 				fmt.Sprintf(
+					`^Produktbereich \d+\.(?P<product_domain>\d+),+"(?P<product_domain_name>[ %s,]+)",+zuständig:,*( )*(?P<responsible>[ %s]+)`,
+					decoder.RxGermanPlusSpecialLetter,
+					decoder.RxGermanPlusSpecialLetter,
+				),
+			),
+			regexp.MustCompile(
+				fmt.Sprintf(
 					`^Produktbereich \d+\.(?P<product_domain>\d+),+(?P<product_domain_name>[ %s]+),+zuständig:,*( )*(?P<responsible>[ %s]+)`,
 					decoder.RxGermanPlusSpecialLetter,
 					decoder.RxGermanPlusSpecialLetter,

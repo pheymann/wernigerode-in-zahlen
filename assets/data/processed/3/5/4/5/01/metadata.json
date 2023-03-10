@@ -1,0 +1,32 @@
+{
+  "Department": {
+    "ID": "3",
+    "Name": "Budget Betriebsbereiche",
+    "Accountable": "Herr Kramer"
+  },
+  "ProductClass": {
+    "ID": "5",
+    "Name": "Gestaltung der Umwelt",
+    "Accountable": "Dezernent II"
+  },
+  "ProductDomain": {
+    "ID": "4",
+    "Name": "Verkehrsflächen und -anlagen, ÖPNV",
+    "Responsible": "Herr T. Friedrich"
+  },
+  "ProductGroup": {
+    "ID": "5",
+    "Name": "Straßenreinigung",
+    "Desc": "externes Produkt"
+  },
+  "Product": {
+    "ID": "01",
+    "Name": "Straßenreinigung/Winterdienst",
+    "LegalRequirement": "Pflichtaufgabe"
+  },
+  "Description": " Reinigung der Straßen, Bürgersteige, Wege und Plätze, deren Reinigung in der Verantwortung der Stadt liegen",
+  "Mission": " Bundes-, Landes- und Ortsrecht, Beschlüsse der politischen Gremien",
+  "Target": "Alle Nutzer",
+  "Objectives": " Wahrung der Verkehrssicherheit und Erhaltung eines gepflegten Ortsbildes,,,",
+  "Services": " - Erstellung des Straßenreinigungs- und Winterdienstplanes und Papierkorbentleerung - Planung, Durchführung, Überwachung und Abrechnung der Straßenreinigung und des Winterdienstes"
+}

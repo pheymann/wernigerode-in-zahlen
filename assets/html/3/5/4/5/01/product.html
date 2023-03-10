@@ -11,13 +11,13 @@
 </head>
 <html>
   <body>
-    <h1>Weihnachtsmarkt</h1>
+    <h1>Straßenreinigung/Winterdienst</h1>
 
     <p>
-      Das Produkt -  Veranstaltung des Wernigeröder Weihnachtsmarktes - wird in 2023
+      Das Produkt -  Reinigung der Straßen, Bürgersteige, Wege und Plätze, deren Reinigung in der Verantwortung der Stadt liegen - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-income center">48.000,00€</h2>
+    <h2 class="total-cashflow-income center">249.000,00€</h2>
 
     <p>
       einbringen. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
@@ -26,17 +26,17 @@
 
     <div class="container">
       
-          <h3>Die Verwaltung erwirtschaftet <span class="total-cashflow-income">48.000,00€</span></h3>
+          <h3>Die Verwaltung erwirtschaftet <span class="total-cashflow-income">249.000,00€</span></h3>
 
           
             <div class="row">
               <div class="col-6">
-                <h5 class="center">Einnahmen: 73.000,00€</h5>
-                <canvas id="chartjs-ba1518c4-723b-4aba-9115-886d32569194"></canvas>
+                <h5 class="center">Einnahmen: 440.000,00€</h5>
+                <canvas id="chartjs-4a50fb75-22bf-441c-a9b3-c6848f3af38d"></canvas>
               </div>
               <div class="col-6">
-                <h5 class="center">Ausgaben: 25.000,00€</h5>
-                <canvas id="chartjs-a5d8c238-bcbc-4397-bd99-66c7b153f47b"></canvas>
+                <h5 class="center">Ausgaben: 191.000,00€</h5>
+                <canvas id="chartjs-3f8a5e59-6f1b-4a5f-ab8a-ab2da9d02966"></canvas>
               </div>
             </div>
           
@@ -47,21 +47,21 @@
 
     <div class="info-sheet">
       <h3>Aufgabe</h3>
-      <p> Gewerbeordnung</p>
+      <p> Bundes-, Landes- und Ortsrecht, Beschlüsse der politischen Gremien</p>
 
       <h3>Ziele</h3>
-      <p>Einwohner-/innen und Touristen</p>
+      <p>Alle Nutzer</p>
 
       <h3>Dienstleistungen</h3>
-      <p> -Verwaltung, Instandhaltung und Beschaffung von Inventar für den Weihnachtsmarkt -Auf-und Abbau des Weihnachtsmarktes nach Beauftragung durch die Wernigeröder Tourismus Gmbh -Organisation und, Kontrolle der Ordnung und Sauberkeit -Unterstützung der Wernigeröder Tourismus GmbH bei der Planung des Weihnachtsmarktes,</p>
+      <p> - Erstellung des Straßenreinigungs- und Winterdienstplanes und Papierkorbentleerung - Planung, Durchführung, Überwachung und Abrechnung der Straßenreinigung und des Winterdienstes</p>
 
       <h3>Gruppierung</h3>
       <ul>
         <li>Fachbereich: Budget Betriebsbereiche</li>
-        <li>Produktklasse: Schule und Kultur</li>
-        <li>Produktbereich: Örtliche Kulturaufgaben</li>
-        <li>Produktgruppe: Heimat- und sonstige Kulturpflege</li>
-        <li>Produkt: Weihnachtsmarkt</li>
+        <li>Produktklasse: Gestaltung der Umwelt</li>
+        <li>Produktbereich: Verkehrsflächen und -anlagen, ÖPNV</li>
+        <li>Produktgruppe: Straßenreinigung</li>
+        <li>Produkt: Straßenreinigung/Winterdienst</li>
       </ul>
     </div>
 
@@ -88,13 +88,13 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-ba1518c4-723b-4aba-9115-886d32569194'), {
+          new Chart(document.getElementById('chartjs-4a50fb75-22bf-441c-a9b3-c6848f3af38d'), {
             type: 'doughnut',
             data: {
-              labels: ["Einzahlungen aus Mieten und Pachten","Einzahl. aus Kostenerstattungen von verbund. Untern., Sondervermö. und Beteilig."],
+              labels: ["Benutzungsgebühren und ähnliche Entgelte"],
               datasets: [{
                 label: 'Euro',
-                data: [33000,40000],
+                data: [440000],
                 borderWidth: 1
               }]
             },
@@ -108,13 +108,13 @@
           });
         
         
-          new Chart(document.getElementById('chartjs-a5d8c238-bcbc-4397-bd99-66c7b153f47b'), {
+          new Chart(document.getElementById('chartjs-3f8a5e59-6f1b-4a5f-ab8a-ab2da9d02966'), {
             type: 'doughnut',
             data: {
-              labels: ["Bewirtschaftung der Grundstücke und baulichen Anlagen","Unterhaltung des sonstigen beweglichen Vermögens"],
+              labels: ["Unterhaltung des sonstigen unbeweglichen Vermögens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Erstatt. für die Auszahl. von Dritten aus lfd. Verwaltungstät. an priv. Untern."],
               datasets: [{
                 label: 'Euro',
-                data: [17500,7500],
+                data: [60000,47500,65000,500,10000,8000],
                 borderWidth: 1
               }]
             },

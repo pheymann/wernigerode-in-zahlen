@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<head>
+  <title>Produkt</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<html>
+  <body>
+    <h1>Öffentliches Grün</h1>
+
+    <p>
+      Das Produkt -  Gestaltung und Pflege des Landschaftsbildes - wird in 2023
+    </p>
+
+    <h2 class="total-cashflow-expenses center">-1.626.400,00€</h2>
+
+    <p>
+      kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
+		Auflistung von Kostenstellen. Ganz am Ende dieser Seite findest du noch eine Beschreibung des Produkts.
+    </p>
+
+    <div class="container">
+      
+          <h3>Die Verwaltung kostet <span class="total-cashflow-expenses">-1.606.900,00€</span></h3>
+
+          
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 35.100,00€</h5>
+                <canvas id="chartjs-9fdeed27-ed87-4ec4-81d7-c2e6f1e11d4d"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: 1.642.000,00€</h5>
+                <canvas id="chartjs-90e96141-bf11-43f0-8f0e-e42e890e2899"></canvas>
+              </div>
+            </div>
+          
+      
+          <h3>Investitionen unterhalb der Wertgrenze kosten <span class="total-cashflow-expenses">-19.500,00€</span></h3>
+
+          
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs-35cd3db9-2a98-4995-95ae-f9adbfdff567"></canvas>
+              </div>
+            
+          
+      
+
+      
+    </div>
+
+    <div class="info-sheet">
+      <h3>Aufgabe</h3>
+      <p> Bundes-, Landes- und Ortsrecht, Ratsbeschlüsse</p>
+
+      <h3>Ziele</h3>
+      <p>EinwohnerInnen, Gäste</p>
+
+      <h3>Dienstleistungen</h3>
+      <p> -Planung, Bau und Gestaltung der öffentlichen Grünflächen -Mitwirkung bei Kompensationsmaßnahmen nach dem Naturschutzrecht, Unterstützung der Maßnahmen zur biologischen Vielfalt -Pflege der, städtischen Grünanlagen und des Großgrüns, Pflege der städtischen Friedhofsanlagen -Unterstützung des Wildparks, der Friedhöfe in den Ortsteilen, Spielplätze und Containerstellplätze, sowieb ei der Pflege des, Straßenbegleitgrüns und der Gewässer -Grünpflege der Außenanlagen städtischer Liegenschaften, Umsetzung der Baumschutz-und Grünflächensatzung -Mitwirkung an der Verkehrssicherungspflicht,</p>
+
+      <h3>Gruppierung</h3>
+      <ul>
+        <li>Fachbereich: Budget Betriebsbereiche</li>
+        <li>Produktklasse: Gestaltung der Umwelt</li>
+        <li>Produktbereich: Natur- und Landschaftspflege</li>
+        <li>Produktgruppe: Öffentliches Grün/Landschaftsbau</li>
+        <li>Produkt: Öffentliches Grün</li>
+      </ul>
+    </div>
+
+    <div class="back-link center">
+      <a href="/3/department.html">Zurück zur Bereichsübersicht</a>
+    </div>
+
+    <p class="data-disclosure">
+      Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2022.
+			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
+			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
+			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
+			<br><br>
+			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
+    </p>
+
+    <footer>
+      <p>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Das Impression befindet sich <a href="/imprint.html">hier</a>.
+      </p>
+    </footer>
+
+    <script>
+      
+        
+          new Chart(document.getElementById('chartjs-9fdeed27-ed87-4ec4-81d7-c2e6f1e11d4d'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Zuweisungen für laufende Zwecke vom Bund","Zuschüsse für laufende Zwecke von übrigen Bereichen (Spenden)","Verwaltungsgebühren","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus dem Verkauf von Holz","Sonstige privatrechtliche Leistungsentgelte","Einzahlungen aus Kostenerstattungen vom Bund","Einzahl. aus Kostenerstattungen von verbund. Untern., Sondervermö. und Beteilig.","Einzahlungen aus Kostenerstattungen von übrigen Bereichen"],
+              datasets: [{
+                label: 'Euro',
+                data: [5600,4000,2000,3000,300,1000,7200,10000,2000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+        
+          new Chart(document.getElementById('chartjs-90e96141-bf11-43f0-8f0e-e42e890e2899'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Dienstauszahlungen und dgl. an sonstige Beschäftigte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschäft.","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Unterhaltung des sonstigen unbeweglichen Vermögens","Auszahlungen für Mieten und Pachten","Auszahlungen für Leasing","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen","Auszahlungen für Planungsleistungen","Erstatt. f.d. Ausz. v. Dritten aus lfd Verwaltungstät. an so. öff. Sonderrechn."],
+              datasets: [{
+                label: 'Euro',
+                data: [999000,10500,41900,201100,8200,4800,500,130000,4000,6000,50000,59000,5000,52000,6000,35000,1000,3000,16000,9000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+        
+        
+          new Chart(document.getElementById('chartjs-35cd3db9-2a98-4995-95ae-f9adbfdff567'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
+              datasets: [{
+                label: 'Euro',
+                data: [5000,3000,11500],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+
+      
+    </script>
+  </body>
+</html>

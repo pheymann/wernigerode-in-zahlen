@@ -17,21 +17,21 @@
       In 2023 planen wir
     </p>
 
-    <h2 class="total-cashflow-expenses center">-3.195.100,00€<sub style="font-size: 0.4em;">(A/B)</sub></h2>
+    <h2 class="total-cashflow-expenses center">-4.619.200,00€<sub style="font-size: 0.4em;">(A/B)</sub></h2>
 
     <p>
-      für diesen Fachbereich auszugeben. Dabei geht das Geld an die folgenden <b>4 Produkte</b>. Klicke auf eines in den Diagrammen, um mehr zu erfahren.
+      für diesen Fachbereich auszugeben. Dabei geht das Geld an die folgenden <b>8 Produkte</b>. Klicke auf eines in den Diagrammen, um mehr zu erfahren.
     </p>
 
     <div class="container">
       <div class="row">
         <div class="col-6">
-          <h5 class="center">Einnahmen: 116.900,00€<sub style="font-size: 0.4em;">(A/B)</sub></h5>
-          <canvas id="chartjs-47716121-991c-4a94-a06a-e650fe6fe113"></canvas>
+          <h5 class="center">Einnahmen: 490.800,00€<sub style="font-size: 0.4em;">(A/B)</sub></h5>
+          <canvas id="chartjs-81125808-d0bb-4af3-b107-6365df7c157c"></canvas>
         </div>
         <div class="col-6">
-          <h5 class="center">Ausgaben: -3.312.000,00€<sub style="font-size: 0.4em;">(A/B)</sub></h5>
-          <canvas id="chartjs-a1e46278-fc7f-48cb-9208-eb9065409c59"></canvas>
+          <h5 class="center">Ausgaben: -5.110.000,00€<sub style="font-size: 0.4em;">(A/B)</sub></h5>
+          <canvas id="chartjs-9d157513-8dfd-48b9-88ae-d640d7fecfa4"></canvas>
         </div>
       </div>
     </div>
@@ -46,8 +46,8 @@
           </tr>
           <tr>
             <th></th>
-            <th>-3.069.600,00€</th>
-            <th>-125.500,00€</th>
+            <th>-4.423.700,00€</th>
+            <th>-195.500,00€</th>
           </tr>
 
           
@@ -64,6 +64,24 @@
             </tr>
           
             <tr>
+              <td><a href="/3/5/4/6/02/product.html">Parkraumbewirtschaftung Schierke</a></td>
+              <td>134.900,00€</td>
+              <td>-10.000,00€</td>
+            </tr>
+          
+            <tr>
+              <td><a href="/3/3/6/6/02/product.html">Spielplätze</a></td>
+              <td>-111.600,00€</td>
+              <td>-60.000,00€</td>
+            </tr>
+          
+            <tr>
+              <td><a href="/3/5/4/5/01/product.html">Straßenreinigung/Winterdienst</a></td>
+              <td>249.000,00€</td>
+              <td>0,00€</td>
+            </tr>
+          
+            <tr>
               <td><a href="/3/2/8/1/02/product.html">Weihnachtsmarkt</a></td>
               <td>48.000,00€</td>
               <td>0,00€</td>
@@ -73,6 +91,12 @@
               <td><a href="/3/2/5/3/01/product.html">Wildpark</a></td>
               <td>-319.800,00€</td>
               <td>-7.500,00€</td>
+            </tr>
+          
+            <tr>
+              <td><a href="/3/5/5/1/01/product.html">Öffentliches Grün</a></td>
+              <td>-1.626.400,00€</td>
+              <td>0,00€</td>
             </tr>
           
         </tbody>
@@ -101,15 +125,15 @@
     </footer>
 
     <script>
-      var incomeProductLinks = ["/3/1/1/1/12/product.html","/3/2/8/1/02/product.html"];
-      var incomeCanvas = document.getElementById('chartjs-47716121-991c-4a94-a06a-e650fe6fe113');
+      var incomeProductLinks = ["/3/1/1/1/12/product.html","/3/2/8/1/02/product.html","/3/5/4/5/01/product.html","/3/5/4/6/02/product.html"];
+      var incomeCanvas = document.getElementById('chartjs-81125808-d0bb-4af3-b107-6365df7c157c');
       var incomeChart = new Chart(incomeCanvas, {
         type: 'doughnut',
         data: {
-          labels: ["Dienstleistungen für Dritte (Bauhof)","Weihnachtsmarkt"],
+          labels: ["Dienstleistungen für Dritte (Bauhof)","Weihnachtsmarkt","Straßenreinigung/Winterdienst","Parkraumbewirtschaftung Schierke"],
           datasets: [{
             label: 'Euro',
-            data: [68900,48000],
+            data: [68900,48000,249000,124900],
             borderWidth: 1
           }]
         },
@@ -126,15 +150,15 @@
         }
       });
 
-      var expenesesProductLinks = ["/3/1/1/1/11/product.html","/3/2/5/3/01/product.html"];
-      var expensesCanvas = document.getElementById('chartjs-a1e46278-fc7f-48cb-9208-eb9065409c59');
+      var expenesesProductLinks = ["/3/1/1/1/11/product.html","/3/2/5/3/01/product.html","/3/5/5/1/01/product.html","/3/3/6/6/02/product.html"];
+      var expensesCanvas = document.getElementById('chartjs-9d157513-8dfd-48b9-88ae-d640d7fecfa4');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {
-          labels: ["Bauhof","Wildpark"],
+          labels: ["Bauhof","Wildpark","Öffentliches Grün","Spielplätze"],
           datasets: [{
             label: 'Euro',
-            data: [-2984700,-327300],
+            data: [-2984700,-327300,-1626400,-171600],
             borderWidth: 1
           }]
         },

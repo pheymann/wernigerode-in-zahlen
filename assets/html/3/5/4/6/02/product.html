@@ -11,13 +11,13 @@
 </head>
 <html>
   <body>
-    <h1>Dienstleistungen für Dritte (Bauhof)</h1>
+    <h1>Parkraumbewirtschaftung Schierke</h1>
 
     <p>
-      Das Produkt -  Bereitstellung eines Recyclinghofes und Handwerkerleistungen - wird in 2023
+      Das Produkt -  &#34;Betrieb des Parkhauses &#34;&#34;Am Wintertor&#34;&#34; und des Parkplatzes  &#34;&#34;Am Thälchen&#34;&#34;&#34; - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-income center">78.900,00€</h2>
+    <h2 class="total-cashflow-income center">134.900,00€</h2>
 
     <p>
       einbringen. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
@@ -26,19 +26,15 @@
 
     <div class="container">
       
-          <h3>Die Verwaltung erwirtschaftet <span class="total-cashflow-income">88.900,00€</span></h3>
+          <h3>Die Verwaltung erwirtschaftet <span class="total-cashflow-income">144.900,00€</span></h3>
 
           
-            <div class="row">
-              <div class="col-6">
-                <h5 class="center">Einnahmen: 92.100,00€</h5>
-                <canvas id="chartjs-edf52423-995a-4a45-8955-e3ae10e9fe8b"></canvas>
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs-6bbcd2de-bef2-4b1c-ae55-3fdff016aaab"></canvas>
               </div>
-              <div class="col-6">
-                <h5 class="center">Ausgaben: 3.200,00€</h5>
-                <canvas id="chartjs-ef09099a-6270-405c-8cd3-1f1a0ca3a111"></canvas>
-              </div>
-            </div>
+            
           
       
           <h3>Investitionen unterhalb der Wertgrenze kosten <span class="total-cashflow-expenses">-10.000,00€</span></h3>
@@ -47,7 +43,7 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-5104b52a-01cd-476b-aa16-c91c15cd8a0f"></canvas>
+                <canvas id="chartjs-1fbb9cbf-b4ac-4493-bf22-0a591b0026bb"></canvas>
               </div>
             
           
@@ -60,7 +56,7 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-b7588bbe-5244-4429-99f0-c466f245cb88"></canvas>
+                <canvas id="chartjs-ece9e011-bc9d-4674-a1b3-b678e8c0b927"></canvas>
               </div>
             
           
@@ -69,21 +65,21 @@
 
     <div class="info-sheet">
       <h3>Aufgabe</h3>
-      <p> Privatrechtliche Verträge und Auftragserteilung</p>
+      <p> Beschlüsse der politischen Gremien</p>
 
       <h3>Ziele</h3>
-      <p>Gesellschaften der Stadt, private Unternehmen, Bürger und Bürgerinnen der Stadt Wernigerode</p>
+      <p>EinwohnerInnen der Stadt Wernigerode und deren Ortsteilen sowie deren Gäste</p>
 
       <h3>Dienstleistungen</h3>
-      <p> Dienstleistungen für Dritte durch den Bauhof,</p>
+      <p> -Unterhaltung und Bewirtschaftung der städtischen Parkflächen Am Wintertor und Am Thälchen,</p>
 
       <h3>Gruppierung</h3>
       <ul>
         <li>Fachbereich: Budget Betriebsbereiche</li>
-        <li>Produktklasse: Zentrale Verwaltung</li>
-        <li>Produktbereich: Innere Verwaltung</li>
-        <li>Produktgruppe: Verwaltungssteuerung und -service</li>
-        <li>Produkt: Dienstleistungen für Dritte (Bauhof)</li>
+        <li>Produktklasse: Gestaltung der Umwelt</li>
+        <li>Produktbereich: Verkehrsflächen und -anlagen, ÖPNV</li>
+        <li>Produktgruppe: Parkeinrichtungen</li>
+        <li>Produkt: Parkraumbewirtschaftung Schierke</li>
       </ul>
     </div>
 
@@ -110,33 +106,14 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-edf52423-995a-4a45-8955-e3ae10e9fe8b'), {
+        
+          new Chart(document.getElementById('chartjs-6bbcd2de-bef2-4b1c-ae55-3fdff016aaab'), {
             type: 'doughnut',
             data: {
-              labels: ["Einzahlungen aus Mieten und Pachten","Sonstige privatrechtliche Leistungsentgelte","Einzahlungen aus Kostenerstattungen von Zweckverbänden","Einzahlungen aus Kostenerstattungen von sonstigen öffentlichen Sonderrechnungen"],
+              labels: ["                 Benutzungsgebühren und ähnliche Entgelte","                 Dienstauszahlungen und dgl. an Arbeitnehmer","                 Beiträge zu Versorgungskassen für Arbeitnehmer","                 Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","                 Beihilfen, Unterstützungsleistungen für Beschäftigte","                 Unterhaltung der Grundstücke und baulichen Anlagen","                 Unterhaltung der Grundstücke und baulichen Anlagen-Gebäudemanagement","                 Unterhaltung des sonstigen unbeweglichen Vermögens","                 Bewirtschaftung der Grundstücke und baulichen Anlagen","                 Erwerb geringwertiger Vermögensgegenstände","                 Unterhaltung des sonstigen beweglichen Vermögens","                 Auszahlungen für sonstige Dienstleistungen","                 Geschäftsauszahlungen"],
               datasets: [{
                 label: 'Euro',
-                data: [600,7000,75500,9000],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              }
-            }
-          });
-        
-        
-          new Chart(document.getElementById('chartjs-ef09099a-6270-405c-8cd3-1f1a0ca3a111'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Unterhaltung des sonstigen unbeweglichen Vermögens","Besondere zahlungswirksame Aufwendungen für Beschäftigte"],
-              datasets: [{
-                label: 'Euro',
-                data: [1500,1700],
+                data: [270000,30000,1600,6100,400,2000,25000,1000,50000,2000,500,5000,1500],
                 borderWidth: 1
               }]
             },
@@ -152,7 +129,7 @@
       
         
         
-          new Chart(document.getElementById('chartjs-5104b52a-01cd-476b-aa16-c91c15cd8a0f'), {
+          new Chart(document.getElementById('chartjs-1fbb9cbf-b4ac-4493-bf22-0a591b0026bb'), {
             type: 'doughnut',
             data: {
               labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
@@ -176,7 +153,7 @@
       
         
         
-          new Chart(document.getElementById('chartjs-b7588bbe-5244-4429-99f0-c466f245cb88'), {
+          new Chart(document.getElementById('chartjs-ece9e011-bc9d-4674-a1b3-b678e8c0b927'), {
             type: 'doughnut',
             data: {
               labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],

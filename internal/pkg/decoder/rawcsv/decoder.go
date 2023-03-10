@@ -21,6 +21,12 @@ func NewDecoder() Decoder {
 		oneOffBudgetParsers: []*regexp.Regexp{
 			regexp.MustCompile(
 				fmt.Sprintf(
+					`^"(?P<id>\d+)[ ]*(?P<desc>[ %s,]*)",,,,,,+`,
+					decoder.RxGermanPlusSpecialLetter,
+				),
+			),
+			regexp.MustCompile(
+				fmt.Sprintf(
 					`^(?P<id>\d+)[ ]*(?P<desc>[ %s]*),,,,,,+`,
 					decoder.RxGermanPlusSpecialLetter,
 				),
@@ -28,6 +34,18 @@ func NewDecoder() Decoder {
 		},
 		groupCostCenterBudgetParsers: []*regexp.Regexp{
 			regexp.MustCompile(rxBasis(`(?P<id>\d+)`)),
+			regexp.MustCompile(
+				fmt.Sprintf(
+					`^"(?P<id>\d+) \+ (?P<desc>[ %s,]*)",+%s,%s,%s,%s,%s,%s`,
+					decoder.RxGermanPlusSpecialLetter,
+					rxFloatNumber,
+					rxNumber("_2021"),
+					rxNumber("_2022"),
+					rxNumber("_2023"),
+					rxNumber("_2024"),
+					rxNumber("_2025"),
+				),
+			),
 			regexp.MustCompile(rxBasis(`(?P<id>[0-9][0-9]?) \+? `)),
 			regexp.MustCompile(
 				fmt.Sprintf(
