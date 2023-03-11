@@ -32,35 +32,22 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 92.100,00€</h5>
-                <canvas id="chartjs-072b5884-3701-406d-a25f-c812c7935b66"></canvas>
+                <canvas id="chartjs-2971e052-297b-4bb9-8c47-6a0a6e6b3742"></canvas>
               </div>
               <div class="col-6">
-                <h5 class="center">Ausgaben: 3.200,00€</h5>
-                <canvas id="chartjs-a252cf19-aa3b-46c5-8f3c-9942f0212a0f"></canvas>
+                <h5 class="center">Ausgaben: -3.200,00€</h5>
+                <canvas id="chartjs-0ff3da09-d87e-4053-8e84-749d103981c7"></canvas>
               </div>
             </div>
           
       
-          <h3>Investitionen unterhalb der Wertgrenze kosten <span class="total-cashflow-expenses">-10.000,00€</span></h3>
+          <h3>Investitionen kosten <span class="total-cashflow-expenses">-10.000,00€</span></h3>
 
           
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-97ebaf62-d6bd-4c20-83b9-1ea9ec6e1ef1"></canvas>
-              </div>
-            
-          
-      
-
-      
-          <h3>Die Investition "Betriebs-und Geschäftsausstattungen" kostet <span class="total-cashflow-expenses">-10.000,00€</span></h3>
-
-          
-            
-            
-              <div class="padded-chart">
-                <canvas id="chartjs-462a3701-22a6-4255-b60c-ce4449dfd892"></canvas>
+                <canvas id="chartjs-b121f2cf-07e2-4d43-8440-4b73fdb6375d"></canvas>
               </div>
             
           
@@ -96,8 +83,6 @@
 			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
 			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
 			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
-			<br><br>
-			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
     </p>
 
     <footer>
@@ -110,7 +95,7 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-072b5884-3701-406d-a25f-c812c7935b66'), {
+          new Chart(document.getElementById('chartjs-2971e052-297b-4bb9-8c47-6a0a6e6b3742'), {
             type: 'doughnut',
             data: {
               labels: ["Einzahlungen aus Mieten und Pachten","Sonstige privatrechtliche Leistungsentgelte","Einzahlungen aus Kostenerstattungen von Zweckverbänden","Einzahlungen aus Kostenerstattungen von sonstigen öffentlichen Sonderrechnungen"],
@@ -130,13 +115,13 @@
           });
         
         
-          new Chart(document.getElementById('chartjs-a252cf19-aa3b-46c5-8f3c-9942f0212a0f'), {
+          new Chart(document.getElementById('chartjs-0ff3da09-d87e-4053-8e84-749d103981c7'), {
             type: 'doughnut',
             data: {
               labels: ["Unterhaltung des sonstigen unbeweglichen Vermögens","Besondere zahlungswirksame Aufwendungen für Beschäftigte"],
               datasets: [{
                 label: 'Euro',
-                data: [1500,1700],
+                data: [-1500,-1700],
                 borderWidth: 1
               }]
             },
@@ -152,37 +137,13 @@
       
         
         
-          new Chart(document.getElementById('chartjs-97ebaf62-d6bd-4c20-83b9-1ea9ec6e1ef1'), {
+          new Chart(document.getElementById('chartjs-b121f2cf-07e2-4d43-8440-4b73fdb6375d'), {
             type: 'doughnut',
             data: {
               labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
               datasets: [{
                 label: 'Euro',
-                data: [10000],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              }
-            }
-          });
-        
-      
-
-      
-        
-        
-          new Chart(document.getElementById('chartjs-462a3701-22a6-4255-b60c-ce4449dfd892'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
-              datasets: [{
-                label: 'Euro',
-                data: [10000],
+                data: [-10000],
                 borderWidth: 1
               }]
             },

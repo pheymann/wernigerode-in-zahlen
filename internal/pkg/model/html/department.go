@@ -18,11 +18,10 @@ type DepartmentCopy struct {
 	IntroCashflowTotal string
 	IntroDescription   template.HTML
 
-	CashflowTotal          string
-	CashflowFinancialPlanA string
-	CashflowFinancialPlanB string
-	IncomeCashflowTotal    string
-	ExpensesCashflowTotal  string
+	CashflowTotal         string
+	CashflowB             string
+	IncomeCashflowTotal   string
+	ExpensesCashflowTotal string
 
 	Products []DepartmentProductCopy
 
@@ -32,10 +31,10 @@ type DepartmentCopy struct {
 }
 
 type DepartmentProductCopy struct {
-	Name      string
-	Link      string
-	CashflowA string
-	CashflowB string
+	Name          string
+	Link          string
+	CashflowTotal string
+	CashflowB     string
 }
 
 type DepartmentCSS struct {

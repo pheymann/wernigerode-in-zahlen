@@ -32,16 +32,14 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 2.782.000,00€</h5>
-                <canvas id="chartjs-5ced80cb-55f7-4e2f-96cc-468db2864334"></canvas>
+                <canvas id="chartjs-d98138bb-1d6c-4c9c-8ebb-19493f1477f6"></canvas>
               </div>
               <div class="col-6">
-                <h5 class="center">Ausgaben: 2.624.700,00€</h5>
-                <canvas id="chartjs-8eb7be73-b02d-43e4-b10a-20611d4b1faf"></canvas>
+                <h5 class="center">Ausgaben: -2.624.700,00€</h5>
+                <canvas id="chartjs-2397b186-e3f9-4b09-a1e2-8c4a04c03e6d"></canvas>
               </div>
             </div>
           
-      
-
       
     </div>
 
@@ -74,8 +72,6 @@
 			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
 			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
 			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
-			<br><br>
-			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
     </p>
 
     <footer>
@@ -88,7 +84,7 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-5ced80cb-55f7-4e2f-96cc-468db2864334'), {
+          new Chart(document.getElementById('chartjs-d98138bb-1d6c-4c9c-8ebb-19493f1477f6'), {
             type: 'doughnut',
             data: {
               labels: ["Zweckgebundene Abgaben (Kurbeitrag)"],
@@ -108,13 +104,13 @@
           });
         
         
-          new Chart(document.getElementById('chartjs-8eb7be73-b02d-43e4-b10a-20611d4b1faf'), {
+          new Chart(document.getElementById('chartjs-2397b186-e3f9-4b09-a1e2-8c4a04c03e6d'), {
             type: 'doughnut',
             data: {
               labels: ["Zusch. öff. SondRechn. HSB","Zusch. öff.SondRechn. HSB Kurb","Einbehalt für Entgelt WTG"],
               datasets: [{
                 label: 'Euro',
-                data: [199500,2300000,125200],
+                data: [-199500,-2300000,-125200],
                 borderWidth: 1
               }]
             },
@@ -127,8 +123,6 @@
             }
           });
         
-      
-
       
     </script>
   </body>

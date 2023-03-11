@@ -17,7 +17,7 @@
       {{.Copy.IntroCashflowTotal}}
     </p>
 
-    <h2 class="{{.CSS.TotalCashflowClass}} center">{{.Copy.CashflowTotal}}<sub style="font-size: 0.4em;">(A/B)</sub></h2>
+    <h2 class="{{.CSS.TotalCashflowClass}} center">{{.Copy.CashflowTotal}}</h2>
 
     <p>
       {{.Copy.IntroDescription}}
@@ -27,11 +27,11 @@
       <div class="container">
         <div class="row">
           <div class="col-6">
-            <h5 class="center">{{.Copy.IncomeCashflowTotal}}<sub style="font-size: 0.4em;">(A/B)</sub></h5>
+            <h5 class="center">{{.Copy.IncomeCashflowTotal}}</h5>
             <canvas id="{{.Income.ID}}"></canvas>
           </div>
           <div class="col-6">
-            <h5 class="center">{{.Copy.ExpensesCashflowTotal}}<sub style="font-size: 0.4em;">(A/B)</sub></h5>
+            <h5 class="center">{{.Copy.ExpensesCashflowTotal}}</h5>
             <canvas id="{{.Expenses.ID}}"></canvas>
           </div>
         </div>
@@ -47,19 +47,19 @@
         <tbody>
           <tr>
             <th>Produkt</th>
-            <th>Teilfinanzplan A</th>
-            <th>Teilfinanzplan B</th>
+            <th>Finanzplan</th>
+            <th>Davon über der Wertgrenze</th>
           </tr>
           <tr>
             <th></th>
-            <th>{{.Copy.CashflowFinancialPlanA}}</th>
-            <th>{{.Copy.CashflowFinancialPlanB}}</th>
+            <th>{{.Copy.CashflowTotal}}</th>
+            <th>{{.Copy.CashflowB}}</th>
           </tr>
 
           {{range .Copy.Departments}}
             <tr>
               <td><a href="{{.Link}}">{{.Name}}</a></td>
-              <td>{{.CashflowA}}</td>
+              <td>{{.CashflowTotal}}</td>
               <td>{{.CashflowB}}</td>
             </tr>
           {{end}}

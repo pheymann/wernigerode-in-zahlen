@@ -32,35 +32,22 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 4.100,00€</h5>
-                <canvas id="chartjs-a2c59d71-c4f9-4953-a58c-74a0afcb1e87"></canvas>
+                <canvas id="chartjs-13e9909c-ac0c-4fa8-b140-a266a516c2fa"></canvas>
               </div>
               <div class="col-6">
-                <h5 class="center">Ausgaben: 117.400,00€</h5>
-                <canvas id="chartjs-4d8aa156-3f7d-495c-9a2e-0931f23d6ced"></canvas>
+                <h5 class="center">Ausgaben: -117.400,00€</h5>
+                <canvas id="chartjs-89b2e508-01a7-4f66-bfd5-791193fe7d3c"></canvas>
               </div>
             </div>
           
       
-          <h3>Investitionen unterhalb der Wertgrenze kosten <span class="total-cashflow-expenses">-2.500,00€</span></h3>
+          <h3>Investitionen kosten <span class="total-cashflow-expenses">-2.500,00€</span></h3>
 
           
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-ffe14c31-cb38-4d19-a3ab-d04e4a5473b7"></canvas>
-              </div>
-            
-          
-      
-
-      
-          <h3>Die Investition "Anschaffungen 150 €  bis 1.000 € netto" kostet <span class="total-cashflow-expenses">-2.500,00€</span></h3>
-
-          
-            
-            
-              <div class="padded-chart">
-                <canvas id="chartjs-c2ce2669-154e-44f5-a026-dffa96dbc4c3"></canvas>
+                <canvas id="chartjs-41b34495-bb92-43f9-8eb8-1c706493df27"></canvas>
               </div>
             
           
@@ -96,8 +83,6 @@
 			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
 			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
 			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
-			<br><br>
-			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
     </p>
 
     <footer>
@@ -110,7 +95,7 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-a2c59d71-c4f9-4953-a58c-74a0afcb1e87'), {
+          new Chart(document.getElementById('chartjs-13e9909c-ac0c-4fa8-b140-a266a516c2fa'), {
             type: 'doughnut',
             data: {
               labels: ["Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus dem Verkauf von Vorräten (Holzverkauf)","Einzahlungen aus Kostenerstattungen von übrigen Bereichen"],
@@ -130,13 +115,13 @@
           });
         
         
-          new Chart(document.getElementById('chartjs-4d8aa156-3f7d-495c-9a2e-0931f23d6ced'), {
+          new Chart(document.getElementById('chartjs-89b2e508-01a7-4f66-bfd5-791193fe7d3c'), {
             type: 'doughnut',
             data: {
               labels: ["Unterhaltung des sonstigen unbeweglichen Vermögens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Erwerb geringwertiger Vermögensgegenstände","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten","Erstatt. f.d. Ausz. v. Dritten aus lfd Verwaltungstät. an so. öff. Sonderrechn."],
               datasets: [{
                 label: 'Euro',
-                data: [100000,1000,200,5000,500,700,2000,4000,4000],
+                data: [-100000,-1000,-200,-5000,-500,-700,-2000,-4000,-4000],
                 borderWidth: 1
               }]
             },
@@ -152,37 +137,13 @@
       
         
         
-          new Chart(document.getElementById('chartjs-ffe14c31-cb38-4d19-a3ab-d04e4a5473b7'), {
+          new Chart(document.getElementById('chartjs-41b34495-bb92-43f9-8eb8-1c706493df27'), {
             type: 'doughnut',
             data: {
               labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr."],
               datasets: [{
                 label: 'Euro',
-                data: [2500],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              }
-            }
-          });
-        
-      
-
-      
-        
-        
-          new Chart(document.getElementById('chartjs-c2ce2669-154e-44f5-a026-dffa96dbc4c3'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr."],
-              datasets: [{
-                label: 'Euro',
-                data: [2500],
+                data: [-2500],
                 borderWidth: 1
               }]
             },

@@ -32,16 +32,14 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 772.500,00€</h5>
-                <canvas id="chartjs-88c3c56a-7d5c-4e15-bb97-d41bfed419c9"></canvas>
+                <canvas id="chartjs-d8b1f927-e3ab-4d34-92ab-868f57040236"></canvas>
               </div>
               <div class="col-6">
-                <h5 class="center">Ausgaben: 1.621.100,00€</h5>
-                <canvas id="chartjs-da09d0cf-7640-478c-872a-74486b684f49"></canvas>
+                <h5 class="center">Ausgaben: -1.621.100,00€</h5>
+                <canvas id="chartjs-a93c7117-d2a1-43bb-89b2-00c3b9038271"></canvas>
               </div>
             </div>
           
-      
-
       
     </div>
 
@@ -74,8 +72,6 @@
 			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
 			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
 			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
-			<br><br>
-			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
     </p>
 
     <footer>
@@ -88,7 +84,7 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-88c3c56a-7d5c-4e15-bb97-d41bfed419c9'), {
+          new Chart(document.getElementById('chartjs-d8b1f927-e3ab-4d34-92ab-868f57040236'), {
             type: 'doughnut',
             data: {
               labels: ["Verwaltungsgebühren","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus dem Verkauf von Vorräten","Einzahlungen aus Kostenerstattungen vom Land","Einzahlungen aus Kostenerstattungen von übrigen Bereichen","Bußgelder"],
@@ -108,13 +104,13 @@
           });
         
         
-          new Chart(document.getElementById('chartjs-da09d0cf-7640-478c-872a-74486b684f49'), {
+          new Chart(document.getElementById('chartjs-a93c7117-d2a1-43bb-89b2-00c3b9038271'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für sonstige Dienstleistungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten","Erstattungen für die Auszahl. von Dritten aus lfd. Verwaltungstät. an den Bund","Erstatt. für die Auszahl. von Dritten aus lfd. Verwaltungstät. an übrige Ber."],
               datasets: [{
                 label: 'Euro',
-                data: [74200,989100,82100,41500,198900,4700,45000,22500,4000,500,1000,7500,4500,135000,600,2000,1500,1000,5500],
+                data: [-74200,-989100,-82100,-41500,-198900,-4700,-45000,-22500,-4000,-500,-1000,-7500,-4500,-135000,-600,-2000,-1500,-1000,-5500],
                 borderWidth: 1
               }]
             },
@@ -127,8 +123,6 @@
             }
           });
         
-      
-
       
     </script>
   </body>

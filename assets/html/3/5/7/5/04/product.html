@@ -32,46 +32,22 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 337.500,00€</h5>
-                <canvas id="chartjs-eb82b38a-421e-48a6-bd17-4d5d05155ba8"></canvas>
+                <canvas id="chartjs-dfab0522-a54f-405d-a296-a0313099d639"></canvas>
               </div>
               <div class="col-6">
-                <h5 class="center">Ausgaben: 711.500,00€</h5>
-                <canvas id="chartjs-be2d4b33-fb9a-4e1e-b5a7-99ea9acad145"></canvas>
+                <h5 class="center">Ausgaben: -711.500,00€</h5>
+                <canvas id="chartjs-8df1768b-c0c8-4ce7-9da0-e3830d547247"></canvas>
               </div>
             </div>
           
       
-          <h3>Investitionen unterhalb der Wertgrenze kosten <span class="total-cashflow-expenses">-21.500,00€</span></h3>
+          <h3>Investitionen kosten <span class="total-cashflow-expenses">-21.500,00€</span></h3>
 
           
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-8bfb08b9-dbb9-490a-a9ee-0b98bc8c7bd8"></canvas>
-              </div>
-            
-          
-      
-
-      
-          <h3>Die Investition "Anschaffungen 150 €  bis 1.000 € netto" kostet <span class="total-cashflow-expenses">-1.500,00€</span></h3>
-
-          
-            
-            
-              <div class="padded-chart">
-                <canvas id="chartjs-ae268c67-2286-490b-9d59-ac2e23586cc3"></canvas>
-              </div>
-            
-          
-      
-          <h3>Die Investition "Betriebs-und Geschäftsausstattungen" kostet <span class="total-cashflow-expenses">-20.000,00€</span></h3>
-
-          
-            
-            
-              <div class="padded-chart">
-                <canvas id="chartjs-a865ad37-ad10-49ad-9745-65edb634c332"></canvas>
+                <canvas id="chartjs-178e56a8-347f-4b0b-9bbf-28a2dd36ce99"></canvas>
               </div>
             
           
@@ -107,8 +83,6 @@
 			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
 			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
 			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
-			<br><br>
-			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
     </p>
 
     <footer>
@@ -121,7 +95,7 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-eb82b38a-421e-48a6-bd17-4d5d05155ba8'), {
+          new Chart(document.getElementById('chartjs-dfab0522-a54f-405d-a296-a0313099d639'), {
             type: 'doughnut',
             data: {
               labels: ["Zuschüsse für laufende Zwecke von privaten Unternehmen","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus Mieten und Pachten","Erträge aus dem Verkauf von Waren","Einzahlungen aus dem Verkauf von Waren 7%","Sonstige privatrechtliche Leistungsentgelte"],
@@ -141,13 +115,13 @@
           });
         
         
-          new Chart(document.getElementById('chartjs-be2d4b33-fb9a-4e1e-b5a7-99ea9acad145'), {
+          new Chart(document.getElementById('chartjs-8df1768b-c0c8-4ce7-9da0-e3830d547247'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Unterhaltung des sonstigen unbeweglichen Vermögens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für den Erwerb von Vorräten","Auszahlungen für sonstige Dienstleistungen","Geschäftsauszahlungen","Auszahlungen für Honorare"],
               datasets: [{
                 label: 'Euro',
-                data: [263800,11200,53100,1400,25000,5000,25000,120000,3500,8000,9000,5000,65000,1500,100000,2000,13000],
+                data: [-263800,-11200,-53100,-1400,-25000,-5000,-25000,-120000,-3500,-8000,-9000,-5000,-65000,-1500,-100000,-2000,-13000],
                 borderWidth: 1
               }]
             },
@@ -163,59 +137,13 @@
       
         
         
-          new Chart(document.getElementById('chartjs-8bfb08b9-dbb9-490a-a9ee-0b98bc8c7bd8'), {
+          new Chart(document.getElementById('chartjs-178e56a8-347f-4b0b-9bbf-28a2dd36ce99'), {
             type: 'doughnut',
             data: {
               labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
               datasets: [{
                 label: 'Euro',
-                data: [1500,20000],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              }
-            }
-          });
-        
-      
-
-      
-        
-        
-          new Chart(document.getElementById('chartjs-ae268c67-2286-490b-9d59-ac2e23586cc3'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr."],
-              datasets: [{
-                label: 'Euro',
-                data: [1500],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              }
-            }
-          });
-        
-      
-        
-        
-          new Chart(document.getElementById('chartjs-a865ad37-ad10-49ad-9745-65edb634c332'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
-              datasets: [{
-                label: 'Euro',
-                data: [20000],
+                data: [-1500,-20000],
                 borderWidth: 1
               }]
             },

@@ -17,8 +17,7 @@ func Encode(
 	year model.BudgetYear,
 
 	cashflowTotal float64,
-	cashflowFinancialPlanA float64,
-	cashflowFinancialPlanB float64,
+	cashflowB float64,
 
 	incomeTotalCashFlow float64,
 	incomeDepartmentLinks []string,
@@ -48,11 +47,10 @@ func Encode(
 			Alles startet mit der Gesamtübersicht. In %s planen wir`, year)),
 			IntroDescription: encodeIntroDescription(cashflowTotal, len(departments)),
 
-			CashflowTotal:          htmlEncoder.EncodeBudget(cashflowTotal, p),
-			CashflowFinancialPlanA: htmlEncoder.EncodeBudget(cashflowFinancialPlanA, p),
-			CashflowFinancialPlanB: htmlEncoder.EncodeBudget(cashflowFinancialPlanB, p),
-			IncomeCashflowTotal:    "Einnahmen: " + htmlEncoder.EncodeBudget(incomeTotalCashFlow, p),
-			ExpensesCashflowTotal:  "Ausgaben: " + htmlEncoder.EncodeBudget(expensesTotalCashFlow, p),
+			CashflowTotal:         htmlEncoder.EncodeBudget(cashflowTotal, p),
+			CashflowB:             htmlEncoder.EncodeBudget(cashflowB, p),
+			IncomeCashflowTotal:   "Einnahmen: " + htmlEncoder.EncodeBudget(incomeTotalCashFlow, p),
+			ExpensesCashflowTotal: "Ausgaben: " + htmlEncoder.EncodeBudget(expensesTotalCashFlow, p),
 
 			Departments: shared.MapSlice(departments, func(department model.CompressedDepartment) html.OverviewDepartmentCopy {
 				return encodeCompressedDepartment(department, p)
@@ -61,10 +59,7 @@ func Encode(
 			DataDisclosure: `Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2022.
 			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
 			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
-			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
-			<br><br>
-			Die Budgets auf dieser Webseite ergeben sich aus dem Teilfinanzplan A und B und weichen damit vom Haushaltsplan ab, der
-			nur Teilfinanzplan A Daten enthält.`,
+			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>.`,
 		},
 		CSS: html.OverviewCSS{
 			TotalCashflowClass: htmlEncoder.EncodeCSSCashflowClass(cashflowTotal),
@@ -74,10 +69,10 @@ func Encode(
 
 func encodeCompressedDepartment(department model.CompressedDepartment, p *message.Printer) html.OverviewDepartmentCopy {
 	return html.OverviewDepartmentCopy{
-		Name:      department.DepartmentName,
-		CashflowA: htmlEncoder.EncodeBudget(department.CashflowFinancialPlanA, p),
-		CashflowB: htmlEncoder.EncodeBudget(department.CashflowFinancialPlanB, p),
-		Link:      department.GetDepartmentLink(),
+		Name:          department.DepartmentName,
+		CashflowTotal: htmlEncoder.EncodeBudget(department.CashflowTotal, p),
+		CashflowB:     htmlEncoder.EncodeBudget(department.CashflowB, p),
+		Link:          department.GetDepartmentLink(),
 	}
 }
 

@@ -17,7 +17,7 @@
       Das Produkt -  Wahrnehmung von Aufgaben des Schulträgers - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-expenses center">-2.679.100,00€</h2>
+    <h2 class="total-cashflow-expenses center">-1.804.200,00€</h2>
 
     <p>
       kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
@@ -32,35 +32,22 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 78.900,00€</h5>
-                <canvas id="chartjs-188e26ab-f793-484d-9559-4742cfae21a6"></canvas>
+                <canvas id="chartjs-c47da58e-871a-4c69-b653-211a5138057a"></canvas>
               </div>
               <div class="col-6">
-                <h5 class="center">Ausgaben: 1.008.200,00€</h5>
-                <canvas id="chartjs-8d125057-b839-4a7a-b91f-c007d0dfbb05"></canvas>
+                <h5 class="center">Ausgaben: -1.008.200,00€</h5>
+                <canvas id="chartjs-8eccfd01-d5bf-4ab1-b589-20a76981b42f"></canvas>
               </div>
             </div>
           
       
-          <h3>Investitionen unterhalb der Wertgrenze kosten <span class="total-cashflow-expenses">-874.900,00€</span></h3>
+          <h3>Investitionen kosten <span class="total-cashflow-expenses">-874.900,00€</span></h3>
 
           
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-6ca63177-a818-4b87-aea5-6ccc185625fe"></canvas>
-              </div>
-            
-          
-      
-
-      
-          <h3>Investitionen oberhalb der Wertgrenze kosten <span class="total-cashflow-expenses">-874.900,00€</span></h3>
-
-          
-            
-            
-              <div class="padded-chart">
-                <canvas id="chartjs-1c48866f-6be8-437d-95f8-ea3245398e93"></canvas>
+                <canvas id="chartjs-06de8d9f-96c2-4ad1-9a63-f2cb5f4b09bb"></canvas>
               </div>
             
           
@@ -96,8 +83,6 @@
 			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
 			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
 			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
-			<br><br>
-			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
     </p>
 
     <footer>
@@ -110,7 +95,7 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-188e26ab-f793-484d-9559-4742cfae21a6'), {
+          new Chart(document.getElementById('chartjs-c47da58e-871a-4c69-b653-211a5138057a'), {
             type: 'doughnut',
             data: {
               labels: ["Verwaltungsgebühren","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus Mieten und Pachten"],
@@ -130,13 +115,13 @@
           });
         
         
-          new Chart(document.getElementById('chartjs-8d125057-b839-4a7a-b91f-c007d0dfbb05'), {
+          new Chart(document.getElementById('chartjs-8eccfd01-d5bf-4ab1-b589-20a76981b42f'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Unterhaltung der Grundstücke und baulichen Anlagen-Gebäudemanagement","Unterhaltung des sonstigen unbeweglichen Vermögens","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für sonstige Dienstleistungen","Sonstige Auszahlungen für die Inanspruchnahme von Rechten und Diensten","Geschäftsauszahlungen"],
               datasets: [{
                 label: 'Euro',
-                data: [284500,12000,57300,1500,5000,337300,4300,227400,16400,2500,900,34600,900,13600,10000],
+                data: [-284500,-12000,-57300,-1500,-5000,-337300,-4300,-227400,-16400,-2500,-900,-34600,-900,-13600,-10000],
                 borderWidth: 1
               }]
             },
@@ -152,37 +137,13 @@
       
         
         
-          new Chart(document.getElementById('chartjs-6ca63177-a818-4b87-aea5-6ccc185625fe'), {
+          new Chart(document.getElementById('chartjs-06de8d9f-96c2-4ad1-9a63-f2cb5f4b09bb'), {
             type: 'doughnut',
             data: {
               labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150 bis 1000 € o. UStr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.","Auszahlungen für Hochbaumaßnahmen"],
               datasets: [{
                 label: 'Euro',
-                data: [38500,36400,800000],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              }
-            }
-          });
-        
-      
-
-      
-        
-        
-          new Chart(document.getElementById('chartjs-1c48866f-6be8-437d-95f8-ea3245398e93'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.","Auszahlungen für Hochbaumaßnahmen"],
-              datasets: [{
-                label: 'Euro',
-                data: [38500,36400,800000],
+                data: [-38500,-36400,-800000],
                 borderWidth: 1
               }]
             },

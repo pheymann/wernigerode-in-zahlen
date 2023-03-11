@@ -32,12 +32,10 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-ea3da1bf-dd76-44ed-a368-c674cf4aa5c2"></canvas>
+                <canvas id="chartjs-bd77d7d1-3b56-412b-a20f-1c74fb794713"></canvas>
               </div>
             
           
-      
-
       
     </div>
 
@@ -70,8 +68,6 @@
 			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
 			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
 			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
-			<br><br>
-			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
     </p>
 
     <footer>
@@ -85,13 +81,13 @@
       
         
         
-          new Chart(document.getElementById('chartjs-ea3da1bf-dd76-44ed-a368-c674cf4aa5c2'), {
+          new Chart(document.getElementById('chartjs-bd77d7d1-3b56-412b-a20f-1c74fb794713'), {
             type: 'doughnut',
             data: {
               labels: ["Zuschüsse an verbundene Unternehmen, Sondervermögen und Beteiligungen"],
               datasets: [{
                 label: 'Euro',
-                data: [510000],
+                data: [-510000],
                 borderWidth: 1
               }]
             },
@@ -104,8 +100,6 @@
             }
           });
         
-      
-
       
     </script>
   </body>

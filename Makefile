@@ -21,14 +21,14 @@ merge-financial-plans:
 
 .PHONY: generate-html
 generate-html:
-	# ./scripts/generate_html_products.sh 1
-	# go run cmd/departmenthtmlgenerator/main.go --department=1 --name="Budget des Bürgermeisters"
+	./scripts/generate_html_products.sh 1
+	go run cmd/departmenthtmlgenerator/main.go --department=1 --name="Budget des Bürgermeisters"
 
-	# ./scripts/generate_html_products.sh 2
-	# go run cmd/departmenthtmlgenerator/main.go --department=2 --name="Budget Finanzen"
+	./scripts/generate_html_products.sh 2
+	go run cmd/departmenthtmlgenerator/main.go --department=2 --name="Budget Finanzen"
 
-	# ./scripts/generate_html_products.sh 3
-	# go run cmd/departmenthtmlgenerator/main.go --department=3 --name="Budget Betriebsbereiche"
+	./scripts/generate_html_products.sh 3
+	go run cmd/departmenthtmlgenerator/main.go --department=3 --name="Budget Betriebsbereiche"
 
 	./scripts/generate_html_products.sh 4
 	go run cmd/departmenthtmlgenerator/main.go --department=4 --name="Budget Bürgerservice"

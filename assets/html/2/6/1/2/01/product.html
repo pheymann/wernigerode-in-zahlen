@@ -32,16 +32,14 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 1.000,00€</h5>
-                <canvas id="chartjs-9cb1f9aa-dc1d-48b9-8380-e44fe0ebdad7"></canvas>
+                <canvas id="chartjs-65a50082-095e-45ab-bc31-4a38a6b26ac6"></canvas>
               </div>
               <div class="col-6">
-                <h5 class="center">Ausgaben: 955.400,00€</h5>
-                <canvas id="chartjs-37849ebb-62f2-4caf-9f7f-c87e5ee8d5e0"></canvas>
+                <h5 class="center">Ausgaben: -955.400,00€</h5>
+                <canvas id="chartjs-b6cb1a18-eacb-4e58-8b57-0da8453db7aa"></canvas>
               </div>
             </div>
           
-      
-
       
     </div>
 
@@ -74,8 +72,6 @@
 			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
 			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
 			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
-			<br><br>
-			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
     </p>
 
     <footer>
@@ -88,7 +84,7 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-9cb1f9aa-dc1d-48b9-8380-e44fe0ebdad7'), {
+          new Chart(document.getElementById('chartjs-65a50082-095e-45ab-bc31-4a38a6b26ac6'), {
             type: 'doughnut',
             data: {
               labels: ["Zinseinzahlungen von Kreditinstituten"],
@@ -108,13 +104,13 @@
           });
         
         
-          new Chart(document.getElementById('chartjs-37849ebb-62f2-4caf-9f7f-c87e5ee8d5e0'), {
+          new Chart(document.getElementById('chartjs-b6cb1a18-eacb-4e58-8b57-0da8453db7aa'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer (Leistungszulage)","ZinsAusz a.GWW f.Franckeschule","Zinsauszahlungen an Kreditinstitute","Zinsauszahlungen an Kreditinstitute 1 (Darl.-Nr. 6694901613 HSK)","Zinsauszahlungen an Kreditinstitute 2 (Darl.-Nr. 6644900664 HSK)","Zinsauszahlungen an Kreditinstitute 3 (Darl.-Nr. 6674900450 HSK)","Zinsauszahlungen an Kreditinstitute 4 (Darl.-Nr. 0001327 KfWB)","Zinsauszahlungen an Kreditinstitute 6 (Darl.-Nr. 0200735300 Westf.Landsch.KB)","Zinsauszahlungen an Kreditinstitute 7 (Darl.-Nr. 7820169 KfWB)","Zinsauszahlungen an Kreditinstitute 9 (Darl.-Nr. 33442380 KfWB)","Zinsauszahlungen an Kreditinstitute 14 (Darl.-Nr. 6700272484 DKB)","Zinsauszahlungen an Kreditinstitute 15 (Darl.-Nr. 6260189654 HSK)","Zinsauszahlungen an Kreditinstitute 16 (Darl.Nr.07555840-20 Commerzbank)","Zinsauszahlungen an Kreditinstitute 17 (6702554533 DKB)","ZinsAufwDarl.6705346614 DKB 18","Zinsauszahlungen an Kreditinstitute für Kassenkredite","Auszahlungen für Negativzinsen"],
               datasets: [{
                 label: 'Euro',
-                data: [542800,35000,40000,16300,108000,22000,600,10800,3600,15100,48800,17600,8500,44200,16100,6000,20000],
+                data: [-542800,-35000,-40000,-16300,-108000,-22000,-600,-10800,-3600,-15100,-48800,-17600,-8500,-44200,-16100,-6000,-20000],
                 borderWidth: 1
               }]
             },
@@ -127,8 +123,6 @@
             }
           });
         
-      
-
       
     </script>
   </body>

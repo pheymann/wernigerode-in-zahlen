@@ -32,16 +32,14 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 36.000,00€</h5>
-                <canvas id="chartjs-5af7e80a-4f67-4c57-b3b5-b50eff18c364"></canvas>
+                <canvas id="chartjs-5600f9b1-e1dc-491c-b5c7-4d5d9aca8fcb"></canvas>
               </div>
               <div class="col-6">
-                <h5 class="center">Ausgaben: 1.900,00€</h5>
-                <canvas id="chartjs-87ff3b1d-07f0-491f-b051-d05ccdcb35ba"></canvas>
+                <h5 class="center">Ausgaben: -1.900,00€</h5>
+                <canvas id="chartjs-d81eaabf-bed5-4de4-bb4e-2b45b33528f4"></canvas>
               </div>
             </div>
           
-      
-
       
     </div>
 
@@ -74,8 +72,6 @@
 			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
 			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
 			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
-			<br><br>
-			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
     </p>
 
     <footer>
@@ -88,7 +84,7 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-5af7e80a-4f67-4c57-b3b5-b50eff18c364'), {
+          new Chart(document.getElementById('chartjs-5600f9b1-e1dc-491c-b5c7-4d5d9aca8fcb'), {
             type: 'doughnut',
             data: {
               labels: ["Einzahlungen aus Kostenerstattungen von Zweckverbänden"],
@@ -108,13 +104,13 @@
           });
         
         
-          new Chart(document.getElementById('chartjs-87ff3b1d-07f0-491f-b051-d05ccdcb35ba'), {
+          new Chart(document.getElementById('chartjs-d81eaabf-bed5-4de4-bb4e-2b45b33528f4'), {
             type: 'doughnut',
             data: {
               labels: ["Unterhaltung des sonstigen unbeweglichen Vermögens","Bewirtschaftung der Grundstücke und baulichen Anlagen"],
               datasets: [{
                 label: 'Euro',
-                data: [400,1500],
+                data: [-400,-1500],
                 borderWidth: 1
               }]
             },
@@ -127,8 +123,6 @@
             }
           });
         
-      
-
       
     </script>
   </body>

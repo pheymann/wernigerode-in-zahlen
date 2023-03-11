@@ -32,27 +32,25 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 35.100,00€</h5>
-                <canvas id="chartjs-60b97f92-1e35-4416-a51b-c567b2f0661b"></canvas>
+                <canvas id="chartjs-68cd3424-ca40-47c2-b797-ec3ca04ac87f"></canvas>
               </div>
               <div class="col-6">
-                <h5 class="center">Ausgaben: 1.642.000,00€</h5>
-                <canvas id="chartjs-5e433156-a9f3-4db9-8669-257caee95e7a"></canvas>
+                <h5 class="center">Ausgaben: -1.642.000,00€</h5>
+                <canvas id="chartjs-4ece5a50-bcde-4caf-9192-584bc3f63634"></canvas>
               </div>
             </div>
           
       
-          <h3>Investitionen unterhalb der Wertgrenze kosten <span class="total-cashflow-expenses">-19.500,00€</span></h3>
+          <h3>Investitionen kosten <span class="total-cashflow-expenses">-19.500,00€</span></h3>
 
           
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-ae1ed542-ff7f-4617-8f1c-d488db22ab3b"></canvas>
+                <canvas id="chartjs-0399f246-889c-4d3f-826b-0604bebe3a5d"></canvas>
               </div>
             
           
-      
-
       
     </div>
 
@@ -85,8 +83,6 @@
 			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
 			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
 			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
-			<br><br>
-			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
     </p>
 
     <footer>
@@ -99,7 +95,7 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-60b97f92-1e35-4416-a51b-c567b2f0661b'), {
+          new Chart(document.getElementById('chartjs-68cd3424-ca40-47c2-b797-ec3ca04ac87f'), {
             type: 'doughnut',
             data: {
               labels: ["Zuweisungen für laufende Zwecke vom Bund","Zuschüsse für laufende Zwecke von übrigen Bereichen (Spenden)","Verwaltungsgebühren","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus dem Verkauf von Holz","Sonstige privatrechtliche Leistungsentgelte","Einzahlungen aus Kostenerstattungen vom Bund","Einzahl. aus Kostenerstattungen von verbund. Untern., Sondervermö. und Beteilig.","Einzahlungen aus Kostenerstattungen von übrigen Bereichen"],
@@ -119,13 +115,13 @@
           });
         
         
-          new Chart(document.getElementById('chartjs-5e433156-a9f3-4db9-8669-257caee95e7a'), {
+          new Chart(document.getElementById('chartjs-4ece5a50-bcde-4caf-9192-584bc3f63634'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Dienstauszahlungen und dgl. an sonstige Beschäftigte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschäft.","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Unterhaltung des sonstigen unbeweglichen Vermögens","Auszahlungen für Mieten und Pachten","Auszahlungen für Leasing","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen","Auszahlungen für Planungsleistungen","Erstatt. f.d. Ausz. v. Dritten aus lfd Verwaltungstät. an so. öff. Sonderrechn."],
               datasets: [{
                 label: 'Euro',
-                data: [999000,10500,41900,201100,8200,4800,500,130000,4000,6000,50000,59000,5000,52000,6000,35000,1000,3000,16000,9000],
+                data: [-999000,-10500,-41900,-201100,-8200,-4800,-500,-130000,-4000,-6000,-50000,-59000,-5000,-52000,-6000,-35000,-1000,-3000,-16000,-9000],
                 borderWidth: 1
               }]
             },
@@ -141,13 +137,13 @@
       
         
         
-          new Chart(document.getElementById('chartjs-ae1ed542-ff7f-4617-8f1c-d488db22ab3b'), {
+          new Chart(document.getElementById('chartjs-0399f246-889c-4d3f-826b-0604bebe3a5d'), {
             type: 'doughnut',
             data: {
               labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
               datasets: [{
                 label: 'Euro',
-                data: [5000,3000,11500],
+                data: [-5000,-3000,-11500],
                 borderWidth: 1
               }]
             },
@@ -160,8 +156,6 @@
             }
           });
         
-      
-
       
     </script>
   </body>

@@ -17,7 +17,7 @@
       Das Produkt -  Die Bibliotheken dienen der allgemeinen Bildung und Information, der Leseförderung, der Freizeitgestaltung und Unterhaltung - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-expenses center">-463.200,00€</h2>
+    <h2 class="total-cashflow-expenses center">-460.200,00€</h2>
 
     <p>
       kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
@@ -32,35 +32,22 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 29.600,00€</h5>
-                <canvas id="chartjs-aa715374-7059-42b6-a983-dcab7ed09b19"></canvas>
+                <canvas id="chartjs-78687587-0c09-4df8-a341-ba6cf5a2666f"></canvas>
               </div>
               <div class="col-6">
-                <h5 class="center">Ausgaben: 486.800,00€</h5>
-                <canvas id="chartjs-20e47c1b-bc2c-4743-b34f-a3a499a15fa7"></canvas>
+                <h5 class="center">Ausgaben: -486.800,00€</h5>
+                <canvas id="chartjs-742c67a4-94a5-4f42-a202-e85048ebf7af"></canvas>
               </div>
             </div>
           
       
-          <h3>Investitionen unterhalb der Wertgrenze kosten <span class="total-cashflow-expenses">-3.000,00€</span></h3>
+          <h3>Investitionen kosten <span class="total-cashflow-expenses">-3.000,00€</span></h3>
 
           
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-f578870d-4d25-4e0d-a3fc-88f0b1783b83"></canvas>
-              </div>
-            
-          
-      
-
-      
-          <h3>Investitionen oberhalb der Wertgrenze kosten <span class="total-cashflow-expenses">-3.000,00€</span></h3>
-
-          
-            
-            
-              <div class="padded-chart">
-                <canvas id="chartjs-cb03a128-5ecf-4c95-a7b2-d8030dffebcf"></canvas>
+                <canvas id="chartjs-931d56f6-0c78-4731-94c0-bb7a3f2dbb25"></canvas>
               </div>
             
           
@@ -96,8 +83,6 @@
 			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
 			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
 			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
-			<br><br>
-			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
     </p>
 
     <footer>
@@ -110,7 +95,7 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-aa715374-7059-42b6-a983-dcab7ed09b19'), {
+          new Chart(document.getElementById('chartjs-78687587-0c09-4df8-a341-ba6cf5a2666f'), {
             type: 'doughnut',
             data: {
               labels: ["Zuweisungen für laufende Zwecke vom Land","Verwaltungsgebühren","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus der Veräußerung von beweglichen Sachen","Einzahlungen aus Kostenerstattungen vom Bund"],
@@ -130,13 +115,13 @@
           });
         
         
-          new Chart(document.getElementById('chartjs-20e47c1b-bc2c-4743-b34f-a3a499a15fa7'), {
+          new Chart(document.getElementById('chartjs-742c67a4-94a5-4f42-a202-e85048ebf7af'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Dienstauszahlungen und dgl. an sonstige Beschäftigte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschäft.","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für Mieten und Pachten","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für den Erwerb von Medien Bibliothek","Auszahlungen für den Erwerb von Vorräten","Auszahlungen für sonstige Dienstleistungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen","Auszahlungen für Honorare"],
               datasets: [{
                 label: 'Euro',
-                data: [318800,5300,13300,64100,2200,1600,2000,500,400,9000,41000,1000,14700,400,6000,6500],
+                data: [-318800,-5300,-13300,-64100,-2200,-1600,-2000,-500,-400,-9000,-41000,-1000,-14700,-400,-6000,-6500],
                 borderWidth: 1
               }]
             },
@@ -152,37 +137,13 @@
       
         
         
-          new Chart(document.getElementById('chartjs-f578870d-4d25-4e0d-a3fc-88f0b1783b83'), {
+          new Chart(document.getElementById('chartjs-931d56f6-0c78-4731-94c0-bb7a3f2dbb25'), {
             type: 'doughnut',
             data: {
               labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
               datasets: [{
                 label: 'Euro',
-                data: [3000],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              }
-            }
-          });
-        
-      
-
-      
-        
-        
-          new Chart(document.getElementById('chartjs-cb03a128-5ecf-4c95-a7b2-d8030dffebcf'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
-              datasets: [{
-                label: 'Euro',
-                data: [3000],
+                data: [-3000],
                 borderWidth: 1
               }]
             },

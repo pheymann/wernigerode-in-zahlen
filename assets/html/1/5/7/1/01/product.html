@@ -32,27 +32,25 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 37.500,00€</h5>
-                <canvas id="chartjs-b233b298-e417-424e-9d6c-cd58a53754f6"></canvas>
+                <canvas id="chartjs-a1369acf-ac8b-4497-9721-881990e55efe"></canvas>
               </div>
               <div class="col-6">
-                <h5 class="center">Ausgaben: 374.700,00€</h5>
-                <canvas id="chartjs-b391c2f7-7764-4869-bce6-a4f0fce9fc53"></canvas>
+                <h5 class="center">Ausgaben: -374.700,00€</h5>
+                <canvas id="chartjs-070e597f-dbbc-4778-b4eb-ef7bd61e67d7"></canvas>
               </div>
             </div>
           
       
-          <h3>Investitionen unterhalb der Wertgrenze erwirtschaften <span class="total-cashflow-income">150.000,00€</span></h3>
+          <h3>Investitionen erwirtschaften <span class="total-cashflow-income">150.000,00€</span></h3>
 
           
             
               <div class="padded-chart">
-                <canvas id="chartjs-004725d7-3942-4dce-b967-9cce32a5ae19"></canvas>
+                <canvas id="chartjs-26c0e877-addb-429f-866b-0d35b23e5879"></canvas>
               </div>
             
             
           
-      
-
       
     </div>
 
@@ -85,8 +83,6 @@
 			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
 			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
 			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
-			<br><br>
-			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
     </p>
 
     <footer>
@@ -99,7 +95,7 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-b233b298-e417-424e-9d6c-cd58a53754f6'), {
+          new Chart(document.getElementById('chartjs-a1369acf-ac8b-4497-9721-881990e55efe'), {
             type: 'doughnut',
             data: {
               labels: ["Erträge aus Kostenerstattungen von privaten Unternehmen (HarzAG)"],
@@ -119,13 +115,13 @@
           });
         
         
-          new Chart(document.getElementById('chartjs-b391c2f7-7764-4869-bce6-a4f0fce9fc53'), {
+          new Chart(document.getElementById('chartjs-070e597f-dbbc-4778-b4eb-ef7bd61e67d7'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfe, Unterstützungsleistung für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Besondere Verwaltungs- und Betriebsauszahlungen","Zuweisungen an Zweckverbände","Zuschüsse an sonstige öffentliche Sonderrechnungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten","Erstatt. für die Auszahl. von Dritten aus lfd. Verwaltungstät. an priv. Untern."],
               datasets: [{
                 label: 'Euro',
-                data: [120400,5000,24100,700,5000,2100,1500,12000,150000,15000,900,13000,12000,13000],
+                data: [-120400,-5000,-24100,-700,-5000,-2100,-1500,-12000,-150000,-15000,-900,-13000,-12000,-13000],
                 borderWidth: 1
               }]
             },
@@ -140,10 +136,10 @@
         
       
         
-          new Chart(document.getElementById('chartjs-004725d7-3942-4dce-b967-9cce32a5ae19'), {
+          new Chart(document.getElementById('chartjs-26c0e877-addb-429f-866b-0d35b23e5879'), {
             type: 'doughnut',
             data: {
-              labels: ["Veräußerung von Grundstücken, Gebäuden und Infrastrukturvermögen 5.7.1.01/0003.6821000 Einzahlungen aus Veräußerung von Grundstücken, Gebäuden, Infrastrukturvermögen"],
+              labels: ["Einzahlungen aus Veräußerung von Grundstücken, Gebäuden, Infrastrukturvermögen"],
               datasets: [{
                 label: 'Euro',
                 data: [150000],
@@ -160,8 +156,6 @@
           });
         
         
-      
-
       
     </script>
   </body>

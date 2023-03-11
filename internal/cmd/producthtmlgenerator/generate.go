@@ -15,30 +15,19 @@ import (
 	"wernigode-in-zahlen.de/internal/pkg/shared"
 )
 
-func GenerateProductHTML(financialPlanAJSON string, financialPlanBJSONOpt shared.Option[string], metadataJSON string, year model.BudgetYear, debugRootPath string) string {
-	fpa := fpDecoder.DecodeFromJSON(financialPlanAJSON)
-	metadata := metaDecoder.DecodeFromJSON(metadataJSON)
+func GenerateProductHTML(financialPlanJSON string, metadataJSON string, year model.BudgetYear, debugRootPath string) string {
 	p := message.NewPrinter(language.German)
 
-	fpaBalanceData, fpaCashflow := readBalanceDataAndCashflow(fpa, year)
-
-	fpbBalanceDataOpt := shared.None[[]html.BalanceData]()
-	fpbCashflowOpt := shared.None[float64]()
-	financialPlanBJSONOpt.ForEach(func(financialPlanBJSON string) {
-		fpb := fpDecoder.DecodeFromJSON(financialPlanBJSON)
-
-		fpbBalanceData, fpbCashflow := readBalanceDataAndCashflow(fpb, year)
-
-		fpbBalanceDataOpt.ToSome(fpbBalanceData)
-		fpbCashflowOpt.ToSome(fpbCashflow)
-	})
+	fp := fpDecoder.DecodeFromJSON(financialPlanJSON)
+	fpBalanceData, fpCashflow := readBalanceDataAndCashflow(fp, year)
+	metadata := metaDecoder.DecodeFromJSON(metadataJSON)
 
 	productTmpl := template.Must(template.ParseFiles(debugRootPath + "assets/html/templates/product.template.html"))
 
 	var htmlBytes bytes.Buffer
 	if err := productTmpl.Execute(
 		&htmlBytes,
-		htmlProductEncoder.Encode(metadata, fpaBalanceData, fpaCashflow, fpbBalanceDataOpt, fpbCashflowOpt, year, p),
+		htmlProductEncoder.Encode(metadata, fpBalanceData, fpCashflow, year, p),
 	); err != nil {
 		panic(err)
 	}
@@ -56,8 +45,6 @@ func readBalanceDataAndCashflow(fp model.FinancialPlan, year model.BudgetYear) (
 		balanceIndex := len(balanceData) - 1
 
 		for _, account := range balance.Accounts {
-			accountClass := html.ClassifyAccount(account)
-
 			if shared.IsUnequal(account.Budgets[year], 0) {
 				for _, sub := range account.Subs {
 					if len(sub.Units) > 0 {
@@ -68,7 +55,7 @@ func readBalanceDataAndCashflow(fp model.FinancialPlan, year model.BudgetYear) (
 									Budget: unit.Budgets[year],
 								}
 
-								balanceData[balanceIndex].AddDataPoint(dataPoint, accountClass)
+								balanceData[balanceIndex].AddDataPoint(dataPoint)
 							}
 						}
 					} else {
@@ -78,7 +65,7 @@ func readBalanceDataAndCashflow(fp model.FinancialPlan, year model.BudgetYear) (
 								Budget: sub.Budgets[year],
 							}
 
-							balanceData[balanceIndex].AddDataPoint(dataPoint, accountClass)
+							balanceData[balanceIndex].AddDataPoint(dataPoint)
 						}
 					}
 				}

@@ -32,57 +32,22 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 700,00€</h5>
-                <canvas id="chartjs-5eab75d0-a076-48a8-a011-20c35285481b"></canvas>
+                <canvas id="chartjs-bd46b4f6-17fa-4958-b2af-ed18c2abf804"></canvas>
               </div>
               <div class="col-6">
-                <h5 class="center">Ausgaben: 1.945.300,00€</h5>
-                <canvas id="chartjs-c942d74a-d239-4b14-b5e2-709d67c93bbf"></canvas>
+                <h5 class="center">Ausgaben: -1.945.300,00€</h5>
+                <canvas id="chartjs-e89f3f98-3f86-4455-ae43-4e968aeacb70"></canvas>
               </div>
             </div>
           
       
-          <h3>Investitionen unterhalb der Wertgrenze kosten <span class="total-cashflow-expenses">-641.000,00€</span></h3>
+          <h3>Investitionen kosten <span class="total-cashflow-expenses">-641.000,00€</span></h3>
 
           
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-ffb2baf2-bb3c-4dfe-b061-49b11327c7c1"></canvas>
-              </div>
-            
-          
-      
-
-      
-          <h3>Die Investition "Software" kostet <span class="total-cashflow-expenses">-170.000,00€</span></h3>
-
-          
-            
-            
-              <div class="padded-chart">
-                <canvas id="chartjs-04fc3049-6da7-42d7-afe4-5b08ac962718"></canvas>
-              </div>
-            
-          
-      
-          <h3>Die Investition "Anschaffungen 150 €  bis 1.000 € netto" kostet <span class="total-cashflow-expenses">-155.000,00€</span></h3>
-
-          
-            
-            
-              <div class="padded-chart">
-                <canvas id="chartjs-17c160b3-774e-4b34-baa1-d2c1b0707ddb"></canvas>
-              </div>
-            
-          
-      
-          <h3>Die Investition "Betriebs-und Geschäftsausstattungen" kostet <span class="total-cashflow-expenses">-316.000,00€</span></h3>
-
-          
-            
-            
-              <div class="padded-chart">
-                <canvas id="chartjs-ede2726b-cefd-4aa1-847e-8913142a8727"></canvas>
+                <canvas id="chartjs-bafb9e2e-e26b-4b75-a59a-a736bf85cced"></canvas>
               </div>
             
           
@@ -118,8 +83,6 @@
 			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
 			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
 			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
-			<br><br>
-			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
     </p>
 
     <footer>
@@ -132,7 +95,7 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-5eab75d0-a076-48a8-a011-20c35285481b'), {
+          new Chart(document.getElementById('chartjs-bd46b4f6-17fa-4958-b2af-ed18c2abf804'), {
             type: 'doughnut',
             data: {
               labels: ["Einzahlungen aus dem Verkauf von beweglichen Sachen","Sonstige privatrechtliche Leistungsentgelte"],
@@ -152,13 +115,13 @@
           });
         
         
-          new Chart(document.getElementById('chartjs-c942d74a-d239-4b14-b5e2-709d67c93bbf'), {
+          new Chart(document.getElementById('chartjs-e89f3f98-3f86-4455-ae43-4e968aeacb70'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für Mieten und Pachten","Auszahlungen für Mieten und Pachten EDV","Auszahlungen für Leasing","Auszahlungen für Leasing EDV","Haltung von Fahrzeugen","Erwerb geringwertiger Vermögensgegenstände","Erwerb geringwertiger Vermögensgegenstände EDV","Unterhaltung des sonstigen beweglichen Vermögens","Unterhaltung des sonstigen beweglichen Vermögens EDV","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für Getränke","Auszahlungen für sonstige Dienstleistungen (EDV)","Sonstige Personal- und Versorgungsauszahlungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen","Geschäftsauszahlungen EDV","Auszahlungen für Beitragsservice (GEZ)"],
               datasets: [{
                 label: 'Euro',
-                data: [893700,37200,179700,4300,2300,76000,19100,52000,27000,7000,7000,1500,190000,2500,2000,2000,141500,28000,36000,176000,52500,8000],
+                data: [-893700,-37200,-179700,-4300,-2300,-76000,-19100,-52000,-27000,-7000,-7000,-1500,-190000,-2500,-2000,-2000,-141500,-28000,-36000,-176000,-52500,-8000],
                 borderWidth: 1
               }]
             },
@@ -174,81 +137,13 @@
       
         
         
-          new Chart(document.getElementById('chartjs-ffb2baf2-bb3c-4dfe-b061-49b11327c7c1'), {
+          new Chart(document.getElementById('chartjs-bafb9e2e-e26b-4b75-a59a-a736bf85cced'), {
             type: 'doughnut',
             data: {
               labels: ["Auszahlung für den Erwerb immaterieller Vermögensgegenstände","Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 EUR o. UStr.","Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 EUR EDV o.Ustr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro EDVo.Ustr."],
               datasets: [{
                 label: 'Euro',
-                data: [170000,65000,90000,16000,300000],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              }
-            }
-          });
-        
-      
-
-      
-        
-        
-          new Chart(document.getElementById('chartjs-04fc3049-6da7-42d7-afe4-5b08ac962718'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Auszahlung für den Erwerb immaterieller Vermögensgegenstände"],
-              datasets: [{
-                label: 'Euro',
-                data: [170000],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              }
-            }
-          });
-        
-      
-        
-        
-          new Chart(document.getElementById('chartjs-17c160b3-774e-4b34-baa1-d2c1b0707ddb'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.","Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € EDV o.Ustr."],
-              datasets: [{
-                label: 'Euro',
-                data: [65000,90000],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              }
-            }
-          });
-        
-      
-        
-        
-          new Chart(document.getElementById('chartjs-ede2726b-cefd-4aa1-847e-8913142a8727'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro EDVo.Ustr."],
-              datasets: [{
-                label: 'Euro',
-                data: [16000,300000],
+                data: [-170000,-65000,-90000,-16000,-300000],
                 borderWidth: 1
               }]
             },

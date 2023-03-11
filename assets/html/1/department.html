@@ -17,7 +17,7 @@
       In 2023 planen wir
     </p>
 
-    <h2 class="total-cashflow-expenses center">-6.663.000,00€<sub style="font-size: 0.4em;">(A/B)</sub></h2>
+    <h2 class="total-cashflow-expenses center">-6.172.000,00€</h2>
 
     <p>
       für diesen Fachbereich auszugeben. Dabei geht das Geld an die folgenden <b>16 Produkte</b>. Klicke auf eines in den Diagrammen, um mehr zu erfahren.
@@ -26,12 +26,12 @@
     <div class="container">
       <div class="row">
         <div class="col-6">
-          <h5 class="center">Einnahmen: 434.700,00€<sub style="font-size: 0.4em;">(A/B)</sub></h5>
-          <canvas id="chartjs-44f0905b-ba00-4a53-8983-c3f3ae15f2df"></canvas>
+          <h5 class="center">Einnahmen: 434.700,00€</h5>
+          <canvas id="chartjs-bb64a2ce-4047-44d3-ac92-7e2c59f0d026"></canvas>
         </div>
         <div class="col-6">
-          <h5 class="center">Ausgaben: -7.097.700,00€<sub style="font-size: 0.4em;">(A/B)</sub></h5>
-          <canvas id="chartjs-57f61c2f-292f-4722-ad78-6f82a3684bcf"></canvas>
+          <h5 class="center">Ausgaben: -6.606.700,00€</h5>
+          <canvas id="chartjs-64601c45-d672-4807-9336-adbf8290354c"></canvas>
         </div>
       </div>
     </div>
@@ -41,13 +41,13 @@
         <tbody>
           <tr>
             <th>Produkt</th>
-            <th>Teilfinanzplan A</th>
-            <th>Teilfinanzplan B</th>
+            <th>Finanzplan</th>
+            <th>Davon über der Wertgrenze</th>
           </tr>
           <tr>
             <th></th>
             <th>-6.172.000,00€</th>
-            <th>-491.000,00€</th>
+            <th>-641.000,00€</th>
           </tr>
 
           
@@ -138,7 +138,7 @@
             <tr>
               <td><a href="/1/5/7/1/01/product.html">Wirtschaftsförderung</a></td>
               <td>-187.200,00€</td>
-              <td>150.000,00€</td>
+              <td>0,00€</td>
             </tr>
           
             <tr>
@@ -159,10 +159,7 @@
       Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2022.
 			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
 			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
-			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
-			<br><br>
-			Die Budgets auf dieser Webseite ergeben sich aus dem Teilfinanzplan A und B und weichen damit vom Haushaltsplan ab, der
-			nur Teilfinanzplan A Daten enthält.
+			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>.
     </p>
 
     <footer>
@@ -174,7 +171,7 @@
 
     <script>
       var incomeProductLinks = ["/1/1/1/1/02/product.html","/1/5/7/5/01/product.html"];
-      var incomeCanvas = document.getElementById('chartjs-44f0905b-ba00-4a53-8983-c3f3ae15f2df');
+      var incomeCanvas = document.getElementById('chartjs-bb64a2ce-4047-44d3-ac92-7e2c59f0d026');
       var incomeChart = new Chart(incomeCanvas, {
         type: 'doughnut',
         data: {
@@ -199,14 +196,14 @@
       });
 
       var expenesesProductLinks = ["/1/1/1/1/01/product.html","/1/1/1/1/04/product.html","/1/1/1/1/05/product.html","/1/1/1/1/06/product.html","/1/1/1/1/08/product.html","/1/1/1/1/09/product.html","/1/1/1/1/10/product.html","/1/1/1/1/16/product.html","/1/1/1/1/17/product.html","/1/1/2/1/01/product.html","/1/2/6/2/01/product.html","/1/3/5/1/01/product.html","/1/5/5/1/02/product.html","/1/5/7/1/01/product.html"];
-      var expensesCanvas = document.getElementById('chartjs-57f61c2f-292f-4722-ad78-6f82a3684bcf');
+      var expensesCanvas = document.getElementById('chartjs-64601c45-d672-4807-9336-adbf8290354c');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {
           labels: ["Verwaltungssteuerung","Gleichstellungsbeauftragte","Personalvertretung","Rechnungsprüfung","Gemeindegremien","Personalangelegenheiten","Zentrale Dienste","Rechtsangelegenheiten","Stiftungen","Wahlen und Statistik","Philharmonisches Kammerorchester GmbH","Förderung von zusätzlichen Arbeitsplätzen","Park-und Garten GmbH","Wirtschaftsförderung"],
           datasets: [{
             label: 'Euro',
-            data: [-689000,-36700,-95800,-159100,-135200,-1041500,-3226600,-432800,-358700,-500,-360400,-14200,-510000,-37200],
+            data: [-689000,-36700,-95800,-159100,-135200,-1041500,-2585600,-432800,-358700,-500,-360400,-14200,-510000,-187200],
             borderWidth: 1
           }]
         },

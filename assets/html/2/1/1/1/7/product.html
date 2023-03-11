@@ -32,16 +32,14 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 151.800,00€</h5>
-                <canvas id="chartjs-b801a90b-e304-4419-9212-a03e62e98a09"></canvas>
+                <canvas id="chartjs-ba39f306-65eb-4035-825f-378f5fac5e78"></canvas>
               </div>
               <div class="col-6">
-                <h5 class="center">Ausgaben: 1.702.300,00€</h5>
-                <canvas id="chartjs-1eddf248-8b5f-4847-9066-f40243e74016"></canvas>
+                <h5 class="center">Ausgaben: -1.702.300,00€</h5>
+                <canvas id="chartjs-84749d9e-f958-4cda-a866-6ebb7b52210d"></canvas>
               </div>
             </div>
           
-      
-
       
     </div>
 
@@ -74,8 +72,6 @@
 			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
 			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
 			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
-			<br><br>
-			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
     </p>
 
     <footer>
@@ -88,7 +84,7 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-b801a90b-e304-4419-9212-a03e62e98a09'), {
+          new Chart(document.getElementById('chartjs-ba39f306-65eb-4035-825f-378f5fac5e78'), {
             type: 'doughnut',
             data: {
               labels: ["Verwaltungsgebühren","Einzahlungen aus Kostenerstattungen von sonstigen öffentlichen Sonderrechnungen","Säumniszuschläge","Andere sonstige Einzahlungen aus laufender Verwaltungstätigkeit"],
@@ -108,13 +104,13 @@
           });
         
         
-          new Chart(document.getElementById('chartjs-1eddf248-8b5f-4847-9066-f40243e74016'), {
+          new Chart(document.getElementById('chartjs-84749d9e-f958-4cda-a866-6ebb7b52210d'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für sonstige Dienstleistungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten"],
               datasets: [{
                 label: 'Euro',
-                data: [224900,1023400,141200,43200,205600,4900,32000,100,27000],
+                data: [-224900,-1023400,-141200,-43200,-205600,-4900,-32000,-100,-27000],
                 borderWidth: 1
               }]
             },
@@ -127,8 +123,6 @@
             }
           });
         
-      
-
       
     </script>
   </body>

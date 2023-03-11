@@ -32,35 +32,22 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 265.000,00€</h5>
-                <canvas id="chartjs-1165f219-b08a-41b8-9e5b-958419250d94"></canvas>
+                <canvas id="chartjs-6b70912b-2b96-4b9b-87ee-ce93143e03a7"></canvas>
               </div>
               <div class="col-6">
-                <h5 class="center">Ausgaben: 858.600,00€</h5>
-                <canvas id="chartjs-52114c29-178d-4c8a-9c44-7100adddb903"></canvas>
+                <h5 class="center">Ausgaben: -858.600,00€</h5>
+                <canvas id="chartjs-5a767d35-d833-4cc2-834f-efeb95518cfb"></canvas>
               </div>
             </div>
           
       
-          <h3>Investitionen unterhalb der Wertgrenze kosten <span class="total-cashflow-expenses">-85.000,00€</span></h3>
+          <h3>Investitionen kosten <span class="total-cashflow-expenses">-85.000,00€</span></h3>
 
           
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-ee5921df-c66f-4ebb-b984-b1314083ccc6"></canvas>
-              </div>
-            
-          
-      
-
-      
-          <h3>Die Investition "Anschaffungen 150 €  bis 1.000 € netto" kostet <span class="total-cashflow-expenses">-5.000,00€</span></h3>
-
-          
-            
-            
-              <div class="padded-chart">
-                <canvas id="chartjs-a3556b21-d853-4268-86d2-46c05dfef18a"></canvas>
+                <canvas id="chartjs-5bdfb9a1-8c70-42e6-bfdc-5ad3b6b73953"></canvas>
               </div>
             
           
@@ -96,8 +83,6 @@
 			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
 			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
 			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
-			<br><br>
-			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
     </p>
 
     <footer>
@@ -110,7 +95,7 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-1165f219-b08a-41b8-9e5b-958419250d94'), {
+          new Chart(document.getElementById('chartjs-6b70912b-2b96-4b9b-87ee-ce93143e03a7'), {
             type: 'doughnut',
             data: {
               labels: ["Zuweisungen für laufende Zwecke vom Land","Verwaltungsgebühren","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus dem Verkauf von Vorräten"],
@@ -130,13 +115,13 @@
           });
         
         
-          new Chart(document.getElementById('chartjs-52114c29-178d-4c8a-9c44-7100adddb903'), {
+          new Chart(document.getElementById('chartjs-5a767d35-d833-4cc2-834f-efeb95518cfb'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung des sonstigen unbeweglichen Vermögens","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für sonstige Dienstleistungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten","Erstattungen für die Auszahl. von Dritten aus lfd. Verwaltungstät. an das Land","Erstatt. für die Auszahl. von Dritten aus lfd. Verwaltungstät. an übrige Ber."],
               datasets: [{
                 label: 'Euro',
-                data: [296900,12400,59700,1600,400000,3000,20000,1000,1000,2500,30000,500,5000,10000,11000,4000],
+                data: [-296900,-12400,-59700,-1600,-400000,-3000,-20000,-1000,-1000,-2500,-30000,-500,-5000,-10000,-11000,-4000],
                 borderWidth: 1
               }]
             },
@@ -152,37 +137,13 @@
       
         
         
-          new Chart(document.getElementById('chartjs-ee5921df-c66f-4ebb-b984-b1314083ccc6'), {
+          new Chart(document.getElementById('chartjs-5bdfb9a1-8c70-42e6-bfdc-5ad3b6b73953'), {
             type: 'doughnut',
             data: {
               labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.","Auszahlungen für Tiefbaumaßnahmen"],
               datasets: [{
                 label: 'Euro',
-                data: [5000,80000],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              }
-            }
-          });
-        
-      
-
-      
-        
-        
-          new Chart(document.getElementById('chartjs-a3556b21-d853-4268-86d2-46c05dfef18a'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr."],
-              datasets: [{
-                label: 'Euro',
-                data: [5000],
+                data: [-5000,-80000],
                 borderWidth: 1
               }]
             },

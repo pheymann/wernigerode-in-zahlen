@@ -32,32 +32,23 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 3.400,00€</h5>
-                <canvas id="chartjs-6a647de4-1e70-4557-bae1-cc8da814c39a"></canvas>
+                <canvas id="chartjs-afae3c9b-55a4-4d2c-9aed-3c7ff73bb73d"></canvas>
               </div>
               <div class="col-6">
-                <h5 class="center">Ausgaben: 133.600,00€</h5>
-                <canvas id="chartjs-12e8077e-6a8f-4c98-b680-4d7e66bca72b"></canvas>
+                <h5 class="center">Ausgaben: -133.600,00€</h5>
+                <canvas id="chartjs-7d515ea8-8aa7-4acd-bde2-3e4009578e08"></canvas>
               </div>
             </div>
           
       
-          <h3>Investitionen unterhalb der Wertgrenze kosten <span class="total-cashflow-expenses">-2.000,00€</span></h3>
+          <h3>Investitionen kosten <span class="total-cashflow-expenses">-2.000,00€</span></h3>
 
           
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-d918a3dc-4750-4ff1-b7f9-03637a7c6897"></canvas>
+                <canvas id="chartjs-aca3e337-b216-41bf-ade7-c7553ffbfa5c"></canvas>
               </div>
-            
-          
-      
-
-      
-          <h3>Investitionen oberhalb der Wertgrenze erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
-
-          
-            
             
           
       
@@ -92,8 +83,6 @@
 			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
 			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
 			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
-			<br><br>
-			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
     </p>
 
     <footer>
@@ -106,7 +95,7 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-6a647de4-1e70-4557-bae1-cc8da814c39a'), {
+          new Chart(document.getElementById('chartjs-afae3c9b-55a4-4d2c-9aed-3c7ff73bb73d'), {
             type: 'doughnut',
             data: {
               labels: ["Verwaltungsgebühren"],
@@ -126,13 +115,13 @@
           });
         
         
-          new Chart(document.getElementById('chartjs-12e8077e-6a8f-4c98-b680-4d7e66bca72b'), {
+          new Chart(document.getElementById('chartjs-7d515ea8-8aa7-4acd-bde2-3e4009578e08'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung des sonstigen beweglichen Vermögens","Besondere Verwaltungs- und Betriebsauszahlungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen"],
               datasets: [{
                 label: 'Euro',
-                data: [96000,4000,19200,600,900,12000,300,600],
+                data: [-96000,-4000,-19200,-600,-900,-12000,-300,-600],
                 borderWidth: 1
               }]
             },
@@ -148,13 +137,13 @@
       
         
         
-          new Chart(document.getElementById('chartjs-d918a3dc-4750-4ff1-b7f9-03637a7c6897'), {
+          new Chart(document.getElementById('chartjs-aca3e337-b216-41bf-ade7-c7553ffbfa5c'), {
             type: 'doughnut',
             data: {
               labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr."],
               datasets: [{
                 label: 'Euro',
-                data: [2000],
+                data: [-2000],
                 borderWidth: 1
               }]
             },
@@ -166,11 +155,6 @@
               }
             }
           });
-        
-      
-
-      
-        
         
       
     </script>

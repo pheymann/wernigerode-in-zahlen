@@ -1,8 +1,7 @@
 {
   "ID": "2",
   "DepartmentName": "Budget Finanzen",
-  "CashflowTotal": 36189200,
-  "CashflowFinancialPlanA": 34789300,
-  "CashflowFinancialPlanB": 1399900,
+  "CashflowTotal": 34789300,
+  "CashflowB": 1399900,
   "NumberOfProducts": 8
 }

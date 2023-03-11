@@ -7,12 +7,10 @@ import (
 )
 
 type Product struct {
-	Meta                 model.Metadata
-	FpaBalanceSections   []BalanceSection
-	HasFpbBalanceSection bool
-	FpbBalanceSection    BalanceSection
-	Copy                 ProductCopy
-	CSS                  ProductCSS
+	Meta            model.Metadata
+	BalanceSections []BalanceSection
+	Copy            ProductCopy
+	CSS             ProductCSS
 }
 
 type ProductCopy struct {

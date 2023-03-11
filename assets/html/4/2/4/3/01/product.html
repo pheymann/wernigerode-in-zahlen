@@ -32,12 +32,10 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-0b2804bc-f7c1-4dc5-b202-c250f9ea47b4"></canvas>
+                <canvas id="chartjs-927ca543-5013-4100-aa22-b5c7833955e5"></canvas>
               </div>
             
           
-      
-
       
     </div>
 
@@ -70,8 +68,6 @@
 			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
 			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
 			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
-			<br><br>
-			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
     </p>
 
     <footer>
@@ -85,13 +81,13 @@
       
         
         
-          new Chart(document.getElementById('chartjs-0b2804bc-f7c1-4dc5-b202-c250f9ea47b4'), {
+          new Chart(document.getElementById('chartjs-927ca543-5013-4100-aa22-b5c7833955e5'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für Mieten und Pachten","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für sonstige Dienstleistungen","Geschäftsauszahlungen"],
               datasets: [{
                 label: 'Euro',
-                data: [98500,279200,44800,11800,56100,1500,12700,3000,10000,100],
+                data: [-98500,-279200,-44800,-11800,-56100,-1500,-12700,-3000,-10000,-100],
                 borderWidth: 1
               }]
             },
@@ -104,8 +100,6 @@
             }
           });
         
-      
-
       
     </script>
   </body>

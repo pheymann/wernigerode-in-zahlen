@@ -110,7 +110,6 @@ func DecodeFromCSV(rows []model.RawCSVRow) model.FinancialPlan {
 		}
 	}
 
-	financialPlanB.RemoveLastAccountBalance()
 	return *financialPlanB
 }
 

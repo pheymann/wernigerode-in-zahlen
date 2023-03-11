@@ -13,10 +13,10 @@ type DataPoint struct {
 	Budget float64
 }
 
-func (b *BalanceData) AddDataPoint(dataPoint DataPoint, class CashflowClass) {
-	if class == CashflowClassIncome {
-		b.Income = append(b.Income, dataPoint)
-	} else {
+func (b *BalanceData) AddDataPoint(dataPoint DataPoint) {
+	if dataPoint.Budget < 0 {
 		b.Expenses = append(b.Expenses, dataPoint)
+	} else {
+		b.Income = append(b.Income, dataPoint)
 	}
 }

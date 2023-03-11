@@ -17,7 +17,7 @@
       In 2023 planen wir
     </p>
 
-    <h2 class="total-cashflow-income center">36.189.200,00€<sub style="font-size: 0.4em;">(A/B)</sub></h2>
+    <h2 class="total-cashflow-income center">34.789.300,00€</h2>
 
     <p>
       über diesen Fachbereich einzunehmen. Dabei geht das Geld an die folgenden <b>8 Produkte</b>. Klicke auf eines in den Diagrammen, um mehr zu erfahren.
@@ -26,12 +26,12 @@
     <div class="container">
       <div class="row">
         <div class="col-6">
-          <h5 class="center">Einnahmen: 38.694.100,00€<sub style="font-size: 0.4em;">(A/B)</sub></h5>
-          <canvas id="chartjs-c26724c1-8ca7-4d0f-be2f-5126ffd1b70e"></canvas>
+          <h5 class="center">Einnahmen: 37.294.200,00€</h5>
+          <canvas id="chartjs-0befce18-0e07-4653-a472-86ee851f8ed3"></canvas>
         </div>
         <div class="col-6">
-          <h5 class="center">Ausgaben: -2.504.900,00€<sub style="font-size: 0.4em;">(A/B)</sub></h5>
-          <canvas id="chartjs-663f9832-4284-4088-85cb-30bc269fb548"></canvas>
+          <h5 class="center">Ausgaben: -2.504.900,00€</h5>
+          <canvas id="chartjs-c2845746-1be4-4ccc-bf17-1d468d9c3d2f"></canvas>
         </div>
       </div>
     </div>
@@ -41,8 +41,8 @@
         <tbody>
           <tr>
             <th>Produkt</th>
-            <th>Teilfinanzplan A</th>
-            <th>Teilfinanzplan B</th>
+            <th>Finanzplan</th>
+            <th>Davon über der Wertgrenze</th>
           </tr>
           <tr>
             <th></th>
@@ -111,10 +111,7 @@
       Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2022.
 			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
 			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
-			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
-			<br><br>
-			Die Budgets auf dieser Webseite ergeben sich aus dem Teilfinanzplan A und B und weichen damit vom Haushaltsplan ab, der
-			nur Teilfinanzplan A Daten enthält.
+			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>.
     </p>
 
     <footer>
@@ -126,14 +123,14 @@
 
     <script>
       var incomeProductLinks = ["/2/5/3/1/01/product.html","/2/5/3/2/01/product.html","/2/5/3/3/01/product.html","/2/5/3/4/01/product.html","/2/5/3/5/01/product.html","/2/6/1/1/01/product.html"];
-      var incomeCanvas = document.getElementById('chartjs-c26724c1-8ca7-4d0f-be2f-5126ffd1b70e');
+      var incomeCanvas = document.getElementById('chartjs-0befce18-0e07-4653-a472-86ee851f8ed3');
       var incomeChart = new Chart(incomeCanvas, {
         type: 'doughnut',
         data: {
           labels: ["Elektrizitätsversorgung (Konzessionsabgabe)","Gasversorgung (Konzessionsabgabe)","Wasserversorgung (Konzessionsabgabe)","Fernwärmeversorgung (Konzessionsabgabe)","Gewinnabführung Stadtwerke","Steuern, allgemeine Zuweisungen, allgemeine Umlagen"],
           datasets: [{
             label: 'Euro',
-            data: [1170500,187800,430000,40000,3900000,32965800],
+            data: [1170500,187800,430000,40000,3900000,31565900],
             borderWidth: 1
           }]
         },
@@ -151,7 +148,7 @@
       });
 
       var expenesesProductLinks = ["/2/1/1/1/07/product.html","/2/6/1/2/01/product.html"];
-      var expensesCanvas = document.getElementById('chartjs-663f9832-4284-4088-85cb-30bc269fb548');
+      var expensesCanvas = document.getElementById('chartjs-c2845746-1be4-4ccc-bf17-1d468d9c3d2f');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {

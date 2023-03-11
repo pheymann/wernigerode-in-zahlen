@@ -13,8 +13,7 @@ import (
 
 func Generate(departments []model.CompressedDepartment, debugRootPath string) string {
 	var cashflowTotal = 0.0
-	var cashflowFinancialPlanA = 0.0
-	var cashflowFinancialPlanB = 0.0
+	var cashflowB = 0.0
 
 	var incomeTotalCashFlow = 0.0
 	var incomeDepartmentLinks = []string{}
@@ -32,8 +31,7 @@ func Generate(departments []model.CompressedDepartment, debugRootPath string) st
 
 	for _, department := range departments {
 		cashflowTotal += department.CashflowTotal
-		cashflowFinancialPlanA += department.CashflowFinancialPlanA
-		cashflowFinancialPlanB += department.CashflowFinancialPlanB
+		cashflowB += department.CashflowB
 
 		if department.CashflowTotal > 0 {
 			incomeTotalCashFlow += department.CashflowTotal
@@ -63,8 +61,7 @@ func Generate(departments []model.CompressedDepartment, debugRootPath string) st
 			year,
 
 			cashflowTotal,
-			cashflowFinancialPlanA,
-			cashflowFinancialPlanB,
+			cashflowB,
 
 			incomeTotalCashFlow,
 			incomeDepartmentLinks,

@@ -32,34 +32,21 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 44.376.700,00€</h5>
-                <canvas id="chartjs-4d1ea7ab-6a6c-4d75-99f4-ef99a42b4ee8"></canvas>
+                <canvas id="chartjs-24443b0c-33ed-4883-9ad7-aa61c68635a1"></canvas>
               </div>
               <div class="col-6">
-                <h5 class="center">Ausgaben: 14.210.700,00€</h5>
-                <canvas id="chartjs-07fec5cf-8ce2-48e0-9176-e55d643df61c"></canvas>
+                <h5 class="center">Ausgaben: -14.210.700,00€</h5>
+                <canvas id="chartjs-f81ed911-3c63-4fc9-86b4-0a0cc795f405"></canvas>
               </div>
             </div>
           
       
-          <h3>Investitionen unterhalb der Wertgrenze erwirtschaften <span class="total-cashflow-income">1.399.900,00€</span></h3>
+          <h3>Investitionen erwirtschaften <span class="total-cashflow-income">1.399.900,00€</span></h3>
 
           
             
               <div class="padded-chart">
-                <canvas id="chartjs-48640cb1-b04b-49ff-9218-48ba861023cc"></canvas>
-              </div>
-            
-            
-          
-      
-
-      
-          <h3>Die Investition "Investitionspauschale" erwirtschaftet <span class="total-cashflow-income">1.399.900,00€</span></h3>
-
-          
-            
-              <div class="padded-chart">
-                <canvas id="chartjs-f87c2cc1-1959-4a8d-80cd-470daba9e0c1"></canvas>
+                <canvas id="chartjs-0aae56a2-6351-472c-b4b8-dbdba10aaffa"></canvas>
               </div>
             
             
@@ -96,8 +83,6 @@
 			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
 			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
 			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
-			<br><br>
-			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
     </p>
 
     <footer>
@@ -110,13 +95,13 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-4d1ea7ab-6a6c-4d75-99f4-ef99a42b4ee8'), {
+          new Chart(document.getElementById('chartjs-24443b0c-33ed-4883-9ad7-aa61c68635a1'), {
             type: 'doughnut',
             data: {
-              labels: ["Steuern und ähnliche Abgaben 6.1.1.01.6011000 6.1.1.01.6012000 6.1.1.01.6013000 6.1.1.01.6021000 6.1.1.01.6022000 6.1.1.01.6031000 6.1.1.01.6032000","Zuweisungen und allgemeine Umlagen 6.1.1.01.6111000 Ergänzungszuweisungen vom Land 6.1.1.01.6131000","Zinsen und ähnliche Einzahlungen 6.1.1.01.6691000"],
+              labels: ["Grundsteuer A","Grundsteuer B","Gewerbesteuer","Gemeindeanteil an der Einkommensteuer","Gemeindeanteil an der Umsatzsteuer","Vergnügungssteuer","Hundesteuer","Schlüsselzuweisungen und Besondere Ergänzungszuweisungen vom Land","Sonstige allgemeine Zuweisungen vom Land","Sonstige Finanzeinzahlungen"],
               datasets: [{
                 label: 'Euro',
-                data: [35976700,8300000,100000],
+                data: [74400,3933500,16212700,11687600,3589100,330300,149100,5800000,2500000,100000],
                 borderWidth: 1
               }]
             },
@@ -130,13 +115,13 @@
           });
         
         
-          new Chart(document.getElementById('chartjs-07fec5cf-8ce2-48e0-9176-e55d643df61c'), {
+          new Chart(document.getElementById('chartjs-f81ed911-3c63-4fc9-86b4-0a0cc795f405'), {
             type: 'doughnut',
             data: {
-              labels: ["Transferauszahlungen 6.1.1.01.7341000 6.1.1.01.7372000","Zinsen und ähnliche Auszahlungen 6.1.1.01.7592000"],
+              labels: ["Gewerbesteuerumlage","Allgemeine Umlagen an Landkreise","Verzinsung von Steuererstattungen"],
               datasets: [{
                 label: 'Euro',
-                data: [14160700,50000],
+                data: [-1265800,-12894900,-50000],
                 borderWidth: 1
               }]
             },
@@ -151,31 +136,7 @@
         
       
         
-          new Chart(document.getElementById('chartjs-48640cb1-b04b-49ff-9218-48ba861023cc'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Zuwendungen für Investitonen und Investitionsförderungsmaßnahmen 6.1.1.01/8000.6811000 u.Investitionsfördermaßnahmen Land 6.1.1.01/8001.6811000 u.Investitionsfördermaßnahmen Land"],
-              datasets: [{
-                label: 'Euro',
-                data: [1399900],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              }
-            }
-          });
-        
-        
-      
-
-      
-        
-          new Chart(document.getElementById('chartjs-f87c2cc1-1959-4a8d-80cd-470daba9e0c1'), {
+          new Chart(document.getElementById('chartjs-0aae56a2-6351-472c-b4b8-dbdba10aaffa'), {
             type: 'doughnut',
             data: {
               labels: ["Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land"],

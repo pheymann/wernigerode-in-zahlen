@@ -32,12 +32,10 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-4709a0ab-f3e1-45f4-94ce-777560a72ee7"></canvas>
+                <canvas id="chartjs-bd6b08b5-3bdd-456e-937d-2376f551c6bd"></canvas>
               </div>
             
           
-      
-
       
     </div>
 
@@ -70,8 +68,6 @@
 			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
 			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
 			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
-			<br><br>
-			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
     </p>
 
     <footer>
@@ -85,13 +81,13 @@
       
         
         
-          new Chart(document.getElementById('chartjs-4709a0ab-f3e1-45f4-94ce-777560a72ee7'), {
+          new Chart(document.getElementById('chartjs-bd6b08b5-3bdd-456e-937d-2376f551c6bd'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen fü Beschäftigter","Besondere Verwaltungs- und Betriebsauszahlungen","Zuschüsse an übrige Bereiche"],
               datasets: [{
                 label: 'Euro',
-                data: [24700,1100,5000,300,2100,3500],
+                data: [-24700,-1100,-5000,-300,-2100,-3500],
                 borderWidth: 1
               }]
             },
@@ -104,8 +100,6 @@
             }
           });
         
-      
-
       
     </script>
   </body>

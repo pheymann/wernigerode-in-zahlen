@@ -29,34 +29,25 @@
           <h3>Die Verwaltung erwirtschaftet <span class="total-cashflow-income">144.900,00€</span></h3>
 
           
-            
-            
-              <div class="padded-chart">
-                <canvas id="chartjs-fee0c3d0-8dfd-43ac-b23a-bffb6bca4e62"></canvas>
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 270.000,00€</h5>
+                <canvas id="chartjs-7030c347-2ac5-4579-a2ee-442416944168"></canvas>
               </div>
-            
-          
-      
-          <h3>Investitionen unterhalb der Wertgrenze kosten <span class="total-cashflow-expenses">-10.000,00€</span></h3>
-
-          
-            
-            
-              <div class="padded-chart">
-                <canvas id="chartjs-a65f994b-3c84-446c-8b97-d095c6096e39"></canvas>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: -125.100,00€</h5>
+                <canvas id="chartjs-468a6d4b-9a7e-45f1-9522-0d3c43766734"></canvas>
               </div>
-            
+            </div>
           
       
-
-      
-          <h3>Die Investition "Betriebs-und Geschäftsausstattungen" kostet <span class="total-cashflow-expenses">-10.000,00€</span></h3>
+          <h3>Investitionen kosten <span class="total-cashflow-expenses">-10.000,00€</span></h3>
 
           
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-eae1a254-9f34-49bf-9124-51e97a99e7c3"></canvas>
+                <canvas id="chartjs-b0118fe3-bcd6-4032-8640-466149a45514"></canvas>
               </div>
             
           
@@ -92,8 +83,6 @@
 			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
 			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
 			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
-			<br><br>
-			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
     </p>
 
     <footer>
@@ -106,14 +95,33 @@
     <script>
       
         
-        
-          new Chart(document.getElementById('chartjs-fee0c3d0-8dfd-43ac-b23a-bffb6bca4e62'), {
+          new Chart(document.getElementById('chartjs-7030c347-2ac5-4579-a2ee-442416944168'), {
             type: 'doughnut',
             data: {
-              labels: ["Benutzungsgebühren und ähnliche Entgelte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Unterhaltung der Grundstücke und baulichen Anlagen-Gebäudemanagement","Unterhaltung des sonstigen unbeweglichen Vermögens","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Auszahlungen für sonstige Dienstleistungen","Geschäftsauszahlungen"],
+              labels: ["Benutzungsgebühren und ähnliche Entgelte"],
               datasets: [{
                 label: 'Euro',
-                data: [270000,30000,1600,6100,400,2000,25000,1000,50000,2000,500,5000,1500],
+                data: [270000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+        
+          new Chart(document.getElementById('chartjs-468a6d4b-9a7e-45f1-9522-0d3c43766734'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Unterhaltung der Grundstücke und baulichen Anlagen-Gebäudemanagement","Unterhaltung des sonstigen unbeweglichen Vermögens","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Auszahlungen für sonstige Dienstleistungen","Geschäftsauszahlungen"],
+              datasets: [{
+                label: 'Euro',
+                data: [-30000,-1600,-6100,-400,-2000,-25000,-1000,-50000,-2000,-500,-5000,-1500],
                 borderWidth: 1
               }]
             },
@@ -129,37 +137,13 @@
       
         
         
-          new Chart(document.getElementById('chartjs-a65f994b-3c84-446c-8b97-d095c6096e39'), {
+          new Chart(document.getElementById('chartjs-b0118fe3-bcd6-4032-8640-466149a45514'), {
             type: 'doughnut',
             data: {
               labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
               datasets: [{
                 label: 'Euro',
-                data: [10000],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              }
-            }
-          });
-        
-      
-
-      
-        
-        
-          new Chart(document.getElementById('chartjs-eae1a254-9f34-49bf-9124-51e97a99e7c3'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
-              datasets: [{
-                label: 'Euro',
-                data: [10000],
+                data: [-10000],
                 borderWidth: 1
               }]
             },

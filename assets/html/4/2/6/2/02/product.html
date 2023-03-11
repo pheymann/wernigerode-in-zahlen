@@ -32,16 +32,14 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 63.000,00€</h5>
-                <canvas id="chartjs-01f08ab6-ef82-46ed-abc9-23c07e71d059"></canvas>
+                <canvas id="chartjs-845d3b89-9440-4432-b09a-2535ba086ef8"></canvas>
               </div>
               <div class="col-6">
-                <h5 class="center">Ausgaben: 73.000,00€</h5>
-                <canvas id="chartjs-4cf90d00-c04b-4bc9-9f2b-20fe16e11f1d"></canvas>
+                <h5 class="center">Ausgaben: -73.000,00€</h5>
+                <canvas id="chartjs-a62abf68-5f4b-4f76-a72e-935ee1b1f5c9"></canvas>
               </div>
             </div>
           
-      
-
       
     </div>
 
@@ -74,8 +72,6 @@
 			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
 			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
 			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
-			<br><br>
-			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
     </p>
 
     <footer>
@@ -88,7 +84,7 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-01f08ab6-ef82-46ed-abc9-23c07e71d059'), {
+          new Chart(document.getElementById('chartjs-845d3b89-9440-4432-b09a-2535ba086ef8'), {
             type: 'doughnut',
             data: {
               labels: ["Zuweisungen für laufende Zwecke vom Land","Zuschüsse für laufende Zwecke von privaten Unternehmen (Spenden)","Zuschüsse für laufende Zwecke von übrigen Bereichen","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus dem Verkauf von Vorräten"],
@@ -108,13 +104,13 @@
           });
         
         
-          new Chart(document.getElementById('chartjs-4cf90d00-c04b-4bc9-9f2b-20fe16e11f1d'), {
+          new Chart(document.getElementById('chartjs-a62abf68-5f4b-4f76-a72e-935ee1b1f5c9'), {
             type: 'doughnut',
             data: {
               labels: ["Auszahlungen für Mieten und Pachten","Unterhaltung des sonstigen beweglichen Vermögens","Besondere Verwaltungs- und Betriebsauszahlungen"],
               datasets: [{
                 label: 'Euro',
-                data: [13000,2000,58000],
+                data: [-13000,-2000,-58000],
                 borderWidth: 1
               }]
             },
@@ -127,8 +123,6 @@
             }
           });
         
-      
-
       
     </script>
   </body>

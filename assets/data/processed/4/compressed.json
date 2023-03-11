@@ -1,8 +1,7 @@
 {
   "ID": "4",
   "DepartmentName": "Budget Bürgerservice",
-  "CashflowTotal": -8763200,
-  "CashflowFinancialPlanA": -7125300,
-  "CashflowFinancialPlanB": -1637900,
+  "CashflowTotal": -7125300,
+  "CashflowB": -1639900,
   "NumberOfProducts": 11
 }

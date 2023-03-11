@@ -32,31 +32,18 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-ac53d798-6f14-4f30-83a8-a53e6a49f133"></canvas>
+                <canvas id="chartjs-250dbf40-b267-4efe-8029-1193c38eb546"></canvas>
               </div>
             
           
       
-          <h3>Investitionen unterhalb der Wertgrenze kosten <span class="total-cashflow-expenses">-60.000,00€</span></h3>
+          <h3>Investitionen kosten <span class="total-cashflow-expenses">-60.000,00€</span></h3>
 
           
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-3fe96eda-79f8-4467-8ed9-99ed0375635e"></canvas>
-              </div>
-            
-          
-      
-
-      
-          <h3>Die Investition "Betriebsvorrichtungen" kostet <span class="total-cashflow-expenses">-60.000,00€</span></h3>
-
-          
-            
-            
-              <div class="padded-chart">
-                <canvas id="chartjs-bde5f84f-c3b5-42a8-ad87-b27d081f61b4"></canvas>
+                <canvas id="chartjs-d4f52b4f-b588-4a57-9491-536b67b75c3c"></canvas>
               </div>
             
           
@@ -92,8 +79,6 @@
 			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
 			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
 			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
-			<br><br>
-			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
     </p>
 
     <footer>
@@ -107,13 +92,13 @@
       
         
         
-          new Chart(document.getElementById('chartjs-ac53d798-6f14-4f30-83a8-a53e6a49f133'), {
+          new Chart(document.getElementById('chartjs-250dbf40-b267-4efe-8029-1193c38eb546'), {
             type: 'doughnut',
             data: {
               labels: ["Unterhaltung des sonstigen unbeweglichen Vermögens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Geschäftsauszahlungen"],
               datasets: [{
                 label: 'Euro',
-                data: [30000,500,500,500,20000,100],
+                data: [-30000,-500,-500,-500,-20000,-100],
                 borderWidth: 1
               }]
             },
@@ -129,37 +114,13 @@
       
         
         
-          new Chart(document.getElementById('chartjs-3fe96eda-79f8-4467-8ed9-99ed0375635e'), {
+          new Chart(document.getElementById('chartjs-d4f52b4f-b588-4a57-9491-536b67b75c3c'), {
             type: 'doughnut',
             data: {
               labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
               datasets: [{
                 label: 'Euro',
-                data: [60000],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              }
-            }
-          });
-        
-      
-
-      
-        
-        
-          new Chart(document.getElementById('chartjs-bde5f84f-c3b5-42a8-ad87-b27d081f61b4'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
-              datasets: [{
-                label: 'Euro',
-                data: [60000],
+                data: [-60000],
                 borderWidth: 1
               }]
             },

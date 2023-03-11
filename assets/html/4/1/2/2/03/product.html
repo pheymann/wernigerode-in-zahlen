@@ -32,16 +32,14 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 64.500,00€</h5>
-                <canvas id="chartjs-480abefb-fd2f-4acc-b74e-898463cf3310"></canvas>
+                <canvas id="chartjs-e5cdeb77-78a2-4d8d-b79f-808ac3ba4ac9"></canvas>
               </div>
               <div class="col-6">
-                <h5 class="center">Ausgaben: 308.000,00€</h5>
-                <canvas id="chartjs-9e237905-24d6-4ab2-8a28-738aaaf30cd3"></canvas>
+                <h5 class="center">Ausgaben: -308.000,00€</h5>
+                <canvas id="chartjs-347387aa-2515-4f77-b14a-0c9a1f541fa2"></canvas>
               </div>
             </div>
           
-      
-
       
     </div>
 
@@ -74,8 +72,6 @@
 			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
 			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
 			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
-			<br><br>
-			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
     </p>
 
     <footer>
@@ -88,7 +84,7 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-480abefb-fd2f-4acc-b74e-898463cf3310'), {
+          new Chart(document.getElementById('chartjs-e5cdeb77-78a2-4d8d-b79f-808ac3ba4ac9'), {
             type: 'doughnut',
             data: {
               labels: ["Verwaltungsgebühren","Einzahlungen aus dem Verkauf von Vorräten (Stammbücher)"],
@@ -108,13 +104,13 @@
           });
         
         
-          new Chart(document.getElementById('chartjs-9e237905-24d6-4ab2-8a28-738aaaf30cd3'), {
+          new Chart(document.getElementById('chartjs-347387aa-2515-4f77-b14a-0c9a1f541fa2'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für Mieten und Pachten","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für den Erwerb von Vorräten (Stammbücher)","Auszahlungen für sonstige Dienstleistungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen"],
               datasets: [{
                 label: 'Euro',
-                data: [49800,161500,25900,6800,32400,900,22000,200,400,1100,4500,300,300,1900],
+                data: [-49800,-161500,-25900,-6800,-32400,-900,-22000,-200,-400,-1100,-4500,-300,-300,-1900],
                 borderWidth: 1
               }]
             },
@@ -127,8 +123,6 @@
             }
           });
         
-      
-
       
     </script>
   </body>

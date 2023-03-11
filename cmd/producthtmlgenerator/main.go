@@ -8,7 +8,6 @@ import (
 	decodeTarget "wernigode-in-zahlen.de/internal/pkg/decoder/targetfile"
 	"wernigode-in-zahlen.de/internal/pkg/io"
 	"wernigode-in-zahlen.de/internal/pkg/model"
-	"wernigode-in-zahlen.de/internal/pkg/shared"
 )
 
 func main() {
@@ -21,19 +20,11 @@ func main() {
 		panic("directory is required")
 	}
 
-	financialPlanAFile, err := os.Open(*directory + "/financial_plan_a.json")
+	financialPlanFile, err := os.Open(*directory + "/merged_financial_plan.json")
 	if err != nil {
 		panic(err)
 	}
-	defer financialPlanAFile.Close()
-
-	financialPlanBJSONOpt := shared.Option[string]{IsSome: false}
-	financialPlanBFile, err := os.Open(*directory + "/financial_plan_b.json")
-	if err == nil {
-		financialPlanBJSONOpt.ToSome(io.ReadCompleteFile(financialPlanBFile))
-
-		defer financialPlanBFile.Close()
-	}
+	defer financialPlanFile.Close()
 
 	metadataFile, err := os.Open(*directory + "/metadata.json")
 	if err != nil {
@@ -42,14 +33,13 @@ func main() {
 	defer metadataFile.Close()
 
 	productHtml := htmlgenerator.GenerateProductHTML(
-		io.ReadCompleteFile(financialPlanAFile),
-		financialPlanBJSONOpt,
+		io.ReadCompleteFile(financialPlanFile),
 		io.ReadCompleteFile(metadataFile),
 		model.BudgetYear2023,
 		*debugRootPath,
 	)
 
-	target := decodeTarget.Decode(financialPlanAFile, "html")
+	target := decodeTarget.Decode(financialPlanFile, "html")
 	target.Name = "product"
 	target.Tpe = "html"
 

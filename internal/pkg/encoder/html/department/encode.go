@@ -39,11 +39,10 @@ func Encode(
 			IntroCashflowTotal: fmt.Sprintf("In %s planen wir", year),
 			IntroDescription:   encodeIntroDescription(compressed.CashflowTotal, compressed.NumberOfProducts),
 
-			CashflowTotal:          htmlEncoder.EncodeBudget(compressed.CashflowTotal, p),
-			CashflowFinancialPlanA: htmlEncoder.EncodeBudget(compressed.CashflowFinancialPlanA, p),
-			CashflowFinancialPlanB: htmlEncoder.EncodeBudget(compressed.CashflowFinancialPlanB, p),
-			IncomeCashflowTotal:    "Einnahmen: " + htmlEncoder.EncodeBudget(incomeTotalCashFlow, p),
-			ExpensesCashflowTotal:  "Ausgaben: " + htmlEncoder.EncodeBudget(expensesTotalCashFlow, p),
+			CashflowTotal:         htmlEncoder.EncodeBudget(compressed.CashflowTotal, p),
+			CashflowB:             htmlEncoder.EncodeBudget(compressed.CashflowB, p),
+			IncomeCashflowTotal:   "Einnahmen: " + htmlEncoder.EncodeBudget(incomeTotalCashFlow, p),
+			ExpensesCashflowTotal: "Ausgaben: " + htmlEncoder.EncodeBudget(expensesTotalCashFlow, p),
 
 			Products: shared.MapSlice(productData, func(productData html.DepartmentProductData) html.DepartmentProductCopy {
 				return encodeDepartmentProductData(productData, p)
@@ -54,10 +53,7 @@ func Encode(
 			DataDisclosure: `Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2022.
 			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
 			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
-			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
-			<br><br>
-			Die Budgets auf dieser Webseite ergeben sich aus dem Teilfinanzplan A und B und weichen damit vom Haushaltsplan ab, der
-			nur Teilfinanzplan A Daten enthält.`,
+			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>.`,
 		},
 		CSS: html.DepartmentCSS{
 			TotalCashflowClass: htmlEncoder.EncodeCSSCashflowClass(compressed.CashflowTotal),
@@ -67,10 +63,10 @@ func Encode(
 
 func encodeDepartmentProductData(data html.DepartmentProductData, p *message.Printer) html.DepartmentProductCopy {
 	return html.DepartmentProductCopy{
-		Name:      data.Name,
-		CashflowA: htmlEncoder.EncodeBudget(data.CashflowFinancialPlanA, p),
-		CashflowB: htmlEncoder.EncodeBudget(data.CashflowFinancialPlanB, p),
-		Link:      data.Link,
+		Name:          data.Name,
+		CashflowTotal: htmlEncoder.EncodeBudget(data.CashflowTotal, p),
+		CashflowB:     htmlEncoder.EncodeBudget(data.CashflowB, p),
+		Link:          data.Link,
 	}
 }
 

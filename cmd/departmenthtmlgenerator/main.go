@@ -14,7 +14,6 @@ import (
 	"wernigode-in-zahlen.de/internal/pkg/io"
 	"wernigode-in-zahlen.de/internal/pkg/model"
 	html "wernigode-in-zahlen.de/internal/pkg/model/html"
-	"wernigode-in-zahlen.de/internal/pkg/shared"
 )
 
 var (
@@ -22,6 +21,8 @@ var (
 )
 
 func main() {
+	year := model.BudgetYear2023
+
 	department := flag.String("department", "", "department to generate a HTML file from")
 	departmentName := flag.String("name", "", "department name")
 	debugRootPath := flag.String("root-path", "", "Debug: root path")
@@ -46,19 +47,11 @@ func main() {
 		if info.IsDir() && productDirRegex.MatchString(path) {
 			fmt.Printf("Read %s\n", path)
 
-			financialPlanAFile, err := os.Open(path + "/financial_plan_a.json")
+			financialPlanFile, err := os.Open(path + "/merged_financial_plan.json")
 			if err != nil {
 				panic(err)
 			}
-			defer financialPlanAFile.Close()
-
-			var financialPlanBJSONOpt = shared.None[string]()
-			financialPlanBFile, err := os.Open(path + "/financial_plan_b.json")
-			if err == nil {
-				defer financialPlanAFile.Close()
-
-				financialPlanBJSONOpt = shared.Some(io.ReadCompleteFile(financialPlanBFile))
-			}
+			defer financialPlanFile.Close()
 
 			metadataFile, err := os.Open(path + "/metadata.json")
 			if err != nil {
@@ -66,16 +59,12 @@ func main() {
 			}
 			defer metadataFile.Close()
 
-			financialPlanA := fpDecoder.DecodeFromJSON(io.ReadCompleteFile(financialPlanAFile))
-			financialPlanBOpt := shared.Map(financialPlanBJSONOpt, func(financialPlanBJSON string) model.FinancialPlan {
-				return fpDecoder.DecodeFromJSON(financialPlanBJSON)
-			})
+			financialPlan := fpDecoder.DecodeFromJSON(io.ReadCompleteFile(financialPlanFile))
 			metadata := metaDecoder.DecodeFromJSON(io.ReadCompleteFile(metadataFile))
 
 			productData = append(productData, html.ProductData{
-				FinancialPlanA:    financialPlanA,
-				FinancialPlanBOpt: financialPlanBOpt,
-				Metadata:          metadata,
+				FinancialPlan: financialPlan,
+				Metadata:      metadata,
 			})
 			return nil
 		}
@@ -98,7 +87,7 @@ func main() {
 			Name: "department",
 			Tpe:  "html",
 		},
-		departmenthtmlgenerator.GenerateDepartmentHTML(productData, compressed, *debugRootPath),
+		departmenthtmlgenerator.Generate(productData, compressed, year, *debugRootPath),
 	)
 
 	io.WriteFile(

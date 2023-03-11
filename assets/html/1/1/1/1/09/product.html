@@ -32,16 +32,14 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 261.500,00€</h5>
-                <canvas id="chartjs-66911f85-1740-4abb-bc51-ac18df85ed50"></canvas>
+                <canvas id="chartjs-45fb0887-6a85-4534-863b-b36ca631dacf"></canvas>
               </div>
               <div class="col-6">
-                <h5 class="center">Ausgaben: 1.303.000,00€</h5>
-                <canvas id="chartjs-4ce8ddf6-f6f5-4afc-a520-f74d05d4523c"></canvas>
+                <h5 class="center">Ausgaben: -1.303.000,00€</h5>
+                <canvas id="chartjs-7931fb14-0ba6-41c7-a7c1-ffabf5a110f6"></canvas>
               </div>
             </div>
           
-      
-
       
     </div>
 
@@ -74,8 +72,6 @@
 			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
 			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
 			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
-			<br><br>
-			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
     </p>
 
     <footer>
@@ -88,7 +84,7 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-66911f85-1740-4abb-bc51-ac18df85ed50'), {
+          new Chart(document.getElementById('chartjs-45fb0887-6a85-4534-863b-b36ca631dacf'), {
             type: 'doughnut',
             data: {
               labels: ["Sonstige privatrechtliche Leistungsentgelte","Einzahlungen aus Kostenerstattungen vom Bund","Einzahlungen aus Kostenerstattungen von gesetzlichen Sozialversicherungen"],
@@ -108,13 +104,13 @@
           });
         
         
-          new Chart(document.getElementById('chartjs-4ce8ddf6-f6f5-4afc-a520-f74d05d4523c'), {
+          new Chart(document.getElementById('chartjs-7931fb14-0ba6-41c7-a7c1-ffabf5a110f6'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Geschäftsauszahlungen","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten","Steuern, Versicherungen, Schadensfälle","Erstatt. f.d. Ausz. v. Dritten aus lfd. Verwaltungstätigkeit an Gemeinde\u0026 GV"],
               datasets: [{
                 label: 'Euro',
-                data: [711700,29500,142800,3400,170000,2200,30000,207000,6400],
+                data: [-711700,-29500,-142800,-3400,-170000,-2200,-30000,-207000,-6400],
                 borderWidth: 1
               }]
             },
@@ -127,8 +123,6 @@
             }
           });
         
-      
-
       
     </script>
   </body>

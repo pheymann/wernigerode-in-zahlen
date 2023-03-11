@@ -32,16 +32,14 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 168.600,00€</h5>
-                <canvas id="chartjs-c568f631-5dcd-4b38-b636-2f8488efedac"></canvas>
+                <canvas id="chartjs-8931f0e8-3e59-48ee-a248-9491460e8855"></canvas>
               </div>
               <div class="col-6">
-                <h5 class="center">Ausgaben: 568.000,00€</h5>
-                <canvas id="chartjs-32ca1ae9-44c4-4b19-bbe5-9298ef702139"></canvas>
+                <h5 class="center">Ausgaben: -568.000,00€</h5>
+                <canvas id="chartjs-abc67a6f-68cf-4034-ba37-aefcb67e0b74"></canvas>
               </div>
             </div>
           
-      
-
       
     </div>
 
@@ -74,8 +72,6 @@
 			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
 			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
 			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
-			<br><br>
-			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
     </p>
 
     <footer>
@@ -88,7 +84,7 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-c568f631-5dcd-4b38-b636-2f8488efedac'), {
+          new Chart(document.getElementById('chartjs-8931f0e8-3e59-48ee-a248-9491460e8855'), {
             type: 'doughnut',
             data: {
               labels: ["Verwaltungsgebühren","Einzahlungen aus Kostenerstattungen von Zweckverbänden","Bußgelder"],
@@ -108,13 +104,13 @@
           });
         
         
-          new Chart(document.getElementById('chartjs-32ca1ae9-44c4-4b19-bbe5-9298ef702139'), {
+          new Chart(document.getElementById('chartjs-abc67a6f-68cf-4034-ba37-aefcb67e0b74'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Zuschüsse an übrige Bereiche","Geschäftsauszahlungen","Erstattungen für die Auszahl. von Dritten aus lfd. Verwaltungstät. an den Bund"],
               datasets: [{
                 label: 'Euro',
-                data: [338000,14400,68000,1700,900,25000,5000,115000],
+                data: [-338000,-14400,-68000,-1700,-900,-25000,-5000,-115000],
                 borderWidth: 1
               }]
             },
@@ -127,8 +123,6 @@
             }
           });
         
-      
-
       
     </script>
   </body>

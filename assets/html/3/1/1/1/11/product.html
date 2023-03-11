@@ -32,63 +32,28 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 7.100,00€</h5>
-                <canvas id="chartjs-d24fffe6-3fb1-4445-b3ea-118897706471"></canvas>
+                <canvas id="chartjs-299df313-7177-468c-9fb7-ebc513c30521"></canvas>
               </div>
               <div class="col-6">
-                <h5 class="center">Ausgaben: 3.203.900,00€</h5>
-                <canvas id="chartjs-dcbbcec9-d7bd-418e-8b61-f01df9bfa2cb"></canvas>
+                <h5 class="center">Ausgaben: -3.203.900,00€</h5>
+                <canvas id="chartjs-435abe4a-5bcf-4546-ba1a-e2f6daad572a"></canvas>
               </div>
             </div>
           
       
-          <h3>Investitionen unterhalb der Wertgrenze kosten <span class="total-cashflow-expenses">-88.000,00€</span></h3>
+          <h3>Investitionen kosten <span class="total-cashflow-expenses">-88.000,00€</span></h3>
 
           
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 20.000,00€</h5>
-                <canvas id="chartjs-6766cb64-6670-4686-80a9-fde24ec20e23"></canvas>
+                <canvas id="chartjs-502177d1-543c-46cb-8cbf-48fec48c37ff"></canvas>
               </div>
               <div class="col-6">
-                <h5 class="center">Ausgaben: 108.000,00€</h5>
-                <canvas id="chartjs-74d5e8e1-10fb-47ad-b68f-78717fa14cb7"></canvas>
+                <h5 class="center">Ausgaben: -108.000,00€</h5>
+                <canvas id="chartjs-a1f45110-ca1f-43e1-b515-f13e4311f338"></canvas>
               </div>
             </div>
-          
-      
-
-      
-          <h3>Die Investition "Anschaffungen 150 €  bis 1.000 € netto" kostet <span class="total-cashflow-expenses">-15.000,00€</span></h3>
-
-          
-            
-            
-              <div class="padded-chart">
-                <canvas id="chartjs-a2172649-903f-4e60-a9e1-cd43a312bfa2"></canvas>
-              </div>
-            
-          
-      
-          <h3>Die Investition "Betriebs-und Geschäftsausstattungen" kostet <span class="total-cashflow-expenses">-53.000,00€</span></h3>
-
-          
-            
-            
-              <div class="padded-chart">
-                <canvas id="chartjs-eed09612-05a8-4b65-acad-e01ffc0aa632"></canvas>
-              </div>
-            
-          
-      
-          <h3>Die Investition "Fahrzeuge" kostet <span class="total-cashflow-expenses">-40.000,00€</span></h3>
-
-          
-            
-            
-              <div class="padded-chart">
-                <canvas id="chartjs-6e31611a-0543-4abb-8e71-09449421e778"></canvas>
-              </div>
-            
           
       
     </div>
@@ -122,8 +87,6 @@
 			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
 			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
 			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
-			<br><br>
-			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
     </p>
 
     <footer>
@@ -136,7 +99,7 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-d24fffe6-3fb1-4445-b3ea-118897706471'), {
+          new Chart(document.getElementById('chartjs-299df313-7177-468c-9fb7-ebc513c30521'), {
             type: 'doughnut',
             data: {
               labels: ["Einzahlungen aus Kostenerstattungen vom Bund","Einzahlungen aus Kostenerstattungen von privaten Unternehmen","Einzahlungen aus Kostenerstattungen von übrigen Bereichen"],
@@ -156,13 +119,13 @@
           });
         
         
-          new Chart(document.getElementById('chartjs-dcbbcec9-d7bd-418e-8b61-f01df9bfa2cb'), {
+          new Chart(document.getElementById('chartjs-435abe4a-5bcf-4546-ba1a-e2f6daad572a'), {
             type: 'doughnut',
             data: {
               labels: ["Personalauszahlungen","Dienstauszahlungen und dgl. an sonstige Beschäftigte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschäft.","Beihilfen, Unterstützungsleistungen für Beschäftigte",".1.1.11.7221000Unterhaltung des sonstigen unbeweglichen Vermögens",".1.1.11.7231000Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen"],
               datasets: [{
                 label: 'Euro',
-                data: [2380600,5300,79300,382200,2200,9100,15000,1500,14000,250000,10000,25000,22000,2500,200,5000],
+                data: [-2380600,-5300,-79300,-382200,-2200,-9100,-15000,-1500,-14000,-250000,-10000,-25000,-22000,-2500,-200,-5000],
                 borderWidth: 1
               }]
             },
@@ -177,7 +140,7 @@
         
       
         
-          new Chart(document.getElementById('chartjs-6766cb64-6670-4686-80a9-fde24ec20e23'), {
+          new Chart(document.getElementById('chartjs-502177d1-543c-46cb-8cbf-48fec48c37ff'), {
             type: 'doughnut',
             data: {
               labels: ["Einzahl.a.d.Veräuß.von bewegl. Vermögensgegenst. von mehr als 1000 € ohne UmStr."],
@@ -197,81 +160,13 @@
           });
         
         
-          new Chart(document.getElementById('chartjs-74d5e8e1-10fb-47ad-b68f-78717fa14cb7'), {
+          new Chart(document.getElementById('chartjs-a1f45110-ca1f-43e1-b515-f13e4311f338'), {
             type: 'doughnut',
             data: {
               labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
               datasets: [{
                 label: 'Euro',
-                data: [15000,53000,40000],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              }
-            }
-          });
-        
-      
-
-      
-        
-        
-          new Chart(document.getElementById('chartjs-a2172649-903f-4e60-a9e1-cd43a312bfa2'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr."],
-              datasets: [{
-                label: 'Euro',
-                data: [15000],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              }
-            }
-          });
-        
-      
-        
-        
-          new Chart(document.getElementById('chartjs-eed09612-05a8-4b65-acad-e01ffc0aa632'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
-              datasets: [{
-                label: 'Euro',
-                data: [53000],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              }
-            }
-          });
-        
-      
-        
-        
-          new Chart(document.getElementById('chartjs-6e31611a-0543-4abb-8e71-09449421e778'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
-              datasets: [{
-                label: 'Euro',
-                data: [40000],
+                data: [-15000,-53000,-40000],
                 borderWidth: 1
               }]
             },
