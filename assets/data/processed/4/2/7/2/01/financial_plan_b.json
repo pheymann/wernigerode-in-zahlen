@@ -1,0 +1,52 @@
+{
+  "Balances": [
+    {
+      "Id": "200",
+      "Class": "one-off",
+      "Desc": "Betriebs-und Geschäftsausstattungen",
+      "Budgets": {
+        "2020": 0,
+        "2021": -3000,
+        "2022": 0,
+        "2023": -3000,
+        "2024": -5000,
+        "2025": -25000
+      },
+      "Accounts": [
+        {
+          "Id": "40",
+          "Desc": " -Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen",
+          "Budgets": {
+            "2020": 0,
+            "2021": 3000,
+            "2022": 0,
+            "2023": 3000,
+            "2024": 5000,
+            "2025": 25000
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "/0200.7831000",
+                  "Desc": "Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.",
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 3000,
+                    "2022": 0,
+                    "2023": 3000,
+                    "2024": 5000,
+                    "2025": 25000
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

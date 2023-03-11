@@ -1,0 +1,32 @@
+{
+  "Department": {
+    "ID": "4",
+    "Name": "Budget Bürgerservice",
+    "Accountable": "Herr Dorff"
+  },
+  "ProductClass": {
+    "ID": "2",
+    "Name": "Schule und Kultur",
+    "Accountable": "Dezernent I"
+  },
+  "ProductDomain": {
+    "ID": "4",
+    "Name": "Weitere schulische Aufgaben",
+    "Responsible": "Frau Lisowski"
+  },
+  "ProductGroup": {
+    "ID": "3",
+    "Name": "Sonstige schulische Aufgaben",
+    "Desc": "externes Produkt"
+  },
+  "Product": {
+    "ID": "01",
+    "Name": "Sonstige schulische Aufgaben",
+    "LegalRequirement": "Pflichtaufgabe"
+  },
+  "Description": " Sonstige schulische Aufgaben",
+  "Mission": " Bundes-, Landes- und Ortsrecht",
+  "Target": "Schülerinnen und Schüler, Eltern, Schulleitungen, kommunale MitarbeiterInnen, Institutionen",
+  "Objectives": " Reibungsloser Ablauf des Schulbetriebes,,,,",
+  "Services": " -Schüler- und Elternvertretungsangelegenheiten -Sonstige Verwaltungsleistungen -Mitwirkung bei der Schulentwicklungsplanung des Landkreises,"
+}

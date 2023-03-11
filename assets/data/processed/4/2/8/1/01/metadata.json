@@ -1,0 +1,32 @@
+{
+  "Department": {
+    "ID": "4",
+    "Name": "Budget Bürgerservice",
+    "Accountable": "Herr Dorff"
+  },
+  "ProductClass": {
+    "ID": "2",
+    "Name": "Schule und Kultur",
+    "Accountable": "Dezernent I"
+  },
+  "ProductDomain": {
+    "ID": "8",
+    "Name": "Örtliche Kulturaufgaben",
+    "Responsible": "Frau Lisowski"
+  },
+  "ProductGroup": {
+    "ID": "1",
+    "Name": "Heimat- und sonstige Kulturpflege",
+    "Desc": "externes Produkt"
+  },
+  "Product": {
+    "ID": "01",
+    "Name": "Heimat-und Kulturpflege",
+    "LegalRequirement": "Freiwillige Aufgabe"
+  },
+  "Description": " Bearbeitung, Durchführung und Förderung von kulturellen Angelegenheiten",
+  "Mission": " Beschlüsse der politischen Gremien",
+  "Target": "EinwohnerInnen, interessierte Öffentlichkeit, Kulturvereine und Kulturverbände, Gäste",
+  "Objectives": " Heimat- und Kulturpflege, Brauchtumspflege",
+  "Services": " -Förderung und sonstige sächliche Unterstützung der Kulturvereine und Kulturverbände -Öffentlichkeitsarbeit, Erstellung des Veranstaltungskalenders und sonstiger Publikationen -Inhaltliche Pflege der Internetseite im Bereich Kultur -Organisation und Mitwirkung an kulturellen Veranstaltungen (z. B. Stadtfeste)"
+}

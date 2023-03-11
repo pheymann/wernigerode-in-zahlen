@@ -1,0 +1,32 @@
+{
+  "Department": {
+    "ID": "4",
+    "Name": "Budget Bürgerservice",
+    "Accountable": "Herr Dorff"
+  },
+  "ProductClass": {
+    "ID": "2",
+    "Name": "Schule und Kultur",
+    "Accountable": "Dezernent I"
+  },
+  "ProductDomain": {
+    "ID": "7",
+    "Name": "Volksbildung",
+    "Responsible": "Herr Ahrens"
+  },
+  "ProductGroup": {
+    "ID": "2",
+    "Name": "Büchereien",
+    "Desc": "externes Produkt"
+  },
+  "Product": {
+    "ID": "01",
+    "Name": "Bibliotheken",
+    "LegalRequirement": "Pflicht-und Freiwillige Aufgabe"
+  },
+  "Description": " Die Bibliotheken dienen der allgemeinen Bildung und Information, der Leseförderung, der Freizeitgestaltung und Unterhaltung",
+  "Mission": " Landesrecht, Beschlüsse der politischen Gremien",
+  "Target": "EinwohnerInnen, Gäste",
+  "Objectives": " Leseförderung, Freizeitgestaltung und Unterhaltung",
+  "Services": " -Beschaffung, Erschließung und Bereitstellung von Medien für systematisch oder thematisch gegliederte Sachbereiche -Betreiben der Bibliothek -Beratung, Information und Vermittlung -Öffentlichkeitsarbeit und Durchführung von Lesungen und Informationsveranstaltungen -Konzeption, Vorbereitung, Organisation und Durchführung von Bibliotheksführungen für Kinder,Jugendliche und Erwachsene -Betreuung und Verwaltung der Harzbücherei"
+}

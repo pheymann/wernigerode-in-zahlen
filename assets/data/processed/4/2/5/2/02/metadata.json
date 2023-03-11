@@ -1,0 +1,32 @@
+{
+  "Department": {
+    "ID": "4",
+    "Name": "Budget Bürgerservice",
+    "Accountable": "Herr Dorff"
+  },
+  "ProductClass": {
+    "ID": "2",
+    "Name": "Schule und Kultur",
+    "Accountable": "Dezernent I"
+  },
+  "ProductDomain": {
+    "ID": "5",
+    "Name": "Wissenschaft und Ausstellungen",
+    "Responsible": "Herr Ahrens"
+  },
+  "ProductGroup": {
+    "ID": "2",
+    "Name": "Nichtwissenschaftliche Museen, Sammlungen",
+    "Desc": "externes Produkt"
+  },
+  "Product": {
+    "ID": "02",
+    "Name": "Archiv",
+    "LegalRequirement": "Pflichtaufgabe"
+  },
+  "Description": " Verwaltung und Betreuung des Archivs",
+  "Mission": " Bundes-, Landes- und Ortsrecht, Beschlüsse der politischen Gremien",
+  "Target": "Ämter, EinwohnerInnen, Archive, Gäste",
+  "Objectives": " Sicherung und Nutzbarmachung der Überlieferung im Interesse von Bürgerschaft, Verwaltung und Forschung,,,,",
+  "Services": " -Mitwirkung und Beratung bei der Aktenordnung und -führung innerhalb der Stadt mit Ortsteilen -Erfassung und Bewertung von kommunalen Unterlagen -Aufbau und Fortführung von Sammlungen -Erschließung,, Verwahrung und Verwaltung der Bestände -Konservierung und Restaurierung der Bestände -Benutzerberatung und -betreuung -Bereitstellung von technischer Ausstattung und Einrichtung -Ausarbeitungen zur, Gemeinde-/Stadt-/ Kreisgeschichte; Gutachtertätigkeit -Verwaltungsarchiv,"
+}

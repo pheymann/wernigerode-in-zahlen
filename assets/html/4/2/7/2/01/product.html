@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<head>
+  <title>Produkt</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<html>
+  <body>
+    <h1>Bibliotheken</h1>
+
+    <p>
+      Das Produkt -  Die Bibliotheken dienen der allgemeinen Bildung und Information, der Leseförderung, der Freizeitgestaltung und Unterhaltung - wird in 2023
+    </p>
+
+    <h2 class="total-cashflow-expenses center">-460.200,00€</h2>
+
+    <p>
+      kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
+		Auflistung von Kostenstellen. Ganz am Ende dieser Seite findest du noch eine Beschreibung des Produkts.
+    </p>
+
+    <div class="container">
+      
+          <h3>Die Verwaltung kostet <span class="total-cashflow-expenses">-457.200,00€</span></h3>
+
+          
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs-81a1cd59-0c48-4ecf-907f-1f1e7800f13f"></canvas>
+              </div>
+            
+          
+      
+          <h3>Investitionen unterhalb der Wertgrenze kosten <span class="total-cashflow-expenses">-3.000,00€</span></h3>
+
+          
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs-98a68d8b-b3a8-43cd-a229-2e6627ac02ab"></canvas>
+              </div>
+            
+          
+      
+
+      
+          <h3>Die Investition "Betriebs-und Geschäftsausstattungen" kostet <span class="total-cashflow-expenses">-3.000,00€</span></h3>
+
+          
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs-49546578-2cb1-49b5-a3bd-939b3cef61c3"></canvas>
+              </div>
+            
+          
+      
+    </div>
+
+    <div class="info-sheet">
+      <h3>Aufgabe</h3>
+      <p> Landesrecht, Beschlüsse der politischen Gremien</p>
+
+      <h3>Ziele</h3>
+      <p>EinwohnerInnen, Gäste</p>
+
+      <h3>Dienstleistungen</h3>
+      <p> -Beschaffung, Erschließung und Bereitstellung von Medien für systematisch oder thematisch gegliederte Sachbereiche -Betreiben der Bibliothek -Beratung, Information und Vermittlung -Öffentlichkeitsarbeit und Durchführung von Lesungen und Informationsveranstaltungen -Konzeption, Vorbereitung, Organisation und Durchführung von Bibliotheksführungen für Kinder,Jugendliche und Erwachsene -Betreuung und Verwaltung der Harzbücherei</p>
+
+      <h3>Gruppierung</h3>
+      <ul>
+        <li>Fachbereich: Budget Bürgerservice</li>
+        <li>Produktklasse: Schule und Kultur</li>
+        <li>Produktbereich: Volksbildung</li>
+        <li>Produktgruppe: Büchereien</li>
+        <li>Produkt: Bibliotheken</li>
+      </ul>
+    </div>
+
+    <div class="back-link center">
+      <a href="/4/department.html">Zurück zur Bereichsübersicht</a>
+    </div>
+
+    <p class="data-disclosure">
+      Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2022.
+			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
+			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
+			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
+			<br><br>
+			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
+    </p>
+
+    <footer>
+      <p>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Das Impression befindet sich <a href="/imprint.html">hier</a>.
+      </p>
+    </footer>
+
+    <script>
+      
+        
+        
+          new Chart(document.getElementById('chartjs-81a1cd59-0c48-4ecf-907f-1f1e7800f13f'), {
+            type: 'doughnut',
+            data: {
+              labels: ["                 Zuweisungen für laufende Zwecke vom Land","                 Verwaltungsgebühren","                 Benutzungsgebühren und ähnliche Entgelte ","                 Einzahlungen aus der Veräußerung von beweglichen  Sachen","                 Einzahlungen aus Kostenerstattungen vom Bund  8 Einzahlungen aus laufender Verwaltungstätigkeit","                 Dienstauszahlungen und dgl. an Arbeitnehmer","                 Dienstauszahlungen und dgl. an sonstige Beschäftigte","                 Beiträge zu Versorgungskassen für Arbeitnehmer","                 Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","                 Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschäft.","                 Beihilfen, Unterstützungsleistungen für Beschäftigte","                 Auszahlungen für Mieten und Pachten ","                 Erwerb geringwertiger Vermögensgegenstände","                 Unterhaltung des sonstigen beweglichen Vermögens ","                 Besondere Verwaltungs- und Betriebsauszahlungen","                 Auszahlungen für den Erwerb von Medien Bibliothek","                 Auszahlungen für den Erwerb von Vorräten","                 Auszahlungen für sonstige Dienstleistungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen","Auszahlungen für Honorare"],
+              datasets: [{
+                label: 'Euro',
+                data: [7000,4000,10000,5000,3600,318800,5300,13300,64100,2200,1600,2000,500,400,9000,41000,1000,14700,400,6000,6500],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+        
+        
+          new Chart(document.getElementById('chartjs-98a68d8b-b3a8-43cd-a229-2e6627ac02ab'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
+              datasets: [{
+                label: 'Euro',
+                data: [3000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+
+      
+        
+        
+          new Chart(document.getElementById('chartjs-49546578-2cb1-49b5-a3bd-939b3cef61c3'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
+              datasets: [{
+                label: 'Euro',
+                data: [3000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+    </script>
+  </body>
+</html>

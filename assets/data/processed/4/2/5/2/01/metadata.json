@@ -1,0 +1,32 @@
+{
+  "Department": {
+    "ID": "4",
+    "Name": "Budget Bürgerservice",
+    "Accountable": "Herr Dorff"
+  },
+  "ProductClass": {
+    "ID": "2",
+    "Name": "Schule und Kultur",
+    "Accountable": "Dezernent I"
+  },
+  "ProductDomain": {
+    "ID": "5",
+    "Name": "Wissenschaft und Ausstellungen",
+    "Responsible": "Herr Ahrens"
+  },
+  "ProductGroup": {
+    "ID": "2",
+    "Name": "Nichtwissenschaftliche Museen, Sammlungen",
+    "Desc": "externes Produkt"
+  },
+  "Product": {
+    "ID": "01",
+    "Name": "Museen",
+    "LegalRequirement": "Freiwillige Aufgabe"
+  },
+  "Description": " Verwaltung und Betreuung der städtischen Museen und Museen in anderer Trägerschaft",
+  "Mission": " Beschlüsse der politischen Gremien",
+  "Target": "EinwohnerInnen, Gäste",
+  "Objectives": " Förderung der Bildung, Freizeitgestaltung und Unterhaltung",
+  "Services": " -Sicherung, Bewahrung, Sammlung, Erforschung und Erschließung von Museumsgütern -Öffentlichkeitsarbeit, Erstellung eigener Publikationen -Organisation des Museumsbetriebes -Organisation des, Besucherdienstes -Durchführung weiterer Kulturaktivitäten -Bildungsarbeit -Betrieb des Museumsshops -Teilnahme an überregionalen Arbeitsgremien,"
+}

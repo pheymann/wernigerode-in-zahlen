@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<head>
+  <title>Produkt</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<html>
+  <body>
+    <h1>Sonstige schulische Aufgaben</h1>
+
+    <p>
+      Das Produkt -  Sonstige schulische Aufgaben - wird in 2023
+    </p>
+
+    <h2 class="total-cashflow-expenses center">-517.700,00€</h2>
+
+    <p>
+      kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
+		Auflistung von Kostenstellen. Ganz am Ende dieser Seite findest du noch eine Beschreibung des Produkts.
+    </p>
+
+    <div class="container">
+      
+          <h3>Die Verwaltung kostet <span class="total-cashflow-expenses">-517.700,00€</span></h3>
+
+          
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs-a066dc90-d33e-4109-bfee-048ecfbc04d3"></canvas>
+              </div>
+            
+          
+      
+
+      
+    </div>
+
+    <div class="info-sheet">
+      <h3>Aufgabe</h3>
+      <p> Bundes-, Landes- und Ortsrecht</p>
+
+      <h3>Ziele</h3>
+      <p>Schülerinnen und Schüler, Eltern, Schulleitungen, kommunale MitarbeiterInnen, Institutionen</p>
+
+      <h3>Dienstleistungen</h3>
+      <p> -Schüler- und Elternvertretungsangelegenheiten -Sonstige Verwaltungsleistungen -Mitwirkung bei der Schulentwicklungsplanung des Landkreises,</p>
+
+      <h3>Gruppierung</h3>
+      <ul>
+        <li>Fachbereich: Budget Bürgerservice</li>
+        <li>Produktklasse: Schule und Kultur</li>
+        <li>Produktbereich: Weitere schulische Aufgaben</li>
+        <li>Produktgruppe: Sonstige schulische Aufgaben</li>
+        <li>Produkt: Sonstige schulische Aufgaben</li>
+      </ul>
+    </div>
+
+    <div class="back-link center">
+      <a href="/4/department.html">Zurück zur Bereichsübersicht</a>
+    </div>
+
+    <p class="data-disclosure">
+      Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2022.
+			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
+			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
+			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
+			<br><br>
+			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
+    </p>
+
+    <footer>
+      <p>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Das Impression befindet sich <a href="/imprint.html">hier</a>.
+      </p>
+    </footer>
+
+    <script>
+      
+        
+        
+          new Chart(document.getElementById('chartjs-a066dc90-d33e-4109-bfee-048ecfbc04d3'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für Mieten und Pachten","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für sonstige Dienstleistungen","Geschäftsauszahlungen"],
+              datasets: [{
+                label: 'Euro',
+                data: [98500,279200,44800,11800,56100,1500,12700,3000,10000,100],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+
+      
+    </script>
+  </body>
+</html>
