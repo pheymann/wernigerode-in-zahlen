@@ -3,7 +3,7 @@
     {
       "Id": "16",
       "Class": "admininstration",
-      "Desc": " Saldo aus laufender Verwaltungstätigkeit (Saldo Zeilen 8 und 15)",
+      "Desc": "Saldo aus laufender Verwaltungstätigkeit (Saldo Zeilen 8 und 15)",
       "Budgets": {
         "2020": 73911.25,
         "2021": 103600,
@@ -15,7 +15,7 @@
       "Accounts": [
         {
           "Id": "8",
-          "Desc": " Einzahlungen aus laufender Verwaltungstätigkeit",
+          "Desc": "Einzahlungen aus laufender Verwaltungstätigkeit",
           "Budgets": {
             "2020": 92969.57,
             "2021": 128200,
@@ -141,7 +141,7 @@
         },
         {
           "Id": "15",
-          "Desc": " Auszahlungen aus laufender Verwaltungstätigkeit",
+          "Desc": "Auszahlungen aus laufender Verwaltungstätigkeit",
           "Budgets": {
             "2020": 19058.32,
             "2021": 24600,
@@ -246,7 +246,7 @@
     {
       "Id": "34",
       "Class": "balance-investments",
-      "Desc": " Saldo aus Investitionstätigkeit",
+      "Desc": "Saldo aus Investitionstätigkeit",
       "Budgets": {
         "2020": -2209.37,
         "2021": -5000,
@@ -258,7 +258,7 @@
       "Accounts": [
         {
           "Id": "33",
-          "Desc": " Auszahlungen aus Investitionstätigkeit",
+          "Desc": "Auszahlungen aus Investitionstätigkeit",
           "Budgets": {
             "2020": 2209.37,
             "2021": 5000,

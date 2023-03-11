@@ -3,7 +3,7 @@
     {
       "Id": "16",
       "Class": "admininstration",
-      "Desc": "  Saldo aus laufender Verwaltungstätigkeit (Saldo Zeilen 8 und 15)",
+      "Desc": "Saldo aus laufender Verwaltungstätigkeit (Saldo Zeilen 8 und 15)",
       "Budgets": {
         "2020": -1194326.29,
         "2021": -883600,
@@ -15,7 +15,7 @@
       "Accounts": [
         {
           "Id": "15",
-          "Desc": "  Auszahlungen aus laufender Verwaltungstätigkeit",
+          "Desc": "Auszahlungen aus laufender Verwaltungstätigkeit",
           "Budgets": {
             "2020": 1241491.33,
             "2021": 933900,
@@ -39,7 +39,7 @@
               "Units": [
                 {
                   "Id": "6311000",
-                  "Desc": "                 Verwaltungsgebühren",
+                  "Desc": "Verwaltungsgebühren",
                   "Budgets": {
                     "2020": 415.84,
                     "2021": 500,
@@ -51,7 +51,7 @@
                 },
                 {
                   "Id": "6321000",
-                  "Desc": "                 Benutzungsgebühren und ähnliche Entgelte",
+                  "Desc": "Benutzungsgebühren und ähnliche Entgelte",
                   "Budgets": {
                     "2020": 1559.83,
                     "2021": 2600,
@@ -77,7 +77,7 @@
               "Units": [
                 {
                   "Id": "6411000",
-                  "Desc": "                 Einzahlungen aus Mieten und Pachten",
+                  "Desc": "Einzahlungen aus Mieten und Pachten",
                   "Budgets": {
                     "2020": 32709.36,
                     "2021": 32700,
@@ -89,7 +89,7 @@
                 },
                 {
                   "Id": "6461000",
-                  "Desc": "                 Sonstige privatrechtliche Leistungsentgelte",
+                  "Desc": "Sonstige privatrechtliche Leistungsentgelte",
                   "Budgets": {
                     "2020": 5456.99,
                     "2021": 0,
@@ -101,7 +101,7 @@
                 },
                 {
                   "Id": "6487000",
-                  "Desc": "                 Einzahlungen aus Kostenerstattungen von privaten Unternehmen 8 Einzahlungen aus laufender Verwaltungstätigkeit",
+                  "Desc": "Einzahlungen aus Kostenerstattungen von privaten Unternehmen 8 Einzahlungen aus laufender Verwaltungstätigkeit",
                   "Budgets": {
                     "2020": 7023.02,
                     "2021": 14500,
@@ -115,7 +115,7 @@
             },
             {
               "Id": "9",
-              "Desc": "  Personalauszahlungen",
+              "Desc": "Personalauszahlungen",
               "Budgets": {
                 "2020": 321147.05,
                 "2021": 331300,
@@ -127,7 +127,7 @@
               "Units": [
                 {
                   "Id": "7012000",
-                  "Desc": "                 Dienstauszahlungen und dgl. an Arbeitnehmer",
+                  "Desc": "Dienstauszahlungen und dgl. an Arbeitnehmer",
                   "Budgets": {
                     "2020": 260288.26,
                     "2021": 265900,
@@ -139,7 +139,7 @@
                 },
                 {
                   "Id": "7022000",
-                  "Desc": "                 Beiträge zu Versorgungskassen für Arbeitnehmer",
+                  "Desc": "Beiträge zu Versorgungskassen für Arbeitnehmer",
                   "Budgets": {
                     "2020": 9992.93,
                     "2021": 11400,
@@ -151,7 +151,7 @@
                 },
                 {
                   "Id": "7032000",
-                  "Desc": "                 Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer",
+                  "Desc": "Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer",
                   "Budgets": {
                     "2020": 49788.81,
                     "2021": 52400,
@@ -163,7 +163,7 @@
                 },
                 {
                   "Id": "7041000",
-                  "Desc": "                 Beihilfen, Unterstützungsleistungen für Beschäftigte",
+                  "Desc": "Beihilfen, Unterstützungsleistungen für Beschäftigte",
                   "Budgets": {
                     "2020": 1077.05,
                     "2021": 1600,
@@ -189,7 +189,7 @@
               "Units": [
                 {
                   "Id": "7211000",
-                  "Desc": "                 Unterhaltung der Grundstücke und baulichen Anlagen",
+                  "Desc": "Unterhaltung der Grundstücke und baulichen Anlagen",
                   "Budgets": {
                     "2020": 44946.41,
                     "2021": 51500,
@@ -201,7 +201,7 @@
                 },
                 {
                   "Id": "7211014",
-                  "Desc": "                 Unterhaltung der Grundstücke und baulichen Anlagen-Gebäudemanagement",
+                  "Desc": "Unterhaltung der Grundstücke und baulichen Anlagen-Gebäudemanagement",
                   "Budgets": {
                     "2020": 563392.17,
                     "2021": 195000,
@@ -213,7 +213,7 @@
                 },
                 {
                   "Id": "7221000",
-                  "Desc": "                 Unterhaltung des sonstigen unbeweglichen Vermögens",
+                  "Desc": "Unterhaltung des sonstigen unbeweglichen Vermögens",
                   "Budgets": {
                     "2020": 767.29,
                     "2021": 2900,
@@ -225,7 +225,7 @@
                 },
                 {
                   "Id": "7231000",
-                  "Desc": "                 Auszahlungen für Mieten und Pachten",
+                  "Desc": "Auszahlungen für Mieten und Pachten",
                   "Budgets": {
                     "2020": 1035,
                     "2021": 2500,
@@ -237,7 +237,7 @@
                 },
                 {
                   "Id": "7241000",
-                  "Desc": "                 Bewirtschaftung der Grundstücke und baulichen Anlagen",
+                  "Desc": "Bewirtschaftung der Grundstücke und baulichen Anlagen",
                   "Budgets": {
                     "2020": 221332.77,
                     "2021": 245900,
@@ -249,7 +249,7 @@
                 },
                 {
                   "Id": "7252000",
-                  "Desc": "                 Erwerb geringwertiger Vermögensgegenstände",
+                  "Desc": "Erwerb geringwertiger Vermögensgegenstände",
                   "Budgets": {
                     "2020": 24276.28,
                     "2021": 29000,
@@ -261,7 +261,7 @@
                 },
                 {
                   "Id": "7255000",
-                  "Desc": "                 Unterhaltung des sonstigen beweglichen Vermögens",
+                  "Desc": "Unterhaltung des sonstigen beweglichen Vermögens",
                   "Budgets": {
                     "2020": 2127.23,
                     "2021": 4900,
@@ -273,7 +273,7 @@
                 },
                 {
                   "Id": "7261000",
-                  "Desc": "                 Besondere zahlungswirksame Aufwendungen für Beschäftigte",
+                  "Desc": "Besondere zahlungswirksame Aufwendungen für Beschäftigte",
                   "Budgets": {
                     "2020": 575.08,
                     "2021": 900,
@@ -285,7 +285,7 @@
                 },
                 {
                   "Id": "7271000",
-                  "Desc": "                 Besondere Verwaltungs- und Betriebsauszahlungen",
+                  "Desc": "Besondere Verwaltungs- und Betriebsauszahlungen",
                   "Budgets": {
                     "2020": 25250.29,
                     "2021": 35200,
@@ -297,7 +297,7 @@
                 },
                 {
                   "Id": "7291000",
-                  "Desc": "                 Auszahlungen für sonstige Dienstleistungen",
+                  "Desc": "Auszahlungen für sonstige Dienstleistungen",
                   "Budgets": {
                     "2020": 0,
                     "2021": 900,
@@ -323,7 +323,7 @@
               "Units": [
                 {
                   "Id": "7429000",
-                  "Desc": "                 Sonstige Auszahlungen für die Inanspruchnahme von Rechten und Diensten",
+                  "Desc": "Sonstige Auszahlungen für die Inanspruchnahme von Rechten und Diensten",
                   "Budgets": {
                     "2020": 11224.5,
                     "2021": 22900,
@@ -335,7 +335,7 @@
                 },
                 {
                   "Id": "7431000",
-                  "Desc": "                 Geschäftsauszahlungen",
+                  "Desc": "Geschäftsauszahlungen",
                   "Budgets": {
                     "2020": 11228.67,
                     "2021": 11000,
@@ -347,7 +347,7 @@
                 },
                 {
                   "Id": "7431400",
-                  "Desc": "                 Auszahlungen für Beitragsservice (GEZ)",
+                  "Desc": "Auszahlungen für Beitragsservice (GEZ)",
                   "Budgets": {
                     "2020": 349.8,
                     "2021": 0,
@@ -359,7 +359,7 @@
                 },
                 {
                   "Id": "7441000",
-                  "Desc": "                 Steuern, Versicherungen, Schadensfälle",
+                  "Desc": "Steuern, Versicherungen, Schadensfälle",
                   "Budgets": {
                     "2020": 13838.79,
                     "2021": 0,
@@ -378,7 +378,7 @@
     {
       "Id": "34",
       "Class": "balance-investments",
-      "Desc": " Saldo aus Investitionstätigkeit",
+      "Desc": "Saldo aus Investitionstätigkeit",
       "Budgets": {
         "2020": -504141.75,
         "2021": -906600,
@@ -390,7 +390,7 @@
       "Accounts": [
         {
           "Id": "17",
-          "Desc": " Investitionstätigkeit - Einzahlungen",
+          "Desc": "Investitionstätigkeit - Einzahlungen",
           "Budgets": {
             "2020": 0,
             "2021": 0,
@@ -403,7 +403,7 @@
         },
         {
           "Id": "25",
-          "Desc": " Einzahlungen aus Investitionstätigkeit ",
+          "Desc": "Einzahlungen aus Investitionstätigkeit",
           "Budgets": {
             "2020": 4281.71,
             "2021": 460500,
@@ -415,7 +415,7 @@
           "Subs": [
             {
               "Id": "18",
-              "Desc": "   Zuwendungen für Investitonen und Investitionsförderungsmaßnahmen  2.1.1.01/0100.6811000             Einz. a. Zuweisungen f. Investitionen  u.Investitionsfördermaßnahmen Land 2.1.1.01/0200.6811000             Einz. a. Zuweisungen f. Investitionen  u.Investitionsfördermaßnahmen Land 2.1.1.01/1207.6811000             Einz. a. Zuweisungen f. Investitionen  u.Investitionsfördermaßnahmen Land 2.1.1.01/1208.6811000             Einz. a. Zuweisungen f. Investitionen  u.Investitionsfördermaßnahmen Land 2.1.1.01/1218.6811000             Einz. a. Zuweisungen f. Investitionen  u.Investitionsfördermaßnahmen Land 2.1.1.01/1220.6811000             Einz. a. Zuweisungen f. Investitionen  u.Investitionsfördermaßnahmen Land 2.1.1.01/1221.6811000             Einz. a. Zuweisungen f. Investitionen  u.Investitionsfördermaßnahmen Land 2.1.1.01/1222.6811000             Einz. a. Zuweisungen f. Investitionen  u.Investitionsfördermaßnahmen Land 2.1.1.01/1223.6811000             Einz. a. Zuweisungen f. Investitionen  u.Investitionsfördermaßnahmen Land 2.1.1.01/1226.6811000             Einz. a. Zuweisungen f. Investitionen  u.Investitionsfördermaßnahmen Land",
+              "Desc": "Zuwendungen für Investitonen und Investitionsförderungsmaßnahmen 2.1.1.01/0100.6811000             Einz. a. Zuweisungen f. Investitionen  u.Investitionsfördermaßnahmen Land 2.1.1.01/0200.6811000             Einz. a. Zuweisungen f. Investitionen  u.Investitionsfördermaßnahmen Land 2.1.1.01/1207.6811000             Einz. a. Zuweisungen f. Investitionen  u.Investitionsfördermaßnahmen Land 2.1.1.01/1208.6811000             Einz. a. Zuweisungen f. Investitionen  u.Investitionsfördermaßnahmen Land 2.1.1.01/1218.6811000             Einz. a. Zuweisungen f. Investitionen  u.Investitionsfördermaßnahmen Land 2.1.1.01/1220.6811000             Einz. a. Zuweisungen f. Investitionen  u.Investitionsfördermaßnahmen Land 2.1.1.01/1221.6811000             Einz. a. Zuweisungen f. Investitionen  u.Investitionsfördermaßnahmen Land 2.1.1.01/1222.6811000             Einz. a. Zuweisungen f. Investitionen  u.Investitionsfördermaßnahmen Land 2.1.1.01/1223.6811000             Einz. a. Zuweisungen f. Investitionen  u.Investitionsfördermaßnahmen Land 2.1.1.01/1226.6811000             Einz. a. Zuweisungen f. Investitionen  u.Investitionsfördermaßnahmen Land",
               "Budgets": {
                 "2020": 0,
                 "2021": 460500,
@@ -428,7 +428,7 @@
             },
             {
               "Id": "22",
-              "Desc": "Baumaßnahmen  2.1.1.01/1217.6851000             Einzahlungen für Baumaßnahmen ",
+              "Desc": "Baumaßnahmen 2.1.1.01/1217.6851000             Einzahlungen für Baumaßnahmen ",
               "Budgets": {
                 "2020": 4281.71,
                 "2021": 0,
@@ -443,7 +443,7 @@
         },
         {
           "Id": "26",
-          "Desc": " Investitionstätigkeit - Auszahlungen ",
+          "Desc": "Investitionstätigkeit - Auszahlungen",
           "Budgets": {
             "2020": 0,
             "2021": 0,
@@ -456,7 +456,7 @@
         },
         {
           "Id": "33",
-          "Desc": " Auszahlungen aus Investitionstätigkeit",
+          "Desc": "Auszahlungen aus Investitionstätigkeit",
           "Budgets": {
             "2020": 508423.46,
             "2021": 1367100,
@@ -468,7 +468,7 @@
           "Subs": [
             {
               "Id": "29",
-              "Desc": "Erwerb von beweglichen Anlagevermögen und immateriellen  Vermögensgegenständen 2.1.1.01/0100.7832000             Ausz. f.d. Erw. v. beweg. Vermögensgegenständen  v. \u003e 150 bis 1000 € o. UStr.",
+              "Desc": "Erwerb von beweglichen Anlagevermögen und immateriellen Vermögensgegenständen 2.1.1.01/0100.7832000             Ausz. f.d. Erw. v. beweg. Vermögensgegenständen  v. \u003e 150 bis 1000 € o. UStr.",
               "Budgets": {
                 "2020": 39490.53,
                 "2021": 216900,

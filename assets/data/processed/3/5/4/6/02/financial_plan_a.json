@@ -3,7 +3,7 @@
     {
       "Id": "16",
       "Class": "admininstration",
-      "Desc": "  Saldo aus laufender Verwaltungstätigkeit (Saldo Zeilen 8 und 15)",
+      "Desc": "Saldo aus laufender Verwaltungstätigkeit (Saldo Zeilen 8 und 15)",
       "Budgets": {
         "2020": 142596.84,
         "2021": 124800,
@@ -15,7 +15,7 @@
       "Accounts": [
         {
           "Id": "15",
-          "Desc": "  Auszahlungen aus laufender Verwaltungstätigkeit",
+          "Desc": "Auszahlungen aus laufender Verwaltungstätigkeit",
           "Budgets": {
             "2020": 164049.39,
             "2021": 217400,
@@ -39,7 +39,7 @@
               "Units": [
                 {
                   "Id": "6321000",
-                  "Desc": "                 Benutzungsgebühren und ähnliche Entgelte",
+                  "Desc": "Benutzungsgebühren und ähnliche Entgelte",
                   "Budgets": {
                     "2020": 260209.37,
                     "2021": 250000,
@@ -65,7 +65,7 @@
               "Units": [
                 {
                   "Id": "6461000",
-                  "Desc": "                 Sonstige privatrechtliche Leistungsentgelte",
+                  "Desc": "Sonstige privatrechtliche Leistungsentgelte",
                   "Budgets": {
                     "2020": 255.83,
                     "2021": 0,
@@ -91,7 +91,7 @@
               "Units": [
                 {
                   "Id": "6521200",
-                  "Desc": "                 Einnahmen Mehrwertsteuer 19%",
+                  "Desc": "Einnahmen Mehrwertsteuer 19%",
                   "Budgets": {
                     "2020": 15357.87,
                     "2021": 47500,
@@ -103,7 +103,7 @@
                 },
                 {
                   "Id": "6521216",
-                  "Desc": "                 Einnahmen Mehrwertsteuer 16%",
+                  "Desc": "Einnahmen Mehrwertsteuer 16%",
                   "Budgets": {
                     "2020": 28700.56,
                     "2021": 0,
@@ -115,7 +115,7 @@
                 },
                 {
                   "Id": "6521300",
-                  "Desc": "                 Erstattungen Vorsteuer 8 Einzahlungen aus laufender Verwaltungstätigkeit",
+                  "Desc": "Erstattungen Vorsteuer 8 Einzahlungen aus laufender Verwaltungstätigkeit",
                   "Budgets": {
                     "2020": 2122.6,
                     "2021": 44700,
@@ -129,7 +129,7 @@
             },
             {
               "Id": "9",
-              "Desc": "  Personalauszahlungen",
+              "Desc": "Personalauszahlungen",
               "Budgets": {
                 "2020": 31354.11,
                 "2021": 31100,
@@ -141,7 +141,7 @@
               "Units": [
                 {
                   "Id": "7012000",
-                  "Desc": "                 Dienstauszahlungen und dgl. an Arbeitnehmer",
+                  "Desc": "Dienstauszahlungen und dgl. an Arbeitnehmer",
                   "Budgets": {
                     "2020": 25445.43,
                     "2021": 24500,
@@ -153,7 +153,7 @@
                 },
                 {
                   "Id": "7022000",
-                  "Desc": "                 Beiträge zu Versorgungskassen für Arbeitnehmer",
+                  "Desc": "Beiträge zu Versorgungskassen für Arbeitnehmer",
                   "Budgets": {
                     "2020": 984.61,
                     "2021": 1300,
@@ -165,7 +165,7 @@
                 },
                 {
                   "Id": "7032000",
-                  "Desc": "                 Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer",
+                  "Desc": "Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer",
                   "Budgets": {
                     "2020": 4819.12,
                     "2021": 4900,
@@ -177,7 +177,7 @@
                 },
                 {
                   "Id": "7041000",
-                  "Desc": "                 Beihilfen, Unterstützungsleistungen für Beschäftigte",
+                  "Desc": "Beihilfen, Unterstützungsleistungen für Beschäftigte",
                   "Budgets": {
                     "2020": 104.95,
                     "2021": 400,
@@ -203,7 +203,7 @@
               "Units": [
                 {
                   "Id": "7211000",
-                  "Desc": "                 Unterhaltung der Grundstücke und baulichen Anlagen",
+                  "Desc": "Unterhaltung der Grundstücke und baulichen Anlagen",
                   "Budgets": {
                     "2020": 2760.78,
                     "2021": 2000,
@@ -215,7 +215,7 @@
                 },
                 {
                   "Id": "7211014",
-                  "Desc": "                 Unterhaltung der Grundstücke und baulichen Anlagen-Gebäudemanagement",
+                  "Desc": "Unterhaltung der Grundstücke und baulichen Anlagen-Gebäudemanagement",
                   "Budgets": {
                     "2020": 16059.66,
                     "2021": 30000,
@@ -227,7 +227,7 @@
                 },
                 {
                   "Id": "7221000",
-                  "Desc": "                 Unterhaltung des sonstigen unbeweglichen Vermögens",
+                  "Desc": "Unterhaltung des sonstigen unbeweglichen Vermögens",
                   "Budgets": {
                     "2020": 772.74,
                     "2021": 3000,
@@ -239,7 +239,7 @@
                 },
                 {
                   "Id": "7231000",
-                  "Desc": "                 Auszahlungen für Mieten und Pachten",
+                  "Desc": "Auszahlungen für Mieten und Pachten",
                   "Budgets": {
                     "2020": 19.85,
                     "2021": 0,
@@ -251,7 +251,7 @@
                 },
                 {
                   "Id": "7241000",
-                  "Desc": "                 Bewirtschaftung der Grundstücke und baulichen Anlagen",
+                  "Desc": "Bewirtschaftung der Grundstücke und baulichen Anlagen",
                   "Budgets": {
                     "2020": 49534.38,
                     "2021": 50000,
@@ -263,7 +263,7 @@
                 },
                 {
                   "Id": "7252000",
-                  "Desc": "                 Erwerb geringwertiger Vermögensgegenstände",
+                  "Desc": "Erwerb geringwertiger Vermögensgegenstände",
                   "Budgets": {
                     "2020": 3183.61,
                     "2021": 2000,
@@ -275,7 +275,7 @@
                 },
                 {
                   "Id": "7255000",
-                  "Desc": "                 Unterhaltung des sonstigen beweglichen Vermögens",
+                  "Desc": "Unterhaltung des sonstigen beweglichen Vermögens",
                   "Budgets": {
                     "2020": 2806.86,
                     "2021": 500,
@@ -287,7 +287,7 @@
                 },
                 {
                   "Id": "7291000",
-                  "Desc": "                 Auszahlungen für sonstige Dienstleistungen",
+                  "Desc": "Auszahlungen für sonstige Dienstleistungen",
                   "Budgets": {
                     "2020": 2413.79,
                     "2021": 5000,
@@ -313,7 +313,7 @@
               "Units": [
                 {
                   "Id": "7431000",
-                  "Desc": "                 Geschäftsauszahlungen",
+                  "Desc": "Geschäftsauszahlungen",
                   "Budgets": {
                     "2020": 1712.12,
                     "2021": 1500,
@@ -325,7 +325,7 @@
                 },
                 {
                   "Id": "7441000",
-                  "Desc": "                 Steuern, Versicherungen, Schadensfälle",
+                  "Desc": "Steuern, Versicherungen, Schadensfälle",
                   "Budgets": {
                     "2020": 12627.23,
                     "2021": 0,
@@ -337,7 +337,7 @@
                 },
                 {
                   "Id": "7441100",
-                  "Desc": "                 Abzugsfähige Vorsteuer 7%",
+                  "Desc": "Abzugsfähige Vorsteuer 7%",
                   "Budgets": {
                     "2020": 32.65,
                     "2021": 100,
@@ -349,7 +349,7 @@
                 },
                 {
                   "Id": "7441200",
-                  "Desc": "                 Abzugsfähige Vorsteuer 19%",
+                  "Desc": "Abzugsfähige Vorsteuer 19%",
                   "Budgets": {
                     "2020": 2762.27,
                     "2021": 44700,
@@ -361,7 +361,7 @@
                 },
                 {
                   "Id": "7441216",
-                  "Desc": "                 Abzugsfähige Vorsteuer 16%",
+                  "Desc": "Abzugsfähige Vorsteuer 16%",
                   "Budgets": {
                     "2020": 8390.9,
                     "2021": 0,
@@ -392,7 +392,7 @@
     {
       "Id": "34",
       "Class": "balance-investments",
-      "Desc": " Saldo aus Investitionstätigkeit",
+      "Desc": "Saldo aus Investitionstätigkeit",
       "Budgets": {
         "2020": -43821.34,
         "2021": -41000,
@@ -404,7 +404,7 @@
       "Accounts": [
         {
           "Id": "17",
-          "Desc": " Investitionstätigkeit - Einzahlungen",
+          "Desc": "Investitionstätigkeit - Einzahlungen",
           "Budgets": {
             "2020": 0,
             "2021": 0,
@@ -417,7 +417,7 @@
         },
         {
           "Id": "25",
-          "Desc": " Einzahlungen aus Investitionstätigkeit",
+          "Desc": "Einzahlungen aus Investitionstätigkeit",
           "Budgets": {
             "2020": 0,
             "2021": 0,
@@ -430,7 +430,7 @@
         },
         {
           "Id": "26",
-          "Desc": " Investitionstätigkeit - Auszahlungen",
+          "Desc": "Investitionstätigkeit - Auszahlungen",
           "Budgets": {
             "2020": 0,
             "2021": 0,
@@ -443,7 +443,7 @@
         },
         {
           "Id": "33",
-          "Desc": " Auszahlungen aus Investitionstätigkeit",
+          "Desc": "Auszahlungen aus Investitionstätigkeit",
           "Budgets": {
             "2020": 43821.34,
             "2021": 41000,

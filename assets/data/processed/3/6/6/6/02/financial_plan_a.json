@@ -3,7 +3,7 @@
     {
       "Id": "16",
       "Class": "admininstration",
-      "Desc": "  Saldo aus laufender Verwaltungstätigkeit (Saldo Zeilen 8 und 15)",
+      "Desc": "Saldo aus laufender Verwaltungstätigkeit (Saldo Zeilen 8 und 15)",
       "Budgets": {
         "2020": -28010.65,
         "2021": -40500,
@@ -15,7 +15,7 @@
       "Accounts": [
         {
           "Id": "8",
-          "Desc": "  Einzahlungen aus laufender Verwaltungstätigkeit",
+          "Desc": "Einzahlungen aus laufender Verwaltungstätigkeit",
           "Budgets": {
             "2020": 0,
             "2021": 0,
@@ -28,7 +28,7 @@
         },
         {
           "Id": "15",
-          "Desc": "  Auszahlungen aus laufender Verwaltungstätigkeit",
+          "Desc": "Auszahlungen aus laufender Verwaltungstätigkeit",
           "Budgets": {
             "2020": 28010.65,
             "2021": 40500,
@@ -145,7 +145,7 @@
     {
       "Id": "34",
       "Class": "balance-investments",
-      "Desc": " Saldo aus Investitionstätigkeit",
+      "Desc": "Saldo aus Investitionstätigkeit",
       "Budgets": {
         "2020": -31914.19,
         "2021": -60000,
@@ -157,7 +157,7 @@
       "Accounts": [
         {
           "Id": "17",
-          "Desc": " Investitionstätigkeit - Einzahlungen",
+          "Desc": "Investitionstätigkeit - Einzahlungen",
           "Budgets": {
             "2020": 0,
             "2021": 0,
@@ -170,7 +170,7 @@
         },
         {
           "Id": "25",
-          "Desc": " Einzahlungen aus Investitionstätigkeit",
+          "Desc": "Einzahlungen aus Investitionstätigkeit",
           "Budgets": {
             "2020": 2605.65,
             "2021": 0,
@@ -210,7 +210,7 @@
         },
         {
           "Id": "26",
-          "Desc": " Investitionstätigkeit - Auszahlungen",
+          "Desc": "Investitionstätigkeit - Auszahlungen",
           "Budgets": {
             "2020": 0,
             "2021": 0,
@@ -223,7 +223,7 @@
         },
         {
           "Id": "33",
-          "Desc": " Auszahlungen aus Investitionstätigkeit",
+          "Desc": "Auszahlungen aus Investitionstätigkeit",
           "Budgets": {
             "2020": 34519.84,
             "2021": 60000,

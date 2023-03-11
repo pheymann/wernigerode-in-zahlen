@@ -3,7 +3,7 @@
     {
       "Id": "16",
       "Class": "admininstration",
-      "Desc": "  Saldo aus laufender Verwaltungstätigkeit (Saldo Zeilen 8 und 15)",
+      "Desc": "Saldo aus laufender Verwaltungstätigkeit (Saldo Zeilen 8 und 15)",
       "Budgets": {
         "2020": -443089.96,
         "2021": -420800,
@@ -15,7 +15,7 @@
       "Accounts": [
         {
           "Id": "15",
-          "Desc": "  Auszahlungen aus laufender Verwaltungstätigkeit",
+          "Desc": "Auszahlungen aus laufender Verwaltungstätigkeit",
           "Budgets": {
             "2020": 463916.95,
             "2021": 450300,
@@ -39,7 +39,7 @@
               "Units": [
                 {
                   "Id": "6141000",
-                  "Desc": "                 Zuweisungen für laufende Zwecke vom Land",
+                  "Desc": "Zuweisungen für laufende Zwecke vom Land",
                   "Budgets": {
                     "2020": 7000,
                     "2021": 7000,
@@ -65,7 +65,7 @@
               "Units": [
                 {
                   "Id": "6311000",
-                  "Desc": "                 Verwaltungsgebühren",
+                  "Desc": "Verwaltungsgebühren",
                   "Budgets": {
                     "2020": 2420.43,
                     "2021": 4500,
@@ -77,7 +77,7 @@
                 },
                 {
                   "Id": "6321000",
-                  "Desc": "                 Benutzungsgebühren und ähnliche Entgelte ",
+                  "Desc": "Benutzungsgebühren und ähnliche Entgelte",
                   "Budgets": {
                     "2020": 8993.1,
                     "2021": 10000,
@@ -91,7 +91,7 @@
             },
             {
               "Id": "5",
-              "Desc": "privatrechtliche Leistungsentgelte, Kostenerstattungen, Kostenumlagen ",
+              "Desc": "privatrechtliche Leistungsentgelte, Kostenerstattungen, Kostenumlagen",
               "Budgets": {
                 "2020": 2413.46,
                 "2021": 8000,
@@ -103,7 +103,7 @@
               "Units": [
                 {
                   "Id": "6421000",
-                  "Desc": "                 Einzahlungen aus der Veräußerung von beweglichen  Sachen",
+                  "Desc": "Einzahlungen aus der Veräußerung von beweglichen Sachen",
                   "Budgets": {
                     "2020": 1071.8,
                     "2021": 5000,
@@ -115,7 +115,7 @@
                 },
                 {
                   "Id": "6480001",
-                  "Desc": "                 Einzahlungen aus Kostenerstattungen vom Bund  8 Einzahlungen aus laufender Verwaltungstätigkeit",
+                  "Desc": "Einzahlungen aus Kostenerstattungen vom Bund 8 Einzahlungen aus laufender Verwaltungstätigkeit",
                   "Budgets": {
                     "2020": 1341.66,
                     "2021": 3000,
@@ -129,7 +129,7 @@
             },
             {
               "Id": "9",
-              "Desc": "  Personalauszahlungen",
+              "Desc": "Personalauszahlungen",
               "Budgets": {
                 "2020": 391440.03,
                 "2021": 377200,
@@ -141,7 +141,7 @@
               "Units": [
                 {
                   "Id": "7012000",
-                  "Desc": "                 Dienstauszahlungen und dgl. an Arbeitnehmer",
+                  "Desc": "Dienstauszahlungen und dgl. an Arbeitnehmer",
                   "Budgets": {
                     "2020": 314541.04,
                     "2021": 297400,
@@ -153,7 +153,7 @@
                 },
                 {
                   "Id": "7019000",
-                  "Desc": "                 Dienstauszahlungen und dgl. an sonstige Beschäftigte",
+                  "Desc": "Dienstauszahlungen und dgl. an sonstige Beschäftigte",
                   "Budgets": {
                     "2020": 1431.2,
                     "2021": 5000,
@@ -165,7 +165,7 @@
                 },
                 {
                   "Id": "7022000",
-                  "Desc": "                 Beiträge zu Versorgungskassen für Arbeitnehmer",
+                  "Desc": "Beiträge zu Versorgungskassen für Arbeitnehmer",
                   "Budgets": {
                     "2020": 12483.31,
                     "2021": 12600,
@@ -177,7 +177,7 @@
                 },
                 {
                   "Id": "7032000",
-                  "Desc": "                 Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer",
+                  "Desc": "Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer",
                   "Budgets": {
                     "2020": 61123.18,
                     "2021": 58400,
@@ -189,7 +189,7 @@
                 },
                 {
                   "Id": "7039000",
-                  "Desc": "                 Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschäft.",
+                  "Desc": "Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschäft.",
                   "Budgets": {
                     "2020": 571.47,
                     "2021": 2000,
@@ -201,7 +201,7 @@
                 },
                 {
                   "Id": "7041000",
-                  "Desc": "                 Beihilfen, Unterstützungsleistungen für Beschäftigte",
+                  "Desc": "Beihilfen, Unterstützungsleistungen für Beschäftigte",
                   "Budgets": {
                     "2020": 1289.83,
                     "2021": 1800,
@@ -215,7 +215,7 @@
             },
             {
               "Id": "11",
-              "Desc": "Auszahlungen für Sach- und Dienstleistungen ",
+              "Desc": "Auszahlungen für Sach- und Dienstleistungen",
               "Budgets": {
                 "2020": 65501.36,
                 "2021": 59500,
@@ -227,7 +227,7 @@
               "Units": [
                 {
                   "Id": "7211014",
-                  "Desc": "                 Unterhaltung der Grundstücke und baulichen  Anlagen-Gebäudemanagement",
+                  "Desc": "Unterhaltung der Grundstücke und baulichen Anlagen-Gebäudemanagement",
                   "Budgets": {
                     "2020": 5177.52,
                     "2021": 0,
@@ -239,7 +239,7 @@
                 },
                 {
                   "Id": "7231000",
-                  "Desc": "                 Auszahlungen für Mieten und Pachten ",
+                  "Desc": "Auszahlungen für Mieten und Pachten",
                   "Budgets": {
                     "2020": 1593.3,
                     "2021": 2000,
@@ -251,7 +251,7 @@
                 },
                 {
                   "Id": "7241000",
-                  "Desc": "                 Bewirtschaftung der Grundstücke und baulichen  Anlagen",
+                  "Desc": "Bewirtschaftung der Grundstücke und baulichen Anlagen",
                   "Budgets": {
                     "2020": 8.72,
                     "2021": 0,
@@ -263,7 +263,7 @@
                 },
                 {
                   "Id": "7252000",
-                  "Desc": "                 Erwerb geringwertiger Vermögensgegenstände",
+                  "Desc": "Erwerb geringwertiger Vermögensgegenstände",
                   "Budgets": {
                     "2020": 0,
                     "2021": 200,
@@ -275,7 +275,7 @@
                 },
                 {
                   "Id": "7255000",
-                  "Desc": "                 Unterhaltung des sonstigen beweglichen Vermögens ",
+                  "Desc": "Unterhaltung des sonstigen beweglichen Vermögens",
                   "Budgets": {
                     "2020": 415.07,
                     "2021": 200,
@@ -287,7 +287,7 @@
                 },
                 {
                   "Id": "7271000",
-                  "Desc": "                 Besondere Verwaltungs- und Betriebsauszahlungen",
+                  "Desc": "Besondere Verwaltungs- und Betriebsauszahlungen",
                   "Budgets": {
                     "2020": 9787.37,
                     "2021": 6400,
@@ -299,7 +299,7 @@
                 },
                 {
                   "Id": "7271200",
-                  "Desc": "                 Auszahlungen für den Erwerb von Medien Bibliothek",
+                  "Desc": "Auszahlungen für den Erwerb von Medien Bibliothek",
                   "Budgets": {
                     "2020": 37176.25,
                     "2021": 38000,
@@ -311,7 +311,7 @@
                 },
                 {
                   "Id": "7281000",
-                  "Desc": "                 Auszahlungen für den Erwerb von Vorräten",
+                  "Desc": "Auszahlungen für den Erwerb von Vorräten",
                   "Budgets": {
                     "2020": 680.41,
                     "2021": 1000,
@@ -323,7 +323,7 @@
                 },
                 {
                   "Id": "7291000",
-                  "Desc": "                 Auszahlungen für sonstige Dienstleistungen",
+                  "Desc": "Auszahlungen für sonstige Dienstleistungen",
                   "Budgets": {
                     "2020": 10662.72,
                     "2021": 11700,
@@ -337,7 +337,7 @@
             },
             {
               "Id": "13",
-              "Desc": "Sonstige Auszahlungen   ",
+              "Desc": "Sonstige Auszahlungen",
               "Budgets": {
                 "2020": 6975.56,
                 "2021": 13600,
@@ -428,7 +428,7 @@
     {
       "Id": "34",
       "Class": "balance-investments",
-      "Desc": " Saldo aus Investitionstätigkeit",
+      "Desc": "Saldo aus Investitionstätigkeit",
       "Budgets": {
         "2020": 0,
         "2021": -3000,
@@ -440,7 +440,7 @@
       "Accounts": [
         {
           "Id": "17",
-          "Desc": " Investitionstätigkeit - Einzahlungen",
+          "Desc": "Investitionstätigkeit - Einzahlungen",
           "Budgets": {
             "2020": 0,
             "2021": 0,
@@ -453,7 +453,7 @@
         },
         {
           "Id": "25",
-          "Desc": " Einzahlungen aus Investitionstätigkeit",
+          "Desc": "Einzahlungen aus Investitionstätigkeit",
           "Budgets": {
             "2020": 0,
             "2021": 0,
@@ -466,7 +466,7 @@
         },
         {
           "Id": "26",
-          "Desc": " Investitionstätigkeit - Auszahlungen",
+          "Desc": "Investitionstätigkeit - Auszahlungen",
           "Budgets": {
             "2020": 0,
             "2021": 0,
@@ -479,7 +479,7 @@
         },
         {
           "Id": "33",
-          "Desc": " Auszahlungen aus Investitionstätigkeit",
+          "Desc": "Auszahlungen aus Investitionstätigkeit",
           "Budgets": {
             "2020": 0,
             "2021": 3000,

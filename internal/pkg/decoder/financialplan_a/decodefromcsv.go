@@ -3,6 +3,7 @@ package financialplan_a
 import (
 	"fmt"
 	"regexp"
+	"strings"
 
 	"wernigode-in-zahlen.de/internal/pkg/decoder"
 	"wernigode-in-zahlen.de/internal/pkg/model"
@@ -116,7 +117,7 @@ func decodeAccountBalance(row model.RawCSVRow, id string, class model.AccountCla
 	return model.AccountBalance{
 		Id:    id,
 		Class: class,
-		Desc:  decoder.DecodeString(row.Regexp, "desc", row.Matches),
+		Desc:  strings.TrimSpace(decoder.DecodeString(row.Regexp, "desc", row.Matches)),
 		Budgets: map[model.BudgetYear]float64{
 			model.BudgetYear2020: decoder.DecodeBudget(row.Regexp, "_2020", row.Matches),
 			model.BudgetYear2021: decoder.DecodeBudget(row.Regexp, "_2021", row.Matches),
@@ -132,7 +133,7 @@ func decodeAccountBalance(row model.RawCSVRow, id string, class model.AccountCla
 func decodeAccount(row model.RawCSVRow, id string, account model.Account) model.Account {
 	return model.Account{
 		Id:   id,
-		Desc: decoder.DecodeString(row.Regexp, "desc", row.Matches),
+		Desc: strings.TrimSpace(decoder.DecodeString(row.Regexp, "desc", row.Matches)),
 		Budgets: map[model.BudgetYear]float64{
 			model.BudgetYear2020: decoder.DecodeBudget(row.Regexp, "_2020", row.Matches),
 			model.BudgetYear2021: decoder.DecodeBudget(row.Regexp, "_2021", row.Matches),
@@ -148,7 +149,7 @@ func decodeAccount(row model.RawCSVRow, id string, account model.Account) model.
 func decodeSubAccount(row model.RawCSVRow, id string) model.SubAccount {
 	return model.SubAccount{
 		Id:   id,
-		Desc: decoder.DecodeString(row.Regexp, "desc", row.Matches),
+		Desc: strings.TrimSpace(decoder.DecodeString(row.Regexp, "desc", row.Matches)),
 		Budgets: map[model.BudgetYear]float64{
 			model.BudgetYear2020: decoder.DecodeBudget(row.Regexp, "_2020", row.Matches),
 			model.BudgetYear2021: decoder.DecodeBudget(row.Regexp, "_2021", row.Matches),
@@ -163,7 +164,7 @@ func decodeSubAccount(row model.RawCSVRow, id string) model.SubAccount {
 func decodeUnitAccount(row model.RawCSVRow, id string) model.UnitAccount {
 	return model.UnitAccount{
 		Id:   id,
-		Desc: decoder.DecodeString(row.Regexp, "desc", row.Matches),
+		Desc: strings.TrimSpace(decoder.DecodeString(row.Regexp, "desc", row.Matches)),
 		Budgets: map[model.BudgetYear]float64{
 			model.BudgetYear2020: decoder.DecodeBudget(row.Regexp, "_2020", row.Matches),
 			model.BudgetYear2021: decoder.DecodeBudget(row.Regexp, "_2021", row.Matches),
