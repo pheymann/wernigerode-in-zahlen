@@ -1,0 +1,32 @@
+{
+  "Department": {
+    "ID": "3",
+    "Name": "Budget Betriebsbereiche",
+    "Accountable": "Herr Kramer"
+  },
+  "ProductClass": {
+    "ID": "5",
+    "Name": "Gestaltung der Umwelt",
+    "Accountable": "Dezernent II"
+  },
+  "ProductDomain": {
+    "ID": "5",
+    "Name": "Natur- und Landschaftspflege",
+    "Responsible": "Frau Wichmann"
+  },
+  "ProductGroup": {
+    "ID": "3",
+    "Name": "Friedhofs- und Bestattungswesen",
+    "Desc": "externes Produkt"
+  },
+  "Product": {
+    "ID": "01",
+    "Name": "Friedhofs- und Bestattungswesen",
+    "LegalRequirement": "Pflicht-und Freiwillige Aufgabe"
+  },
+  "Description": " Vorbereitung und Durchführung von Bestattungen sowie die Verwaltung der Grabstätten",
+  "Mission": " Bundes-, Landes- und Ortsrecht; Ratsbeschlüsse",
+  "Target": "Pietätvoller Umgang mit den Verstorbenen",
+  "Objectives": " Hinterbliebene von Verstorbenen; EinwohnerInnen,,,,",
+  "Services": " -Friedhofsleistungen -Vergabe von Grabstellen -Erdbestattung, Urnenbeisetzung, Einebnungen, Aus- und Umbettungen -Kontrolle der Gräber, Grabsteine und der Wege -Unterhaltung der Kriegsgräberanlagen,, Ehrenmäler und historisch wertvoller Grabstätten,"
+}

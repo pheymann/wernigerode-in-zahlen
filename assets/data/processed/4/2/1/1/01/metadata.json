@@ -1,0 +1,32 @@
+{
+  "Department": {
+    "ID": "4",
+    "Name": "Budget Bürgerservice",
+    "Accountable": "Herr Dorff"
+  },
+  "ProductClass": {
+    "ID": "2",
+    "Name": "Schule und Kultur",
+    "Accountable": "Dezernent I"
+  },
+  "ProductDomain": {
+    "ID": "1",
+    "Name": "Allgemeine bildende Schulen",
+    "Responsible": "Frau Lisowski"
+  },
+  "ProductGroup": {
+    "ID": "1",
+    "Name": "Grundschulen",
+    "Desc": "externes Produkt"
+  },
+  "Product": {
+    "ID": "01",
+    "Name": "Grundschulen",
+    "LegalRequirement": "Pflichtaufgabe"
+  },
+  "Description": " Wahrnehmung von Aufgaben des Schulträgers",
+  "Mission": " Bundes-, Landes- und Ortsrecht, Beschlüsse der politischen Gremien",
+  "Target": "Schülerinnen und Schüler, Eltern, Schulleitungen, kommunale MitarbeiterInnen, Institutionen",
+  "Objectives": " Reibungsloser Ablauf des Schulbetriebes,,,,",
+  "Services": " 1. Allgemeine Angelegenheiten des Schulträgers wie z. B.,-Schulentwicklungsplanung,-Bildung von Schulbezirken-Errichtung, Änderung, Zusammenlegung und Aufhebung von Schulen,,-Förderung und Organisation des Schulsports-Einsatz, Anleitung und Beaufsichtigung von Verwaltungs- und sonstigem Personal,,-Teilnahme an Gesamtkonferenzen,-Durchführung von Veranstaltungen,-Bewirtschaftung der Grundschulen-Mitwirkung bei  Schülerunfall-, Schülerdiebstahl- und Sachschadensmeldungen,,-Mitwirkung bei der Erstattung von Strafanzeigen und Strafanträgen wegen strafbarer Handlungen zum Nachteil,, der Einrichtung 2.Haushalts-, Kassen- und Rechnungsangelegenheiten wie z. B.,-Unterstützung der Schulen bei der Budgetverwaltung,,-Beschaffung von Inventargegenständen,"
+}

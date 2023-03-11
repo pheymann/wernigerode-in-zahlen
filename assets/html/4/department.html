@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<head>
+  <title>Fachbereich</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<html>
+  <body>
+    <h1>Budget Bürgerservice</h1>
+
+    <p>
+      In 2023 planen wir
+    </p>
+
+    <h2 class="total-cashflow-expenses center">-7.168.300,00€<sub style="font-size: 0.4em;">(A/B)</sub></h2>
+
+    <p>
+      für diesen Fachbereich auszugeben. Dabei geht das Geld an die folgenden <b>5 Produkte</b>. Klicke auf eines in den Diagrammen, um mehr zu erfahren.
+    </p>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <h5 class="center">Einnahmen: 0,00€<sub style="font-size: 0.4em;">(A/B)</sub></h5>
+          <canvas id="chartjs-ffec20d2-b737-4f39-bfb8-2e9b4b43f5a9"></canvas>
+        </div>
+        <div class="col-6">
+          <h5 class="center">Ausgaben: -7.168.300,00€<sub style="font-size: 0.4em;">(A/B)</sub></h5>
+          <canvas id="chartjs-1ebbc8ce-653a-4d6b-a0ba-0ea04cf4b5f5"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="info-sheet">
+      <table>
+        <tbody>
+          <tr>
+            <th>Produkt</th>
+            <th>Teilfinanzplan A</th>
+            <th>Teilfinanzplan B</th>
+          </tr>
+          <tr>
+            <th></th>
+            <th>-5.540.400,00€</th>
+            <th>-1.627.900,00€</th>
+          </tr>
+
+          
+            <tr>
+              <td><a href="/4/1/2/6/01/product.html">Brandschutz</a></td>
+              <td>-2.244.700,00€</td>
+              <td>-753.000,00€</td>
+            </tr>
+          
+            <tr>
+              <td><a href="/4/2/1/1/01/product.html">Grundschulen</a></td>
+              <td>-1.804.200,00€</td>
+              <td>-874.900,00€</td>
+            </tr>
+          
+            <tr>
+              <td><a href="/4/1/2/2/02/product.html">Meldewesen</a></td>
+              <td>-399.400,00€</td>
+              <td>0,00€</td>
+            </tr>
+          
+            <tr>
+              <td><a href="/4/1/2/2/01/product.html">Ordnungsangelegenheiten</a></td>
+              <td>-848.600,00€</td>
+              <td>0,00€</td>
+            </tr>
+          
+            <tr>
+              <td><a href="/4/1/2/2/03/product.html">Standesamt</a></td>
+              <td>-243.500,00€</td>
+              <td>0,00€</td>
+            </tr>
+          
+        </tbody>
+      </table>
+    </div>
+
+    <div class="back-link center">
+      <a href="/">Zurück zur Übersicht</a>
+    </div>
+
+    <p class="data-disclosure">
+      Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2022.
+			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
+			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
+			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
+			<br><br>
+			Die Budgets auf dieser Webseite ergeben sich aus dem Teilfinanzplan A und B und weichen damit vom Haushaltsplan ab, der
+			nur Teilfinanzplan A Daten enthält.
+    </p>
+
+    <footer>
+      <p>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Das Impression befindet sich <a href="/imprint.html">hier</a>.
+      </p>
+    </footer>
+
+    <script>
+      var incomeProductLinks = [];
+      var incomeCanvas = document.getElementById('chartjs-ffec20d2-b737-4f39-bfb8-2e9b4b43f5a9');
+      var incomeChart = new Chart(incomeCanvas, {
+        type: 'doughnut',
+        data: {
+          labels:  null ,
+          datasets: [{
+            label: 'Euro',
+            data:  null ,
+            borderWidth: 1
+          }]
+        },
+        options: {
+          plugins: {
+            legend: {
+              display: false
+            }
+          },
+          onClick: function(e){
+            var activePoints = incomeChart.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
+            window.location.href = incomeProductLinks[activePoints[0].index];
+          },
+        }
+      });
+
+      var expenesesProductLinks = ["/4/1/2/2/01/product.html","/4/1/2/2/02/product.html","/4/1/2/2/03/product.html","/4/1/2/6/01/product.html","/4/2/1/1/01/product.html"];
+      var expensesCanvas = document.getElementById('chartjs-1ebbc8ce-653a-4d6b-a0ba-0ea04cf4b5f5');
+      var expensesChart = new Chart(expensesCanvas, {
+        type: 'doughnut',
+        data: {
+          labels: ["Ordnungsangelegenheiten","Meldewesen","Standesamt","Brandschutz","Grundschulen"],
+          datasets: [{
+            label: 'Euro',
+            data: [-848600,-399400,-243500,-2997700,-2679100],
+            borderWidth: 1
+          }]
+        },
+        options: {
+          plugins: {
+            legend: {
+              display: false
+            }
+          },
+          onClick: function(e){
+            var activePoints = expensesChart.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
+            window.location.href = expenesesProductLinks[activePoints[0].index];
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

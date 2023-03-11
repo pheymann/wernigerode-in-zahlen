@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<head>
+  <title>Produkt</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<html>
+  <body>
+    <h1>Forstwirtschaft und Wirtschaftswege</h1>
+
+    <p>
+      Das Produkt -  Forstwirtschaft, Bau und Unterhaltung von Wirtschaftswegen - wird in 2023
+    </p>
+
+    <h2 class="total-cashflow-expenses center">-678.600,00€</h2>
+
+    <p>
+      kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
+		Auflistung von Kostenstellen. Ganz am Ende dieser Seite findest du noch eine Beschreibung des Produkts.
+    </p>
+
+    <div class="container">
+      
+          <h3>Die Verwaltung kostet <span class="total-cashflow-expenses">-593.600,00€</span></h3>
+
+          
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 265.000,00€</h5>
+                <canvas id="chartjs-93f17fda-2df0-42c0-872f-2b461af3cf41"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: 858.600,00€</h5>
+                <canvas id="chartjs-387bfebe-7d0a-42a4-84c2-6f4003b6aa62"></canvas>
+              </div>
+            </div>
+          
+      
+          <h3>Investitionen unterhalb der Wertgrenze kosten <span class="total-cashflow-expenses">-85.000,00€</span></h3>
+
+          
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs-ba040010-b237-4d46-86ed-bfa03d80bd32"></canvas>
+              </div>
+            
+          
+      
+
+      
+          <h3>Die Investition "Anschaffungen 150 €  bis 1.000 € netto" kostet <span class="total-cashflow-expenses">-5.000,00€</span></h3>
+
+          
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs-7600bc8a-6b3f-48ec-94c7-05a98ecd2148"></canvas>
+              </div>
+            
+          
+      
+    </div>
+
+    <div class="info-sheet">
+      <h3>Aufgabe</h3>
+      <p> EU-, Bundes-, Landes- und Ortsrecht, Ratsbeschlüsse</p>
+
+      <h3>Ziele</h3>
+      <p>Alle berechtigten Nutzer</p>
+
+      <h3>Dienstleistungen</h3>
+      <p> Forstwirtschaft: -Verwaltung und Betrieb der Wälder -Jagd- und Wildangelegenheiten -Produktion und Verkauf von Holz und anderen Forstprodukten -Durchführung von Naturschutz- und, Landschaftspflegemaßnahmen Wirtschaftswege: -Planung, Bau, Unterhaltung und Abrechnung von Wirtschaftswegen und Brücken im Wald,</p>
+
+      <h3>Gruppierung</h3>
+      <ul>
+        <li>Fachbereich: Budget Betriebsbereiche</li>
+        <li>Produktklasse: Gestaltung der Umwelt</li>
+        <li>Produktbereich: Natur- und Landschaftspflege</li>
+        <li>Produktgruppe: Land- und Forstwirtschaft</li>
+        <li>Produkt: Forstwirtschaft und Wirtschaftswege</li>
+      </ul>
+    </div>
+
+    <div class="back-link center">
+      <a href="/3/department.html">Zurück zur Bereichsübersicht</a>
+    </div>
+
+    <p class="data-disclosure">
+      Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2022.
+			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
+			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
+			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
+			<br><br>
+			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
+    </p>
+
+    <footer>
+      <p>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Das Impression befindet sich <a href="/imprint.html">hier</a>.
+      </p>
+    </footer>
+
+    <script>
+      
+        
+          new Chart(document.getElementById('chartjs-93f17fda-2df0-42c0-872f-2b461af3cf41'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Zuweisungen für laufende Zwecke vom Land","Verwaltungsgebühren","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus dem Verkauf von Vorräten"],
+              datasets: [{
+                label: 'Euro',
+                data: [50000,12000,3000,200000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+        
+          new Chart(document.getElementById('chartjs-387bfebe-7d0a-42a4-84c2-6f4003b6aa62'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung des sonstigen unbeweglichen Vermögens","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für sonstige Dienstleistungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten","Erstattungen für die Auszahl. von Dritten aus lfd. Verwaltungstät. an das Land","Erstatt. für die Auszahl. von Dritten aus lfd. Verwaltungstät. an übrige Ber."],
+              datasets: [{
+                label: 'Euro',
+                data: [296900,12400,59700,1600,400000,3000,20000,1000,1000,2500,30000,500,5000,10000,11000,4000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+        
+        
+          new Chart(document.getElementById('chartjs-ba040010-b237-4d46-86ed-bfa03d80bd32'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.","Auszahlungen für Tiefbaumaßnahmen"],
+              datasets: [{
+                label: 'Euro',
+                data: [5000,80000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+
+      
+        
+        
+          new Chart(document.getElementById('chartjs-7600bc8a-6b3f-48ec-94c7-05a98ecd2148'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr."],
+              datasets: [{
+                label: 'Euro',
+                data: [5000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+    </script>
+  </body>
+</html>

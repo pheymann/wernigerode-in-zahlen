@@ -1,0 +1,61 @@
+80 Software,,,,,,,,
+40 -Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen,,"7.145,60",0,0,0,0,0,0
+1.2.6.01/0080.7834000 Auszahlung für den Erwerb immaterieller,,"7.145,60",0,0,0,0,0,0
+Vermögensgegenstände,,,,,,,,
+60  Saldo aus Einzahlungen und Auszahlungen,,"-7.145,60",0,0,0,0,0,0
+"",,,,,,,,
+100 Anschaffungen 150 €  bis 1.000 € netto,,,,,,,,
+10 +  Einzahlungen aus Investitionszuwendungen,,"6.000,00",0,0,0,0,0,0
+1.2.6.01/0100.6811000 Einz. a. Zuweisungen f. Investitionen,,"6.000,00",0,0,0,0,0,0
+u.Investitionsfördermaßnahmen Land,,,,,,,,
+40 -Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen,,"72.085,40",36.900,86.200,50.000,50.000,50.000,0
+1.2.6.01/0100.7832000 Ausz. f.d. Erw. v. beweg. Vermögensgegenständen,,"72.085,40",36.900,86.200,50.000,50.000,50.000,0
+v. > 150  bis 1000 € o. UStr.,,,,,,,,
+60  Saldo aus Einzahlungen und Auszahlungen,,"-66.085,40",-36.900,-86.200,-50.000,-50.000,-50.000,0
+"",,,,,,,,
+200 Betriebs-und Geschäftsausstattungen,,,,,,,,
+40 -Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen,,"38.203,97",178.000,128.800,176.000,40.000,26.000,0
+1.2.6.01/0200.7831000 Auszahl. f.d. Erw. von bewegl. Vermögengeg.st.,,"38.203,97",178.000,128.800,176.000,40.000,26.000,0
+von mehr als 1000 Euro ohne UStr.,,,,,,,,
+60  Saldo aus Einzahlungen und Auszahlungen,,"-38.203,97",-178.000,-128.800,-176.000,-40.000,-26.000,0
+"",,,,,,,,
+500 Fahrzeuge,,,,,,,,
+10 +  Einzahlungen aus Investitionszuwendungen,,"0,00",0,0,440.000,125.000,125.000,0
+1.2.6.01/0500.6811000 Einz. a. Zuweisungen f. Investitionen,,"0,00",0,0,440.000,125.000,125.000,0
+u.Investitionsfördermaßnahmen Land,,,,,,,,
+40 -Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen,,"341.026,04",100.000,217.000,867.000,1.017.000,358.000,483.000
+1.2.6.01/0500.7831000 Auszahl. f.d. Erw. von bewegl. Vermögengeg.st.,,"341.026,04",100.000,217.000,867.000,1.017.000,358.000,483.000
+von mehr als 1000 Euro ohne UStr.,,,,,,,,
+60  Saldo aus Einzahlungen und Auszahlungen,,"-341.026,04",-100.000,-217.000,-427.000,-892.000,-233.000,-483.000
+"",,,,,,,,
+1604Neubau Feuerwehr/ Bauhof Schierke,,,,,,,,
+50 -Auszahlungen für Baumaßnahmen,,"973.631,61",50.000,0,0,0,0,0
+1.2.6.01/1604.7851000 Auszahlungen für Hochbaumaßnahmen,,"973.631,61",50.000,0,0,0,0,0
+60  Saldo aus Einzahlungen und Auszahlungen,,"-973.631,61",-50.000,0,0,0,0,0
+"",,,,,,,
+1612Feuerwehr Minsleben Hallenumbau,,,,,,,
+50 -Auszahlungen für Baumaßnahmen,"226.062,12",230.000,30.000,0,0,0,0
+1.2.6.01/1612.7851000 Auszahlungen für Hochbaumaßnahmen,"226.062,12",230.000,30.000,0,0,0,0
+60  Saldo aus Einzahlungen und Auszahlungen,"-226.062,12",-230.000,-30.000,0,0,0,0
+"",,,,,,,
+1613Feuerwehr Neubau 2 Lager-Doppelgaragen,,,,,,,
+50 -Auszahlungen für Baumaßnahmen,"0,00",0,30.000,100.000,0,0,0
+1.2.6.01/1613.7851000 Auszahlungen für Hochbaumaßnahmen,"0,00",0,30.000,100.000,0,0,0
+60  Saldo aus Einzahlungen und Auszahlungen,"0,00",0,-30.000,-100.000,0,0,0
+"",,,,,,,
+3853Löschwasser-Zisternen Minsleben immaterielles Vermögen,,,,,,,
+60  Saldo aus Einzahlungen und Auszahlungen,"0,00",0,0,0,0,0,0
+"",,,,,,,
+3854Löschwasserzisterne Bielsteinchaussee,,,,,,,
+50 -Auszahlungen für Baumaßnahmen,"0,00",20.000,0,0,0,0,0
+1.2.6.01/3854.7852000 Auszahlungen für Tiefbaumaßnahmen,"0,00",20.000,0,0,0,0,0
+60  Saldo aus Einzahlungen und Auszahlungen,"0,00",-20.000,0,0,0,0,0
+"",,,,,,,
+7004Zuschuss Ertüchtigung Löschwasser-System,,,,,,,
+60  Saldo aus Einzahlungen und Auszahlungen,"0,00",0,0,0,0,0,0
+"",,,,,,,
+7005Löschwasser-Zisterne Wohnpark Argenta,,,,,,,
+40 -Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen,"48.000,00",0,0,0,0,0,0
+1.2.6.01/7005.7834000 Auszahlung für den Erwerb immaterieller,"48.000,00",0,0,0,0,0,0
+Vermögensgegenstände,,,,,,,
+60  Saldo aus Einzahlungen und Auszahlungen,"-48.000,00",0,0,0,0,0,0

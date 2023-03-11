@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<head>
+  <title>Produkt</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<html>
+  <body>
+    <h1>Ordnungsangelegenheiten</h1>
+
+    <p>
+      Das Produkt -  Gewährleistung der öffentlichen Sicherheit und Ordnung - wird in 2023
+    </p>
+
+    <h2 class="total-cashflow-expenses center">-848.600,00€</h2>
+
+    <p>
+      kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
+		Auflistung von Kostenstellen. Ganz am Ende dieser Seite findest du noch eine Beschreibung des Produkts.
+    </p>
+
+    <div class="container">
+      
+          <h3>Die Verwaltung kostet <span class="total-cashflow-expenses">-848.600,00€</span></h3>
+
+          
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 772.500,00€</h5>
+                <canvas id="chartjs-b4244fe8-199f-4466-b6df-483fee09c57b"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: 1.621.100,00€</h5>
+                <canvas id="chartjs-9fd76c0e-777c-4708-a3e9-26a266e961a8"></canvas>
+              </div>
+            </div>
+          
+      
+
+      
+    </div>
+
+    <div class="info-sheet">
+      <h3>Aufgabe</h3>
+      <p> Bundes-, Landes- und Ortsrecht; Ratsbeschlüsse</p>
+
+      <h3>Ziele</h3>
+      <p>EinwohnerInnen, Betroffene, Behörden, Institutionen, Organisationen und Betriebe</p>
+
+      <h3>Dienstleistungen</h3>
+      <p> -Gewährleistung der öffentlichen Sicherheit und Ordnung durch präventive und repressive Maßnahmen -Gewerbeangelegenheiten -Gaststättenangelegenheiten -Schiedsamtswesen/Schöffen -Überwachung des ruhenden und fließenden Verkehrs sowie Sondernutzungen und Verkehrsbehördliche Anordnungen (Verkehrszeichen und Baustellen)</p>
+
+      <h3>Gruppierung</h3>
+      <ul>
+        <li>Fachbereich: Budget Bürgerservice</li>
+        <li>Produktklasse: Zentrale Verwaltung</li>
+        <li>Produktbereich: Sicherheit und Ordnung</li>
+        <li>Produktgruppe: Ordnungsangelegenheiten</li>
+        <li>Produkt: Ordnungsangelegenheiten</li>
+      </ul>
+    </div>
+
+    <div class="back-link center">
+      <a href="/4/department.html">Zurück zur Bereichsübersicht</a>
+    </div>
+
+    <p class="data-disclosure">
+      Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2022.
+			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
+			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
+			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
+			<br><br>
+			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
+    </p>
+
+    <footer>
+      <p>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Das Impression befindet sich <a href="/imprint.html">hier</a>.
+      </p>
+    </footer>
+
+    <script>
+      
+        
+          new Chart(document.getElementById('chartjs-b4244fe8-199f-4466-b6df-483fee09c57b'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Verwaltungsgebühren","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus dem Verkauf von Vorräten","Einzahlungen aus Kostenerstattungen vom Land","Einzahlungen aus Kostenerstattungen von übrigen Bereichen","Bußgelder"],
+              datasets: [{
+                label: 'Euro',
+                data: [41500,200000,100,900,40000,490000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+        
+          new Chart(document.getElementById('chartjs-9fd76c0e-777c-4708-a3e9-26a266e961a8'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für sonstige Dienstleistungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten","Erstattungen für die Auszahl. von Dritten aus lfd. Verwaltungstät. an den Bund","Erstatt. für die Auszahl. von Dritten aus lfd. Verwaltungstät. an übrige Ber."],
+              datasets: [{
+                label: 'Euro',
+                data: [74200,989100,82100,41500,198900,4700,45000,22500,4000,500,1000,7500,4500,135000,600,2000,1500,1000,5500],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+
+      
+    </script>
+  </body>
+</html>

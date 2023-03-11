@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<head>
+  <title>Produkt</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<html>
+  <body>
+    <h1>Standesamt</h1>
+
+    <p>
+      Das Produkt -  Personenstandsangelegenheiten - wird in 2023
+    </p>
+
+    <h2 class="total-cashflow-expenses center">-243.500,00€</h2>
+
+    <p>
+      kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
+		Auflistung von Kostenstellen. Ganz am Ende dieser Seite findest du noch eine Beschreibung des Produkts.
+    </p>
+
+    <div class="container">
+      
+          <h3>Die Verwaltung kostet <span class="total-cashflow-expenses">-243.500,00€</span></h3>
+
+          
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 64.500,00€</h5>
+                <canvas id="chartjs-c2fb46eb-af35-412d-be74-d396e0df33e5"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: 308.000,00€</h5>
+                <canvas id="chartjs-97786733-59b0-415b-9edd-e1730358513d"></canvas>
+              </div>
+            </div>
+          
+      
+
+      
+    </div>
+
+    <div class="info-sheet">
+      <h3>Aufgabe</h3>
+      <p> Bundes- und Landesrecht</p>
+
+      <h3>Ziele</h3>
+      <p>EinwohnerInnen, Behörden und Institutionen sowie alle Dezernate, Anzeigende und Antragsteller</p>
+
+      <h3>Dienstleistungen</h3>
+      <p> -Beurkundung von Personenstandsfällen -Fortführung der Personenstandsbücher -Vorbereitung und Durchführung von Eheschließungen/Lebenspartnerschaften -Namensrechtliche Angelegenheiten -Beurkundung und Beglaubigung von abgegebenen Erklärungen -Kirchenaustritte -Auskünfte an Berechtigte erteilen -Staatsangehörigkeitsangelegenheiten</p>
+
+      <h3>Gruppierung</h3>
+      <ul>
+        <li>Fachbereich: Budget Bürgerservice</li>
+        <li>Produktklasse: Zentrale Verwaltung</li>
+        <li>Produktbereich: Sicherheit und Ordnung</li>
+        <li>Produktgruppe: Ordnungsangelegenheiten</li>
+        <li>Produkt: Standesamt</li>
+      </ul>
+    </div>
+
+    <div class="back-link center">
+      <a href="/4/department.html">Zurück zur Bereichsübersicht</a>
+    </div>
+
+    <p class="data-disclosure">
+      Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2022.
+			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
+			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
+			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
+			<br><br>
+			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
+    </p>
+
+    <footer>
+      <p>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Das Impression befindet sich <a href="/imprint.html">hier</a>.
+      </p>
+    </footer>
+
+    <script>
+      
+        
+          new Chart(document.getElementById('chartjs-c2fb46eb-af35-412d-be74-d396e0df33e5'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Verwaltungsgebühren","Einzahlungen aus dem Verkauf von Vorräten (Stammbücher)"],
+              datasets: [{
+                label: 'Euro',
+                data: [60000,4500],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+        
+          new Chart(document.getElementById('chartjs-97786733-59b0-415b-9edd-e1730358513d'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für Mieten und Pachten","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für den Erwerb von Vorräten (Stammbücher)","Auszahlungen für sonstige Dienstleistungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen"],
+              datasets: [{
+                label: 'Euro',
+                data: [49800,161500,25900,6800,32400,900,22000,200,400,1100,4500,300,300,1900],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+
+      
+    </script>
+  </body>
+</html>

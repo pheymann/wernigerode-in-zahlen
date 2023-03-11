@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<head>
+  <title>Produkt</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<html>
+  <body>
+    <h1>Grundschulen</h1>
+
+    <p>
+      Das Produkt -  Wahrnehmung von Aufgaben des Schulträgers - wird in 2023
+    </p>
+
+    <h2 class="total-cashflow-expenses center">-1.804.200,00€</h2>
+
+    <p>
+      kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
+		Auflistung von Kostenstellen. Ganz am Ende dieser Seite findest du noch eine Beschreibung des Produkts.
+    </p>
+
+    <div class="container">
+      
+          <h3>Die Verwaltung kostet <span class="total-cashflow-expenses">-929.300,00€</span></h3>
+
+          
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs-499a9a26-4734-4649-bf4c-ca6ba3f0104d"></canvas>
+              </div>
+            
+          
+      
+          <h3>Investitionen unterhalb der Wertgrenze kosten <span class="total-cashflow-expenses">-874.900,00€</span></h3>
+
+          
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs-f6eec1c5-c5a3-4005-aa3a-e6932797e5a4"></canvas>
+              </div>
+            
+          
+      
+
+      
+          <h3>Die Investition "Anschaffungen 150 €  bis 1.000 € netto" kostet <span class="total-cashflow-expenses">-38.500,00€</span></h3>
+
+          
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs-169c4b53-2174-4b16-9953-54eaf771dc22"></canvas>
+              </div>
+            
+          
+      
+          <h3>Die Investition "Betriebs-und Geschäftsausstattungen" kostet <span class="total-cashflow-expenses">-36.400,00€</span></h3>
+
+          
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs-38ae147c-fb6c-49eb-89b9-1dd93a1fb99e"></canvas>
+              </div>
+            
+          
+      
+          <h3>Die Investition "Sanierung Schule Harzblick" kostet <span class="total-cashflow-expenses">-800.000,00€</span></h3>
+
+          
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs-4719db2f-687d-476a-b9f2-2fc97d65868a"></canvas>
+              </div>
+            
+          
+      
+    </div>
+
+    <div class="info-sheet">
+      <h3>Aufgabe</h3>
+      <p> Bundes-, Landes- und Ortsrecht, Beschlüsse der politischen Gremien</p>
+
+      <h3>Ziele</h3>
+      <p>Schülerinnen und Schüler, Eltern, Schulleitungen, kommunale MitarbeiterInnen, Institutionen</p>
+
+      <h3>Dienstleistungen</h3>
+      <p> 1. Allgemeine Angelegenheiten des Schulträgers wie z. B.,-Schulentwicklungsplanung,-Bildung von Schulbezirken-Errichtung, Änderung, Zusammenlegung und Aufhebung von Schulen,,-Förderung und Organisation des Schulsports-Einsatz, Anleitung und Beaufsichtigung von Verwaltungs- und sonstigem Personal,,-Teilnahme an Gesamtkonferenzen,-Durchführung von Veranstaltungen,-Bewirtschaftung der Grundschulen-Mitwirkung bei  Schülerunfall-, Schülerdiebstahl- und Sachschadensmeldungen,,-Mitwirkung bei der Erstattung von Strafanzeigen und Strafanträgen wegen strafbarer Handlungen zum Nachteil,, der Einrichtung 2.Haushalts-, Kassen- und Rechnungsangelegenheiten wie z. B.,-Unterstützung der Schulen bei der Budgetverwaltung,,-Beschaffung von Inventargegenständen,</p>
+
+      <h3>Gruppierung</h3>
+      <ul>
+        <li>Fachbereich: Budget Bürgerservice</li>
+        <li>Produktklasse: Schule und Kultur</li>
+        <li>Produktbereich: Allgemeine bildende Schulen</li>
+        <li>Produktgruppe: Grundschulen</li>
+        <li>Produkt: Grundschulen</li>
+      </ul>
+    </div>
+
+    <div class="back-link center">
+      <a href="/4/department.html">Zurück zur Bereichsübersicht</a>
+    </div>
+
+    <p class="data-disclosure">
+      Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2022.
+			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
+			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
+			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
+			<br><br>
+			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
+    </p>
+
+    <footer>
+      <p>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Das Impression befindet sich <a href="/imprint.html">hier</a>.
+      </p>
+    </footer>
+
+    <script>
+      
+        
+        
+          new Chart(document.getElementById('chartjs-499a9a26-4734-4649-bf4c-ca6ba3f0104d'), {
+            type: 'doughnut',
+            data: {
+              labels: ["                 Verwaltungsgebühren","                 Benutzungsgebühren und ähnliche Entgelte","                 Einzahlungen aus Mieten und Pachten","                 Dienstauszahlungen und dgl. an Arbeitnehmer","                 Beiträge zu Versorgungskassen für Arbeitnehmer","                 Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","                 Beihilfen, Unterstützungsleistungen für Beschäftigte","                 Unterhaltung der Grundstücke und baulichen Anlagen","                 Unterhaltung der Grundstücke und baulichen Anlagen-Gebäudemanagement","                 Unterhaltung des sonstigen unbeweglichen Vermögens","                 Bewirtschaftung der Grundstücke und baulichen Anlagen","                 Erwerb geringwertiger Vermögensgegenstände","                 Unterhaltung des sonstigen beweglichen Vermögens","                 Besondere zahlungswirksame Aufwendungen für Beschäftigte","                 Besondere Verwaltungs- und Betriebsauszahlungen","                 Auszahlungen für sonstige Dienstleistungen","                 Sonstige Auszahlungen für die Inanspruchnahme von Rechten und Diensten","                 Geschäftsauszahlungen"],
+              datasets: [{
+                label: 'Euro',
+                data: [500,4000,74400,284500,12000,57300,1500,5000,337300,4300,227400,16400,2500,900,34600,900,13600,10000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+        
+        
+          new Chart(document.getElementById('chartjs-f6eec1c5-c5a3-4005-aa3a-e6932797e5a4'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.","Auszahlungen für Hochbaumaßnahmen"],
+              datasets: [{
+                label: 'Euro',
+                data: [36400,800000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+
+      
+        
+        
+          new Chart(document.getElementById('chartjs-169c4b53-2174-4b16-9953-54eaf771dc22'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr."],
+              datasets: [{
+                label: 'Euro',
+                data: [38500],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+        
+        
+          new Chart(document.getElementById('chartjs-38ae147c-fb6c-49eb-89b9-1dd93a1fb99e'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
+              datasets: [{
+                label: 'Euro',
+                data: [36400],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+        
+        
+          new Chart(document.getElementById('chartjs-4719db2f-687d-476a-b9f2-2fc97d65868a'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Auszahlungen für Hochbaumaßnahmen"],
+              datasets: [{
+                label: 'Euro',
+                data: [800000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+    </script>
+  </body>
+</html>

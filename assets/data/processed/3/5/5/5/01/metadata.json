@@ -1,0 +1,32 @@
+{
+  "Department": {
+    "ID": "3",
+    "Name": "Budget Betriebsbereiche",
+    "Accountable": "Herr Kramer"
+  },
+  "ProductClass": {
+    "ID": "5",
+    "Name": "Gestaltung der Umwelt",
+    "Accountable": "Dezernent II"
+  },
+  "ProductDomain": {
+    "ID": "5",
+    "Name": "Natur- und Landschaftspflege",
+    "Responsible": "Herr Selmikat"
+  },
+  "ProductGroup": {
+    "ID": "5",
+    "Name": "Land- und Forstwirtschaft",
+    "Desc": "externes Produkt"
+  },
+  "Product": {
+    "ID": "01",
+    "Name": "Forstwirtschaft und Wirtschaftswege",
+    "LegalRequirement": "Pflichtaufgabe"
+  },
+  "Description": " Forstwirtschaft, Bau und Unterhaltung von Wirtschaftswegen",
+  "Mission": " EU-, Bundes-, Landes- und Ortsrecht, Ratsbeschlüsse",
+  "Target": "Alle berechtigten Nutzer",
+  "Objectives": " Nachhaltige Bewirtschaftung des Stadtwaldes unter ökonomischen, ökologischen und sozialen Aspekten,,,,",
+  "Services": " Forstwirtschaft: -Verwaltung und Betrieb der Wälder -Jagd- und Wildangelegenheiten -Produktion und Verkauf von Holz und anderen Forstprodukten -Durchführung von Naturschutz- und, Landschaftspflegemaßnahmen Wirtschaftswege: -Planung, Bau, Unterhaltung und Abrechnung von Wirtschaftswegen und Brücken im Wald,"
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<head>
+  <title>Produkt</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<html>
+  <body>
+    <h1>Touristische Wanderwege</h1>
+
+    <p>
+      Das Produkt -  Erhalt der touristischen Infrastruktur im Stadtwald Wernigerode und Erhalt der Verkehrssicherheit an touristischen Wegen und Einrichtungen - wird in 2023
+    </p>
+
+    <h2 class="total-cashflow-expenses center">-115.800,00€</h2>
+
+    <p>
+      kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
+		Auflistung von Kostenstellen. Ganz am Ende dieser Seite findest du noch eine Beschreibung des Produkts.
+    </p>
+
+    <div class="container">
+      
+          <h3>Die Verwaltung kostet <span class="total-cashflow-expenses">-113.300,00€</span></h3>
+
+          
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 4.100,00€</h5>
+                <canvas id="chartjs-5a554c85-4865-4a37-b784-5d3b00a96a0a"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: 117.400,00€</h5>
+                <canvas id="chartjs-753c5605-f798-4ceb-ab2d-8f3fd425ff67"></canvas>
+              </div>
+            </div>
+          
+      
+          <h3>Investitionen unterhalb der Wertgrenze kosten <span class="total-cashflow-expenses">-2.500,00€</span></h3>
+
+          
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs-e331b0a6-877f-4064-8282-1fc0dc157abf"></canvas>
+              </div>
+            
+          
+      
+
+      
+          <h3>Die Investition "Anschaffungen 150 €  bis 1.000 € netto" kostet <span class="total-cashflow-expenses">-2.500,00€</span></h3>
+
+          
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs-5cc008f1-898a-4182-8694-9810bfe753bf"></canvas>
+              </div>
+            
+          
+      
+    </div>
+
+    <div class="info-sheet">
+      <h3>Aufgabe</h3>
+      <p> Ortsrecht, Beschlüsse der politischen Gremien</p>
+
+      <h3>Ziele</h3>
+      <p>Alle berechtigten Nutzer</p>
+
+      <h3>Dienstleistungen</h3>
+      <p> -Tourismus: Verwaltung und Bewirtschaftung des Wegenetzes Bau und Unterhaltung von Touristischen Einrichtungen  Betreuung von Beschäftigungsmaßnahmen - Verkehrssicherung: Planung und Durchführung von Baumschauen im Stadtwald Vorbereitung, Überwachung und Abrechnung von Unternehmereinsätzen</p>
+
+      <h3>Gruppierung</h3>
+      <ul>
+        <li>Fachbereich: Budget Betriebsbereiche</li>
+        <li>Produktklasse: Gestaltung der Umwelt</li>
+        <li>Produktbereich: Wirtschaft und Tourismus</li>
+        <li>Produktgruppe: Tourismus</li>
+        <li>Produkt: Touristische Wanderwege</li>
+      </ul>
+    </div>
+
+    <div class="back-link center">
+      <a href="/3/department.html">Zurück zur Bereichsübersicht</a>
+    </div>
+
+    <p class="data-disclosure">
+      Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2022.
+			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
+			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
+			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
+			<br><br>
+			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
+    </p>
+
+    <footer>
+      <p>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Das Impression befindet sich <a href="/imprint.html">hier</a>.
+      </p>
+    </footer>
+
+    <script>
+      
+        
+          new Chart(document.getElementById('chartjs-5a554c85-4865-4a37-b784-5d3b00a96a0a'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus dem Verkauf von Vorräten (Holzverkauf)","Einzahlungen aus Kostenerstattungen von übrigen Bereichen"],
+              datasets: [{
+                label: 'Euro',
+                data: [800,3000,300],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+        
+          new Chart(document.getElementById('chartjs-753c5605-f798-4ceb-ab2d-8f3fd425ff67'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Unterhaltung des sonstigen unbeweglichen Vermögens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Erwerb geringwertiger Vermögensgegenstände","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten","Erstatt. f.d. Ausz. v. Dritten aus lfd Verwaltungstät. an so. öff. Sonderrechn."],
+              datasets: [{
+                label: 'Euro',
+                data: [100000,1000,200,5000,500,700,2000,4000,4000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+        
+        
+          new Chart(document.getElementById('chartjs-e331b0a6-877f-4064-8282-1fc0dc157abf'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr."],
+              datasets: [{
+                label: 'Euro',
+                data: [2500],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+
+      
+        
+        
+          new Chart(document.getElementById('chartjs-5cc008f1-898a-4182-8694-9810bfe753bf'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr."],
+              datasets: [{
+                label: 'Euro',
+                data: [2500],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+    </script>
+  </body>
+</html>

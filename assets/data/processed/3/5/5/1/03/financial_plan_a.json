@@ -1,0 +1,278 @@
+{
+  "Balances": [
+    {
+      "Id": "16",
+      "Class": "admininstration",
+      "Desc": "  Saldo aus laufender Verwaltungstätigkeit (Saldo Zeilen 8 und 15)",
+      "Budgets": {
+        "2020": 35505.8,
+        "2021": 34600,
+        "2022": 34100,
+        "2023": 34100,
+        "2024": 34100,
+        "2025": 34100
+      },
+      "Accounts": [
+        {
+          "Id": "8",
+          "Desc": "  Einzahlungen aus laufender Verwaltungstätigkeit",
+          "Budgets": {
+            "2020": 41630.78,
+            "2021": 44500,
+            "2022": 36000,
+            "2023": 36000,
+            "2024": 36000,
+            "2025": 36000
+          },
+          "Subs": [
+            {
+              "Id": "5",
+              "Desc": "privatrechtliche Leistungsentgelte, Kostenerstattungen, Kostenumlagen",
+              "Budgets": {
+                "2020": 35888.6,
+                "2021": 37000,
+                "2022": 36000,
+                "2023": 36000,
+                "2024": 36000,
+                "2025": 36000
+              },
+              "Units": [
+                {
+                  "Id": "6483000",
+                  "Desc": "Einzahlungen aus Kostenerstattungen von Zweckverbänden",
+                  "Budgets": {
+                    "2020": 35888.6,
+                    "2021": 37000,
+                    "2022": 36000,
+                    "2023": 36000,
+                    "2024": 36000,
+                    "2025": 36000
+                  }
+                }
+              ]
+            },
+            {
+              "Id": "6",
+              "Desc": "sonstige Einzahlungen",
+              "Budgets": {
+                "2020": 5742.18,
+                "2021": 7500,
+                "2022": 0,
+                "2023": 0,
+                "2024": 0,
+                "2025": 0
+              },
+              "Units": [
+                {
+                  "Id": "6521200",
+                  "Desc": "Einnahmen Mehrwertsteuer 19%",
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 7000,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                },
+                {
+                  "Id": "6521216",
+                  "Desc": "Einnahmen Mehrwertsteuer 16%",
+                  "Budgets": {
+                    "2020": 5742.18,
+                    "2021": 0,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                },
+                {
+                  "Id": "6521300",
+                  "Desc": "Erstattungen Vorsteuer",
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 500,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "15",
+          "Desc": "  Auszahlungen aus laufender Verwaltungstätigkeit",
+          "Budgets": {
+            "2020": 6124.98,
+            "2021": 9900,
+            "2022": 1900,
+            "2023": 1900,
+            "2024": 1900,
+            "2025": 1900
+          },
+          "Subs": [
+            {
+              "Id": "11",
+              "Desc": "Auszahlungen für Sach- und Dienstleistungen",
+              "Budgets": {
+                "2020": 330,
+                "2021": 2400,
+                "2022": 1900,
+                "2023": 1900,
+                "2024": 1900,
+                "2025": 1900
+              },
+              "Units": [
+                {
+                  "Id": "7221000",
+                  "Desc": "Unterhaltung des sonstigen unbeweglichen Vermögens",
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 400,
+                    "2022": 400,
+                    "2023": 400,
+                    "2024": 400,
+                    "2025": 400
+                  }
+                },
+                {
+                  "Id": "7241000",
+                  "Desc": "Bewirtschaftung der Grundstücke und baulichen Anlagen",
+                  "Budgets": {
+                    "2020": 330,
+                    "2021": 2000,
+                    "2022": 1500,
+                    "2023": 1500,
+                    "2024": 1500,
+                    "2025": 1500
+                  }
+                }
+              ]
+            },
+            {
+              "Id": "13",
+              "Desc": "Sonstige Auszahlungen",
+              "Budgets": {
+                "2020": 5794.98,
+                "2021": 7500,
+                "2022": 0,
+                "2023": 0,
+                "2024": 0,
+                "2025": 0
+              },
+              "Units": [
+                {
+                  "Id": "7441200",
+                  "Desc": "Abzugsfähige Vorsteuer 19%",
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 500,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                },
+                {
+                  "Id": "7441216",
+                  "Desc": "Abzugsfähige Vorsteuer 16%",
+                  "Budgets": {
+                    "2020": 52.8,
+                    "2021": 0,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                },
+                {
+                  "Id": "7441300",
+                  "Desc": "Abführung Mehrwertsteuer",
+                  "Budgets": {
+                    "2020": 5742.18,
+                    "2021": 7000,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "34",
+      "Class": "balance-investments",
+      "Desc": " Saldo aus Investitionstätigkeit",
+      "Budgets": {
+        "2020": 0,
+        "2021": 0,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": [
+        {
+          "Id": "17",
+          "Desc": " Investitionstätigkeit - Einzahlungen",
+          "Budgets": {
+            "2020": 0,
+            "2021": 0,
+            "2022": 0,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": null
+        },
+        {
+          "Id": "25",
+          "Desc": " Einzahlungen aus Investitionstätigkeit",
+          "Budgets": {
+            "2020": 0,
+            "2021": 0,
+            "2022": 0,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": null
+        },
+        {
+          "Id": "26",
+          "Desc": " Investitionstätigkeit - Auszahlungen",
+          "Budgets": {
+            "2020": 0,
+            "2021": 0,
+            "2022": 0,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": null
+        },
+        {
+          "Id": "33",
+          "Desc": " Auszahlungen aus Investitionstätigkeit",
+          "Budgets": {
+            "2020": 0,
+            "2021": 0,
+            "2022": 0,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": null
+        }
+      ]
+    }
+  ]
+}

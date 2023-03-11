@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<head>
+  <title>Produkt</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<html>
+  <body>
+    <h1>Schierker Feuerstein Arena</h1>
+
+    <p>
+      Das Produkt -  Betrieb der Schierker Feuerstein Arena im Sommer-und Winterbetrieb - wird in 2023
+    </p>
+
+    <h2 class="total-cashflow-expenses center">-395.500,00€</h2>
+
+    <p>
+      kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
+		Auflistung von Kostenstellen. Ganz am Ende dieser Seite findest du noch eine Beschreibung des Produkts.
+    </p>
+
+    <div class="container">
+      
+          <h3>Die Verwaltung kostet <span class="total-cashflow-expenses">-374.000,00€</span></h3>
+
+          
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 337.500,00€</h5>
+                <canvas id="chartjs-ec997d9c-6406-48a9-b62e-90998957107f"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: 711.500,00€</h5>
+                <canvas id="chartjs-b093b00e-c17d-4f84-8de8-5955b4aa5201"></canvas>
+              </div>
+            </div>
+          
+      
+          <h3>Investitionen unterhalb der Wertgrenze kosten <span class="total-cashflow-expenses">-21.500,00€</span></h3>
+
+          
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs-b5a3d47f-e3fb-4ad3-a85c-60cec2939cd3"></canvas>
+              </div>
+            
+          
+      
+
+      
+          <h3>Die Investition "Anschaffungen 150 €  bis 1.000 € netto" kostet <span class="total-cashflow-expenses">-1.500,00€</span></h3>
+
+          
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs-fc9c4a8c-d3c6-47a7-8d37-6214d4f8b04a"></canvas>
+              </div>
+            
+          
+      
+          <h3>Die Investition "Betriebs-und Geschäftsausstattungen" kostet <span class="total-cashflow-expenses">-20.000,00€</span></h3>
+
+          
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs-3f0828cd-1fdc-4dce-a94b-39e274603574"></canvas>
+              </div>
+            
+          
+      
+    </div>
+
+    <div class="info-sheet">
+      <h3>Aufgabe</h3>
+      <p> - Beschlüsse der poltischen Gremien</p>
+
+      <h3>Ziele</h3>
+      <p>EinwohnerInnen der Stadt Wernigerode und deren Ortsteilen sowie deren Gästen</p>
+
+      <h3>Dienstleistungen</h3>
+      <p> -Unterhaltung und Bewirtschaftung der Schierker Feuerstein Arena -Touristische Entwicklungr -Veranstaltungsangebot,</p>
+
+      <h3>Gruppierung</h3>
+      <ul>
+        <li>Fachbereich: Budget Betriebsbereiche</li>
+        <li>Produktklasse: Gestaltung der Umwelt</li>
+        <li>Produktbereich: Wirtschaft und Tourismus</li>
+        <li>Produktgruppe: Tourismus</li>
+        <li>Produkt: Schierker Feuerstein Arena</li>
+      </ul>
+    </div>
+
+    <div class="back-link center">
+      <a href="/3/department.html">Zurück zur Bereichsübersicht</a>
+    </div>
+
+    <p class="data-disclosure">
+      Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2022.
+			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
+			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
+			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
+			<br><br>
+			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
+    </p>
+
+    <footer>
+      <p>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Das Impression befindet sich <a href="/imprint.html">hier</a>.
+      </p>
+    </footer>
+
+    <script>
+      
+        
+          new Chart(document.getElementById('chartjs-ec997d9c-6406-48a9-b62e-90998957107f'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Zuschüsse für laufende Zwecke von privaten Unternehmen","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus Mieten und Pachten","Erträge aus dem Verkauf von Waren","Einzahlungen aus dem Verkauf von Waren 7%","Sonstige privatrechtliche Leistungsentgelte"],
+              datasets: [{
+                label: 'Euro',
+                data: [37000,220000,50000,300,200,30000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+        
+          new Chart(document.getElementById('chartjs-b093b00e-c17d-4f84-8de8-5955b4aa5201'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Unterhaltung des sonstigen unbeweglichen Vermögens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für den Erwerb von Vorräten","Auszahlungen für sonstige Dienstleistungen","Geschäftsauszahlungen","Auszahlungen für Honorare"],
+              datasets: [{
+                label: 'Euro',
+                data: [263800,11200,53100,1400,25000,5000,25000,120000,3500,8000,9000,5000,65000,1500,100000,2000,13000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+        
+        
+          new Chart(document.getElementById('chartjs-b5a3d47f-e3fb-4ad3-a85c-60cec2939cd3'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
+              datasets: [{
+                label: 'Euro',
+                data: [1500,20000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+
+      
+        
+        
+          new Chart(document.getElementById('chartjs-fc9c4a8c-d3c6-47a7-8d37-6214d4f8b04a'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr."],
+              datasets: [{
+                label: 'Euro',
+                data: [1500],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+        
+        
+          new Chart(document.getElementById('chartjs-3f0828cd-1fdc-4dce-a94b-39e274603574'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
+              datasets: [{
+                label: 'Euro',
+                data: [20000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+    </script>
+  </body>
+</html>

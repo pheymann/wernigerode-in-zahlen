@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<head>
+  <title>Produkt</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<html>
+  <body>
+    <h1>Meldewesen</h1>
+
+    <p>
+      Das Produkt -  Bearbeiten sämtlicher Angelegenheiten des Melde- und Passwesens - wird in 2023
+    </p>
+
+    <h2 class="total-cashflow-expenses center">-399.400,00€</h2>
+
+    <p>
+      kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
+		Auflistung von Kostenstellen. Ganz am Ende dieser Seite findest du noch eine Beschreibung des Produkts.
+    </p>
+
+    <div class="container">
+      
+          <h3>Die Verwaltung kostet <span class="total-cashflow-expenses">-399.400,00€</span></h3>
+
+          
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 168.600,00€</h5>
+                <canvas id="chartjs-7937608d-6e62-4f25-b01a-d740d59ccc2b"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: 568.000,00€</h5>
+                <canvas id="chartjs-ab5d2693-973a-4914-b6dc-e80510cf38d8"></canvas>
+              </div>
+            </div>
+          
+      
+
+      
+    </div>
+
+    <div class="info-sheet">
+      <h3>Aufgabe</h3>
+      <p> Bundes- und Landesrecht</p>
+
+      <h3>Ziele</h3>
+      <p>EinwohnerInnen, Behörden und Institutionen sowie alle Dezernate</p>
+
+      <h3>Dienstleistungen</h3>
+      <p> -Führen, Auswerten und Bearbeiten des Melderegisters -Datenübermittlung an Dritte -Anträge auf Erteilung von Führungszeugnissen entgegennehmen und weiterleiten -Beglaubigungen von Kopien und Unterschriften -Angelegenheiten des Lohnsteuerwesen -Angelegenheiten des Ausweis- und Passwesens -Untersuchungsberechtigungsscheine nach dem Jugendarbeitsschutzgesetz ausstellen -Fundsachen -Bürgerinfo</p>
+
+      <h3>Gruppierung</h3>
+      <ul>
+        <li>Fachbereich: Budget Bürgerservice</li>
+        <li>Produktklasse: Zentrale Verwaltung</li>
+        <li>Produktbereich: Sicherheit und Ordnung</li>
+        <li>Produktgruppe: Ordnungsangelegenheiten</li>
+        <li>Produkt: Meldewesen</li>
+      </ul>
+    </div>
+
+    <div class="back-link center">
+      <a href="/4/department.html">Zurück zur Bereichsübersicht</a>
+    </div>
+
+    <p class="data-disclosure">
+      Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2022.
+			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
+			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
+			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
+			<br><br>
+			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.
+    </p>
+
+    <footer>
+      <p>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Das Impression befindet sich <a href="/imprint.html">hier</a>.
+      </p>
+    </footer>
+
+    <script>
+      
+        
+          new Chart(document.getElementById('chartjs-7937608d-6e62-4f25-b01a-d740d59ccc2b'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Verwaltungsgebühren","Einzahlungen aus Kostenerstattungen von Zweckverbänden","Bußgelder"],
+              datasets: [{
+                label: 'Euro',
+                data: [165000,1100,2500],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+        
+          new Chart(document.getElementById('chartjs-ab5d2693-973a-4914-b6dc-e80510cf38d8'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Zuschüsse an übrige Bereiche","Geschäftsauszahlungen","Erstattungen für die Auszahl. von Dritten aus lfd. Verwaltungstät. an den Bund"],
+              datasets: [{
+                label: 'Euro',
+                data: [338000,14400,68000,1700,900,25000,5000,115000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+
+      
+    </script>
+  </body>
+</html>

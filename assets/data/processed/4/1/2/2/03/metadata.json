@@ -1,0 +1,32 @@
+{
+  "Department": {
+    "ID": "4",
+    "Name": "Budget Bürgerservice",
+    "Accountable": "Herr Dorff"
+  },
+  "ProductClass": {
+    "ID": "1",
+    "Name": "Zentrale Verwaltung",
+    "Accountable": "Dezernent I"
+  },
+  "ProductDomain": {
+    "ID": "2",
+    "Name": "Sicherheit und Ordnung",
+    "Responsible": "Frau Hartmann"
+  },
+  "ProductGroup": {
+    "ID": "2",
+    "Name": "Ordnungsangelegenheiten",
+    "Desc": "externes Produkt"
+  },
+  "Product": {
+    "ID": "03",
+    "Name": "Standesamt",
+    "LegalRequirement": "Pflichtaufgabe"
+  },
+  "Description": " Personenstandsangelegenheiten",
+  "Mission": " Bundes- und Landesrecht",
+  "Target": "EinwohnerInnen, Behörden und Institutionen sowie alle Dezernate, Anzeigende und Antragsteller",
+  "Objectives": " Persönlicher und individueller Service,,,",
+  "Services": " -Beurkundung von Personenstandsfällen -Fortführung der Personenstandsbücher -Vorbereitung und Durchführung von Eheschließungen/Lebenspartnerschaften -Namensrechtliche Angelegenheiten -Beurkundung und Beglaubigung von abgegebenen Erklärungen -Kirchenaustritte -Auskünfte an Berechtigte erteilen -Staatsangehörigkeitsangelegenheiten"
+}

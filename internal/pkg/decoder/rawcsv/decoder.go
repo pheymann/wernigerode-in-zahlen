@@ -36,7 +36,7 @@ func NewDecoder() Decoder {
 			regexp.MustCompile(rxBasis(`(?P<id>\d+)`)),
 			regexp.MustCompile(
 				fmt.Sprintf(
-					`^"(?P<id>\d+) \+ (?P<desc>[ %s,]*)",+%s,%s,%s,%s,%s,%s`,
+					`^"(?P<id>\d+)[ ]+\+ (?P<desc>[ %s,]*)",+%s,%s,%s,%s,%s,%s`,
 					decoder.RxGermanPlusSpecialLetter,
 					rxFloatNumber,
 					rxNumber("_2021"),

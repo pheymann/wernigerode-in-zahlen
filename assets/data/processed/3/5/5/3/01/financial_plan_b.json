@@ -1,0 +1,272 @@
+{
+  "Balances": [
+    {
+      "Id": "100",
+      "Class": "one-off",
+      "Desc": "Anschaffungen 150 €  bis 1.000 € netto",
+      "Budgets": {
+        "2020": -5237.18,
+        "2021": -2000,
+        "2022": -2000,
+        "2023": -2000,
+        "2024": -2000,
+        "2025": -2000
+      },
+      "Accounts": [
+        {
+          "Id": "40",
+          "Desc": " -Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen",
+          "Budgets": {
+            "2020": 5237.18,
+            "2021": 2000,
+            "2022": 2000,
+            "2023": 2000,
+            "2024": 2000,
+            "2025": 2000
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "/0100.7832000",
+                  "Desc": "Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.",
+                  "Budgets": {
+                    "2020": 5237.18,
+                    "2021": 2000,
+                    "2022": 2000,
+                    "2023": 2000,
+                    "2024": 2000,
+                    "2025": 2000
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "200",
+      "Class": "one-off",
+      "Desc": "Betriebs-und Geschäftsausstattungen",
+      "Budgets": {
+        "2020": 0,
+        "2021": -6000,
+        "2022": -800,
+        "2023": -3800,
+        "2024": -1000,
+        "2025": -4000
+      },
+      "Accounts": [
+        {
+          "Id": "40",
+          "Desc": " -Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen",
+          "Budgets": {
+            "2020": 0,
+            "2021": 6000,
+            "2022": 800,
+            "2023": 3800,
+            "2024": 1000,
+            "2025": 4000
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "/0200.7831000",
+                  "Desc": "Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.",
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 6000,
+                    "2022": 800,
+                    "2023": 3800,
+                    "2024": 1000,
+                    "2025": 4000
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "500",
+      "Class": "one-off",
+      "Desc": "Fahrzeuge",
+      "Budgets": {
+        "2020": -20492.29,
+        "2021": 0,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": [
+        {
+          "Id": "40",
+          "Desc": " -Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen",
+          "Budgets": {
+            "2020": 20492.29,
+            "2021": 0,
+            "2022": 0,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "/0500.7831000",
+                  "Desc": "Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.",
+                  "Budgets": {
+                    "2020": 20492.29,
+                    "2021": 0,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "1610",
+      "Class": "one-off",
+      "Desc": "Neubau Radladergarage",
+      "Budgets": {
+        "2020": -14797.97,
+        "2021": 0,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": [
+        {
+          "Id": "50",
+          "Desc": " -Auszahlungen für Baumaßnahmen",
+          "Budgets": {
+            "2020": 14797.97,
+            "2021": 0,
+            "2022": 0,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "/1610.7851000",
+                  "Desc": "Auszahlungen für Hochbaumaßnahmen",
+                  "Budgets": {
+                    "2020": 14797.97,
+                    "2021": 0,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "1616",
+      "Class": "one-off",
+      "Desc": "Friedhof Hasserode Erneuerung Zäune",
+      "Budgets": {
+        "2020": 0,
+        "2021": -15000,
+        "2022": -15000,
+        "2023": 0,
+        "2024": -15000,
+        "2025": -15000
+      },
+      "Accounts": [
+        {
+          "Id": "50",
+          "Desc": " -Auszahlungen für Baumaßnahmen",
+          "Budgets": {
+            "2020": 0,
+            "2021": 15000,
+            "2022": 15000,
+            "2023": 0,
+            "2024": 15000,
+            "2025": 15000
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "/1616.7852000",
+                  "Desc": "Auszahlungen für Tiefbaumaßnahmen",
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 15000,
+                    "2022": 15000,
+                    "2023": 0,
+                    "2024": 15000,
+                    "2025": 15000
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "3008",
+      "Class": "one-off",
+      "Desc": "Friedhof Erneuerung Wege",
+      "Budgets": {
+        "2020": 0,
+        "2021": 0,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": null
+    },
+    {
+      "Id": "6666",
+      "Class": "one-off",
+      "Desc": "Bauliche Anlagen des Infrastrukturvermögens",
+      "Budgets": {
+        "2020": 0,
+        "2021": 0,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": null
+    }
+  ]
+}
