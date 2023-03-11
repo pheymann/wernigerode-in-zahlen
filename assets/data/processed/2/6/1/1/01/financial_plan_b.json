@@ -15,7 +15,7 @@
       "Accounts": [
         {
           "Id": "10",
-          "Desc": " Einzahlungen aus Investitionszuwendungen",
+          "Desc": "Einzahlungen aus Investitionszuwendungen",
           "Budgets": {
             "2020": 1171684,
             "2021": 1171100,
@@ -31,8 +31,9 @@
               "Budgets": null,
               "Units": [
                 {
-                  "Id": "/8000.6811000",
+                  "Id": "6.1.1.01/8000.6811000",
                   "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 1171684,
                     "2021": 1171100,

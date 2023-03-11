@@ -46,9 +46,16 @@ type SubAccount struct {
 }
 
 type UnitAccount struct {
-	Id      string
-	Desc    string
-	Budgets map[BudgetYear]float64
+	Id              string
+	Desc            string
+	AboveValueLimit *AboveValueLimit
+	Budgets         map[BudgetYear]float64
+}
+
+type AboveValueLimit struct {
+	ID          string
+	Category    string
+	SubCategory string
 }
 
 func (fpa *FinancialPlan) AddAccountBalance(balance AccountBalance) {

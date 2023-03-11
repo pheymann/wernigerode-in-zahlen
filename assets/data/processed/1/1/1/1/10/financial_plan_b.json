@@ -31,8 +31,9 @@
               "Budgets": null,
               "Units": [
                 {
-                  "Id": "/0080.7834000",
+                  "Id": "1.1.1.10/0080.7834000",
                   "Desc": "Auszahlung für den Erwerb immaterieller Vermögensgegenstände",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 95401.83,
                     "2021": 94800,
@@ -63,7 +64,7 @@
       "Accounts": [
         {
           "Id": "10",
-          "Desc": " Einzahlungen aus Investitionszuwendungen",
+          "Desc": "Einzahlungen aus Investitionszuwendungen",
           "Budgets": {
             "2020": 1733.63,
             "2021": 0,
@@ -79,8 +80,9 @@
               "Budgets": null,
               "Units": [
                 {
-                  "Id": "/0100.6811000",
+                  "Id": "1.1.1.10/0100.6811000",
                   "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 1733.63,
                     "2021": 0,
@@ -112,8 +114,9 @@
               "Budgets": null,
               "Units": [
                 {
-                  "Id": "/0100.7832000",
+                  "Id": "1.1.1.10/0100.7832000",
                   "Desc": "Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 23658.41,
                     "2021": 66000,
@@ -124,8 +127,9 @@
                   }
                 },
                 {
-                  "Id": "/0100.7832001",
+                  "Id": "1.1.1.10/0100.7832001",
                   "Desc": "Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € EDV o.Ustr.",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 41666.52,
                     "2021": 75200,
@@ -172,8 +176,9 @@
               "Budgets": null,
               "Units": [
                 {
-                  "Id": "/0200.7831000",
+                  "Id": "1.1.1.10/0200.7831000",
                   "Desc": "Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 3975.67,
                     "2021": 20300,
@@ -184,8 +189,9 @@
                   }
                 },
                 {
-                  "Id": "/0200.7831001",
+                  "Id": "1.1.1.10/0200.7831001",
                   "Desc": "Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro EDVo.Ustr.",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 1733.63,
                     "2021": 20000,

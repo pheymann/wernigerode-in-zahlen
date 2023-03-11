@@ -4,11 +4,18 @@
       "Id": "100",
       "Class": "one-off",
       "Desc": "Anschaffungen 150 € bis 1.000 € netto",
-      "Budgets": null,
+      "Budgets": {
+        "2020": -4461.16,
+        "2021": -13200,
+        "2022": -5700,
+        "2023": -5000,
+        "2024": -5000,
+        "2025": -5000
+      },
       "Accounts": [
         {
           "Id": "10",
-          "Desc": "Einzahlungen aus Investitionszuwendungen 5.5.1.01/0100.6811000            Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land 40 - Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen 5.5.1.01/0100.7832000            Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150 bis 1000 € o. UStr. 60 Saldo aus Einzahlungen und Auszahlungen",
+          "Desc": "Einzahlungen aus Investitionszuwendungen",
           "Budgets": {
             "2020": 0,
             "2021": 0,
@@ -17,33 +24,95 @@
             "2024": 0,
             "2025": 0
           },
-          "Subs": null
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "5.5.1.01/0100.6811000",
+                  "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 0,
+                    "2022": 3000,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "40",
+          "Desc": "- Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen",
+          "Budgets": {
+            "2020": 4461.16,
+            "2021": 13200,
+            "2022": 8700,
+            "2023": 5000,
+            "2024": 5000,
+            "2025": 5000
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "5.5.1.01/0100.7832000",
+                  "Desc": "Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150 bis 1000 € o. UStr.",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 4461.16,
+                    "2021": 13200,
+                    "2022": 8700,
+                    "2023": 5000,
+                    "2024": 5000,
+                    "2025": 5000
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "Id": "101",
       "Class": "one-off",
-      "Desc": "Anschaffungen 150 € bis 1.000 € netto Projekt Artenreich und",
-      "Budgets": null,
-      "Accounts": [
-        {
-          "Id": "",
-          "Desc": " vielfältig 60 Saldo aus Einzahlungen und Auszahlungen",
-          "Budgets": null,
-          "Subs": null
-        }
-      ]
+      "Desc": "Anschaffungen 150 € bis 1.000 € netto Projekt Artenreich und vielfältig",
+      "Budgets": {
+        "2020": 0,
+        "2021": 0,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": null
     },
     {
       "Id": "200",
       "Class": "one-off",
       "Desc": "Betriebs-und Geschäftsausstattungen",
-      "Budgets": null,
+      "Budgets": {
+        "2020": -22405.55,
+        "2021": -3500,
+        "2022": -7000,
+        "2023": -3000,
+        "2024": -3000,
+        "2025": -2000
+      },
       "Accounts": [
         {
           "Id": "10",
-          "Desc": "Einzahlungen aus Investitionszuwendungen 5.5.1.01/0200.6811000            Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land 40 - Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen 5.5.1.01/0200.7831000            Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr. 60 Saldo aus Einzahlungen und Auszahlungen",
+          "Desc": "Einzahlungen aus Investitionszuwendungen",
           "Budgets": {
             "2020": 0,
             "2021": 0,
@@ -52,7 +121,62 @@
             "2024": 0,
             "2025": 0
           },
-          "Subs": null
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "5.5.1.01/0200.6811000",
+                  "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 0,
+                    "2022": 3000,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "40",
+          "Desc": "- Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen",
+          "Budgets": {
+            "2020": 22405.55,
+            "2021": 3500,
+            "2022": 10000,
+            "2023": 3000,
+            "2024": 3000,
+            "2025": 2000
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "5.5.1.01/0200.7831000",
+                  "Desc": "Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 22405.55,
+                    "2021": 3500,
+                    "2022": 10000,
+                    "2023": 3000,
+                    "2024": 3000,
+                    "2025": 2000
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -60,13 +184,48 @@
       "Id": "400",
       "Class": "one-off",
       "Desc": "Maschinen und techn. Anlagen",
-      "Budgets": null,
+      "Budgets": {
+        "2020": 0,
+        "2021": -7500,
+        "2022": -32500,
+        "2023": -11500,
+        "2024": -10000,
+        "2025": 0
+      },
       "Accounts": [
         {
-          "Id": "",
-          "Desc": " 40 - Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen 5.5.1.01/0400.7831000          Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr. 60 Saldo aus Einzahlungen und Auszahlungen",
-          "Budgets": null,
-          "Subs": null
+          "Id": "40",
+          "Desc": "- Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen",
+          "Budgets": {
+            "2020": 0,
+            "2021": 7500,
+            "2022": 32500,
+            "2023": 11500,
+            "2024": 10000,
+            "2025": 0
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "5.5.1.01/0400.7831000",
+                  "Desc": "Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 7500,
+                    "2022": 32500,
+                    "2023": 11500,
+                    "2024": 10000,
+                    "2025": 0
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -74,13 +233,48 @@
       "Id": "500",
       "Class": "one-off",
       "Desc": "Fahrzeuge",
-      "Budgets": null,
+      "Budgets": {
+        "2020": 0,
+        "2021": -65000,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
       "Accounts": [
         {
-          "Id": "",
-          "Desc": " 40 - Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen 5.5.1.01/0500.7831000          Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr. 60 Saldo aus Einzahlungen und Auszahlungen",
-          "Budgets": null,
-          "Subs": null
+          "Id": "40",
+          "Desc": "- Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen",
+          "Budgets": {
+            "2020": 0,
+            "2021": 65000,
+            "2022": 0,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "5.5.1.01/0500.7831000",
+                  "Desc": "Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 65000,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -88,15 +282,15 @@
       "Id": "1614",
       "Class": "one-off",
       "Desc": "Erneuerung Seigerhüttenteich Teichmönch, Aussichtsplattform",
-      "Budgets": null,
-      "Accounts": [
-        {
-          "Id": "",
-          "Desc": " 60 Saldo aus Einzahlungen und Auszahlungen",
-          "Budgets": null,
-          "Subs": null
-        }
-      ]
+      "Budgets": {
+        "2020": 0,
+        "2021": 0,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": null
     },
     {
       "Id": "6666",
@@ -105,10 +299,38 @@
       "Budgets": null,
       "Accounts": [
         {
-          "Id": "",
-          "Desc": " 50 - Auszahlungen für Baumaßnahmen 5.5.1.01/6666.7853000            Auszahlungen für sonstige Baumaßnahmen 60 Saldo aus Einzahlungen und Auszahlungen",
-          "Budgets": null,
-          "Subs": null
+          "Id": "50",
+          "Desc": "- Auszahlungen für Baumaßnahmen",
+          "Budgets": {
+            "2020": 5744.32,
+            "2021": 0,
+            "2022": 0,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "5.5.1.01/6666.7853000",
+                  "Desc": "Auszahlungen für sonstige Baumaßnahmen 60 Saldo aus Einzahlungen und Auszahlungen",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 5744.32,
+                    "2021": 0,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     }

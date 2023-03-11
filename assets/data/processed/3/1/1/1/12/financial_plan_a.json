@@ -40,6 +40,7 @@
                 {
                   "Id": "6411000",
                   "Desc": "Einzahlungen aus Mieten und Pachten",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 710.02,
                     "2021": 600,
@@ -52,6 +53,7 @@
                 {
                   "Id": "6461000",
                   "Desc": "Sonstige privatrechtliche Leistungsentgelte",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 10373.2,
                     "2021": 7000,
@@ -64,6 +66,7 @@
                 {
                   "Id": "6483000",
                   "Desc": "Einzahlungen aus Kostenerstattungen von Zweckverbänden",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 51996,
                     "2021": 60000,
@@ -74,8 +77,9 @@
                   }
                 },
                 {
-                  "Id": "6485000",
+                  "Id": "1.1.1.12.6485000",
                   "Desc": "Einzahl. aus Kostenerstattungen von verbund. Untern., Sondervermö. und Beteilig.",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 10813.28,
                     "2021": 30000,
@@ -88,6 +92,7 @@
                 {
                   "Id": "6486000",
                   "Desc": "Einzahlungen aus Kostenerstattungen von sonstigen öffentlichen Sonderrechnungen",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 4500,
                     "2021": 9000,
@@ -114,6 +119,7 @@
                 {
                   "Id": "6521200",
                   "Desc": "Einnahmen Mehrwertsteuer 19%",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 12884.22,
                     "2021": 20200,
@@ -126,6 +132,7 @@
                 {
                   "Id": "6521216",
                   "Desc": "Einnahmen Mehrwertsteuer 16% 1.1.1.12.6521300 Erstattungen Vorsteuer",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 1692.85,
                     "2021": 0,
@@ -166,6 +173,7 @@
                 {
                   "Id": "7221000",
                   "Desc": "Unterhaltung des sonstigen unbeweglichen Vermögens",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 1377.64,
                     "2021": 1500,
@@ -178,6 +186,7 @@
                 {
                   "Id": "7261000",
                   "Desc": "Besondere zahlungswirksame Aufwendungen für Beschäftigte",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 1086.62,
                     "2021": 1500,
@@ -204,6 +213,7 @@
                 {
                   "Id": "7441200",
                   "Desc": "Abzugsfähige Vorsteuer 19%",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 249.28,
                     "2021": 0,
@@ -216,6 +226,7 @@
                 {
                   "Id": "7441216",
                   "Desc": "Abzugsfähige Vorsteuer 16%",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 526.32,
                     "2021": 1400,
@@ -228,6 +239,7 @@
                 {
                   "Id": "7441300",
                   "Desc": "Abführung Mehrwertsteuer",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 15818.46,
                     "2021": 20200,
@@ -281,8 +293,9 @@
               },
               "Units": [
                 {
-                  "Id": "/0100.7832000",
+                  "Id": "1.1.1.12/0100.7832000",
                   "Desc": "Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150 bis 1000 € o. UStr.",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 897.38,
                     "2021": 0,
@@ -293,8 +306,9 @@
                   }
                 },
                 {
-                  "Id": "/0200.7831000",
+                  "Id": "1.1.1.12/0200.7831000",
                   "Desc": "Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 1311.99,
                     "2021": 5000,

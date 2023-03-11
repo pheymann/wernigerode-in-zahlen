@@ -52,29 +52,29 @@
           {{end}}
       {{end}}
 
-      {{range .FpbBalanceSections}}
-          <h3>{{.Copy.Header}}</h3>
+      {{if .HasFpbBalanceSection}}
+          <h3>{{.FpbBalanceSection.Copy.Header}}</h3>
 
-          {{if .HasIncomeAndExpenses}}
+          {{if .FpbBalanceSection.HasIncomeAndExpenses}}
             <div class="row">
               <div class="col-6">
-                <h5 class="center">{{.Copy.IncomeCashflowTotal}}</h5>
-                <canvas id="{{.Income.ID}}"></canvas>
+                <h5 class="center">{{.FpbBalanceSection.Copy.IncomeCashflowTotal}}</h5>
+                <canvas id="{{.FpbBalanceSection.Income.ID}}"></canvas>
               </div>
               <div class="col-6">
-                <h5 class="center">{{.Copy.ExpensesCashflowTotal}}</h5>
-                <canvas id="{{.Expenses.ID}}"></canvas>
+                <h5 class="center">{{.FpbBalanceSection.Copy.ExpensesCashflowTotal}}</h5>
+                <canvas id="{{.FpbBalanceSection.Expenses.ID}}"></canvas>
               </div>
             </div>
           {{else}}
-            {{if .HasIncome}}
+            {{if .FpbBalanceSection.HasIncome}}
               <div class="padded-chart">
-                <canvas id="{{.Income.ID}}"></canvas>
+                <canvas id="{{.FpbBalanceSection.Income.ID}}"></canvas>
               </div>
             {{end}}
-            {{if .HasExpenses}}
+            {{if .FpbBalanceSection.HasExpenses}}
               <div class="padded-chart">
-                <canvas id="{{.Expenses.ID}}"></canvas>
+                <canvas id="{{.FpbBalanceSection.Expenses.ID}}"></canvas>
               </div>
             {{end}}
           {{end}}
@@ -160,15 +160,15 @@
         {{end}}
       {{end}}
 
-      {{range .FpbBalanceSections}}
-        {{if .HasIncome}}
-          new Chart(document.getElementById('{{.Income.ID}}'), {
+      {{if .HasFpbBalanceSection}}
+        {{if .FpbBalanceSection.HasIncome}}
+          new Chart(document.getElementById('{{.FpbBalanceSection.Income.ID}}'), {
             type: 'doughnut',
             data: {
-              labels: {{.Income.Labels}},
+              labels: {{.FpbBalanceSection.Income.Labels}},
               datasets: [{
                 label: 'Euro',
-                data: {{.Income.Data}},
+                data: {{.FpbBalanceSection.Income.Data}},
                 borderWidth: 1
               }]
             },
@@ -181,14 +181,14 @@
             }
           });
         {{end}}
-        {{if .HasExpenses}}
-          new Chart(document.getElementById('{{.Expenses.ID}}'), {
+        {{if .FpbBalanceSection.HasExpenses}}
+          new Chart(document.getElementById('{{.FpbBalanceSection.Expenses.ID}}'), {
             type: 'doughnut',
             data: {
-              labels: {{.Expenses.Labels}},
+              labels: {{.FpbBalanceSection.Expenses.Labels}},
               datasets: [{
                 label: 'Euro',
-                data: {{.Expenses.Data}},
+                data: {{.FpbBalanceSection.Expenses.Data}},
                 borderWidth: 1
               }]
             },

@@ -17,7 +17,7 @@
       Das Produkt -  Verwaltung und Betreuung der städtischen Museen und Museen in anderer Trägerschaft - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-expenses center">-280.200,00€</h2>
+    <h2 class="total-cashflow-expenses center">-287.200,00€</h2>
 
     <p>
       kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
@@ -32,11 +32,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 28.800,00€</h5>
-                <canvas id="chartjs-5c43c2a0-6f57-4b1c-b889-028f94c307df"></canvas>
+                <canvas id="chartjs-8935573b-dff7-45a1-bce0-9255f19f31a5"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: 302.000,00€</h5>
-                <canvas id="chartjs-7a30f4bb-4f20-497a-9e62-24e26adb08af"></canvas>
+                <canvas id="chartjs-11fa54ab-01f7-4bba-9054-c35fedc7c0de"></canvas>
               </div>
             </div>
           
@@ -47,31 +47,20 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-4b6c8307-f8c1-4dd8-880b-3b5eb70d4ff5"></canvas>
+                <canvas id="chartjs-ff7be383-384a-420f-bae9-65d391956e98"></canvas>
               </div>
             
           
       
 
       
-          <h3>Die Investition "Betriebs-und Geschäftsausstattungen" kostet <span class="total-cashflow-expenses">-3.000,00€</span></h3>
+          <h3>Investitionen oberhalb der Wertgrenze kosten <span class="total-cashflow-expenses">-7.000,00€</span></h3>
 
           
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-d0df6a87-9b54-4f23-a40b-b2e6d7c6db39"></canvas>
-              </div>
-            
-          
-      
-          <h3>Die Investition "Kunstgüter" kostet <span class="total-cashflow-expenses">-4.000,00€</span></h3>
-
-          
-            
-            
-              <div class="padded-chart">
-                <canvas id="chartjs-72bfee71-955a-4d7f-80ef-f551ce9f71c7"></canvas>
+                <canvas id="chartjs-d9fc2fb9-0980-4fe5-a24e-4c59699d7af0"></canvas>
               </div>
             
           
@@ -121,7 +110,7 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-5c43c2a0-6f57-4b1c-b889-028f94c307df'), {
+          new Chart(document.getElementById('chartjs-8935573b-dff7-45a1-bce0-9255f19f31a5'), {
             type: 'doughnut',
             data: {
               labels: ["Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus Mieten und Pachten","Einzahlungen aus dem Verkauf von Vorräten"],
@@ -141,7 +130,7 @@
           });
         
         
-          new Chart(document.getElementById('chartjs-7a30f4bb-4f20-497a-9e62-24e26adb08af'), {
+          new Chart(document.getElementById('chartjs-11fa54ab-01f7-4bba-9054-c35fedc7c0de'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Dienstauszahlungen und dgl. an sonstige Beschäftigte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zu Versorgungskassen für sonstige Beschäftigte","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschäft.","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung des sonstigen unbeweglichen Vermögens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für den Erwerb von Vorräten","Zuschüsse an übrige Bereiche","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen","Auszahlungen für Honorare"],
@@ -163,7 +152,7 @@
       
         
         
-          new Chart(document.getElementById('chartjs-4b6c8307-f8c1-4dd8-880b-3b5eb70d4ff5'), {
+          new Chart(document.getElementById('chartjs-ff7be383-384a-420f-bae9-65d391956e98'), {
             type: 'doughnut',
             data: {
               labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.","Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr."],
@@ -187,35 +176,13 @@
       
         
         
-          new Chart(document.getElementById('chartjs-d0df6a87-9b54-4f23-a40b-b2e6d7c6db39'), {
+          new Chart(document.getElementById('chartjs-d9fc2fb9-0980-4fe5-a24e-4c59699d7af0'), {
             type: 'doughnut',
             data: {
-              labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
+              labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.","Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr."],
               datasets: [{
                 label: 'Euro',
-                data: [3000],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              }
-            }
-          });
-        
-      
-        
-        
-          new Chart(document.getElementById('chartjs-72bfee71-955a-4d7f-80ef-f551ce9f71c7'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr."],
-              datasets: [{
-                label: 'Euro',
-                data: [4000],
+                data: [3000,4000],
                 borderWidth: 1
               }]
             },

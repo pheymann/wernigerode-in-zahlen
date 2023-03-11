@@ -31,8 +31,9 @@
               "Budgets": null,
               "Units": [
                 {
-                  "Id": "/0100.7832000",
+                  "Id": "5.7.5.02/0100.7832000",
                   "Desc": "Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 0,

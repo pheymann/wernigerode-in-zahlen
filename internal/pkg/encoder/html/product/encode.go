@@ -21,19 +21,22 @@ func Encode(
 	year model.BudgetYear,
 	p *message.Printer,
 ) html.Product {
+	fpbBalanceSection := shared.Map(fpbBalanceDataOpt, func(fpbBalanceData []html.BalanceData) html.BalanceSection {
+		return compressPlanBBalancesToSingleSection(fpbBalanceData, year, p)
+	})
+
 	return html.Product{
-		Meta:               metadata,
-		FpaBalanceSections: balanceDataToSections(fpaBalanceData, year, p),
-		FpbBalanceSections: shared.Map(fpbBalanceDataOpt, func(fpbBalanceData []html.BalanceData) []html.BalanceSection {
-			return balanceDataToSections(fpbBalanceData, year, p)
-		}).GetOrElse([]html.BalanceSection{}),
+		Meta:                 metadata,
+		FpaBalanceSections:   balanceDataToSections(fpaBalanceData, year, p),
+		HasFpbBalanceSection: fpbBalanceSection.IsSome,
+		FpbBalanceSection:    fpbBalanceSection.GetOrElse(html.BalanceSection{}),
 		Copy: html.ProductCopy{
 			BackLink: "Zurück zur Bereichsübersicht",
 
 			IntroCashflowTotal: fmt.Sprintf("Das Produkt - %s - wird in %s", metadata.Description, year),
 			IntroDescription:   encodeIntroDescription(fpaCashflowTotal+fpbCashflowTotalOpt.GetOrElse(0), metadata),
 
-			CashflowTotal: encodeHtml.EncodeBudget(fpaCashflowTotal, p),
+			CashflowTotal: encodeHtml.EncodeBudget(fpaCashflowTotal+fpbCashflowTotalOpt.GetOrElse(0), p),
 
 			MetaDepartment:    "Fachbereich",
 			MetaProductClass:  "Produktklasse",
@@ -55,7 +58,7 @@ func Encode(
 			Das Gesamtbudget auf dieser Webseite ergibt sich aus dem Teilfinanzplan A und B.`,
 		},
 		CSS: html.ProductCSS{
-			TotalCashflowClass: encodeHtml.EncodeCSSCashflowClass(fpaCashflowTotal),
+			TotalCashflowClass: encodeHtml.EncodeCSSCashflowClass(fpaCashflowTotal + fpbCashflowTotalOpt.GetOrElse(0)),
 		},
 	}
 }
@@ -71,6 +74,52 @@ func encodeIntroDescription(cashflowTotal float64, meta model.Metadata) string {
 		Auflistung von Kostenstellen. Ganz am Ende dieser Seite findest du noch eine Beschreibung des Produkts.`,
 		expenseEarnCopy,
 	)
+}
+
+func compressPlanBBalancesToSingleSection(balanceData []html.BalanceData, year model.BudgetYear, p *message.Printer) html.BalanceSection {
+	var income []html.DataPoint
+	var expenses []html.DataPoint
+
+	for _, balance := range balanceData {
+		income = append(income, balance.Income...)
+		expenses = append(expenses, balance.Expenses...)
+	}
+
+	var incomeCashflowTotal float64
+	for _, income := range income {
+		incomeCashflowTotal += income.Budget
+	}
+	var expensesCashflowTotal float64
+	for _, expense := range expenses {
+		expensesCashflowTotal += expense.Budget
+	}
+	cashflowTotal := incomeCashflowTotal - expensesCashflowTotal
+
+	return html.BalanceSection{
+		ID:                   "balance-" + uuid.New().String(),
+		HasIncomeAndExpenses: len(income) > 0 && len(expenses) > 0,
+		HasIncome:            len(income) > 0,
+		IncomeCashflowTotal:  incomeCashflowTotal,
+		Income:               dataPointsToChartJSDataset(income),
+
+		HasExpenses:           len(expenses) > 0,
+		ExpensesCashflowTotal: expensesCashflowTotal,
+		Expenses:              dataPointsToChartJSDataset(expenses),
+
+		Copy: html.BalanceSectionCopy{
+			Header: template.HTML(fmt.Sprintf(
+				`%s <span class="%s">%s</span>`,
+				encodeAccountClass(model.AccountClassOneOff, cashflowTotal),
+				encodeHtml.EncodeCSSCashflowClass(cashflowTotal),
+				encodeHtml.EncodeBudget(cashflowTotal, p),
+			)),
+			IncomeCashflowTotal:   "Einnahmen: " + encodeHtml.EncodeBudget(incomeCashflowTotal, p),
+			ExpensesCashflowTotal: "Ausgaben: " + encodeHtml.EncodeBudget(expensesCashflowTotal, p),
+		},
+		CSS: html.BalanceSectionCSS{
+			CashflowTotalClass: encodeHtml.EncodeCSSCashflowClass(cashflowTotal),
+		},
+	}
 }
 
 func balanceDataToSections(data []html.BalanceData, year model.BudgetYear, p *message.Printer) []html.BalanceSection {
@@ -131,13 +180,13 @@ func dataPointsToChartJSDataset(dataPoints []html.DataPoint) html.ChartJSDataset
 func encodeBalanceSectionHeader(balance model.AccountBalance, year model.BudgetYear, p *message.Printer) template.HTML {
 	return template.HTML(fmt.Sprintf(
 		`%s <span class="%s">%s</span>`,
-		encodeAccountClass(balance.Class, balance.Budgets[year], balance.Desc),
+		encodeAccountClass(balance.Class, balance.Budgets[year]),
 		encodeHtml.EncodeCSSCashflowClass(balance.Budgets[year]),
 		encodeHtml.EncodeBudget(balance.Budgets[year], p),
 	))
 }
 
-func encodeAccountClass(class model.AccountClass, cashflowTotal float64, oneOffDesc string) string {
+func encodeAccountClass(class model.AccountClass, cashflowTotal float64) string {
 	switch class {
 	case model.AccountClassAdministration:
 		if cashflowTotal >= 0 {
@@ -153,9 +202,9 @@ func encodeAccountClass(class model.AccountClass, cashflowTotal float64, oneOffD
 
 	case model.AccountClassOneOff:
 		if cashflowTotal >= 0 {
-			return fmt.Sprintf("Die Investition \"%s\" erwirtschaftet", oneOffDesc)
+			return "Investitionen oberhalb der Wertgrenze erwirtschaften"
 		}
-		return fmt.Sprintf("Die Investition \"%s\" kostet", oneOffDesc)
+		return "Investitionen oberhalb der Wertgrenze kosten"
 
 	default:
 		panic(fmt.Sprintf("unknown account class '%s'", class))

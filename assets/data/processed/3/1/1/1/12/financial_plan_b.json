@@ -31,8 +31,9 @@
               "Budgets": null,
               "Units": [
                 {
-                  "Id": "/0100.7832000",
+                  "Id": "1.1.1.12/0100.7832000",
                   "Desc": "Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 897.38,
                     "2021": 0,
@@ -79,8 +80,9 @@
               "Budgets": null,
               "Units": [
                 {
-                  "Id": "/0200.7831000",
+                  "Id": "1.1.1.12/0200.7831000",
                   "Desc": "Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 1311.99,
                     "2021": 5000,

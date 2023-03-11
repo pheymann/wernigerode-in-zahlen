@@ -13,6 +13,7 @@ import (
 
 func main() {
 	directory := flag.String("dir", "", "directory to read HTML files from")
+	debugRootPath := flag.String("root-path", "", "Debug: root path")
 
 	flag.Parse()
 
@@ -45,6 +46,7 @@ func main() {
 		financialPlanBJSONOpt,
 		io.ReadCompleteFile(metadataFile),
 		model.BudgetYear2023,
+		*debugRootPath,
 	)
 
 	target := decodeTarget.Decode(financialPlanAFile, "html")

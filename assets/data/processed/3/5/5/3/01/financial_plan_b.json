@@ -31,8 +31,9 @@
               "Budgets": null,
               "Units": [
                 {
-                  "Id": "/0100.7832000",
+                  "Id": "5.5.3.01/0100.7832000",
                   "Desc": "Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 5237.18,
                     "2021": 2000,
@@ -79,8 +80,9 @@
               "Budgets": null,
               "Units": [
                 {
-                  "Id": "/0200.7831000",
+                  "Id": "5.5.3.01/0200.7831000",
                   "Desc": "Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 6000,
@@ -127,8 +129,9 @@
               "Budgets": null,
               "Units": [
                 {
-                  "Id": "/0500.7831000",
+                  "Id": "5.5.3.01/0500.7831000",
                   "Desc": "Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 20492.29,
                     "2021": 0,
@@ -175,8 +178,9 @@
               "Budgets": null,
               "Units": [
                 {
-                  "Id": "/1610.7851000",
+                  "Id": "5.5.3.01/1610.7851000",
                   "Desc": "Auszahlungen für Hochbaumaßnahmen",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 14797.97,
                     "2021": 0,
@@ -223,8 +227,9 @@
               "Budgets": null,
               "Units": [
                 {
-                  "Id": "/1616.7852000",
+                  "Id": "5.5.3.01/1616.7852000",
                   "Desc": "Auszahlungen für Tiefbaumaßnahmen",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 15000,

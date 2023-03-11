@@ -40,6 +40,7 @@
                 {
                   "Id": "6321000",
                   "Desc": "Benutzungsgebühren und ähnliche Entgelte",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 1982.87,
                     "2021": 0,
@@ -66,6 +67,7 @@
                 {
                   "Id": "6411000",
                   "Desc": "Einzahlungen aus Mieten und Pachten",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 30000,
@@ -78,6 +80,7 @@
                 {
                   "Id": "6461000",
                   "Desc": "Sonstige privatrechtliche Leistungsentgelte",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 34.45,
                     "2021": 0,
@@ -90,6 +93,7 @@
                 {
                   "Id": "6485000",
                   "Desc": "Einzahl. aus Kostenerstattungen von verbund. Untern., Sondervermö. und Beteilig.",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 0,
@@ -102,6 +106,7 @@
                 {
                   "Id": "6488000",
                   "Desc": "Einzahlungen aus Kostenerstattungen von übrigen Bereichen",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 5669.17,
                     "2021": 5000,
@@ -128,6 +133,7 @@
                 {
                   "Id": "6521200",
                   "Desc": "Einnahmen Mehrwertsteuer 19%",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 1460.42,
                     "2021": 6600,
@@ -140,6 +146,7 @@
                 {
                   "Id": "6521300",
                   "Desc": "Erstattungen Vorsteuer",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 1837.32,
                     "2021": 600,
@@ -180,6 +187,7 @@
                 {
                   "Id": "7241000",
                   "Desc": "Bewirtschaftung der Grundstücke und baulichen Anlagen",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 5000,
@@ -192,6 +200,7 @@
                 {
                   "Id": "7252000",
                   "Desc": "Erwerb geringwertiger Vermögensgegenstände",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 90.72,
                     "2021": 0,
@@ -204,6 +213,7 @@
                 {
                   "Id": "7255000",
                   "Desc": "Unterhaltung des sonstigen beweglichen Vermögens",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 0,
@@ -216,6 +226,7 @@
                 {
                   "Id": "7271000",
                   "Desc": "Besondere Verwaltungs- und Betriebsauszahlungen",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 2088.75,
                     "2021": 0,
@@ -228,6 +239,7 @@
                 {
                   "Id": "7291000",
                   "Desc": "Auszahlungen für sonstige Dienstleistungen",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 1414.17,
                     "2021": 0,
@@ -254,6 +266,7 @@
                 {
                   "Id": "7441100",
                   "Desc": "Abzugsfähige Vorsteuer  7%",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 87.79,
                     "2021": 0,
@@ -266,6 +279,7 @@
                 {
                   "Id": "7441105",
                   "Desc": "Abzugsfähige Vorsteuer 5%",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 19.68,
                     "2021": 0,
@@ -278,6 +292,7 @@
                 {
                   "Id": "7441200",
                   "Desc": "Abzugsfähige Vorsteuer 19%",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 83.74,
                     "2021": 600,
@@ -290,6 +305,7 @@
                 {
                   "Id": "7441300",
                   "Desc": "Abführung Mehrwertsteuer",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 993.37,
                     "2021": 6600,
@@ -382,8 +398,9 @@
               },
               "Units": [
                 {
-                  "Id": "/0100.7832000",
+                  "Id": "2.8.1.02/0100.7832000",
                   "Desc": "Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 500,
@@ -394,8 +411,9 @@
                   }
                 },
                 {
-                  "Id": "/0300.7831000",
+                  "Id": "2.8.1.02/0300.7831000",
                   "Desc": "Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.",
+                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 0,

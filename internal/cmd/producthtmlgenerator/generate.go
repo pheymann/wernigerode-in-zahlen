@@ -15,7 +15,7 @@ import (
 	"wernigode-in-zahlen.de/internal/pkg/shared"
 )
 
-func GenerateProductHTML(financialPlanAJSON string, financialPlanBJSONOpt shared.Option[string], metadataJSON string, year model.BudgetYear) string {
+func GenerateProductHTML(financialPlanAJSON string, financialPlanBJSONOpt shared.Option[string], metadataJSON string, year model.BudgetYear, debugRootPath string) string {
 	fpa := fpDecoder.DecodeFromJSON(financialPlanAJSON)
 	metadata := metaDecoder.DecodeFromJSON(metadataJSON)
 	p := message.NewPrinter(language.German)
@@ -33,7 +33,7 @@ func GenerateProductHTML(financialPlanAJSON string, financialPlanBJSONOpt shared
 		fpbCashflowOpt.ToSome(fpbCashflow)
 	})
 
-	productTmpl := template.Must(template.ParseFiles("assets/html/templates/product.template.html"))
+	productTmpl := template.Must(template.ParseFiles(debugRootPath + "assets/html/templates/product.template.html"))
 
 	var htmlBytes bytes.Buffer
 	if err := productTmpl.Execute(

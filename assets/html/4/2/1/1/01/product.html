@@ -17,7 +17,7 @@
       Das Produkt -  Wahrnehmung von Aufgaben des Schulträgers - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-expenses center">-1.804.200,00€</h2>
+    <h2 class="total-cashflow-expenses center">-2.679.100,00€</h2>
 
     <p>
       kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
@@ -29,12 +29,16 @@
           <h3>Die Verwaltung kostet <span class="total-cashflow-expenses">-929.300,00€</span></h3>
 
           
-            
-            
-              <div class="padded-chart">
-                <canvas id="chartjs-7a5e4d52-b18e-46c8-96e7-2cf02350e0e4"></canvas>
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 78.900,00€</h5>
+                <canvas id="chartjs-188e26ab-f793-484d-9559-4742cfae21a6"></canvas>
               </div>
-            
+              <div class="col-6">
+                <h5 class="center">Ausgaben: 1.008.200,00€</h5>
+                <canvas id="chartjs-8d125057-b839-4a7a-b91f-c007d0dfbb05"></canvas>
+              </div>
+            </div>
           
       
           <h3>Investitionen unterhalb der Wertgrenze kosten <span class="total-cashflow-expenses">-874.900,00€</span></h3>
@@ -43,42 +47,20 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-77b6f840-cc65-473c-a0f6-d67cf93e14d7"></canvas>
+                <canvas id="chartjs-6ca63177-a818-4b87-aea5-6ccc185625fe"></canvas>
               </div>
             
           
       
 
       
-          <h3>Die Investition "Anschaffungen 150 €  bis 1.000 € netto" kostet <span class="total-cashflow-expenses">-38.500,00€</span></h3>
+          <h3>Investitionen oberhalb der Wertgrenze kosten <span class="total-cashflow-expenses">-874.900,00€</span></h3>
 
           
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-239c7a45-462d-44f1-9a49-898f2c8fcc84"></canvas>
-              </div>
-            
-          
-      
-          <h3>Die Investition "Betriebs-und Geschäftsausstattungen" kostet <span class="total-cashflow-expenses">-36.400,00€</span></h3>
-
-          
-            
-            
-              <div class="padded-chart">
-                <canvas id="chartjs-1dcb194e-a3d3-42ef-9f85-0dae8f75117c"></canvas>
-              </div>
-            
-          
-      
-          <h3>Die Investition "Sanierung Schule Harzblick" kostet <span class="total-cashflow-expenses">-800.000,00€</span></h3>
-
-          
-            
-            
-              <div class="padded-chart">
-                <canvas id="chartjs-b65aacbb-eb2f-4cdd-b359-49e0296580a4"></canvas>
+                <canvas id="chartjs-1c48866f-6be8-437d-95f8-ea3245398e93"></canvas>
               </div>
             
           
@@ -128,14 +110,33 @@
     <script>
       
         
-        
-          new Chart(document.getElementById('chartjs-7a5e4d52-b18e-46c8-96e7-2cf02350e0e4'), {
+          new Chart(document.getElementById('chartjs-188e26ab-f793-484d-9559-4742cfae21a6'), {
             type: 'doughnut',
             data: {
-              labels: ["Verwaltungsgebühren","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus Mieten und Pachten","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Unterhaltung der Grundstücke und baulichen Anlagen-Gebäudemanagement","Unterhaltung des sonstigen unbeweglichen Vermögens","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für sonstige Dienstleistungen","Sonstige Auszahlungen für die Inanspruchnahme von Rechten und Diensten","Geschäftsauszahlungen"],
+              labels: ["Verwaltungsgebühren","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus Mieten und Pachten"],
               datasets: [{
                 label: 'Euro',
-                data: [500,4000,74400,284500,12000,57300,1500,5000,337300,4300,227400,16400,2500,900,34600,900,13600,10000],
+                data: [500,4000,74400],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+        
+          new Chart(document.getElementById('chartjs-8d125057-b839-4a7a-b91f-c007d0dfbb05'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Unterhaltung der Grundstücke und baulichen Anlagen-Gebäudemanagement","Unterhaltung des sonstigen unbeweglichen Vermögens","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für sonstige Dienstleistungen","Sonstige Auszahlungen für die Inanspruchnahme von Rechten und Diensten","Geschäftsauszahlungen"],
+              datasets: [{
+                label: 'Euro',
+                data: [284500,12000,57300,1500,5000,337300,4300,227400,16400,2500,900,34600,900,13600,10000],
                 borderWidth: 1
               }]
             },
@@ -151,13 +152,13 @@
       
         
         
-          new Chart(document.getElementById('chartjs-77b6f840-cc65-473c-a0f6-d67cf93e14d7'), {
+          new Chart(document.getElementById('chartjs-6ca63177-a818-4b87-aea5-6ccc185625fe'), {
             type: 'doughnut',
             data: {
-              labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.","Auszahlungen für Hochbaumaßnahmen"],
+              labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150 bis 1000 € o. UStr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.","Auszahlungen für Hochbaumaßnahmen"],
               datasets: [{
                 label: 'Euro',
-                data: [36400,800000],
+                data: [38500,36400,800000],
                 borderWidth: 1
               }]
             },
@@ -175,57 +176,13 @@
       
         
         
-          new Chart(document.getElementById('chartjs-239c7a45-462d-44f1-9a49-898f2c8fcc84'), {
+          new Chart(document.getElementById('chartjs-1c48866f-6be8-437d-95f8-ea3245398e93'), {
             type: 'doughnut',
             data: {
-              labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr."],
+              labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.","Auszahlungen für Hochbaumaßnahmen"],
               datasets: [{
                 label: 'Euro',
-                data: [38500],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              }
-            }
-          });
-        
-      
-        
-        
-          new Chart(document.getElementById('chartjs-1dcb194e-a3d3-42ef-9f85-0dae8f75117c'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
-              datasets: [{
-                label: 'Euro',
-                data: [36400],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              }
-            }
-          });
-        
-      
-        
-        
-          new Chart(document.getElementById('chartjs-b65aacbb-eb2f-4cdd-b359-49e0296580a4'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Auszahlungen für Hochbaumaßnahmen"],
-              datasets: [{
-                label: 'Euro',
-                data: [800000],
+                data: [38500,36400,800000],
                 borderWidth: 1
               }]
             },

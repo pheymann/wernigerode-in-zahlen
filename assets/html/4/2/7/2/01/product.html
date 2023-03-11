@@ -17,7 +17,7 @@
       Das Produkt -  Die Bibliotheken dienen der allgemeinen Bildung und Information, der Leseförderung, der Freizeitgestaltung und Unterhaltung - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-expenses center">-460.200,00€</h2>
+    <h2 class="total-cashflow-expenses center">-463.200,00€</h2>
 
     <p>
       kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
@@ -29,12 +29,16 @@
           <h3>Die Verwaltung kostet <span class="total-cashflow-expenses">-457.200,00€</span></h3>
 
           
-            
-            
-              <div class="padded-chart">
-                <canvas id="chartjs-69301016-c703-4577-a88a-378fa2abbf6a"></canvas>
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 29.600,00€</h5>
+                <canvas id="chartjs-aa715374-7059-42b6-a983-dcab7ed09b19"></canvas>
               </div>
-            
+              <div class="col-6">
+                <h5 class="center">Ausgaben: 486.800,00€</h5>
+                <canvas id="chartjs-20e47c1b-bc2c-4743-b34f-a3a499a15fa7"></canvas>
+              </div>
+            </div>
           
       
           <h3>Investitionen unterhalb der Wertgrenze kosten <span class="total-cashflow-expenses">-3.000,00€</span></h3>
@@ -43,20 +47,20 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-0364efb3-6bd6-4bd4-8349-dd630119a8cc"></canvas>
+                <canvas id="chartjs-f578870d-4d25-4e0d-a3fc-88f0b1783b83"></canvas>
               </div>
             
           
       
 
       
-          <h3>Die Investition "Betriebs-und Geschäftsausstattungen" kostet <span class="total-cashflow-expenses">-3.000,00€</span></h3>
+          <h3>Investitionen oberhalb der Wertgrenze kosten <span class="total-cashflow-expenses">-3.000,00€</span></h3>
 
           
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-dc36aecb-495f-47ec-abda-0d3b86359982"></canvas>
+                <canvas id="chartjs-cb03a128-5ecf-4c95-a7b2-d8030dffebcf"></canvas>
               </div>
             
           
@@ -106,14 +110,33 @@
     <script>
       
         
-        
-          new Chart(document.getElementById('chartjs-69301016-c703-4577-a88a-378fa2abbf6a'), {
+          new Chart(document.getElementById('chartjs-aa715374-7059-42b6-a983-dcab7ed09b19'), {
             type: 'doughnut',
             data: {
-              labels: ["Zuweisungen für laufende Zwecke vom Land","Verwaltungsgebühren","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus der Veräußerung von beweglichen Sachen","Einzahlungen aus Kostenerstattungen vom Bund 8 Einzahlungen aus laufender Verwaltungstätigkeit","Dienstauszahlungen und dgl. an Arbeitnehmer","Dienstauszahlungen und dgl. an sonstige Beschäftigte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschäft.","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für Mieten und Pachten","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für den Erwerb von Medien Bibliothek","Auszahlungen für den Erwerb von Vorräten","Auszahlungen für sonstige Dienstleistungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen","Auszahlungen für Honorare"],
+              labels: ["Zuweisungen für laufende Zwecke vom Land","Verwaltungsgebühren","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus der Veräußerung von beweglichen Sachen","Einzahlungen aus Kostenerstattungen vom Bund"],
               datasets: [{
                 label: 'Euro',
-                data: [7000,4000,10000,5000,3600,318800,5300,13300,64100,2200,1600,2000,500,400,9000,41000,1000,14700,400,6000,6500],
+                data: [7000,4000,10000,5000,3600],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+        
+          new Chart(document.getElementById('chartjs-20e47c1b-bc2c-4743-b34f-a3a499a15fa7'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Dienstauszahlungen und dgl. an sonstige Beschäftigte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschäft.","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für Mieten und Pachten","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für den Erwerb von Medien Bibliothek","Auszahlungen für den Erwerb von Vorräten","Auszahlungen für sonstige Dienstleistungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen","Auszahlungen für Honorare"],
+              datasets: [{
+                label: 'Euro',
+                data: [318800,5300,13300,64100,2200,1600,2000,500,400,9000,41000,1000,14700,400,6000,6500],
                 borderWidth: 1
               }]
             },
@@ -129,7 +152,7 @@
       
         
         
-          new Chart(document.getElementById('chartjs-0364efb3-6bd6-4bd4-8349-dd630119a8cc'), {
+          new Chart(document.getElementById('chartjs-f578870d-4d25-4e0d-a3fc-88f0b1783b83'), {
             type: 'doughnut',
             data: {
               labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
@@ -153,7 +176,7 @@
       
         
         
-          new Chart(document.getElementById('chartjs-dc36aecb-495f-47ec-abda-0d3b86359982'), {
+          new Chart(document.getElementById('chartjs-cb03a128-5ecf-4c95-a7b2-d8030dffebcf'), {
             type: 'doughnut',
             data: {
               labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],

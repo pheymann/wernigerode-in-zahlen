@@ -46,10 +46,10 @@ func NewDecoder() Decoder {
 					rxNumber("_2025"),
 				),
 			),
-			regexp.MustCompile(rxBasis(`(?P<id>[0-9][0-9]?) \+? `)),
+			regexp.MustCompile(rxBasis(`(?P<id>[0-9][0-9]?)[ ]+\+?[ ]*`)),
 			regexp.MustCompile(
 				fmt.Sprintf(
-					`^"(?P<id>[0-9][0-9]?) \+? (?P<desc>[ %s,]*)",+%s,%s,%s,%s,%s,%s`,
+					`^"(?P<id>[0-9][0-9]?)[ ]+\+?[ ]*(?P<desc>[ %s,]*)",+%s,%s,%s,%s,%s,%s`,
 					decoder.RxGermanPlusSpecialLetter,
 					rxFloatNumber,
 					rxNumber("_2021"),
@@ -64,7 +64,7 @@ func NewDecoder() Decoder {
 			regexp.MustCompile(rxBasis(`\d\.\d\.\d\.\d{2}\.(?P<id>\d+) `)),
 			regexp.MustCompile(
 				fmt.Sprintf(
-					`^"\d\.\d\.\d\.\d{2}\.(?P<id>\d+) (?P<desc>[ %s,]*)",+%s,%s,%s,%s,%s,%s`,
+					`^"(?P<id>\d\.\d\.\d\.\d{2}\.\d+)[ ]+(?P<desc>[ %s,]*)",+%s,%s,%s,%s,%s,%s`,
 					decoder.RxGermanPlusSpecialLetter,
 					rxFloatNumber,
 					rxNumber("_2021"),
@@ -76,7 +76,19 @@ func NewDecoder() Decoder {
 			),
 			regexp.MustCompile(
 				fmt.Sprintf(
-					`^\d\.\d\.\d\.\d{2}(?P<id>/\d+\.\d+) (?P<desc>[ %s]*),+%s,%s,%s,%s,%s,%s`,
+					`^"(?P<id>\d\.\d\.\d\.\d{2}/\d+\.\d+)[ ]+(?P<desc>[ %s,]*)",+%s,%s,%s,%s,%s,%s`,
+					decoder.RxGermanPlusSpecialLetter,
+					rxFloatNumber,
+					rxNumber("_2021"),
+					rxNumber("_2022"),
+					rxNumber("_2023"),
+					rxNumber("_2024"),
+					rxNumber("_2025"),
+				),
+			),
+			regexp.MustCompile(
+				fmt.Sprintf(
+					`^(?P<id>\d\.\d\.\d\.\d{2}/\d+\.\d+)[ ]+(?P<desc>[ %s]*),+%s,%s,%s,%s,%s,%s`,
 					decoder.RxGermanPlusSpecialLetter,
 					rxFloatNumber,
 					rxNumber("_2021"),

@@ -1,0 +1,503 @@
+{
+  "Balances": [
+    {
+      "Id": "16",
+      "Class": "admininstration",
+      "Desc": "Saldo aus laufender Verwaltungstätigkeit (Saldo Zeilen 8 und 15)",
+      "Budgets": {
+        "2020": -129263.03,
+        "2021": -159700,
+        "2022": -142300,
+        "2023": -113300,
+        "2024": -112300,
+        "2025": -113300
+      },
+      "Accounts": [
+        {
+          "Id": "8",
+          "Desc": "Einzahlungen aus laufender Verwaltungstätigkeit",
+          "Budgets": {
+            "2020": 3086.28,
+            "2021": 4700,
+            "2022": 4100,
+            "2023": 4100,
+            "2024": 4100,
+            "2025": 4100
+          },
+          "Subs": [
+            {
+              "Id": "4",
+              "Desc": "öffentlich-rechtliche Leistungsentgelte",
+              "Budgets": {
+                "2020": 627.72,
+                "2021": 800,
+                "2022": 800,
+                "2023": 800,
+                "2024": 800,
+                "2025": 800
+              },
+              "Units": [
+                {
+                  "Id": "6321000",
+                  "Desc": "Benutzungsgebühren und ähnliche Entgelte",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 627.72,
+                    "2021": 800,
+                    "2022": 800,
+                    "2023": 800,
+                    "2024": 800,
+                    "2025": 800
+                  }
+                }
+              ]
+            },
+            {
+              "Id": "5",
+              "Desc": "privatrechtliche Leistungsentgelte, Kostenerstattungen, Kostenumlagen",
+              "Budgets": {
+                "2020": 2458.56,
+                "2021": 3900,
+                "2022": 3300,
+                "2023": 3300,
+                "2024": 3300,
+                "2025": 3300
+              },
+              "Units": [
+                {
+                  "Id": "6411000",
+                  "Desc": "Einzahlungen aus Mieten und Pachten",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 600,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                },
+                {
+                  "Id": "6421000",
+                  "Desc": "Einzahlungen aus dem Verkauf von Vorräten (Holzverkauf)",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 2336.33,
+                    "2021": 3000,
+                    "2022": 3000,
+                    "2023": 3000,
+                    "2024": 3000,
+                    "2025": 3000
+                  }
+                },
+                {
+                  "Id": "6488000",
+                  "Desc": "Einzahlungen aus Kostenerstattungen von übrigen Bereichen",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 122.23,
+                    "2021": 300,
+                    "2022": 300,
+                    "2023": 300,
+                    "2024": 300,
+                    "2025": 300
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "15",
+          "Desc": "Auszahlungen aus laufender Verwaltungstätigkeit",
+          "Budgets": {
+            "2020": 132349.31,
+            "2021": 164400,
+            "2022": 146400,
+            "2023": 117400,
+            "2024": 116400,
+            "2025": 117400
+          },
+          "Subs": [
+            {
+              "Id": "9",
+              "Desc": "Personalauszahlungen",
+              "Budgets": {
+                "2020": 23095.08,
+                "2021": 0,
+                "2022": 0,
+                "2023": 0,
+                "2024": 0,
+                "2025": 0
+              },
+              "Units": [
+                {
+                  "Id": "7012000",
+                  "Desc": "Dienstauszahlungen und dgl. an Arbeitnehmer",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 18631.63,
+                    "2021": 0,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                },
+                {
+                  "Id": "7022000",
+                  "Desc": "Beiträge zu Versorgungskassen für Arbeitnehmer",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 726.63,
+                    "2021": 0,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                },
+                {
+                  "Id": "7032000",
+                  "Desc": "Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 3659.11,
+                    "2021": 0,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                },
+                {
+                  "Id": "5.7.5.02.7041000",
+                  "Desc": "Beihilfen, Unterstützungsleistungen für Beschäftigte",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 77.71,
+                    "2021": 0,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                }
+              ]
+            },
+            {
+              "Id": "11",
+              "Desc": "Auszahlungen für Sach- und Dienstleistungen",
+              "Budgets": {
+                "2020": 104441.31,
+                "2021": 157100,
+                "2022": 139400,
+                "2023": 109400,
+                "2024": 109400,
+                "2025": 109400
+              },
+              "Units": [
+                {
+                  "Id": "7221000",
+                  "Desc": "Unterhaltung des sonstigen unbeweglichen Vermögens",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 99621.33,
+                    "2021": 150000,
+                    "2022": 130000,
+                    "2023": 100000,
+                    "2024": 100000,
+                    "2025": 100000
+                  }
+                },
+                {
+                  "Id": "7231000",
+                  "Desc": "Auszahlungen für Mieten und Pachten",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 500,
+                    "2022": 1000,
+                    "2023": 1000,
+                    "2024": 1000,
+                    "2025": 1000
+                  }
+                },
+                {
+                  "Id": "7241000",
+                  "Desc": "Bewirtschaftung der Grundstücke und baulichen Anlagen",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 200,
+                    "2022": 200,
+                    "2023": 200,
+                    "2024": 200,
+                    "2025": 200
+                  }
+                },
+                {
+                  "Id": "7251000",
+                  "Desc": "Haltung von Fahrzeugen",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 1705.2,
+                    "2021": 5000,
+                    "2022": 5000,
+                    "2023": 5000,
+                    "2024": 5000,
+                    "2025": 5000
+                  }
+                },
+                {
+                  "Id": "7252000",
+                  "Desc": "Erwerb geringwertiger Vermögensgegenstände",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 277.75,
+                    "2021": 500,
+                    "2022": 500,
+                    "2023": 500,
+                    "2024": 500,
+                    "2025": 500
+                  }
+                },
+                {
+                  "Id": "7261000",
+                  "Desc": "Besondere zahlungswirksame Aufwendungen für Beschäftigte",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 1113.77,
+                    "2021": 500,
+                    "2022": 700,
+                    "2023": 700,
+                    "2024": 700,
+                    "2025": 700
+                  }
+                },
+                {
+                  "Id": "7271000",
+                  "Desc": "Besondere Verwaltungs- und Betriebsauszahlungen",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 1723.26,
+                    "2021": 400,
+                    "2022": 2000,
+                    "2023": 2000,
+                    "2024": 2000,
+                    "2025": 2000
+                  }
+                }
+              ]
+            },
+            {
+              "Id": "13",
+              "Desc": "Sonstige Auszahlungen",
+              "Budgets": {
+                "2020": 4812.92,
+                "2021": 7300,
+                "2022": 7000,
+                "2023": 8000,
+                "2024": 7000,
+                "2025": 8000
+              },
+              "Units": [
+                {
+                  "Id": "7431000",
+                  "Desc": "Geschäftsauszahlungen",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 300,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                },
+                {
+                  "Id": "5.7.5.02.7431100",
+                  "Desc": "Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 100,
+                    "2021": 4000,
+                    "2022": 3000,
+                    "2023": 4000,
+                    "2024": 3000,
+                    "2025": 4000
+                  }
+                },
+                {
+                  "Id": "7431400",
+                  "Desc": "Auszahlungen für Beitragsservice (GEZ)",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 69.96,
+                    "2021": 0,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                },
+                {
+                  "Id": "5.7.5.02.7441000",
+                  "Desc": "Steuern, Versicherungen, Schadensfälle",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 949.86,
+                    "2021": 0,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                },
+                {
+                  "Id": "7456000",
+                  "Desc": "Erstatt. f.d. Ausz. v. Dritten aus lfd Verwaltungstät. an so. öff. Sonderrechn.",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 3693.1,
+                    "2021": 3000,
+                    "2022": 4000,
+                    "2023": 4000,
+                    "2024": 4000,
+                    "2025": 4000
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "34",
+      "Class": "balance-investments",
+      "Desc": "Saldo aus Investitionstätigkeit",
+      "Budgets": {
+        "2020": -2558.42,
+        "2021": 0,
+        "2022": -2500,
+        "2023": -2500,
+        "2024": -2500,
+        "2025": -2500
+      },
+      "Accounts": [
+        {
+          "Id": "17",
+          "Desc": "Investitionstätigkeit - Einzahlungen",
+          "Budgets": {
+            "2020": 0,
+            "2021": 0,
+            "2022": 0,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": null
+        },
+        {
+          "Id": "25",
+          "Desc": "Einzahlungen aus Investitionstätigkeit",
+          "Budgets": {
+            "2020": 0,
+            "2021": 0,
+            "2022": 0,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": null
+        },
+        {
+          "Id": "26",
+          "Desc": "Investitionstätigkeit - Auszahlungen",
+          "Budgets": {
+            "2020": 0,
+            "2021": 0,
+            "2022": 0,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": null
+        },
+        {
+          "Id": "33",
+          "Desc": "Auszahlungen aus Investitionstätigkeit",
+          "Budgets": {
+            "2020": 2558.42,
+            "2021": 0,
+            "2022": 2500,
+            "2023": 2500,
+            "2024": 2500,
+            "2025": 2500
+          },
+          "Subs": [
+            {
+              "Id": "29",
+              "Desc": "Erwerb von beweglichen Anlagevermögen und immateriellen Vermögensgegenständen",
+              "Budgets": {
+                "2020": 0,
+                "2021": 0,
+                "2022": 2500,
+                "2023": 2500,
+                "2024": 2500,
+                "2025": 2500
+              },
+              "Units": [
+                {
+                  "Id": "5.7.5.02/0100.7832000",
+                  "Desc": "Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.",
+                  "AboveValueLimit": {
+                    "ID": "5.7.5.02/0100.7832000",
+                    "Category": "Anschaffungen 150 €  bis 1.000 € netto",
+                    "SubCategory": " -Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen"
+                  },
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 0,
+                    "2022": 2500,
+                    "2023": 2500,
+                    "2024": 2500,
+                    "2025": 2500
+                  }
+                }
+              ]
+            },
+            {
+              "Id": "31",
+              "Desc": "Baumaßnahmen",
+              "Budgets": {
+                "2020": 2558.42,
+                "2021": 0,
+                "2022": 0,
+                "2023": 0,
+                "2024": 0,
+                "2025": 0
+              },
+              "Units": [
+                {
+                  "Id": "5.7.5.02/6666.7853000",
+                  "Desc": "Auszahlungen für sonstige Baumaßnahmen",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 2558.42,
+                    "2021": 0,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
