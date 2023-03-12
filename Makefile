@@ -12,6 +12,7 @@ clean-up:
 	./scripts/cleanup_products.sh 4
 	go run cmd/cleaner/main.go --dir=assets/data/raw/4 --type=department
 
+
 .PHONY: merge-financial-plans
 merge-financial-plans:
 	./scripts/merge_financialplans.sh 1
@@ -19,8 +20,8 @@ merge-financial-plans:
 	./scripts/merge_financialplans.sh 3
 	./scripts/merge_financialplans.sh 4
 
-.PHONY: generate-html
-generate-html:
+.PHONY: generate-html-all
+generate-html-all:
 	./scripts/generate_html_products.sh 1
 	go run cmd/departmenthtmlgenerator/main.go --department=1 --name="Budget des Bürgermeisters"
 

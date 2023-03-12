@@ -71,6 +71,24 @@
         <li>{{.Copy.MetaProductGroup}}: {{.Meta.ProductGroup.Name}}</li>
         <li>{{.Copy.MetaProduct}}: {{.Meta.Product.Name}}</li>
       </ul>
+
+      <table style="margin-top: 80px;">
+        <tbody>
+          <tr>
+            <th>Konto</th>
+            <th>Budget</th>
+            <th>oberhalb Wertgrenze</th>
+          </tr>
+
+          {{range .Copy.Accounts}}
+            <tr>
+              <td>{{.Name}}</td>
+              <td>{{.CashflowTotal}}</td>
+              <td>{{.AboveLimit}}</td>
+            </tr>
+          {{end}}
+        </tbody>
+      </table>
     </div>
 
     <div class="back-link center">

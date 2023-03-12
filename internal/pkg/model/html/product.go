@@ -21,6 +21,8 @@ type ProductCopy struct {
 
 	CashflowTotal string
 
+	Accounts []ProductAccountCopy
+
 	MetaDepartment    string
 	MetaProductClass  string
 	MetaProductDomain string
@@ -34,6 +36,12 @@ type ProductCopy struct {
 	MetaGrouping      string
 
 	DataDisclosure template.HTML
+}
+
+type ProductAccountCopy struct {
+	Name          string
+	CashflowTotal string
+	AboveLimit    string
 }
 
 type ProductCSS struct {

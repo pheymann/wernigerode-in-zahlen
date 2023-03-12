@@ -15,11 +15,11 @@ import (
 	"wernigode-in-zahlen.de/internal/pkg/shared"
 )
 
-func GenerateProductHTML(financialPlanJSON string, metadataJSON string, year model.BudgetYear, debugRootPath string) string {
+func Generate(financialPlanJSON string, metadataJSON string, year model.BudgetYear, debugRootPath string) string {
 	p := message.NewPrinter(language.German)
 
 	fp := fpDecoder.DecodeFromJSON(financialPlanJSON)
-	fpBalanceData, fpCashflow := readBalanceDataAndCashflow(fp, year)
+	fpBalanceData, tableData, fpCashflow := readBalanceDataAndCashflow(fp, year)
 	metadata := metaDecoder.DecodeFromJSON(metadataJSON)
 
 	productTmpl := template.Must(template.ParseFiles(debugRootPath + "assets/html/templates/product.template.html"))
@@ -27,7 +27,7 @@ func GenerateProductHTML(financialPlanJSON string, metadataJSON string, year mod
 	var htmlBytes bytes.Buffer
 	if err := productTmpl.Execute(
 		&htmlBytes,
-		htmlProductEncoder.Encode(metadata, fpBalanceData, fpCashflow, year, p),
+		htmlProductEncoder.Encode(metadata, fpBalanceData, fpCashflow, tableData, year, p),
 	); err != nil {
 		panic(err)
 	}
@@ -35,9 +35,11 @@ func GenerateProductHTML(financialPlanJSON string, metadataJSON string, year mod
 	return htmlBytes.String()
 }
 
-func readBalanceDataAndCashflow(fp model.FinancialPlan, year model.BudgetYear) ([]html.BalanceData, float64) {
+func readBalanceDataAndCashflow(fp model.FinancialPlan, year model.BudgetYear) ([]html.BalanceData, []html.AccountTableData, float64) {
 	var cashflowTotal float64
 	var balanceData = []html.BalanceData{}
+	var tableData = []html.AccountTableData{}
+
 	for _, balance := range fp.Balances {
 		cashflowTotal += balance.Budgets[year]
 
@@ -56,6 +58,17 @@ func readBalanceDataAndCashflow(fp model.FinancialPlan, year model.BudgetYear) (
 								}
 
 								balanceData[balanceIndex].AddDataPoint(dataPoint)
+
+								aboveLimitDesc := ""
+								if unit.AboveValueLimit != nil {
+									aboveLimitDesc = unit.AboveValueLimit.Category
+								}
+
+								tableData = append(tableData, html.AccountTableData{
+									Name:          unit.Desc,
+									CashflowTotal: unit.Budgets[year],
+									AboveLimit:    aboveLimitDesc,
+								})
 							}
 						}
 					} else {
@@ -66,6 +79,11 @@ func readBalanceDataAndCashflow(fp model.FinancialPlan, year model.BudgetYear) (
 							}
 
 							balanceData[balanceIndex].AddDataPoint(dataPoint)
+
+							tableData = append(tableData, html.AccountTableData{
+								Name:          sub.Desc,
+								CashflowTotal: sub.Budgets[year],
+							})
 						}
 					}
 				}
@@ -77,5 +95,5 @@ func readBalanceDataAndCashflow(fp model.FinancialPlan, year model.BudgetYear) (
 		}
 	}
 
-	return balanceData, cashflowTotal
+	return balanceData, tableData, cashflowTotal
 }

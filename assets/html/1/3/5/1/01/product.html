@@ -32,11 +32,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 36.000,00€</h5>
-                <canvas id="chartjs-65c2a7ce-59d2-445a-8d02-b880d4f35565"></canvas>
+                <canvas id="chartjs-2a89d73d-fb2c-450a-adde-27ad51ad5d19"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -50.200,00€</h5>
-                <canvas id="chartjs-8327019f-970c-43b5-941b-f5b1f374bdc0"></canvas>
+                <canvas id="chartjs-483b7015-29b7-45ba-8b60-55021a3b5eed"></canvas>
               </div>
             </div>
           
@@ -47,13 +47,13 @@
       <h3>Aufgabe</h3>
       <p> Bundesrecht</p>
 
-      <h3>Ziele</h3>
+      <h3>Zielgruppe</h3>
       <p>Personengruppen des öffentlichen Lebens</p>
 
       <h3>Dienstleistungen</h3>
       <p> In den verschiedenen Fachbereichen werden verschiedene Projekte umgesetzt. die zu einer überobligatorischen Qualitätssteigerung zugunsten der Allgemeinheit führen.,</p>
 
-      <h3>Gruppierung</h3>
+      <h3>Klassifizierung</h3>
       <ul>
         <li>Fachbereich: Budget Oberbürgermeister</li>
         <li>Produktklasse: Soziales und Jugend</li>
@@ -61,6 +61,48 @@
         <li>Produktgruppe: Sonstige soziale Hilfen und Leistungen</li>
         <li>Produkt: Förderung von zusätzlichen Arbeitsplätzen</li>
       </ul>
+
+      <table style="margin-top: 80px;">
+        <tbody>
+          <tr>
+            <th>Konto</th>
+            <th>Budget</th>
+            <th>oberhalb Wertgrenze</th>
+          </tr>
+
+          
+            <tr>
+              <td>Beihilfen, Unterstützungsleistungen für Beschäftigte</td>
+              <td>-300,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschäft.</td>
+              <td>-8.100,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Beiträge zu Versorgungskassen für sonstige Beschäftigte</td>
+              <td>-1.700,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Dienstauszahlungen und dgl. an sonstige Beschäftigte</td>
+              <td>-40.100,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Zuweisungen für laufende Zwecke vom Bund</td>
+              <td>36.000,00€</td>
+              <td></td>
+            </tr>
+          
+        </tbody>
+      </table>
     </div>
 
     <div class="back-link center">
@@ -84,7 +126,7 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-65c2a7ce-59d2-445a-8d02-b880d4f35565'), {
+          new Chart(document.getElementById('chartjs-2a89d73d-fb2c-450a-adde-27ad51ad5d19'), {
             type: 'doughnut',
             data: {
               labels: ["Zuweisungen für laufende Zwecke vom Bund"],
@@ -104,7 +146,7 @@
           });
         
         
-          new Chart(document.getElementById('chartjs-8327019f-970c-43b5-941b-f5b1f374bdc0'), {
+          new Chart(document.getElementById('chartjs-483b7015-29b7-45ba-8b60-55021a3b5eed'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an sonstige Beschäftigte","Beiträge zu Versorgungskassen für sonstige Beschäftigte","Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschäft.","Beihilfen, Unterstützungsleistungen für Beschäftigte"],

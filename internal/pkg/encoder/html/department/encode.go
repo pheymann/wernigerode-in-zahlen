@@ -15,7 +15,7 @@ import (
 func Encode(
 	compressed model.CompressedDepartment,
 	year model.BudgetYear,
-	productData []html.DepartmentProductData,
+	productData []html.ProductTableData,
 
 	incomeTotalCashFlow float64,
 	incomeProductLinks []string,
@@ -44,7 +44,7 @@ func Encode(
 			IncomeCashflowTotal:   "Einnahmen: " + htmlEncoder.EncodeBudget(incomeTotalCashFlow, p),
 			ExpensesCashflowTotal: "Ausgaben: " + htmlEncoder.EncodeBudget(expensesTotalCashFlow, p),
 
-			Products: shared.MapSlice(productData, func(productData html.DepartmentProductData) html.DepartmentProductCopy {
+			Products: shared.MapSlice(productData, func(productData html.ProductTableData) html.DepartmentProductCopy {
 				return encodeDepartmentProductData(productData, p)
 			}),
 
@@ -61,7 +61,7 @@ func Encode(
 	}
 }
 
-func encodeDepartmentProductData(data html.DepartmentProductData, p *message.Printer) html.DepartmentProductCopy {
+func encodeDepartmentProductData(data html.ProductTableData, p *message.Printer) html.DepartmentProductCopy {
 	return html.DepartmentProductCopy{
 		Name:          data.Name,
 		CashflowTotal: htmlEncoder.EncodeBudget(data.CashflowTotal, p),

@@ -3,6 +3,7 @@ package product
 import (
 	"fmt"
 	"html/template"
+	"sort"
 
 	"github.com/google/uuid"
 	"golang.org/x/text/message"
@@ -15,6 +16,7 @@ func Encode(
 	metadata model.Metadata,
 	fpBalanceData []html.BalanceData,
 	fpCashflowTotal float64,
+	tableData []html.AccountTableData,
 	year model.BudgetYear,
 	p *message.Printer,
 ) html.Product {
@@ -29,6 +31,8 @@ func Encode(
 
 			CashflowTotal: encodeHtml.EncodeBudget(fpCashflowTotal, p),
 
+			Accounts: encodeAccountCopy(tableData, p),
+
 			MetaDepartment:    "Fachbereich",
 			MetaProductClass:  "Produktklasse",
 			MetaProductDomain: "Produktbereich",
@@ -37,9 +41,9 @@ func Encode(
 			MetaAccountable:   "Verantwortlich",
 			MetaResponsible:   "Zuständig",
 			MetaMission:       "Aufgabe",
-			MetaTargets:       "Ziele",
+			MetaTargets:       "Zielgruppe",
 			MetaServices:      "Dienstleistungen",
-			MetaGrouping:      "Gruppierung",
+			MetaGrouping:      "Klassifizierung",
 
 			DataDisclosure: `Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2022.
 			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
@@ -101,6 +105,23 @@ func balanceDataToSections(data []html.BalanceData, year model.BudgetYear, p *me
 	}
 
 	return sections
+}
+
+func encodeAccountCopy(data []html.AccountTableData, p *message.Printer) []html.ProductAccountCopy {
+	var accountCopy = []html.ProductAccountCopy{}
+
+	for _, row := range data {
+		accountCopy = append(accountCopy, html.ProductAccountCopy{
+			Name:          row.Name,
+			CashflowTotal: encodeHtml.EncodeBudget(row.CashflowTotal, p),
+			AboveLimit:    row.AboveLimit,
+		})
+	}
+
+	sort.Slice(accountCopy, func(i, j int) bool {
+		return accountCopy[i].Name < accountCopy[j].Name
+	})
+	return accountCopy
 }
 
 func dataPointsToChartJSDataset(dataPoints []html.DataPoint) html.ChartJSDataset {

@@ -32,7 +32,7 @@ func main() {
 	}
 	defer metadataFile.Close()
 
-	productHtml := htmlgenerator.GenerateProductHTML(
+	productHtml := htmlgenerator.Generate(
 		io.ReadCompleteFile(financialPlanFile),
 		io.ReadCompleteFile(metadataFile),
 		model.BudgetYear2023,

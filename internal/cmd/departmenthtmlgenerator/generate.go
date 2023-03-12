@@ -27,7 +27,7 @@ func Generate(productData []html.ProductData, compressed *model.CompressedDepart
 		DatasetLabel: "Ausgaben",
 	}
 
-	var depProductData = []html.DepartmentProductData{}
+	var depProductData = []html.ProductTableData{}
 	for _, product := range productData {
 		data := populateChartData(
 			year,
@@ -89,8 +89,8 @@ func populateChartData(
 
 	incomeProductLinks *[]string,
 	chartIncomeDataPerProduct *html.ChartJSDataset,
-) html.DepartmentProductData {
-	data := html.DepartmentProductData{}
+) html.ProductTableData {
+	data := html.ProductTableData{}
 
 	var cashflowTotal = 0.0
 	var cashflowB = 0.0
