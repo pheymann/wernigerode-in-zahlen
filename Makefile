@@ -1,23 +1,19 @@
-.PHONY: clean-up
-clean-up:
+.PHONY: clean-up-all
+clean-up-all:
 	./scripts/cleanup_products.sh 1
 	go run cmd/cleaner/main.go --dir=assets/data/raw/1 --type=department
+	./scripts/merge_financialplans.sh 1
 
 	./scripts/cleanup_products.sh 2
 	go run cmd/cleaner/main.go --dir=assets/data/raw/2 --type=department
+	./scripts/merge_financialplans.sh 2
 
 	./scripts/cleanup_products.sh 3
 	go run cmd/cleaner/main.go --dir=assets/data/raw/3 --type=department
+	./scripts/merge_financialplans.sh 3
 
 	./scripts/cleanup_products.sh 4
 	go run cmd/cleaner/main.go --dir=assets/data/raw/4 --type=department
-
-
-.PHONY: merge-financial-plans
-merge-financial-plans:
-	./scripts/merge_financialplans.sh 1
-	./scripts/merge_financialplans.sh 2
-	./scripts/merge_financialplans.sh 3
 	./scripts/merge_financialplans.sh 4
 
 .PHONY: generate-html-all

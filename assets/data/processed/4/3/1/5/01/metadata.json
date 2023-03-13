@@ -1,0 +1,32 @@
+{
+  "Department": {
+    "ID": "4",
+    "Name": "Budget Bürgerservice",
+    "Accountable": "Herr Dorff"
+  },
+  "ProductClass": {
+    "ID": "3",
+    "Name": "Soziales und Jugend",
+    "Accountable": "Dezernent I"
+  },
+  "ProductDomain": {
+    "ID": "1",
+    "Name": "Sozialhilfe und soziale Leistungen",
+    "Responsible": "Frau Otto"
+  },
+  "ProductGroup": {
+    "ID": "5",
+    "Name": "Soziale Einrichtungen",
+    "Desc": "externes Produkt"
+  },
+  "Product": {
+    "ID": "01",
+    "Name": "Senioren- und Familienhaus",
+    "LegalRequirement": "Freiwillige Aufgabe"
+  },
+  "Description": " Senioren- und Familienhaus",
+  "Mission": " Bundes-, Landes- und Ortsrecht, Beschlüsse der politischen Gremien",
+  "Target": "Einwohner der Stadt Wernigerode über dem 60. Lebensjahr",
+  "Objectives": " Schutz des gesicherten Daseins und Erhaltung der Lebensqualität,,,,",
+  "Services": " Einrichtung zur Förderung älterer Menschen (über dem 60. Lebensjahr) mit,-Angeboten, die der Geselligkeit, der Unterhaltung, der Bildung, der sportlichen Betätigungoder den kulturellen Bedürfnissen alter Menschen entsprechen-Seniorenberatung,-Treffen von Selbsthilfegruppen und gemeinnützigen Vereinen,-Beteiligungsprojekte, die der Vereinsamung alter Menschen entgegenwirken, Senioren körperlich,, und geistig fit halten, helfen, soziale Kontakte zu knüpfen,"
+}

@@ -1,0 +1,32 @@
+{
+  "Department": {
+    "ID": "4",
+    "Name": "Budget Bürgerservice",
+    "Accountable": "Herr Dorff"
+  },
+  "ProductClass": {
+    "ID": "3",
+    "Name": "Soziales und Jugend",
+    "Accountable": "Dezernent I"
+  },
+  "ProductDomain": {
+    "ID": "1",
+    "Name": "Sozialhilfe und soziale Leistungen",
+    "Responsible": "Frau Otto"
+  },
+  "ProductGroup": {
+    "ID": "5",
+    "Name": "Soziale Einrichtungen",
+    "Desc": "externes Produkt"
+  },
+  "Product": {
+    "ID": "04",
+    "Name": "Übergangswohnheim",
+    "LegalRequirement": "Pflicht-und Freiwillige Aufgabe"
+  },
+  "Description": " Übergangswohnheim",
+  "Mission": " Bundes-, Landes- und Ortsrecht, Beschlüsse der politischen Gremient",
+  "Target": "wohnungslose Wernigeröder Bürger und obdachlose Durchreisende",
+  "Objectives": " Schutz des gesicherten Daseins und Erhaltung der Lebensqualität,,,",
+  "Services": " - Schutz für Leib und Leben wohnungsloser wernigeröder Bürger und obdachloser Durchreisender - sozialpädagogische Einzelfallhilfen - Mitwirkung in Netzwerken - Zusammenarbeit mit anderen Behörden - Bau, Unterhaltung und Bewirtschaftung des Übergangswohnheimes"
+}

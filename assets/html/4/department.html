@@ -17,21 +17,21 @@
       In 2023 planen wir
     </p>
 
-    <h2 class="total-cashflow-expenses center">-7.125.300,00€</h2>
+    <h2 class="total-cashflow-expenses center">-9.127.100,00€</h2>
 
     <p>
-      für diesen Fachbereich auszugeben. Dabei geht das Geld an die folgenden <b>11 Produkte</b>. Klicke auf eines in den Diagrammen, um mehr zu erfahren.
+      für diesen Fachbereich auszugeben. Dabei geht das Geld an die folgenden <b>17 Produkte</b>. Klicke auf eines in den Diagrammen, um mehr zu erfahren.
     </p>
 
     <div class="container">
       <div class="row">
         <div class="col-6">
           <h5 class="center">Einnahmen: 0,00€</h5>
-          <canvas id="chartjs-eea74567-bd6b-466e-85d6-2f5c5e0e3ab6"></canvas>
+          <canvas id="chartjs-edd94f9c-3cb5-431c-868e-4d1c8744c357"></canvas>
         </div>
         <div class="col-6">
-          <h5 class="center">Ausgaben: -7.125.300,00€</h5>
-          <canvas id="chartjs-46979b89-7db5-4d17-bcc9-f2bdf07e246c"></canvas>
+          <h5 class="center">Ausgaben: -9.127.100,00€</h5>
+          <canvas id="chartjs-5fe78e82-44ac-481d-8938-560cc09c1fe2"></canvas>
         </div>
       </div>
     </div>
@@ -46,8 +46,8 @@
           </tr>
           <tr>
             <th></th>
-            <th>-7.125.300,00€</th>
-            <th>-1.639.900,00€</th>
+            <th>-9.127.100,00€</th>
+            <th>-1.642.300,00€</th>
           </tr>
 
           
@@ -73,6 +73,18 @@
               <td><a href="/4/1/2/6/01/product.html">Brandschutz</a></td>
               <td>-2.244.700,00€</td>
               <td>-753.000,00€</td>
+            </tr>
+          
+            <tr>
+              <td><a href="/4/3/1/5/06/product.html">Frauenschutzwohnung</a></td>
+              <td>-71.000,00€</td>
+              <td>-1.000,00€</td>
+            </tr>
+          
+            <tr>
+              <td><a href="/4/3/3/1/01/product.html">Förderung von Trägern der Wohlfahrtspflege</a></td>
+              <td>-19.100,00€</td>
+              <td>0,00€</td>
             </tr>
           
             <tr>
@@ -106,6 +118,12 @@
             </tr>
           
             <tr>
+              <td><a href="/4/3/1/5/01/product.html">Senioren- und Familienhaus</a></td>
+              <td>-178.000,00€</td>
+              <td>-800,00€</td>
+            </tr>
+          
+            <tr>
               <td><a href="/4/2/4/3/01/product.html">Sonstige schulische Aufgaben</a></td>
               <td>-517.700,00€</td>
               <td>0,00€</td>
@@ -115,6 +133,24 @@
               <td><a href="/4/1/2/2/03/product.html">Standesamt</a></td>
               <td>-243.500,00€</td>
               <td>0,00€</td>
+            </tr>
+          
+            <tr>
+              <td><a href="/4/3/6/5/01/product.html">Verwaltung d. Förderung v. Kindern in Tageseinrichtungen für Kinder</a></td>
+              <td>-1.350.000,00€</td>
+              <td>0,00€</td>
+            </tr>
+          
+            <tr>
+              <td><a href="/4/3/4/6/01/product.html">Wohngeld</a></td>
+              <td>-328.800,00€</td>
+              <td>0,00€</td>
+            </tr>
+          
+            <tr>
+              <td><a href="/4/3/1/5/04/product.html">Übergangswohnheim</a></td>
+              <td>-54.900,00€</td>
+              <td>-600,00€</td>
             </tr>
           
         </tbody>
@@ -141,7 +177,7 @@
 
     <script>
       var incomeProductLinks = [];
-      var incomeCanvas = document.getElementById('chartjs-eea74567-bd6b-466e-85d6-2f5c5e0e3ab6');
+      var incomeCanvas = document.getElementById('chartjs-edd94f9c-3cb5-431c-868e-4d1c8744c357');
       var incomeChart = new Chart(incomeCanvas, {
         type: 'doughnut',
         data: {
@@ -165,15 +201,15 @@
         }
       });
 
-      var expenesesProductLinks = ["/4/1/2/2/01/product.html","/4/1/2/2/02/product.html","/4/1/2/2/03/product.html","/4/1/2/6/01/product.html","/4/2/1/1/01/product.html","/4/2/4/3/01/product.html","/4/2/5/2/01/product.html","/4/2/5/2/02/product.html","/4/2/6/2/02/product.html","/4/2/7/2/01/product.html","/4/2/8/1/01/product.html"];
-      var expensesCanvas = document.getElementById('chartjs-46979b89-7db5-4d17-bcc9-f2bdf07e246c');
+      var expenesesProductLinks = ["/4/1/2/2/01/product.html","/4/1/2/2/02/product.html","/4/1/2/2/03/product.html","/4/1/2/6/01/product.html","/4/2/1/1/01/product.html","/4/2/4/3/01/product.html","/4/2/5/2/01/product.html","/4/2/5/2/02/product.html","/4/2/6/2/02/product.html","/4/2/7/2/01/product.html","/4/2/8/1/01/product.html","/4/3/1/5/01/product.html","/4/3/1/5/04/product.html","/4/3/1/5/06/product.html","/4/3/3/1/01/product.html","/4/3/4/6/01/product.html","/4/3/6/5/01/product.html"];
+      var expensesCanvas = document.getElementById('chartjs-5fe78e82-44ac-481d-8938-560cc09c1fe2');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {
-          labels: ["Ordnungsangelegenheiten","Meldewesen","Standesamt","Brandschutz","Grundschulen","Sonstige schulische Aufgaben","Museen","Archiv","Brahms-Chorwettbewerb","Bibliotheken","Heimat-und Kulturpflege"],
+          labels: ["Ordnungsangelegenheiten","Meldewesen","Standesamt","Brandschutz","Grundschulen","Sonstige schulische Aufgaben","Museen","Archiv","Brahms-Chorwettbewerb","Bibliotheken","Heimat-und Kulturpflege","Senioren- und Familienhaus","Übergangswohnheim","Frauenschutzwohnung","Förderung von Trägern der Wohlfahrtspflege","Wohngeld","Verwaltung d. Förderung v. Kindern in Tageseinrichtungen für Kinder"],
           datasets: [{
             label: 'Euro',
-            data: [-848600,-399400,-243500,-2244700,-1804200,-517700,-280200,-132200,-10000,-460200,-184600],
+            data: [-848600,-399400,-243500,-2244700,-1804200,-517700,-280200,-132200,-10000,-460200,-184600,-178000,-54900,-71000,-19100,-328800,-1350000],
             borderWidth: 1
           }]
         },

@@ -1,0 +1,32 @@
+{
+  "Department": {
+    "ID": "4",
+    "Name": "Budget Bürgerservice",
+    "Accountable": "Herr Dorff"
+  },
+  "ProductClass": {
+    "ID": "3",
+    "Name": "Soziales und Jugend",
+    "Accountable": "Dezernent I"
+  },
+  "ProductDomain": {
+    "ID": "4",
+    "Name": "Weitere soziale Leistungen",
+    "Responsible": "Frau Foltis"
+  },
+  "ProductGroup": {
+    "ID": "6",
+    "Name": "Wohngeld",
+    "Desc": "externes Produkt"
+  },
+  "Product": {
+    "ID": "01",
+    "Name": "Wohngeld",
+    "LegalRequirement": "Pflichtaufgabe"
+  },
+  "Description": " Bearbeitung von Wohngeld",
+  "Mission": " Bundesrecht",
+  "Target": "EinwohnerInnen",
+  "Objectives": "",
+  "Services": " -Bearbeitung von Anträgen auf Miet- oder Lastenzuschuss nach Wohngeldgesetz,,"
+}

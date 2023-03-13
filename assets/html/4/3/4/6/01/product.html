@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<head>
+  <title>Produkt</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<html>
+  <body>
+    <h1>Wohngeld</h1>
+
+    <p>
+      Das Produkt -  Bearbeitung von Wohngeld - wird in 2023
+    </p>
+
+    <h2 class="total-cashflow-expenses center">-328.800,00€</h2>
+
+    <p>
+      kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
+		Auflistung von Kostenstellen. Ganz am Ende dieser Seite findest du noch eine Beschreibung des Produkts.
+    </p>
+
+    <div class="container">
+      
+          <h3>Die Verwaltung kostet <span class="total-cashflow-expenses">-328.800,00€</span></h3>
+
+          
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 400,00€</h5>
+                <canvas id="chartjs-f7c6b3a9-df79-426a-b1fe-d0115c8283b3"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: -329.200,00€</h5>
+                <canvas id="chartjs-cbd39a65-5a8b-49cd-b5f8-651c4486f82d"></canvas>
+              </div>
+            </div>
+          
+      
+    </div>
+
+    <div class="info-sheet">
+      <h3>Aufgabe</h3>
+      <p> Bundesrecht</p>
+
+      <h3>Zielgruppe</h3>
+      <p>EinwohnerInnen</p>
+
+      <h3>Dienstleistungen</h3>
+      <p> -Bearbeitung von Anträgen auf Miet- oder Lastenzuschuss nach Wohngeldgesetz,,</p>
+
+      <h3>Klassifizierung</h3>
+      <ul>
+        <li>Fachbereich: Budget Bürgerservice</li>
+        <li>Produktklasse: Soziales und Jugend</li>
+        <li>Produktbereich: Weitere soziale Leistungen</li>
+        <li>Produktgruppe: Wohngeld</li>
+        <li>Produkt: Wohngeld</li>
+      </ul>
+
+      <table style="margin-top: 80px;">
+        <tbody>
+          <tr>
+            <th>Konto</th>
+            <th>Budget</th>
+            <th>oberhalb Wertgrenze</th>
+          </tr>
+
+          
+            <tr>
+              <td>Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten</td>
+              <td>-500,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Auszahlungen für sonstige Dienstleistungen</td>
+              <td>-100,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Beihilfen, Unterstützungsleistungen für Beschäftigte</td>
+              <td>-1.400,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Beiträge zu Versorgungskassen für Arbeitnehmer</td>
+              <td>-11.100,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer</td>
+              <td>-52.600,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Bußgelder</td>
+              <td>300,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Dienstauszahlungen und dgl. an Arbeitnehmer</td>
+              <td>-262.200,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Einzahlungen aus Kostenerstattungen von übrigen Bereichen</td>
+              <td>100,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Geschäftsauszahlungen</td>
+              <td>-1.300,00€</td>
+              <td></td>
+            </tr>
+          
+        </tbody>
+      </table>
+    </div>
+
+    <div class="back-link center">
+      <a href="/4/department.html">Zurück zur Bereichsübersicht</a>
+    </div>
+
+    <p class="data-disclosure">
+      Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2022.
+			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
+			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
+			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
+    </p>
+
+    <footer>
+      <p>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Das Impression befindet sich <a href="/imprint.html">hier</a>.
+      </p>
+    </footer>
+
+    <script>
+      
+        
+          new Chart(document.getElementById('chartjs-f7c6b3a9-df79-426a-b1fe-d0115c8283b3'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Einzahlungen aus Kostenerstattungen von übrigen Bereichen","Bußgelder"],
+              datasets: [{
+                label: 'Euro',
+                data: [100,300],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+        
+          new Chart(document.getElementById('chartjs-cbd39a65-5a8b-49cd-b5f8-651c4486f82d'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für sonstige Dienstleistungen","Geschäftsauszahlungen","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten"],
+              datasets: [{
+                label: 'Euro',
+                data: [-262200,-11100,-52600,-1400,-100,-1300,-500],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+    </script>
+  </body>
+</html>
