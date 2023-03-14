@@ -15,20 +15,26 @@ import (
 	fpDecoder "wernigode-in-zahlen.de/internal/pkg/decoder/financialplan"
 	"wernigode-in-zahlen.de/internal/pkg/io"
 	"wernigode-in-zahlen.de/internal/pkg/model"
+	"wernigode-in-zahlen.de/internal/pkg/shared"
 )
 
 var (
 	productDirRegex = regexp.MustCompile(
-		`assets/data/processed/(?P<department>\d+)/(?P<class>\d+)/(?P<domain>\d+)/(?P<group>\d+)/(?P<product>\d+)$`,
+		`assets/data/processed/(?P<department>\d+)/(?P<class>\d+)/(?P<domain>\d+)/(?P<group>\d+)/(?P<product>\d+)(/(?P<sub_product>\d+))?$`,
 	)
 )
+
+type productFinancialPlan struct {
+	FinancialPlan model.FinancialPlan
+	SubProducts   map[string]model.FinancialPlan
+}
 
 func main() {
 	debugRootPath := flag.String("root-path", "", "Debug: root path")
 
 	flag.Parse()
 
-	var database = map[string]map[string]map[string]map[string]map[string][]model.FinancialPlan{}
+	var database = map[string]map[string]map[string]map[string]map[string]productFinancialPlan{}
 	errWalk := filepath.Walk(*debugRootPath+"assets/data/processed/", func(path string, info os.FileInfo, err error) error {
 		if err != nil {
 			fmt.Println(err)
@@ -53,26 +59,44 @@ func main() {
 				group := decoder.DecodeString(productDirRegex, "group", matches)
 				product := decoder.DecodeString(productDirRegex, "product", matches)
 
-				if _, ok := database[department]; !ok {
-					database[department] = map[string]map[string]map[string]map[string][]model.FinancialPlan{}
-				}
-				if _, ok := database[department][class]; !ok {
-					database[department][class] = map[string]map[string]map[string][]model.FinancialPlan{}
-				}
-				if _, ok := database[department][class][domain]; !ok {
-					database[department][class][domain] = map[string]map[string][]model.FinancialPlan{}
-				}
-				if _, ok := database[department][class][domain][group]; !ok {
-					database[department][class][domain][group] = map[string][]model.FinancialPlan{}
-				}
-				if _, ok := database[department][class][domain][group][product]; !ok {
-					database[department][class][domain][group][product] = []model.FinancialPlan{}
+				var subProductOpt = shared.None[string]()
+				if len(matches) > productDirRegex.SubexpIndex("sub_product") {
+					subProductOpt = shared.Some(decoder.DecodeString(productDirRegex, "sub_product", matches))
+
+					if subProductOpt.Value == "" {
+						subProductOpt = shared.None[string]()
+					}
 				}
 
-				database[department][class][domain][group][product] = append(
-					database[department][class][domain][group][product],
-					fpDecoder.DecodeFromJSON(io.ReadCompleteFile(financialPlanFile)),
-				)
+				if _, ok := database[department]; !ok {
+					database[department] = map[string]map[string]map[string]map[string]productFinancialPlan{}
+				}
+				if _, ok := database[department][class]; !ok {
+					database[department][class] = map[string]map[string]map[string]productFinancialPlan{}
+				}
+				if _, ok := database[department][class][domain]; !ok {
+					database[department][class][domain] = map[string]map[string]productFinancialPlan{}
+				}
+				if _, ok := database[department][class][domain][group]; !ok {
+					database[department][class][domain][group] = map[string]productFinancialPlan{}
+				}
+				if _, ok := database[department][class][domain][group][product]; !ok {
+					database[department][class][domain][group][product] = productFinancialPlan{
+						SubProducts: map[string]model.FinancialPlan{},
+					}
+				}
+
+				if subProductOpt.IsSome {
+					if _, ok := database[department][class][domain][group][product].SubProducts[subProductOpt.Value]; !ok {
+						database[department][class][domain][group][product].SubProducts[subProductOpt.Value] = model.FinancialPlan{}
+					}
+
+					database[department][class][domain][group][product].SubProducts[subProductOpt.Value] = fpDecoder.DecodeFromJSON(io.ReadCompleteFile(financialPlanFile))
+				} else {
+					productFp := database[department][class][domain][group][product]
+					productFp.FinancialPlan = fpDecoder.DecodeFromJSON(io.ReadCompleteFile(financialPlanFile))
+					database[department][class][domain][group][product] = productFp
+				}
 			}
 
 			return nil
@@ -118,7 +142,7 @@ func main() {
 	)
 }
 
-func databaseToCSV(database map[string]map[string]map[string]map[string]map[string][]model.FinancialPlan) [][]string {
+func databaseToCSV(database map[string]map[string]map[string]map[string]map[string]productFinancialPlan) [][]string {
 	var csvRows = [][]string{
 		{
 			"department id",
@@ -126,6 +150,7 @@ func databaseToCSV(database map[string]map[string]map[string]map[string]map[stri
 			"product domain id",
 			"product group id",
 			"product id",
+			"sub product id",
 			"account id",
 			"account description",
 			"sub account id",
@@ -145,62 +170,29 @@ func databaseToCSV(database map[string]map[string]map[string]map[string]map[stri
 		for class, domains := range classes {
 			for domain, groups := range domains {
 				for group, products := range groups {
-					for product, financialPlans := range products {
-						for _, plan := range financialPlans {
-							for _, balance := range plan.Balances {
-								for _, account := range balance.Accounts {
-									for _, sub := range account.Subs {
-										if len(sub.Units) > 0 {
-											for _, unit := range sub.Units {
-												var row = []string{
-													department,
-													class,
-													domain,
-													group,
-													product,
-													sub.Id,
-													sub.Desc,
-													unit.Id,
-													unit.Desc,
-												}
-
-												if unit.AboveValueLimit != nil {
-													row = append(row, unit.AboveValueLimit.Category)
-													row = append(row, unit.AboveValueLimit.SubCategory)
-												} else {
-													row = append(row, "")
-													row = append(row, "")
-												}
-
-												for _, budget := range unit.Budgets {
-													row = append(row, fmt.Sprintf("%f", budget))
-												}
-
-												csvRows = append(csvRows, row)
-											}
-										} else {
-											var row = []string{
-												department,
-												class,
-												domain,
-												group,
-												product,
-												sub.Id,
-												sub.Desc,
-											}
-
-											row = append(row, "")
-											row = append(row, "")
-
-											for _, budget := range sub.Budgets {
-												row = append(row, fmt.Sprintf("%f", budget))
-											}
-
-											csvRows = append(csvRows, row)
-										}
-									}
-								}
+					for product, financialPlan := range products {
+						if len(financialPlan.SubProducts) > 0 {
+							for subProduct, subProductFinancialPlan := range financialPlan.SubProducts {
+								csvRows = append(csvRows, financialPlanToCSV(
+									department,
+									class,
+									domain,
+									group,
+									product,
+									shared.Some(subProduct),
+									subProductFinancialPlan,
+								)...)
 							}
+						} else {
+							csvRows = append(csvRows, financialPlanToCSV(
+								department,
+								class,
+								domain,
+								group,
+								product,
+								shared.None[string](),
+								financialPlan.FinancialPlan,
+							)...)
 						}
 					}
 				}
@@ -208,5 +200,93 @@ func databaseToCSV(database map[string]map[string]map[string]map[string]map[stri
 		}
 	}
 
+	return csvRows
+}
+
+func financialPlanToCSV(
+	department string,
+	class string,
+	domain string,
+	group string,
+	product string,
+	subProduct shared.Option[string],
+	financialPlan model.FinancialPlan,
+) [][]string {
+	csvRows := [][]string{}
+
+	for _, balance := range financialPlan.Balances {
+		for _, account := range balance.Accounts {
+			for _, sub := range account.Subs {
+				if len(sub.Units) > 0 {
+					for _, unit := range sub.Units {
+						var row = []string{
+							department,
+							class,
+							domain,
+							group,
+							product,
+						}
+
+						if subProduct.IsSome {
+							row = append(row, subProduct.Value)
+						} else {
+							row = append(row, "")
+						}
+
+						row = append(row, []string{
+							sub.Id,
+							sub.Desc,
+							unit.Id,
+							unit.Desc,
+						}...)
+
+						if unit.AboveValueLimit != nil {
+							row = append(row, unit.AboveValueLimit.Category)
+							row = append(row, unit.AboveValueLimit.SubCategory)
+						} else {
+							row = append(row, "")
+							row = append(row, "")
+						}
+
+						for _, budget := range unit.Budgets {
+							row = append(row, fmt.Sprintf("%f", budget))
+						}
+
+						csvRows = append(csvRows, row)
+					}
+				} else {
+					var row = []string{
+						department,
+						class,
+						domain,
+						group,
+						product,
+						sub.Id,
+						sub.Desc,
+					}
+
+					if subProduct.IsSome {
+						row = append(row, subProduct.Value)
+					} else {
+						row = append(row, "")
+					}
+
+					row = append(row, []string{
+						sub.Id,
+						sub.Desc,
+					}...)
+
+					row = append(row, "")
+					row = append(row, "")
+
+					for _, budget := range sub.Budgets {
+						row = append(row, fmt.Sprintf("%f", budget))
+					}
+
+					csvRows = append(csvRows, row)
+				}
+			}
+		}
+	}
 	return csvRows
 }
