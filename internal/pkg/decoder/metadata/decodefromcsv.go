@@ -15,6 +15,7 @@ type MetadataDecoder struct {
 	productDomainRegex             []*regexp.Regexp
 	productGroupRegex              []*regexp.Regexp
 	productRegex                   []*regexp.Regexp
+	subProductRegex                []*regexp.Regexp
 	descriptionDetectionRegex      *regexp.Regexp
 	missionAndTargetDetectionRegex *regexp.Regexp
 	missionAndTargetRegex          []*regexp.Regexp
@@ -90,6 +91,20 @@ func NewMetadataDecoder() MetadataDecoder {
 				),
 			),
 		},
+		subProductRegex: []*regexp.Regexp{
+			regexp.MustCompile(
+				fmt.Sprintf(
+					`^Unterprodukt \d+\.\d+\.\d+\.\d+\.(?P<sub_product>\d+),+"(?P<sub_product_name>[ %s,]+)",+`,
+					decoder.RxGermanPlusSpecialLetter,
+				),
+			),
+			regexp.MustCompile(
+				fmt.Sprintf(
+					`^Unterprodukt \d+\.\d+\.\d+\.\d+\.(?P<sub_product>\d+),+(?P<sub_product_name>[ %s]+),+`,
+					decoder.RxGermanPlusSpecialLetter,
+				),
+			),
+		},
 		descriptionDetectionRegex:      regexp.MustCompile("^Beschreibung,+"),
 		missionAndTargetDetectionRegex: regexp.MustCompile("^Auftrag,+Zielgruppe,+"),
 		missionAndTargetRegex: []*regexp.Regexp{
@@ -134,6 +149,7 @@ func (d MetadataDecoder) Debug() {
 	fmt.Printf("Product Domain: %+v\n", d.productDomainRegex)
 	fmt.Printf("Product Group: %+v\n", d.productGroupRegex)
 	fmt.Printf("Product; %+v\n", d.productRegex)
+	fmt.Printf("Sub-Product; %+v\n", d.subProductRegex)
 	fmt.Printf("Mission/Target: %+v\n", d.missionAndTargetRegex)
 }
 
@@ -152,10 +168,13 @@ func (p MetadataDecoder) DecodeFromCSV(lines []string) model.Metadata {
 	if !p.decodeProductGroup(metadata, lines[3]) {
 		panic(fmt.Sprintf("Expected product group but got '%s'.\nregex: %v", lines[3], p.productGroupRegex))
 	}
+	if !p.decodeProduct(metadata, lines[4]) {
+		panic(fmt.Sprintf("Expected product but got '%s'.\nregex: %v", lines[4], p.productRegex))
+	}
 
-	var dropToLine = 4
-	if p.decodeProduct(metadata, lines[4]) {
-		dropToLine = 5
+	var dropToLine = 5
+	if p.decodeSubProduct(metadata, lines[dropToLine]) {
+		dropToLine++
 	}
 
 	var state = ""
@@ -276,23 +295,22 @@ func (p MetadataDecoder) decodeProductGroup(metadata *model.Metadata, line strin
 }
 
 func (p MetadataDecoder) decodeProduct(metadata *model.Metadata, line string) bool {
-	for _, regex := range p.productRegex {
-		matches := regex.FindStringSubmatch(line)
-
-		if len(matches) == 0 {
-			continue
-		}
-
+	return forMatchingRegex(p.productRegex, line, func(regex *regexp.Regexp, matches []string) {
 		metadata.Product = model.Product{
 			ID:               decoder.DecodeString(regex, "product", matches),
 			Name:             decoder.DecodeString(regex, "product_name", matches),
 			LegalRequirement: decoder.DecodeString(regex, "legal_requirement", matches),
 		}
+	})
+}
 
-		return true
-	}
-
-	return false
+func (p MetadataDecoder) decodeSubProduct(metadata *model.Metadata, line string) bool {
+	return forMatchingRegex(p.subProductRegex, line, func(regex *regexp.Regexp, matches []string) {
+		metadata.SubProduct = &model.SubProduct{
+			ID:   decoder.DecodeString(regex, "sub_product", matches),
+			Name: decoder.DecodeString(regex, "sub_product_name", matches),
+		}
+	})
 }
 
 var (

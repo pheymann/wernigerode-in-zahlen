@@ -8,6 +8,7 @@ type Metadata struct {
 	ProductDomain ProductDomain
 	ProductGroup  ProductGroup
 	Product       Product
+	SubProduct    *SubProduct
 	Description   string
 	Mission       string
 	Target        string
@@ -43,6 +44,11 @@ type Product struct {
 	ID               string
 	Name             string
 	LegalRequirement string
+}
+
+type SubProduct struct {
+	ID   string
+	Name string
 }
 
 func (metadata *Metadata) Validate() {

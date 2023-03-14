@@ -24,6 +24,7 @@
     "Name": "Standesamt",
     "LegalRequirement": "Pflichtaufgabe"
   },
+  "SubProduct": null,
   "Description": " Personenstandsangelegenheiten",
   "Mission": " Bundes- und Landesrecht",
   "Target": "EinwohnerInnen, Behörden und Institutionen sowie alle Dezernate, Anzeigende und Antragsteller",

@@ -1,0 +1,115 @@
+{
+  "Balances": [
+    {
+      "Id": "100",
+      "Class": "one-off",
+      "Desc": "Anschaffungen 150 €  bis 1.000 € netto",
+      "Budgets": {
+        "2020": -2986.47,
+        "2021": 0,
+        "2022": -2100,
+        "2023": -3600,
+        "2024": -1900,
+        "2025": -2200
+      },
+      "Accounts": [
+        {
+          "Id": "10",
+          "Desc": "Einzahlungen aus Investitionszuwendungen",
+          "Budgets": {
+            "2020": 1000,
+            "2021": 0,
+            "2022": 0,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": [
+            {
+              "Id": "3",
+              "Desc": ".6.5.02.01/0100.6817000 Einz. a. Zuschüssen f. Investitionen u.Invest.fördermaßnahmen priv.Unternehmen",
+              "Budgets": {
+                "2020": 1000,
+                "2021": 0,
+                "2022": 0,
+                "2023": 0,
+                "2024": 0,
+                "2025": 0
+              },
+              "Units": null
+            }
+          ]
+        },
+        {
+          "Id": "40",
+          "Desc": " -Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen",
+          "Budgets": {
+            "2020": 3986.47,
+            "2021": 0,
+            "2022": 2100,
+            "2023": 3600,
+            "2024": 1900,
+            "2025": 2200
+          },
+          "Subs": [
+            {
+              "Id": "3",
+              "Desc": ".6.5.02.01/0100.7832000 Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.",
+              "Budgets": {
+                "2020": 3986.47,
+                "2021": 0,
+                "2022": 2100,
+                "2023": 3600,
+                "2024": 1900,
+                "2025": 2200
+              },
+              "Units": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "200",
+      "Class": "one-off",
+      "Desc": "Betriebs-und Geschäftsausstattungen",
+      "Budgets": {
+        "2020": 0,
+        "2021": 0,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": null
+    },
+    {
+      "Id": "300",
+      "Class": "one-off",
+      "Desc": "Betriebsvorrichtungen",
+      "Budgets": {
+        "2020": 0,
+        "2021": 0,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": null
+    },
+    {
+      "Id": "8888",
+      "Class": "one-off",
+      "Desc": "mittelfristige Maßnahmen",
+      "Budgets": {
+        "2020": 0,
+        "2021": 0,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": null
+    }
+  ]
+}

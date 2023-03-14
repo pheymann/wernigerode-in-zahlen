@@ -24,6 +24,7 @@
     "Name": "Archiv",
     "LegalRequirement": "Pflichtaufgabe"
   },
+  "SubProduct": null,
   "Description": " Verwaltung und Betreuung des Archivs",
   "Mission": " Bundes-, Landes- und Ortsrecht, Beschlüsse der politischen Gremien",
   "Target": "Ämter, EinwohnerInnen, Archive, Gäste",

@@ -24,6 +24,7 @@
     "Name": "Meldewesen",
     "LegalRequirement": "Pflichtaufgabe"
   },
+  "SubProduct": null,
   "Description": " Bearbeiten sämtlicher Angelegenheiten des Melde- und Passwesens",
   "Mission": " Bundes- und Landesrecht",
   "Target": "EinwohnerInnen, Behörden und Institutionen sowie alle Dezernate",
