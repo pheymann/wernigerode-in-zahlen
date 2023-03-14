@@ -26,29 +26,25 @@
 
     <div class="container">
       
-          <h3>Die Verwaltung erwirtschaftet <span class="total-cashflow-income">88.900,00€</span></h3>
+          <h3>- Die Verwaltung erwirtschaftet <span class="total-cashflow-income">88.900,00€</span></h3>
 
           
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 92.100,00€</h5>
-                <canvas id="chartjs_05cd517b_ab8b_4bb5_85b4_9801bf0e9a6a"></canvas>
+                <canvas id="chartjs_db6a07c5_6a5e_479c_b1c0_f62f4a2dc02d"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -3.200,00€</h5>
-                <canvas id="chartjs_6963e647_a7ab_495c_aa5d_0cb3a02115d9"></canvas>
+                <canvas id="chartjs_c5193599_c45c_4196_98d1_282c230271b5"></canvas>
               </div>
             </div>
           
       
-          <h3>Investitionen kosten <span class="total-cashflow-expenses">-10.000,00€</span></h3>
+          <h3>- Investitionen kosten <span class="total-cashflow-expenses">-10.000,00€</span></h3>
 
           
             
-            
-              <div class="padded-chart">
-                <canvas id="chartjs_e8d27b81_87da_44e9_8119_a97b362d74d5"></canvas>
-              </div>
             
           
       
@@ -150,7 +146,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_05cd517b_ab8b_4bb5_85b4_9801bf0e9a6a'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_db6a07c5_6a5e_479c_b1c0_f62f4a2dc02d'), {
             type: 'doughnut',
             data: {
               labels: ["Einzahlungen aus Mieten und Pachten","Sonstige privatrechtliche Leistungsentgelte","Einzahlungen aus Kostenerstattungen von Zweckverbänden","Einzahlungen aus Kostenerstattungen von sonstigen öffentlichen Sonderrechnungen"],
@@ -172,7 +168,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_6963e647_a7ab_495c_aa5d_0cb3a02115d9'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_c5193599_c45c_4196_98d1_282c230271b5'), {
             type: 'doughnut',
             data: {
               labels: ["Unterhaltung des sonstigen unbeweglichen Vermögens","Besondere zahlungswirksame Aufwendungen für Beschäftigte"],
@@ -194,27 +190,6 @@
         
       
         
-        
-          var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_e8d27b81_87da_44e9_8119_a97b362d74d5'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
-              datasets: [{
-                label: 'Euro',
-                data: [-10000],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              },
-              
-            }
-          });
         
       
     </script>

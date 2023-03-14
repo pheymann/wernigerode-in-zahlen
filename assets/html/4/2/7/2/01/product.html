@@ -26,29 +26,25 @@
 
     <div class="container">
       
-          <h3>Die Verwaltung kostet <span class="total-cashflow-expenses">-457.200,00€</span></h3>
+          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-457.200,00€</span></h3>
 
           
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 29.600,00€</h5>
-                <canvas id="chartjs_5066d8de_179d_4a0c_8f1f_aca789f974b0"></canvas>
+                <canvas id="chartjs_547c3df9_5b17_4894_a166_4fac554221c8"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -486.800,00€</h5>
-                <canvas id="chartjs_1a5aaa22_8d24_45cc_92c3_7e3f50d40d1f"></canvas>
+                <canvas id="chartjs_ab1eede4_6158_463a_9043_f9b26d1c2449"></canvas>
               </div>
             </div>
           
       
-          <h3>Investitionen kosten <span class="total-cashflow-expenses">-3.000,00€</span></h3>
+          <h3>- Investitionen kosten <span class="total-cashflow-expenses">-3.000,00€</span></h3>
 
           
             
-            
-              <div class="padded-chart">
-                <canvas id="chartjs_aaf893dc_bfad_4d47_8366_eb83b268e93b"></canvas>
-              </div>
             
           
       
@@ -240,7 +236,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_5066d8de_179d_4a0c_8f1f_aca789f974b0'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_547c3df9_5b17_4894_a166_4fac554221c8'), {
             type: 'doughnut',
             data: {
               labels: ["Zuweisungen für laufende Zwecke vom Land","Verwaltungsgebühren","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus der Veräußerung von beweglichen Sachen","Einzahlungen aus Kostenerstattungen vom Bund"],
@@ -262,7 +258,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_1a5aaa22_8d24_45cc_92c3_7e3f50d40d1f'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_ab1eede4_6158_463a_9043_f9b26d1c2449'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Dienstauszahlungen und dgl. an sonstige Beschäftigte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschäft.","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für Mieten und Pachten","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für den Erwerb von Medien Bibliothek","Auszahlungen für den Erwerb von Vorräten","Auszahlungen für sonstige Dienstleistungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen","Auszahlungen für Honorare"],
@@ -284,27 +280,6 @@
         
       
         
-        
-          var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_aaf893dc_bfad_4d47_8366_eb83b268e93b'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
-              datasets: [{
-                label: 'Euro',
-                data: [-3000],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              },
-              
-            }
-          });
         
       
     </script>

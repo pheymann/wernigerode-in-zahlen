@@ -26,28 +26,24 @@
 
     <div class="container">
       
-          <h3>Die Verwaltung kostet <span class="total-cashflow-expenses">-337.200,00€</span></h3>
+          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-337.200,00€</span></h3>
 
           
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 37.500,00€</h5>
-                <canvas id="chartjs_9e4dd8ca_9c6d_4ec0_8c26_29eb7c5f5e3f"></canvas>
+                <canvas id="chartjs_d9dcae7b_438e_4842_9107_ebc3c72e2c3c"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -374.700,00€</h5>
-                <canvas id="chartjs_434f3aec_b0b3_4abf_8f42_b74c2196eea1"></canvas>
+                <canvas id="chartjs_7fcdbd76_4adc_41a0_8b92_68679e474786"></canvas>
               </div>
             </div>
           
       
-          <h3>Investitionen erwirtschaften <span class="total-cashflow-income">150.000,00€</span></h3>
+          <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">150.000,00€</span></h3>
 
           
-            
-              <div class="padded-chart">
-                <canvas id="chartjs_ddb40da3_735e_49f4_8a5d_6bebf8e26cfd"></canvas>
-              </div>
             
             
           
@@ -204,7 +200,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_9e4dd8ca_9c6d_4ec0_8c26_29eb7c5f5e3f'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_d9dcae7b_438e_4842_9107_ebc3c72e2c3c'), {
             type: 'doughnut',
             data: {
               labels: ["Erträge aus Kostenerstattungen von privaten Unternehmen (HarzAG)"],
@@ -226,7 +222,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_434f3aec_b0b3_4abf_8f42_b74c2196eea1'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_7fcdbd76_4adc_41a0_8b92_68679e474786'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfe, Unterstützungsleistung für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Besondere Verwaltungs- und Betriebsauszahlungen","Zuweisungen an Zweckverbände","Zuschüsse an sonstige öffentliche Sonderrechnungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten","Erstatt. für die Auszahl. von Dritten aus lfd. Verwaltungstät. an priv. Untern."],
@@ -247,27 +243,6 @@
           });
         
       
-        
-          var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_ddb40da3_735e_49f4_8a5d_6bebf8e26cfd'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Einzahlungen aus Veräußerung von Grundstücken, Gebäuden, Infrastrukturvermögen"],
-              datasets: [{
-                label: 'Euro',
-                data: [150000],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              },
-              
-            }
-          });
         
         
       

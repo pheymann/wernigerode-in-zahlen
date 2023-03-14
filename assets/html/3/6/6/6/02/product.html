@@ -26,25 +26,21 @@
 
     <div class="container">
       
-          <h3>Die Verwaltung kostet <span class="total-cashflow-expenses">-51.600,00€</span></h3>
+          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-51.600,00€</span></h3>
 
           
             
             
               <div class="padded-chart">
-                <canvas id="chartjs_6988d5c4_03fe_427d_b06c_2d3b437dadec"></canvas>
+                <canvas id="chartjs_462ef1ac_0285_4c15_9f3e_9b3dbb2aaf59"></canvas>
               </div>
             
           
       
-          <h3>Investitionen kosten <span class="total-cashflow-expenses">-60.000,00€</span></h3>
+          <h3>- Investitionen kosten <span class="total-cashflow-expenses">-60.000,00€</span></h3>
 
           
             
-            
-              <div class="padded-chart">
-                <canvas id="chartjs_f2d818c0_b547_4e3e_a009_a6506f541b61"></canvas>
-              </div>
             
           
       
@@ -147,7 +143,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_6988d5c4_03fe_427d_b06c_2d3b437dadec'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_462ef1ac_0285_4c15_9f3e_9b3dbb2aaf59'), {
             type: 'doughnut',
             data: {
               labels: ["Unterhaltung des sonstigen unbeweglichen Vermögens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Geschäftsauszahlungen"],
@@ -169,27 +165,6 @@
         
       
         
-        
-          var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_f2d818c0_b547_4e3e_a009_a6506f541b61'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
-              datasets: [{
-                label: 'Euro',
-                data: [-60000],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              },
-              
-            }
-          });
         
       
     </script>

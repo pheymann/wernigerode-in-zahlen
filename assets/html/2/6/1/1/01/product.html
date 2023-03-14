@@ -26,28 +26,24 @@
 
     <div class="container">
       
-          <h3>Die Verwaltung erwirtschaftet <span class="total-cashflow-income">30.166.000,00€</span></h3>
+          <h3>- Die Verwaltung erwirtschaftet <span class="total-cashflow-income">30.166.000,00€</span></h3>
 
           
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 44.376.700,00€</h5>
-                <canvas id="chartjs_b577e748_642c_4bb6_bd4a_19851dfa57d7"></canvas>
+                <canvas id="chartjs_18af9dd6_10ed_47d1_bb00_d7868cecc032"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -14.210.700,00€</h5>
-                <canvas id="chartjs_1864e928_779d_4d2c_9c80_89072678a232"></canvas>
+                <canvas id="chartjs_20f341c8_53a1_46d1_b688_07b2a952ae6a"></canvas>
               </div>
             </div>
           
       
-          <h3>Investitionen erwirtschaften <span class="total-cashflow-income">1.399.900,00€</span></h3>
+          <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">1.399.900,00€</span></h3>
 
           
-            
-              <div class="padded-chart">
-                <canvas id="chartjs_e9e5d978_36b3_40f2_af42_850c12310ba5"></canvas>
-              </div>
             
             
           
@@ -192,7 +188,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_b577e748_642c_4bb6_bd4a_19851dfa57d7'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_18af9dd6_10ed_47d1_bb00_d7868cecc032'), {
             type: 'doughnut',
             data: {
               labels: ["Grundsteuer A","Grundsteuer B","Gewerbesteuer","Gemeindeanteil an der Einkommensteuer","Gemeindeanteil an der Umsatzsteuer","Vergnügungssteuer","Hundesteuer","Schlüsselzuweisungen und Besondere Ergänzungszuweisungen vom Land","Sonstige allgemeine Zuweisungen vom Land","Sonstige Finanzeinzahlungen"],
@@ -214,7 +210,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_1864e928_779d_4d2c_9c80_89072678a232'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_20f341c8_53a1_46d1_b688_07b2a952ae6a'), {
             type: 'doughnut',
             data: {
               labels: ["Gewerbesteuerumlage","Allgemeine Umlagen an Landkreise","Verzinsung von Steuererstattungen"],
@@ -235,27 +231,6 @@
           });
         
       
-        
-          var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_e9e5d978_36b3_40f2_af42_850c12310ba5'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land"],
-              datasets: [{
-                label: 'Euro',
-                data: [1399900],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              },
-              
-            }
-          });
         
         
       

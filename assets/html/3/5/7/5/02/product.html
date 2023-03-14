@@ -26,29 +26,25 @@
 
     <div class="container">
       
-          <h3>Die Verwaltung kostet <span class="total-cashflow-expenses">-113.300,00€</span></h3>
+          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-113.300,00€</span></h3>
 
           
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 4.100,00€</h5>
-                <canvas id="chartjs_bb0a42cf_d20b_40c9_bd2a_de570d561ad3"></canvas>
+                <canvas id="chartjs_e532223f_404e_4739_8536_3750384cab66"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -117.400,00€</h5>
-                <canvas id="chartjs_6662ec46_cbb1_4ec1_a033_61f3de77b502"></canvas>
+                <canvas id="chartjs_e6c3a15c_ebb1_4999_a5ee_8e815a8dfc5f"></canvas>
               </div>
             </div>
           
       
-          <h3>Investitionen kosten <span class="total-cashflow-expenses">-2.500,00€</span></h3>
+          <h3>- Investitionen kosten <span class="total-cashflow-expenses">-2.500,00€</span></h3>
 
           
             
-            
-              <div class="padded-chart">
-                <canvas id="chartjs_4d6ca709_4efb_40e2_91db_e14481c9fe67"></canvas>
-              </div>
             
           
       
@@ -186,7 +182,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_bb0a42cf_d20b_40c9_bd2a_de570d561ad3'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_e532223f_404e_4739_8536_3750384cab66'), {
             type: 'doughnut',
             data: {
               labels: ["Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus dem Verkauf von Vorräten (Holzverkauf)","Einzahlungen aus Kostenerstattungen von übrigen Bereichen"],
@@ -208,7 +204,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_6662ec46_cbb1_4ec1_a033_61f3de77b502'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_e6c3a15c_ebb1_4999_a5ee_8e815a8dfc5f'), {
             type: 'doughnut',
             data: {
               labels: ["Unterhaltung des sonstigen unbeweglichen Vermögens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Erwerb geringwertiger Vermögensgegenstände","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten","Erstatt. f.d. Ausz. v. Dritten aus lfd Verwaltungstät. an so. öff. Sonderrechn."],
@@ -230,27 +226,6 @@
         
       
         
-        
-          var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_4d6ca709_4efb_40e2_91db_e14481c9fe67'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr."],
-              datasets: [{
-                label: 'Euro',
-                data: [-2500],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              },
-              
-            }
-          });
         
       
     </script>

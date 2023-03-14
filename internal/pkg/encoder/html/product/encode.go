@@ -94,11 +94,14 @@ func balanceDataToSections(data []html.BalanceData, year model.BudgetYear, p *me
 			ID: strings.ReplaceAll("balance-"+uuid.New().String(), "-", ""),
 
 			HasIncomeAndExpenses: len(balance.Income) > 0 && len(balance.Expenses) > 0,
+
 			HasIncome:            len(balance.Income) > 0,
+			HasMoreThanOneIncome: len(balance.Income) > 1,
 			IncomeCashflowTotal:  incomeCashflowTotal,
 			Income:               dataPointsToChartJSDataset(balance.Income),
 
 			HasExpenses:           len(balance.Expenses) > 0,
+			HasMoreThanOneExpense: len(balance.Expenses) > 1,
 			ExpensesCashflowTotal: expensesCashflowTotal,
 			Expenses:              dataPointsToChartJSDataset(balance.Expenses),
 
@@ -164,11 +167,13 @@ func subProductsToSection(subProductData []html.ProductData, year model.BudgetYe
 
 	if shared.IsUnequal(expensesCashflowTotal, 0.0) {
 		section.HasExpenses = true
+		section.HasMoreThanOneExpense = len(section.ExpensesSubProductLinks) > 1
 		section.ExpensesCashflowTotal = expensesCashflowTotal
 		section.HasExpensesSubProductLinks = true
 	}
 	if shared.IsUnequal(incomeCashflowTotal, 0.0) {
 		section.HasIncome = true
+		section.HasMoreThanOneIncome = len(section.IncomeSubProductLinks) > 1
 		section.IncomeCashflowTotal = incomeCashflowTotal
 		section.HasIncomeSubProductLinks = true
 	}
@@ -227,7 +232,7 @@ func dataPointsToChartJSDataset(dataPoints []html.DataPoint) html.ChartJSDataset
 
 func encodeBalanceSectionHeader(balance model.AccountBalance, year model.BudgetYear, p *message.Printer) template.HTML {
 	return template.HTML(fmt.Sprintf(
-		`%s <span class="%s">%s</span>`,
+		`- %s <span class="%s">%s</span>`,
 		encodeAccountClass(balance.Class, balance.Budgets[year]),
 		encodeHtml.EncodeCSSCashflowClass(balance.Budgets[year]),
 		encodeHtml.EncodeBudget(balance.Budgets[year], p),
@@ -236,7 +241,7 @@ func encodeBalanceSectionHeader(balance model.AccountBalance, year model.BudgetY
 
 func encodeSubProductBalanceSectionHeader(cashflowTotal float64, p *message.Printer) template.HTML {
 	return template.HTML(fmt.Sprintf(
-		`%s <span class="%s">%s</span>`,
+		`- %s <span class="%s">%s</span>`,
 		"Darin enthalten sind die folgenden Unter-Produkte: ",
 		encodeHtml.EncodeCSSCashflowClass(cashflowTotal),
 		encodeHtml.EncodeBudget(cashflowTotal, p),

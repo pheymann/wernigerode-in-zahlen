@@ -26,39 +26,35 @@
 
     <div class="container">
       
-          <h3>Die Verwaltung kostet <span class="total-cashflow-expenses">-4.890.100,00€</span></h3>
+          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-4.890.100,00€</span></h3>
 
           
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 9.405.000,00€</h5>
-                <canvas id="chartjs_3d48da09_9ccb_4c7a_b113_9d345788d53b"></canvas>
+                <canvas id="chartjs_29c9d2c6_8ea2_4568_aabf_0034dced458c"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -14.295.100,00€</h5>
-                <canvas id="chartjs_64759d7b_9cb9_4c5a_9e31_845791839f04"></canvas>
+                <canvas id="chartjs_4a91c770_d4d8_439d_b608_634266abb1d7"></canvas>
               </div>
             </div>
           
       
-          <h3>Investitionen kosten <span class="total-cashflow-expenses">-125.100,00€</span></h3>
+          <h3>- Investitionen kosten <span class="total-cashflow-expenses">-125.100,00€</span></h3>
 
           
             
-            
-              <div class="padded-chart">
-                <canvas id="chartjs_8e4687b3_b619_4f34_af17_855f28d1b864"></canvas>
-              </div>
             
           
       
-          <h3>Darin enthalten sind die folgenden Unter-Produkte:  <span class="total-cashflow-expenses">-3.353.800,00€</span></h3>
+          <h3>- Darin enthalten sind die folgenden Unter-Produkte:  <span class="total-cashflow-expenses">-3.353.800,00€</span></h3>
 
           
             
             
               <div class="padded-chart">
-                <canvas id="chartjs_a35def9a_64b1_4808_84ab_97a4bd030316"></canvas>
+                <canvas id="chartjs_05142744_a339_4da3_b25e_95d7f4de6740"></canvas>
               </div>
             
           
@@ -161,7 +157,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_3d48da09_9ccb_4c7a_b113_9d345788d53b'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_29c9d2c6_8ea2_4568_aabf_0034dced458c'), {
             type: 'doughnut',
             data: {
               labels: ["Zuweisungen und allgemeine Umlagen","öffentlich-rechtliche Leistungsentgelte","privatrechtliche Leistungsentgelte, Kostenerstattungen, Kostenumlagen"],
@@ -183,7 +179,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_64759d7b_9cb9_4c5a_9e31_845791839f04'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_4a91c770_d4d8_439d_b608_634266abb1d7'), {
             type: 'doughnut',
             data: {
               labels: ["Personalauszahlungen","Auszahlungen für Sach- und Dienstleistungen","Sonstige Auszahlungen"],
@@ -206,32 +202,11 @@
       
         
         
-          var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_8e4687b3_b619_4f34_af17_855f28d1b864'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Erwerb von beweglichen Anlagevermögen und immateriellen Vermögensgegenständen"],
-              datasets: [{
-                label: 'Euro',
-                data: [-125100],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              },
-              
-            }
-          });
-        
       
         
         
-          var expensesSubProductLinks_chartjs_a35def9a_64b1_4808_84ab_97a4bd030316 = ["01/product.html","02/product.html","03/product.html","04/product.html","05/product.html","06/product.html","07/product.html","08/product.html","09/product.html"];
-          var expensesChart_chartjs_a35def9a_64b1_4808_84ab_97a4bd030316 = new Chart(document.getElementById('chartjs_a35def9a_64b1_4808_84ab_97a4bd030316'), {
+          var expensesSubProductLinks_chartjs_05142744_a339_4da3_b25e_95d7f4de6740 = ["01/product.html","02/product.html","03/product.html","04/product.html","05/product.html","06/product.html","07/product.html","08/product.html","09/product.html"];
+          var expensesChart_chartjs_05142744_a339_4da3_b25e_95d7f4de6740 = new Chart(document.getElementById('chartjs_05142744_a339_4da3_b25e_95d7f4de6740'), {
             type: 'doughnut',
             data: {
               labels: ["Kinderkrippe Lindenberg","Kinderkrippe Am Auerhahn","Kindertagesstätte Regenbogen","Kindertagesstätte Villa Sonnenschein","Kindertagesstätte Hummelhaus","Kindertagesstätte Musikus","Kindertagesstätte Pusteblume","Integrative Kindertagesstätte Löwenzahn","Kindertagesstätte Harzblick"],
@@ -249,8 +224,8 @@
               },
               
                 onClick: function(e){
-                  var activePoints = expensesChart_chartjs_a35def9a_64b1_4808_84ab_97a4bd030316.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
-                  window.location.href = expensesSubProductLinks_chartjs_a35def9a_64b1_4808_84ab_97a4bd030316[activePoints[0].index];
+                  var activePoints = expensesChart_chartjs_05142744_a339_4da3_b25e_95d7f4de6740.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
+                  window.location.href = expensesSubProductLinks_chartjs_05142744_a339_4da3_b25e_95d7f4de6740[activePoints[0].index];
                 },
               
             }

@@ -43,42 +43,45 @@ func main() {
 	defer metadataFile.Close()
 
 	var subProductData = []html.ProductData{}
-	errWalk := filepath.Walk(*debugRootPath+*directory, func(path string, info os.FileInfo, err error) error {
-		if err != nil {
-			fmt.Println(err)
-			return err
-		}
 
-		if info.IsDir() && subProductDirRegex.MatchString(path) {
-			fmt.Printf("Read %s\n", path)
-
-			financialPlanFile, err := os.Open(path + "/merged_financial_plan.json")
+	if !subProductDirRegex.MatchString(*debugRootPath + *directory) {
+		errWalk := filepath.Walk(*debugRootPath+*directory, func(path string, info os.FileInfo, err error) error {
 			if err != nil {
-				panic(err)
+				fmt.Println(err)
+				return err
 			}
-			defer financialPlanFile.Close()
 
-			metadataFile, err := os.Open(path + "/metadata.json")
-			if err != nil {
-				panic(err)
+			if info.IsDir() && subProductDirRegex.MatchString(path) {
+				fmt.Printf("Read %s\n", path)
+
+				financialPlanFile, err := os.Open(path + "/merged_financial_plan.json")
+				if err != nil {
+					panic(err)
+				}
+				defer financialPlanFile.Close()
+
+				metadataFile, err := os.Open(path + "/metadata.json")
+				if err != nil {
+					panic(err)
+				}
+				defer metadataFile.Close()
+
+				financialPlan := fpDecoder.DecodeFromJSON(io.ReadCompleteFile(financialPlanFile))
+				metadata := metaDecoder.DecodeFromJSON(io.ReadCompleteFile(metadataFile))
+
+				subProductData = append(subProductData, html.ProductData{
+					FinancialPlan: financialPlan,
+					Metadata:      metadata,
+				})
+				return nil
 			}
-			defer metadataFile.Close()
 
-			financialPlan := fpDecoder.DecodeFromJSON(io.ReadCompleteFile(financialPlanFile))
-			metadata := metaDecoder.DecodeFromJSON(io.ReadCompleteFile(metadataFile))
-
-			subProductData = append(subProductData, html.ProductData{
-				FinancialPlan: financialPlan,
-				Metadata:      metadata,
-			})
 			return nil
+		})
+
+		if errWalk != nil {
+			panic(errWalk)
 		}
-
-		return nil
-	})
-
-	if errWalk != nil {
-		panic(errWalk)
 	}
 
 	productHtml := htmlgenerator.Generate(

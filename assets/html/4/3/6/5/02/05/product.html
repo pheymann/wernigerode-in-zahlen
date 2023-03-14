@@ -26,39 +26,28 @@
 
     <div class="container">
       
-          <h3>Die Verwaltung kostet <span class="total-cashflow-expenses">-302.200,00€</span></h3>
+          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-302.200,00€</span></h3>
 
           
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 1.252.200,00€</h5>
-                <canvas id="chartjs_b9a5499d_bb6c_4430_aa3e_c88e5f6cbcca"></canvas>
+                <canvas id="chartjs_6f15708f_ef61_4318_8190_54d7d3979022"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -1.853.300,00€</h5>
-                <canvas id="chartjs_026ebd9b_56b8_4c02_b3f5_0da549a1f7c5"></canvas>
+                <canvas id="chartjs_37bf0ce1_fe60_4959_baba_c3bc1c0e6435"></canvas>
               </div>
             </div>
           
       
-          <h3>Investitionen kosten <span class="total-cashflow-expenses">-4.000,00€</span></h3>
+          <h3>- Investitionen kosten <span class="total-cashflow-expenses">-4.000,00€</span></h3>
 
           
             
             
               <div class="padded-chart">
-                <canvas id="chartjs_178ae50d_16e0_459d_b8d9_62a05ffef6b6"></canvas>
-              </div>
-            
-          
-      
-          <h3>Darin enthalten sind die folgenden Unter-Produkte:  <span class="total-cashflow-expenses">-306.200,00€</span></h3>
-
-          
-            
-            
-              <div class="padded-chart">
-                <canvas id="chartjs_846184c5_6459_4b42_be3c_76bee1147d74"></canvas>
+                <canvas id="chartjs_1eb3a162_5f85_42da_b6cd_2feec575422d"></canvas>
               </div>
             
           
@@ -287,7 +276,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_b9a5499d_bb6c_4430_aa3e_c88e5f6cbcca'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_6f15708f_ef61_4318_8190_54d7d3979022'), {
             type: 'doughnut',
             data: {
               labels: ["Zuweisungen und allgemeine Umlagen",".6.5.02.05.6142000 Zuweisungen für laufende Zwecke von Gemeinden und Gemeindeverbänden","öffentlich-rechtliche Leistungsentgelte",".6.5.02.05.6321000 Benutzungsgebühren und ähnliche Entgelte","privatrechtliche Leistungsentgelte, Kostenerstattungen, Kostenumlagen",".6.5.02.05.6480001 Einzahlungen aus Kostenerstattungen vom Bund",".6.5.02.05.6482000 Einzahlungen aus Kostenerstattungen von Gemeinden und Gemeindeverbänden"],
@@ -309,7 +298,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_026ebd9b_56b8_4c02_b3f5_0da549a1f7c5'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_37bf0ce1_fe60_4959_baba_c3bc1c0e6435'), {
             type: 'doughnut',
             data: {
               labels: ["Personalauszahlungen",".6.5.02.05.7012000 Dienstauszahlungen und dgl. an Arbeitnehmer",".6.5.02.05.7019000 Dienstauszahlungen und dgl. an sonstige Beschäftigte",".6.5.02.05.7022000 Beiträge zu Versorgungskassen für Arbeitnehmer",".6.5.02.05.7032000 Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer",".6.5.02.05.7039000 Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschäft. 3.6.5.02.05.7041000 Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für Sach- und Dienstleistungen",".6.5.02.05.7211000 Unterhaltung der Grundstücke und baulichen Anlagen",".6.5.02.05.7211014 Unterhaltung der Grundstücke und baulichen Anlagen-Gebäudemanagement",".6.5.02.05.7221000 Unterhaltung des sonstigen unbeweglichen Vermögens",".6.5.02.05.7231000 Auszahlungen für Mieten und Pachten",".6.5.02.05.7241000 Bewirtschaftung der Grundstücke und baulichen Anlagen",".6.5.02.05.7252000 Erwerb geringwertiger Vermögensgegenstände",".6.5.02.05.7255000 Unterhaltung des sonstigen beweglichen Vermögens",".6.5.02.05.7271000 Besondere Verwaltungs- und Betriebsauszahlungen",".6.5.02.05.7291000 Auszahlungen für sonstige Dienstleistungen","Sonstige Auszahlungen",".6.5.02.05.7431000 Geschäftsauszahlungen",".6.5.02.05.7431200 Auszahlungen für Honorare"],
@@ -333,7 +322,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_178ae50d_16e0_459d_b8d9_62a05ffef6b6'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_1eb3a162_5f85_42da_b6cd_2feec575422d'), {
             type: 'doughnut',
             data: {
               labels: ["Erwerb von beweglichen Anlagevermögen und immateriellen Vermögensgegenständen",".6.5.02.05/0200.7831000 Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
@@ -349,35 +338,6 @@
                   display: false
                 }
               },
-              
-            }
-          });
-        
-      
-        
-        
-          var expensesSubProductLinks_chartjs_846184c5_6459_4b42_be3c_76bee1147d74 = ["05/product.html"];
-          var expensesChart_chartjs_846184c5_6459_4b42_be3c_76bee1147d74 = new Chart(document.getElementById('chartjs_846184c5_6459_4b42_be3c_76bee1147d74'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Kindertagesstätte Hummelhaus"],
-              datasets: [{
-                label: 'Euro',
-                data: [-306200],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              },
-              
-                onClick: function(e){
-                  var activePoints = expensesChart_chartjs_846184c5_6459_4b42_be3c_76bee1147d74.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
-                  window.location.href = expensesSubProductLinks_chartjs_846184c5_6459_4b42_be3c_76bee1147d74[activePoints[0].index];
-                },
               
             }
           });
