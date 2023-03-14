@@ -24,6 +24,7 @@
     "Name": "Gasversorgung (Konzessionsabgabe)",
     "LegalRequirement": "Pflichtaufgabe"
   },
+  "SubProduct": null,
   "Description": " Sicherung der Gasversorgung",
   "Mission": " Energiewirtschaftsgesetz (EnWG), Konzessionsabgabenverordnung (KAV), Konzessionsvertrag",
   "Target": "EinwohnerInnen, Energieversorgungsunternehmen",

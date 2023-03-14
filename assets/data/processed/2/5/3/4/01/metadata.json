@@ -24,6 +24,7 @@
     "Name": "Fernwärmeversorgung (Konzessionsabgabe)",
     "LegalRequirement": "Pflichtaufgabe"
   },
+  "SubProduct": null,
   "Description": " Sicherung der Wärmeversorgung der Haushalte der Stadt durch Fernwärme und entsprechende Wegenutzungsrechte für die dazu benötigten Leistungen",
   "Mission": " Beschluss des Stadrates (43/2011) vom 09.06.2011 und abgeschlossener KAV ",
   "Target": "EinwohnerInnen, Fernwärmeversorger",

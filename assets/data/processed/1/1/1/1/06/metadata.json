@@ -24,6 +24,7 @@
     "Name": "Rechnungsprüfung",
     "LegalRequirement": "Pflichtaufgabe"
   },
+  "SubProduct": null,
   "Description": " Prüfung der Rechtmäßigkeit des Verwaltungshandelns",
   "Mission": " Gemeindeordnung, Gemeindehaushaltsverordnung, Dienstanweisungen, Haushaltsgrundsätzegesetz, Beschlüsse der politischen Gremien",
   "Target": "Verwaltung, Stadtrat, Fördermittelgeber",

@@ -24,6 +24,7 @@
     "Name": "Gewinnabführung Stadtwerke",
     "LegalRequirement": "Pflichtaufgabe"
   },
+  "SubProduct": null,
   "Description": " Jahresüberschuss aus den Sparten Elektrizitäts-, Gas-, Fernwärme- und Wasserversorgung im Konzessionsgebiet der Stadtwerke Wernigerode GmbH",
   "Mission": " § 17 Gesellschaftsvertrag der Stadtwerke GmbH",
   "Target": "EinwohnerInnen im Versorgungsgebiet",

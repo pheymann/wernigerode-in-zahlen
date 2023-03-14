@@ -24,6 +24,7 @@
     "Name": "Straßenreinigung/Winterdienst",
     "LegalRequirement": "Pflichtaufgabe"
   },
+  "SubProduct": null,
   "Description": " Reinigung der Straßen, Bürgersteige, Wege und Plätze, deren Reinigung in der Verantwortung der Stadt liegen",
   "Mission": " Bundes-, Landes- und Ortsrecht, Beschlüsse der politischen Gremien",
   "Target": "Alle Nutzer",

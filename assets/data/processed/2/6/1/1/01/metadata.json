@@ -24,6 +24,7 @@
     "Name": "Steuern, allgemeine Zuweisungen, allgemeine Umlagen",
     "LegalRequirement": "Pflichtaufgabe"
   },
+  "SubProduct": null,
   "Description": " Zahlungsein- und -ausgänge aus Abgaben und Umlagen",
   "Mission": " Bundes-, Landes- und Ortsrecht",
   "Target": "Verwaltung, Landkreis",

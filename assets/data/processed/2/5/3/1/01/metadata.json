@@ -24,6 +24,7 @@
     "Name": "Elektrizitätsversorgung (Konzessionsabgabe)",
     "LegalRequirement": "Pflichtaufgabe"
   },
+  "SubProduct": null,
   "Description": " Sicherung der Stromversorgung",
   "Mission": " Energiewirtschaftsgesetz (EnWG), Konzessionsabgabenverordnung (KAV), Konzessionsvertrag",
   "Target": "EinwohnerInnen, Energieversorgungsunternehmen",

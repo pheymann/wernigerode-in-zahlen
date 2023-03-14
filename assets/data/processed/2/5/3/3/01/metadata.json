@@ -24,6 +24,7 @@
     "Name": "Wasserversorgung (Konzessionsabgabe)",
     "LegalRequirement": "Pflichtaufgabe"
   },
+  "SubProduct": null,
   "Description": " Sicherung der Wasserversorgung",
   "Mission": " Konzessionsabgabenverordnung (KAV), Konzessionsvertrag",
   "Target": "EinwohnerInnen, Wasserversorger",
