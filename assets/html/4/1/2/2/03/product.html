@@ -32,11 +32,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 64.500,00€</h5>
-                <canvas id="chartjs-6b5b10e8-d4ab-483e-a688-f57c2c3c3866"></canvas>
+                <canvas id="chartjs_cc21b22b_4cf7_417f_ad64_842c7f42ae78"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -308.000,00€</h5>
-                <canvas id="chartjs-c9906ca9-6f9b-493c-b517-456e5181f96b"></canvas>
+                <canvas id="chartjs_bdf08915_c6ff_467d_80ca_9615ea02f56e"></canvas>
               </div>
             </div>
           
@@ -192,7 +192,8 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-6b5b10e8-d4ab-483e-a688-f57c2c3c3866'), {
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_cc21b22b_4cf7_417f_ad64_842c7f42ae78'), {
             type: 'doughnut',
             data: {
               labels: ["Verwaltungsgebühren","Einzahlungen aus dem Verkauf von Vorräten (Stammbücher)"],
@@ -207,12 +208,14 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         
         
-          new Chart(document.getElementById('chartjs-c9906ca9-6f9b-493c-b517-456e5181f96b'), {
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_bdf08915_c6ff_467d_80ca_9615ea02f56e'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für Mieten und Pachten","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für den Erwerb von Vorräten (Stammbücher)","Auszahlungen für sonstige Dienstleistungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen"],
@@ -227,7 +230,8 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         

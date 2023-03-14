@@ -32,11 +32,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 89.200,00€</h5>
-                <canvas id="chartjs-c2ca8ab0-c37e-4dc5-a4e9-c3c799a51061"></canvas>
+                <canvas id="chartjs_fc5f9634_0ff8_4267_a772_6f8fd722f946"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -159.200,00€</h5>
-                <canvas id="chartjs-0a221bd5-fe3e-414a-8576-797eaa7d65b4"></canvas>
+                <canvas id="chartjs_53fa7c2c_7786_439d_bdda_fa2e5840819c"></canvas>
               </div>
             </div>
           
@@ -47,7 +47,7 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-31aeb259-9275-4528-8c24-a26cef546b90"></canvas>
+                <canvas id="chartjs_aa9e67b5_438a_4774_a58a_745c25431f0f"></canvas>
               </div>
             
           
@@ -197,7 +197,8 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-c2ca8ab0-c37e-4dc5-a4e9-c3c799a51061'), {
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_fc5f9634_0ff8_4267_a772_6f8fd722f946'), {
             type: 'doughnut',
             data: {
               labels: ["Zuweisungen für laufende Zwecke vom Land","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus Kostenerstattungen von Gemeinden und Gemeindeverbänden","Einzahlungen aus Kostenerstattungen von sonstigen öffentlichen Sonderrechnungen"],
@@ -212,12 +213,14 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         
         
-          new Chart(document.getElementById('chartjs-0a221bd5-fe3e-414a-8576-797eaa7d65b4'), {
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_53fa7c2c_7786_439d_bdda_fa2e5840819c'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere Verwaltungs- und Betriebsauszahlungen","Sonstige Auszahlungen für die Inanspruchnahme von Rechten und Diensten","Geschäftsauszahlungen"],
@@ -232,14 +235,16 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         
       
         
         
-          new Chart(document.getElementById('chartjs-31aeb259-9275-4528-8c24-a26cef546b90'), {
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_aa9e67b5_438a_4774_a58a_745c25431f0f'), {
             type: 'doughnut',
             data: {
               labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr."],
@@ -254,7 +259,8 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         

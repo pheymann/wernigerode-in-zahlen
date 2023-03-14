@@ -32,7 +32,7 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-03e3d05a-8fa2-4e0a-9b97-59825b8fef64"></canvas>
+                <canvas id="chartjs_9573bd68_cec0_43ff_a770_111169c5c435"></canvas>
               </div>
             
           
@@ -153,7 +153,8 @@
       
         
         
-          new Chart(document.getElementById('chartjs-03e3d05a-8fa2-4e0a-9b97-59825b8fef64'), {
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_9573bd68_cec0_43ff_a770_111169c5c435'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für Mieten und Pachten","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für sonstige Dienstleistungen","Geschäftsauszahlungen"],
@@ -168,7 +169,8 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         

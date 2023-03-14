@@ -32,11 +32,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 400,00€</h5>
-                <canvas id="chartjs-921f40d0-ce13-4b28-8dd1-af3116d9041d"></canvas>
+                <canvas id="chartjs_43bb9bdb_cbd7_401f_bd54_ae01a380fde2"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -329.200,00€</h5>
-                <canvas id="chartjs-2133c8db-4b15-4940-8a61-bacbd8ca6647"></canvas>
+                <canvas id="chartjs_21c14e61_41bd_4b9b_947f_07fcad9f7a13"></canvas>
               </div>
             </div>
           
@@ -150,7 +150,8 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-921f40d0-ce13-4b28-8dd1-af3116d9041d'), {
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_43bb9bdb_cbd7_401f_bd54_ae01a380fde2'), {
             type: 'doughnut',
             data: {
               labels: ["Einzahlungen aus Kostenerstattungen von übrigen Bereichen","Bußgelder"],
@@ -165,12 +166,14 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         
         
-          new Chart(document.getElementById('chartjs-2133c8db-4b15-4940-8a61-bacbd8ca6647'), {
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_21c14e61_41bd_4b9b_947f_07fcad9f7a13'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für sonstige Dienstleistungen","Geschäftsauszahlungen","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten"],
@@ -185,7 +188,8 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         

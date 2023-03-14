@@ -51,14 +51,20 @@ type ProductCSS struct {
 type BalanceSection struct {
 	ID string
 
-	HasIncomeAndExpenses bool
-	HasIncome            bool
-	IncomeCashflowTotal  float64
-	Income               ChartJSDataset
+	HasIncomeAndExpenses     bool
+	HasIncome                bool
+	IncomeCashflowTotal      float64
+	HasIncomeSubProductLinks bool
+	IncomeSubProductLinks    []string
+	Income                   ChartJSDataset
+	IncomeID                 template.JS
 
-	HasExpenses           bool
-	ExpensesCashflowTotal float64
-	Expenses              ChartJSDataset
+	HasExpenses                bool
+	ExpensesCashflowTotal      float64
+	HasExpensesSubProductLinks bool
+	ExpensesSubProductLinks    []string
+	Expenses                   ChartJSDataset
+	ExpensesID                 template.JS
 
 	Copy BalanceSectionCopy
 	CSS  BalanceSectionCSS

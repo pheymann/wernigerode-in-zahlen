@@ -14,7 +14,7 @@
     <h1>Tageseinrichtungen für Kinder</h1>
 
     <p>
-      Das Produkt -  Betreuung, Erziehung und Bildung von Kindern - wird in 2023
+      Das Produkt -  Kindertagesstätte Regenbogen - wird in 2023
     </p>
 
     <h2 class="total-cashflow-expenses center">-541.100,00€</h2>
@@ -32,11 +32,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 1.749.400,00€</h5>
-                <canvas id="chartjs-09e63f6b-cd57-4145-958e-f14a4fd85ff7"></canvas>
+                <canvas id="chartjs_5c89e76b_f2e9_4728_b67c_b924808ae654"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -2.820.900,00€</h5>
-                <canvas id="chartjs-0cac33e2-b535-4a40-b3e4-71f49098dcc1"></canvas>
+                <canvas id="chartjs_1a9ecf82_4e4d_4c05_8e8c_47f326e5f1ed"></canvas>
               </div>
             </div>
           
@@ -47,7 +47,18 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-65abf8a4-0c7e-4a35-8554-6a1e6ecef068"></canvas>
+                <canvas id="chartjs_d3ba4c9e_39a6_4445_92c5_d6642fb1155e"></canvas>
+              </div>
+            
+          
+      
+          <h3>Darin enthalten sind die folgenden Unter-Produkte:  <span class="total-cashflow-expenses">-541.100,00€</span></h3>
+
+          
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_7eba9604_0375_4822_835a_021172dedb0f"></canvas>
               </div>
             
           
@@ -281,7 +292,8 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-09e63f6b-cd57-4145-958e-f14a4fd85ff7'), {
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_5c89e76b_f2e9_4728_b67c_b924808ae654'), {
             type: 'doughnut',
             data: {
               labels: ["Zuweisungen und allgemeine Umlagen",".6.5.02.03.6142000 Zuweisungen für laufende Zwecke von Gemeinden und Gemeindeverbänden","öffentlich-rechtliche Leistungsentgelte",".6.5.02.03.6321000 Benutzungsgebühren und ähnliche Entgelte","privatrechtliche Leistungsentgelte, Kostenerstattungen, Kostenumlagen",".6.5.02.03.6480001 Einzahlungen aus Kostenerstattungen vom Bund",".6.5.02.03.6482000 Einzahlungen aus Kostenerstattungen von Gemeinden und Gemeindeverbänden"],
@@ -296,12 +308,14 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         
         
-          new Chart(document.getElementById('chartjs-0cac33e2-b535-4a40-b3e4-71f49098dcc1'), {
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_1a9ecf82_4e4d_4c05_8e8c_47f326e5f1ed'), {
             type: 'doughnut',
             data: {
               labels: ["Personalauszahlungen",".6.5.02.03.7012000 Dienstauszahlungen und dgl. an Arbeitnehmer",".6.5.02.03.7019000 Dienstauszahlungen und dgl. an sonstige Beschäftigte",".6.5.02.03.7022000 Beiträge zu Versorgungskassen für Arbeitnehmer",".6.5.02.03.7032000 Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer",".6.5.02.03.7039000 Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschäft. 3.6.5.02.03.7041000 Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für Sach- und Dienstleistungen",".6.5.02.03.7211000 Unterhaltung der Grundstücke und baulichen Anlagen",".6.5.02.03.7211014 Unterhaltung der Grundstücke und baulichen Anlagen-Gebäudemanagement",".6.5.02.03.7221000 Unterhaltung des sonstigen unbeweglichen Vermögens",".6.5.02.03.7231000 Auszahlungen für Mieten und Pachten",".6.5.02.03.7241000 Bewirtschaftung der Grundstücke und baulichen Anlagen",".6.5.02.03.7252000 Erwerb geringwertiger Vermögensgegenstände",".6.5.02.03.7255000 Unterhaltung des sonstigen beweglichen Vermögens",".6.5.02.03.7261000 Besondere zahlungswirksame Aufwendungen für Beschäftigte",".6.5.02.03.7271000 Besondere Verwaltungs- und Betriebsauszahlungen",".6.5.02.03.7291000 Auszahlungen für sonstige Dienstleistungen","Sonstige Auszahlungen",".6.5.02.03.7431000 Geschäftsauszahlungen",".6.5.02.03.7431200 Auszahlungen für Honorare"],
@@ -316,14 +330,16 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         
       
         
         
-          new Chart(document.getElementById('chartjs-65abf8a4-0c7e-4a35-8554-6a1e6ecef068'), {
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_d3ba4c9e_39a6_4445_92c5_d6642fb1155e'), {
             type: 'doughnut',
             data: {
               labels: ["Erwerb von beweglichen Anlagevermögen und immateriellen Vermögensgegenständen",".6.5.02.03/0200.7831000 Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
@@ -338,7 +354,37 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
+            }
+          });
+        
+      
+        
+        
+          var expensesSubProductLinks_chartjs_7eba9604_0375_4822_835a_021172dedb0f = ["03/product.html"];
+          var expensesChart_chartjs_7eba9604_0375_4822_835a_021172dedb0f = new Chart(document.getElementById('chartjs_7eba9604_0375_4822_835a_021172dedb0f'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Kindertagesstätte Regenbogen"],
+              datasets: [{
+                label: 'Euro',
+                data: [-541100],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+                onClick: function(e){
+                  var activePoints = expensesChart_chartjs_7eba9604_0375_4822_835a_021172dedb0f.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
+                  window.location.href = expensesSubProductLinks_chartjs_7eba9604_0375_4822_835a_021172dedb0f[activePoints[0].index];
+                },
+              
             }
           });
         

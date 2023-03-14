@@ -14,7 +14,7 @@
     <h1>Tageseinrichtungen für Kinder</h1>
 
     <p>
-      Das Produkt -  Betreuung, Erziehung und Bildung von Kindern - wird in 2023
+      Das Produkt -  Kinderkrippe Lindenberg - wird in 2023
     </p>
 
     <h2 class="total-cashflow-expenses center">-452.600,00€</h2>
@@ -32,11 +32,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 1.266.000,00€</h5>
-                <canvas id="chartjs-b7cebdfe-6271-4b67-8636-561334f750f0"></canvas>
+                <canvas id="chartjs_12b9ff6b_8b8e_4290_9dad_40dcc019e7b9"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -2.160.200,00€</h5>
-                <canvas id="chartjs-88495a25-16c2-4f97-9964-92629f5c360d"></canvas>
+                <canvas id="chartjs_75820018_c047_41db_8609_2cb4396a9750"></canvas>
               </div>
             </div>
           
@@ -47,7 +47,18 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-f0f0b81b-0efe-488f-948d-78410af230c1"></canvas>
+                <canvas id="chartjs_21f9815d_7194_490a_8981_b03f76361f6f"></canvas>
+              </div>
+            
+          
+      
+          <h3>Darin enthalten sind die folgenden Unter-Produkte:  <span class="total-cashflow-expenses">-452.600,00€</span></h3>
+
+          
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_46f86757_0180_4d13_a7d7_24dcac39168a"></canvas>
               </div>
             
           
@@ -275,7 +286,8 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-b7cebdfe-6271-4b67-8636-561334f750f0'), {
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_12b9ff6b_8b8e_4290_9dad_40dcc019e7b9'), {
             type: 'doughnut',
             data: {
               labels: ["Zuweisungen und allgemeine Umlagen",".6.5.02.01.6142000 Zuweisungen für laufende Zwecke von Gemeinden und Gemeindeverbänden","öffentlich-rechtliche Leistungsentgelte",".6.5.02.01.6321000 Benutzungsgebühren und ähnliche Entgelte","privatrechtliche Leistungsentgelte, Kostenerstattungen, Kostenumlagen",".6.5.02.01.6480001 Einzahlungen aus Kostenerstattungen vom Bund",".6.5.02.01.6482000 Einzahlungen aus Kostenerstattungen von Gemeinden und Gemeindeverbänden"],
@@ -290,12 +302,14 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         
         
-          new Chart(document.getElementById('chartjs-88495a25-16c2-4f97-9964-92629f5c360d'), {
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_75820018_c047_41db_8609_2cb4396a9750'), {
             type: 'doughnut',
             data: {
               labels: ["Personalauszahlungen",".6.5.02.01.7012000 Dienstauszahlungen und dgl. an Arbeitnehmer",".6.5.02.01.7019000 Dienstauszahlungen und dgl. an sonstige Beschäftigte",".6.5.02.01.7022000 Beiträge zu Versorgungskassen für Arbeitnehmer",".6.5.02.01.7032000 Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer",".6.5.02.01.7039000 Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschäft. 3.6.5.02.01.7041000 Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für Sach- und Dienstleistungen",".6.5.02.01.7211000 Unterhaltung der Grundstücke und baulichen Anlagen",".6.5.02.01.7211014 Unterhaltung der Grundstücke und baulichen Anlagen-Gebäudemanagement",".6.5.02.01.7221000 Unterhaltung des sonstigen unbeweglichen Vermögens",".6.5.02.01.7231000 Auszahlungen für Mieten und Pachten",".6.5.02.01.7241000 Bewirtschaftung der Grundstücke und baulichen Anlagen",".6.5.02.01.7252000 Erwerb geringwertiger Vermögensgegenstände",".6.5.02.01.7255000 Unterhaltung des sonstigen beweglichen Vermögens",".6.5.02.01.7271000 Besondere Verwaltungs- und Betriebsauszahlungen",".6.5.02.01.7291000 Auszahlungen für sonstige Dienstleistungen","Sonstige Auszahlungen",".6.5.02.01.7431000 Geschäftsauszahlungen",".6.5.02.01.7431200 Auszahlungen für Honorare"],
@@ -310,14 +324,16 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         
       
         
         
-          new Chart(document.getElementById('chartjs-f0f0b81b-0efe-488f-948d-78410af230c1'), {
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_21f9815d_7194_490a_8981_b03f76361f6f'), {
             type: 'doughnut',
             data: {
               labels: ["Erwerb von beweglichen Anlagevermögen und immateriellen Vermögensgegenständen",".6.5.02.01/0100.7832000 Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr."],
@@ -332,7 +348,37 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
+            }
+          });
+        
+      
+        
+        
+          var expensesSubProductLinks_chartjs_46f86757_0180_4d13_a7d7_24dcac39168a = ["01/product.html"];
+          var expensesChart_chartjs_46f86757_0180_4d13_a7d7_24dcac39168a = new Chart(document.getElementById('chartjs_46f86757_0180_4d13_a7d7_24dcac39168a'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Kinderkrippe Lindenberg"],
+              datasets: [{
+                label: 'Euro',
+                data: [-452600],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+                onClick: function(e){
+                  var activePoints = expensesChart_chartjs_46f86757_0180_4d13_a7d7_24dcac39168a.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
+                  window.location.href = expensesSubProductLinks_chartjs_46f86757_0180_4d13_a7d7_24dcac39168a[activePoints[0].index];
+                },
+              
             }
           });
         

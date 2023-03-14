@@ -15,7 +15,7 @@ import (
 	"wernigode-in-zahlen.de/internal/pkg/shared"
 )
 
-func Generate(financialPlanJSON string, metadataJSON string, year model.BudgetYear, debugRootPath string) string {
+func Generate(financialPlanJSON string, metadataJSON string, subProductData []html.ProductData, year model.BudgetYear, debugRootPath string) string {
 	p := message.NewPrinter(language.German)
 
 	fp := fpDecoder.DecodeFromJSON(financialPlanJSON)
@@ -27,7 +27,7 @@ func Generate(financialPlanJSON string, metadataJSON string, year model.BudgetYe
 	var htmlBytes bytes.Buffer
 	if err := productTmpl.Execute(
 		&htmlBytes,
-		htmlProductEncoder.Encode(metadata, fpBalanceData, fpCashflow, tableData, year, p),
+		htmlProductEncoder.Encode(metadata, fpBalanceData, fpCashflow, tableData, subProductData, year, p),
 	); err != nil {
 		panic(err)
 	}

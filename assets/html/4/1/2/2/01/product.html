@@ -32,11 +32,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 772.500,00€</h5>
-                <canvas id="chartjs-bf4758ca-f16f-4cd1-a6a7-80355d666993"></canvas>
+                <canvas id="chartjs_a9da7c71_d209_412e_be94_106de268b010"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -1.621.100,00€</h5>
-                <canvas id="chartjs-bc2adea8-b688-4a35-9306-5beaff73595f"></canvas>
+                <canvas id="chartjs_c42ce4de_9bc7_4e24_be82_1799fc81ba97"></canvas>
               </div>
             </div>
           
@@ -246,7 +246,8 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-bf4758ca-f16f-4cd1-a6a7-80355d666993'), {
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_a9da7c71_d209_412e_be94_106de268b010'), {
             type: 'doughnut',
             data: {
               labels: ["Verwaltungsgebühren","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus dem Verkauf von Vorräten","Einzahlungen aus Kostenerstattungen vom Land","Einzahlungen aus Kostenerstattungen von übrigen Bereichen","Bußgelder"],
@@ -261,12 +262,14 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         
         
-          new Chart(document.getElementById('chartjs-bc2adea8-b688-4a35-9306-5beaff73595f'), {
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_c42ce4de_9bc7_4e24_be82_1799fc81ba97'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für sonstige Dienstleistungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten","Erstattungen für die Auszahl. von Dritten aus lfd. Verwaltungstät. an den Bund","Erstatt. für die Auszahl. von Dritten aus lfd. Verwaltungstät. an übrige Ber."],
@@ -281,7 +284,8 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         

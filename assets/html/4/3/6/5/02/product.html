@@ -32,11 +32,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 9.405.000,00€</h5>
-                <canvas id="chartjs-a29e2945-2e1d-4647-8d74-22aea888ddc1"></canvas>
+                <canvas id="chartjs_a8c8fea5_62b7_405c_b672_443df877abbf"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -14.295.100,00€</h5>
-                <canvas id="chartjs-29e4cd11-4e6f-4347-a994-334548f76ee9"></canvas>
+                <canvas id="chartjs_2fb68bbc_712e_4097_a967_816b396459cf"></canvas>
               </div>
             </div>
           
@@ -47,7 +47,18 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-a4e85ab3-166e-4909-bf46-90483782b4af"></canvas>
+                <canvas id="chartjs_d8854938_8d34_4915_97a5_ff511a20d63f"></canvas>
+              </div>
+            
+          
+      
+          <h3>Darin enthalten sind die folgenden Unter-Produkte:  <span class="total-cashflow-expenses">-3.353.800,00€</span></h3>
+
+          
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_1d756cc0_4dc4_4704_9391_0608f6aec19c"></canvas>
               </div>
             
           
@@ -149,7 +160,8 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-a29e2945-2e1d-4647-8d74-22aea888ddc1'), {
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_a8c8fea5_62b7_405c_b672_443df877abbf'), {
             type: 'doughnut',
             data: {
               labels: ["Zuweisungen und allgemeine Umlagen","öffentlich-rechtliche Leistungsentgelte","privatrechtliche Leistungsentgelte, Kostenerstattungen, Kostenumlagen"],
@@ -164,12 +176,14 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         
         
-          new Chart(document.getElementById('chartjs-29e4cd11-4e6f-4347-a994-334548f76ee9'), {
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_2fb68bbc_712e_4097_a967_816b396459cf'), {
             type: 'doughnut',
             data: {
               labels: ["Personalauszahlungen","Auszahlungen für Sach- und Dienstleistungen","Sonstige Auszahlungen"],
@@ -184,14 +198,16 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         
       
         
         
-          new Chart(document.getElementById('chartjs-a4e85ab3-166e-4909-bf46-90483782b4af'), {
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_d8854938_8d34_4915_97a5_ff511a20d63f'), {
             type: 'doughnut',
             data: {
               labels: ["Erwerb von beweglichen Anlagevermögen und immateriellen Vermögensgegenständen"],
@@ -206,7 +222,37 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
+            }
+          });
+        
+      
+        
+        
+          var expensesSubProductLinks_chartjs_1d756cc0_4dc4_4704_9391_0608f6aec19c = ["01/product.html","02/product.html","03/product.html","04/product.html","05/product.html","06/product.html","07/product.html","08/product.html","09/product.html"];
+          var expensesChart_chartjs_1d756cc0_4dc4_4704_9391_0608f6aec19c = new Chart(document.getElementById('chartjs_1d756cc0_4dc4_4704_9391_0608f6aec19c'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Kinderkrippe Lindenberg","Kinderkrippe Am Auerhahn","Kindertagesstätte Regenbogen","Kindertagesstätte Villa Sonnenschein","Kindertagesstätte Hummelhaus","Kindertagesstätte Musikus","Kindertagesstätte Pusteblume","Integrative Kindertagesstätte Löwenzahn","Kindertagesstätte Harzblick"],
+              datasets: [{
+                label: 'Euro',
+                data: [-452600,-277900,-541100,-235800,-306200,-186400,-270900,-550500,-532400],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+                onClick: function(e){
+                  var activePoints = expensesChart_chartjs_1d756cc0_4dc4_4704_9391_0608f6aec19c.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
+                  window.location.href = expensesSubProductLinks_chartjs_1d756cc0_4dc4_4704_9391_0608f6aec19c[activePoints[0].index];
+                },
+              
             }
           });
         

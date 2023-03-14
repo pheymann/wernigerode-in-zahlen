@@ -109,7 +109,8 @@
     <script>
       {{range .BalanceSections}}
         {{if .HasIncome}}
-          new Chart(document.getElementById('{{.Income.ID}}'), {
+          var incomeSubProductLinks_{{.IncomeID}} = {{.IncomeSubProductLinks}};
+          var incomeChart_{{.IncomeID}} = new Chart(document.getElementById('{{.Income.ID}}'), {
             type: 'doughnut',
             data: {
               labels: {{.Income.Labels}},
@@ -124,12 +125,19 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              {{if .HasIncomeSubProductLinks}}
+                onClick: function(e){
+                  var activePoints = incomeChart_{{.IncomeID}}.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
+                  window.location.href = incomeSubProductLinks_{{.IncomeID}}[activePoints[0].index];
+                },
+              {{end}}
             }
           });
         {{end}}
         {{if .HasExpenses}}
-          new Chart(document.getElementById('{{.Expenses.ID}}'), {
+          var expensesSubProductLinks_{{.ExpensesID}} = {{.ExpensesSubProductLinks}};
+          var expensesChart_{{.ExpensesID}} = new Chart(document.getElementById('{{.Expenses.ID}}'), {
             type: 'doughnut',
             data: {
               labels: {{.Expenses.Labels}},
@@ -144,7 +152,13 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              {{if .HasExpensesSubProductLinks}}
+                onClick: function(e){
+                  var activePoints = expensesChart_{{.ExpensesID}}.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
+                  window.location.href = expensesSubProductLinks_{{.ExpensesID}}[activePoints[0].index];
+                },
+              {{end}}
             }
           });
         {{end}}

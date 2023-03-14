@@ -32,11 +32,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 168.600,00€</h5>
-                <canvas id="chartjs-5ebe68f3-9517-4e02-9de2-810d8d22290c"></canvas>
+                <canvas id="chartjs_732c6543_bb41_47df_9d29_049a63afac3a"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -568.000,00€</h5>
-                <canvas id="chartjs-29828c39-1861-4507-9122-fd2fab7f5cd1"></canvas>
+                <canvas id="chartjs_f63de2fd_bb57_4220_a87f_19e6274b5053"></canvas>
               </div>
             </div>
           
@@ -162,7 +162,8 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-5ebe68f3-9517-4e02-9de2-810d8d22290c'), {
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_732c6543_bb41_47df_9d29_049a63afac3a'), {
             type: 'doughnut',
             data: {
               labels: ["Verwaltungsgebühren","Einzahlungen aus Kostenerstattungen von Zweckverbänden","Bußgelder"],
@@ -177,12 +178,14 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         
         
-          new Chart(document.getElementById('chartjs-29828c39-1861-4507-9122-fd2fab7f5cd1'), {
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_f63de2fd_bb57_4220_a87f_19e6274b5053'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Zuschüsse an übrige Bereiche","Geschäftsauszahlungen","Erstattungen für die Auszahl. von Dritten aus lfd. Verwaltungstät. an den Bund"],
@@ -197,7 +200,8 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         

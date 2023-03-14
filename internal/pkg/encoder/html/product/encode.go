@@ -4,12 +4,14 @@ import (
 	"fmt"
 	"html/template"
 	"sort"
+	"strings"
 
 	"github.com/google/uuid"
 	"golang.org/x/text/message"
 	encodeHtml "wernigode-in-zahlen.de/internal/pkg/encoder/html"
 	"wernigode-in-zahlen.de/internal/pkg/model"
 	"wernigode-in-zahlen.de/internal/pkg/model/html"
+	"wernigode-in-zahlen.de/internal/pkg/shared"
 )
 
 func Encode(
@@ -17,12 +19,19 @@ func Encode(
 	fpBalanceData []html.BalanceData,
 	fpCashflowTotal float64,
 	tableData []html.AccountTableData,
+	subProductData []html.ProductData,
 	year model.BudgetYear,
 	p *message.Printer,
 ) html.Product {
+	var sections = balanceDataToSections(fpBalanceData, year, p)
+	subProductSection := subProductsToSection(subProductData, year, p)
+	if subProductSection != nil {
+		sections = append(sections, *subProductSection)
+	}
+
 	return html.Product{
 		Meta:            metadata,
-		BalanceSections: balanceDataToSections(fpBalanceData, year, p),
+		BalanceSections: sections,
 		Copy: html.ProductCopy{
 			BackLink: "Zurück zur Bereichsübersicht",
 
@@ -82,7 +91,7 @@ func balanceDataToSections(data []html.BalanceData, year model.BudgetYear, p *me
 		}
 
 		sections = append(sections, html.BalanceSection{
-			ID: "balance-" + uuid.New().String(),
+			ID: strings.ReplaceAll("balance-"+uuid.New().String(), "-", ""),
 
 			HasIncomeAndExpenses: len(balance.Income) > 0 && len(balance.Expenses) > 0,
 			HasIncome:            len(balance.Income) > 0,
@@ -105,6 +114,81 @@ func balanceDataToSections(data []html.BalanceData, year model.BudgetYear, p *me
 	}
 
 	return sections
+}
+
+func subProductsToSection(subProductData []html.ProductData, year model.BudgetYear, p *message.Printer) *html.BalanceSection {
+	if len(subProductData) == 0 {
+		return nil
+	}
+
+	var incomeCashflowTotal = 0.0
+	var expensesCashflowTotal = 0.0
+
+	section := html.BalanceSection{
+		ID: strings.ReplaceAll("balance-sub-product-"+uuid.New().String(), "-", "_"),
+		Income: html.ChartJSDataset{
+			ID:           strings.ReplaceAll("chartjs-"+uuid.New().String(), "-", "_"),
+			DatasetLabel: "Einnahmen",
+		},
+		Expenses: html.ChartJSDataset{
+			ID:           strings.ReplaceAll("chartjs-"+uuid.New().String(), "-", "_"),
+			DatasetLabel: "Ausgaben",
+		},
+	}
+
+	section.IncomeID = template.JS(section.Income.ID)
+	section.ExpensesID = template.JS(section.Expenses.ID)
+
+	for _, subProduct := range subProductData {
+		var cashflow = 0.0
+		for _, balance := range subProduct.FinancialPlan.Balances {
+			cashflow += balance.Budgets[year]
+		}
+
+		link := fmt.Sprintf("%s/product.html", subProduct.Metadata.SubProduct.ID)
+
+		if cashflow < 0 {
+			section.Expenses.Labels = append(section.Expenses.Labels, subProduct.Metadata.SubProduct.Name)
+			section.Expenses.Data = append(section.Expenses.Data, cashflow)
+			section.ExpensesSubProductLinks = append(section.ExpensesSubProductLinks, link)
+
+			expensesCashflowTotal += cashflow
+		} else {
+			section.Income.Labels = append(section.Income.Labels, subProduct.Metadata.SubProduct.Name)
+			section.Income.Data = append(section.Income.Data, cashflow)
+			section.IncomeSubProductLinks = append(section.IncomeSubProductLinks, link)
+
+			incomeCashflowTotal += cashflow
+		}
+	}
+
+	if shared.IsUnequal(expensesCashflowTotal, 0.0) {
+		section.HasExpenses = true
+		section.ExpensesCashflowTotal = expensesCashflowTotal
+		section.HasExpensesSubProductLinks = true
+	}
+	if shared.IsUnequal(incomeCashflowTotal, 0.0) {
+		section.HasIncome = true
+		section.IncomeCashflowTotal = incomeCashflowTotal
+		section.HasIncomeSubProductLinks = true
+	}
+
+	if section.HasIncome && section.HasExpenses {
+		section.HasIncomeAndExpenses = true
+	}
+
+	cashflowTotal := incomeCashflowTotal + expensesCashflowTotal
+	section.Copy = html.BalanceSectionCopy{
+		Header:                encodeSubProductBalanceSectionHeader(cashflowTotal, p),
+		IncomeCashflowTotal:   "Einnahmen: " + encodeHtml.EncodeBudget(incomeCashflowTotal, p),
+		ExpensesCashflowTotal: "Ausgaben: " + encodeHtml.EncodeBudget(expensesCashflowTotal, p),
+	}
+
+	section.CSS = html.BalanceSectionCSS{
+		CashflowTotalClass: encodeHtml.EncodeCSSCashflowClass(cashflowTotal),
+	}
+
+	return &section
 }
 
 func encodeAccountCopy(data []html.AccountTableData, p *message.Printer) []html.ProductAccountCopy {
@@ -134,7 +218,7 @@ func dataPointsToChartJSDataset(dataPoints []html.DataPoint) html.ChartJSDataset
 	}
 
 	return html.ChartJSDataset{
-		ID:           "chartjs-" + uuid.New().String(),
+		ID:           strings.ReplaceAll("chartjs-"+uuid.New().String(), "-", "_"),
 		Labels:       labels,
 		DatasetLabel: "Budget",
 		Data:         data,
@@ -147,6 +231,15 @@ func encodeBalanceSectionHeader(balance model.AccountBalance, year model.BudgetY
 		encodeAccountClass(balance.Class, balance.Budgets[year]),
 		encodeHtml.EncodeCSSCashflowClass(balance.Budgets[year]),
 		encodeHtml.EncodeBudget(balance.Budgets[year], p),
+	))
+}
+
+func encodeSubProductBalanceSectionHeader(cashflowTotal float64, p *message.Printer) template.HTML {
+	return template.HTML(fmt.Sprintf(
+		`%s <span class="%s">%s</span>`,
+		"Darin enthalten sind die folgenden Unter-Produkte: ",
+		encodeHtml.EncodeCSSCashflowClass(cashflowTotal),
+		encodeHtml.EncodeBudget(cashflowTotal, p),
 	))
 }
 
