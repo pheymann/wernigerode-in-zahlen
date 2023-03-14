@@ -32,11 +32,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 35.100,00€</h5>
-                <canvas id="chartjs-9f792940-ba5e-4260-98e2-7c27dc87f7ed"></canvas>
+                <canvas id="chartjs_e30a1fa6_bd9b_4eb0_8fdc_c56d8dcf0a68"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -1.642.000,00€</h5>
-                <canvas id="chartjs-8bab951f-4771-44cf-a932-d3d4c223d669"></canvas>
+                <canvas id="chartjs_53ac142e_03ca_45a5_addb_7403428f843e"></canvas>
               </div>
             </div>
           
@@ -47,7 +47,7 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-37fb4354-ee0e-42d7-b52d-0df940283c63"></canvas>
+                <canvas id="chartjs_aa45b50e_75b0_4cd4_9a37_c484daa2444c"></canvas>
               </div>
             
           
@@ -299,7 +299,8 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-9f792940-ba5e-4260-98e2-7c27dc87f7ed'), {
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_e30a1fa6_bd9b_4eb0_8fdc_c56d8dcf0a68'), {
             type: 'doughnut',
             data: {
               labels: ["Zuweisungen für laufende Zwecke vom Bund","Zuschüsse für laufende Zwecke von übrigen Bereichen (Spenden)","Verwaltungsgebühren","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus dem Verkauf von Holz","Sonstige privatrechtliche Leistungsentgelte","Einzahlungen aus Kostenerstattungen vom Bund","Einzahl. aus Kostenerstattungen von verbund. Untern., Sondervermö. und Beteilig.","Einzahlungen aus Kostenerstattungen von übrigen Bereichen"],
@@ -314,12 +315,14 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         
         
-          new Chart(document.getElementById('chartjs-8bab951f-4771-44cf-a932-d3d4c223d669'), {
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_53ac142e_03ca_45a5_addb_7403428f843e'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Dienstauszahlungen und dgl. an sonstige Beschäftigte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschäft.","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Unterhaltung des sonstigen unbeweglichen Vermögens","Auszahlungen für Mieten und Pachten","Auszahlungen für Leasing","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen","Auszahlungen für Planungsleistungen","Erstatt. f.d. Ausz. v. Dritten aus lfd Verwaltungstät. an so. öff. Sonderrechn."],
@@ -334,14 +337,16 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         
       
         
         
-          new Chart(document.getElementById('chartjs-37fb4354-ee0e-42d7-b52d-0df940283c63'), {
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_aa45b50e_75b0_4cd4_9a37_c484daa2444c'), {
             type: 'doughnut',
             data: {
               labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
@@ -356,7 +361,8 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         

@@ -32,7 +32,7 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-4ae4f223-eb91-4fea-adc9-4f0b7128caff"></canvas>
+                <canvas id="chartjs_6988d5c4_03fe_427d_b06c_2d3b437dadec"></canvas>
               </div>
             
           
@@ -43,7 +43,7 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-36d437c1-688f-4a1c-be30-69d7238e055e"></canvas>
+                <canvas id="chartjs_f2d818c0_b547_4e3e_a009_a6506f541b61"></canvas>
               </div>
             
           
@@ -146,7 +146,8 @@
       
         
         
-          new Chart(document.getElementById('chartjs-4ae4f223-eb91-4fea-adc9-4f0b7128caff'), {
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_6988d5c4_03fe_427d_b06c_2d3b437dadec'), {
             type: 'doughnut',
             data: {
               labels: ["Unterhaltung des sonstigen unbeweglichen Vermögens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Geschäftsauszahlungen"],
@@ -161,14 +162,16 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         
       
         
         
-          new Chart(document.getElementById('chartjs-36d437c1-688f-4a1c-be30-69d7238e055e'), {
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_f2d818c0_b547_4e3e_a009_a6506f541b61'), {
             type: 'doughnut',
             data: {
               labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
@@ -183,7 +186,8 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         

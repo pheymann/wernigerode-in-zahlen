@@ -32,11 +32,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 73.000,00€</h5>
-                <canvas id="chartjs-0d18a2e7-0dd7-4946-9593-df16ab19e05a"></canvas>
+                <canvas id="chartjs_619d3340_7ab1_4f1d_938c_4bdef6854ffe"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -25.000,00€</h5>
-                <canvas id="chartjs-71913da0-b5d6-48a7-8649-804327a1869d"></canvas>
+                <canvas id="chartjs_4ad4f5b0_8031_430f_8748_97f3ffaa945d"></canvas>
               </div>
             </div>
           
@@ -120,7 +120,8 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-0d18a2e7-0dd7-4946-9593-df16ab19e05a'), {
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_619d3340_7ab1_4f1d_938c_4bdef6854ffe'), {
             type: 'doughnut',
             data: {
               labels: ["Einzahlungen aus Mieten und Pachten","Einzahl. aus Kostenerstattungen von verbund. Untern., Sondervermö. und Beteilig."],
@@ -135,12 +136,14 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         
         
-          new Chart(document.getElementById('chartjs-71913da0-b5d6-48a7-8649-804327a1869d'), {
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_4ad4f5b0_8031_430f_8748_97f3ffaa945d'), {
             type: 'doughnut',
             data: {
               labels: ["Bewirtschaftung der Grundstücke und baulichen Anlagen","Unterhaltung des sonstigen beweglichen Vermögens"],
@@ -155,7 +158,8 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         

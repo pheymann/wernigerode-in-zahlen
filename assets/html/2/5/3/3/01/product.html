@@ -31,7 +31,7 @@
           
             
               <div class="padded-chart">
-                <canvas id="chartjs-2f909776-efb1-491d-81c6-8e3631f0f6cf"></canvas>
+                <canvas id="chartjs_2b39fd95_bea8_49c7_a9d3_82d5d34b75f4"></canvas>
               </div>
             
             
@@ -98,7 +98,8 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-2f909776-efb1-491d-81c6-8e3631f0f6cf'), {
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_2b39fd95_bea8_49c7_a9d3_82d5d34b75f4'), {
             type: 'doughnut',
             data: {
               labels: ["Konzessionsabgaben"],
@@ -113,7 +114,8 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         

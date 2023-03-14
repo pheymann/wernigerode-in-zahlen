@@ -24,16 +24,14 @@
     </p>
 
     <div class="container">
-      <div class="row">
-        <div class="col-6">
-          <h5 class="center">Einnahmen: 0,00€</h5>
-          <canvas id="chartjs-bcd7bfc8-5917-44a6-914d-acc34195483c"></canvas>
-        </div>
-        <div class="col-6">
-          <h5 class="center">Ausgaben: -14.142.300,00€</h5>
-          <canvas id="chartjs-99b8953e-98eb-4aa7-947a-5e7355ef64b4"></canvas>
-        </div>
-      </div>
+      
+        
+        
+          <div class="padded-chart">
+            <canvas id="chartjs-a9078719-abeb-4c35-b512-9133199876db"></canvas>
+          </div>
+        
+      
     </div>
 
     <div class="info-sheet">
@@ -182,33 +180,11 @@
     </footer>
 
     <script>
-      var incomeProductLinks = [];
-      var incomeCanvas = document.getElementById('chartjs-bcd7bfc8-5917-44a6-914d-acc34195483c');
-      var incomeChart = new Chart(incomeCanvas, {
-        type: 'doughnut',
-        data: {
-          labels:  null ,
-          datasets: [{
-            label: 'Euro',
-            data:  null ,
-            borderWidth: 1
-          }]
-        },
-        options: {
-          plugins: {
-            legend: {
-              display: false
-            }
-          },
-          onClick: function(e){
-            var activePoints = incomeChart.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
-            window.location.href = incomeProductLinks[activePoints[0].index];
-          },
-        }
-      });
+      
 
+      
       var expenesesProductLinks = ["/4/1/2/2/01/product.html","/4/1/2/2/02/product.html","/4/1/2/2/03/product.html","/4/1/2/6/01/product.html","/4/2/1/1/01/product.html","/4/2/4/3/01/product.html","/4/2/5/2/01/product.html","/4/2/5/2/02/product.html","/4/2/6/2/02/product.html","/4/2/7/2/01/product.html","/4/2/8/1/01/product.html","/4/3/1/5/01/product.html","/4/3/1/5/04/product.html","/4/3/1/5/06/product.html","/4/3/3/1/01/product.html","/4/3/4/6/01/product.html","/4/3/6/5/01/product.html","/4/3/6/5/02/product.html"];
-      var expensesCanvas = document.getElementById('chartjs-99b8953e-98eb-4aa7-947a-5e7355ef64b4');
+      var expensesCanvas = document.getElementById('chartjs-a9078719-abeb-4c35-b512-9133199876db');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {
@@ -231,6 +207,7 @@
           },
         },
       });
+      
     </script>
   </body>
 </html>

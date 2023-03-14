@@ -32,11 +32,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 440.000,00€</h5>
-                <canvas id="chartjs-19cdea5c-8faf-4d3f-a9ae-72eb4937c69d"></canvas>
+                <canvas id="chartjs_28b459c0_37e5_4fca_806a_286aa872a4b8"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -191.000,00€</h5>
-                <canvas id="chartjs-c9026dcb-a0ac-49f9-a722-0acfe9e3a141"></canvas>
+                <canvas id="chartjs_6347d75c_fe7d_45d2_857d_b8092966d0ae"></canvas>
               </div>
             </div>
           
@@ -138,7 +138,8 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-19cdea5c-8faf-4d3f-a9ae-72eb4937c69d'), {
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_28b459c0_37e5_4fca_806a_286aa872a4b8'), {
             type: 'doughnut',
             data: {
               labels: ["Benutzungsgebühren und ähnliche Entgelte"],
@@ -153,12 +154,14 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         
         
-          new Chart(document.getElementById('chartjs-c9026dcb-a0ac-49f9-a722-0acfe9e3a141'), {
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_6347d75c_fe7d_45d2_857d_b8092966d0ae'), {
             type: 'doughnut',
             data: {
               labels: ["Unterhaltung des sonstigen unbeweglichen Vermögens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Erstatt. für die Auszahl. von Dritten aus lfd. Verwaltungstät. an priv. Untern."],
@@ -173,7 +176,8 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         

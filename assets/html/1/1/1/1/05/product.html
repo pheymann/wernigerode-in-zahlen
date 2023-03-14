@@ -32,7 +32,7 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-41d4f633-e0ef-413c-bfad-e8665c0bca87"></canvas>
+                <canvas id="chartjs_a2b8931d_ff22_4a8c_8b24_236503ff77c6"></canvas>
               </div>
             
           
@@ -129,7 +129,8 @@
       
         
         
-          new Chart(document.getElementById('chartjs-41d4f633-e0ef-413c-bfad-e8665c0bca87'), {
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_a2b8931d_ff22_4a8c_8b24_236503ff77c6'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Beamte","Beiträge zu Versorgungskassen für Beamte","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Sonstige Personal- und Versorgungsauszahlungen","Geschäftsauszahlungen"],
@@ -144,7 +145,8 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         

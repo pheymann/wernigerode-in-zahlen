@@ -32,11 +32,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 2.782.000,00€</h5>
-                <canvas id="chartjs-e2799475-58c2-49e1-aa52-1bce04a3e145"></canvas>
+                <canvas id="chartjs_033ddb4a_a9e4_4b4d_8dce_6e24ae188e86"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -2.624.700,00€</h5>
-                <canvas id="chartjs-bcf56d80-64ce-4392-bdce-c5943e938803"></canvas>
+                <canvas id="chartjs_205c8a5c_1b5b_4ab2_9282_421dd13d6fbc"></canvas>
               </div>
             </div>
           
@@ -120,7 +120,8 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-e2799475-58c2-49e1-aa52-1bce04a3e145'), {
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_033ddb4a_a9e4_4b4d_8dce_6e24ae188e86'), {
             type: 'doughnut',
             data: {
               labels: ["Zweckgebundene Abgaben (Kurbeitrag)"],
@@ -135,12 +136,14 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         
         
-          new Chart(document.getElementById('chartjs-bcf56d80-64ce-4392-bdce-c5943e938803'), {
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_205c8a5c_1b5b_4ab2_9282_421dd13d6fbc'), {
             type: 'doughnut',
             data: {
               labels: ["Zusch. öff. SondRechn. HSB","Zusch. öff.SondRechn. HSB Kurb","Einbehalt für Entgelt WTG"],
@@ -155,7 +158,8 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         

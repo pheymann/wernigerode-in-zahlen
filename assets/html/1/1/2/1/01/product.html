@@ -32,7 +32,7 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-46874ee9-3c6c-4361-b98a-8d265bcc01e2"></canvas>
+                <canvas id="chartjs_ee443a54_7235_4467_bae8_598051d6c34d"></canvas>
               </div>
             
           
@@ -105,7 +105,8 @@
       
         
         
-          new Chart(document.getElementById('chartjs-46874ee9-3c6c-4361-b98a-8d265bcc01e2'), {
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_ee443a54_7235_4467_bae8_598051d6c34d'), {
             type: 'doughnut',
             data: {
               labels: ["Sonstige Personal- und Versorgungsauszahlungen","Geschäftsauszahlungen"],
@@ -120,7 +121,8 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         

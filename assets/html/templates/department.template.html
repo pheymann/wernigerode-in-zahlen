@@ -24,16 +24,29 @@
     </p>
 
     <div class="container">
-      <div class="row">
-        <div class="col-6">
-          <h5 class="center">{{.Copy.IncomeCashflowTotal}}</h5>
-          <canvas id="{{.Income.ID}}"></canvas>
+      {{if .HasIncomeAndExpenses}}
+        <div class="row">
+          <div class="col-6">
+            <h5 class="center">{{.Copy.IncomeCashflowTotal}}</h5>
+            <canvas id="{{.Income.ID}}"></canvas>
+          </div>
+          <div class="col-6">
+            <h5 class="center">{{.Copy.ExpensesCashflowTotal}}</h5>
+            <canvas id="{{.Expenses.ID}}"></canvas>
+          </div>
         </div>
-        <div class="col-6">
-          <h5 class="center">{{.Copy.ExpensesCashflowTotal}}</h5>
-          <canvas id="{{.Expenses.ID}}"></canvas>
-        </div>
-      </div>
+      {{else}}
+        {{if .HasIncome}}
+          <div class="padded-chart">
+            <canvas id="{{.Income.ID}}"></canvas>
+          </div>
+        {{end}}
+        {{if .HasExpenses}}
+          <div class="padded-chart">
+            <canvas id="{{.Expenses.ID}}"></canvas>
+          </div>
+        {{end}}
+      {{end}}
     </div>
 
     <div class="info-sheet">
@@ -77,6 +90,7 @@
     </footer>
 
     <script>
+      {{if .HasIncome}}
       var incomeProductLinks = {{.IncomeProductLinks}};
       var incomeCanvas = document.getElementById('{{.Income.ID}}');
       var incomeChart = new Chart(incomeCanvas, {
@@ -101,7 +115,9 @@
           },
         }
       });
+      {{end}}
 
+      {{if .HasExpenses}}
       var expenesesProductLinks = {{.ExpensesProductLinks}};
       var expensesCanvas = document.getElementById('{{.Expenses.ID}}');
       var expensesChart = new Chart(expensesCanvas, {
@@ -126,6 +142,7 @@
           },
         },
       });
+      {{end}}
     </script>
   </body>
 </html>

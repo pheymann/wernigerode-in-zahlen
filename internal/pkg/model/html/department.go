@@ -3,9 +3,13 @@ package html
 import "html/template"
 
 type Department struct {
+	HasIncomeAndExpenses bool
+
+	HasIncome          bool
 	IncomeProductLinks []string
 	Income             ChartJSDataset
 
+	HasExpenses          bool
 	ExpensesProductLinks []string
 	Expenses             ChartJSDataset
 

@@ -27,10 +27,16 @@ func Encode(
 ) html.Department {
 	p := message.NewPrinter(language.German)
 
+	hasIncome := shared.IsUnequal(incomeTotalCashFlow, 0)
+	hasExpenses := shared.IsUnequal(expensesTotalCashFlow, 0)
 	return html.Department{
+		HasIncomeAndExpenses: hasIncome && hasExpenses,
+
+		HasIncome:          hasIncome,
 		IncomeProductLinks: incomeProductLinks,
 		Income:             chartIncomeDataPerProduct,
 
+		HasExpenses:          hasExpenses,
 		ExpensesProductLinks: expensesProductLinks,
 		Expenses:             chartExpensesDataPerProduct,
 

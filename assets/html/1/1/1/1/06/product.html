@@ -32,7 +32,7 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-707803a2-cca5-456d-907f-c64efeca548c"></canvas>
+                <canvas id="chartjs_d50bba44_7636_4223_9106_5ea5a03f885d"></canvas>
               </div>
             
           
@@ -135,7 +135,8 @@
       
         
         
-          new Chart(document.getElementById('chartjs-707803a2-cca5-456d-907f-c64efeca548c'), {
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_d50bba44_7636_4223_9106_5ea5a03f885d'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten"],
@@ -150,7 +151,8 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         

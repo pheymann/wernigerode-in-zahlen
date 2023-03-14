@@ -32,11 +32,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 9.405.000,00€</h5>
-                <canvas id="chartjs_a8c8fea5_62b7_405c_b672_443df877abbf"></canvas>
+                <canvas id="chartjs_3d48da09_9ccb_4c7a_b113_9d345788d53b"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -14.295.100,00€</h5>
-                <canvas id="chartjs_2fb68bbc_712e_4097_a967_816b396459cf"></canvas>
+                <canvas id="chartjs_64759d7b_9cb9_4c5a_9e31_845791839f04"></canvas>
               </div>
             </div>
           
@@ -47,7 +47,7 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs_d8854938_8d34_4915_97a5_ff511a20d63f"></canvas>
+                <canvas id="chartjs_8e4687b3_b619_4f34_af17_855f28d1b864"></canvas>
               </div>
             
           
@@ -58,7 +58,7 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs_1d756cc0_4dc4_4704_9391_0608f6aec19c"></canvas>
+                <canvas id="chartjs_a35def9a_64b1_4808_84ab_97a4bd030316"></canvas>
               </div>
             
           
@@ -161,7 +161,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_a8c8fea5_62b7_405c_b672_443df877abbf'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_3d48da09_9ccb_4c7a_b113_9d345788d53b'), {
             type: 'doughnut',
             data: {
               labels: ["Zuweisungen und allgemeine Umlagen","öffentlich-rechtliche Leistungsentgelte","privatrechtliche Leistungsentgelte, Kostenerstattungen, Kostenumlagen"],
@@ -183,7 +183,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_2fb68bbc_712e_4097_a967_816b396459cf'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_64759d7b_9cb9_4c5a_9e31_845791839f04'), {
             type: 'doughnut',
             data: {
               labels: ["Personalauszahlungen","Auszahlungen für Sach- und Dienstleistungen","Sonstige Auszahlungen"],
@@ -207,7 +207,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_d8854938_8d34_4915_97a5_ff511a20d63f'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_8e4687b3_b619_4f34_af17_855f28d1b864'), {
             type: 'doughnut',
             data: {
               labels: ["Erwerb von beweglichen Anlagevermögen und immateriellen Vermögensgegenständen"],
@@ -230,8 +230,8 @@
       
         
         
-          var expensesSubProductLinks_chartjs_1d756cc0_4dc4_4704_9391_0608f6aec19c = ["01/product.html","02/product.html","03/product.html","04/product.html","05/product.html","06/product.html","07/product.html","08/product.html","09/product.html"];
-          var expensesChart_chartjs_1d756cc0_4dc4_4704_9391_0608f6aec19c = new Chart(document.getElementById('chartjs_1d756cc0_4dc4_4704_9391_0608f6aec19c'), {
+          var expensesSubProductLinks_chartjs_a35def9a_64b1_4808_84ab_97a4bd030316 = ["01/product.html","02/product.html","03/product.html","04/product.html","05/product.html","06/product.html","07/product.html","08/product.html","09/product.html"];
+          var expensesChart_chartjs_a35def9a_64b1_4808_84ab_97a4bd030316 = new Chart(document.getElementById('chartjs_a35def9a_64b1_4808_84ab_97a4bd030316'), {
             type: 'doughnut',
             data: {
               labels: ["Kinderkrippe Lindenberg","Kinderkrippe Am Auerhahn","Kindertagesstätte Regenbogen","Kindertagesstätte Villa Sonnenschein","Kindertagesstätte Hummelhaus","Kindertagesstätte Musikus","Kindertagesstätte Pusteblume","Integrative Kindertagesstätte Löwenzahn","Kindertagesstätte Harzblick"],
@@ -249,8 +249,8 @@
               },
               
                 onClick: function(e){
-                  var activePoints = expensesChart_chartjs_1d756cc0_4dc4_4704_9391_0608f6aec19c.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
-                  window.location.href = expensesSubProductLinks_chartjs_1d756cc0_4dc4_4704_9391_0608f6aec19c[activePoints[0].index];
+                  var activePoints = expensesChart_chartjs_a35def9a_64b1_4808_84ab_97a4bd030316.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
+                  window.location.href = expensesSubProductLinks_chartjs_a35def9a_64b1_4808_84ab_97a4bd030316[activePoints[0].index];
                 },
               
             }

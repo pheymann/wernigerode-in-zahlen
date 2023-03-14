@@ -32,11 +32,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 88.300,00€</h5>
-                <canvas id="chartjs-d546fa00-7f66-4b88-8dbb-f94c6961b5f7"></canvas>
+                <canvas id="chartjs_2840d6b8_423b_42d8_8666_273b69161d5f"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -400.600,00€</h5>
-                <canvas id="chartjs-aa59d8fa-797c-4b26-94de-a1da24d8bca6"></canvas>
+                <canvas id="chartjs_97519a12_8b27_4da9_ab21_687637dc1849"></canvas>
               </div>
             </div>
           
@@ -47,7 +47,7 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-cbc5042c-a54c-49b1-acf5-5eb1b9cbaf5a"></canvas>
+                <canvas id="chartjs_eab64b39_a91a_44fb_af15_878da386909f"></canvas>
               </div>
             
           
@@ -269,7 +269,8 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-d546fa00-7f66-4b88-8dbb-f94c6961b5f7'), {
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_2840d6b8_423b_42d8_8666_273b69161d5f'), {
             type: 'doughnut',
             data: {
               labels: ["Zuschüsse für laufende Zwecke von privaten Unternehmen (Spenden)","Zuschüsse für laufende Zwecke von übrigen Bereichen (Spenden)","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus dem Verkauf von beweglichen Sachen","Einzahlungen aus Kostenerstattungen vom Bund","Einzahlungen aus Kostenerstattungen von übrigen Bereichen"],
@@ -284,12 +285,14 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         
         
-          new Chart(document.getElementById('chartjs-aa59d8fa-797c-4b26-94de-a1da24d8bca6'), {
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_97519a12_8b27_4da9_ab21_687637dc1849'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Dienstauszahlungen und dgl. an sonstige Beschäftigte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschäft.","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung des sonstigen unbeweglichen Vermögens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlage","Haltung von Fahrzeugen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für sonstige Dienstleistungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen","Erstatt. f.d. Ausz. v. Dritten aus lfd Verwaltungstät. an so. öff. Sonderrechn."],
@@ -304,14 +307,16 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         
       
         
         
-          new Chart(document.getElementById('chartjs-cbc5042c-a54c-49b1-acf5-5eb1b9cbaf5a'), {
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_eab64b39_a91a_44fb_af15_878da386909f'), {
             type: 'doughnut',
             data: {
               labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
@@ -326,7 +331,8 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         

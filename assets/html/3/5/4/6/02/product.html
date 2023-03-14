@@ -32,11 +32,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 270.000,00€</h5>
-                <canvas id="chartjs-7de7f4e5-ac68-4cbd-a964-a1436c509569"></canvas>
+                <canvas id="chartjs_b8bb87f6_a924_4194_9a84_31bcaaf5e1ab"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -125.100,00€</h5>
-                <canvas id="chartjs-43e41de9-6c76-4764-a733-9c067d7b23c4"></canvas>
+                <canvas id="chartjs_6abd28db_9793_4597_85e8_7cf85f18fc87"></canvas>
               </div>
             </div>
           
@@ -47,7 +47,7 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-aa9ac14f-6ac5-45d4-94cf-f843cfcf284b"></canvas>
+                <canvas id="chartjs_f6ed0f61_5d24_46e2_9e4b_f76a7a49ae85"></canvas>
               </div>
             
           
@@ -191,7 +191,8 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-7de7f4e5-ac68-4cbd-a964-a1436c509569'), {
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_b8bb87f6_a924_4194_9a84_31bcaaf5e1ab'), {
             type: 'doughnut',
             data: {
               labels: ["Benutzungsgebühren und ähnliche Entgelte"],
@@ -206,12 +207,14 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         
         
-          new Chart(document.getElementById('chartjs-43e41de9-6c76-4764-a733-9c067d7b23c4'), {
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_6abd28db_9793_4597_85e8_7cf85f18fc87'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Unterhaltung der Grundstücke und baulichen Anlagen-Gebäudemanagement","Unterhaltung des sonstigen unbeweglichen Vermögens","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Auszahlungen für sonstige Dienstleistungen","Geschäftsauszahlungen"],
@@ -226,14 +229,16 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         
       
         
         
-          new Chart(document.getElementById('chartjs-aa9ac14f-6ac5-45d4-94cf-f843cfcf284b'), {
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_f6ed0f61_5d24_46e2_9e4b_f76a7a49ae85'), {
             type: 'doughnut',
             data: {
               labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
@@ -248,7 +253,8 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         

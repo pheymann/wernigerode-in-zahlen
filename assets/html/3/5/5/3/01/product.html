@@ -32,11 +32,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 241.500,00€</h5>
-                <canvas id="chartjs-e1283539-47fc-4ebf-86e2-d20d5eaede1b"></canvas>
+                <canvas id="chartjs_d33b23d8_aac6_4e53_9a12_3ec161c92935"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -460.400,00€</h5>
-                <canvas id="chartjs-9c42aa43-eb50-483d-8605-58a4d29d8b38"></canvas>
+                <canvas id="chartjs_11b36897_0bf0_4a54_a4cd_45ae9abfac20"></canvas>
               </div>
             </div>
           
@@ -47,7 +47,7 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-fbcf1b96-ea50-4a55-a104-5e9f695c2cbd"></canvas>
+                <canvas id="chartjs_2705fc56_abfe_4cf9_bfe2_dad96f560b9a"></canvas>
               </div>
             
           
@@ -233,7 +233,8 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-e1283539-47fc-4ebf-86e2-d20d5eaede1b'), {
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_d33b23d8_aac6_4e53_9a12_3ec161c92935'), {
             type: 'doughnut',
             data: {
               labels: ["Benutzungsgebühren und ähnliche Entgelte","Kauf Grabstelle","Einzahlungen aus Kostenerstattungen vom Land","Einzahlungen aus Kostenerstattungen von übrigen Bereichen"],
@@ -248,12 +249,14 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         
         
-          new Chart(document.getElementById('chartjs-9c42aa43-eb50-483d-8605-58a4d29d8b38'), {
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_11b36897_0bf0_4a54_a4cd_45ae9abfac20'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Unterhaltung des sonstigen unbeweglichen Vermögens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen"],
@@ -268,14 +271,16 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         
       
         
         
-          new Chart(document.getElementById('chartjs-fbcf1b96-ea50-4a55-a104-5e9f695c2cbd'), {
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_2705fc56_abfe_4cf9_bfe2_dad96f560b9a'), {
             type: 'doughnut',
             data: {
               labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
@@ -290,7 +295,8 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         

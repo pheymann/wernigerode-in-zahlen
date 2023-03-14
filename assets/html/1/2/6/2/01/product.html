@@ -32,7 +32,7 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-6305c2b9-31da-4d06-9ef1-7d32c3c15b21"></canvas>
+                <canvas id="chartjs_36a81928_c840_4916_98ba_20a7b5f7848a"></canvas>
               </div>
             
           
@@ -99,7 +99,8 @@
       
         
         
-          new Chart(document.getElementById('chartjs-6305c2b9-31da-4d06-9ef1-7d32c3c15b21'), {
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_36a81928_c840_4916_98ba_20a7b5f7848a'), {
             type: 'doughnut',
             data: {
               labels: ["Zuschüsse an sonstige öffentliche Sonderrechnungen"],
@@ -114,7 +115,8 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         

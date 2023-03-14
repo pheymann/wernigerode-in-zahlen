@@ -32,11 +32,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 337.500,00€</h5>
-                <canvas id="chartjs-d394c9b6-cdcc-4118-b320-a6ea1b1e8528"></canvas>
+                <canvas id="chartjs_eb710a10_909e_4691_8060_c604391bb339"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -711.500,00€</h5>
-                <canvas id="chartjs-fac93aeb-e1eb-4c72-bbce-3d899076c730"></canvas>
+                <canvas id="chartjs_470eeffd_a657_4305_94e1_107bae7c9a02"></canvas>
               </div>
             </div>
           
@@ -47,7 +47,7 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-06a49e58-86d1-4f06-8931-0df36607ba81"></canvas>
+                <canvas id="chartjs_037b9d3a_4db2_4517_b463_3a010d9ab546"></canvas>
               </div>
             
           
@@ -257,7 +257,8 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-d394c9b6-cdcc-4118-b320-a6ea1b1e8528'), {
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_eb710a10_909e_4691_8060_c604391bb339'), {
             type: 'doughnut',
             data: {
               labels: ["Zuschüsse für laufende Zwecke von privaten Unternehmen","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus Mieten und Pachten","Erträge aus dem Verkauf von Waren","Einzahlungen aus dem Verkauf von Waren 7%","Sonstige privatrechtliche Leistungsentgelte"],
@@ -272,12 +273,14 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         
         
-          new Chart(document.getElementById('chartjs-fac93aeb-e1eb-4c72-bbce-3d899076c730'), {
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_470eeffd_a657_4305_94e1_107bae7c9a02'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Unterhaltung des sonstigen unbeweglichen Vermögens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für den Erwerb von Vorräten","Auszahlungen für sonstige Dienstleistungen","Geschäftsauszahlungen","Auszahlungen für Honorare"],
@@ -292,14 +295,16 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         
       
         
         
-          new Chart(document.getElementById('chartjs-06a49e58-86d1-4f06-8931-0df36607ba81'), {
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_037b9d3a_4db2_4517_b463_3a010d9ab546'), {
             type: 'doughnut',
             data: {
               labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
@@ -314,7 +319,8 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         

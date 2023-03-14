@@ -32,11 +32,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 92.100,00€</h5>
-                <canvas id="chartjs-fa10fdfe-a0fb-49de-8665-67aef25091a5"></canvas>
+                <canvas id="chartjs_05cd517b_ab8b_4bb5_85b4_9801bf0e9a6a"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -3.200,00€</h5>
-                <canvas id="chartjs-b270c679-bff5-4ee9-be5c-112fdef5842a"></canvas>
+                <canvas id="chartjs_6963e647_a7ab_495c_aa5d_0cb3a02115d9"></canvas>
               </div>
             </div>
           
@@ -47,7 +47,7 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs-521910cb-26fe-4ef6-bd39-aaf0913be92f"></canvas>
+                <canvas id="chartjs_e8d27b81_87da_44e9_8119_a97b362d74d5"></canvas>
               </div>
             
           
@@ -149,7 +149,8 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-fa10fdfe-a0fb-49de-8665-67aef25091a5'), {
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_05cd517b_ab8b_4bb5_85b4_9801bf0e9a6a'), {
             type: 'doughnut',
             data: {
               labels: ["Einzahlungen aus Mieten und Pachten","Sonstige privatrechtliche Leistungsentgelte","Einzahlungen aus Kostenerstattungen von Zweckverbänden","Einzahlungen aus Kostenerstattungen von sonstigen öffentlichen Sonderrechnungen"],
@@ -164,12 +165,14 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         
         
-          new Chart(document.getElementById('chartjs-b270c679-bff5-4ee9-be5c-112fdef5842a'), {
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_6963e647_a7ab_495c_aa5d_0cb3a02115d9'), {
             type: 'doughnut',
             data: {
               labels: ["Unterhaltung des sonstigen unbeweglichen Vermögens","Besondere zahlungswirksame Aufwendungen für Beschäftigte"],
@@ -184,14 +187,16 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         
       
         
         
-          new Chart(document.getElementById('chartjs-521910cb-26fe-4ef6-bd39-aaf0913be92f'), {
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_e8d27b81_87da_44e9_8119_a97b362d74d5'), {
             type: 'doughnut',
             data: {
               labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
@@ -206,7 +211,8 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         

@@ -31,7 +31,7 @@
           
             
               <div class="padded-chart">
-                <canvas id="chartjs-23689275-032b-40c8-954f-2f17463c918b"></canvas>
+                <canvas id="chartjs_aebc913c_24e7_4baf_9dc7_260b5fcb25dc"></canvas>
               </div>
             
             
@@ -98,7 +98,8 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-23689275-032b-40c8-954f-2f17463c918b'), {
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_aebc913c_24e7_4baf_9dc7_260b5fcb25dc'), {
             type: 'doughnut',
             data: {
               labels: ["Einzahlungen von Gewinnanteilen aus verbundenen Unternehmen und Beteiligungen"],
@@ -113,7 +114,8 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         

@@ -24,16 +24,18 @@
     </p>
 
     <div class="container">
-      <div class="row">
-        <div class="col-6">
-          <h5 class="center">Einnahmen: 37.294.200,00€</h5>
-          <canvas id="chartjs-d8361d5c-790a-4566-a05a-cb582a2b9666"></canvas>
+      
+        <div class="row">
+          <div class="col-6">
+            <h5 class="center">Einnahmen: 37.294.200,00€</h5>
+            <canvas id="chartjs-1444b32c-fd48-4431-8ea8-ac6cb1e0ad5b"></canvas>
+          </div>
+          <div class="col-6">
+            <h5 class="center">Ausgaben: -2.504.900,00€</h5>
+            <canvas id="chartjs-5adc99ae-7d96-4509-a7e2-c8bee3cba1b5"></canvas>
+          </div>
         </div>
-        <div class="col-6">
-          <h5 class="center">Ausgaben: -2.504.900,00€</h5>
-          <canvas id="chartjs-55d41173-fe5f-474c-9a1f-7232e8ee77c7"></canvas>
-        </div>
-      </div>
+      
     </div>
 
     <div class="info-sheet">
@@ -122,8 +124,9 @@
     </footer>
 
     <script>
+      
       var incomeProductLinks = ["/2/5/3/1/01/product.html","/2/5/3/2/01/product.html","/2/5/3/3/01/product.html","/2/5/3/4/01/product.html","/2/5/3/5/01/product.html","/2/6/1/1/01/product.html"];
-      var incomeCanvas = document.getElementById('chartjs-d8361d5c-790a-4566-a05a-cb582a2b9666');
+      var incomeCanvas = document.getElementById('chartjs-1444b32c-fd48-4431-8ea8-ac6cb1e0ad5b');
       var incomeChart = new Chart(incomeCanvas, {
         type: 'doughnut',
         data: {
@@ -146,9 +149,11 @@
           },
         }
       });
+      
 
+      
       var expenesesProductLinks = ["/2/1/1/1/07/product.html","/2/6/1/2/01/product.html"];
-      var expensesCanvas = document.getElementById('chartjs-55d41173-fe5f-474c-9a1f-7232e8ee77c7');
+      var expensesCanvas = document.getElementById('chartjs-5adc99ae-7d96-4509-a7e2-c8bee3cba1b5');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {
@@ -171,6 +176,7 @@
           },
         },
       });
+      
     </script>
   </body>
 </html>

@@ -32,11 +32,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 8.100,00€</h5>
-                <canvas id="chartjs-fe0a6250-c480-469d-b1ec-dbf28d810a60"></canvas>
+                <canvas id="chartjs_8205d034_2186_41eb_8ae7_b4ff190b6e25"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -697.100,00€</h5>
-                <canvas id="chartjs-751ebfab-50ab-4572-b21f-39367985803b"></canvas>
+                <canvas id="chartjs_83b88b18_a651_4aad_8b40_5a448976ed39"></canvas>
               </div>
             </div>
           
@@ -162,7 +162,8 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-fe0a6250-c480-469d-b1ec-dbf28d810a60'), {
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_8205d034_2186_41eb_8ae7_b4ff190b6e25'), {
             type: 'doughnut',
             data: {
               labels: ["Benutzungsgebühren und ähnliche Entgelte"],
@@ -177,12 +178,14 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         
         
-          new Chart(document.getElementById('chartjs-751ebfab-50ab-4572-b21f-39367985803b'), {
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_83b88b18_a651_4aad_8b40_5a448976ed39'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für sonstige Dienstleistungen","Geschäftsauszahlungen","Verfügungsmittel"],
@@ -197,7 +200,8 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         

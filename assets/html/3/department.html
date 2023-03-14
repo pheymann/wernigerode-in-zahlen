@@ -24,16 +24,18 @@
     </p>
 
     <div class="container">
-      <div class="row">
-        <div class="col-6">
-          <h5 class="center">Einnahmen: 544.900,00€</h5>
-          <canvas id="chartjs-e5aa3079-d8a2-42ed-8247-6825d635e29b"></canvas>
+      
+        <div class="row">
+          <div class="col-6">
+            <h5 class="center">Einnahmen: 544.900,00€</h5>
+            <canvas id="chartjs-0780a6da-366f-4ce2-bfe8-2d7cf8e17fe4"></canvas>
+          </div>
+          <div class="col-6">
+            <h5 class="center">Ausgaben: -6.349.100,00€</h5>
+            <canvas id="chartjs-618a918e-64ae-4078-96cb-c3ffa1208362"></canvas>
+          </div>
         </div>
-        <div class="col-6">
-          <h5 class="center">Ausgaben: -6.349.100,00€</h5>
-          <canvas id="chartjs-13641fe9-ca22-4bb1-a124-19854e5af79a"></canvas>
-        </div>
-      </div>
+      
     </div>
 
     <div class="info-sheet">
@@ -152,8 +154,9 @@
     </footer>
 
     <script>
+      
       var incomeProductLinks = ["/3/1/1/1/12/product.html","/3/2/8/1/02/product.html","/3/5/4/5/01/product.html","/3/5/4/6/02/product.html","/3/5/5/1/03/product.html"];
-      var incomeCanvas = document.getElementById('chartjs-e5aa3079-d8a2-42ed-8247-6825d635e29b');
+      var incomeCanvas = document.getElementById('chartjs-0780a6da-366f-4ce2-bfe8-2d7cf8e17fe4');
       var incomeChart = new Chart(incomeCanvas, {
         type: 'doughnut',
         data: {
@@ -176,9 +179,11 @@
           },
         }
       });
+      
 
+      
       var expenesesProductLinks = ["/3/1/1/1/11/product.html","/3/2/5/3/01/product.html","/3/5/5/1/01/product.html","/3/5/5/3/01/product.html","/3/5/5/5/01/product.html","/3/5/7/5/02/product.html","/3/5/7/5/04/product.html","/3/3/6/6/02/product.html"];
-      var expensesCanvas = document.getElementById('chartjs-13641fe9-ca22-4bb1-a124-19854e5af79a');
+      var expensesCanvas = document.getElementById('chartjs-618a918e-64ae-4078-96cb-c3ffa1208362');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {
@@ -201,6 +206,7 @@
           },
         },
       });
+      
     </script>
   </body>
 </html>

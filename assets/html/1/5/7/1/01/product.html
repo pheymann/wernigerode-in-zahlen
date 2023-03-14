@@ -32,11 +32,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 37.500,00€</h5>
-                <canvas id="chartjs-7c0383f7-40a5-4578-ae8c-885cdf24713f"></canvas>
+                <canvas id="chartjs_9e4dd8ca_9c6d_4ec0_8c26_29eb7c5f5e3f"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -374.700,00€</h5>
-                <canvas id="chartjs-37a97b33-2de2-4e34-934e-166fcdd94e10"></canvas>
+                <canvas id="chartjs_434f3aec_b0b3_4abf_8f42_b74c2196eea1"></canvas>
               </div>
             </div>
           
@@ -46,7 +46,7 @@
           
             
               <div class="padded-chart">
-                <canvas id="chartjs-5d8e9971-845f-4ab2-8162-bebd3c50d4fa"></canvas>
+                <canvas id="chartjs_ddb40da3_735e_49f4_8a5d_6bebf8e26cfd"></canvas>
               </div>
             
             
@@ -203,7 +203,8 @@
     <script>
       
         
-          new Chart(document.getElementById('chartjs-7c0383f7-40a5-4578-ae8c-885cdf24713f'), {
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_9e4dd8ca_9c6d_4ec0_8c26_29eb7c5f5e3f'), {
             type: 'doughnut',
             data: {
               labels: ["Erträge aus Kostenerstattungen von privaten Unternehmen (HarzAG)"],
@@ -218,12 +219,14 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         
         
-          new Chart(document.getElementById('chartjs-37a97b33-2de2-4e34-934e-166fcdd94e10'), {
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_434f3aec_b0b3_4abf_8f42_b74c2196eea1'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfe, Unterstützungsleistung für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Besondere Verwaltungs- und Betriebsauszahlungen","Zuweisungen an Zweckverbände","Zuschüsse an sonstige öffentliche Sonderrechnungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten","Erstatt. für die Auszahl. von Dritten aus lfd. Verwaltungstät. an priv. Untern."],
@@ -238,13 +241,15 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         
       
         
-          new Chart(document.getElementById('chartjs-5d8e9971-845f-4ab2-8162-bebd3c50d4fa'), {
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_ddb40da3_735e_49f4_8a5d_6bebf8e26cfd'), {
             type: 'doughnut',
             data: {
               labels: ["Einzahlungen aus Veräußerung von Grundstücken, Gebäuden, Infrastrukturvermögen"],
@@ -259,7 +264,8 @@
                 legend: {
                   display: false
                 }
-              }
+              },
+              
             }
           });
         
