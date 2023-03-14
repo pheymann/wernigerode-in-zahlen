@@ -22,7 +22,7 @@
 			Alles startet mit der Gesamtübersicht. In 2023 planen wir
     </p>
 
-    <h2 class="total-cashflow-income center">13.686.000,00€</h2>
+    <h2 class="total-cashflow-income center">8.670.800,00€</h2>
 
     <p>
       einzunehmen. Die Gelder teilen sich auf <b>4 Fachbereiche</b> auf. Klicke auf einen in den Diagrammen um mehr zu erfahren.
@@ -33,11 +33,11 @@
         <div class="row">
           <div class="col-6">
             <h5 class="center">Einnahmen: 34.789.300,00€</h5>
-            <canvas id="chartjs-c10ef300-5b8e-482d-bb95-72f1232f8e6f"></canvas>
+            <canvas id="chartjs-66aa97bf-6de8-4432-8e5c-11960ef19ddf"></canvas>
           </div>
           <div class="col-6">
-            <h5 class="center">Ausgaben: -21.103.300,00€</h5>
-            <canvas id="chartjs-c7576bce-e705-4e7a-b4eb-80a9a21b7d8a"></canvas>
+            <h5 class="center">Ausgaben: -26.118.500,00€</h5>
+            <canvas id="chartjs-56985cdd-1096-476d-9f77-d0a24d278343"></canvas>
           </div>
         </div>
       </div>
@@ -53,7 +53,7 @@
           </tr>
           <tr>
             <th></th>
-            <th>13.686.000,00€</th>
+            <th>8.670.800,00€</th>
             <th>-1.213.200,00€</th>
           </tr>
 
@@ -66,7 +66,7 @@
           
             <tr>
               <td><a href="/4/department.html">Budget Bürgerservice</a></td>
-              <td>-9.127.100,00€</td>
+              <td>-14.142.300,00€</td>
               <td>-1.642.300,00€</td>
             </tr>
           
@@ -103,7 +103,7 @@
     <script>
       
         var incomeDepartmentLinks = ["/2/department.html"];
-        var incomeCanvas = document.getElementById('chartjs-c10ef300-5b8e-482d-bb95-72f1232f8e6f');
+        var incomeCanvas = document.getElementById('chartjs-66aa97bf-6de8-4432-8e5c-11960ef19ddf');
         var incomeChart = new Chart(incomeCanvas, {
           type: 'doughnut',
           data: {
@@ -129,14 +129,14 @@
       
 
       var expensesDepartmentLinks = ["/1/department.html","/3/department.html","/4/department.html"];
-      var expensesCanvas = document.getElementById('chartjs-c7576bce-e705-4e7a-b4eb-80a9a21b7d8a');
+      var expensesCanvas = document.getElementById('chartjs-56985cdd-1096-476d-9f77-d0a24d278343');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {
           labels: ["Budget des Bürgermeisters","Budget Betriebsbereiche","Budget Bürgerservice"],
           datasets: [{
             label: 'Euro',
-            data: [-6172000,-5804200,-9127100],
+            data: [-6172000,-5804200,-14142300],
             borderWidth: 1
           }]
         },

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<head>
+  <title>Produkt</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<html>
+  <body>
+    <h1>Tageseinrichtungen für Kinder</h1>
+
+    <p>
+      Das Produkt -  Betreuung, Erziehung und Bildung von Kindern - wird in 2023
+    </p>
+
+    <h2 class="total-cashflow-expenses center">-5.015.200,00€</h2>
+
+    <p>
+      kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
+		Auflistung von Kostenstellen. Ganz am Ende dieser Seite findest du noch eine Beschreibung des Produkts.
+    </p>
+
+    <div class="container">
+      
+          <h3>Die Verwaltung kostet <span class="total-cashflow-expenses">-4.890.100,00€</span></h3>
+
+          
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 9.405.000,00€</h5>
+                <canvas id="chartjs-a29e2945-2e1d-4647-8d74-22aea888ddc1"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: -14.295.100,00€</h5>
+                <canvas id="chartjs-29e4cd11-4e6f-4347-a994-334548f76ee9"></canvas>
+              </div>
+            </div>
+          
+      
+          <h3>Investitionen kosten <span class="total-cashflow-expenses">-125.100,00€</span></h3>
+
+          
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs-a4e85ab3-166e-4909-bf46-90483782b4af"></canvas>
+              </div>
+            
+          
+      
+    </div>
+
+    <div class="info-sheet">
+      <h3>Aufgabe</h3>
+      <p> Bundes-, Landes- und Ortsrecht, Beschlüsse der politischen Gremien</p>
+
+      <h3>Zielgruppe</h3>
+      <p>Kinder und Sorgeberechtigte</p>
+
+      <h3>Dienstleistungen</h3>
+      <p> -Bildung und Betreuung von Kindern im Rahmen der Öffnungszeiten und der Betreuungsangebote -Elternkuratorien -Bewirtschaftung von Kindertageseinrichtungen,,</p>
+
+      <h3>Klassifizierung</h3>
+      <ul>
+        <li>Fachbereich: Budget Bürgerservice</li>
+        <li>Produktklasse: Soziales und Jugend</li>
+        <li>Produktbereich: Kinder-, Jugend- und Familienhilfe</li>
+        <li>Produktgruppe: Tageseinrichtungen für Kinder</li>
+        <li>Produkt: Tageseinrichtungen für Kinder</li>
+      </ul>
+
+      <table style="margin-top: 80px;">
+        <tbody>
+          <tr>
+            <th>Konto</th>
+            <th>Budget</th>
+            <th>oberhalb Wertgrenze</th>
+          </tr>
+
+          
+            <tr>
+              <td>Auszahlungen für Sach- und Dienstleistungen</td>
+              <td>-1.271.700,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Erwerb von beweglichen Anlagevermögen und immateriellen Vermögensgegenständen</td>
+              <td>-125.100,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Personalauszahlungen</td>
+              <td>-12.968.600,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Sonstige Auszahlungen</td>
+              <td>-54.800,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Zuweisungen und allgemeine Umlagen</td>
+              <td>6.477.700,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>privatrechtliche Leistungsentgelte, Kostenerstattungen, Kostenumlagen</td>
+              <td>725.700,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>öffentlich-rechtliche Leistungsentgelte</td>
+              <td>2.201.600,00€</td>
+              <td></td>
+            </tr>
+          
+        </tbody>
+      </table>
+    </div>
+
+    <div class="back-link center">
+      <a href="/4/department.html">Zurück zur Bereichsübersicht</a>
+    </div>
+
+    <p class="data-disclosure">
+      Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2022.
+			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
+			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
+			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
+    </p>
+
+    <footer>
+      <p>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Das Impression befindet sich <a href="/imprint.html">hier</a>.
+      </p>
+    </footer>
+
+    <script>
+      
+        
+          new Chart(document.getElementById('chartjs-a29e2945-2e1d-4647-8d74-22aea888ddc1'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Zuweisungen und allgemeine Umlagen","öffentlich-rechtliche Leistungsentgelte","privatrechtliche Leistungsentgelte, Kostenerstattungen, Kostenumlagen"],
+              datasets: [{
+                label: 'Euro',
+                data: [6477700,2201600,725700],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+        
+          new Chart(document.getElementById('chartjs-29e4cd11-4e6f-4347-a994-334548f76ee9'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Personalauszahlungen","Auszahlungen für Sach- und Dienstleistungen","Sonstige Auszahlungen"],
+              datasets: [{
+                label: 'Euro',
+                data: [-12968600,-1271700,-54800],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+        
+        
+          new Chart(document.getElementById('chartjs-a4e85ab3-166e-4909-bf46-90483782b4af'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Erwerb von beweglichen Anlagevermögen und immateriellen Vermögensgegenständen"],
+              datasets: [{
+                label: 'Euro',
+                data: [-125100],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              }
+            }
+          });
+        
+      
+    </script>
+  </body>
+</html>
