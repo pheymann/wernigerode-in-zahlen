@@ -1,0 +1,53 @@
+{
+  "Balances": [
+    {
+      "Id": "7006",
+      "Class": "one-off",
+      "Desc": "Zuschuss für die Sanierung u. Erweiterung Rodelbahn Barenberg",
+      "Budgets": {
+        "2020": -25000,
+        "2021": 0,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": [
+        {
+          "Id": "40",
+          "Desc": " -Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen",
+          "Budgets": {
+            "2020": 25000,
+            "2021": 0,
+            "2022": 0,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "4.2.1.01/7006.7834000",
+                  "Desc": "Auszahlung für den Erwerb immaterieller Vermögensgegenstände",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 25000,
+                    "2021": 0,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

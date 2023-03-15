@@ -1,0 +1,195 @@
+{
+  "Balances": [
+    {
+      "Id": "16",
+      "Class": "admininstration",
+      "Desc": "Saldo aus laufender Verwaltungstätigkeit (Saldo Zeilen 8 und 15)",
+      "Budgets": {
+        "2020": 30927.85,
+        "2021": 15000,
+        "2022": 15000,
+        "2023": 15000,
+        "2024": 15000,
+        "2025": 15000
+      },
+      "Accounts": [
+        {
+          "Id": "8",
+          "Desc": "Einzahlungen aus laufender Verwaltungstätigkeit",
+          "Budgets": {
+            "2020": 141154.03,
+            "2021": 150000,
+            "2022": 150000,
+            "2023": 150000,
+            "2024": 150000,
+            "2025": 150000
+          },
+          "Subs": [
+            {
+              "Id": "4",
+              "Desc": "öffentlich-rechtliche Leistungsentgelte",
+              "Budgets": {
+                "2020": 124,
+                "2021": 0,
+                "2022": 0,
+                "2023": 0,
+                "2024": 0,
+                "2025": 0
+              },
+              "Units": [
+                {
+                  "Id": "6321000",
+                  "Desc": "Benutzungsgebühren und ähnliche Entgelte",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 124,
+                    "2021": 0,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                }
+              ]
+            },
+            {
+              "Id": "5",
+              "Desc": "privatrechtliche Leistungsentgelte, Kostenerstattungen, Kostenumlagen",
+              "Budgets": {
+                "2020": 141030.03,
+                "2021": 150000,
+                "2022": 150000,
+                "2023": 150000,
+                "2024": 150000,
+                "2025": 150000
+              },
+              "Units": [
+                {
+                  "Id": "6482000",
+                  "Desc": "Einzahlungen aus Kostenerstattungen von Gemeinden und Gemeindeverbänden",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 141030.03,
+                    "2021": 150000,
+                    "2022": 150000,
+                    "2023": 150000,
+                    "2024": 150000,
+                    "2025": 150000
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "15",
+          "Desc": "Auszahlungen aus laufender Verwaltungstätigkeit",
+          "Budgets": {
+            "2020": -110226.18,
+            "2021": -135000,
+            "2022": -135000,
+            "2023": -135000,
+            "2024": -135000,
+            "2025": -135000
+          },
+          "Subs": [
+            {
+              "Id": "13",
+              "Desc": "Sonstige Auszahlungen",
+              "Budgets": {
+                "2020": -110226.18,
+                "2021": -135000,
+                "2022": -135000,
+                "2023": -135000,
+                "2024": -135000,
+                "2025": -135000
+              },
+              "Units": [
+                {
+                  "Id": "7452000",
+                  "Desc": "Erstatt. f.d. Ausz. v. Dritten aus lfd. Verwaltungstätigkeit an Gemeinde\u0026 GV",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": -110226.18,
+                    "2021": -135000,
+                    "2022": -135000,
+                    "2023": -135000,
+                    "2024": -135000,
+                    "2025": -135000
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "34",
+      "Class": "balance-investments",
+      "Desc": "Saldo aus Investitionstätigkeit",
+      "Budgets": {
+        "2020": 0,
+        "2021": 0,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": [
+        {
+          "Id": "17",
+          "Desc": "Investitionstätigkeit - Einzahlungen",
+          "Budgets": {
+            "2020": 0,
+            "2021": 0,
+            "2022": 0,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": null
+        },
+        {
+          "Id": "25",
+          "Desc": "Einzahlungen aus Investitionstätigkeit",
+          "Budgets": {
+            "2020": 0,
+            "2021": 0,
+            "2022": 0,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": null
+        },
+        {
+          "Id": "26",
+          "Desc": "Investitionstätigkeit - Auszahlungen",
+          "Budgets": {
+            "2020": -0,
+            "2021": -0,
+            "2022": -0,
+            "2023": -0,
+            "2024": -0,
+            "2025": -0
+          },
+          "Subs": null
+        },
+        {
+          "Id": "33",
+          "Desc": "Auszahlungen aus Investitionstätigkeit",
+          "Budgets": {
+            "2020": -0,
+            "2021": -0,
+            "2022": -0,
+            "2023": -0,
+            "2024": -0,
+            "2025": -0
+          },
+          "Subs": null
+        }
+      ]
+    }
+  ]
+}

@@ -32,31 +32,28 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 9.405.000,00€</h5>
-                <canvas id="chartjs_29c9d2c6_8ea2_4568_aabf_0034dced458c"></canvas>
+                <canvas id="chartjs_136e1b97_2037_484f_a2f2_aee8e956425c"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -14.295.100,00€</h5>
-                <canvas id="chartjs_4a91c770_d4d8_439d_b608_634266abb1d7"></canvas>
+                <canvas id="chartjs_81594699_c8a8_440c_bbe0_d3554749d616"></canvas>
               </div>
             </div>
           
       
-          <h3>- Investitionen kosten <span class="total-cashflow-expenses">-125.100,00€</span></h3>
+          <h3>- Darin enthalten sind die folgenden Unter-Produkte:  <span class="total-cashflow-expenses">-5.015.200,00€</span></h3>
 
           
-            
-            
-          
-      
-          <h3>- Darin enthalten sind die folgenden Unter-Produkte:  <span class="total-cashflow-expenses">-3.353.800,00€</span></h3>
-
-          
-            
-            
-              <div class="padded-chart">
-                <canvas id="chartjs_05142744_a339_4da3_b25e_95d7f4de6740"></canvas>
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 7.400,00€</h5>
+                <canvas id="chartjs_63a93cff_f61f_49c3_a41f_70bacadb4b92"></canvas>
               </div>
-            
+              <div class="col-6">
+                <h5 class="center">Ausgaben: -5.022.600,00€</h5>
+                <canvas id="chartjs_2438d121_0c77_407a_85a2_ddcab90903c3"></canvas>
+              </div>
+            </div>
           
       
     </div>
@@ -92,12 +89,6 @@
             <tr>
               <td>Auszahlungen für Sach- und Dienstleistungen</td>
               <td>-1.271.700,00€</td>
-              <td></td>
-            </tr>
-          
-            <tr>
-              <td>Erwerb von beweglichen Anlagevermögen und immateriellen Vermögensgegenständen</td>
-              <td>-125.100,00€</td>
               <td></td>
             </tr>
           
@@ -157,7 +148,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_29c9d2c6_8ea2_4568_aabf_0034dced458c'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_136e1b97_2037_484f_a2f2_aee8e956425c'), {
             type: 'doughnut',
             data: {
               labels: ["Zuweisungen und allgemeine Umlagen","öffentlich-rechtliche Leistungsentgelte","privatrechtliche Leistungsentgelte, Kostenerstattungen, Kostenumlagen"],
@@ -179,7 +170,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_4a91c770_d4d8_439d_b608_634266abb1d7'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_81594699_c8a8_440c_bbe0_d3554749d616'), {
             type: 'doughnut',
             data: {
               labels: ["Personalauszahlungen","Auszahlungen für Sach- und Dienstleistungen","Sonstige Auszahlungen"],
@@ -201,18 +192,14 @@
         
       
         
-        
-      
-        
-        
-          var expensesSubProductLinks_chartjs_05142744_a339_4da3_b25e_95d7f4de6740 = ["01/product.html","02/product.html","03/product.html","04/product.html","05/product.html","06/product.html","07/product.html","08/product.html","09/product.html"];
-          var expensesChart_chartjs_05142744_a339_4da3_b25e_95d7f4de6740 = new Chart(document.getElementById('chartjs_05142744_a339_4da3_b25e_95d7f4de6740'), {
+          var incomeSubProductLinks_chartjs_63a93cff_f61f_49c3_a41f_70bacadb4b92 = ["16/product.html"];
+          var incomeChart_chartjs_63a93cff_f61f_49c3_a41f_70bacadb4b92 = new Chart(document.getElementById('chartjs_63a93cff_f61f_49c3_a41f_70bacadb4b92'), {
             type: 'doughnut',
             data: {
-              labels: ["Kinderkrippe Lindenberg","Kinderkrippe Am Auerhahn","Kindertagesstätte Regenbogen","Kindertagesstätte Villa Sonnenschein","Kindertagesstätte Hummelhaus","Kindertagesstätte Musikus","Kindertagesstätte Pusteblume","Integrative Kindertagesstätte Löwenzahn","Kindertagesstätte Harzblick"],
+              labels: ["Hort Grundschule Harzblick"],
               datasets: [{
                 label: 'Euro',
-                data: [-452600,-277900,-541100,-235800,-306200,-186400,-270900,-550500,-532400],
+                data: [7400],
                 borderWidth: 1
               }]
             },
@@ -224,8 +211,35 @@
               },
               
                 onClick: function(e){
-                  var activePoints = expensesChart_chartjs_05142744_a339_4da3_b25e_95d7f4de6740.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
-                  window.location.href = expensesSubProductLinks_chartjs_05142744_a339_4da3_b25e_95d7f4de6740[activePoints[0].index];
+                  var activePoints = incomeChart_chartjs_63a93cff_f61f_49c3_a41f_70bacadb4b92.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
+                  window.location.href = incomeSubProductLinks_chartjs_63a93cff_f61f_49c3_a41f_70bacadb4b92[activePoints[0].index];
+                },
+              
+            }
+          });
+        
+        
+          var expensesSubProductLinks_chartjs_2438d121_0c77_407a_85a2_ddcab90903c3 = ["01/product.html","02/product.html","03/product.html","04/product.html","05/product.html","06/product.html","07/product.html","08/product.html","09/product.html","10/product.html","11/product.html","12/product.html","13/product.html","14/product.html","15/product.html","17/product.html"];
+          var expensesChart_chartjs_2438d121_0c77_407a_85a2_ddcab90903c3 = new Chart(document.getElementById('chartjs_2438d121_0c77_407a_85a2_ddcab90903c3'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Kinderkrippe Lindenberg","Kinderkrippe Am Auerhahn","Kindertagesstätte Regenbogen","Kindertagesstätte Villa Sonnenschein","Kindertagesstätte Hummelhaus","Kindertagesstätte Musikus","Kindertagesstätte Pusteblume","Integrative Kindertagesstätte Löwenzahn","Kindertagesstätte Harzblick","Kindertagesstätte Am Schäferteich","Kindertagesstätte Kleine Strolche","Kindertagesstätte Benjamin Blümchen","Kindertagesstätte Brockenkinder","Hort Grundschule A. Diesterweg","Hort Grundschule A.H.Francke","Kindertagesstätten-Verwaltung"],
+              datasets: [{
+                label: 'Euro',
+                data: [-452600,-277900,-541100,-235800,-306200,-186400,-270900,-550500,-532400,-214600,-348200,-184300,-164900,-139000,-48300,-569500],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+                onClick: function(e){
+                  var activePoints = expensesChart_chartjs_2438d121_0c77_407a_85a2_ddcab90903c3.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
+                  window.location.href = expensesSubProductLinks_chartjs_2438d121_0c77_407a_85a2_ddcab90903c3[activePoints[0].index];
                 },
               
             }

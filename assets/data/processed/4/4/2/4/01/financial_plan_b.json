@@ -1,0 +1,512 @@
+{
+  "Balances": [
+    {
+      "Id": "100",
+      "Class": "one-off",
+      "Desc": "Anschaffungen 150 €  bis 1.000 € netto",
+      "Budgets": {
+        "2020": -22815.12,
+        "2021": -7800,
+        "2022": -9300,
+        "2023": -8300,
+        "2024": -8900,
+        "2025": -9000
+      },
+      "Accounts": [
+        {
+          "Id": "40",
+          "Desc": " -Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen",
+          "Budgets": {
+            "2020": 22815.12,
+            "2021": 7800,
+            "2022": 9300,
+            "2023": 8300,
+            "2024": 8900,
+            "2025": 9000
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "4.2.4.01/0100.7832000",
+                  "Desc": "Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 22815.12,
+                    "2021": 7800,
+                    "2022": 9300,
+                    "2023": 8300,
+                    "2024": 8900,
+                    "2025": 9000
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "200",
+      "Class": "one-off",
+      "Desc": "Betriebs-und Geschäftsausstattungen",
+      "Budgets": {
+        "2020": -17736.91,
+        "2021": 0,
+        "2022": -16700,
+        "2023": -54100,
+        "2024": -10100,
+        "2025": -26000
+      },
+      "Accounts": [
+        {
+          "Id": "40",
+          "Desc": " -Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen",
+          "Budgets": {
+            "2020": 17736.91,
+            "2021": 0,
+            "2022": 16700,
+            "2023": 54100,
+            "2024": 10100,
+            "2025": 26000
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "4.2.4.01/0200.7831000",
+                  "Desc": "Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 17736.91,
+                    "2021": 0,
+                    "2022": 16700,
+                    "2023": 54100,
+                    "2024": 10100,
+                    "2025": 26000
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "300",
+      "Class": "one-off",
+      "Desc": "Betriebsvorrichtungen",
+      "Budgets": {
+        "2020": 0,
+        "2021": 0,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": null
+    },
+    {
+      "Id": "400",
+      "Class": "one-off",
+      "Desc": "Maschinen und techn. Anlagen",
+      "Budgets": {
+        "2020": 0,
+        "2021": 0,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": null
+    },
+    {
+      "Id": "500",
+      "Class": "one-off",
+      "Desc": "Fahrzeuge",
+      "Budgets": {
+        "2020": 0,
+        "2021": -7500,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": [
+        {
+          "Id": "40",
+          "Desc": " -Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen",
+          "Budgets": {
+            "2020": 0,
+            "2021": 7500,
+            "2022": 0,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "4.2.4.01/0500.7831000",
+                  "Desc": "Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 7500,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "1306",
+      "Class": "one-off",
+      "Desc": "TH Harzblick Innenausbau",
+      "Budgets": {
+        "2020": -1268317.09,
+        "2021": 0,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": [
+        {
+          "Id": "50",
+          "Desc": " -Auszahlungen für Baumaßnahmen",
+          "Budgets": {
+            "2020": 1268317.09,
+            "2021": 0,
+            "2022": 0,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "4.2.4.01/1306.7851000",
+                  "Desc": "Auszahlungen für Hochbaumaßnahmen",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 1268317.09,
+                    "2021": 0,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "1310",
+      "Class": "one-off",
+      "Desc": "Sportplatz Silstedt, Sanitär und Kabinenbereich",
+      "Budgets": {
+        "2020": -328789.07,
+        "2021": 0,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": [
+        {
+          "Id": "50",
+          "Desc": " -Auszahlungen für Baumaßnahmen",
+          "Budgets": {
+            "2020": 328789.07,
+            "2021": 0,
+            "2022": 0,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "4.2.4.01/1310.7851000",
+                  "Desc": "Auszahlungen für Hochbaumaßnahmen",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 328789.07,
+                    "2021": 0,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "1311",
+      "Class": "one-off",
+      "Desc": "Sportplatz Harzblick Rundenlaufbahn",
+      "Budgets": {
+        "2020": 0,
+        "2021": -20000,
+        "2022": -250000,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": [
+        {
+          "Id": "10",
+          "Desc": "Einzahlungen aus Investitionszuwendungen",
+          "Budgets": {
+            "2020": 0,
+            "2021": 180000,
+            "2022": 0,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "4.2.4.01/1311.6811000",
+                  "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 180000,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "50",
+          "Desc": " -Auszahlungen für Baumaßnahmen",
+          "Budgets": {
+            "2020": 0,
+            "2021": 200000,
+            "2022": 250000,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "4.2.4.01/1311.7851000",
+                  "Desc": "Auszahlungen für Hochbaumaßnahmen",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 200000,
+                    "2022": 250000,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "1312",
+      "Class": "one-off",
+      "Desc": "Schanze Liftanlage",
+      "Budgets": {
+        "2020": 0,
+        "2021": -14400,
+        "2022": -14400,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": [
+        {
+          "Id": "10",
+          "Desc": "Einzahlungen aus Investitionszuwendungen",
+          "Budgets": {
+            "2020": 0,
+            "2021": 57600,
+            "2022": 57600,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "4.2.4.01/1312.6811000",
+                  "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 57600,
+                    "2022": 57600,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "50",
+          "Desc": " -Auszahlungen für Baumaßnahmen",
+          "Budgets": {
+            "2020": 0,
+            "2021": 72000,
+            "2022": 72000,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "4.2.4.01/1312.7851000",
+                  "Desc": "Auszahlungen für Hochbaumaßnahmen",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 72000,
+                    "2022": 72000,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "7000",
+      "Class": "one-off",
+      "Desc": "Investitionszuschuss für Sanitärgebäude Mannsbergsportplatz",
+      "Budgets": {
+        "2020": 0,
+        "2021": 0,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": null
+    },
+    {
+      "Id": "8888",
+      "Class": "one-off",
+      "Desc": "mittelfristige Maßnahmen",
+      "Budgets": {
+        "2020": 0,
+        "2021": 0,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": [
+        {
+          "Id": "10",
+          "Desc": " Summe der investiven Einzahlungen",
+          "Budgets": {
+            "2020": 0,
+            "2021": 45000,
+            "2022": 0,
+            "2023": 108000,
+            "2024": 108000,
+            "2025": 108000
+          },
+          "Subs": null
+        },
+        {
+          "Id": "20",
+          "Desc": " Summe der investiven Auszahlungen",
+          "Budgets": {
+            "2020": 0,
+            "2021": 100000,
+            "2022": 0,
+            "2023": 1100000,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": [
+            {
+              "Id": "30",
+              "Desc": " Saldo aus Einzahlungen und Auszahlungen",
+              "Budgets": {
+                "2020": 0,
+                "2021": -55000,
+                "2022": 0,
+                "2023": -992000,
+                "2024": 108000,
+                "2025": 108000
+              },
+              "Units": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

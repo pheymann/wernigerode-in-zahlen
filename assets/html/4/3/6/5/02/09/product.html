@@ -32,24 +32,13 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 1.787.400,00€</h5>
-                <canvas id="chartjs_04cffd2b_e520_4945_b418_aa63348327fa"></canvas>
+                <canvas id="chartjs_02851c5c_f6c5_4e80_a621_b0e6caf58ce5"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -2.842.100,00€</h5>
-                <canvas id="chartjs_1431c529_f92e_46a3_95fc_42a324c57694"></canvas>
+                <canvas id="chartjs_c8ecd898_ddcf_412e_b6fc_7a734c8bbafd"></canvas>
               </div>
             </div>
-          
-      
-          <h3>- Investitionen kosten <span class="total-cashflow-expenses">-2.500,00€</span></h3>
-
-          
-            
-            
-              <div class="padded-chart">
-                <canvas id="chartjs_6de26421_4e75_48cb_9d7b_c504560b8261"></canvas>
-              </div>
-            
           
       
     </div>
@@ -197,20 +186,8 @@
             </tr>
           
             <tr>
-              <td>.6.5.02.09/0100.7832000 Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. &gt; 150  bis 1000 € o. UStr.</td>
-              <td>-2.500,00€</td>
-              <td></td>
-            </tr>
-          
-            <tr>
               <td>Auszahlungen für Sach- und Dienstleistungen</td>
               <td>-76.700,00€</td>
-              <td></td>
-            </tr>
-          
-            <tr>
-              <td>Erwerb von beweglichen Anlagevermögen und immateriellen Vermögensgegenständen</td>
-              <td>-2.500,00€</td>
               <td></td>
             </tr>
           
@@ -270,7 +247,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_04cffd2b_e520_4945_b418_aa63348327fa'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_02851c5c_f6c5_4e80_a621_b0e6caf58ce5'), {
             type: 'doughnut',
             data: {
               labels: ["Zuweisungen und allgemeine Umlagen",".6.5.02.09.6142000 Zuweisungen für laufende Zwecke von Gemeinden und Gemeindeverbänden","öffentlich-rechtliche Leistungsentgelte",".6.5.02.09.6321000 Benutzungsgebühren und ähnliche Entgelte","privatrechtliche Leistungsentgelte, Kostenerstattungen, Kostenumlagen",".6.5.02.09.6480001 Einzahlungen aus Kostenerstattungen vom Bund",".6.5.02.09.6482000 Einzahlungen aus Kostenerstattungen von Gemeinden und Gemeindeverbänden"],
@@ -292,37 +269,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_1431c529_f92e_46a3_95fc_42a324c57694'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_c8ecd898_ddcf_412e_b6fc_7a734c8bbafd'), {
             type: 'doughnut',
             data: {
               labels: ["Personalauszahlungen",".6.5.02.09.7012000 Dienstauszahlungen und dgl. an Arbeitnehmer",".6.5.02.09.7019000 Dienstauszahlungen und dgl. an sonstige Beschäftigte",".6.5.02.09.7022000 Beiträge zu Versorgungskassen für Arbeitnehmer",".6.5.02.09.7032000 Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer",".6.5.02.09.7039000 Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschäft. 3.6.5.02.09.7041000 Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für Sach- und Dienstleistungen",".6.5.02.09.7211000 Unterhaltung der Grundstücke und baulichen Anlagen",".6.5.02.09.7221000 Unterhaltung des sonstigen unbeweglichen Vermögens",".6.5.02.09.7231000 Auszahlungen für Mieten und Pachten",".6.5.02.09.7241000 Bewirtschaftung der Grundstücke und baulichen Anlagen",".6.5.02.09.7252000 Erwerb geringwertiger Vermögensgegenstände",".6.5.02.09.7255000 Unterhaltung des sonstigen beweglichen Vermögens",".6.5.02.09.7271000 Besondere Verwaltungs- und Betriebsauszahlungen",".6.5.02.09.7291000 Auszahlungen für sonstige Dienstleistungen","Sonstige Auszahlungen",".6.5.02.09.7431000 Geschäftsauszahlungen",".6.5.02.09.7431200 Auszahlungen für Honorare"],
               datasets: [{
                 label: 'Euro',
                 data: [-1343200,-1070100,-5300,-44800,-215700,-2200,-76700,-1000,-1700,-400,-35700,-2800,-400,-4300,-30400,-3700,-1200,-2500],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              },
-              
-            }
-          });
-        
-      
-        
-        
-          var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_6de26421_4e75_48cb_9d7b_c504560b8261'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Erwerb von beweglichen Anlagevermögen und immateriellen Vermögensgegenständen",".6.5.02.09/0100.7832000 Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr."],
-              datasets: [{
-                label: 'Euro',
-                data: [-2500,-2500],
                 borderWidth: 1
               }]
             },

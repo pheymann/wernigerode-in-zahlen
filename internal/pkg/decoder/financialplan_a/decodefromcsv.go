@@ -20,6 +20,7 @@ var (
 		"17": model.AccountClassInvestments,
 		"25": model.AccountClassInvestments,
 		"26": model.AccountClassInvestments,
+		"31": model.AccountClassInvestments,
 		"33": model.AccountClassInvestments,
 	}
 )

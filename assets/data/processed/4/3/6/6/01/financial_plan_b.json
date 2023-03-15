@@ -1,0 +1,165 @@
+{
+  "Balances": [
+    {
+      "Id": "100",
+      "Class": "one-off",
+      "Desc": "Anschaffungen 150 €  bis 1.000 € netto",
+      "Budgets": {
+        "2020": -242.72,
+        "2021": -1500,
+        "2022": -1100,
+        "2023": -3500,
+        "2024": -3100,
+        "2025": -2500
+      },
+      "Accounts": [
+        {
+          "Id": "40",
+          "Desc": " -Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen",
+          "Budgets": {
+            "2020": 242.72,
+            "2021": 1500,
+            "2022": 1100,
+            "2023": 3500,
+            "2024": 3100,
+            "2025": 2500
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "3.6.6.01/0100.7832000",
+                  "Desc": "Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 242.72,
+                    "2021": 1500,
+                    "2022": 1100,
+                    "2023": 3500,
+                    "2024": 3100,
+                    "2025": 2500
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "200",
+      "Class": "one-off",
+      "Desc": "Betriebs-und Geschäftsausstattungen",
+      "Budgets": {
+        "2020": 0,
+        "2021": 0,
+        "2022": 0,
+        "2023": -5000,
+        "2024": -2500,
+        "2025": 0
+      },
+      "Accounts": [
+        {
+          "Id": "40",
+          "Desc": " -Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen",
+          "Budgets": {
+            "2020": 0,
+            "2021": 0,
+            "2022": 0,
+            "2023": 5000,
+            "2024": 2500,
+            "2025": 0
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "3.6.6.01/0200.7831000",
+                  "Desc": "Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 0,
+                    "2022": 0,
+                    "2023": 5000,
+                    "2024": 2500,
+                    "2025": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "500",
+      "Class": "one-off",
+      "Desc": "Fahrzeuge",
+      "Budgets": {
+        "2020": 0,
+        "2021": 0,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": null
+    },
+    {
+      "Id": "1425",
+      "Class": "one-off",
+      "Desc": "Jugendhaus Center Sanierung und Brandschutz",
+      "Budgets": {
+        "2020": -13790.23,
+        "2021": 0,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": [
+        {
+          "Id": "50",
+          "Desc": " -Auszahlungen für Baumaßnahmen",
+          "Budgets": {
+            "2020": 13790.23,
+            "2021": 0,
+            "2022": 0,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "3.6.6.01/1425.7851000",
+                  "Desc": "Auszahlungen für Hochbaumaßnahmen",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 13790.23,
+                    "2021": 0,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

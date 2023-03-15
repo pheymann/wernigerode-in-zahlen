@@ -1,0 +1,33 @@
+{
+  "Department": {
+    "ID": "4",
+    "Name": "Budget Bürgerservice",
+    "Accountable": "Herr Dorff"
+  },
+  "ProductClass": {
+    "ID": "4",
+    "Name": "Gesundheit und Sport",
+    "Accountable": "Dezernent I"
+  },
+  "ProductDomain": {
+    "ID": "2",
+    "Name": "Sportförderung",
+    "Responsible": "Frau Dalichow"
+  },
+  "ProductGroup": {
+    "ID": "1",
+    "Name": "Förderung des Sports",
+    "Desc": "externes Produkt"
+  },
+  "Product": {
+    "ID": "01",
+    "Name": "Förderung des Sports",
+    "LegalRequirement": "Freiwillige Aufgabe"
+  },
+  "SubProduct": null,
+  "Description": " Förderung des Sports",
+  "Mission": " Beschlüsse der politischen Gremien",
+  "Target": "EinwohnerInnen, Sportvereine und -verbände",
+  "Objectives": " Förderung des Sports, Erhalt der städtischen Vereinsstruktur",
+  "Services": " -Gewährung von direkten und indirekten Zuschüssen an Sportvereine -Beratung von Vereinsvorständen -Erteilen von Auskünften zum allgemeinen Sport und zu städtischen Sportvereinen -Durchführung von, eigenen Veranstaltungen oder Veranstaltungsbegleitung -Öffentlichkeitsarbeit,"
+}

@@ -1,9 +1,9 @@
 set +x
 
 dir=$1
-# metadata=$2
-financial_plan_a=$2
-financial_plan_b=$3
+metadata=$2
+financial_plan_a=$3
+financial_plan_b=$4
 
 if [ -z "${dir}" ]; then
   echo "set a directory"

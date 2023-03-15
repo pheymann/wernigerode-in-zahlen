@@ -1,0 +1,60 @@
+{
+  "Balances": [
+    {
+      "Id": "100",
+      "Class": "one-off",
+      "Desc": "Anschaffungen 150 € bis 1.000 € netto",
+      "Budgets": {
+        "2020": 0,
+        "2021": 0,
+        "2022": -2500,
+        "2023": -2600,
+        "2024": -1600,
+        "2025": -1600
+      },
+      "Accounts": [
+        {
+          "Id": "40",
+          "Desc": "- Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen 3.6.5.02.16/0100.7832000       Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150 bis 1000 € o. UStr.",
+          "Budgets": {
+            "2020": 0,
+            "2021": 0,
+            "2022": 2500,
+            "2023": 2600,
+            "2024": 1600,
+            "2025": 1600
+          },
+          "Subs": null
+        }
+      ]
+    },
+    {
+      "Id": "200",
+      "Class": "one-off",
+      "Desc": "Betriebs-und Geschäftsausstattungen",
+      "Budgets": {
+        "2020": 0,
+        "2021": 0,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": null
+    },
+    {
+      "Id": "300",
+      "Class": "one-off",
+      "Desc": "Betriebsvorrichtungen",
+      "Budgets": {
+        "2020": 0,
+        "2021": 0,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": null
+    }
+  ]
+}

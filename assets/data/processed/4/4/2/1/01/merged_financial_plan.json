@@ -1,0 +1,227 @@
+{
+  "Balances": [
+    {
+      "Id": "16",
+      "Class": "admininstration",
+      "Desc": "Saldo aus laufender Verwaltungstätigkeit (Saldo Zeilen 8 und 15)",
+      "Budgets": {
+        "2020": -155808.02,
+        "2021": -148300,
+        "2022": -150500,
+        "2023": -154000,
+        "2024": -160000,
+        "2025": -165000
+      },
+      "Accounts": [
+        {
+          "Id": "8",
+          "Desc": "Einzahlungen aus laufender Verwaltungstätigkeit",
+          "Budgets": {
+            "2020": 1428,
+            "2021": 0,
+            "2022": 0,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": [
+            {
+              "Id": "5",
+              "Desc": "privatrechtliche Leistungsentgelte, Kostenerstattungen, Kostenumlagen",
+              "Budgets": {
+                "2020": 1428,
+                "2021": 0,
+                "2022": 0,
+                "2023": 0,
+                "2024": 0,
+                "2025": 0
+              },
+              "Units": [
+                {
+                  "Id": "6488000",
+                  "Desc": "Einzahlungen aus Kostenerstattungen von übrigen Bereichen",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 1428,
+                    "2021": 0,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "15",
+          "Desc": "Auszahlungen aus laufender Verwaltungstätigkeit",
+          "Budgets": {
+            "2020": -157236.02,
+            "2021": -148300,
+            "2022": -150500,
+            "2023": -154000,
+            "2024": -160000,
+            "2025": -165000
+          },
+          "Subs": [
+            {
+              "Id": "11",
+              "Desc": "Auszahlungen für Sach- und Dienstleistungen",
+              "Budgets": {
+                "2020": -5986.06,
+                "2021": -0,
+                "2022": -0,
+                "2023": -0,
+                "2024": -0,
+                "2025": -0
+              },
+              "Units": [
+                {
+                  "Id": "7211014",
+                  "Desc": "Unterhaltung der Grundstücke und baulichen Anlagen-Gebäudemanagement",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": -5986.06,
+                    "2021": -0,
+                    "2022": -0,
+                    "2023": -0,
+                    "2024": -0,
+                    "2025": -0
+                  }
+                }
+              ]
+            },
+            {
+              "Id": "12",
+              "Desc": "Transferauszahlungen",
+              "Budgets": {
+                "2020": -151249.96,
+                "2021": -148300,
+                "2022": -150500,
+                "2023": -154000,
+                "2024": -160000,
+                "2025": -165000
+              },
+              "Units": [
+                {
+                  "Id": "7318000",
+                  "Desc": "Zuschüsse an übrige Bereiche",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": -151249.96,
+                    "2021": -148300,
+                    "2022": -150500,
+                    "2023": -154000,
+                    "2024": -160000,
+                    "2025": -165000
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "34",
+      "Class": "balance-investments",
+      "Desc": "Saldo aus Investitionstätigkeit",
+      "Budgets": {
+        "2020": -25000,
+        "2021": 0,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": [
+        {
+          "Id": "17",
+          "Desc": "Investitionstätigkeit - Einzahlungen",
+          "Budgets": {
+            "2020": 0,
+            "2021": 0,
+            "2022": 0,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": null
+        },
+        {
+          "Id": "25",
+          "Desc": "Einzahlungen aus Investitionstätigkeit",
+          "Budgets": {
+            "2020": 0,
+            "2021": 0,
+            "2022": 0,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": null
+        },
+        {
+          "Id": "26",
+          "Desc": "Investitionstätigkeit - Auszahlungen",
+          "Budgets": {
+            "2020": -0,
+            "2021": -0,
+            "2022": -0,
+            "2023": -0,
+            "2024": -0,
+            "2025": -0
+          },
+          "Subs": null
+        },
+        {
+          "Id": "33",
+          "Desc": "Auszahlungen aus Investitionstätigkeit",
+          "Budgets": {
+            "2020": -25000,
+            "2021": -0,
+            "2022": -0,
+            "2023": -0,
+            "2024": -0,
+            "2025": -0
+          },
+          "Subs": [
+            {
+              "Id": "29",
+              "Desc": "Erwerb von beweglichen Anlagevermögen und immateriellen Vermögensgegenständen",
+              "Budgets": {
+                "2020": -25000,
+                "2021": -0,
+                "2022": -0,
+                "2023": -0,
+                "2024": -0,
+                "2025": -0
+              },
+              "Units": [
+                {
+                  "Id": "4.2.1.01/7006.7834000",
+                  "Desc": "Auszahlung für den Erwerb immaterieller Vermögensgegenstände",
+                  "AboveValueLimit": {
+                    "ID": "4.2.1.01/7006.7834000",
+                    "Category": "Zuschuss für die Sanierung u. Erweiterung Rodelbahn Barenberg",
+                    "SubCategory": " -Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen"
+                  },
+                  "Budgets": {
+                    "2020": -25000,
+                    "2021": -0,
+                    "2022": -0,
+                    "2023": -0,
+                    "2024": -0,
+                    "2025": -0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
