@@ -1,0 +1,33 @@
+{
+  "Department": {
+    "ID": "5",
+    "Name": "Budget Stadtentwicklung",
+    "Accountable": "Herr Kramer"
+  },
+  "ProductClass": {
+    "ID": "5",
+    "Name": "Gestaltung der Umwelt",
+    "Accountable": "Dezernent II"
+  },
+  "ProductDomain": {
+    "ID": "5",
+    "Name": "Natur- und Landschaftspflege",
+    "Responsible": "Herr Sieber"
+  },
+  "ProductGroup": {
+    "ID": "2",
+    "Name": "Öffentliche Gewässer/ Wasserbauliche Anlagen",
+    "Desc": "externes Produkt"
+  },
+  "Product": {
+    "ID": "01",
+    "Name": "Öffentliche Gewässer/ Wasserbauliche Anlagen",
+    "LegalRequirement": "Pflichtaufgabe"
+  },
+  "SubProduct": null,
+  "Description": " Planung, Bau und Unterhaltung öffentlicher Gewässer in städtischer Zuständigkeit",
+  "Mission": " Bundes-, Landes- und Ortsrecht; Ratsbeschlüsse",
+  "Target": "Verbände, EinwohnerInnen, Behörden",
+  "Objectives": "",
+  "Services": " -Planung, Bau und Unterhaltung öffentlicher Gewässer im Sinne von Kanälen, Dämmen, Deichen,  Rückhaltebecken, Fischaufstiegsanlagen -Vertretung der Kommune in Unterhaltungsverbänden -Umlagen von, Unterhaltungsbeiträgen -Maßnahmen zum Schutz des Grundwassers -Mitwirkung an der Gewässerschau -Mitwirkung beim Hochwasserschutz -Trinkwasserversorgung Schierke,"
+}

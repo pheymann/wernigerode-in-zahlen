@@ -1,0 +1,312 @@
+{
+  "Balances": [
+    {
+      "Id": "16",
+      "Class": "admininstration",
+      "Desc": "Saldo aus laufender Verwaltungstätigkeit (Saldo Zeilen 8 und 15)",
+      "Budgets": {
+        "2020": -4754.61,
+        "2021": -35000,
+        "2022": -35300,
+        "2023": -33200,
+        "2024": -33200,
+        "2025": -33200
+      },
+      "Accounts": [
+        {
+          "Id": "8",
+          "Desc": "Einzahlungen aus laufender Verwaltungstätigkeit",
+          "Budgets": {
+            "2020": 7736.8,
+            "2021": 19000,
+            "2022": 32700,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": [
+            {
+              "Id": "2",
+              "Desc": "Zuweisungen und allgemeine Umlagen",
+              "Budgets": {
+                "2020": 7736.8,
+                "2021": 19000,
+                "2022": 32700,
+                "2023": 0,
+                "2024": 0,
+                "2025": 0
+              },
+              "Units": [
+                {
+                  "Id": "6141000",
+                  "Desc": "Zuweisungen für laufende Zwecke vom Land",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 7736.8,
+                    "2021": 13500,
+                    "2022": 23200,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                },
+                {
+                  "Id": "6147000",
+                  "Desc": "Zuschüsse für laufende Zwecke von privaten Unternehmen",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 3000,
+                    "2022": 7500,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                },
+                {
+                  "Id": "6148000",
+                  "Desc": "Zuschüsse für laufende Zwecke von übrigen Bereichen",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 2500,
+                    "2022": 2000,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "15",
+          "Desc": "Auszahlungen aus laufender Verwaltungstätigkeit",
+          "Budgets": {
+            "2020": -12491.41,
+            "2021": -54000,
+            "2022": -68000,
+            "2023": -33200,
+            "2024": -33200,
+            "2025": -33200
+          },
+          "Subs": [
+            {
+              "Id": "11",
+              "Desc": "Auszahlungen für Sach- und Dienstleistungen",
+              "Budgets": {
+                "2020": -1476.17,
+                "2021": -24500,
+                "2022": -38300,
+                "2023": -5500,
+                "2024": -5500,
+                "2025": -5500
+              },
+              "Units": [
+                {
+                  "Id": "7252000",
+                  "Desc": "Erwerb geringwertiger Vermögensgegenstände",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": -0,
+                    "2021": -500,
+                    "2022": -500,
+                    "2023": -500,
+                    "2024": -500,
+                    "2025": -500
+                  }
+                },
+                {
+                  "Id": "7271000",
+                  "Desc": "Besondere Verwaltungs- und Betriebsauszahlungen",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": -1476.17,
+                    "2021": -24000,
+                    "2022": -37800,
+                    "2023": -5000,
+                    "2024": -5000,
+                    "2025": -5000
+                  }
+                }
+              ]
+            },
+            {
+              "Id": "12",
+              "Desc": "Transferauszahlungen",
+              "Budgets": {
+                "2020": -0,
+                "2021": -10000,
+                "2022": -16700,
+                "2023": -16700,
+                "2024": -16700,
+                "2025": -16700
+              },
+              "Units": [
+                {
+                  "Id": "7318000",
+                  "Desc": "Zuschüsse an übrige Bereiche",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": -0,
+                    "2021": -10000,
+                    "2022": -16700,
+                    "2023": -16700,
+                    "2024": -16700,
+                    "2025": -16700
+                  }
+                }
+              ]
+            },
+            {
+              "Id": "13",
+              "Desc": "Sonstige Auszahlungen",
+              "Budgets": {
+                "2020": -11015.24,
+                "2021": -19500,
+                "2022": -13000,
+                "2023": -11000,
+                "2024": -11000,
+                "2025": -11000
+              },
+              "Units": [
+                {
+                  "Id": "7429000",
+                  "Desc": "Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": -2545.04,
+                    "2021": -3000,
+                    "2022": -3000,
+                    "2023": -3000,
+                    "2024": -3000,
+                    "2025": -3000
+                  }
+                },
+                {
+                  "Id": "7431200",
+                  "Desc": "Auszahlungen für Honorare",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": -8470.2,
+                    "2021": -16500,
+                    "2022": -10000,
+                    "2023": -8000,
+                    "2024": -8000,
+                    "2025": -8000
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "34",
+      "Class": "balance-investments",
+      "Desc": "Saldo aus Investitionstätigkeit",
+      "Budgets": {
+        "2020": -26803.7,
+        "2021": -15000,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": [
+        {
+          "Id": "17",
+          "Desc": "Investitionstätigkeit - Einzahlungen",
+          "Budgets": {
+            "2020": 0,
+            "2021": 0,
+            "2022": 0,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": null
+        },
+        {
+          "Id": "25",
+          "Desc": "Einzahlungen aus Investitionstätigkeit",
+          "Budgets": {
+            "2020": 0,
+            "2021": 0,
+            "2022": 0,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": null
+        },
+        {
+          "Id": "26",
+          "Desc": "Investitionstätigkeit - Auszahlungen",
+          "Budgets": {
+            "2020": -0,
+            "2021": -0,
+            "2022": -0,
+            "2023": -0,
+            "2024": -0,
+            "2025": -0
+          },
+          "Subs": null
+        },
+        {
+          "Id": "31",
+          "Desc": "Baumaßnahmen",
+          "Budgets": {
+            "2020": -26803.7,
+            "2021": -15000,
+            "2022": -0,
+            "2023": -0,
+            "2024": -0,
+            "2025": -0
+          },
+          "Subs": null
+        },
+        {
+          "Id": "33",
+          "Desc": "Auszahlungen aus Investitionstätigkeit",
+          "Budgets": {
+            "2020": -26803.7,
+            "2021": -15000,
+            "2022": -0,
+            "2023": -0,
+            "2024": -0,
+            "2025": -0
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "5.6.1.01/3006.7851000",
+                  "Desc": "Auszahlungen für Hochbaumaßnahmen",
+                  "AboveValueLimit": {
+                    "ID": "5.6.1.01/3006.7851000",
+                    "Category": "Maßnahmen aus Klimaschutzkonzept",
+                    "SubCategory": " -Auszahlungen für Baumaßnahmen"
+                  },
+                  "Budgets": {
+                    "2020": -26803.7,
+                    "2021": -15000,
+                    "2022": -0,
+                    "2023": -0,
+                    "2024": -0,
+                    "2025": -0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
