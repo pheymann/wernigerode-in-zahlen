@@ -1,0 +1,346 @@
+{
+  "Balances": [
+    {
+      "Id": "1",
+      "Class": "one-off",
+      "Desc": "Erwerb von Grundstücken",
+      "Budgets": {
+        "2020": -69794.33,
+        "2021": -141000,
+        "2022": -60000,
+        "2023": -140000,
+        "2024": -140000,
+        "2025": -140000
+      },
+      "Accounts": [
+        {
+          "Id": "",
+          "Desc": "",
+          "Budgets": null,
+          "Subs": [
+            {
+              "Id": "30",
+              "Desc": " -Auszahlungen für den Erwerb von Grundstücken und Gebäuden",
+              "Budgets": {
+                "2020": 69794.33,
+                "2021": 141000,
+                "2022": 60000,
+                "2023": 140000,
+                "2024": 140000,
+                "2025": 140000
+              },
+              "Units": [
+                {
+                  "Id": "1.1.1.03/0001.7821000",
+                  "Desc": "Auszahlungen für den Erwerb von Grundstücken, Gebäuden und Infrastrukturvermögen",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 69794.33,
+                    "2021": 141000,
+                    "2022": 60000,
+                    "2023": 140000,
+                    "2024": 140000,
+                    "2025": 140000
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "3",
+      "Class": "one-off",
+      "Desc": "Verkauf von Grundstücken",
+      "Budgets": {
+        "2020": 7630.3,
+        "2021": 1620200,
+        "2022": 1357800,
+        "2023": 620000,
+        "2024": 365000,
+        "2025": 1000000
+      },
+      "Accounts": [
+        {
+          "Id": "20",
+          "Desc": "Einzahlungen aus Verkauf von Grundstücken",
+          "Budgets": {
+            "2020": 7630.3,
+            "2021": 1620200,
+            "2022": 1357800,
+            "2023": 620000,
+            "2024": 365000,
+            "2025": 1000000
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "1.1.1.03/0003.6821000",
+                  "Desc": "Einzahlungen aus Veräußerung von Grundstücken, Gebäuden, Infrastrukturvermögen",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 7630.3,
+                    "2021": 1620200,
+                    "2022": 1357800,
+                    "2023": 620000,
+                    "2024": 365000,
+                    "2025": 1000000
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "4",
+      "Class": "one-off",
+      "Desc": "Wohnbebauung Küchengarten",
+      "Budgets": {
+        "2020": 0,
+        "2021": 0,
+        "2022": 1738000,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": [
+        {
+          "Id": "20",
+          "Desc": "Einzahlungen aus Verkauf von Grundstücken",
+          "Budgets": {
+            "2020": 0,
+            "2021": 0,
+            "2022": 4385100,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "1.1.1.03/0004.6821000",
+                  "Desc": "Einzahlungen aus Veräußerung von Grundstücken, Gebäuden, Infrastrukturvermögen",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 0,
+                    "2022": 4385100,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                }
+              ]
+            },
+            {
+              "Id": "30",
+              "Desc": " -Auszahlungen für den Erwerb von Grundstücken und Gebäuden",
+              "Budgets": {
+                "2020": 0,
+                "2021": 0,
+                "2022": 2647100,
+                "2023": 0,
+                "2024": 0,
+                "2025": 0
+              },
+              "Units": [
+                {
+                  "Id": "1.1.1.03/0004.7821000",
+                  "Desc": "Auszahlungen für den Erwerb von Grundstücken, Gebäuden und Infrastrukturvermögen",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 0,
+                    "2022": 2647100,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "7",
+      "Class": "one-off",
+      "Desc": "Verkauf von Grundstücken im OT Schierke",
+      "Budgets": {
+        "2020": 664658.74,
+        "2021": 0,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": [
+        {
+          "Id": "20",
+          "Desc": "Einzahlungen aus Verkauf von Grundstücken",
+          "Budgets": {
+            "2020": 664658.74,
+            "2021": 0,
+            "2022": 0,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "1.1.1.03/0007.6821000",
+                  "Desc": "Einzahlungen aus Veräußerung von Grundstücken, Gebäuden, Infrastrukturvermögen",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 664658.74,
+                    "2021": 0,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "8",
+      "Class": "one-off",
+      "Desc": "Erwerb von Grundstücken im OT Schierke",
+      "Budgets": {
+        "2020": -15.37,
+        "2021": -50000,
+        "2022": -50000,
+        "2023": -50000,
+        "2024": -50000,
+        "2025": -50000
+      },
+      "Accounts": [
+        {
+          "Id": "",
+          "Desc": "",
+          "Budgets": null,
+          "Subs": [
+            {
+              "Id": "30",
+              "Desc": " -Auszahlungen für den Erwerb von Grundstücken und Gebäuden",
+              "Budgets": {
+                "2020": 15.37,
+                "2021": 50000,
+                "2022": 50000,
+                "2023": 50000,
+                "2024": 50000,
+                "2025": 50000
+              },
+              "Units": [
+                {
+                  "Id": "1.1.1.03/0008.7821000",
+                  "Desc": "Auszahlungen für den Erwerb von Grundstücken, Gebäuden und Infrastrukturvermögen",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 15.37,
+                    "2021": 50000,
+                    "2022": 50000,
+                    "2023": 50000,
+                    "2024": 50000,
+                    "2025": 50000
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "100",
+      "Class": "one-off",
+      "Desc": "Anschaffungen 150 €  bis 1.000 € netto",
+      "Budgets": {
+        "2020": 0,
+        "2021": 0,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": null
+    },
+    {
+      "Id": "1102",
+      "Class": "one-off",
+      "Desc": "Rollregalanlage im Bauarchiv",
+      "Budgets": {
+        "2020": 0,
+        "2021": 0,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": null
+    },
+    {
+      "Id": "1103",
+      "Class": "one-off",
+      "Desc": "Ausgleichsbeträge für Städt.Grundstücke",
+      "Budgets": {
+        "2020": 0,
+        "2021": 0,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": null
+    },
+    {
+      "Id": "1604",
+      "Class": "one-off",
+      "Desc": "Neubau Feuerwehr/ Bauhof Schierke",
+      "Budgets": {
+        "2020": 0,
+        "2021": 0,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": null
+    },
+    {
+      "Id": "8888",
+      "Class": "one-off",
+      "Desc": "mittelfristige Maßnahmen",
+      "Budgets": {
+        "2020": 0,
+        "2021": 0,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": null
+    }
+  ]
+}

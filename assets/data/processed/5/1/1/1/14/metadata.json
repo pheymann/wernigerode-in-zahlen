@@ -1,0 +1,33 @@
+{
+  "Department": {
+    "ID": "5",
+    "Name": "Budget Stadtentwicklung",
+    "Accountable": "Herr Kramer"
+  },
+  "ProductClass": {
+    "ID": "1",
+    "Name": "Zentrale Verwaltung",
+    "Accountable": "Dezernent II"
+  },
+  "ProductDomain": {
+    "ID": "1",
+    "Name": "Innere Verwaltung",
+    "Responsible": "Herr Sieber"
+  },
+  "ProductGroup": {
+    "ID": "1",
+    "Name": "Verwaltungssteuerung und -service",
+    "Desc": "internes Produkt"
+  },
+  "Product": {
+    "ID": "14",
+    "Name": "Gebäudemanagement",
+    "LegalRequirement": "Pflicht-und Freiwillige Aufgabe"
+  },
+  "SubProduct": null,
+  "Description": " Planung, Bau und Unterhaltung des städtischen Gebäudebestandes und sonstiger Hochbauten",
+  "Mission": " Beschlüsse der politischen Gremien, sonstige verwaltungsinterne Vereinbarungen",
+  "Target": "-Organisationseinheiten der Stadt Wernigerode und private Vertragspartner",
+  "Objectives": " - Sanierung und Erhaltung der städtischen Gebäude",
+  "Services": " - Im Produkt Gebäudemanagement wird die Eigentümerfunktion für alle städtischen Gebäude mit den dazu gehörigen Grundstücksflächen wahrgenommen. - Diese werden ganz oder zum Teil Fachbereichen der Verwaltung, privaten Nutzern oder Vereinen überlassen. - Das Gebäudemanagement soll eine effiziente und effektive Bewirtschaftung des Gebäudebestandes sicherstellen. - Gebäudebewirtschaftung im kaufmännischen, infrastrukturellen und technischen Gebäudemanagement in einer Organisationseinheit - Weiterhin besteht die Eigentümerfunktion für Stadttürme und Stadtmauern und ähnlichen Hochbauten - Für sonstige Hochbauten auf sonstigen Flächen bzw. Straßen und Grünanlagen erfolgt die Baubetreuung. - Für dire Stiftung Schloss Wernigerode wird die Baubetreung des Schlosskomplexes durchgeführt."
+}

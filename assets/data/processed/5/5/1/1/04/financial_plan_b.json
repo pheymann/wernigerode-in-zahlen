@@ -1,0 +1,165 @@
+{
+  "Balances": [
+    {
+      "Id": "3352",
+      "Class": "one-off",
+      "Desc": "Wachstum u. nachhaltige Erneuerung Hasserode",
+      "Budgets": {
+        "2020": 0,
+        "2021": 0,
+        "2022": -150000,
+        "2023": -150000,
+        "2024": -600000,
+        "2025": -450000
+      },
+      "Accounts": [
+        {
+          "Id": "50",
+          "Desc": " -Auszahlungen für Baumaßnahmen",
+          "Budgets": {
+            "2020": 0,
+            "2021": 0,
+            "2022": 150000,
+            "2023": 150000,
+            "2024": 600000,
+            "2025": 450000
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "5.1.1.04/3352.7852000",
+                  "Desc": "Auszahlungen für Tiefbaumaßnahmen",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 0,
+                    "2022": 150000,
+                    "2023": 150000,
+                    "2024": 600000,
+                    "2025": 450000
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "4009",
+      "Class": "one-off",
+      "Desc": "Wachstum u. nachhalt. Erneuerung, FM 66,7% PJ 21",
+      "Budgets": {
+        "2020": 0,
+        "2021": 0,
+        "2022": 100000,
+        "2023": 100000,
+        "2024": 300000,
+        "2025": 0
+      },
+      "Accounts": [
+        {
+          "Id": "10",
+          "Desc": "Einzahlungen aus Investitionszuwendungen",
+          "Budgets": {
+            "2020": 0,
+            "2021": 0,
+            "2022": 100000,
+            "2023": 100000,
+            "2024": 300000,
+            "2025": 0
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "5.1.1.04/4009.6811000",
+                  "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 0,
+                    "2022": 100000,
+                    "2023": 100000,
+                    "2024": 300000,
+                    "2025": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "4010",
+      "Class": "one-off",
+      "Desc": "Wachstum u. nachhalt. Erneuerung, FM 66,7% PJ 22",
+      "Budgets": {
+        "2020": 0,
+        "2021": 0,
+        "2022": 0,
+        "2023": 0,
+        "2024": 100000,
+        "2025": 300000
+      },
+      "Accounts": [
+        {
+          "Id": "10",
+          "Desc": "Einzahlungen aus Investitionszuwendungen",
+          "Budgets": {
+            "2020": 0,
+            "2021": 0,
+            "2022": 0,
+            "2023": 0,
+            "2024": 100000,
+            "2025": 300000
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "5.1.1.04/4010.6811000",
+                  "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 0,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 100000,
+                    "2025": 300000
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "8888",
+      "Class": "one-off",
+      "Desc": "mittelfristige Maßnahmen",
+      "Budgets": {
+        "2020": 0,
+        "2021": 0,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": null
+    }
+  ]
+}

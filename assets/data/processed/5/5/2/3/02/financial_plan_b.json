@@ -1,0 +1,361 @@
+{
+  "Balances": [
+    {
+      "Id": "1110",
+      "Class": "one-off",
+      "Desc": "Lebendige Zentren Rathaus Marktplatz 1",
+      "Budgets": {
+        "2020": 0,
+        "2021": 0,
+        "2022": -300000,
+        "2023": -300000,
+        "2024": -350000,
+        "2025": -250000
+      },
+      "Accounts": [
+        {
+          "Id": "50",
+          "Desc": " -Auszahlungen für Baumaßnahmen",
+          "Budgets": {
+            "2020": 0,
+            "2021": 0,
+            "2022": 300000,
+            "2023": 300000,
+            "2024": 350000,
+            "2025": 250000
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "5.2.3.02/1110.7851000",
+                  "Desc": "Auszahlungen für Hochbaumaßnahmen",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 0,
+                    "2022": 300000,
+                    "2023": 300000,
+                    "2024": 350000,
+                    "2025": 250000
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "3344",
+      "Class": "one-off",
+      "Desc": "An der Flutrenne",
+      "Budgets": {
+        "2020": 0,
+        "2021": -150000,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": [
+        {
+          "Id": "50",
+          "Desc": " -Auszahlungen für Baumaßnahmen",
+          "Budgets": {
+            "2020": 0,
+            "2021": 150000,
+            "2022": 0,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "5.2.3.02/3344.7852000",
+                  "Desc": "Auszahlungen für Tiefbaumaßnahmen",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 150000,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "3346",
+      "Class": "one-off",
+      "Desc": "Klint 10 Fachwerksanierung und Anbau",
+      "Budgets": {
+        "2020": 0,
+        "2021": -50000,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": [
+        {
+          "Id": "50",
+          "Desc": " -Auszahlungen für Baumaßnahmen",
+          "Budgets": {
+            "2020": 0,
+            "2021": 50000,
+            "2022": 0,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "5.2.3.02/3346.7851000",
+                  "Desc": "Auszahlungen für Hochbaumaßnahmen",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 50000,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "3612",
+      "Class": "one-off",
+      "Desc": "Lebendige Zentren Klimamaßnahmen",
+      "Budgets": {
+        "2020": 0,
+        "2021": 0,
+        "2022": -50000,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": [
+        {
+          "Id": "50",
+          "Desc": " -Auszahlungen für Baumaßnahmen",
+          "Budgets": {
+            "2020": 0,
+            "2021": 0,
+            "2022": 50000,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "5.2.3.02/3612.7852000",
+                  "Desc": "Auszahlungen für Tiefbaumaßnahmen",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 0,
+                    "2022": 50000,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "4008",
+      "Class": "one-off",
+      "Desc": "Lebendige Zentren PJ 2020",
+      "Budgets": {
+        "2020": 0,
+        "2021": 100000,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": [
+        {
+          "Id": "10",
+          "Desc": "Einzahlungen aus Investitionszuwendungen",
+          "Budgets": {
+            "2020": 0,
+            "2021": 100000,
+            "2022": 0,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "5.2.3.02/4008.6811000",
+                  "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 100000,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "4009",
+      "Class": "one-off",
+      "Desc": "Lebendige Zentren PJ 2021",
+      "Budgets": {
+        "2020": 0,
+        "2021": 0,
+        "2022": 280000,
+        "2023": 240000,
+        "2024": 280000,
+        "2025": 0
+      },
+      "Accounts": [
+        {
+          "Id": "10",
+          "Desc": "Einzahlungen aus Investitionszuwendungen",
+          "Budgets": {
+            "2020": 0,
+            "2021": 0,
+            "2022": 280000,
+            "2023": 240000,
+            "2024": 280000,
+            "2025": 0
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "5.2.3.02/4009.6811000",
+                  "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 0,
+                    "2022": 280000,
+                    "2023": 240000,
+                    "2024": 280000,
+                    "2025": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "4010",
+      "Class": "one-off",
+      "Desc": "Lebendige Zentren, FM 80%, PJ 22",
+      "Budgets": {
+        "2020": 0,
+        "2021": 0,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 200000
+      },
+      "Accounts": [
+        {
+          "Id": "10",
+          "Desc": "Einzahlungen aus Investitionszuwendungen",
+          "Budgets": {
+            "2020": 0,
+            "2021": 0,
+            "2022": 0,
+            "2023": 0,
+            "2024": 0,
+            "2025": 200000
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "5.2.3.02/4010.6811000",
+                  "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 0,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 200000
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "8888",
+      "Class": "one-off",
+      "Desc": "mittelfristige Maßnahmen",
+      "Budgets": {
+        "2020": 0,
+        "2021": 0,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": null
+    }
+  ]
+}

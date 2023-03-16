@@ -1,0 +1,53 @@
+{
+  "Balances": [
+    {
+      "Id": "3003",
+      "Class": "one-off",
+      "Desc": "Kleinanlagen Straßenbeleuchtung",
+      "Budgets": {
+        "2020": -74190.38,
+        "2021": -100000,
+        "2022": 0,
+        "2023": -80000,
+        "2024": -80000,
+        "2025": -80000
+      },
+      "Accounts": [
+        {
+          "Id": "50",
+          "Desc": " -Auszahlungen für Baumaßnahmen",
+          "Budgets": {
+            "2020": 74190.38,
+            "2021": 100000,
+            "2022": 0,
+            "2023": 80000,
+            "2024": 80000,
+            "2025": 80000
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "5.4.5.02/3003.7852000",
+                  "Desc": "Auszahlungen für Tiefbaumaßnahmen",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 74190.38,
+                    "2021": 100000,
+                    "2022": 0,
+                    "2023": 80000,
+                    "2024": 80000,
+                    "2025": 80000
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

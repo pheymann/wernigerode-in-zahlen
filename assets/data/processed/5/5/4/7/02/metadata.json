@@ -1,0 +1,33 @@
+{
+  "Department": {
+    "ID": "5",
+    "Name": "Budget Stadtentwicklung",
+    "Accountable": "Herr Kramer"
+  },
+  "ProductClass": {
+    "ID": "5",
+    "Name": "Gestaltung der Umwelt",
+    "Accountable": "Dezernent II"
+  },
+  "ProductDomain": {
+    "ID": "4",
+    "Name": "Verkehrsflächen und -anlagen, ÖPNV",
+    "Responsible": "Frau Mudrow"
+  },
+  "ProductGroup": {
+    "ID": "7",
+    "Name": "ÖPNV",
+    "Desc": "externes Produkt"
+  },
+  "Product": {
+    "ID": "02",
+    "Name": "Harzer Verkehrsbetriebe GmbH",
+    "LegalRequirement": "Freiwillige Aufgabe"
+  },
+  "SubProduct": null,
+  "Description": " Durchführung des Öffentlichen Personennahverkehrs",
+  "Mission": " Beschlüsse der politischen Gremien, sonstige Vereinbarungen",
+  "Target": "Nutzer,Aufgabenträger und HVB GmbH",
+  "Objectives": " Unterstützung des Aufgabenträgers zur Sicherstellung und Verbesserung der Mobilität  im Stadtgebiet,,,,, von Wernigerode,,,,,",
+  "Services": " Beteiligung an der Finanzierung des Stadtverkehrs in Wernigerode,,"
+}

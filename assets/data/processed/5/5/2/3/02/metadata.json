@@ -1,0 +1,33 @@
+{
+  "Department": {
+    "ID": "5",
+    "Name": "Budget Stadtentwicklung",
+    "Accountable": "Herr Kramer"
+  },
+  "ProductClass": {
+    "ID": "5",
+    "Name": "Gestaltung der Umwelt",
+    "Accountable": "Dezernet II"
+  },
+  "ProductDomain": {
+    "ID": "2",
+    "Name": "Bauen und Wohnen",
+    "Responsible": "Herr Mendritzki"
+  },
+  "ProductGroup": {
+    "ID": "3",
+    "Name": "Denkmalschutz und -pflege",
+    "Desc": "externes Produkt"
+  },
+  "Product": {
+    "ID": "02",
+    "Name": "Lebendige Zentren",
+    "LegalRequirement": "Pflichtaufgabe"
+  },
+  "SubProduct": null,
+  "Description": " Erhalt und Sanierung des histirischen Stadtkerns inkl. Schloss",
+  "Mission": " Denkmalschutzgesetz LSA,BauGB,Förderrichtlinien LSA",
+  "Target": "Öffentliche und private Grundstückseigentümer",
+  "Objectives": " Durchführung von städtebaulichen Gesamtmaßnahmen Erhalt und Vitalisierung historischer,,,,, Bausubstanz, sowie des öffentlichen Raumes",
+  "Services": " Akquirierung von Städtebaufördermitteln; Vergabe von Zuschüssen an Dritte; Beratung und Koordination,,"
+}

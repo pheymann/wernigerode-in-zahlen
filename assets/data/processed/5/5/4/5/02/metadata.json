@@ -1,0 +1,33 @@
+{
+  "Department": {
+    "ID": "5",
+    "Name": "Budget Stadtentwicklung",
+    "Accountable": "Herr Kramer"
+  },
+  "ProductClass": {
+    "ID": "5",
+    "Name": "Gestaltung der Umwelt",
+    "Accountable": "Dezernent II"
+  },
+  "ProductDomain": {
+    "ID": "4",
+    "Name": "Verkehrsflächen und -anlagen, ÖPNV",
+    "Responsible": "Herr Sieber"
+  },
+  "ProductGroup": {
+    "ID": "5",
+    "Name": "Straßenreinigung",
+    "Desc": "externes Produkt"
+  },
+  "Product": {
+    "ID": "02",
+    "Name": "Straßenbeleuchtung",
+    "LegalRequirement": "Pflichtaufgabe"
+  },
+  "SubProduct": null,
+  "Description": " Errichtung, Instandhaltung und investive Erweiterungen sowie Betreibung der Straßenbeleuchtung",
+  "Mission": " Kommunale Verkehrssicherungspflicht und Straßenbeleuchtungsvertrag",
+  "Target": "Alle Einwohner und Gäste der Stadt",
+  "Objectives": " Kommunale Verkehrssicherungspflicht,,,,,",
+  "Services": " -notwendige Planungen und Abstimmungen mit Stadtwerken, Kontrollen, Abnahmen, Abrechnungen sowie Vertragsverhandlungen,,"
+}

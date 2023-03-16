@@ -17,10 +17,11 @@ generate-html-all:
 	make generate-html department=2 name="Budget Finanzen"
 	make generate-html department=3 name="Budget Betriebsbereiche"
 	make generate-html department=4 name="Budget Bürgerservice"
+	make generate-html department=5 name="Budget Stadtentwicklung"
 
-	go run cmd/overviewhtmlgenerator/main.go --departments="1,2,3,4"
+	go run cmd/overviewhtmlgenerator/main.go --departments="1,2,3,4,5"
 
 .PHONY: generate-html
 generate-html:
 	./scripts/generate_html_products.sh $(department)
-	go run cmd/departmenthtmlgenerator/main.go --department=$(department) --name=$(name)
+	go run cmd/departmenthtmlgenerator/main.go --department=$(department) --name="$(name)"
