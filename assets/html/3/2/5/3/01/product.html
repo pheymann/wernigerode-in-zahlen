@@ -32,24 +32,13 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 88.300,00€</h5>
-                <canvas id="chartjs_29bdaac2_3b74_40f5_b01e_567c4ef98bc3"></canvas>
+                <canvas id="chartjs_229d2956_a13c_4f85_a8d4_8e640ae7aceb"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -400.600,00€</h5>
-                <canvas id="chartjs_9b8cdfe8_f311_473a_8d6a_271a6caf0098"></canvas>
+                <canvas id="chartjs_7b2dafb4_d63f_4a2c_bf46_09451c3556d4"></canvas>
               </div>
             </div>
-          
-      
-          <h3>- Investitionen kosten <span class="total-cashflow-expenses">-7.500,00€</span></h3>
-
-          
-            
-            
-              <div class="padded-chart">
-                <canvas id="chartjs_8f4147a2_2498_4065_a941_871727590cdf"></canvas>
-              </div>
-            
           
       
     </div>
@@ -81,24 +70,6 @@
             <th>oberhalb Wertgrenze</th>
           </tr>
 
-          
-            <tr>
-              <td>Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. &gt; 150  bis 1000 € o. UStr.</td>
-              <td>-3.000,00€</td>
-              <td>Anschaffungen 150 €  bis 1.000 € netto</td>
-            </tr>
-          
-            <tr>
-              <td>Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.</td>
-              <td>-2.000,00€</td>
-              <td>Fahrzeuge</td>
-            </tr>
-          
-            <tr>
-              <td>Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.</td>
-              <td>-2.500,00€</td>
-              <td>Betriebs-und Geschäftsausstattungen</td>
-            </tr>
           
             <tr>
               <td>Auszahlungen für Mieten und Pachten</td>
@@ -270,7 +241,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_29bdaac2_3b74_40f5_b01e_567c4ef98bc3'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_229d2956_a13c_4f85_a8d4_8e640ae7aceb'), {
             type: 'doughnut',
             data: {
               labels: ["Zuschüsse für laufende Zwecke von privaten Unternehmen (Spenden)","Zuschüsse für laufende Zwecke von übrigen Bereichen (Spenden)","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus dem Verkauf von beweglichen Sachen","Einzahlungen aus Kostenerstattungen vom Bund","Einzahlungen aus Kostenerstattungen von übrigen Bereichen"],
@@ -292,37 +263,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_9b8cdfe8_f311_473a_8d6a_271a6caf0098'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_7b2dafb4_d63f_4a2c_bf46_09451c3556d4'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Dienstauszahlungen und dgl. an sonstige Beschäftigte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschäft.","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung des sonstigen unbeweglichen Vermögens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlage","Haltung von Fahrzeugen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für sonstige Dienstleistungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen","Erstatt. f.d. Ausz. v. Dritten aus lfd Verwaltungstät. an so. öff. Sonderrechn."],
               datasets: [{
                 label: 'Euro',
                 data: [-212000,-30400,-8800,-42800,-12300,-1200,-23000,-600,-10000,-11000,-1000,-4000,-700,-10500,-1000,-300,-1000,-30000],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              },
-              
-            }
-          });
-        
-      
-        
-        
-          var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_8f4147a2_2498_4065_a941_871727590cdf'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
-              datasets: [{
-                label: 'Euro',
-                data: [-3000,-2500,-2000],
                 borderWidth: 1
               }]
             },

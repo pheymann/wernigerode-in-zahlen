@@ -32,24 +32,13 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 35.100,00€</h5>
-                <canvas id="chartjs_5f384d64_359f_4fea_a01e_299f8a97e6a5"></canvas>
+                <canvas id="chartjs_58336ef9_611e_4099_b5b5_4b36f2e7e427"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -1.642.000,00€</h5>
-                <canvas id="chartjs_b634d1ef_ad93_447b_81c5_7b64966a09c3"></canvas>
+                <canvas id="chartjs_754c4516_fe9a_46b7_972e_647a1c397b8f"></canvas>
               </div>
             </div>
-          
-      
-          <h3>- Investitionen kosten <span class="total-cashflow-expenses">-19.500,00€</span></h3>
-
-          
-            
-            
-              <div class="padded-chart">
-                <canvas id="chartjs_99f9bc3c_dd13_41a9_9c12_9c3d414c81a4"></canvas>
-              </div>
-            
           
       
     </div>
@@ -81,24 +70,6 @@
             <th>oberhalb Wertgrenze</th>
           </tr>
 
-          
-            <tr>
-              <td>Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. &gt; 150  bis 1000 € o. UStr.</td>
-              <td>-5.000,00€</td>
-              <td>Anschaffungen 150 € bis 1.000 € netto</td>
-            </tr>
-          
-            <tr>
-              <td>Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.</td>
-              <td>-11.500,00€</td>
-              <td>Maschinen und techn. Anlagen</td>
-            </tr>
-          
-            <tr>
-              <td>Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.</td>
-              <td>-3.000,00€</td>
-              <td>Betriebs-und Geschäftsausstattungen</td>
-            </tr>
           
             <tr>
               <td>Auszahlungen für Leasing</td>
@@ -300,7 +271,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_5f384d64_359f_4fea_a01e_299f8a97e6a5'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_58336ef9_611e_4099_b5b5_4b36f2e7e427'), {
             type: 'doughnut',
             data: {
               labels: ["Zuweisungen für laufende Zwecke vom Bund","Zuschüsse für laufende Zwecke von übrigen Bereichen (Spenden)","Verwaltungsgebühren","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus dem Verkauf von Holz","Sonstige privatrechtliche Leistungsentgelte","Einzahlungen aus Kostenerstattungen vom Bund","Einzahl. aus Kostenerstattungen von verbund. Untern., Sondervermö. und Beteilig.","Einzahlungen aus Kostenerstattungen von übrigen Bereichen"],
@@ -322,37 +293,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_b634d1ef_ad93_447b_81c5_7b64966a09c3'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_754c4516_fe9a_46b7_972e_647a1c397b8f'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Dienstauszahlungen und dgl. an sonstige Beschäftigte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschäft.","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Unterhaltung des sonstigen unbeweglichen Vermögens","Auszahlungen für Mieten und Pachten","Auszahlungen für Leasing","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen","Auszahlungen für Planungsleistungen","Erstatt. f.d. Ausz. v. Dritten aus lfd Verwaltungstät. an so. öff. Sonderrechn."],
               datasets: [{
                 label: 'Euro',
                 data: [-999000,-10500,-41900,-201100,-8200,-4800,-500,-130000,-4000,-6000,-50000,-59000,-5000,-52000,-6000,-35000,-1000,-3000,-16000,-9000],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              },
-              
-            }
-          });
-        
-      
-        
-        
-          var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_99f9bc3c_dd13_41a9_9c12_9c3d414c81a4'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
-              datasets: [{
-                label: 'Euro',
-                data: [-5000,-3000,-11500],
                 borderWidth: 1
               }]
             },

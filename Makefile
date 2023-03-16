@@ -4,6 +4,7 @@ clean-up-all:
 	make clean-up department=2
 	make clean-up department=3
 	make clean-up department=4
+	make clean-up department=5
 
 .PHONY: clean-up
 clean-up:
