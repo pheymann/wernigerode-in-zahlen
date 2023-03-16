@@ -17,10 +17,10 @@
       In 2023 planen wir
     </p>
 
-    <h2 class="total-cashflow-expenses center">-9.804.800,00€</h2>
+    <h2 class="total-cashflow-expenses center">-10.904.000,00€</h2>
 
     <p>
-      für diesen Fachbereich auszugeben. Dabei geht das Geld an die folgenden <b>12 Produkte</b>. Klicke auf eines in den Diagrammen, um mehr zu erfahren.
+      für diesen Fachbereich auszugeben. Dabei geht das Geld an die folgenden <b>15 Produkte</b>. Klicke auf eines in den Diagrammen, um mehr zu erfahren.
     </p>
 
     <div class="container">
@@ -28,11 +28,11 @@
         <div class="row">
           <div class="col-6">
             <h5 class="center">Einnahmen: 317.800,00€</h5>
-            <canvas id="chartjs-db175e3c-0151-4096-8506-2832d7a856db"></canvas>
+            <canvas id="chartjs-00ab7b46-7033-457d-967a-dbec3e27d6f8"></canvas>
           </div>
           <div class="col-6">
-            <h5 class="center">Ausgaben: -10.122.600,00€</h5>
-            <canvas id="chartjs-0ed08e59-69b2-412d-81e4-b93c0b3c302f"></canvas>
+            <h5 class="center">Ausgaben: -11.221.800,00€</h5>
+            <canvas id="chartjs-eedf6e02-9953-4bd8-ace3-83c7fcbc4780"></canvas>
           </div>
         </div>
       
@@ -48,8 +48,8 @@
           </tr>
           <tr>
             <th></th>
-            <th>-9.804.800,00€</th>
-            <th>-1.406.800,00€</th>
+            <th>-10.904.000,00€</th>
+            <th>-2.349.800,00€</th>
           </tr>
 
           
@@ -96,6 +96,12 @@
             </tr>
           
             <tr>
+              <td><a href="/5/5/7/5/03/product.html">Ortsentwicklung Schierke</a></td>
+              <td>-50.000,00€</td>
+              <td>-50.000,00€</td>
+            </tr>
+          
+            <tr>
               <td><a href="/5/5/1/1/02/product.html">Räumliche Entwicklung</a></td>
               <td>-1.092.200,00€</td>
               <td>-113.000,00€</td>
@@ -120,9 +126,21 @@
             </tr>
           
             <tr>
+              <td><a href="/5/5/6/1/01/product.html">Umweltschutz</a></td>
+              <td>-33.200,00€</td>
+              <td>0,00€</td>
+            </tr>
+          
+            <tr>
               <td><a href="/5/5/1/1/04/product.html">Wachstum und nachhaltige Erneuerung</a></td>
               <td>-50.000,00€</td>
               <td>-50.000,00€</td>
+            </tr>
+          
+            <tr>
+              <td><a href="/5/5/5/2/01/product.html">Öffentliche Gewässer/ Wasserbauliche Anlagen</a></td>
+              <td>-1.016.000,00€</td>
+              <td>-893.000,00€</td>
             </tr>
           
         </tbody>
@@ -150,7 +168,7 @@
     <script>
       
       var incomeProductLinks = ["/5/1/1/1/03/product.html"];
-      var incomeCanvas = document.getElementById('chartjs-db175e3c-0151-4096-8506-2832d7a856db');
+      var incomeCanvas = document.getElementById('chartjs-00ab7b46-7033-457d-967a-dbec3e27d6f8');
       var incomeChart = new Chart(incomeCanvas, {
         type: 'doughnut',
         data: {
@@ -176,15 +194,15 @@
       
 
       
-      var expenesesProductLinks = ["/5/1/1/1/14/product.html","/5/1/1/1/15/product.html","/5/5/1/1/01/product.html","/5/5/1/1/02/product.html","/5/5/1/1/03/product.html","/5/5/1/1/04/product.html","/5/5/2/3/01/product.html","/5/5/2/3/02/product.html","/5/5/4/1/01/product.html","/5/5/4/5/02/product.html","/5/5/4/7/02/product.html"];
-      var expensesCanvas = document.getElementById('chartjs-0ed08e59-69b2-412d-81e4-b93c0b3c302f');
+      var expenesesProductLinks = ["/5/1/1/1/14/product.html","/5/1/1/1/15/product.html","/5/5/1/1/01/product.html","/5/5/1/1/02/product.html","/5/5/1/1/03/product.html","/5/5/1/1/04/product.html","/5/5/2/3/01/product.html","/5/5/2/3/02/product.html","/5/5/4/1/01/product.html","/5/5/4/5/02/product.html","/5/5/4/7/02/product.html","/5/5/5/2/01/product.html","/5/5/6/1/01/product.html","/5/5/7/5/03/product.html"];
+      var expensesCanvas = document.getElementById('chartjs-eedf6e02-9953-4bd8-ace3-83c7fcbc4780');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {
-          labels: ["Gebäudemanagement","Gebäudereinigung","Räumliche Planung","Räumliche Entwicklung","Sozialer Zusammenhalt","Wachstum und nachhaltige Erneuerung","Denkmalschutz","Lebendige Zentren","Gemeindestraßen","Straßenbeleuchtung","Harzer Verkehrsbetriebe GmbH"],
+          labels: ["Gebäudemanagement","Gebäudereinigung","Räumliche Planung","Räumliche Entwicklung","Sozialer Zusammenhalt","Wachstum und nachhaltige Erneuerung","Denkmalschutz","Lebendige Zentren","Gemeindestraßen","Straßenbeleuchtung","Harzer Verkehrsbetriebe GmbH","Öffentliche Gewässer/ Wasserbauliche Anlagen","Umweltschutz","Ortsentwicklung Schierke"],
           datasets: [{
             label: 'Euro',
-            data: [-1501200,-2202200,-949000,-1092200,-50000,-50000,-162600,-240500,-2529900,-1030000,-315000],
+            data: [-1501200,-2202200,-949000,-1092200,-50000,-50000,-162600,-240500,-2529900,-1030000,-315000,-1016000,-33200,-50000],
             borderWidth: 1
           }]
         },

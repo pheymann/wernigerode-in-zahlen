@@ -22,7 +22,7 @@
 			Alles startet mit der Gesamtübersicht. In 2023 planen wir
     </p>
 
-    <h2 class="total-cashflow-expenses center">-3.629.700,00€</h2>
+    <h2 class="total-cashflow-expenses center">-4.723.200,00€</h2>
 
     <p>
       auszugeben. Die Gelder teilen sich auf <b>5 Fachbereiche</b> auf. Klicke auf einen in den Diagrammen um mehr zu erfahren.
@@ -33,11 +33,11 @@
         <div class="row">
           <div class="col-6">
             <h5 class="center">Einnahmen: 34.789.300,00€</h5>
-            <canvas id="chartjs-bcc23361-5e3d-4a54-88b7-1152c56d9908"></canvas>
+            <canvas id="chartjs-a123dfdc-c03f-4ce5-9bf4-71cb0ff2c9be"></canvas>
           </div>
           <div class="col-6">
-            <h5 class="center">Ausgaben: -38.419.000,00€</h5>
-            <canvas id="chartjs-ef6a6ddc-de9d-49c7-994a-49815e90b1cf"></canvas>
+            <h5 class="center">Ausgaben: -39.512.500,00€</h5>
+            <canvas id="chartjs-0be2caa7-b6b4-4ded-adb8-86a80e84bbc8"></canvas>
           </div>
         </div>
       </div>
@@ -53,21 +53,21 @@
           </tr>
           <tr>
             <th></th>
-            <th>-3.629.700,00€</th>
-            <th>-2.707.900,00€</th>
+            <th>-4.723.200,00€</th>
+            <th>-3.691.900,00€</th>
           </tr>
 
-          
-            <tr>
-              <td><a href="/4/department.html">Budget</a></td>
-              <td>-16.638.000,00€</td>
-              <td>-1.730.200,00€</td>
-            </tr>
           
             <tr>
               <td><a href="/3/department.html">Budget Betriebsbereiche</a></td>
               <td>-5.804.200,00€</td>
               <td>-329.800,00€</td>
+            </tr>
+          
+            <tr>
+              <td><a href="/4/department.html">Budget Bürgerservice</a></td>
+              <td>-16.632.300,00€</td>
+              <td>-1.771.200,00€</td>
             </tr>
           
             <tr>
@@ -78,8 +78,8 @@
           
             <tr>
               <td><a href="/5/department.html">Budget Stadtentwicklung</a></td>
-              <td>-9.804.800,00€</td>
-              <td>-1.406.800,00€</td>
+              <td>-10.904.000,00€</td>
+              <td>-2.349.800,00€</td>
             </tr>
           
             <tr>
@@ -109,7 +109,7 @@
     <script>
       
         var incomeDepartmentLinks = ["/2/department.html"];
-        var incomeCanvas = document.getElementById('chartjs-bcc23361-5e3d-4a54-88b7-1152c56d9908');
+        var incomeCanvas = document.getElementById('chartjs-a123dfdc-c03f-4ce5-9bf4-71cb0ff2c9be');
         var incomeChart = new Chart(incomeCanvas, {
           type: 'doughnut',
           data: {
@@ -135,14 +135,14 @@
       
 
       var expensesDepartmentLinks = ["/1/department.html","/3/department.html","/4/department.html","/5/department.html"];
-      var expensesCanvas = document.getElementById('chartjs-ef6a6ddc-de9d-49c7-994a-49815e90b1cf');
+      var expensesCanvas = document.getElementById('chartjs-0be2caa7-b6b4-4ded-adb8-86a80e84bbc8');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {
-          labels: ["Budget des Bürgermeisters","Budget Betriebsbereiche","Budget","Budget Stadtentwicklung"],
+          labels: ["Budget des Bürgermeisters","Budget Betriebsbereiche","Budget Bürgerservice","Budget Stadtentwicklung"],
           datasets: [{
             label: 'Euro',
-            data: [-6172000,-5804200,-16638000,-9804800],
+            data: [-6172000,-5804200,-16632300,-10904000],
             borderWidth: 1
           }]
         },

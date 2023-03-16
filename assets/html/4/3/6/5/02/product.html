@@ -32,11 +32,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 9.405.000,00€</h5>
-                <canvas id="chartjs_6e58c8ef_382a_4466_9b89_102022662717"></canvas>
+                <canvas id="chartjs_fda83e10_b6db_4ab4_9bc3_24f792c23dbc"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -14.295.100,00€</h5>
-                <canvas id="chartjs_ebae15e9_afb3_4573_a9c7_33f18dac1aa8"></canvas>
+                <canvas id="chartjs_08ab2a3d_d959_4d2c_87da_5e0ad4d24bce"></canvas>
               </div>
             </div>
           
@@ -47,11 +47,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 7.400,00€</h5>
-                <canvas id="chartjs_55fb412a_85c3_4210_b61e_b8868bb1058c"></canvas>
+                <canvas id="chartjs_8c8be940_d63f_4286_9b3b_50c6b9834096"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -5.022.600,00€</h5>
-                <canvas id="chartjs_979b3b45_b546_48b9_8fdf_4ba4f161619b"></canvas>
+                <canvas id="chartjs_1fd6425f_e160_428f_91a4_348ad139216b"></canvas>
               </div>
             </div>
           
@@ -148,7 +148,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_6e58c8ef_382a_4466_9b89_102022662717'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_fda83e10_b6db_4ab4_9bc3_24f792c23dbc'), {
             type: 'doughnut',
             data: {
               labels: ["Zuweisungen und allgemeine Umlagen","öffentlich-rechtliche Leistungsentgelte","privatrechtliche Leistungsentgelte, Kostenerstattungen, Kostenumlagen"],
@@ -170,7 +170,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_ebae15e9_afb3_4573_a9c7_33f18dac1aa8'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_08ab2a3d_d959_4d2c_87da_5e0ad4d24bce'), {
             type: 'doughnut',
             data: {
               labels: ["Personalauszahlungen","Auszahlungen für Sach- und Dienstleistungen","Sonstige Auszahlungen"],
@@ -192,8 +192,8 @@
         
       
         
-          var incomeSubProductLinks_chartjs_55fb412a_85c3_4210_b61e_b8868bb1058c = ["16/product.html"];
-          var incomeChart_chartjs_55fb412a_85c3_4210_b61e_b8868bb1058c = new Chart(document.getElementById('chartjs_55fb412a_85c3_4210_b61e_b8868bb1058c'), {
+          var incomeSubProductLinks_chartjs_8c8be940_d63f_4286_9b3b_50c6b9834096 = ["16/product.html"];
+          var incomeChart_chartjs_8c8be940_d63f_4286_9b3b_50c6b9834096 = new Chart(document.getElementById('chartjs_8c8be940_d63f_4286_9b3b_50c6b9834096'), {
             type: 'doughnut',
             data: {
               labels: ["Hort Grundschule Harzblick"],
@@ -211,16 +211,16 @@
               },
               
                 onClick: function(e){
-                  var activePoints = incomeChart_chartjs_55fb412a_85c3_4210_b61e_b8868bb1058c.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
-                  window.location.href = incomeSubProductLinks_chartjs_55fb412a_85c3_4210_b61e_b8868bb1058c[activePoints[0].index];
+                  var activePoints = incomeChart_chartjs_8c8be940_d63f_4286_9b3b_50c6b9834096.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
+                  window.location.href = incomeSubProductLinks_chartjs_8c8be940_d63f_4286_9b3b_50c6b9834096[activePoints[0].index];
                 },
               
             }
           });
         
         
-          var expensesSubProductLinks_chartjs_979b3b45_b546_48b9_8fdf_4ba4f161619b = ["01/product.html","02/product.html","03/product.html","04/product.html","05/product.html","06/product.html","07/product.html","08/product.html","09/product.html","10/product.html","11/product.html","12/product.html","13/product.html","14/product.html","15/product.html","17/product.html"];
-          var expensesChart_chartjs_979b3b45_b546_48b9_8fdf_4ba4f161619b = new Chart(document.getElementById('chartjs_979b3b45_b546_48b9_8fdf_4ba4f161619b'), {
+          var expensesSubProductLinks_chartjs_1fd6425f_e160_428f_91a4_348ad139216b = ["01/product.html","02/product.html","03/product.html","04/product.html","05/product.html","06/product.html","07/product.html","08/product.html","09/product.html","10/product.html","11/product.html","12/product.html","13/product.html","14/product.html","15/product.html","17/product.html"];
+          var expensesChart_chartjs_1fd6425f_e160_428f_91a4_348ad139216b = new Chart(document.getElementById('chartjs_1fd6425f_e160_428f_91a4_348ad139216b'), {
             type: 'doughnut',
             data: {
               labels: ["Kinderkrippe Lindenberg","Kinderkrippe Am Auerhahn","Kindertagesstätte Regenbogen","Kindertagesstätte Villa Sonnenschein","Kindertagesstätte Hummelhaus","Kindertagesstätte Musikus","Kindertagesstätte Pusteblume","Integrative Kindertagesstätte Löwenzahn","Kindertagesstätte Harzblick","Kindertagesstätte Am Schäferteich","Kindertagesstätte Kleine Strolche","Kindertagesstätte Benjamin Blümchen","Kindertagesstätte Brockenkinder","Hort Grundschule A. Diesterweg","Hort Grundschule A.H.Francke","Kindertagesstätten-Verwaltung"],
@@ -238,8 +238,8 @@
               },
               
                 onClick: function(e){
-                  var activePoints = expensesChart_chartjs_979b3b45_b546_48b9_8fdf_4ba4f161619b.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
-                  window.location.href = expensesSubProductLinks_chartjs_979b3b45_b546_48b9_8fdf_4ba4f161619b[activePoints[0].index];
+                  var activePoints = expensesChart_chartjs_1fd6425f_e160_428f_91a4_348ad139216b.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
+                  window.location.href = expensesSubProductLinks_chartjs_1fd6425f_e160_428f_91a4_348ad139216b[activePoints[0].index];
                 },
               
             }
