@@ -1,0 +1,287 @@
+{
+  "Balances": [
+    {
+      "Id": "16",
+      "Class": "admininstration",
+      "Desc": "Saldo aus laufender Verwaltungstätigkeit (Saldo Zeilen 8 und 15)",
+      "Budgets": {
+        "2020": 30368.63,
+        "2021": 9400,
+        "2022": 30500,
+        "2023": 30500,
+        "2024": 30500,
+        "2025": 30500
+      },
+      "Accounts": [
+        {
+          "Id": "8",
+          "Desc": "Einzahlungen aus laufender Verwaltungstätigkeit",
+          "Budgets": {
+            "2020": 32716.08,
+            "2021": 46400,
+            "2022": 50000,
+            "2023": 50000,
+            "2024": 50000,
+            "2025": 50000
+          },
+          "Subs": [
+            {
+              "Id": "5",
+              "Desc": "privatrechtliche Leistungsentgelte, Kostenerstattungen, Kostenumlagen",
+              "Budgets": {
+                "2020": 22103.81,
+                "2021": 35000,
+                "2022": 50000,
+                "2023": 50000,
+                "2024": 50000,
+                "2025": 50000
+              },
+              "Units": [
+                {
+                  "Id": "6411000",
+                  "Desc": "Einzahlungen aus Mieten und Pachten",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 22103.81,
+                    "2021": 35000,
+                    "2022": 50000,
+                    "2023": 50000,
+                    "2024": 50000,
+                    "2025": 50000
+                  }
+                }
+              ]
+            },
+            {
+              "Id": "6",
+              "Desc": "sonstige Einzahlungen",
+              "Budgets": {
+                "2020": 10612.27,
+                "2021": 11400,
+                "2022": 0,
+                "2023": 0,
+                "2024": 0,
+                "2025": 0
+              },
+              "Units": [
+                {
+                  "Id": "6521200",
+                  "Desc": "Einnahmen Mehrwertsteuer 19%",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 4199.72,
+                    "2021": 6600,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                },
+                {
+                  "Id": "6521300",
+                  "Desc": "Erstattungen Vorsteuer",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 6412.55,
+                    "2021": 4800,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "15",
+          "Desc": "Auszahlungen aus laufender Verwaltungstätigkeit",
+          "Budgets": {
+            "2020": -2347.45,
+            "2021": -37000,
+            "2022": -19500,
+            "2023": -19500,
+            "2024": -19500,
+            "2025": -19500
+          },
+          "Subs": [
+            {
+              "Id": "11",
+              "Desc": "Auszahlungen für Sach- und Dienstleistungen",
+              "Budgets": {
+                "2020": -0,
+                "2021": -24000,
+                "2022": -18000,
+                "2023": -18000,
+                "2024": -18000,
+                "2025": -18000
+              },
+              "Units": [
+                {
+                  "Id": "7221000",
+                  "Desc": "Unterhaltung des sonstigen unbeweglichen Vermögens",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": -0,
+                    "2021": -20000,
+                    "2022": -15000,
+                    "2023": -15000,
+                    "2024": -15000,
+                    "2025": -15000
+                  }
+                },
+                {
+                  "Id": "7255000",
+                  "Desc": "Unterhaltung des sonstigen beweglichen Vermögens",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": -0,
+                    "2021": -4000,
+                    "2022": -3000,
+                    "2023": -3000,
+                    "2024": -3000,
+                    "2025": -3000
+                  }
+                }
+              ]
+            },
+            {
+              "Id": "13",
+              "Desc": "Sonstige Auszahlungen",
+              "Budgets": {
+                "2020": -2347.45,
+                "2021": -13000,
+                "2022": -1500,
+                "2023": -1500,
+                "2024": -1500,
+                "2025": -1500
+              },
+              "Units": [
+                {
+                  "Id": "7431000",
+                  "Desc": "Geschäftsauszahlungen",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": -0,
+                    "2021": -1500,
+                    "2022": -1500,
+                    "2023": -1500,
+                    "2024": -1500,
+                    "2025": -1500
+                  }
+                },
+                {
+                  "Id": "7441100",
+                  "Desc": "Abzugsfähige Vorsteuer  7%",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": -0,
+                    "2021": -100,
+                    "2022": -0,
+                    "2023": -0,
+                    "2024": -0,
+                    "2025": -0
+                  }
+                },
+                {
+                  "Id": "7441200",
+                  "Desc": "Abzugsfähige Vorsteuer 19%",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": -0,
+                    "2021": -6600,
+                    "2022": -0,
+                    "2023": -0,
+                    "2024": -0,
+                    "2025": -0
+                  }
+                },
+                {
+                  "Id": "7441300",
+                  "Desc": "Abführung Mehrwertsteuer",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": -2347.45,
+                    "2021": -4800,
+                    "2022": -0,
+                    "2023": -0,
+                    "2024": -0,
+                    "2025": -0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "34",
+      "Class": "balance-investments",
+      "Desc": "Saldo aus Investitionstätigkeit",
+      "Budgets": {
+        "2020": 0,
+        "2021": 0,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": [
+        {
+          "Id": "17",
+          "Desc": "Investitionstätigkeit - Einzahlungen",
+          "Budgets": {
+            "2020": 0,
+            "2021": 0,
+            "2022": 0,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": null
+        },
+        {
+          "Id": "25",
+          "Desc": "Einzahlungen aus Investitionstätigkeit",
+          "Budgets": {
+            "2020": 0,
+            "2021": 0,
+            "2022": 0,
+            "2023": 0,
+            "2024": 0,
+            "2025": 0
+          },
+          "Subs": null
+        },
+        {
+          "Id": "26",
+          "Desc": "Investitionstätigkeit - Auszahlungen",
+          "Budgets": {
+            "2020": -0,
+            "2021": -0,
+            "2022": -0,
+            "2023": -0,
+            "2024": -0,
+            "2025": -0
+          },
+          "Subs": null
+        },
+        {
+          "Id": "33",
+          "Desc": "Auszahlungen aus Investitionstätigkeit",
+          "Budgets": {
+            "2020": -0,
+            "2021": -0,
+            "2022": -0,
+            "2023": -0,
+            "2024": -0,
+            "2025": -0
+          },
+          "Subs": null
+        }
+      ]
+    }
+  ]
+}

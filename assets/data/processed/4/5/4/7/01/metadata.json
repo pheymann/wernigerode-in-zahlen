@@ -1,0 +1,33 @@
+{
+  "Department": {
+    "ID": "4",
+    "Name": "Budget Bürgerservice",
+    "Accountable": "Herr Dorff"
+  },
+  "ProductClass": {
+    "ID": "5",
+    "Name": "Gestaltung der Umwelt",
+    "Accountable": "Dezernent I"
+  },
+  "ProductDomain": {
+    "ID": "4",
+    "Name": "Verkehrsflächen und -anlagen, ÖPNV",
+    "Responsible": "Frau Münzberg"
+  },
+  "ProductGroup": {
+    "ID": "7",
+    "Name": "ÖPNV",
+    "Desc": "externes Produkt"
+  },
+  "Product": {
+    "ID": "01",
+    "Name": "Buswartehallen",
+    "LegalRequirement": "Pflicht-und Freiwillige Aufgabe"
+  },
+  "SubProduct": null,
+  "Description": " Sicherstellung und Unterstützung eines ÖPNV-Betriebes auf Stadtgebiet in fremder Trägerschaft",
+  "Mission": " Bundes-, Landes- und Ortsrecht, Beschlüsse der politischen Gremien",
+  "Target": "Aufgabenträger, Betreiber und Nutzer",
+  "Objectives": " Sicherstellung und Verbesserung der Mobilität,,,,,",
+  "Services": " -Bau, Unterhaltung und Umbau der Anlagen des ÖPNV-Buswartehallen einschließlich Finanzierung,,"
+}

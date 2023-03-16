@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<head>
+  <title>Produkt</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<html>
+  <body>
+    <h1>Buswartehallen</h1>
+
+    <p>
+      Das Produkt -  Sicherstellung und Unterstützung eines ÖPNV-Betriebes auf Stadtgebiet in fremder Trägerschaft - wird in 2023
+    </p>
+
+    <h2 class="total-cashflow-expenses center">-24.000,00€</h2>
+
+    <p>
+      kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
+		Auflistung von Kostenstellen. Ganz am Ende dieser Seite findest du noch eine Beschreibung des Produkts.
+    </p>
+
+    <div class="container">
+      
+          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-10.000,00€</span></h3>
+
+          
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_aa7ee189_9eb9_4a8f_a652_f8dac1a7ef34"></canvas>
+              </div>
+            
+          
+      
+          <h3>- Investitionen kosten <span class="total-cashflow-expenses">-14.000,00€</span></h3>
+
+          
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 21.000,00€</h5>
+                <canvas id="chartjs_85649e66_d7eb_49fd_a9c1_f1ef85635979"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: -35.000,00€</h5>
+                <canvas id="chartjs_ae9efe73_6ac9_4c20_b65d_4127aa4efbab"></canvas>
+              </div>
+            </div>
+          
+      
+    </div>
+
+    <div class="info-sheet">
+      <h3>Aufgabe</h3>
+      <p> Bundes-, Landes- und Ortsrecht, Beschlüsse der politischen Gremien</p>
+
+      <h3>Zielgruppe</h3>
+      <p>Aufgabenträger, Betreiber und Nutzer</p>
+
+      <h3>Dienstleistungen</h3>
+      <p> -Bau, Unterhaltung und Umbau der Anlagen des ÖPNV-Buswartehallen einschließlich Finanzierung,,</p>
+
+      <h3>Klassifizierung</h3>
+      <ul>
+        <li>Fachbereich: Budget Bürgerservice</li>
+        <li>Produktklasse: Gestaltung der Umwelt</li>
+        <li>Produktbereich: Verkehrsflächen und -anlagen, ÖPNV</li>
+        <li>Produktgruppe: ÖPNV</li>
+        <li>Produkt: Buswartehallen</li>
+      </ul>
+
+      <table style="margin-top: 80px;">
+        <tbody>
+          <tr>
+            <th>Konto</th>
+            <th>Budget</th>
+            <th>oberhalb Wertgrenze</th>
+          </tr>
+
+          
+            <tr>
+              <td>Auszahlungen für Hochbaumaßnahmen</td>
+              <td>-35.000,00€</td>
+              <td>Bushaltestellen</td>
+            </tr>
+          
+            <tr>
+              <td>Bewirtschaftung der Grundstücke und baulichen Anlagen</td>
+              <td>-3.500,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Einz. a. Zuweisungen f. Investitionen u.Investitionsförderm. Gemeinden &amp; GV</td>
+              <td>21.000,00€</td>
+              <td>Bushaltestellen</td>
+            </tr>
+          
+            <tr>
+              <td>Unterhaltung der Grundstücke und baulichen Anlagen</td>
+              <td>-4.500,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Unterhaltung des sonstigen beweglichen Vermögens</td>
+              <td>-2.000,00€</td>
+              <td></td>
+            </tr>
+          
+        </tbody>
+      </table>
+    </div>
+
+    <div class="back-link center">
+      <a href="/4/department.html">Zurück zur Bereichsübersicht</a>
+    </div>
+
+    <p class="data-disclosure">
+      Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2022.
+			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
+			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
+			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
+    </p>
+
+    <footer>
+      <p>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Das Impression befindet sich <a href="/imprint.html">hier</a>.
+      </p>
+    </footer>
+
+    <script>
+      
+        
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_aa7ee189_9eb9_4a8f_a652_f8dac1a7ef34'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Unterhaltung der Grundstücke und baulichen Anlagen","Bewirtschaftung der Grundstücke und baulichen Anlagen","Unterhaltung des sonstigen beweglichen Vermögens"],
+              datasets: [{
+                label: 'Euro',
+                data: [-4500,-3500,-2000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
+      
+        
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_85649e66_d7eb_49fd_a9c1_f1ef85635979'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Einz. a. Zuweisungen f. Investitionen u.Investitionsförderm. Gemeinden \u0026 GV"],
+              datasets: [{
+                label: 'Euro',
+                data: [21000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_ae9efe73_6ac9_4c20_b65d_4127aa4efbab'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Auszahlungen für Hochbaumaßnahmen"],
+              datasets: [{
+                label: 'Euro',
+                data: [-35000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
+      
+    </script>
+  </body>
+</html>

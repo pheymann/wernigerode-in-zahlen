@@ -1,0 +1,101 @@
+{
+  "Balances": [
+    {
+      "Id": "1606",
+      "Class": "one-off",
+      "Desc": "Bushaltestellen",
+      "Budgets": {
+        "2020": -8615.13,
+        "2021": -5700,
+        "2022": -14000,
+        "2023": -14000,
+        "2024": -14000,
+        "2025": -14000
+      },
+      "Accounts": [
+        {
+          "Id": "10",
+          "Desc": "Einzahlungen aus Investitionszuwendungen",
+          "Budgets": {
+            "2020": 23831.22,
+            "2021": 24300,
+            "2022": 21000,
+            "2023": 21000,
+            "2024": 21000,
+            "2025": 21000
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "5.4.7.01/1606.6812000",
+                  "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsförderm. Gemeinden \u0026 GV",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 23831.22,
+                    "2021": 24300,
+                    "2022": 21000,
+                    "2023": 21000,
+                    "2024": 21000,
+                    "2025": 21000
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "50",
+          "Desc": " -Auszahlungen für Baumaßnahmen",
+          "Budgets": {
+            "2020": 32446.35,
+            "2021": 30000,
+            "2022": 35000,
+            "2023": 35000,
+            "2024": 35000,
+            "2025": 35000
+          },
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "5.4.7.01/1606.7851000",
+                  "Desc": "Auszahlungen für Hochbaumaßnahmen",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 32446.35,
+                    "2021": 30000,
+                    "2022": 35000,
+                    "2023": 35000,
+                    "2024": 35000,
+                    "2025": 35000
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "8888",
+      "Class": "one-off",
+      "Desc": "mittelfristige Maßnahmen",
+      "Budgets": {
+        "2020": 0,
+        "2021": 0,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "Accounts": null
+    }
+  ]
+}

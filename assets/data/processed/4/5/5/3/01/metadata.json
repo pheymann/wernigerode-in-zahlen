@@ -1,0 +1,33 @@
+{
+  "Department": {
+    "ID": "4",
+    "Name": "Budget Bürgerservice",
+    "Accountable": "Herr Dorff"
+  },
+  "ProductClass": {
+    "ID": "5",
+    "Name": "Gestaltung der Umwelt",
+    "Accountable": "Dezernent I"
+  },
+  "ProductDomain": {
+    "ID": "7",
+    "Name": "Wirtschaft und Tourismus",
+    "Responsible": "Frau Münzberg"
+  },
+  "ProductGroup": {
+    "ID": "3",
+    "Name": "Allg. Einrichtungen und Wirtschaftliche Unternehmen",
+    "Desc": "externes Produkt"
+  },
+  "Product": {
+    "ID": "01",
+    "Name": "Allgemeine Einrichtungen und Märkte",
+    "LegalRequirement": "Pflicht-und Freiwillige Aufgabe"
+  },
+  "SubProduct": null,
+  "Description": " Allgemeine Einrichtungen und Märkte",
+  "Mission": " Bundes-, Landes- und Ortsrecht, Satzungsrecht",
+  "Target": "Gewerbetreibende, EinwohnerInnen, Gäste",
+  "Objectives": " \"Versorgung der Bevölkerung, d.h. Herstellung eine leistungsfähigen Marktes\",,,,",
+  "Services": " Wochenmarkt -Planung und Marktorganisation -Marktaufsicht Allgemeine Einrichtungen -Litfasssäulen,"
+}

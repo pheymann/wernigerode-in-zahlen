@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<head>
+  <title>Produkt</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<html>
+  <body>
+    <h1>Parkplätze/Parkflächen</h1>
+
+    <p>
+      Das Produkt -  Planung, Bau und Unterhaltung von Parkplätzen - wird in 2023
+    </p>
+
+    <h2 class="total-cashflow-income center">699.200,00€</h2>
+
+    <p>
+      einbringen. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
+		Auflistung von Kostenstellen. Ganz am Ende dieser Seite findest du noch eine Beschreibung des Produkts.
+    </p>
+
+    <div class="container">
+      
+          <h3>- Die Verwaltung erwirtschaftet <span class="total-cashflow-income">719.200,00€</span></h3>
+
+          
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 800.000,00€</h5>
+                <canvas id="chartjs_0154b572_870d_41a4_96ca_42c9e4a77383"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: -80.800,00€</h5>
+                <canvas id="chartjs_79bcebdc_a54f_4dbd_bf5f_3012f6627251"></canvas>
+              </div>
+            </div>
+          
+      
+          <h3>- Investitionen kosten <span class="total-cashflow-expenses">-20.000,00€</span></h3>
+
+          
+            
+            
+          
+      
+    </div>
+
+    <div class="info-sheet">
+      <h3>Aufgabe</h3>
+      <p> Bundes-, Landes- und Ortsrecht; Ratsbeschlüsse</p>
+
+      <h3>Zielgruppe</h3>
+      <p>Alle Nutzer</p>
+
+      <h3>Dienstleistungen</h3>
+      <p> -Bau, Betrieb und Unterhaltung der öffentlichen Parkplätze und  -flächen an Gemeinde, Kreis,-Landes- und Bundesstraßen,-Aufstellen, Verwaltung und Abrechung von Parkautomaten/Parkuhren,,-Förderung von Maßnahmen und Einrichtungen Dritter</p>
+
+      <h3>Klassifizierung</h3>
+      <ul>
+        <li>Fachbereich: Budget Bürgerservice</li>
+        <li>Produktklasse: Gestaltung der Umwelt</li>
+        <li>Produktbereich: Verkehrsflächen und -anlagen, ÖPNV</li>
+        <li>Produktgruppe: Parkeinrichtungen</li>
+        <li>Produkt: Parkplätze/Parkflächen</li>
+      </ul>
+
+      <table style="margin-top: 80px;">
+        <tbody>
+          <tr>
+            <th>Konto</th>
+            <th>Budget</th>
+            <th>oberhalb Wertgrenze</th>
+          </tr>
+
+          
+            <tr>
+              <td>Auszahlungen für Mieten und Pachten</td>
+              <td>-2.900,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Auszahlungen für sonstige Baumaßnahmen</td>
+              <td>-20.000,00€</td>
+              <td>Parkscheinautomaten</td>
+            </tr>
+          
+            <tr>
+              <td>Auszahlungen für sonstige Dienstleistungen</td>
+              <td>-2.500,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Benutzungsgebühren und ähnliche Entgelte</td>
+              <td>800.000,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Bewirtschaftung der Grundstücke und baulichen Anlagen</td>
+              <td>-40.000,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Erwerb geringwertiger Vermögensgegenstände</td>
+              <td>-400,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Unterhaltung des sonstigen beweglichen Vermögens</td>
+              <td>-15.000,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Unterhaltung des sonstigen unbeweglichen Vermögens</td>
+              <td>-20.000,00€</td>
+              <td></td>
+            </tr>
+          
+        </tbody>
+      </table>
+    </div>
+
+    <div class="back-link center">
+      <a href="/4/department.html">Zurück zur Bereichsübersicht</a>
+    </div>
+
+    <p class="data-disclosure">
+      Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2022.
+			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
+			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
+			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
+    </p>
+
+    <footer>
+      <p>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Das Impression befindet sich <a href="/imprint.html">hier</a>.
+      </p>
+    </footer>
+
+    <script>
+      
+        
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_0154b572_870d_41a4_96ca_42c9e4a77383'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Benutzungsgebühren und ähnliche Entgelte"],
+              datasets: [{
+                label: 'Euro',
+                data: [800000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_79bcebdc_a54f_4dbd_bf5f_3012f6627251'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Unterhaltung des sonstigen unbeweglichen Vermögens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Auszahlungen für sonstige Dienstleistungen"],
+              datasets: [{
+                label: 'Euro',
+                data: [-20000,-2900,-40000,-400,-15000,-2500],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
+      
+        
+        
+      
+    </script>
+  </body>
+</html>

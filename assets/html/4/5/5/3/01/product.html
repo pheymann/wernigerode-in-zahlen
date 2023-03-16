@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<head>
+  <title>Produkt</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<html>
+  <body>
+    <h1>Allgemeine Einrichtungen und Märkte</h1>
+
+    <p>
+      Das Produkt -  Allgemeine Einrichtungen und Märkte - wird in 2023
+    </p>
+
+    <h2 class="total-cashflow-income center">23.400,00€</h2>
+
+    <p>
+      einbringen. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
+		Auflistung von Kostenstellen. Ganz am Ende dieser Seite findest du noch eine Beschreibung des Produkts.
+    </p>
+
+    <div class="container">
+      
+          <h3>- Die Verwaltung erwirtschaftet <span class="total-cashflow-income">23.400,00€</span></h3>
+
+          
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 32.500,00€</h5>
+                <canvas id="chartjs_b89a7925_d8e3_47a4_b818_e151ac55d5d2"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: -9.100,00€</h5>
+                <canvas id="chartjs_70c9fc3f_f23b_47bd_8606_e8a772504f1f"></canvas>
+              </div>
+            </div>
+          
+      
+    </div>
+
+    <div class="info-sheet">
+      <h3>Aufgabe</h3>
+      <p> Bundes-, Landes- und Ortsrecht, Satzungsrecht</p>
+
+      <h3>Zielgruppe</h3>
+      <p>Gewerbetreibende, EinwohnerInnen, Gäste</p>
+
+      <h3>Dienstleistungen</h3>
+      <p> Wochenmarkt -Planung und Marktorganisation -Marktaufsicht Allgemeine Einrichtungen -Litfasssäulen,</p>
+
+      <h3>Klassifizierung</h3>
+      <ul>
+        <li>Fachbereich: Budget Bürgerservice</li>
+        <li>Produktklasse: Gestaltung der Umwelt</li>
+        <li>Produktbereich: Wirtschaft und Tourismus</li>
+        <li>Produktgruppe: Allg. Einrichtungen und Wirtschaftliche Unternehmen</li>
+        <li>Produkt: Allgemeine Einrichtungen und Märkte</li>
+      </ul>
+
+      <table style="margin-top: 80px;">
+        <tbody>
+          <tr>
+            <th>Konto</th>
+            <th>Budget</th>
+            <th>oberhalb Wertgrenze</th>
+          </tr>
+
+          
+            <tr>
+              <td>Benutzungsgebühren und ähnliche Entgelte</td>
+              <td>22.500,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Einzahlungen aus Mieten und Pachten</td>
+              <td>10.000,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Erstatt. für die Auszahl. von Dritten aus lfd. Verwaltungstät. an übrige Ber.</td>
+              <td>-7.500,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Erwerb geringwertiger Vermögensgegenstände</td>
+              <td>-200,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Unterhaltung der Grundstücke und baulichen Anlagen</td>
+              <td>-1.200,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Unterhaltung des sonstigen beweglichen Vermögens</td>
+              <td>-200,00€</td>
+              <td></td>
+            </tr>
+          
+        </tbody>
+      </table>
+    </div>
+
+    <div class="back-link center">
+      <a href="/4/department.html">Zurück zur Bereichsübersicht</a>
+    </div>
+
+    <p class="data-disclosure">
+      Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2022.
+			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
+			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
+			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
+    </p>
+
+    <footer>
+      <p>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Das Impression befindet sich <a href="/imprint.html">hier</a>.
+      </p>
+    </footer>
+
+    <script>
+      
+        
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_b89a7925_d8e3_47a4_b818_e151ac55d5d2'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus Mieten und Pachten"],
+              datasets: [{
+                label: 'Euro',
+                data: [22500,10000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_70c9fc3f_f23b_47bd_8606_e8a772504f1f'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Unterhaltung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Erstatt. für die Auszahl. von Dritten aus lfd. Verwaltungstät. an übrige Ber."],
+              datasets: [{
+                label: 'Euro',
+                data: [-1200,-200,-200,-7500],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
+      
+    </script>
+  </body>
+</html>

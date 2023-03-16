@@ -1,0 +1,33 @@
+{
+  "Department": {
+    "ID": "4",
+    "Name": "Budget Bürgerservice",
+    "Accountable": "Herr Dorff"
+  },
+  "ProductClass": {
+    "ID": "4",
+    "Name": "Gesundheit und Sport",
+    "Accountable": "Dezernent I"
+  },
+  "ProductDomain": {
+    "ID": "2",
+    "Name": "Sportförderung",
+    "Responsible": "Herr Schult"
+  },
+  "ProductGroup": {
+    "ID": "4",
+    "Name": "Sportstätten und Bäder",
+    "Desc": "externes Produkt"
+  },
+  "Product": {
+    "ID": "02",
+    "Name": "Bäder",
+    "LegalRequirement": "Freiwillige Aufgabe"
+  },
+  "SubProduct": null,
+  "Description": " Betrieb und Unterhaltung der Bäder",
+  "Mission": " Beschlüsse der politischen Gremien",
+  "Target": "EinwohnerInnen, Vereine, Gäste",
+  "Objectives": " \"Förderung des Sports (Vereine), Sicherstellung des Schulschwimmunterrichts\",,,,",
+  "Services": " Sicherung des Schulsports, Vereinssport und individuellem Freizeitschwimmen in den Badeanlagen durch: -Bereitstellung der sächlichen und personellen Voraussetzung -Herstellen der allgemeinen, Rettungsfähigkeit - Wasseraufsicht -Kursangebote -Betreiben von Sauna, Solarium und Cafeteria -Kassendienst, Verkäufe von Kleinstartikeln -Unterhaltung der technischen Anlagen -Öffentlichkeitsarbeit, -Durchführung von eigenen Veranstaltungen -Rechnungslegungen gegenüber Dritten, Haushaltsrechtliche Bewirtschaftung,"
+}
