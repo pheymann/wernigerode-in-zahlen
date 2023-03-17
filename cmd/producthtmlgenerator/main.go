@@ -92,7 +92,7 @@ func main() {
 		*debugRootPath,
 	)
 
-	target := decodeTarget.Decode(financialPlanFile, "html")
+	target := decodeTarget.Decode(financialPlanFile, "../docs")
 	target.Name = "product"
 	target.Tpe = "html"
 

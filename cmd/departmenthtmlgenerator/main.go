@@ -103,7 +103,7 @@ func main() {
 
 	io.WriteFile(
 		model.TargetFile{
-			Path: "assets/html/" + *department + "/",
+			Path: "docs/" + *department + "/",
 			Name: "department",
 			Tpe:  "html",
 		},

@@ -40,7 +40,7 @@ func main() {
 
 	io.WriteFile(
 		model.TargetFile{
-			Path: "assets/html/",
+			Path: "docs/",
 			Name: "index",
 			Tpe:  "html",
 		},
