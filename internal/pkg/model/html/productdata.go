@@ -7,4 +7,5 @@ import (
 type ProductData struct {
 	FinancialPlan model.FinancialPlan
 	Metadata      model.Metadata
+	CashflowTotal float64
 }
