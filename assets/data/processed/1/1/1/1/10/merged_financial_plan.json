@@ -38,7 +38,7 @@
               },
               "Units": [
                 {
-                  "Id": "6421000",
+                  "Id": "1.1.1.10.6421000",
                   "Desc": "Einzahlungen aus dem Verkauf von beweglichen Sachen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -51,7 +51,7 @@
                   }
                 },
                 {
-                  "Id": "6422200",
+                  "Id": "1.1.1.10.6422200",
                   "Desc": "Einzahlungen aus dem Verkauf von geringwertigen Vermögensgegenständen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -64,7 +64,7 @@
                   }
                 },
                 {
-                  "Id": "6461000",
+                  "Id": "1.1.1.10.6461000",
                   "Desc": "Sonstige privatrechtliche Leistungsentgelte",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -77,7 +77,7 @@
                   }
                 },
                 {
-                  "Id": "6484000",
+                  "Id": "1.1.1.10.6484000",
                   "Desc": "Einzahlungen aus Kostenerstattungen von gesetzlichen Sozialversicherungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -90,7 +90,7 @@
                   }
                 },
                 {
-                  "Id": "6485000",
+                  "Id": "1.1.1.10.6485000",
                   "Desc": "Einzahl. aus Kostenerstattungen von verbund. Untern., Sondervermö. und Beteilig.",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -103,7 +103,7 @@
                   }
                 },
                 {
-                  "Id": "6488000",
+                  "Id": "1.1.1.10.6488000",
                   "Desc": "Einzahlungen aus Kostenerstattungen von übrigen Bereichen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -130,7 +130,7 @@
               },
               "Units": [
                 {
-                  "Id": "6651000",
+                  "Id": "1.1.1.10.6651000",
                   "Desc": "Einzahlungen von Gewinnanteilen aus verbundenen Unternehmen und Beteiligungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -171,7 +171,7 @@
               },
               "Units": [
                 {
-                  "Id": "7012000",
+                  "Id": "1.1.1.10.7012000",
                   "Desc": "Dienstauszahlungen und dgl. an Arbeitnehmer",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -184,7 +184,7 @@
                   }
                 },
                 {
-                  "Id": "7022000",
+                  "Id": "1.1.1.10.7022000",
                   "Desc": "Beiträge zu Versorgungskassen für Arbeitnehmer",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -197,7 +197,7 @@
                   }
                 },
                 {
-                  "Id": "7032000",
+                  "Id": "1.1.1.10.7032000",
                   "Desc": "Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -237,7 +237,7 @@
               },
               "Units": [
                 {
-                  "Id": "7231000",
+                  "Id": "1.1.1.10.7231000",
                   "Desc": "Auszahlungen für Mieten und Pachten",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -250,7 +250,7 @@
                   }
                 },
                 {
-                  "Id": "7231001",
+                  "Id": "1.1.1.10.7231001",
                   "Desc": "Auszahlungen für Mieten und Pachten EDV",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -263,7 +263,7 @@
                   }
                 },
                 {
-                  "Id": "7232000",
+                  "Id": "1.1.1.10.7232000",
                   "Desc": "Auszahlungen für Leasing",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -276,7 +276,7 @@
                   }
                 },
                 {
-                  "Id": "7232001",
+                  "Id": "1.1.1.10.7232001",
                   "Desc": "Auszahlungen für Leasing EDV",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -289,7 +289,7 @@
                   }
                 },
                 {
-                  "Id": "7251000",
+                  "Id": "1.1.1.10.7251000",
                   "Desc": "Haltung von Fahrzeugen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -302,7 +302,7 @@
                   }
                 },
                 {
-                  "Id": "7252000",
+                  "Id": "1.1.1.10.7252000",
                   "Desc": "Erwerb geringwertiger Vermögensgegenstände",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -315,7 +315,7 @@
                   }
                 },
                 {
-                  "Id": "7252001",
+                  "Id": "1.1.1.10.7252001",
                   "Desc": "Erwerb geringwertiger Vermögensgegenstände EDV",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -328,7 +328,7 @@
                   }
                 },
                 {
-                  "Id": "7255000",
+                  "Id": "1.1.1.10.7255000",
                   "Desc": "Unterhaltung des sonstigen beweglichen Vermögens",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -341,7 +341,7 @@
                   }
                 },
                 {
-                  "Id": "7255001",
+                  "Id": "1.1.1.10.7255001",
                   "Desc": "Unterhaltung des sonstigen beweglichen Vermögens EDV",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -354,7 +354,7 @@
                   }
                 },
                 {
-                  "Id": "7261000",
+                  "Id": "1.1.1.10.7261000",
                   "Desc": "Besondere zahlungswirksame Aufwendungen für Beschäftigte",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -367,7 +367,7 @@
                   }
                 },
                 {
-                  "Id": "7271000",
+                  "Id": "1.1.1.10.7271000",
                   "Desc": "Besondere Verwaltungs- und Betriebsauszahlungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -380,7 +380,7 @@
                   }
                 },
                 {
-                  "Id": "7281000",
+                  "Id": "1.1.1.10.7281000",
                   "Desc": "Auszahlungen für Getränke",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -393,7 +393,7 @@
                   }
                 },
                 {
-                  "Id": "7291000",
+                  "Id": "1.1.1.10.7291000",
                   "Desc": "Auszahlungen für sonstige Dienstleistungen (EDV)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -420,7 +420,7 @@
               },
               "Units": [
                 {
-                  "Id": "7411000",
+                  "Id": "1.1.1.10.7411000",
                   "Desc": "Sonstige Personal- und Versorgungsauszahlungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -433,7 +433,7 @@
                   }
                 },
                 {
-                  "Id": "7429000",
+                  "Id": "1.1.1.10.7429000",
                   "Desc": "Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -446,7 +446,7 @@
                   }
                 },
                 {
-                  "Id": "7431000",
+                  "Id": "1.1.1.10.7431000",
                   "Desc": "Geschäftsauszahlungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -459,7 +459,7 @@
                   }
                 },
                 {
-                  "Id": "7431001",
+                  "Id": "1.1.1.10.7431001",
                   "Desc": "Geschäftsauszahlungen EDV",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -485,7 +485,7 @@
                   }
                 },
                 {
-                  "Id": "7431400",
+                  "Id": "1.1.1.10.7431400",
                   "Desc": "Auszahlungen für Beitragsservice (GEZ)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -511,7 +511,7 @@
                   }
                 },
                 {
-                  "Id": "7482000",
+                  "Id": "1.1.1.10.7482000",
                   "Desc": "Besondere Auszahlungen Säumniszuschläge",
                   "AboveValueLimit": null,
                   "Budgets": {

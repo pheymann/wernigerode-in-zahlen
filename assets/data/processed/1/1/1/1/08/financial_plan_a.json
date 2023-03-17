@@ -51,7 +51,7 @@
               },
               "Units": [
                 {
-                  "Id": "7231000",
+                  "Id": "1.1.1.08.7231000",
                   "Desc": "Auszahlungen für Mieten und Pachten",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -78,7 +78,7 @@
               },
               "Units": [
                 {
-                  "Id": "7318000",
+                  "Id": "1.1.1.08.7318000",
                   "Desc": "Zuschüsse an übrige Bereiche",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -105,7 +105,7 @@
               },
               "Units": [
                 {
-                  "Id": "7421000",
+                  "Id": "1.1.1.08.7421000",
                   "Desc": "Auszahlungen für ehrenamtliche und sonstige Tätigkeit",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -118,7 +118,7 @@
                   }
                 },
                 {
-                  "Id": "7431200",
+                  "Id": "1.1.1.08.7431200",
                   "Desc": "Auszahlungen für Honorare",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -131,7 +131,7 @@
                   }
                 },
                 {
-                  "Id": "7492000",
+                  "Id": "1.1.1.08.7492000",
                   "Desc": "Fraktionszuwendungen",
                   "AboveValueLimit": null,
                   "Budgets": {

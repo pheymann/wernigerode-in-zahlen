@@ -51,7 +51,7 @@
               },
               "Units": [
                 {
-                  "Id": "7012000",
+                  "Id": "1.1.1.17.7012000",
                   "Desc": "Dienstauszahlungen und dgl. an Arbeitnehmer",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -64,7 +64,7 @@
                   }
                 },
                 {
-                  "Id": "7022000",
+                  "Id": "1.1.1.17.7022000",
                   "Desc": "Beiträge zu Versorgungskassen für Arbeitnehmer",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -77,7 +77,7 @@
                   }
                 },
                 {
-                  "Id": "7039000",
+                  "Id": "1.1.1.17.7039000",
                   "Desc": "Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschäft.",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -117,7 +117,7 @@
               },
               "Units": [
                 {
-                  "Id": "7318200",
+                  "Id": "1.1.1.17.7318200",
                   "Desc": "Zuschüsse übr.Ber.Schlossstift",
                   "AboveValueLimit": null,
                   "Budgets": {

@@ -38,7 +38,7 @@
               },
               "Units": [
                 {
-                  "Id": "6311000",
+                  "Id": "5.1.1.01.6311000",
                   "Desc": "Verwaltungsgebühren",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -65,7 +65,7 @@
               },
               "Units": [
                 {
-                  "Id": "6488000",
+                  "Id": "5.1.1.01.6488000",
                   "Desc": "Einzahlungen aus Kostenerstattungen von übrigen Bereichen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -106,7 +106,7 @@
               },
               "Units": [
                 {
-                  "Id": "7012000",
+                  "Id": "5.1.1.01.7012000",
                   "Desc": "Dienstauszahlungen und dgl. an Arbeitnehmer",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -119,7 +119,7 @@
                   }
                 },
                 {
-                  "Id": "7022000",
+                  "Id": "5.1.1.01.7022000",
                   "Desc": "Beiträge zu Versorgungskassen für Arbeitnehmer",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -132,7 +132,7 @@
                   }
                 },
                 {
-                  "Id": "7032000",
+                  "Id": "5.1.1.01.7032000",
                   "Desc": "Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -172,7 +172,7 @@
               },
               "Units": [
                 {
-                  "Id": "7231000",
+                  "Id": "5.1.1.01.7231000",
                   "Desc": "Auszahlungen für Mieten und Pachten",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -185,7 +185,7 @@
                   }
                 },
                 {
-                  "Id": "7251000",
+                  "Id": "5.1.1.01.7251000",
                   "Desc": "Haltung von Fahrzeugen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -198,7 +198,7 @@
                   }
                 },
                 {
-                  "Id": "7255000",
+                  "Id": "5.1.1.01.7255000",
                   "Desc": "Unterhaltung des sonstigen beweglichen Vermögens",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -211,7 +211,7 @@
                   }
                 },
                 {
-                  "Id": "7261000",
+                  "Id": "5.1.1.01.7261000",
                   "Desc": "Besondere zahlungswirksame Aufwendungen für Beschäftigte",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -224,7 +224,7 @@
                   }
                 },
                 {
-                  "Id": "7291000",
+                  "Id": "5.1.1.01.7291000",
                   "Desc": "Auszahlungen für sonstige Dienstleistungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -251,7 +251,7 @@
               },
               "Units": [
                 {
-                  "Id": "7411000",
+                  "Id": "5.1.1.01.7411000",
                   "Desc": "Sonstige Personal- und Versorgungsauszahlungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -264,7 +264,7 @@
                   }
                 },
                 {
-                  "Id": "7429000",
+                  "Id": "5.1.1.01.7429000",
                   "Desc": "Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -277,7 +277,7 @@
                   }
                 },
                 {
-                  "Id": "7431000",
+                  "Id": "5.1.1.01.7431000",
                   "Desc": "Geschäftsauszahlungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -303,7 +303,7 @@
                   }
                 },
                 {
-                  "Id": "7431300",
+                  "Id": "5.1.1.01.7431300",
                   "Desc": "Auszahlungen für Planungsleistungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -329,7 +329,7 @@
                   }
                 },
                 {
-                  "Id": "7441200",
+                  "Id": "5.1.1.01.7441200",
                   "Desc": "Abzugsfähige Vorsteuer 19%",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -356,7 +356,7 @@
               },
               "Units": [
                 {
-                  "Id": "7599000",
+                  "Id": "5.1.1.01.7599000",
                   "Desc": "Sonstige Finanzauszahlungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -427,19 +427,6 @@
           "Subs": null
         },
         {
-          "Id": "31",
-          "Desc": "Baumaßnahmen",
-          "Budgets": {
-            "2020": 194619.84,
-            "2021": 0,
-            "2022": 0,
-            "2023": 0,
-            "2024": 0,
-            "2025": 0
-          },
-          "Subs": null
-        },
-        {
           "Id": "33",
           "Desc": "Auszahlungen aus Investitionstätigkeit",
           "Budgets": {
@@ -452,9 +439,16 @@
           },
           "Subs": [
             {
-              "Id": "",
-              "Desc": "",
-              "Budgets": null,
+              "Id": "31",
+              "Desc": "Baumaßnahmen",
+              "Budgets": {
+                "2020": 194619.84,
+                "2021": 0,
+                "2022": 0,
+                "2023": 0,
+                "2024": 0,
+                "2025": 0
+              },
               "Units": [
                 {
                   "Id": "5.1.1.01/1410.7851000",

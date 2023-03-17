@@ -38,7 +38,7 @@
               },
               "Units": [
                 {
-                  "Id": "6511000",
+                  "Id": "5.3.2.01.6511000",
                   "Desc": "Konzessionsabgaben",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -79,7 +79,7 @@
               },
               "Units": [
                 {
-                  "Id": "7455000",
+                  "Id": "5.3.2.01.7455000",
                   "Desc": "Erstatt. f.d. Ausz. v. Dritten a. lfd VerwTät. an verb. Unt., Sondverm.\u0026 Beteil.",
                   "AboveValueLimit": null,
                   "Budgets": {

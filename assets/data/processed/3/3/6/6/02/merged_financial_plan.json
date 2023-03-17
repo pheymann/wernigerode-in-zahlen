@@ -51,7 +51,7 @@
               },
               "Units": [
                 {
-                  "Id": "7221000",
+                  "Id": "3.6.6.02.7221000",
                   "Desc": "Unterhaltung des sonstigen unbeweglichen Vermögens",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -64,7 +64,7 @@
                   }
                 },
                 {
-                  "Id": "7231000",
+                  "Id": "3.6.6.02.7231000",
                   "Desc": "Auszahlungen für Mieten und Pachten",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -77,7 +77,7 @@
                   }
                 },
                 {
-                  "Id": "7241000",
+                  "Id": "3.6.6.02.7241000",
                   "Desc": "Bewirtschaftung der Grundstücke und baulichen Anlagen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -90,7 +90,7 @@
                   }
                 },
                 {
-                  "Id": "7252000",
+                  "Id": "3.6.6.02.7252000",
                   "Desc": "Erwerb geringwertiger Vermögensgegenstände",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -103,7 +103,7 @@
                   }
                 },
                 {
-                  "Id": "7255000",
+                  "Id": "3.6.6.02.7255000",
                   "Desc": "Unterhaltung des sonstigen beweglichen Vermögens",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -130,7 +130,7 @@
               },
               "Units": [
                 {
-                  "Id": "7431000",
+                  "Id": "3.6.6.02.7431000",
                   "Desc": "Geschäftsauszahlungen",
                   "AboveValueLimit": null,
                   "Budgets": {

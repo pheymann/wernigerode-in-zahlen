@@ -51,7 +51,7 @@
               },
               "Units": [
                 {
-                  "Id": "7211000",
+                  "Id": "5.4.7.01.7211000",
                   "Desc": "Unterhaltung der Grundstücke und baulichen Anlagen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -64,7 +64,7 @@
                   }
                 },
                 {
-                  "Id": "7241000",
+                  "Id": "5.4.7.01.7241000",
                   "Desc": "Bewirtschaftung der Grundstücke und baulichen Anlagen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -77,7 +77,7 @@
                   }
                 },
                 {
-                  "Id": "7255000",
+                  "Id": "5.4.7.01.7255000",
                   "Desc": "Unterhaltung des sonstigen beweglichen Vermögens",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -176,19 +176,6 @@
           "Subs": null
         },
         {
-          "Id": "31",
-          "Desc": "Baumaßnahmen",
-          "Budgets": {
-            "2020": 32446.35,
-            "2021": 30000,
-            "2022": 35000,
-            "2023": 35000,
-            "2024": 35000,
-            "2025": 35000
-          },
-          "Subs": null
-        },
-        {
           "Id": "33",
           "Desc": "Auszahlungen aus Investitionstätigkeit",
           "Budgets": {
@@ -201,9 +188,16 @@
           },
           "Subs": [
             {
-              "Id": "",
-              "Desc": "",
-              "Budgets": null,
+              "Id": "31",
+              "Desc": "Baumaßnahmen",
+              "Budgets": {
+                "2020": 32446.35,
+                "2021": 30000,
+                "2022": 35000,
+                "2023": 35000,
+                "2024": 35000,
+                "2025": 35000
+              },
               "Units": [
                 {
                   "Id": "5.4.7.01/1606.7851000",

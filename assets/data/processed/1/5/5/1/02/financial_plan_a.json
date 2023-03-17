@@ -38,7 +38,7 @@
               },
               "Units": [
                 {
-                  "Id": "6521200",
+                  "Id": "5.5.1.02.6521200",
                   "Desc": "Einnahmen Mehrwertsteuer 19%",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -51,7 +51,7 @@
                   }
                 },
                 {
-                  "Id": "6521300",
+                  "Id": "5.5.1.02.6521300",
                   "Desc": "Erstattungen Vorsteuer",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -119,7 +119,7 @@
               },
               "Units": [
                 {
-                  "Id": "7441300",
+                  "Id": "5.5.1.02.7441300",
                   "Desc": "Abführung Mehrwertsteuer",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -218,19 +218,6 @@
           "Subs": null
         },
         {
-          "Id": "31",
-          "Desc": "Baumaßnahmen",
-          "Budgets": {
-            "2020": 0,
-            "2021": 987700,
-            "2022": 50000,
-            "2023": 0,
-            "2024": 0,
-            "2025": 0
-          },
-          "Subs": null
-        },
-        {
           "Id": "33",
           "Desc": "Auszahlungen aus Investitionstätigkeit",
           "Budgets": {
@@ -243,9 +230,16 @@
           },
           "Subs": [
             {
-              "Id": "",
-              "Desc": "",
-              "Budgets": null,
+              "Id": "31",
+              "Desc": "Baumaßnahmen",
+              "Budgets": {
+                "2020": 0,
+                "2021": 987700,
+                "2022": 50000,
+                "2023": 0,
+                "2024": 0,
+                "2025": 0
+              },
               "Units": [
                 {
                   "Id": "5.5.1.02/1615.7851000",

@@ -38,7 +38,7 @@
               },
               "Units": [
                 {
-                  "Id": "6311000",
+                  "Id": "5.4.6.01.6311000",
                   "Desc": "Verwaltungsgebühren",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -51,7 +51,7 @@
                   }
                 },
                 {
-                  "Id": "6321000",
+                  "Id": "5.4.6.01.6321000",
                   "Desc": "Benutzungsgebühren und ähnliche Entgelte",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -78,7 +78,7 @@
               },
               "Units": [
                 {
-                  "Id": "6411000",
+                  "Id": "5.4.6.01.6411000",
                   "Desc": "Einzahlungen aus Mieten und Pachten",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -119,7 +119,7 @@
               },
               "Units": [
                 {
-                  "Id": "7221000",
+                  "Id": "5.4.6.01.7221000",
                   "Desc": "Unterhaltung des sonstigen unbeweglichen Vermögens",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -132,7 +132,7 @@
                   }
                 },
                 {
-                  "Id": "7231000",
+                  "Id": "5.4.6.01.7231000",
                   "Desc": "Auszahlungen für Mieten und Pachten",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -145,7 +145,7 @@
                   }
                 },
                 {
-                  "Id": "7241000",
+                  "Id": "5.4.6.01.7241000",
                   "Desc": "Bewirtschaftung der Grundstücke und baulichen Anlagen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -158,7 +158,7 @@
                   }
                 },
                 {
-                  "Id": "7252000",
+                  "Id": "5.4.6.01.7252000",
                   "Desc": "Erwerb geringwertiger Vermögensgegenstände",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -171,7 +171,7 @@
                   }
                 },
                 {
-                  "Id": "7255000",
+                  "Id": "5.4.6.01.7255000",
                   "Desc": "Unterhaltung des sonstigen beweglichen Vermögens",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -184,7 +184,7 @@
                   }
                 },
                 {
-                  "Id": "7291000",
+                  "Id": "5.4.6.01.7291000",
                   "Desc": "Auszahlungen für sonstige Dienstleistungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -282,19 +282,6 @@
           "Subs": null
         },
         {
-          "Id": "31",
-          "Desc": "Baumaßnahmen",
-          "Budgets": {
-            "2020": -105.79,
-            "2021": -25000,
-            "2022": -20000,
-            "2023": -20000,
-            "2024": -20000,
-            "2025": -20000
-          },
-          "Subs": null
-        },
-        {
           "Id": "33",
           "Desc": "Auszahlungen aus Investitionstätigkeit",
           "Budgets": {
@@ -307,9 +294,16 @@
           },
           "Subs": [
             {
-              "Id": "",
-              "Desc": "",
-              "Budgets": null,
+              "Id": "31",
+              "Desc": "Baumaßnahmen",
+              "Budgets": {
+                "2020": -105.79,
+                "2021": -25000,
+                "2022": -20000,
+                "2023": -20000,
+                "2024": -20000,
+                "2025": -20000
+              },
               "Units": [
                 {
                   "Id": "5.4.6.01/5002.7853000",

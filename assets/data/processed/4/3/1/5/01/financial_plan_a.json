@@ -343,7 +343,7 @@
               },
               "Units": [
                 {
-                  "Id": "7318000",
+                  "Id": "3.1.5.01.7318000",
                   "Desc": "Zuschüsse an übrige Bereiche",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -370,7 +370,7 @@
               },
               "Units": [
                 {
-                  "Id": "7411000",
+                  "Id": "3.1.5.01.7411000",
                   "Desc": "Sonstige Personal- und Versorgungsauszahlungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -383,7 +383,7 @@
                   }
                 },
                 {
-                  "Id": "7421000",
+                  "Id": "3.1.5.01.7421000",
                   "Desc": "Auszahlungen für ehrenamtliche und sonstige Tätigkeit",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -396,7 +396,7 @@
                   }
                 },
                 {
-                  "Id": "7431000",
+                  "Id": "3.1.5.01.7431000",
                   "Desc": "Geschäftsauszahlungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -409,7 +409,7 @@
                   }
                 },
                 {
-                  "Id": "7431400",
+                  "Id": "3.1.5.01.7431400",
                   "Desc": "Auszahlungen für Beitragsservice (GEZ)",
                   "AboveValueLimit": null,
                   "Budgets": {

@@ -38,7 +38,7 @@
               },
               "Units": [
                 {
-                  "Id": "6140011",
+                  "Id": "1.1.1.01.6140011",
                   "Desc": "Zuweisungen für laufende Zwecke vom Bund",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -65,7 +65,7 @@
               },
               "Units": [
                 {
-                  "Id": "6321000",
+                  "Id": "1.1.1.01.6321000",
                   "Desc": "Benutzungsgebühren und ähnliche Entgelte",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -92,7 +92,7 @@
               },
               "Units": [
                 {
-                  "Id": "6461000",
+                  "Id": "1.1.1.01.6461000",
                   "Desc": "Sonstige privatrechtliche Leistungsentgelte",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -133,7 +133,7 @@
               },
               "Units": [
                 {
-                  "Id": "7011000",
+                  "Id": "1.1.1.01.7011000",
                   "Desc": "Dienstauszahlungen und dgl. an Beamte",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -146,7 +146,7 @@
                   }
                 },
                 {
-                  "Id": "7012000",
+                  "Id": "1.1.1.01.7012000",
                   "Desc": "Dienstauszahlungen und dgl. an Arbeitnehmer",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -159,7 +159,7 @@
                   }
                 },
                 {
-                  "Id": "7021000",
+                  "Id": "1.1.1.01.7021000",
                   "Desc": "Beiträge zu Versorgungskassen für Beamte",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -172,7 +172,7 @@
                   }
                 },
                 {
-                  "Id": "7022000",
+                  "Id": "1.1.1.01.7022000",
                   "Desc": "Beiträge zu Versorgungskassen für Arbeitnehmer",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -185,7 +185,7 @@
                   }
                 },
                 {
-                  "Id": "7032000",
+                  "Id": "1.1.1.01.7032000",
                   "Desc": "Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -225,7 +225,7 @@
               },
               "Units": [
                 {
-                  "Id": "7231000",
+                  "Id": "1.1.1.01.7231000",
                   "Desc": "Auszahlungen für Mieten und Pachten",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -238,7 +238,7 @@
                   }
                 },
                 {
-                  "Id": "7271000",
+                  "Id": "1.1.1.01.7271000",
                   "Desc": "Besondere Verwaltungs- und Betriebsauszahlungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -251,7 +251,7 @@
                   }
                 },
                 {
-                  "Id": "7271400",
+                  "Id": "1.1.1.01.7271400",
                   "Desc": "Auszahlungen aus Kleinprojektefonds",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -264,7 +264,7 @@
                   }
                 },
                 {
-                  "Id": "7291000",
+                  "Id": "1.1.1.01.7291000",
                   "Desc": "Auszahlungen für sonstige Dienstleistungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -291,7 +291,7 @@
               },
               "Units": [
                 {
-                  "Id": "7411000",
+                  "Id": "1.1.1.01.7411000",
                   "Desc": "Sonstige Personal- und Versorgungsauszahlungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -304,7 +304,7 @@
                   }
                 },
                 {
-                  "Id": "7431000",
+                  "Id": "1.1.1.01.7431000",
                   "Desc": "Geschäftsauszahlungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -317,7 +317,7 @@
                   }
                 },
                 {
-                  "Id": "7491000",
+                  "Id": "1.1.1.01.7491000",
                   "Desc": "Verfügungsmittel",
                   "AboveValueLimit": null,
                   "Budgets": {

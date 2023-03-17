@@ -51,7 +51,7 @@
               },
               "Units": [
                 {
-                  "Id": "7012000",
+                  "Id": "1.1.1.16.7012000",
                   "Desc": "Dienstauszahlungen und dgl. an Arbeitnehmer",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -64,7 +64,7 @@
                   }
                 },
                 {
-                  "Id": "7022000",
+                  "Id": "1.1.1.16.7022000",
                   "Desc": "Beiträge zu Versorgungskassen für Arbeitnehmer",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -77,7 +77,7 @@
                   }
                 },
                 {
-                  "Id": "7032000",
+                  "Id": "1.1.1.16.7032000",
                   "Desc": "Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -117,7 +117,7 @@
               },
               "Units": [
                 {
-                  "Id": "7318000",
+                  "Id": "1.1.1.16.7318000",
                   "Desc": "Zuschüsse an übrige Bereiche",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -144,7 +144,7 @@
               },
               "Units": [
                 {
-                  "Id": "7431000",
+                  "Id": "1.1.1.16.7431000",
                   "Desc": "Geschäftsauszahlungen",
                   "AboveValueLimit": null,
                   "Budgets": {

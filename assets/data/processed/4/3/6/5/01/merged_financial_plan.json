@@ -38,7 +38,7 @@
               },
               "Units": [
                 {
-                  "Id": "6148000",
+                  "Id": "3.6.5.01.6148000",
                   "Desc": "Zuschüsse für laufende Zwecke von übrigen Bereichen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -65,7 +65,7 @@
               },
               "Units": [
                 {
-                  "Id": "6321000",
+                  "Id": "3.6.5.01.6321000",
                   "Desc": "Benutzungsgebühren und ähnliche Entgelte",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -92,7 +92,7 @@
               },
               "Units": [
                 {
-                  "Id": "6482000",
+                  "Id": "3.6.5.01.6482000",
                   "Desc": "Einzahlungen aus Kostenerstattungen von Gemeinden und Gemeindeverbänden",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -133,7 +133,7 @@
               },
               "Units": [
                 {
-                  "Id": "7318000",
+                  "Id": "3.6.5.01.7318000",
                   "Desc": "Zuschüsse an übrige Bereiche (freie Träger)",
                   "AboveValueLimit": null,
                   "Budgets": {

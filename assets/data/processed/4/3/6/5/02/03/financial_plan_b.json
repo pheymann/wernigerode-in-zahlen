@@ -26,17 +26,24 @@
           },
           "Subs": [
             {
-              "Id": "3",
-              "Desc": ".6.5.02.03/0100.6817000 Einz. a. Zuschüssen f. Investitionen u.Invest.fördermaßnahmen priv.Unternehmen",
-              "Budgets": {
-                "2020": 200,
-                "2021": 0,
-                "2022": 0,
-                "2023": 0,
-                "2024": 0,
-                "2025": 0
-              },
-              "Units": null
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "3.6.5.02.03",
+                  "Desc": "/0100.6817000 Einz. a. Zuschüssen f. Investitionen u.Invest.fördermaßnahmen priv.Unternehmen",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 200,
+                    "2021": 0,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                }
+              ]
             }
           ]
         },
@@ -53,17 +60,24 @@
           },
           "Subs": [
             {
-              "Id": "3",
-              "Desc": ".6.5.02.03/0100.7832000 Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.",
-              "Budgets": {
-                "2020": 3709.46,
-                "2021": 0,
-                "2022": 0,
-                "2023": 0,
-                "2024": 3600,
-                "2025": 2000
-              },
-              "Units": null
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "3.6.5.02.03",
+                  "Desc": "/0100.7832000 Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 3709.46,
+                    "2021": 0,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 3600,
+                    "2025": 2000
+                  }
+                }
+              ]
             }
           ]
         }
@@ -95,17 +109,24 @@
           },
           "Subs": [
             {
-              "Id": "3",
-              "Desc": ".6.5.02.03/0200.7831000 Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.",
-              "Budgets": {
-                "2020": 19230.9,
-                "2021": 0,
-                "2022": 2200,
-                "2023": 2900,
-                "2024": 1400,
-                "2025": 2500
-              },
-              "Units": null
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "3.6.5.02.03",
+                  "Desc": "/0200.7831000 Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 19230.9,
+                    "2021": 0,
+                    "2022": 2200,
+                    "2023": 2900,
+                    "2024": 1400,
+                    "2025": 2500
+                  }
+                }
+              ]
             }
           ]
         }
@@ -151,17 +172,24 @@
           },
           "Subs": [
             {
-              "Id": "3",
-              "Desc": ".6.5.02.03/1416.7851000 Auszahlungen für Hochbaumaßnahmen",
-              "Budgets": {
-                "2020": 24119.3,
-                "2021": 0,
-                "2022": 0,
-                "2023": 0,
-                "2024": 0,
-                "2025": 0
-              },
-              "Units": null
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "3.6.5.02.03",
+                  "Desc": "/1416.7851000 Auszahlungen für Hochbaumaßnahmen",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 24119.3,
+                    "2021": 0,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                }
+              ]
             }
           ]
         }

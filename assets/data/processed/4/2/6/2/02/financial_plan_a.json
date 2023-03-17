@@ -38,7 +38,7 @@
               },
               "Units": [
                 {
-                  "Id": "6141000",
+                  "Id": "2.6.2.02.6141000",
                   "Desc": "Zuweisungen für laufende Zwecke vom Land",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -51,7 +51,7 @@
                   }
                 },
                 {
-                  "Id": "6147000",
+                  "Id": "2.6.2.02.6147000",
                   "Desc": "Zuschüsse für laufende Zwecke von privaten Unternehmen (Spenden)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -64,7 +64,7 @@
                   }
                 },
                 {
-                  "Id": "6148000",
+                  "Id": "2.6.2.02.6148000",
                   "Desc": "Zuschüsse für laufende Zwecke von übrigen Bereichen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -91,7 +91,7 @@
               },
               "Units": [
                 {
-                  "Id": "6321000",
+                  "Id": "2.6.2.02.6321000",
                   "Desc": "Benutzungsgebühren und ähnliche Entgelte",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -118,7 +118,7 @@
               },
               "Units": [
                 {
-                  "Id": "6421000",
+                  "Id": "2.6.2.02.6421000",
                   "Desc": "Einzahlungen aus dem Verkauf von Vorräten",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -145,7 +145,7 @@
               },
               "Units": [
                 {
-                  "Id": "6521100",
+                  "Id": "2.6.2.02.6521100",
                   "Desc": "Einnahmen Mehrwertsteuer 7%",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -158,7 +158,7 @@
                   }
                 },
                 {
-                  "Id": "6521105",
+                  "Id": "2.6.2.02.6521105",
                   "Desc": "Einnahmen Mehrwertsteuer 5%",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -171,7 +171,7 @@
                   }
                 },
                 {
-                  "Id": "6521300",
+                  "Id": "2.6.2.02.6521300",
                   "Desc": "Erstattungen Vorsteuer",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -212,7 +212,7 @@
               },
               "Units": [
                 {
-                  "Id": "7231000",
+                  "Id": "2.6.2.02.7231000",
                   "Desc": "Auszahlungen für Mieten und Pachten",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -225,7 +225,7 @@
                   }
                 },
                 {
-                  "Id": "7255000",
+                  "Id": "2.6.2.02.7255000",
                   "Desc": "Unterhaltung des sonstigen beweglichen Vermögens",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -238,7 +238,7 @@
                   }
                 },
                 {
-                  "Id": "7271000",
+                  "Id": "2.6.2.02.7271000",
                   "Desc": "Besondere Verwaltungs- und Betriebsauszahlungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -265,7 +265,7 @@
               },
               "Units": [
                 {
-                  "Id": "7441200",
+                  "Id": "2.6.2.02.7441200",
                   "Desc": "Abzugsfähige Vorsteuer 19%",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -278,7 +278,7 @@
                   }
                 },
                 {
-                  "Id": "7441216",
+                  "Id": "2.6.2.02.7441216",
                   "Desc": "Abzugsfähige Vorsteuer 16%",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -291,7 +291,7 @@
                   }
                 },
                 {
-                  "Id": "7441300",
+                  "Id": "2.6.2.02.7441300",
                   "Desc": "Abführung Mehrwertsteuer",
                   "AboveValueLimit": null,
                   "Budgets": {

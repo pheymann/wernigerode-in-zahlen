@@ -38,7 +38,7 @@
               },
               "Units": [
                 {
-                  "Id": "6141000",
+                  "Id": "5.1.1.02.6141000",
                   "Desc": "Zuweisungen für laufende Zwecke vom Land (Aktive Stadt-undOrtsteilzentren)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -51,7 +51,7 @@
                   }
                 },
                 {
-                  "Id": "6141300",
+                  "Id": "5.1.1.02.6141300",
                   "Desc": "Zuweisungen für lfd. Zwecke vom Land (Stadtumbau Ost-Rückbau)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -78,7 +78,7 @@
               },
               "Units": [
                 {
-                  "Id": "6311000",
+                  "Id": "5.1.1.02.6311000",
                   "Desc": "Verwaltungsgebühren",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -105,7 +105,7 @@
               },
               "Units": [
                 {
-                  "Id": "6481000",
+                  "Id": "5.1.1.02.6481000",
                   "Desc": "Einzahlungen aus Kostenerstattungen vom Land",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -146,7 +146,7 @@
               },
               "Units": [
                 {
-                  "Id": "7011000",
+                  "Id": "5.1.1.02.7011000",
                   "Desc": "Dienstauszahlungen und dgl. an Beamte",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -159,7 +159,7 @@
                   }
                 },
                 {
-                  "Id": "7012000",
+                  "Id": "5.1.1.02.7012000",
                   "Desc": "Dienstauszahlungen und dgl. an Arbeitnehmer",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -172,7 +172,7 @@
                   }
                 },
                 {
-                  "Id": "7021000",
+                  "Id": "5.1.1.02.7021000",
                   "Desc": "Beiträge zu Versorgungskassen für Beamte",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -185,7 +185,7 @@
                   }
                 },
                 {
-                  "Id": "7022000",
+                  "Id": "5.1.1.02.7022000",
                   "Desc": "Beiträge zu Versorgungskassen für Arbeitnehmer",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -198,7 +198,7 @@
                   }
                 },
                 {
-                  "Id": "7032000",
+                  "Id": "5.1.1.02.7032000",
                   "Desc": "Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -238,7 +238,7 @@
               },
               "Units": [
                 {
-                  "Id": "7211000",
+                  "Id": "5.1.1.02.7211000",
                   "Desc": "Unterhaltung der Grundstücke und baulichen Anlagen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -251,7 +251,7 @@
                   }
                 },
                 {
-                  "Id": "7211100",
+                  "Id": "5.1.1.02.7211100",
                   "Desc": "Unterhaltung der Grundstücke und baulichen Anlagen-Stadtumbau Ost",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -264,7 +264,7 @@
                   }
                 },
                 {
-                  "Id": "7221000",
+                  "Id": "5.1.1.02.7221000",
                   "Desc": "Unterhaltung des sonstigen unbeweglichen Vermögens",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -277,7 +277,7 @@
                   }
                 },
                 {
-                  "Id": "7261000",
+                  "Id": "5.1.1.02.7261000",
                   "Desc": "Besondere zahlungswirksame Aufwendungen für Beschäftigte",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -290,7 +290,7 @@
                   }
                 },
                 {
-                  "Id": "7271000",
+                  "Id": "5.1.1.02.7271000",
                   "Desc": "Besondere Verwaltungs- und Betriebsauszahlungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -317,7 +317,7 @@
               },
               "Units": [
                 {
-                  "Id": "7318000",
+                  "Id": "5.1.1.02.7318000",
                   "Desc": "Zuschüsse an übrige Bereiche (Aktive Stadt-und Ortsteilzentren)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -330,7 +330,7 @@
                   }
                 },
                 {
-                  "Id": "7318100",
+                  "Id": "5.1.1.02.7318100",
                   "Desc": "Zuschüsse an übrige Bereiche (Stadtumbau Ost Aufwertung Altstadt)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -343,7 +343,7 @@
                   }
                 },
                 {
-                  "Id": "7318300",
+                  "Id": "5.1.1.02.7318300",
                   "Desc": "Zuschüsse an übrige Bereiche Stadtumbau-Ost Rückbau",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -370,7 +370,7 @@
               },
               "Units": [
                 {
-                  "Id": "7411000",
+                  "Id": "5.1.1.02.7411000",
                   "Desc": "Sonstige Personal- und Versorgungsauszahlungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -383,7 +383,7 @@
                   }
                 },
                 {
-                  "Id": "7431000",
+                  "Id": "5.1.1.02.7431000",
                   "Desc": "Geschäftsauszahlungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -409,7 +409,7 @@
                   }
                 },
                 {
-                  "Id": "7431300",
+                  "Id": "5.1.1.02.7431300",
                   "Desc": "Auszahlungen für Planungsleistungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -436,7 +436,7 @@
               },
               "Units": [
                 {
-                  "Id": "7599000",
+                  "Id": "5.1.1.02.7599000",
                   "Desc": "Sonstige Finanzauszahlungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -627,19 +627,6 @@
           "Subs": null
         },
         {
-          "Id": "31",
-          "Desc": "Baumaßnahmen",
-          "Budgets": {
-            "2020": -593550.59,
-            "2021": -651000,
-            "2022": -1376000,
-            "2023": -339000,
-            "2024": -0,
-            "2025": -0
-          },
-          "Subs": null
-        },
-        {
           "Id": "33",
           "Desc": "Auszahlungen aus Investitionstätigkeit",
           "Budgets": {
@@ -652,9 +639,16 @@
           },
           "Subs": [
             {
-              "Id": "",
-              "Desc": "",
-              "Budgets": null,
+              "Id": "31",
+              "Desc": "Baumaßnahmen",
+              "Budgets": {
+                "2020": -593550.59,
+                "2021": -651000,
+                "2022": -1376000,
+                "2023": -339000,
+                "2024": -0,
+                "2025": -0
+              },
               "Units": [
                 {
                   "Id": "5.1.1.02/1425.7851000",

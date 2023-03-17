@@ -15,7 +15,7 @@
       "Accounts": [
         {
           "Id": "40",
-          "Desc": "- Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen 3.6.5.02.16/0100.7832000       Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150 bis 1000 € o. UStr.",
+          "Desc": "- Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen",
           "Budgets": {
             "2020": 0,
             "2021": 0,
@@ -24,7 +24,28 @@
             "2024": 1600,
             "2025": 1600
           },
-          "Subs": null
+          "Subs": [
+            {
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "3.6.5.02.16",
+                  "Desc": "/0100.7832000       Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150 bis 1000 € o. UStr.",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 0,
+                    "2022": 2500,
+                    "2023": 2600,
+                    "2024": 1600,
+                    "2025": 1600
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     },

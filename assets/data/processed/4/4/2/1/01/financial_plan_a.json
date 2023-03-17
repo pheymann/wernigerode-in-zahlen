@@ -38,7 +38,7 @@
               },
               "Units": [
                 {
-                  "Id": "6488000",
+                  "Id": "4.2.1.01.6488000",
                   "Desc": "Einzahlungen aus Kostenerstattungen von übrigen Bereichen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -79,7 +79,7 @@
               },
               "Units": [
                 {
-                  "Id": "7211014",
+                  "Id": "4.2.1.01.7211014",
                   "Desc": "Unterhaltung der Grundstücke und baulichen Anlagen-Gebäudemanagement",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -106,7 +106,7 @@
               },
               "Units": [
                 {
-                  "Id": "7318000",
+                  "Id": "4.2.1.01.7318000",
                   "Desc": "Zuschüsse an übrige Bereiche",
                   "AboveValueLimit": null,
                   "Budgets": {

@@ -38,7 +38,7 @@
               },
               "Units": [
                 {
-                  "Id": "6321000",
+                  "Id": "5.7.3.01.6321000",
                   "Desc": "Benutzungsgebühren und ähnliche Entgelte",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -65,7 +65,7 @@
               },
               "Units": [
                 {
-                  "Id": "6411000",
+                  "Id": "5.7.3.01.6411000",
                   "Desc": "Einzahlungen aus Mieten und Pachten",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -106,7 +106,7 @@
               },
               "Units": [
                 {
-                  "Id": "7211000",
+                  "Id": "5.7.3.01.7211000",
                   "Desc": "Unterhaltung der Grundstücke und baulichen Anlagen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -119,7 +119,7 @@
                   }
                 },
                 {
-                  "Id": "7252000",
+                  "Id": "5.7.3.01.7252000",
                   "Desc": "Erwerb geringwertiger Vermögensgegenstände",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -132,7 +132,7 @@
                   }
                 },
                 {
-                  "Id": "7255000",
+                  "Id": "5.7.3.01.7255000",
                   "Desc": "Unterhaltung des sonstigen beweglichen Vermögens",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -159,7 +159,7 @@
               },
               "Units": [
                 {
-                  "Id": "7458000",
+                  "Id": "5.7.3.01.7458000",
                   "Desc": "Erstatt. für die Auszahl. von Dritten aus lfd. Verwaltungstät. an übrige Ber.",
                   "AboveValueLimit": null,
                   "Budgets": {

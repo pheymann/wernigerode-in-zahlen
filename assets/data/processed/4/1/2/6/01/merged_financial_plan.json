@@ -396,7 +396,7 @@
               },
               "Units": [
                 {
-                  "Id": "7411000",
+                  "Id": "1.2.6.01.7411000",
                   "Desc": "Sonstige Personal- und Versorgungsauszahlungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -409,7 +409,7 @@
                   }
                 },
                 {
-                  "Id": "7421000",
+                  "Id": "1.2.6.01.7421000",
                   "Desc": "Auszahlungen für ehrenamtliche und sonstige Tätigkeit",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -422,7 +422,7 @@
                   }
                 },
                 {
-                  "Id": "7429000",
+                  "Id": "1.2.6.01.7429000",
                   "Desc": "Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -435,7 +435,7 @@
                   }
                 },
                 {
-                  "Id": "7431000",
+                  "Id": "1.2.6.01.7431000",
                   "Desc": "Geschäftsauszahlungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -461,7 +461,7 @@
                   }
                 },
                 {
-                  "Id": "7431400",
+                  "Id": "1.2.6.01.7431400",
                   "Desc": "Auszahlungen für Beitragsservice (GEZ)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -487,7 +487,7 @@
                   }
                 },
                 {
-                  "Id": "7452000",
+                  "Id": "1.2.6.01.7452000",
                   "Desc": "Erstatt. f.d. Ausz. v. Dritten aus lfd. Verwaltungstätigkeit an Gemeinde\u0026 GV",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -500,7 +500,7 @@
                   }
                 },
                 {
-                  "Id": "7482000",
+                  "Id": "1.2.6.01.7482000",
                   "Desc": "Besondere Auszahlungen Säumniszuschläge",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -620,15 +620,15 @@
           "Subs": null
         },
         {
-          "Id": "31",
-          "Desc": "Baumaßnahmen",
+          "Id": "33",
+          "Desc": "Auszahlungen aus Investitionstätigkeit",
           "Budgets": {
-            "2020": -1199693.73,
-            "2021": -300000,
-            "2022": -60000,
-            "2023": -100000,
-            "2024": -0,
-            "2025": -0
+            "2020": -1706154.74,
+            "2021": -614900,
+            "2022": -492000,
+            "2023": -1193000,
+            "2024": -1107000,
+            "2025": -434000
           },
           "Subs": [
             {
@@ -729,25 +729,18 @@
                   }
                 }
               ]
-            }
-          ]
-        },
-        {
-          "Id": "33",
-          "Desc": "Auszahlungen aus Investitionstätigkeit",
-          "Budgets": {
-            "2020": -1706154.74,
-            "2021": -614900,
-            "2022": -492000,
-            "2023": -1193000,
-            "2024": -1107000,
-            "2025": -434000
-          },
-          "Subs": [
+            },
             {
-              "Id": "",
-              "Desc": "",
-              "Budgets": null,
+              "Id": "31",
+              "Desc": "Baumaßnahmen",
+              "Budgets": {
+                "2020": -1199693.73,
+                "2021": -300000,
+                "2022": -60000,
+                "2023": -100000,
+                "2024": -0,
+                "2025": -0
+              },
               "Units": [
                 {
                   "Id": "1.2.6.01/1604.7851000",

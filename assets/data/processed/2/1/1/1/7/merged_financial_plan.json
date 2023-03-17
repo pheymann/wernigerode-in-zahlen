@@ -38,7 +38,7 @@
               },
               "Units": [
                 {
-                  "Id": "6311000",
+                  "Id": "1.1.1.07.6311000",
                   "Desc": "Verwaltungsgebühren",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -65,7 +65,7 @@
               },
               "Units": [
                 {
-                  "Id": "6486000",
+                  "Id": "1.1.1.07.6486000",
                   "Desc": "Einzahlungen aus Kostenerstattungen von sonstigen öffentlichen Sonderrechnungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -92,7 +92,7 @@
               },
               "Units": [
                 {
-                  "Id": "6521000",
+                  "Id": "1.1.1.07.6521000",
                   "Desc": "Erstattungen von Steuern",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -105,7 +105,7 @@
                   }
                 },
                 {
-                  "Id": "6562000",
+                  "Id": "1.1.1.07.6562000",
                   "Desc": "Säumniszuschläge",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -118,7 +118,7 @@
                   }
                 },
                 {
-                  "Id": "6591000",
+                  "Id": "1.1.1.07.6591000",
                   "Desc": "Andere sonstige Einzahlungen aus laufender Verwaltungstätigkeit",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -159,7 +159,7 @@
               },
               "Units": [
                 {
-                  "Id": "7011000",
+                  "Id": "1.1.1.07.7011000",
                   "Desc": "Dienstauszahlungen und dgl. an Beamte",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -172,7 +172,7 @@
                   }
                 },
                 {
-                  "Id": "7012000",
+                  "Id": "1.1.1.07.7012000",
                   "Desc": "Dienstauszahlungen und dgl. an Arbeitnehmer",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -185,7 +185,7 @@
                   }
                 },
                 {
-                  "Id": "7021000",
+                  "Id": "1.1.1.07.7021000",
                   "Desc": "Beiträge zu Versorgungskassen für Beamte",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -198,7 +198,7 @@
                   }
                 },
                 {
-                  "Id": "7022000",
+                  "Id": "1.1.1.07.7022000",
                   "Desc": "Beiträge zu Versorgungskassen für Arbeitnehmer",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -211,7 +211,7 @@
                   }
                 },
                 {
-                  "Id": "7032000",
+                  "Id": "1.1.1.07.7032000",
                   "Desc": "Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -251,7 +251,7 @@
               },
               "Units": [
                 {
-                  "Id": "7291000",
+                  "Id": "1.1.1.07.7291000",
                   "Desc": "Auszahlungen für sonstige Dienstleistungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -278,7 +278,7 @@
               },
               "Units": [
                 {
-                  "Id": "7411000",
+                  "Id": "1.1.1.07.7411000",
                   "Desc": "Sonstige Personal- und Versorgungsauszahlungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -291,7 +291,7 @@
                   }
                 },
                 {
-                  "Id": "7429000",
+                  "Id": "1.1.1.07.7429000",
                   "Desc": "Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -317,7 +317,7 @@
                   }
                 },
                 {
-                  "Id": "7431200",
+                  "Id": "1.1.1.07.7431200",
                   "Desc": "Auszahlungen für Honorare",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -330,7 +330,7 @@
                   }
                 },
                 {
-                  "Id": "7482000",
+                  "Id": "1.1.1.07.7482000",
                   "Desc": "Besondere Auszahlungen Säumniszuschläge",
                   "AboveValueLimit": null,
                   "Budgets": {

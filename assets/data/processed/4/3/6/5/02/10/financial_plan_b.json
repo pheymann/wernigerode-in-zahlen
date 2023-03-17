@@ -26,17 +26,24 @@
           },
           "Subs": [
             {
-              "Id": "3",
-              "Desc": ".6.5.02.10/0100.7832000 Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.",
-              "Budgets": {
-                "2020": 2676.21,
-                "2021": 10000,
-                "2022": 11300,
-                "2023": 11400,
-                "2024": 10000,
-                "2025": 11200
-              },
-              "Units": null
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "3.6.5.02.10",
+                  "Desc": "/0100.7832000 Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 2676.21,
+                    "2021": 10000,
+                    "2022": 11300,
+                    "2023": 11400,
+                    "2024": 10000,
+                    "2025": 11200
+                  }
+                }
+              ]
             }
           ]
         }
@@ -68,17 +75,24 @@
           },
           "Subs": [
             {
-              "Id": "3",
-              "Desc": ".6.5.02.10/0200.7831000 Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.",
-              "Budgets": {
-                "2020": 0,
-                "2021": 30000,
-                "2022": 30000,
-                "2023": 30000,
-                "2024": 32500,
-                "2025": 30000
-              },
-              "Units": null
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "3.6.5.02.10",
+                  "Desc": "/0200.7831000 Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 30000,
+                    "2022": 30000,
+                    "2023": 30000,
+                    "2024": 32500,
+                    "2025": 30000
+                  }
+                }
+              ]
             }
           ]
         }

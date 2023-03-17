@@ -38,7 +38,7 @@
               },
               "Units": [
                 {
-                  "Id": "6141000",
+                  "Id": "5.6.1.01.6141000",
                   "Desc": "Zuweisungen für laufende Zwecke vom Land",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -51,7 +51,7 @@
                   }
                 },
                 {
-                  "Id": "6147000",
+                  "Id": "5.6.1.01.6147000",
                   "Desc": "Zuschüsse für laufende Zwecke von privaten Unternehmen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -64,7 +64,7 @@
                   }
                 },
                 {
-                  "Id": "6148000",
+                  "Id": "5.6.1.01.6148000",
                   "Desc": "Zuschüsse für laufende Zwecke von übrigen Bereichen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -105,7 +105,7 @@
               },
               "Units": [
                 {
-                  "Id": "7252000",
+                  "Id": "5.6.1.01.7252000",
                   "Desc": "Erwerb geringwertiger Vermögensgegenstände",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -118,7 +118,7 @@
                   }
                 },
                 {
-                  "Id": "7271000",
+                  "Id": "5.6.1.01.7271000",
                   "Desc": "Besondere Verwaltungs- und Betriebsauszahlungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -145,7 +145,7 @@
               },
               "Units": [
                 {
-                  "Id": "7318000",
+                  "Id": "5.6.1.01.7318000",
                   "Desc": "Zuschüsse an übrige Bereiche",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -172,7 +172,7 @@
               },
               "Units": [
                 {
-                  "Id": "7429000",
+                  "Id": "5.6.1.01.7429000",
                   "Desc": "Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -185,7 +185,7 @@
                   }
                 },
                 {
-                  "Id": "7431200",
+                  "Id": "5.6.1.01.7431200",
                   "Desc": "Auszahlungen für Honorare",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -256,19 +256,6 @@
           "Subs": null
         },
         {
-          "Id": "31",
-          "Desc": "Baumaßnahmen",
-          "Budgets": {
-            "2020": 26803.7,
-            "2021": 15000,
-            "2022": 0,
-            "2023": 0,
-            "2024": 0,
-            "2025": 0
-          },
-          "Subs": null
-        },
-        {
           "Id": "33",
           "Desc": "Auszahlungen aus Investitionstätigkeit",
           "Budgets": {
@@ -281,9 +268,16 @@
           },
           "Subs": [
             {
-              "Id": "",
-              "Desc": "",
-              "Budgets": null,
+              "Id": "31",
+              "Desc": "Baumaßnahmen",
+              "Budgets": {
+                "2020": 26803.7,
+                "2021": 15000,
+                "2022": 0,
+                "2023": 0,
+                "2024": 0,
+                "2025": 0
+              },
               "Units": [
                 {
                   "Id": "5.6.1.01/3006.7851000",

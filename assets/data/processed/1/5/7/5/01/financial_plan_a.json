@@ -65,7 +65,7 @@
               },
               "Units": [
                 {
-                  "Id": "6361000",
+                  "Id": "5.7.5.01.6361000",
                   "Desc": "Zweckgebundene Abgaben (Kurbeitrag)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -92,7 +92,7 @@
               },
               "Units": [
                 {
-                  "Id": "6521100",
+                  "Id": "5.7.5.01.6521100",
                   "Desc": "Einnahmen Mehrwertsteuer 7%",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -105,7 +105,7 @@
                   }
                 },
                 {
-                  "Id": "6521105",
+                  "Id": "5.7.5.01.6521105",
                   "Desc": "Einnahmen Mehrwertsteuer 5%",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -118,7 +118,7 @@
                   }
                 },
                 {
-                  "Id": "6521200",
+                  "Id": "5.7.5.01.6521200",
                   "Desc": "Einnahmen Mehrwertsteuer 19%",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -131,7 +131,7 @@
                   }
                 },
                 {
-                  "Id": "6521300",
+                  "Id": "5.7.5.01.6521300",
                   "Desc": "Erstattungen Vorsteuer",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -172,7 +172,7 @@
               },
               "Units": [
                 {
-                  "Id": "7316000",
+                  "Id": "5.7.5.01.7316000",
                   "Desc": "Zuschüsse an sonstige öffentliche Sonderrechnungen (HSB)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -185,7 +185,7 @@
                   }
                 },
                 {
-                  "Id": "7316100",
+                  "Id": "5.7.5.01.7316100",
                   "Desc": "Zusch. öff. SondRechn. HSB",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -198,7 +198,7 @@
                   }
                 },
                 {
-                  "Id": "7316200",
+                  "Id": "5.7.5.01.7316200",
                   "Desc": "Zusch. öff.SondRechn. HSB Kurb",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -225,7 +225,7 @@
               },
               "Units": [
                 {
-                  "Id": "7441200",
+                  "Id": "5.7.5.01.7441200",
                   "Desc": "Abzugsfähige Vorsteuer 19%",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -238,7 +238,7 @@
                   }
                 },
                 {
-                  "Id": "7441216",
+                  "Id": "5.7.5.01.7441216",
                   "Desc": "Abzugsfähige Vorsteuer 16%",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -251,7 +251,7 @@
                   }
                 },
                 {
-                  "Id": "7441300",
+                  "Id": "5.7.5.01.7441300",
                   "Desc": "Abführung Mehrwertsteuer",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -264,7 +264,7 @@
                   }
                 },
                 {
-                  "Id": "7455000",
+                  "Id": "5.7.5.01.7455000",
                   "Desc": "Erstatt. f.d. Ausz. v. Dritte a. lfd VerwTät. an verb. Unternehmen (Kurbeitrag)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -277,7 +277,7 @@
                   }
                 },
                 {
-                  "Id": "7455001",
+                  "Id": "5.7.5.01.7455001",
                   "Desc": "Einbehalt für Entgelt WTG",
                   "AboveValueLimit": null,
                   "Budgets": {

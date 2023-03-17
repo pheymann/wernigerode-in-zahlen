@@ -26,17 +26,24 @@
           },
           "Subs": [
             {
-              "Id": "3",
-              "Desc": ".6.5.02.12/0100.7832000 Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.",
-              "Budgets": {
-                "2020": 500,
-                "2021": 0,
-                "2022": 0,
-                "2023": 0,
-                "2024": 0,
-                "2025": 0
-              },
-              "Units": null
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "3.6.5.02.12",
+                  "Desc": "/0100.7832000 Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 500,
+                    "2021": 0,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                }
+              ]
             }
           ]
         }
@@ -68,17 +75,24 @@
           },
           "Subs": [
             {
-              "Id": "3",
-              "Desc": ".6.5.02.12/0200.6817000 Einz. a. Zuschüssen f. Investitionen u.Invest.fördermaßnahmen priv.Unternehmen",
-              "Budgets": {
-                "2020": 50,
-                "2021": 0,
-                "2022": 0,
-                "2023": 0,
-                "2024": 0,
-                "2025": 0
-              },
-              "Units": null
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "3.6.5.02.12",
+                  "Desc": "/0200.6817000 Einz. a. Zuschüssen f. Investitionen u.Invest.fördermaßnahmen priv.Unternehmen",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 50,
+                    "2021": 0,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                }
+              ]
             }
           ]
         },
@@ -95,17 +109,24 @@
           },
           "Subs": [
             {
-              "Id": "3",
-              "Desc": ".6.5.02.12/0200.7831000 Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.",
-              "Budgets": {
-                "2020": 0,
-                "2021": 0,
-                "2022": 15000,
-                "2023": 15000,
-                "2024": 0,
-                "2025": 3200
-              },
-              "Units": null
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "3.6.5.02.12",
+                  "Desc": "/0200.7831000 Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 0,
+                    "2022": 15000,
+                    "2023": 15000,
+                    "2024": 0,
+                    "2025": 3200
+                  }
+                }
+              ]
             }
           ]
         }
@@ -151,17 +172,24 @@
           },
           "Subs": [
             {
-              "Id": "3",
-              "Desc": ".6.5.02.12/1423.6812000 Einz. a. Zuweisungen f. Investitionen u.Investitionsförderm. Gemeinden \u0026 GV",
-              "Budgets": {
-                "2020": 0,
-                "2021": 0,
-                "2022": 248400,
-                "2023": 0,
-                "2024": 0,
-                "2025": 0
-              },
-              "Units": null
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "3.6.5.02.12",
+                  "Desc": "/1423.6812000 Einz. a. Zuweisungen f. Investitionen u.Investitionsförderm. Gemeinden \u0026 GV",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 0,
+                    "2022": 248400,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                }
+              ]
             }
           ]
         },
@@ -178,17 +206,24 @@
           },
           "Subs": [
             {
-              "Id": "3",
-              "Desc": ".6.5.02.12/1423.7851000 Auszahlungen für Hochbaumaßnahmen",
-              "Budgets": {
-                "2020": 0,
-                "2021": 50000,
-                "2022": 440000,
-                "2023": 0,
-                "2024": 0,
-                "2025": 0
-              },
-              "Units": null
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "3.6.5.02.12",
+                  "Desc": "/1423.7851000 Auszahlungen für Hochbaumaßnahmen",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 0,
+                    "2021": 50000,
+                    "2022": 440000,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                }
+              ]
             }
           ]
         }

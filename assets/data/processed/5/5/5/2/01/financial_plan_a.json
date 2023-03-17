@@ -38,7 +38,7 @@
               },
               "Units": [
                 {
-                  "Id": "6321000",
+                  "Id": "5.5.2.01.6321000",
                   "Desc": "Benutzungsgebühren und ähnliche Entgelte",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -65,7 +65,7 @@
               },
               "Units": [
                 {
-                  "Id": "6481000",
+                  "Id": "5.5.2.01.6481000",
                   "Desc": "Einzahlungen aus Kostenerstattungen vom Land (Kriegsgräber)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -78,7 +78,7 @@
                   }
                 },
                 {
-                  "Id": "6487000",
+                  "Id": "5.5.2.01.6487000",
                   "Desc": "Einzahlungen aus Kostenerstattungen von privaten Unternehmen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -119,7 +119,7 @@
               },
               "Units": [
                 {
-                  "Id": "7221000",
+                  "Id": "5.5.2.01.7221000",
                   "Desc": "Unterhaltung des sonstigen unbeweglichen Vermögens",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -132,7 +132,7 @@
                   }
                 },
                 {
-                  "Id": "7221200",
+                  "Id": "5.5.2.01.7221200",
                   "Desc": "Unterhaltung des sonstigen unbeweglichen Vermögens (D I/68)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -145,7 +145,7 @@
                   }
                 },
                 {
-                  "Id": "7251000",
+                  "Id": "5.5.2.01.7251000",
                   "Desc": "Haltung von Fahrzeugen (Wasserwehr)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -158,7 +158,7 @@
                   }
                 },
                 {
-                  "Id": "7252000",
+                  "Id": "5.5.2.01.7252000",
                   "Desc": "Erwerb geringwertiger Vermögensgegenstände (Wasserwehr)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -171,7 +171,7 @@
                   }
                 },
                 {
-                  "Id": "7255000",
+                  "Id": "5.5.2.01.7255000",
                   "Desc": "Unterhaltung des sonstigen beweglichen Vermögens",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -184,7 +184,7 @@
                   }
                 },
                 {
-                  "Id": "7261000",
+                  "Id": "5.5.2.01.7261000",
                   "Desc": "Besondere Aufwendungen für Beschäftigte (Wasserwehr)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -211,7 +211,7 @@
               },
               "Units": [
                 {
-                  "Id": "7311000",
+                  "Id": "5.5.2.01.7311000",
                   "Desc": "Zuweisungen an das Land",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -224,7 +224,7 @@
                   }
                 },
                 {
-                  "Id": "7313000",
+                  "Id": "5.5.2.01.7313000",
                   "Desc": "Zuweisungen an Zweckverbände",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -251,7 +251,7 @@
               },
               "Units": [
                 {
-                  "Id": "7421000",
+                  "Id": "5.5.2.01.7421000",
                   "Desc": "Aufwendungen für ehrenamtliche und sonstige Tätigkeit  (Wasserwehr)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -441,11 +441,11 @@
           "Subs": null
         },
         {
-          "Id": "31",
-          "Desc": "Baumaßnahmen",
+          "Id": "33",
+          "Desc": "Auszahlungen aus Investitionstätigkeit",
           "Budgets": {
-            "2020": 218334.4,
-            "2021": 173900,
+            "2020": 220712.4,
+            "2021": 212200,
             "2022": 729000,
             "2023": 1871000,
             "2024": 130000,
@@ -491,25 +491,18 @@
                   }
                 }
               ]
-            }
-          ]
-        },
-        {
-          "Id": "33",
-          "Desc": "Auszahlungen aus Investitionstätigkeit",
-          "Budgets": {
-            "2020": 220712.4,
-            "2021": 212200,
-            "2022": 729000,
-            "2023": 1871000,
-            "2024": 130000,
-            "2025": 650000
-          },
-          "Subs": [
+            },
             {
-              "Id": "",
-              "Desc": "",
-              "Budgets": null,
+              "Id": "31",
+              "Desc": "Baumaßnahmen",
+              "Budgets": {
+                "2020": 218334.4,
+                "2021": 173900,
+                "2022": 729000,
+                "2023": 1871000,
+                "2024": 130000,
+                "2025": 650000
+              },
               "Units": [
                 {
                   "Id": "5.5.2.01/3602.7852000",

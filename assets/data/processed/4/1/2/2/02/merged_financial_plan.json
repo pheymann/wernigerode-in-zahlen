@@ -38,7 +38,7 @@
               },
               "Units": [
                 {
-                  "Id": "6311000",
+                  "Id": "1.2.2.02.6311000",
                   "Desc": "Verwaltungsgebühren",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -65,7 +65,7 @@
               },
               "Units": [
                 {
-                  "Id": "6483000",
+                  "Id": "1.2.2.02.6483000",
                   "Desc": "Einzahlungen aus Kostenerstattungen von Zweckverbänden",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -92,7 +92,7 @@
               },
               "Units": [
                 {
-                  "Id": "6561000",
+                  "Id": "1.2.2.02.6561000",
                   "Desc": "Bußgelder",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -133,7 +133,7 @@
               },
               "Units": [
                 {
-                  "Id": "7012000",
+                  "Id": "1.2.2.02.7012000",
                   "Desc": "Dienstauszahlungen und dgl. an Arbeitnehmer",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -146,7 +146,7 @@
                   }
                 },
                 {
-                  "Id": "7022000",
+                  "Id": "1.2.2.02.7022000",
                   "Desc": "Beiträge zu Versorgungskassen für Arbeitnehmer",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -159,7 +159,7 @@
                   }
                 },
                 {
-                  "Id": "7032000",
+                  "Id": "1.2.2.02.7032000",
                   "Desc": "Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -199,7 +199,7 @@
               },
               "Units": [
                 {
-                  "Id": "7271000",
+                  "Id": "1.2.2.02.7271000",
                   "Desc": "Besondere Verwaltungs- und Betriebsauszahlungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -226,7 +226,7 @@
               },
               "Units": [
                 {
-                  "Id": "7318000",
+                  "Id": "1.2.2.02.7318000",
                   "Desc": "Zuschüsse an übrige Bereiche",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -253,7 +253,7 @@
               },
               "Units": [
                 {
-                  "Id": "7411000",
+                  "Id": "1.2.2.02.7411000",
                   "Desc": "Sonstige Personal- und Versorgungsauszahlungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -266,7 +266,7 @@
                   }
                 },
                 {
-                  "Id": "7431000",
+                  "Id": "1.2.2.02.7431000",
                   "Desc": "Geschäftsauszahlungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -279,7 +279,7 @@
                   }
                 },
                 {
-                  "Id": "7450001",
+                  "Id": "1.2.2.02.7450001",
                   "Desc": "Erstattungen für die Auszahl. von Dritten aus lfd. Verwaltungstät. an den Bund",
                   "AboveValueLimit": null,
                   "Budgets": {

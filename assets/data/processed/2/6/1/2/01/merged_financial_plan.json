@@ -38,7 +38,7 @@
               },
               "Units": [
                 {
-                  "Id": "6617000",
+                  "Id": "6.1.2.01.6617000",
                   "Desc": "Zinseinzahlungen von Kreditinstituten",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -79,7 +79,7 @@
               },
               "Units": [
                 {
-                  "Id": "7012000",
+                  "Id": "6.1.2.01.7012000",
                   "Desc": "Dienstauszahlungen und dgl. an Arbeitnehmer (Leistungszulage)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -106,7 +106,7 @@
               },
               "Units": [
                 {
-                  "Id": "7515001",
+                  "Id": "6.1.2.01.7515001",
                   "Desc": "ZinsAusz a.GWW f.Franckeschule",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -119,7 +119,7 @@
                   }
                 },
                 {
-                  "Id": "7517000",
+                  "Id": "6.1.2.01.7517000",
                   "Desc": "Zinsauszahlungen an Kreditinstitute",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -132,7 +132,7 @@
                   }
                 },
                 {
-                  "Id": "7517301",
+                  "Id": "6.1.2.01.7517301",
                   "Desc": "Zinsauszahlungen an Kreditinstitute 1 (Darl.-Nr. 6694901613 HSK)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -145,7 +145,7 @@
                   }
                 },
                 {
-                  "Id": "7517302",
+                  "Id": "6.1.2.01.7517302",
                   "Desc": "Zinsauszahlungen an Kreditinstitute 2 (Darl.-Nr. 6644900664 HSK)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -158,7 +158,7 @@
                   }
                 },
                 {
-                  "Id": "7517303",
+                  "Id": "6.1.2.01.7517303",
                   "Desc": "Zinsauszahlungen an Kreditinstitute 3 (Darl.-Nr. 6674900450 HSK)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -171,7 +171,7 @@
                   }
                 },
                 {
-                  "Id": "7517304",
+                  "Id": "6.1.2.01.7517304",
                   "Desc": "Zinsauszahlungen an Kreditinstitute 4 (Darl.-Nr. 0001327 KfWB)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -184,7 +184,7 @@
                   }
                 },
                 {
-                  "Id": "7517306",
+                  "Id": "6.1.2.01.7517306",
                   "Desc": "Zinsauszahlungen an Kreditinstitute 6 (Darl.-Nr. 0200735300 Westf.Landsch.KB)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -197,7 +197,7 @@
                   }
                 },
                 {
-                  "Id": "7517307",
+                  "Id": "6.1.2.01.7517307",
                   "Desc": "Zinsauszahlungen an Kreditinstitute 7 (Darl.-Nr. 7820169 KfWB)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -210,7 +210,7 @@
                   }
                 },
                 {
-                  "Id": "7517308",
+                  "Id": "6.1.2.01.7517308",
                   "Desc": "Zinsauszahlungen an Kreditinstitute 8 (Darl.-Nr. 6700246447 DKB)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -223,7 +223,7 @@
                   }
                 },
                 {
-                  "Id": "7517309",
+                  "Id": "6.1.2.01.7517309",
                   "Desc": "Zinsauszahlungen an Kreditinstitute 9 (Darl.-Nr. 33442380 KfWB)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -236,7 +236,7 @@
                   }
                 },
                 {
-                  "Id": "7517313",
+                  "Id": "6.1.2.01.7517313",
                   "Desc": "Zinsauszahlungen an Kreditinstitute 13 (Darl.-Nr. 016317012 Debeka Bauspk)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -249,7 +249,7 @@
                   }
                 },
                 {
-                  "Id": "7517314",
+                  "Id": "6.1.2.01.7517314",
                   "Desc": "Zinsauszahlungen an Kreditinstitute 14 (Darl.-Nr. 6700272484 DKB)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -262,7 +262,7 @@
                   }
                 },
                 {
-                  "Id": "7517315",
+                  "Id": "6.1.2.01.7517315",
                   "Desc": "Zinsauszahlungen an Kreditinstitute 15 (Darl.-Nr. 6260189654 HSK)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -275,7 +275,7 @@
                   }
                 },
                 {
-                  "Id": "7517316",
+                  "Id": "6.1.2.01.7517316",
                   "Desc": "Zinsauszahlungen an Kreditinstitute 16 (Darl.Nr.07555840-20 Commerzbank)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -288,7 +288,7 @@
                   }
                 },
                 {
-                  "Id": "7517317",
+                  "Id": "6.1.2.01.7517317",
                   "Desc": "Zinsauszahlungen an Kreditinstitute 17 (6702554533 DKB)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -301,7 +301,7 @@
                   }
                 },
                 {
-                  "Id": "7517318",
+                  "Id": "6.1.2.01.7517318",
                   "Desc": "ZinsAufwDarl.6705346614 DKB 18",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -314,7 +314,7 @@
                   }
                 },
                 {
-                  "Id": "7517999",
+                  "Id": "6.1.2.01.7517999",
                   "Desc": "Zinsauszahlungen an Kreditinstitute für Kassenkredite",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -327,7 +327,7 @@
                   }
                 },
                 {
-                  "Id": "7594000",
+                  "Id": "6.1.2.01.7594000",
                   "Desc": "Auszahlungen für Negativzinsen",
                   "AboveValueLimit": null,
                   "Budgets": {

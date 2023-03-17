@@ -51,7 +51,7 @@
               },
               "Units": [
                 {
-                  "Id": "7011000",
+                  "Id": "1.1.1.05.7011000",
                   "Desc": "Dienstauszahlungen und dgl. an Beamte",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -64,7 +64,7 @@
                   }
                 },
                 {
-                  "Id": "7021000",
+                  "Id": "1.1.1.05.7021000",
                   "Desc": "Beiträge zu Versorgungskassen für Beamte",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -91,7 +91,7 @@
               },
               "Units": [
                 {
-                  "Id": "7261000",
+                  "Id": "1.1.1.05.7261000",
                   "Desc": "Besondere zahlungswirksame Aufwendungen für Beschäftigte",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -104,7 +104,7 @@
                   }
                 },
                 {
-                  "Id": "7271000",
+                  "Id": "1.1.1.05.7271000",
                   "Desc": "Besondere Verwaltungs- und Betriebsauszahlungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -131,7 +131,7 @@
               },
               "Units": [
                 {
-                  "Id": "7411000",
+                  "Id": "1.1.1.05.7411000",
                   "Desc": "Sonstige Personal- und Versorgungsauszahlungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -144,7 +144,7 @@
                   }
                 },
                 {
-                  "Id": "7431000",
+                  "Id": "1.1.1.05.7431000",
                   "Desc": "Geschäftsauszahlungen",
                   "AboveValueLimit": null,
                   "Budgets": {

@@ -38,7 +38,7 @@
               },
               "Units": [
                 {
-                  "Id": "6141000",
+                  "Id": "3.1.5.06.6141000",
                   "Desc": "Zuweisungen für laufende Zwecke vom Land",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -65,7 +65,7 @@
               },
               "Units": [
                 {
-                  "Id": "6321000",
+                  "Id": "3.1.5.06.6321000",
                   "Desc": "Benutzungsgebühren und ähnliche Entgelte",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -92,7 +92,7 @@
               },
               "Units": [
                 {
-                  "Id": "6482000",
+                  "Id": "3.1.5.06.6482000",
                   "Desc": "Einzahlungen aus Kostenerstattungen von Gemeinden und Gemeindeverbänden",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -105,7 +105,7 @@
                   }
                 },
                 {
-                  "Id": "6486000",
+                  "Id": "3.1.5.06.6486000",
                   "Desc": "Einzahlungen aus Kostenerstattungen von sonstigen öffentlichen Sonderrechnungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -146,7 +146,7 @@
               },
               "Units": [
                 {
-                  "Id": "7012000",
+                  "Id": "3.1.5.06.7012000",
                   "Desc": "Dienstauszahlungen und dgl. an Arbeitnehmer",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -159,7 +159,7 @@
                   }
                 },
                 {
-                  "Id": "7022000",
+                  "Id": "3.1.5.06.7022000",
                   "Desc": "Beiträge zu Versorgungskassen für Arbeitnehmer",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -172,7 +172,7 @@
                   }
                 },
                 {
-                  "Id": "7032000",
+                  "Id": "3.1.5.06.7032000",
                   "Desc": "Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -212,7 +212,7 @@
               },
               "Units": [
                 {
-                  "Id": "7211014",
+                  "Id": "3.1.5.06.7211014",
                   "Desc": "Unterhaltung der Grundstücke und baulichen Anlagen-Gebäudemanagement",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -225,7 +225,7 @@
                   }
                 },
                 {
-                  "Id": "7241000",
+                  "Id": "3.1.5.06.7241000",
                   "Desc": "Bewirtschaftung der Grundstücke und baulichen Anlagen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -238,7 +238,7 @@
                   }
                 },
                 {
-                  "Id": "7252000",
+                  "Id": "3.1.5.06.7252000",
                   "Desc": "Erwerb geringwertiger Vermögensgegenstände",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -251,7 +251,7 @@
                   }
                 },
                 {
-                  "Id": "7255000",
+                  "Id": "3.1.5.06.7255000",
                   "Desc": "Unterhaltung des sonstigen beweglichen Vermögens",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -264,7 +264,7 @@
                   }
                 },
                 {
-                  "Id": "7271000",
+                  "Id": "3.1.5.06.7271000",
                   "Desc": "Besondere Verwaltungs- und Betriebsauszahlungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -291,7 +291,7 @@
               },
               "Units": [
                 {
-                  "Id": "7411000",
+                  "Id": "3.1.5.06.7411000",
                   "Desc": "Sonstige Personal- und Versorgungsauszahlungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -304,7 +304,7 @@
                   }
                 },
                 {
-                  "Id": "7429000",
+                  "Id": "3.1.5.06.7429000",
                   "Desc": "Sonstige Auszahlungen für die Inanspruchnahme von Rechten und Diensten",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -317,7 +317,7 @@
                   }
                 },
                 {
-                  "Id": "7431000",
+                  "Id": "3.1.5.06.7431000",
                   "Desc": "Geschäftsauszahlungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -330,7 +330,7 @@
                   }
                 },
                 {
-                  "Id": "7456000",
+                  "Id": "3.1.5.06.7456000",
                   "Desc": "Erstatt. f.d. Ausz. v. Dritten aus lfd Verwaltungstät. an so. öff. Sonderrechn.",
                   "AboveValueLimit": null,
                   "Budgets": {

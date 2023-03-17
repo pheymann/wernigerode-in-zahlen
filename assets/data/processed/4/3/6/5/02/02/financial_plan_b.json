@@ -26,17 +26,24 @@
           },
           "Subs": [
             {
-              "Id": "3",
-              "Desc": ".6.5.02.02/0100.7832000 Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.",
-              "Budgets": {
-                "2020": 1322.34,
-                "2021": 0,
-                "2022": 1800,
-                "2023": 0,
-                "2024": 0,
-                "2025": 0
-              },
-              "Units": null
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "3.6.5.02.02",
+                  "Desc": "/0100.7832000 Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 1322.34,
+                    "2021": 0,
+                    "2022": 1800,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                }
+              ]
             }
           ]
         }
@@ -68,17 +75,24 @@
           },
           "Subs": [
             {
-              "Id": "3",
-              "Desc": ".6.5.02.02/0200.6817000 Einz. a. Zuschüssen f. Investitionen u.Invest.fördermaßnahmen priv.Unternehmen",
-              "Budgets": {
-                "2020": 2425.56,
-                "2021": 0,
-                "2022": 0,
-                "2023": 0,
-                "2024": 0,
-                "2025": 0
-              },
-              "Units": null
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "3.6.5.02.02",
+                  "Desc": "/0200.6817000 Einz. a. Zuschüssen f. Investitionen u.Invest.fördermaßnahmen priv.Unternehmen",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 2425.56,
+                    "2021": 0,
+                    "2022": 0,
+                    "2023": 0,
+                    "2024": 0,
+                    "2025": 0
+                  }
+                }
+              ]
             }
           ]
         },
@@ -95,17 +109,24 @@
           },
           "Subs": [
             {
-              "Id": "3",
-              "Desc": ".6.5.02.02/0200.7831000 Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.",
-              "Budgets": {
-                "2020": 13245,
-                "2021": 0,
-                "2022": 0,
-                "2023": 1800,
-                "2024": 1800,
-                "2025": 1800
-              },
-              "Units": null
+              "Id": "",
+              "Desc": "",
+              "Budgets": null,
+              "Units": [
+                {
+                  "Id": "3.6.5.02.02",
+                  "Desc": "/0200.7831000 Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.",
+                  "AboveValueLimit": null,
+                  "Budgets": {
+                    "2020": 13245,
+                    "2021": 0,
+                    "2022": 0,
+                    "2023": 1800,
+                    "2024": 1800,
+                    "2025": 1800
+                  }
+                }
+              ]
             }
           ]
         }

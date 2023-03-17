@@ -38,7 +38,7 @@
               },
               "Units": [
                 {
-                  "Id": "6311000",
+                  "Id": "5.4.1.01.6311000",
                   "Desc": "Verwaltungsgebühren (Straßenaufbrüche)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -51,7 +51,7 @@
                   }
                 },
                 {
-                  "Id": "6311100",
+                  "Id": "5.4.1.01.6311100",
                   "Desc": "Verwaltungsgebühren (Sondernutzung)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -78,7 +78,7 @@
               },
               "Units": [
                 {
-                  "Id": "6461000",
+                  "Id": "5.4.1.01.6461000",
                   "Desc": "Sonstige privatrechtliche Leistungsentgelte",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -91,7 +91,7 @@
                   }
                 },
                 {
-                  "Id": "6488000",
+                  "Id": "5.4.1.01.6488000",
                   "Desc": "Einzahlungen aus Kostenerstattungen von übrigen Bereichen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -132,7 +132,7 @@
               },
               "Units": [
                 {
-                  "Id": "7221000",
+                  "Id": "5.4.1.01.7221000",
                   "Desc": "Unterhaltung des sonstigen unbeweglichen Vermögens (DIII)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -145,7 +145,7 @@
                   }
                 },
                 {
-                  "Id": "7221100",
+                  "Id": "5.4.1.01.7221100",
                   "Desc": "Unterhaltung des sonstigen unbeweglichen Vermögens (D I/32)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -158,7 +158,7 @@
                   }
                 },
                 {
-                  "Id": "7221200",
+                  "Id": "5.4.1.01.7221200",
                   "Desc": "Unterhaltung des sonstigen unbeweglichen Vermögens (D I/68)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -171,7 +171,7 @@
                   }
                 },
                 {
-                  "Id": "7231000",
+                  "Id": "5.4.1.01.7231000",
                   "Desc": "Auszahlungen für Mieten und Pachten",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -184,7 +184,7 @@
                   }
                 },
                 {
-                  "Id": "7241000",
+                  "Id": "5.4.1.01.7241000",
                   "Desc": "Bewirtschaftung der Grundstücke und baulichen Anlagen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -197,7 +197,7 @@
                   }
                 },
                 {
-                  "Id": "7252000",
+                  "Id": "5.4.1.01.7252000",
                   "Desc": "Erwerb geringwertiger Vermögensgegenstände",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -210,7 +210,7 @@
                   }
                 },
                 {
-                  "Id": "7255000",
+                  "Id": "5.4.1.01.7255000",
                   "Desc": "Unterhaltung des sonstigen beweglichen Vermögens",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -223,7 +223,7 @@
                   }
                 },
                 {
-                  "Id": "7291000",
+                  "Id": "5.4.1.01.7291000",
                   "Desc": "Auszahlungen für sonstige Dienstleistungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -250,7 +250,7 @@
               },
               "Units": [
                 {
-                  "Id": "7313000",
+                  "Id": "5.4.1.01.7313000",
                   "Desc": "Zuweisungen an Zweckverbände",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -277,7 +277,7 @@
               },
               "Units": [
                 {
-                  "Id": "7429000",
+                  "Id": "5.4.1.01.7429000",
                   "Desc": "Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -290,7 +290,7 @@
                   }
                 },
                 {
-                  "Id": "7431300",
+                  "Id": "5.4.1.01.7431300",
                   "Desc": "Auszahlungen für Planungsleistungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -533,11 +533,11 @@
           "Subs": null
         },
         {
-          "Id": "31",
-          "Desc": "Baumaßnahmen",
+          "Id": "33",
+          "Desc": "Auszahlungen aus Investitionstätigkeit",
           "Budgets": {
-            "2020": -555334.4,
-            "2021": -1770000,
+            "2020": -960870.53,
+            "2021": -2174000,
             "2022": -1700500,
             "2023": -1459000,
             "2024": -739000,
@@ -608,25 +608,18 @@
                   }
                 }
               ]
-            }
-          ]
-        },
-        {
-          "Id": "33",
-          "Desc": "Auszahlungen aus Investitionstätigkeit",
-          "Budgets": {
-            "2020": -960870.53,
-            "2021": -2174000,
-            "2022": -1700500,
-            "2023": -1459000,
-            "2024": -739000,
-            "2025": -309000
-          },
-          "Subs": [
+            },
             {
-              "Id": "",
-              "Desc": "",
-              "Budgets": null,
+              "Id": "31",
+              "Desc": "Baumaßnahmen",
+              "Budgets": {
+                "2020": -555334.4,
+                "2021": -1770000,
+                "2022": -1700500,
+                "2023": -1459000,
+                "2024": -739000,
+                "2025": -309000
+              },
               "Units": [
                 {
                   "Id": "5.4.1.01/3002.7852000",

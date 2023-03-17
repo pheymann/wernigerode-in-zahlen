@@ -38,7 +38,7 @@
               },
               "Units": [
                 {
-                  "Id": "6141000",
+                  "Id": "5.2.3.02.6141000",
                   "Desc": "Zuweisungen für laufende Zwecke vom Land",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -79,7 +79,7 @@
               },
               "Units": [
                 {
-                  "Id": "7318000",
+                  "Id": "5.2.3.02.7318000",
                   "Desc": "Zuschüsse an übrige Bereiche",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -133,7 +133,7 @@
               },
               "Units": [
                 {
-                  "Id": "7599000",
+                  "Id": "5.2.3.02.7599000",
                   "Desc": "Sonstige Finanzauszahlungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -258,19 +258,6 @@
           "Subs": null
         },
         {
-          "Id": "31",
-          "Desc": "Baumaßnahmen",
-          "Budgets": {
-            "2020": 0,
-            "2021": 200000,
-            "2022": 350000,
-            "2023": 300000,
-            "2024": 350000,
-            "2025": 250000
-          },
-          "Subs": null
-        },
-        {
           "Id": "33",
           "Desc": "Auszahlungen aus Investitionstätigkeit",
           "Budgets": {
@@ -283,9 +270,16 @@
           },
           "Subs": [
             {
-              "Id": "",
-              "Desc": "",
-              "Budgets": null,
+              "Id": "31",
+              "Desc": "Baumaßnahmen",
+              "Budgets": {
+                "2020": 0,
+                "2021": 200000,
+                "2022": 350000,
+                "2023": 300000,
+                "2024": 350000,
+                "2025": 250000
+              },
               "Units": [
                 {
                   "Id": "5.2.3.02/1110.7851000",

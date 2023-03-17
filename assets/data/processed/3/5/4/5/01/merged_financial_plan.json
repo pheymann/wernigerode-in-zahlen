@@ -38,7 +38,7 @@
               },
               "Units": [
                 {
-                  "Id": "6321000",
+                  "Id": "5.4.5.01.6321000",
                   "Desc": "Benutzungsgebühren und ähnliche Entgelte",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -79,7 +79,7 @@
               },
               "Units": [
                 {
-                  "Id": "7221000",
+                  "Id": "5.4.5.01.7221000",
                   "Desc": "Unterhaltung des sonstigen unbeweglichen Vermögens",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -92,7 +92,7 @@
                   }
                 },
                 {
-                  "Id": "7231000",
+                  "Id": "5.4.5.01.7231000",
                   "Desc": "Auszahlungen für Mieten und Pachten",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -105,7 +105,7 @@
                   }
                 },
                 {
-                  "Id": "7241000",
+                  "Id": "5.4.5.01.7241000",
                   "Desc": "Bewirtschaftung der Grundstücke und baulichen Anlagen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -118,7 +118,7 @@
                   }
                 },
                 {
-                  "Id": "7252000",
+                  "Id": "5.4.5.01.7252000",
                   "Desc": "Erwerb geringwertiger Vermögensgegenstände",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -131,7 +131,7 @@
                   }
                 },
                 {
-                  "Id": "7255000",
+                  "Id": "5.4.5.01.7255000",
                   "Desc": "Unterhaltung des sonstigen beweglichen Vermögens",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -158,7 +158,7 @@
               },
               "Units": [
                 {
-                  "Id": "7457000",
+                  "Id": "5.4.5.01.7457000",
                   "Desc": "Erstatt. für die Auszahl. von Dritten aus lfd. Verwaltungstät. an priv. Untern.",
                   "AboveValueLimit": null,
                   "Budgets": {

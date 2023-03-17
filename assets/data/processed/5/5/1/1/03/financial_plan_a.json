@@ -122,19 +122,6 @@
           "Subs": null
         },
         {
-          "Id": "31",
-          "Desc": "Baumaßnahmen",
-          "Budgets": {
-            "2020": 0,
-            "2021": 0,
-            "2022": 0,
-            "2023": 150000,
-            "2024": 600000,
-            "2025": 501000
-          },
-          "Subs": null
-        },
-        {
           "Id": "33",
           "Desc": "Auszahlungen aus Investitionstätigkeit",
           "Budgets": {
@@ -147,9 +134,16 @@
           },
           "Subs": [
             {
-              "Id": "",
-              "Desc": "",
-              "Budgets": null,
+              "Id": "31",
+              "Desc": "Baumaßnahmen",
+              "Budgets": {
+                "2020": 0,
+                "2021": 0,
+                "2022": 0,
+                "2023": 150000,
+                "2024": 600000,
+                "2025": 501000
+              },
               "Units": [
                 {
                   "Id": "5.1.1.03/8888.7852000",

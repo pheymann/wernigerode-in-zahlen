@@ -38,7 +38,7 @@
               },
               "Units": [
                 {
-                  "Id": "6311000",
+                  "Id": "1.2.2.03.6311000",
                   "Desc": "Verwaltungsgebühren",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -65,7 +65,7 @@
               },
               "Units": [
                 {
-                  "Id": "6421000",
+                  "Id": "1.2.2.03.6421000",
                   "Desc": "Einzahlungen aus dem Verkauf von Vorräten (Stammbücher)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -106,7 +106,7 @@
               },
               "Units": [
                 {
-                  "Id": "7011000",
+                  "Id": "1.2.2.03.7011000",
                   "Desc": "Dienstauszahlungen und dgl. an Beamte",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -119,7 +119,7 @@
                   }
                 },
                 {
-                  "Id": "7012000",
+                  "Id": "1.2.2.03.7012000",
                   "Desc": "Dienstauszahlungen und dgl. an Arbeitnehmer",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -132,7 +132,7 @@
                   }
                 },
                 {
-                  "Id": "7021000",
+                  "Id": "1.2.2.03.7021000",
                   "Desc": "Beiträge zu Versorgungskassen für Beamte",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -145,7 +145,7 @@
                   }
                 },
                 {
-                  "Id": "7022000",
+                  "Id": "1.2.2.03.7022000",
                   "Desc": "Beiträge zu Versorgungskassen für Arbeitnehmer",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -158,7 +158,7 @@
                   }
                 },
                 {
-                  "Id": "7032000",
+                  "Id": "1.2.2.03.7032000",
                   "Desc": "Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -198,7 +198,7 @@
               },
               "Units": [
                 {
-                  "Id": "7231000",
+                  "Id": "1.2.2.03.7231000",
                   "Desc": "Auszahlungen für Mieten und Pachten",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -211,7 +211,7 @@
                   }
                 },
                 {
-                  "Id": "7252000",
+                  "Id": "1.2.2.03.7252000",
                   "Desc": "Erwerb geringwertiger Vermögensgegenstände",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -224,7 +224,7 @@
                   }
                 },
                 {
-                  "Id": "7255000",
+                  "Id": "1.2.2.03.7255000",
                   "Desc": "Unterhaltung des sonstigen beweglichen Vermögens",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -237,7 +237,7 @@
                   }
                 },
                 {
-                  "Id": "7271000",
+                  "Id": "1.2.2.03.7271000",
                   "Desc": "Besondere Verwaltungs- und Betriebsauszahlungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -250,7 +250,7 @@
                   }
                 },
                 {
-                  "Id": "7281000",
+                  "Id": "1.2.2.03.7281000",
                   "Desc": "Auszahlungen für den Erwerb von Vorräten (Stammbücher)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -263,7 +263,7 @@
                   }
                 },
                 {
-                  "Id": "7291000",
+                  "Id": "1.2.2.03.7291000",
                   "Desc": "Auszahlungen für sonstige Dienstleistungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -290,7 +290,7 @@
               },
               "Units": [
                 {
-                  "Id": "7411000",
+                  "Id": "1.2.2.03.7411000",
                   "Desc": "Sonstige Personal- und Versorgungsauszahlungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -303,7 +303,7 @@
                   }
                 },
                 {
-                  "Id": "7429000",
+                  "Id": "1.2.2.03.7429000",
                   "Desc": "Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -316,7 +316,7 @@
                   }
                 },
                 {
-                  "Id": "7431000",
+                  "Id": "1.2.2.03.7431000",
                   "Desc": "Geschäftsauszahlungen",
                   "AboveValueLimit": null,
                   "Budgets": {

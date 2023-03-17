@@ -38,7 +38,7 @@
               },
               "Units": [
                 {
-                  "Id": "6481000",
+                  "Id": "1.2.1.01.6481000",
                   "Desc": "Einzahlungen aus Kostenerstattungen vom Land",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -51,7 +51,7 @@
                   }
                 },
                 {
-                  "Id": "6482000",
+                  "Id": "1.2.1.01.6482000",
                   "Desc": "Einzahlungen aus Kostenerstattungen von Gemeinden und Gemeindeverbänden",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -92,7 +92,7 @@
               },
               "Units": [
                 {
-                  "Id": "7231000",
+                  "Id": "1.2.1.01.7231000",
                   "Desc": "Auszahlungen für Mieten und Pachten",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -105,7 +105,7 @@
                   }
                 },
                 {
-                  "Id": "7252000",
+                  "Id": "1.2.1.01.7252000",
                   "Desc": "Erwerb geringwertiger Vermögensgegenstände",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -118,7 +118,7 @@
                   }
                 },
                 {
-                  "Id": "7255000",
+                  "Id": "1.2.1.01.7255000",
                   "Desc": "Unterhaltung des sonstigen beweglichen Vermögens",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -131,7 +131,7 @@
                   }
                 },
                 {
-                  "Id": "7291000",
+                  "Id": "1.2.1.01.7291000",
                   "Desc": "Auszahlungen für sonstige Dienstleistungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -158,7 +158,7 @@
               },
               "Units": [
                 {
-                  "Id": "7411000",
+                  "Id": "1.2.1.01.7411000",
                   "Desc": "Sonstige Personal- und Versorgungsauszahlungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -171,7 +171,7 @@
                   }
                 },
                 {
-                  "Id": "7421000",
+                  "Id": "1.2.1.01.7421000",
                   "Desc": "Auszahlungen für ehrenamtliche und sonstige Tätigkeit",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -184,7 +184,7 @@
                   }
                 },
                 {
-                  "Id": "7431000",
+                  "Id": "1.2.1.01.7431000",
                   "Desc": "Geschäftsauszahlungen",
                   "AboveValueLimit": null,
                   "Budgets": {

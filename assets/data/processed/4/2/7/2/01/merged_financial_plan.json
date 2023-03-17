@@ -382,7 +382,7 @@
               },
               "Units": [
                 {
-                  "Id": "7411000",
+                  "Id": "2.7.2.01.7411000",
                   "Desc": "Sonstige Personal- und Versorgungsauszahlungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -395,7 +395,7 @@
                   }
                 },
                 {
-                  "Id": "7429000",
+                  "Id": "2.7.2.01.7429000",
                   "Desc": "Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -408,7 +408,7 @@
                   }
                 },
                 {
-                  "Id": "7431000",
+                  "Id": "2.7.2.01.7431000",
                   "Desc": "Geschäftsauszahlungen",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -421,7 +421,7 @@
                   }
                 },
                 {
-                  "Id": "7431200",
+                  "Id": "2.7.2.01.7431200",
                   "Desc": "Auszahlungen für Honorare",
                   "AboveValueLimit": null,
                   "Budgets": {
@@ -434,7 +434,7 @@
                   }
                 },
                 {
-                  "Id": "7431400",
+                  "Id": "2.7.2.01.7431400",
                   "Desc": "Auszahlungen für Beitragsservice (GEZ)",
                   "AboveValueLimit": null,
                   "Budgets": {
