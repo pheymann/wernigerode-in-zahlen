@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
-
-  <script src="/js/chart.js"></script>
 </head>
 <html>
   <body>
@@ -28,11 +26,11 @@
         <div class="row">
           <div class="col-6">
             <h5 class="center">Einnahmen: 37.294.200,00€</h5>
-            <canvas id="chartjs-1c53fe54-8585-4075-bca5-4c46e5e4451a"></canvas>
+            <canvas id="chartjs-6e9f39c6-a08b-407f-b5d2-93a85ce408a0"></canvas>
           </div>
           <div class="col-6">
             <h5 class="center">Ausgaben: -2.504.900,00€</h5>
-            <canvas id="chartjs-73d58786-855d-4273-ab2f-05246f626775"></canvas>
+            <canvas id="chartjs-45cf176f-6fa7-4ca0-831c-859041104710"></canvas>
           </div>
         </div>
       
@@ -123,10 +121,11 @@
       </p>
     </footer>
 
+    <script src="/js/chart.js"></script>
     <script>
       
       var incomeProductLinks = ["/2/5/3/1/01/product.html","/2/5/3/2/01/product.html","/2/5/3/3/01/product.html","/2/5/3/4/01/product.html","/2/5/3/5/01/product.html","/2/6/1/1/01/product.html"];
-      var incomeCanvas = document.getElementById('chartjs-1c53fe54-8585-4075-bca5-4c46e5e4451a');
+      var incomeCanvas = document.getElementById('chartjs-6e9f39c6-a08b-407f-b5d2-93a85ce408a0');
       var incomeChart = new Chart(incomeCanvas, {
         type: 'doughnut',
         data: {
@@ -153,7 +152,7 @@
 
       
       var expenesesProductLinks = ["/2/1/1/1/07/product.html","/2/6/1/2/01/product.html"];
-      var expensesCanvas = document.getElementById('chartjs-73d58786-855d-4273-ab2f-05246f626775');
+      var expensesCanvas = document.getElementById('chartjs-45cf176f-6fa7-4ca0-831c-859041104710');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {
@@ -178,5 +177,6 @@
       });
       
     </script>
+    <script defer data-domain="wernigerode-in-zahlen.de" src="https://plausible.io/js/script.js"></script>
   </body>
 </html>

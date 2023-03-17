@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
-
-  <script src="/js/chart.js"></script>
 </head>
 <html>
   <body>
@@ -32,11 +30,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 3.400,00€</h5>
-                <canvas id="chartjs_712df4c7_dd37_46d8_8bd5_f3d11d07d6dd"></canvas>
+                <canvas id="chartjs_f04bdf31_7322_40ea_93fd_a8d8c7ed97bf"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -133.600,00€</h5>
-                <canvas id="chartjs_b24a7f00_a3de_407c_a698_138c95838441"></canvas>
+                <canvas id="chartjs_793cc5cf_2499_4533_a195_bf8a1dbba5e7"></canvas>
               </div>
             </div>
           
@@ -160,11 +158,12 @@
       </p>
     </footer>
 
+    <script src="/js/chart.js"></script>
     <script>
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_712df4c7_dd37_46d8_8bd5_f3d11d07d6dd'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_f04bdf31_7322_40ea_93fd_a8d8c7ed97bf'), {
             type: 'doughnut',
             data: {
               labels: ["Verwaltungsgebühren"],
@@ -186,7 +185,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_b24a7f00_a3de_407c_a698_138c95838441'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_793cc5cf_2499_4533_a195_bf8a1dbba5e7'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung des sonstigen beweglichen Vermögens","Besondere Verwaltungs- und Betriebsauszahlungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen"],
@@ -211,5 +210,6 @@
         
       
     </script>
+    <script defer data-domain="wernigerode-in-zahlen.de" src="https://plausible.io/js/script.js"></script>
   </body>
 </html>

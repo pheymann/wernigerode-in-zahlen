@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
-
-  <script src="/js/chart.js"></script>
 </head>
 <html>
   <body>
@@ -32,11 +30,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 2.782.000,00€</h5>
-                <canvas id="chartjs_91192e34_0f62_4c01_aab0_22fa6ef29a7e"></canvas>
+                <canvas id="chartjs_539e3d64_0158_4004_a621_5fc943927aad"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -2.624.700,00€</h5>
-                <canvas id="chartjs_1bdba215_186d_478c_8ae3_9ec66d7f7c8a"></canvas>
+                <canvas id="chartjs_0abc3544_f57e_4b7b_91ee_ea87c96a8736"></canvas>
               </div>
             </div>
           
@@ -117,11 +115,12 @@
       </p>
     </footer>
 
+    <script src="/js/chart.js"></script>
     <script>
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_91192e34_0f62_4c01_aab0_22fa6ef29a7e'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_539e3d64_0158_4004_a621_5fc943927aad'), {
             type: 'doughnut',
             data: {
               labels: ["Zweckgebundene Abgaben (Kurbeitrag)"],
@@ -143,7 +142,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_1bdba215_186d_478c_8ae3_9ec66d7f7c8a'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_0abc3544_f57e_4b7b_91ee_ea87c96a8736'), {
             type: 'doughnut',
             data: {
               labels: ["Zusch. öff. SondRechn. HSB","Zusch. öff.SondRechn. HSB Kurb","Einbehalt für Entgelt WTG"],
@@ -165,5 +164,6 @@
         
       
     </script>
+    <script defer data-domain="wernigerode-in-zahlen.de" src="https://plausible.io/js/script.js"></script>
   </body>
 </html>

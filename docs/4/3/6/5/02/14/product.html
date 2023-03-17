@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
-
-  <script src="/js/chart.js"></script>
 </head>
 <html>
   <body>
@@ -32,11 +30,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 539.200,00€</h5>
-                <canvas id="chartjs_9c985aba_d873_4359_a891_767fe45584ab"></canvas>
+                <canvas id="chartjs_1a68a38a_e837_41b9_9581_50298e936755"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -674.200,00€</h5>
-                <canvas id="chartjs_76377716_e303_4334_a640_a21d806f69b6"></canvas>
+                <canvas id="chartjs_678689b5_ff7c_4775_87f3_861374b8ea8e"></canvas>
               </div>
             </div>
           
@@ -202,11 +200,12 @@
       </p>
     </footer>
 
+    <script src="/js/chart.js"></script>
     <script>
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_9c985aba_d873_4359_a891_767fe45584ab'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_1a68a38a_e837_41b9_9581_50298e936755'), {
             type: 'doughnut',
             data: {
               labels: [".6142000               Zuweisungen für laufende Zwecke von Gemeinden und Gemeindeverbänden",".6321000               Benutzungsgebühren und ähnliche Entgelte"],
@@ -228,7 +227,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_76377716_e303_4334_a640_a21d806f69b6'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_678689b5_ff7c_4775_87f3_861374b8ea8e'), {
             type: 'doughnut',
             data: {
               labels: [".7012000               Dienstauszahlungen und dgl. an Arbeitnehmer",".7022000               Beiträge zu Versorgungskassen für Arbeitnehmer",".7032000               Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer",".7041000               Beihilfen, Unterstützungsleistungen für Beschäftigte",".7211000               Unterhaltung der Grundstücke und baulichen Anlagen",".7221000               Unterhaltung des sonstigen unbeweglichen Vermögens",".7231000               Auszahlungen für Mieten und Pachten",".7241000               Bewirtschaftung der Grundstücke und baulichen Anlagen",".7252000               Erwerb geringwertiger Vermögensgegenstände",".7255000               Unterhaltung des sonstigen beweglichen Vermögens",".7271000               Besondere Verwaltungs- und Betriebsauszahlungen",".7291000               Auszahlungen für sonstige Dienstleistungen",".7431000               Geschäftsauszahlungen",".7431200               Auszahlungen für Honorare"],
@@ -253,5 +252,6 @@
         
       
     </script>
+    <script defer data-domain="wernigerode-in-zahlen.de" src="https://plausible.io/js/script.js"></script>
   </body>
 </html>

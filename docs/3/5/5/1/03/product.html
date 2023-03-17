@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
-
-  <script src="/js/chart.js"></script>
 </head>
 <html>
   <body>
@@ -32,11 +30,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 36.000,00€</h5>
-                <canvas id="chartjs_9d9e9689_0aed_4c1a_b90e_0b86ac2eb5d4"></canvas>
+                <canvas id="chartjs_1e1ec228_17a0_4f1d_9a07_b196a074b293"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -1.900,00€</h5>
-                <canvas id="chartjs_e6939f3d_d2b7_41a7_bee1_4dc97820db56"></canvas>
+                <canvas id="chartjs_01047bbb_859d_4397_aa0b_0e6a56bc2fcb"></canvas>
               </div>
             </div>
           
@@ -111,11 +109,12 @@
       </p>
     </footer>
 
+    <script src="/js/chart.js"></script>
     <script>
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_9d9e9689_0aed_4c1a_b90e_0b86ac2eb5d4'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_1e1ec228_17a0_4f1d_9a07_b196a074b293'), {
             type: 'doughnut',
             data: {
               labels: ["Einzahlungen aus Kostenerstattungen von Zweckverbänden"],
@@ -137,7 +136,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_e6939f3d_d2b7_41a7_bee1_4dc97820db56'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_01047bbb_859d_4397_aa0b_0e6a56bc2fcb'), {
             type: 'doughnut',
             data: {
               labels: ["Unterhaltung des sonstigen unbeweglichen Vermögens","Bewirtschaftung der Grundstücke und baulichen Anlagen"],
@@ -159,5 +158,6 @@
         
       
     </script>
+    <script defer data-domain="wernigerode-in-zahlen.de" src="https://plausible.io/js/script.js"></script>
   </body>
 </html>

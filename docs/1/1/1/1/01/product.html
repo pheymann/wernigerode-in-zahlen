@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
-
-  <script src="/js/chart.js"></script>
 </head>
 <html>
   <body>
@@ -32,11 +30,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 8.100,00€</h5>
-                <canvas id="chartjs_bdd5a6a3_c296_407b_9adf_6ce6c9cca509"></canvas>
+                <canvas id="chartjs_2d48eb2d_a620_4e41_9cee_74668bdd58b4"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -697.100,00€</h5>
-                <canvas id="chartjs_49f9e2ef_1a5a_4462_9394_175c6aa60e8e"></canvas>
+                <canvas id="chartjs_37dbf0db_2af5_4b4d_a075_8d0bf9badfb5"></canvas>
               </div>
             </div>
           
@@ -159,11 +157,12 @@
       </p>
     </footer>
 
+    <script src="/js/chart.js"></script>
     <script>
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_bdd5a6a3_c296_407b_9adf_6ce6c9cca509'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_2d48eb2d_a620_4e41_9cee_74668bdd58b4'), {
             type: 'doughnut',
             data: {
               labels: ["Benutzungsgebühren und ähnliche Entgelte"],
@@ -185,7 +184,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_49f9e2ef_1a5a_4462_9394_175c6aa60e8e'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_37dbf0db_2af5_4b4d_a075_8d0bf9badfb5'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für sonstige Dienstleistungen","Geschäftsauszahlungen","Verfügungsmittel"],
@@ -207,5 +206,6 @@
         
       
     </script>
+    <script defer data-domain="wernigerode-in-zahlen.de" src="https://plausible.io/js/script.js"></script>
   </body>
 </html>

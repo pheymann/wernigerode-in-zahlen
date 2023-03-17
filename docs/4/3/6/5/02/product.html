@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
-
-  <script src="/js/chart.js"></script>
 </head>
 <html>
   <body>
@@ -32,11 +30,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 9.405.000,00€</h5>
-                <canvas id="chartjs_e38df649_aefe_4d19_9ee5_127de2280586"></canvas>
+                <canvas id="chartjs_96f2b14d_a3e9_4867_8fa9_086d60439939"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -14.295.100,00€</h5>
-                <canvas id="chartjs_4c1a9248_883a_4d27_b1db_2a13760a9b7b"></canvas>
+                <canvas id="chartjs_3107a41b_4a95_4acc_9f6f_6d8e24c84ead"></canvas>
               </div>
             </div>
           
@@ -54,11 +52,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 7.400,00€</h5>
-                <canvas id="chartjs_0a16f210_09ba_4de9_abd3_bfde051444d6"></canvas>
+                <canvas id="chartjs_82b4dfa8_9af5_404e_95b3_983bcae62333"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -5.022.600,00€</h5>
-                <canvas id="chartjs_41205033_274e_467e_9fc3_dca93c694fc0"></canvas>
+                <canvas id="chartjs_91bddfcc_cc1d_4afc_a911_ec66450b648b"></canvas>
               </div>
             </div>
           
@@ -157,11 +155,12 @@
       </p>
     </footer>
 
+    <script src="/js/chart.js"></script>
     <script>
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_e38df649_aefe_4d19_9ee5_127de2280586'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_96f2b14d_a3e9_4867_8fa9_086d60439939'), {
             type: 'doughnut',
             data: {
               labels: ["Zuweisungen und allgemeine Umlagen","öffentlich-rechtliche Leistungsentgelte","privatrechtliche Leistungsentgelte, Kostenerstattungen, Kostenumlagen"],
@@ -183,7 +182,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_4c1a9248_883a_4d27_b1db_2a13760a9b7b'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_3107a41b_4a95_4acc_9f6f_6d8e24c84ead'), {
             type: 'doughnut',
             data: {
               labels: ["Personalauszahlungen","Auszahlungen für Sach- und Dienstleistungen","Sonstige Auszahlungen"],
@@ -208,8 +207,8 @@
         
       
         
-          var incomeSubProductLinks_chartjs_0a16f210_09ba_4de9_abd3_bfde051444d6 = ["16/product.html"];
-          var incomeChart_chartjs_0a16f210_09ba_4de9_abd3_bfde051444d6 = new Chart(document.getElementById('chartjs_0a16f210_09ba_4de9_abd3_bfde051444d6'), {
+          var incomeSubProductLinks_chartjs_82b4dfa8_9af5_404e_95b3_983bcae62333 = ["16/product.html"];
+          var incomeChart_chartjs_82b4dfa8_9af5_404e_95b3_983bcae62333 = new Chart(document.getElementById('chartjs_82b4dfa8_9af5_404e_95b3_983bcae62333'), {
             type: 'doughnut',
             data: {
               labels: ["Hort Grundschule Harzblick"],
@@ -227,16 +226,16 @@
               },
               
                 onClick: function(e){
-                  var activePoints = incomeChart_chartjs_0a16f210_09ba_4de9_abd3_bfde051444d6.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
-                  window.location.href = incomeSubProductLinks_chartjs_0a16f210_09ba_4de9_abd3_bfde051444d6[activePoints[0].index];
+                  var activePoints = incomeChart_chartjs_82b4dfa8_9af5_404e_95b3_983bcae62333.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
+                  window.location.href = incomeSubProductLinks_chartjs_82b4dfa8_9af5_404e_95b3_983bcae62333[activePoints[0].index];
                 },
               
             }
           });
         
         
-          var expensesSubProductLinks_chartjs_41205033_274e_467e_9fc3_dca93c694fc0 = ["01/product.html","02/product.html","03/product.html","04/product.html","05/product.html","06/product.html","07/product.html","08/product.html","09/product.html","10/product.html","11/product.html","12/product.html","13/product.html","14/product.html","15/product.html","17/product.html"];
-          var expensesChart_chartjs_41205033_274e_467e_9fc3_dca93c694fc0 = new Chart(document.getElementById('chartjs_41205033_274e_467e_9fc3_dca93c694fc0'), {
+          var expensesSubProductLinks_chartjs_91bddfcc_cc1d_4afc_a911_ec66450b648b = ["01/product.html","02/product.html","03/product.html","04/product.html","05/product.html","06/product.html","07/product.html","08/product.html","09/product.html","10/product.html","11/product.html","12/product.html","13/product.html","14/product.html","15/product.html","17/product.html"];
+          var expensesChart_chartjs_91bddfcc_cc1d_4afc_a911_ec66450b648b = new Chart(document.getElementById('chartjs_91bddfcc_cc1d_4afc_a911_ec66450b648b'), {
             type: 'doughnut',
             data: {
               labels: ["Kinderkrippe Lindenberg","Kinderkrippe Am Auerhahn","Kindertagesstätte Regenbogen","Kindertagesstätte Villa Sonnenschein","Kindertagesstätte Hummelhaus","Kindertagesstätte Musikus","Kindertagesstätte Pusteblume","Integrative Kindertagesstätte Löwenzahn","Kindertagesstätte Harzblick","Kindertagesstätte Am Schäferteich","Kindertagesstätte Kleine Strolche","Kindertagesstätte Benjamin Blümchen","Kindertagesstätte Brockenkinder","Hort Grundschule A. Diesterweg","Hort Grundschule A.H.Francke","Kindertagesstätten-Verwaltung"],
@@ -254,8 +253,8 @@
               },
               
                 onClick: function(e){
-                  var activePoints = expensesChart_chartjs_41205033_274e_467e_9fc3_dca93c694fc0.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
-                  window.location.href = expensesSubProductLinks_chartjs_41205033_274e_467e_9fc3_dca93c694fc0[activePoints[0].index];
+                  var activePoints = expensesChart_chartjs_91bddfcc_cc1d_4afc_a911_ec66450b648b.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
+                  window.location.href = expensesSubProductLinks_chartjs_91bddfcc_cc1d_4afc_a911_ec66450b648b[activePoints[0].index];
                 },
               
             }
@@ -263,5 +262,6 @@
         
       
     </script>
+    <script defer data-domain="wernigerode-in-zahlen.de" src="https://plausible.io/js/script.js"></script>
   </body>
 </html>

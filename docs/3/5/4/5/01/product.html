@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
-
-  <script src="/js/chart.js"></script>
 </head>
 <html>
   <body>
@@ -32,11 +30,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 440.000,00€</h5>
-                <canvas id="chartjs_120fb01e_170e_431b_b41f_ef48ab74ddd5"></canvas>
+                <canvas id="chartjs_64fa2f49_9b2e_4025_b2d3_aa7e5ed49b3d"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -191.000,00€</h5>
-                <canvas id="chartjs_32f04662_c06c_45ab_a665_307955cf0fb6"></canvas>
+                <canvas id="chartjs_73e3f857_062d_41b8_b2f9_3fd3926bd817"></canvas>
               </div>
             </div>
           
@@ -135,11 +133,12 @@
       </p>
     </footer>
 
+    <script src="/js/chart.js"></script>
     <script>
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_120fb01e_170e_431b_b41f_ef48ab74ddd5'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_64fa2f49_9b2e_4025_b2d3_aa7e5ed49b3d'), {
             type: 'doughnut',
             data: {
               labels: ["Benutzungsgebühren und ähnliche Entgelte"],
@@ -161,7 +160,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_32f04662_c06c_45ab_a665_307955cf0fb6'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_73e3f857_062d_41b8_b2f9_3fd3926bd817'), {
             type: 'doughnut',
             data: {
               labels: ["Unterhaltung des sonstigen unbeweglichen Vermögens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Erstatt. für die Auszahl. von Dritten aus lfd. Verwaltungstät. an priv. Untern."],
@@ -183,5 +182,6 @@
         
       
     </script>
+    <script defer data-domain="wernigerode-in-zahlen.de" src="https://plausible.io/js/script.js"></script>
   </body>
 </html>

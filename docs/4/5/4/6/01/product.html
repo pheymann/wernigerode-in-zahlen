@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
-
-  <script src="/js/chart.js"></script>
 </head>
 <html>
   <body>
@@ -32,11 +30,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 800.000,00€</h5>
-                <canvas id="chartjs_5d235b11_230a_411f_a4fe_c73cb882403b"></canvas>
+                <canvas id="chartjs_07f1f47b_233e_4f29_81c6_02e6f4c4ae0c"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -80.800,00€</h5>
-                <canvas id="chartjs_7bcf2766_c432_4ef9_ba0d_e95d4ca12f42"></canvas>
+                <canvas id="chartjs_bd74707c_84ab_4ad4_9a96_9c1695ee843f"></canvas>
               </div>
             </div>
           
@@ -148,11 +146,12 @@
       </p>
     </footer>
 
+    <script src="/js/chart.js"></script>
     <script>
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_5d235b11_230a_411f_a4fe_c73cb882403b'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_07f1f47b_233e_4f29_81c6_02e6f4c4ae0c'), {
             type: 'doughnut',
             data: {
               labels: ["Benutzungsgebühren und ähnliche Entgelte"],
@@ -174,7 +173,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_7bcf2766_c432_4ef9_ba0d_e95d4ca12f42'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_bd74707c_84ab_4ad4_9a96_9c1695ee843f'), {
             type: 'doughnut',
             data: {
               labels: ["Unterhaltung des sonstigen unbeweglichen Vermögens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Auszahlungen für sonstige Dienstleistungen"],
@@ -199,5 +198,6 @@
         
       
     </script>
+    <script defer data-domain="wernigerode-in-zahlen.de" src="https://plausible.io/js/script.js"></script>
   </body>
 </html>

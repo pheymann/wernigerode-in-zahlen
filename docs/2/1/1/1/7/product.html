@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
-
-  <script src="/js/chart.js"></script>
 </head>
 <html>
   <body>
@@ -32,11 +30,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 151.800,00€</h5>
-                <canvas id="chartjs_4e1cee97_9ac8_48a0_bb99_e67cc1b7c803"></canvas>
+                <canvas id="chartjs_311302cc_0a6d_44ff_b48e_b2794eac01f5"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -1.702.300,00€</h5>
-                <canvas id="chartjs_144e678d_ba20_4a0c_9905_21b47400f314"></canvas>
+                <canvas id="chartjs_b09e885b_bf00_48e9_925e_6b4f58de770f"></canvas>
               </div>
             </div>
           
@@ -171,11 +169,12 @@
       </p>
     </footer>
 
+    <script src="/js/chart.js"></script>
     <script>
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_4e1cee97_9ac8_48a0_bb99_e67cc1b7c803'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_311302cc_0a6d_44ff_b48e_b2794eac01f5'), {
             type: 'doughnut',
             data: {
               labels: ["Verwaltungsgebühren","Einzahlungen aus Kostenerstattungen von sonstigen öffentlichen Sonderrechnungen","Säumniszuschläge","Andere sonstige Einzahlungen aus laufender Verwaltungstätigkeit"],
@@ -197,7 +196,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_144e678d_ba20_4a0c_9905_21b47400f314'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_b09e885b_bf00_48e9_925e_6b4f58de770f'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für sonstige Dienstleistungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten"],
@@ -219,5 +218,6 @@
         
       
     </script>
+    <script defer data-domain="wernigerode-in-zahlen.de" src="https://plausible.io/js/script.js"></script>
   </body>
 </html>

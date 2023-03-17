@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
-
-  <script src="/js/chart.js"></script>
 </head>
 <html>
   <body>
@@ -32,11 +30,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 143.200,00€</h5>
-                <canvas id="chartjs_d9fd70b1_1781_4f5c_8699_f522c41987b7"></canvas>
+                <canvas id="chartjs_1491e54a_b337_4e3a_afd6_310626d18457"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -1.624.400,00€</h5>
-                <canvas id="chartjs_3239ac23_aa59_4788_aa98_14276c35b227"></canvas>
+                <canvas id="chartjs_1e099c8c_d57b_4938_9aad_7169a7557151"></canvas>
               </div>
             </div>
           
@@ -208,11 +206,12 @@
       </p>
     </footer>
 
+    <script src="/js/chart.js"></script>
     <script>
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_d9fd70b1_1781_4f5c_8699_f522c41987b7'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_1491e54a_b337_4e3a_afd6_310626d18457'), {
             type: 'doughnut',
             data: {
               labels: ["Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus Mieten und Pachten","Sonstige privatrechtliche Leistungsentgelte","Einzahl. aus Kostenerstattungen von verbund. Untern., Sondervermö. und Beteilig.","Einzahlungen aus Kostenerstattungen von übrigen Bereichen"],
@@ -234,7 +233,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_3239ac23_aa59_4788_aa98_14276c35b227'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_1e099c8c_d57b_4938_9aad_7169a7557151'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen-Gebäudemanagement","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für sonstige Dienstleistungen","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten"],
@@ -259,5 +258,6 @@
         
       
     </script>
+    <script defer data-domain="wernigerode-in-zahlen.de" src="https://plausible.io/js/script.js"></script>
   </body>
 </html>

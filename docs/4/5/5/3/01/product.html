@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
-
-  <script src="/js/chart.js"></script>
 </head>
 <html>
   <body>
@@ -32,11 +30,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 32.500,00€</h5>
-                <canvas id="chartjs_fd0e58ab_ed19_43d8_8e7f_b1f4830b236e"></canvas>
+                <canvas id="chartjs_6edc9c65_502c_43f3_ab06_a34eba0ff136"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -9.100,00€</h5>
-                <canvas id="chartjs_1d5ff092_f478_43df_82cf_99b97072a962"></canvas>
+                <canvas id="chartjs_093a5104_e958_4a61_b515_779591a3357f"></canvas>
               </div>
             </div>
           
@@ -129,11 +127,12 @@
       </p>
     </footer>
 
+    <script src="/js/chart.js"></script>
     <script>
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_fd0e58ab_ed19_43d8_8e7f_b1f4830b236e'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_6edc9c65_502c_43f3_ab06_a34eba0ff136'), {
             type: 'doughnut',
             data: {
               labels: ["Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus Mieten und Pachten"],
@@ -155,7 +154,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_1d5ff092_f478_43df_82cf_99b97072a962'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_093a5104_e958_4a61_b515_779591a3357f'), {
             type: 'doughnut',
             data: {
               labels: ["Unterhaltung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Erstatt. für die Auszahl. von Dritten aus lfd. Verwaltungstät. an übrige Ber."],
@@ -177,5 +176,6 @@
         
       
     </script>
+    <script defer data-domain="wernigerode-in-zahlen.de" src="https://plausible.io/js/script.js"></script>
   </body>
 </html>

@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
-
-  <script src="/js/chart.js"></script>
 </head>
 <html>
   <body>
@@ -32,11 +30,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 400,00€</h5>
-                <canvas id="chartjs_f137b587_67d5_4511_a9df_a06910cae855"></canvas>
+                <canvas id="chartjs_87f227e3_9078_47db_b236_fb7cc7ccab0d"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -329.200,00€</h5>
-                <canvas id="chartjs_084cc6ff_668c_499e_b496_9ab5ec869424"></canvas>
+                <canvas id="chartjs_5351af13_7747_45e5_85f2_d515f9902442"></canvas>
               </div>
             </div>
           
@@ -147,11 +145,12 @@
       </p>
     </footer>
 
+    <script src="/js/chart.js"></script>
     <script>
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_f137b587_67d5_4511_a9df_a06910cae855'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_87f227e3_9078_47db_b236_fb7cc7ccab0d'), {
             type: 'doughnut',
             data: {
               labels: ["Einzahlungen aus Kostenerstattungen von übrigen Bereichen","Bußgelder"],
@@ -173,7 +172,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_084cc6ff_668c_499e_b496_9ab5ec869424'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_5351af13_7747_45e5_85f2_d515f9902442'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für sonstige Dienstleistungen","Geschäftsauszahlungen","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten"],
@@ -195,5 +194,6 @@
         
       
     </script>
+    <script defer data-domain="wernigerode-in-zahlen.de" src="https://plausible.io/js/script.js"></script>
   </body>
 </html>

@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
-
-  <script src="/js/chart.js"></script>
 </head>
 <html>
   <body>
@@ -32,11 +30,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 255.700,00€</h5>
-                <canvas id="chartjs_2358ef7f_7b47_44ef_bab6_45a81c2ea871"></canvas>
+                <canvas id="chartjs_30c5342b_eae0_4e29_9f1f_1b86e2fbe06a"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -972.100,00€</h5>
-                <canvas id="chartjs_ca5fcb14_5090_49db_82f4_3e4291b6dfb6"></canvas>
+                <canvas id="chartjs_2f85f77b_bb71_498c_ac36_097a20c3adea"></canvas>
               </div>
             </div>
           
@@ -47,7 +45,7 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs_26541ff7_bf62_437e_b9ec_e16a7eb2541c"></canvas>
+                <canvas id="chartjs_34d88e1f_fcc3_41a2_ba82_1a8adb4a8361"></canvas>
               </div>
             
           
@@ -248,11 +246,12 @@
       </p>
     </footer>
 
+    <script src="/js/chart.js"></script>
     <script>
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_2358ef7f_7b47_44ef_bab6_45a81c2ea871'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_30c5342b_eae0_4e29_9f1f_1b86e2fbe06a'), {
             type: 'doughnut',
             data: {
               labels: ["Benutzungsgebühren und ähnliche Entgelte (7% Mwstr.)","Benutzungsgebühren und ähnliche Entgelte (19% Mwstr.)","Einzahlungen aus Mieten und Pachten","Einzahlungen aus dem Verkauf von Vorräten (Cafeteria))"],
@@ -274,7 +273,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_ca5fcb14_5090_49db_82f4_3e4291b6dfb6'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_2f85f77b_bb71_498c_ac36_097a20c3adea'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Unterhaltung der Grundstücke und baulichen Anlagen-Gebäudemanagement","Unterhaltung des sonstigen unbeweglichen Vermögens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für den Erwerb von Vorräten (Cafeteria)","Auszahlungen für sonstige Dienstleistungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen"],
@@ -298,7 +297,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_26541ff7_bf62_437e_b9ec_e16a7eb2541c'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_34d88e1f_fcc3_41a2_ba82_1a8adb4a8361'), {
             type: 'doughnut',
             data: {
               labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150 bis 1000 € o. UStr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
@@ -320,5 +319,6 @@
         
       
     </script>
+    <script defer data-domain="wernigerode-in-zahlen.de" src="https://plausible.io/js/script.js"></script>
   </body>
 </html>

@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
-
-  <script src="/js/chart.js"></script>
 </head>
 <html>
   <body>
@@ -32,11 +30,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 983.000,00€</h5>
-                <canvas id="chartjs_35265eda_43b2_4dd9_90f5_8b8a0b18f992"></canvas>
+                <canvas id="chartjs_8e480251_9d6e_4851_b9e6_fe3a7f58a48c"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -1.145.600,00€</h5>
-                <canvas id="chartjs_efd33fe3_6890_427e_a913_7f4fa37d2a11"></canvas>
+                <canvas id="chartjs_b236eb63_2d18_4dbf_a25d_36f2d66d5f40"></canvas>
               </div>
             </div>
           
@@ -135,11 +133,12 @@
       </p>
     </footer>
 
+    <script src="/js/chart.js"></script>
     <script>
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_35265eda_43b2_4dd9_90f5_8b8a0b18f992'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_8e480251_9d6e_4851_b9e6_fe3a7f58a48c'), {
             type: 'doughnut',
             data: {
               labels: ["Zuweisungen für laufende Zwecke vom Bund","Zuweisungen für laufende Zwecke vom Land"],
@@ -161,7 +160,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_efd33fe3_6890_427e_a913_7f4fa37d2a11'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_b236eb63_2d18_4dbf_a25d_36f2d66d5f40'), {
             type: 'doughnut',
             data: {
               labels: ["Unterhaltung des sonstigen unbeweglichen Vermögens","Zuschüsse an übrige Bereiche","Zuschüsse an übrige Bereiche","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten","Sonstige Finanzauszahlungen"],
@@ -183,5 +182,6 @@
         
       
     </script>
+    <script defer data-domain="wernigerode-in-zahlen.de" src="https://plausible.io/js/script.js"></script>
   </body>
 </html>

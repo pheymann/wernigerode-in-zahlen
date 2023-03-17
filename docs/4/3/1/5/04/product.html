@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
-
-  <script src="/js/chart.js"></script>
 </head>
 <html>
   <body>
@@ -32,11 +30,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 49.500,00€</h5>
-                <canvas id="chartjs_154bdbc8_e4f3_4006_844c_74f923c7cbdf"></canvas>
+                <canvas id="chartjs_7032cb50_bfb3_419d_9103_da6850015c57"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -103.800,00€</h5>
-                <canvas id="chartjs_03e3cdc9_304d_4a47_82fe_8023cb3825d1"></canvas>
+                <canvas id="chartjs_0be6a989_c466_4f72_b437_d101c5e8c3fd"></canvas>
               </div>
             </div>
           
@@ -178,11 +176,12 @@
       </p>
     </footer>
 
+    <script src="/js/chart.js"></script>
     <script>
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_154bdbc8_e4f3_4006_844c_74f923c7cbdf'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_7032cb50_bfb3_419d_9103_da6850015c57'), {
             type: 'doughnut',
             data: {
               labels: ["Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus Kostenerstattungen von sonstigen öffentlichen Sonderrechnungen"],
@@ -204,7 +203,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_03e3cdc9_304d_4a47_82fe_8023cb3825d1'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_0be6a989_c466_4f72_b437_d101c5e8c3fd'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere Verwaltungs- und Betriebsauszahlungen","Geschäftsauszahlungen"],
@@ -229,5 +228,6 @@
         
       
     </script>
+    <script defer data-domain="wernigerode-in-zahlen.de" src="https://plausible.io/js/script.js"></script>
   </body>
 </html>

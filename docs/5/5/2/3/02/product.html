@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
-
-  <script src="/js/chart.js"></script>
 </head>
 <html>
   <body>
@@ -32,11 +30,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 520.000,00€</h5>
-                <canvas id="chartjs_d356dcb1_9c51_42f5_9dd1_73bbb02ccf14"></canvas>
+                <canvas id="chartjs_4b869481_33ad_4c8c_aa7c_e209113c4577"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -700.500,00€</h5>
-                <canvas id="chartjs_5da2cf0f_ab6e_4d64_a58f_6bbf8b341e2c"></canvas>
+                <canvas id="chartjs_9e5bcc27_7d7f_45e8_b0b8_d6cc917045d5"></canvas>
               </div>
             </div>
           
@@ -47,11 +45,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 240.000,00€</h5>
-                <canvas id="chartjs_407d94a2_7373_4d47_b8ca_a568deb1128e"></canvas>
+                <canvas id="chartjs_56b90dc4_dac9_4105_9938_e928c9f3dda9"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -300.000,00€</h5>
-                <canvas id="chartjs_771dc76e_d35c_449c_9368_ae057eca6fb3"></canvas>
+                <canvas id="chartjs_20d5de4e_c525_4e85_9a5a_a01640e49a87"></canvas>
               </div>
             </div>
           
@@ -144,11 +142,12 @@
       </p>
     </footer>
 
+    <script src="/js/chart.js"></script>
     <script>
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_d356dcb1_9c51_42f5_9dd1_73bbb02ccf14'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_4b869481_33ad_4c8c_aa7c_e209113c4577'), {
             type: 'doughnut',
             data: {
               labels: ["Zuweisungen für laufende Zwecke vom Land"],
@@ -170,7 +169,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_5da2cf0f_ab6e_4d64_a58f_6bbf8b341e2c'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_9e5bcc27_7d7f_45e8_b0b8_d6cc917045d5'), {
             type: 'doughnut',
             data: {
               labels: ["Zuschüsse an übrige Bereiche","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten","Sonstige Finanzauszahlungen"],
@@ -193,7 +192,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_407d94a2_7373_4d47_b8ca_a568deb1128e'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_56b90dc4_dac9_4105_9938_e928c9f3dda9'), {
             type: 'doughnut',
             data: {
               labels: ["Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land"],
@@ -215,7 +214,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_771dc76e_d35c_449c_9368_ae057eca6fb3'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_20d5de4e_c525_4e85_9a5a_a01640e49a87'), {
             type: 'doughnut',
             data: {
               labels: ["Auszahlungen für Hochbaumaßnahmen"],
@@ -237,5 +236,6 @@
         
       
     </script>
+    <script defer data-domain="wernigerode-in-zahlen.de" src="https://plausible.io/js/script.js"></script>
   </body>
 </html>

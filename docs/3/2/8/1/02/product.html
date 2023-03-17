@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
-
-  <script src="/js/chart.js"></script>
 </head>
 <html>
   <body>
@@ -32,11 +30,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 73.000,00€</h5>
-                <canvas id="chartjs_72a33a0a_6acd_4ce9_9aa9_fdfb10da61cc"></canvas>
+                <canvas id="chartjs_28364f17_7569_45af_a5c5_c49c63cb2663"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -25.000,00€</h5>
-                <canvas id="chartjs_a90fb73e_a34e_4215_982c_9d90b1c702c3"></canvas>
+                <canvas id="chartjs_3eee1f0a_e995_433b_9bc0_ad726a89ec0f"></canvas>
               </div>
             </div>
           
@@ -117,11 +115,12 @@
       </p>
     </footer>
 
+    <script src="/js/chart.js"></script>
     <script>
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_72a33a0a_6acd_4ce9_9aa9_fdfb10da61cc'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_28364f17_7569_45af_a5c5_c49c63cb2663'), {
             type: 'doughnut',
             data: {
               labels: ["Einzahlungen aus Mieten und Pachten","Einzahl. aus Kostenerstattungen von verbund. Untern., Sondervermö. und Beteilig."],
@@ -143,7 +142,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_a90fb73e_a34e_4215_982c_9d90b1c702c3'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_3eee1f0a_e995_433b_9bc0_ad726a89ec0f'), {
             type: 'doughnut',
             data: {
               labels: ["Bewirtschaftung der Grundstücke und baulichen Anlagen","Unterhaltung des sonstigen beweglichen Vermögens"],
@@ -165,5 +164,6 @@
         
       
     </script>
+    <script defer data-domain="wernigerode-in-zahlen.de" src="https://plausible.io/js/script.js"></script>
   </body>
 </html>

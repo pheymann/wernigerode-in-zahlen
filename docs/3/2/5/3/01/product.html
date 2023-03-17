@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
-
-  <script src="/js/chart.js"></script>
 </head>
 <html>
   <body>
@@ -32,11 +30,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 88.300,00€</h5>
-                <canvas id="chartjs_4a25e8dc_a750_4128_9ab4_b2302fac0c56"></canvas>
+                <canvas id="chartjs_c83d3899_5f83_45fa_971e_e75be2d3d944"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -400.600,00€</h5>
-                <canvas id="chartjs_018862aa_ec6e_42da_85a9_28cd61329e06"></canvas>
+                <canvas id="chartjs_441de5b3_0dd4_4622_9951_6fc78e7a5cbd"></canvas>
               </div>
             </div>
           
@@ -47,7 +45,7 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs_17545165_7e42_417e_87d6_50215425d298"></canvas>
+                <canvas id="chartjs_40ba9ac9_c7ae_4350_9839_f6bc774d4706"></canvas>
               </div>
             
           
@@ -266,11 +264,12 @@
       </p>
     </footer>
 
+    <script src="/js/chart.js"></script>
     <script>
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_4a25e8dc_a750_4128_9ab4_b2302fac0c56'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_c83d3899_5f83_45fa_971e_e75be2d3d944'), {
             type: 'doughnut',
             data: {
               labels: ["Zuschüsse für laufende Zwecke von privaten Unternehmen (Spenden)","Zuschüsse für laufende Zwecke von übrigen Bereichen (Spenden)","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus dem Verkauf von beweglichen Sachen","Einzahlungen aus Kostenerstattungen vom Bund","Einzahlungen aus Kostenerstattungen von übrigen Bereichen"],
@@ -292,7 +291,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_018862aa_ec6e_42da_85a9_28cd61329e06'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_441de5b3_0dd4_4622_9951_6fc78e7a5cbd'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Dienstauszahlungen und dgl. an sonstige Beschäftigte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschäft.","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung des sonstigen unbeweglichen Vermögens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlage","Haltung von Fahrzeugen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für sonstige Dienstleistungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen","Erstatt. f.d. Ausz. v. Dritten aus lfd Verwaltungstät. an so. öff. Sonderrechn."],
@@ -316,7 +315,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_17545165_7e42_417e_87d6_50215425d298'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_40ba9ac9_c7ae_4350_9839_f6bc774d4706'), {
             type: 'doughnut',
             data: {
               labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
@@ -338,5 +337,6 @@
         
       
     </script>
+    <script defer data-domain="wernigerode-in-zahlen.de" src="https://plausible.io/js/script.js"></script>
   </body>
 </html>

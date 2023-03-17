@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
-
-  <script src="/js/chart.js"></script>
 </head>
 <html>
   <body>
@@ -32,11 +30,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 100.000,00€</h5>
-                <canvas id="chartjs_6286162f_f194_46dd_81ee_d8d01533c58f"></canvas>
+                <canvas id="chartjs_5430d61b_b5ff_4c44_b9a2_51f60f1626c4"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -150.000,00€</h5>
-                <canvas id="chartjs_4b2c1959_9b68_4eca_8176_fadcc47441c0"></canvas>
+                <canvas id="chartjs_2f162c93_8457_4c02_aa76_1bb1033a80f0"></canvas>
               </div>
             </div>
           
@@ -105,11 +103,12 @@
       </p>
     </footer>
 
+    <script src="/js/chart.js"></script>
     <script>
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_6286162f_f194_46dd_81ee_d8d01533c58f'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_5430d61b_b5ff_4c44_b9a2_51f60f1626c4'), {
             type: 'doughnut',
             data: {
               labels: ["Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land"],
@@ -131,7 +130,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_4b2c1959_9b68_4eca_8176_fadcc47441c0'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_2f162c93_8457_4c02_aa76_1bb1033a80f0'), {
             type: 'doughnut',
             data: {
               labels: ["Auszahlungen für Tiefbaumaßnahmen"],
@@ -153,5 +152,6 @@
         
       
     </script>
+    <script defer data-domain="wernigerode-in-zahlen.de" src="https://plausible.io/js/script.js"></script>
   </body>
 </html>

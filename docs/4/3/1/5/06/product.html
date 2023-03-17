@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
-
-  <script src="/js/chart.js"></script>
 </head>
 <html>
   <body>
@@ -32,11 +30,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 89.200,00€</h5>
-                <canvas id="chartjs_e93a7abe_9886_452c_afd9_888d327dd872"></canvas>
+                <canvas id="chartjs_ac9bd8f2_c2dc_41a8_941b_4dba108de263"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -159.200,00€</h5>
-                <canvas id="chartjs_326a63e7_c65a_4f4d_9c35_c2b6e5d0c13d"></canvas>
+                <canvas id="chartjs_e1fac73e_9271_47de_b4b9_8a53374a8cf6"></canvas>
               </div>
             </div>
           
@@ -190,11 +188,12 @@
       </p>
     </footer>
 
+    <script src="/js/chart.js"></script>
     <script>
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_e93a7abe_9886_452c_afd9_888d327dd872'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_ac9bd8f2_c2dc_41a8_941b_4dba108de263'), {
             type: 'doughnut',
             data: {
               labels: ["Zuweisungen für laufende Zwecke vom Land","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus Kostenerstattungen von Gemeinden und Gemeindeverbänden","Einzahlungen aus Kostenerstattungen von sonstigen öffentlichen Sonderrechnungen"],
@@ -216,7 +215,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_326a63e7_c65a_4f4d_9c35_c2b6e5d0c13d'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_e1fac73e_9271_47de_b4b9_8a53374a8cf6'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere Verwaltungs- und Betriebsauszahlungen","Sonstige Auszahlungen für die Inanspruchnahme von Rechten und Diensten","Geschäftsauszahlungen"],
@@ -241,5 +240,6 @@
         
       
     </script>
+    <script defer data-domain="wernigerode-in-zahlen.de" src="https://plausible.io/js/script.js"></script>
   </body>
 </html>

@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
-
-  <script src="/js/chart.js"></script>
 </head>
 <html>
   <body>
@@ -33,11 +31,11 @@
         <div class="row">
           <div class="col-6">
             <h5 class="center">Einnahmen: 34.789.300,00€</h5>
-            <canvas id="chartjs-6d3f7cd2-1e9d-4976-b1db-df770cdb88f3"></canvas>
+            <canvas id="chartjs-75376521-c8cc-4a08-b0a2-eeb0edf0d5c9"></canvas>
           </div>
           <div class="col-6">
             <h5 class="center">Ausgaben: -39.512.500,00€</h5>
-            <canvas id="chartjs-a04bcbce-0a64-4dca-80df-8c457f29c0d7"></canvas>
+            <canvas id="chartjs-63bc9a58-57bc-4975-8fd4-f63b568d1f69"></canvas>
           </div>
         </div>
       </div>
@@ -106,10 +104,11 @@
       </p>
     </footer>
 
+    <script src="/js/chart.js"></script>
     <script>
       
         var incomeDepartmentLinks = ["/2/department.html"];
-        var incomeCanvas = document.getElementById('chartjs-6d3f7cd2-1e9d-4976-b1db-df770cdb88f3');
+        var incomeCanvas = document.getElementById('chartjs-75376521-c8cc-4a08-b0a2-eeb0edf0d5c9');
         var incomeChart = new Chart(incomeCanvas, {
           type: 'doughnut',
           data: {
@@ -135,7 +134,7 @@
       
 
       var expensesDepartmentLinks = ["/1/department.html","/3/department.html","/4/department.html","/5/department.html"];
-      var expensesCanvas = document.getElementById('chartjs-a04bcbce-0a64-4dca-80df-8c457f29c0d7');
+      var expensesCanvas = document.getElementById('chartjs-63bc9a58-57bc-4975-8fd4-f63b568d1f69');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {
@@ -159,5 +158,6 @@
         },
       });
     </script>
+    <script defer data-domain="wernigerode-in-zahlen.de" src="https://plausible.io/js/script.js"></script>
   </body>
 </html>

@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
-
-  <script src="/js/chart.js"></script>
 </head>
 <html>
   <body>
@@ -32,11 +30,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 265.000,00€</h5>
-                <canvas id="chartjs_1e97842b_b815_4bc7_a87c_afeb87907a7c"></canvas>
+                <canvas id="chartjs_640b112e_2985_46a2_af64_b6c983b96239"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -858.600,00€</h5>
-                <canvas id="chartjs_7b4b5eab_469f_47cc_a3a1_89d662e59f24"></canvas>
+                <canvas id="chartjs_5a22818a_9dae_4ea5_8d36_56d01b18af14"></canvas>
               </div>
             </div>
           
@@ -47,7 +45,7 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs_116cdff7_e984_4722_bc24_92b104054965"></canvas>
+                <canvas id="chartjs_8ad44db8_07f8_4151_a992_8bfa114e7fb2"></canvas>
               </div>
             
           
@@ -236,11 +234,12 @@
       </p>
     </footer>
 
+    <script src="/js/chart.js"></script>
     <script>
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_1e97842b_b815_4bc7_a87c_afeb87907a7c'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_640b112e_2985_46a2_af64_b6c983b96239'), {
             type: 'doughnut',
             data: {
               labels: ["Zuweisungen für laufende Zwecke vom Land","Verwaltungsgebühren","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus dem Verkauf von Vorräten"],
@@ -262,7 +261,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_7b4b5eab_469f_47cc_a3a1_89d662e59f24'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_5a22818a_9dae_4ea5_8d36_56d01b18af14'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung des sonstigen unbeweglichen Vermögens","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für sonstige Dienstleistungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten","Erstattungen für die Auszahl. von Dritten aus lfd. Verwaltungstät. an das Land","Erstatt. für die Auszahl. von Dritten aus lfd. Verwaltungstät. an übrige Ber."],
@@ -286,7 +285,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_116cdff7_e984_4722_bc24_92b104054965'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_8ad44db8_07f8_4151_a992_8bfa114e7fb2'), {
             type: 'doughnut',
             data: {
               labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.","Auszahlungen für Tiefbaumaßnahmen"],
@@ -308,5 +307,6 @@
         
       
     </script>
+    <script defer data-domain="wernigerode-in-zahlen.de" src="https://plausible.io/js/script.js"></script>
   </body>
 </html>

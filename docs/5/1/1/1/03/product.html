@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
-
-  <script src="/js/chart.js"></script>
 </head>
 <html>
   <body>
@@ -32,11 +30,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 487.300,00€</h5>
-                <canvas id="chartjs_4f875583_71c8_4ef2_896d_8431095a1689"></canvas>
+                <canvas id="chartjs_4764e31e_5e03_47f8_99c6_d3d100e55cae"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -599.500,00€</h5>
-                <canvas id="chartjs_3cd44b51_cf41_449b_bda6_4f96d9d32cb1"></canvas>
+                <canvas id="chartjs_53e3e8fb_0ccf_448c_bc15_5b79c8c32270"></canvas>
               </div>
             </div>
           
@@ -47,11 +45,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 620.000,00€</h5>
-                <canvas id="chartjs_3240a137_4455_4fe9_92d6_070c0e121685"></canvas>
+                <canvas id="chartjs_7466d2e0_fcf8_4221_9555_305cd72a0a74"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -190.000,00€</h5>
-                <canvas id="chartjs_15508d6a_76ef_4492_b755_9bcf933c3f01"></canvas>
+                <canvas id="chartjs_f3934181_a225_4382_97a0_9a1f1fc77f2a"></canvas>
               </div>
             </div>
           
@@ -216,11 +214,12 @@
       </p>
     </footer>
 
+    <script src="/js/chart.js"></script>
     <script>
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_4f875583_71c8_4ef2_896d_8431095a1689'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_4764e31e_5e03_47f8_99c6_d3d100e55cae'), {
             type: 'doughnut',
             data: {
               labels: ["Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus Mieten und Pachten","Einzahlungen aus Kostenerstattungen von übrigen Bereichen","Andere sonstige Einzahlungen aus laufender Verwaltungstätigkeit"],
@@ -242,7 +241,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_3cd44b51_cf41_449b_bda6_4f96d9d32cb1'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_53e3e8fb_0ccf_448c_bc15_5b79c8c32270'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Unterhaltung des sonstigen unbeweglichen Vermögens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Auszahlungen für sonstige Dienstleistungen","Geschäftsauszahlungen","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten"],
@@ -265,7 +264,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_3240a137_4455_4fe9_92d6_070c0e121685'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_7466d2e0_fcf8_4221_9555_305cd72a0a74'), {
             type: 'doughnut',
             data: {
               labels: ["Einzahlungen aus Veräußerung von Grundstücken, Gebäuden, Infrastrukturvermögen"],
@@ -287,7 +286,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_15508d6a_76ef_4492_b755_9bcf933c3f01'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_f3934181_a225_4382_97a0_9a1f1fc77f2a'), {
             type: 'doughnut',
             data: {
               labels: ["Auszahlungen für den Erwerb von Grundstücken, Gebäuden und Infrastrukturvermögen","Auszahlungen für den Erwerb von Grundstücken, Gebäuden und Infrastrukturvermögen"],
@@ -309,5 +308,6 @@
         
       
     </script>
+    <script defer data-domain="wernigerode-in-zahlen.de" src="https://plausible.io/js/script.js"></script>
   </body>
 </html>

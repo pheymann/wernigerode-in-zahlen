@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
-
-  <script src="/js/chart.js"></script>
 </head>
 <html>
   <body>
@@ -106,6 +104,7 @@
       </p>
     </footer>
 
+    <script src="/js/chart.js"></script>
     <script>
       {{range .BalanceSections}}
         {{if or .HasIncomeAndExpenses (and .HasIncome .HasMoreThanOneIncome)}}
@@ -164,5 +163,6 @@
         {{end}}
       {{end}}
     </script>
+    <script defer data-domain="wernigerode-in-zahlen.de" src="https://plausible.io/js/script.js"></script>
   </body>
 </html>

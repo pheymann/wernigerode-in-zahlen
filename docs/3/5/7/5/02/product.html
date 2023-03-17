@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
-
-  <script src="/js/chart.js"></script>
 </head>
 <html>
   <body>
@@ -32,11 +30,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 4.100,00€</h5>
-                <canvas id="chartjs_e6126307_e983_4008_b690_2f609e981aae"></canvas>
+                <canvas id="chartjs_c5b43ce4_5857_439d_9533_2470b9944c3e"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -117.400,00€</h5>
-                <canvas id="chartjs_2b97fe49_ddd5_448a_b97c_9f19e7f3c884"></canvas>
+                <canvas id="chartjs_a4940a6e_a622_4b40_802d_b38a889d4231"></canvas>
               </div>
             </div>
           
@@ -178,11 +176,12 @@
       </p>
     </footer>
 
+    <script src="/js/chart.js"></script>
     <script>
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_e6126307_e983_4008_b690_2f609e981aae'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_c5b43ce4_5857_439d_9533_2470b9944c3e'), {
             type: 'doughnut',
             data: {
               labels: ["Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus dem Verkauf von Vorräten (Holzverkauf)","Einzahlungen aus Kostenerstattungen von übrigen Bereichen"],
@@ -204,7 +203,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_2b97fe49_ddd5_448a_b97c_9f19e7f3c884'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_a4940a6e_a622_4b40_802d_b38a889d4231'), {
             type: 'doughnut',
             data: {
               labels: ["Unterhaltung des sonstigen unbeweglichen Vermögens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Erwerb geringwertiger Vermögensgegenstände","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten","Erstatt. f.d. Ausz. v. Dritten aus lfd Verwaltungstät. an so. öff. Sonderrechn."],
@@ -229,5 +228,6 @@
         
       
     </script>
+    <script defer data-domain="wernigerode-in-zahlen.de" src="https://plausible.io/js/script.js"></script>
   </body>
 </html>

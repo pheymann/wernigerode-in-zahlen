@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
-
-  <script src="/js/chart.js"></script>
 </head>
 <html>
   <body>
@@ -32,11 +30,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 37.500,00€</h5>
-                <canvas id="chartjs_4c0e5c50_02a0_4c54_9538_bd6d98591379"></canvas>
+                <canvas id="chartjs_04a459a6_8731_486b_8c1b_43e298b668c7"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -374.700,00€</h5>
-                <canvas id="chartjs_725fe248_9aa3_4e2c_9c3f_c2c3f86f19e3"></canvas>
+                <canvas id="chartjs_dc291a80_49ad_47c6_99a9_768079bf10b8"></canvas>
               </div>
             </div>
           
@@ -196,11 +194,12 @@
       </p>
     </footer>
 
+    <script src="/js/chart.js"></script>
     <script>
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_4c0e5c50_02a0_4c54_9538_bd6d98591379'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_04a459a6_8731_486b_8c1b_43e298b668c7'), {
             type: 'doughnut',
             data: {
               labels: ["Erträge aus Kostenerstattungen von privaten Unternehmen (HarzAG)"],
@@ -222,7 +221,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_725fe248_9aa3_4e2c_9c3f_c2c3f86f19e3'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_dc291a80_49ad_47c6_99a9_768079bf10b8'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfe, Unterstützungsleistung für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Besondere Verwaltungs- und Betriebsauszahlungen","Zuweisungen an Zweckverbände","Zuschüsse an sonstige öffentliche Sonderrechnungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten","Erstatt. für die Auszahl. von Dritten aus lfd. Verwaltungstät. an priv. Untern."],
@@ -247,5 +246,6 @@
         
       
     </script>
+    <script defer data-domain="wernigerode-in-zahlen.de" src="https://plausible.io/js/script.js"></script>
   </body>
 </html>

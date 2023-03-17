@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
-
-  <script src="/js/chart.js"></script>
 </head>
 <html>
   <body>
@@ -28,11 +26,11 @@
         <div class="row">
           <div class="col-6">
             <h5 class="center">Einnahmen: 839.200,00€</h5>
-            <canvas id="chartjs-a111ce76-14c9-434b-8435-24c6dc0ef77e"></canvas>
+            <canvas id="chartjs-add56aa6-e14b-4f87-9b74-857e255b6c34"></canvas>
           </div>
           <div class="col-6">
             <h5 class="center">Ausgaben: -17.471.500,00€</h5>
-            <canvas id="chartjs-6c09bee3-189a-4fd4-81da-d54f5f113f52"></canvas>
+            <canvas id="chartjs-1eca7656-c264-4214-963c-978535b29f30"></canvas>
           </div>
         </div>
       
@@ -243,10 +241,11 @@
       </p>
     </footer>
 
+    <script src="/js/chart.js"></script>
     <script>
       
       var incomeProductLinks = ["/4/3/6/5/03/product.html","/4/3/6/5/05/product.html","/4/5/4/6/01/product.html","/4/5/4/6/03/product.html","/4/5/7/3/01/product.html"];
-      var incomeCanvas = document.getElementById('chartjs-a111ce76-14c9-434b-8435-24c6dc0ef77e');
+      var incomeCanvas = document.getElementById('chartjs-add56aa6-e14b-4f87-9b74-857e255b6c34');
       var incomeChart = new Chart(incomeCanvas, {
         type: 'doughnut',
         data: {
@@ -273,7 +272,7 @@
 
       
       var expenesesProductLinks = ["/4/1/2/2/01/product.html","/4/1/2/2/02/product.html","/4/1/2/2/03/product.html","/4/1/2/6/01/product.html","/4/2/1/1/01/product.html","/4/2/4/3/01/product.html","/4/2/5/2/01/product.html","/4/2/5/2/02/product.html","/4/2/6/2/02/product.html","/4/2/7/2/01/product.html","/4/2/8/1/01/product.html","/4/3/1/5/01/product.html","/4/3/1/5/04/product.html","/4/3/1/5/06/product.html","/4/3/3/1/01/product.html","/4/3/4/6/01/product.html","/4/3/6/5/01/product.html","/4/3/6/5/02/product.html","/4/3/6/6/01/product.html","/4/4/2/1/01/product.html","/4/4/2/4/01/product.html","/4/4/2/4/02/product.html","/4/5/4/7/01/product.html"];
-      var expensesCanvas = document.getElementById('chartjs-6c09bee3-189a-4fd4-81da-d54f5f113f52');
+      var expensesCanvas = document.getElementById('chartjs-1eca7656-c264-4214-963c-978535b29f30');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {
@@ -298,5 +297,6 @@
       });
       
     </script>
+    <script defer data-domain="wernigerode-in-zahlen.de" src="https://plausible.io/js/script.js"></script>
   </body>
 </html>

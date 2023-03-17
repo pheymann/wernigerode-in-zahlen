@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
-
-  <script src="/js/chart.js"></script>
 </head>
 <html>
   <body>
@@ -32,11 +30,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 7.200,00€</h5>
-                <canvas id="chartjs_4d5c72d6_890f_44b6_8e3a_ca12eaa945be"></canvas>
+                <canvas id="chartjs_69735a66_5fa4_414e_8de8_05b9cd4597fa"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -191.800,00€</h5>
-                <canvas id="chartjs_ae519157_d8b1_4b08_befc_0caefe9b5d11"></canvas>
+                <canvas id="chartjs_e2c60345_8791_47df_b084_dff9730da581"></canvas>
               </div>
             </div>
           
@@ -183,11 +181,12 @@
       </p>
     </footer>
 
+    <script src="/js/chart.js"></script>
     <script>
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_4d5c72d6_890f_44b6_8e3a_ca12eaa945be'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_69735a66_5fa4_414e_8de8_05b9cd4597fa'), {
             type: 'doughnut',
             data: {
               labels: ["Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus dem Verkauf von Vorräten"],
@@ -209,7 +208,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_ae519157_d8b1_4b08_befc_0caefe9b5d11'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_e2c60345_8791_47df_b084_dff9730da581'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere Verwaltungs- und Betriebsauszahlungen","Zuschüsse an übrige Bereiche","Geschäftsauszahlungen","Auszahlungen für Honorare"],
@@ -231,5 +230,6 @@
         
       
     </script>
+    <script defer data-domain="wernigerode-in-zahlen.de" src="https://plausible.io/js/script.js"></script>
   </body>
 </html>
