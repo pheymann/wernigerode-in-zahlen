@@ -35,7 +35,7 @@ func Merge(fpaJSON string, fpbJSONOpt shared.Option[string]) string {
 			}
 		}
 
-		var errorMessages string = "Not all value limits were used.\n"
+		var errorMessages string = "Not all Above Value limits were used.\n"
 		var errorCounter = 0
 		for _, valueLimit := range valueLimits {
 			if valueLimit == nil {
