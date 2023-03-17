@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
+  <link rel="stylesheet" type="text/css" href="/css/styling.css">
 
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="/js/chart.js"></script>
 </head>
 <html>
   <body>
@@ -32,11 +32,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 64.500,00€</h5>
-                <canvas id="chartjs_5d2096b1_6774_4a4f_ba8c_1c737582c837"></canvas>
+                <canvas id="chartjs_e4dd4ba5_09f1_43ee_83c1_418140ea196b"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -308.000,00€</h5>
-                <canvas id="chartjs_2331c556_d687_414b_bdc4_197bd477ae74"></canvas>
+                <canvas id="chartjs_34f5a347_202d_45b6_803a_28c49a196bdd"></canvas>
               </div>
             </div>
           
@@ -193,7 +193,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_5d2096b1_6774_4a4f_ba8c_1c737582c837'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_e4dd4ba5_09f1_43ee_83c1_418140ea196b'), {
             type: 'doughnut',
             data: {
               labels: ["Verwaltungsgebühren","Einzahlungen aus dem Verkauf von Vorräten (Stammbücher)"],
@@ -215,7 +215,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_2331c556_d687_414b_bdc4_197bd477ae74'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_34f5a347_202d_45b6_803a_28c49a196bdd'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für Mieten und Pachten","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für den Erwerb von Vorräten (Stammbücher)","Auszahlungen für sonstige Dienstleistungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen"],

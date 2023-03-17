@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
+  <link rel="stylesheet" type="text/css" href="/css/styling.css">
 
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="/js/chart.js"></script>
 </head>
 <html>
   <body>
@@ -32,11 +32,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 150.000,00€</h5>
-                <canvas id="chartjs_ed2f30c5_92e8_4be6_8e74_1b06dca5c0c2"></canvas>
+                <canvas id="chartjs_fcfadbbc_bccf_401e_8a5f_4ea360fc92f0"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -135.000,00€</h5>
-                <canvas id="chartjs_8d81dd24_81fa_45ce_ad8f_86ce4ee3c17a"></canvas>
+                <canvas id="chartjs_20444b6e_c2e9_49eb_ad41_f0e25bead412"></canvas>
               </div>
             </div>
           
@@ -109,7 +109,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_ed2f30c5_92e8_4be6_8e74_1b06dca5c0c2'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_fcfadbbc_bccf_401e_8a5f_4ea360fc92f0'), {
             type: 'doughnut',
             data: {
               labels: ["Einzahlungen aus Kostenerstattungen von Gemeinden und Gemeindeverbänden"],
@@ -131,7 +131,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_8d81dd24_81fa_45ce_ad8f_86ce4ee3c17a'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_20444b6e_c2e9_49eb_ad41_f0e25bead412'), {
             type: 'doughnut',
             data: {
               labels: ["Erstatt. f.d. Ausz. v. Dritten aus lfd. Verwaltungstätigkeit an Gemeinde\u0026 GV"],

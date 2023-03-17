@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
+  <link rel="stylesheet" type="text/css" href="/css/styling.css">
 
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="/js/chart.js"></script>
 </head>
 <html>
   <body>
@@ -32,11 +32,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 3.700,00€</h5>
-                <canvas id="chartjs_294c50fc_60cb_481e_ae5f_ec8c2346895a"></canvas>
+                <canvas id="chartjs_53bc75b6_72e3_4423_9196_9b1998fa138c"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -180.900,00€</h5>
-                <canvas id="chartjs_e7739218_36d2_4506_a4f2_a6f01e9b2d12"></canvas>
+                <canvas id="chartjs_445a0bd4_d4ca_4552_adeb_a00f5c7a6ac9"></canvas>
               </div>
             </div>
           
@@ -218,7 +218,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_294c50fc_60cb_481e_ae5f_ec8c2346895a'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_53bc75b6_72e3_4423_9196_9b1998fa138c'), {
             type: 'doughnut',
             data: {
               labels: ["Zuweisungen für laufende Zwecke von Gemeinden und Gemeindeverbänden","Zuweisungen für laufende Zwecke von gesetzlichen Sozialversicherungen(Koba)","Benutzungsgebühren und ähnliche Entgelte"],
@@ -240,7 +240,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_e7739218_36d2_4506_a4f2_a6f01e9b2d12'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_445a0bd4_d4ca_4552_adeb_a00f5c7a6ac9'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Dienstauszahlungen und dgl. an sonstige Beschäftigte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zu Versorgungskassen für sonstige Beschäftigte","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschäft.","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen-Gebäudemanagement","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere Verwaltungs- und Betriebsauszahlungen","Zuschüsse an übrige Bereiche","Auszahlungen für ehrenamtliche und sonstige Tätigkeit","Geschäftsauszahlungen"],

@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
+  <link rel="stylesheet" type="text/css" href="/css/styling.css">
 
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="/js/chart.js"></script>
 </head>
 <html>
   <body>
@@ -32,11 +32,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 73.000,00€</h5>
-                <canvas id="chartjs_e0804946_8e7d_45e1_8e96_9f3697443f23"></canvas>
+                <canvas id="chartjs_72a33a0a_6acd_4ce9_9aa9_fdfb10da61cc"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -25.000,00€</h5>
-                <canvas id="chartjs_a3168be1_d875_42dd_90e1_cc602afee01a"></canvas>
+                <canvas id="chartjs_a90fb73e_a34e_4215_982c_9d90b1c702c3"></canvas>
               </div>
             </div>
           
@@ -121,7 +121,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_e0804946_8e7d_45e1_8e96_9f3697443f23'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_72a33a0a_6acd_4ce9_9aa9_fdfb10da61cc'), {
             type: 'doughnut',
             data: {
               labels: ["Einzahlungen aus Mieten und Pachten","Einzahl. aus Kostenerstattungen von verbund. Untern., Sondervermö. und Beteilig."],
@@ -143,7 +143,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_a3168be1_d875_42dd_90e1_cc602afee01a'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_a90fb73e_a34e_4215_982c_9d90b1c702c3'), {
             type: 'doughnut',
             data: {
               labels: ["Bewirtschaftung der Grundstücke und baulichen Anlagen","Unterhaltung des sonstigen beweglichen Vermögens"],

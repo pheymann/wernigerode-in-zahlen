@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
+  <link rel="stylesheet" type="text/css" href="/css/styling.css">
 
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="/js/chart.js"></script>
 </head>
 <html>
   <body>
@@ -32,11 +32,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 49.500,00€</h5>
-                <canvas id="chartjs_2f356312_251d_434f_af4b_fd95d8fd9bca"></canvas>
+                <canvas id="chartjs_154bdbc8_e4f3_4006_844c_74f923c7cbdf"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -103.800,00€</h5>
-                <canvas id="chartjs_ef2c88a6_53ef_40dc_ab5b_6a5eabe1c5ed"></canvas>
+                <canvas id="chartjs_03e3cdc9_304d_4a47_82fe_8023cb3825d1"></canvas>
               </div>
             </div>
           
@@ -182,7 +182,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_2f356312_251d_434f_af4b_fd95d8fd9bca'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_154bdbc8_e4f3_4006_844c_74f923c7cbdf'), {
             type: 'doughnut',
             data: {
               labels: ["Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus Kostenerstattungen von sonstigen öffentlichen Sonderrechnungen"],
@@ -204,7 +204,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_ef2c88a6_53ef_40dc_ab5b_6a5eabe1c5ed'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_03e3cdc9_304d_4a47_82fe_8023cb3825d1'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere Verwaltungs- und Betriebsauszahlungen","Geschäftsauszahlungen"],

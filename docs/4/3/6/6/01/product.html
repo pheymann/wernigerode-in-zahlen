@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
+  <link rel="stylesheet" type="text/css" href="/css/styling.css">
 
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="/js/chart.js"></script>
 </head>
 <html>
   <body>
@@ -32,11 +32,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 93.000,00€</h5>
-                <canvas id="chartjs_cef16dee_f281_4039_8381_54b54daba71c"></canvas>
+                <canvas id="chartjs_e100e2ee_feec_4b4f_a74e_adcc2d09b578"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -509.400,00€</h5>
-                <canvas id="chartjs_1f619ca3_c7f6_42cb_977e_282709ed1275"></canvas>
+                <canvas id="chartjs_204c2042_058c_463d_bb5a_3c97578895a8"></canvas>
               </div>
             </div>
           
@@ -47,7 +47,7 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs_30b01c0c_de7c_491f_8f29_9d16fd6c9ec2"></canvas>
+                <canvas id="chartjs_dac1e6f8_e3cd_4d54_9624_5d20bbf8a53a"></canvas>
               </div>
             
           
@@ -228,7 +228,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_cef16dee_f281_4039_8381_54b54daba71c'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_e100e2ee_feec_4b4f_a74e_adcc2d09b578'), {
             type: 'doughnut',
             data: {
               labels: ["Zuweisungen für laufende Zwecke von Gemeinden und Gemeindeverbänden","Benutzungsgebühren und ähnliche Entgelte"],
@@ -250,7 +250,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_1f619ca3_c7f6_42cb_977e_282709ed1275'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_204c2042_058c_463d_bb5a_3c97578895a8'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für sonstige Dienstleistungen","Zuschüsse an übrige Bereiche","Geschäftsauszahlungen","Auszahlungen für Honorare"],
@@ -274,7 +274,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_30b01c0c_de7c_491f_8f29_9d16fd6c9ec2'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_dac1e6f8_e3cd_4d54_9624_5d20bbf8a53a'), {
             type: 'doughnut',
             data: {
               labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],

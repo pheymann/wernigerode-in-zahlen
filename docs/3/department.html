@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
+  <link rel="stylesheet" type="text/css" href="/css/styling.css">
 
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="/js/chart.js"></script>
 </head>
 <html>
   <body>
@@ -28,11 +28,11 @@
         <div class="row">
           <div class="col-6">
             <h5 class="center">Einnahmen: 544.900,00€</h5>
-            <canvas id="chartjs-4cf94f45-1734-4723-83f0-bea194127ca9"></canvas>
+            <canvas id="chartjs-2c758e2a-b4df-4a10-b052-178c1930476b"></canvas>
           </div>
           <div class="col-6">
             <h5 class="center">Ausgaben: -6.349.100,00€</h5>
-            <canvas id="chartjs-81ee6b94-24c3-48ed-a1bf-ea7e8c373934"></canvas>
+            <canvas id="chartjs-4586cb2d-da05-4cf2-8993-c1134aad8fd6"></canvas>
           </div>
         </div>
       
@@ -156,7 +156,7 @@
     <script>
       
       var incomeProductLinks = ["/3/1/1/1/12/product.html","/3/2/8/1/02/product.html","/3/5/4/5/01/product.html","/3/5/4/6/02/product.html","/3/5/5/1/03/product.html"];
-      var incomeCanvas = document.getElementById('chartjs-4cf94f45-1734-4723-83f0-bea194127ca9');
+      var incomeCanvas = document.getElementById('chartjs-2c758e2a-b4df-4a10-b052-178c1930476b');
       var incomeChart = new Chart(incomeCanvas, {
         type: 'doughnut',
         data: {
@@ -183,7 +183,7 @@
 
       
       var expenesesProductLinks = ["/3/1/1/1/11/product.html","/3/2/5/3/01/product.html","/3/3/6/6/02/product.html","/3/5/5/1/01/product.html","/3/5/5/3/01/product.html","/3/5/5/5/01/product.html","/3/5/7/5/02/product.html","/3/5/7/5/04/product.html"];
-      var expensesCanvas = document.getElementById('chartjs-81ee6b94-24c3-48ed-a1bf-ea7e8c373934');
+      var expensesCanvas = document.getElementById('chartjs-4586cb2d-da05-4cf2-8993-c1134aad8fd6');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {

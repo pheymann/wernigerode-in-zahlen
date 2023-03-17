@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
+  <link rel="stylesheet" type="text/css" href="/css/styling.css">
 
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="/js/chart.js"></script>
 </head>
 <html>
   <body>
@@ -32,11 +32,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 270.000,00€</h5>
-                <canvas id="chartjs_857e2109_5256_4591_9516_db9a5c345e44"></canvas>
+                <canvas id="chartjs_0f937419_bbe1_4c4a_bf00_890edb3508f5"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -125.100,00€</h5>
-                <canvas id="chartjs_8923b53f_502c_4306_af3c_01afdd6c3596"></canvas>
+                <canvas id="chartjs_4dabb707_852c_48c9_aaad_02b571c7542a"></canvas>
               </div>
             </div>
           
@@ -188,7 +188,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_857e2109_5256_4591_9516_db9a5c345e44'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_0f937419_bbe1_4c4a_bf00_890edb3508f5'), {
             type: 'doughnut',
             data: {
               labels: ["Benutzungsgebühren und ähnliche Entgelte"],
@@ -210,7 +210,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_8923b53f_502c_4306_af3c_01afdd6c3596'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_4dabb707_852c_48c9_aaad_02b571c7542a'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Unterhaltung der Grundstücke und baulichen Anlagen-Gebäudemanagement","Unterhaltung des sonstigen unbeweglichen Vermögens","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Auszahlungen für sonstige Dienstleistungen","Geschäftsauszahlungen"],

@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
+  <link rel="stylesheet" type="text/css" href="/css/styling.css">
 
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="/js/chart.js"></script>
 </head>
 <html>
   <body>
@@ -32,11 +32,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 8.100,00€</h5>
-                <canvas id="chartjs_50944c8c_3afb_4412_8870_7877a10b0a69"></canvas>
+                <canvas id="chartjs_bdd5a6a3_c296_407b_9adf_6ce6c9cca509"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -697.100,00€</h5>
-                <canvas id="chartjs_9672cb15_0aaa_4741_a3f8_880f615eb470"></canvas>
+                <canvas id="chartjs_49f9e2ef_1a5a_4462_9394_175c6aa60e8e"></canvas>
               </div>
             </div>
           
@@ -163,7 +163,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_50944c8c_3afb_4412_8870_7877a10b0a69'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_bdd5a6a3_c296_407b_9adf_6ce6c9cca509'), {
             type: 'doughnut',
             data: {
               labels: ["Benutzungsgebühren und ähnliche Entgelte"],
@@ -185,7 +185,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_9672cb15_0aaa_4741_a3f8_880f615eb470'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_49f9e2ef_1a5a_4462_9394_175c6aa60e8e'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für sonstige Dienstleistungen","Geschäftsauszahlungen","Verfügungsmittel"],

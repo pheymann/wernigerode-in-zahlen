@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
+  <link rel="stylesheet" type="text/css" href="/css/styling.css">
 
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="/js/chart.js"></script>
 </head>
 <html>
   <body>
@@ -32,11 +32,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 466.900,00€</h5>
-                <canvas id="chartjs_74cbb64e_a22f_4868_9ebd_291fe3be27d3"></canvas>
+                <canvas id="chartjs_26ddf244_a13c_476d_9d95_635c52358ab3"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -636.200,00€</h5>
-                <canvas id="chartjs_161d986b_55b2_4093_94bb_437e2b44c234"></canvas>
+                <canvas id="chartjs_af483fff_96c5_4772_87a1_fb9f299e143f"></canvas>
               </div>
             </div>
           
@@ -230,7 +230,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_74cbb64e_a22f_4868_9ebd_291fe3be27d3'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_26ddf244_a13c_476d_9d95_635c52358ab3'), {
             type: 'doughnut',
             data: {
               labels: [".6142000 Zuweisungen für laufende Zwecke von Gemeinden und Gemeindeverbänden",".6321000 Benutzungsgebühren und ähnliche Entgelte",".6480001 Einzahlungen aus Kostenerstattungen vom Bund",".6482000 Einzahlungen aus Kostenerstattungen von Gemeinden und Gemeindeverbänden"],
@@ -252,7 +252,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_161d986b_55b2_4093_94bb_437e2b44c234'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_af483fff_96c5_4772_87a1_fb9f299e143f'), {
             type: 'doughnut',
             data: {
               labels: [".7012000 Dienstauszahlungen und dgl. an Arbeitnehmer",".7019000 Dienstauszahlungen und dgl. an sonstige Beschäftigte",".7022000 Beiträge zu Versorgungskassen für Arbeitnehmer",".7032000 Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer",".7039000 Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschäft.",".7041000 Beihilfen, Unterstützungsleistungen für Beschäftigte",".7211000 Unterhaltung der Grundstücke und baulichen Anlagen",".7221000 Unterhaltung des sonstigen unbeweglichen Vermögens",".7231000 Auszahlungen für Mieten und Pachten",".7241000 Bewirtschaftung der Grundstücke und baulichen Anlagen",".7252000 Erwerb geringwertiger Vermögensgegenstände",".7255000 Unterhaltung des sonstigen beweglichen Vermögens",".7271000 Besondere Verwaltungs- und Betriebsauszahlungen",".7291000 Auszahlungen für sonstige Dienstleistungen",".7431000 Geschäftsauszahlungen",".7431200 Auszahlungen für Honorare"],

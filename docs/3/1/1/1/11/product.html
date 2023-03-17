@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
+  <link rel="stylesheet" type="text/css" href="/css/styling.css">
 
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="/js/chart.js"></script>
 </head>
 <html>
   <body>
@@ -32,11 +32,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 7.100,00€</h5>
-                <canvas id="chartjs_4c79e638_03dc_495e_93a7_86da48f7cc0a"></canvas>
+                <canvas id="chartjs_1182845d_abcf_4ba0_9a95_2f995ffa9d2a"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -2.795.800,00€</h5>
-                <canvas id="chartjs_bb492db1_86c9_448d_9d44_ea5639baf5dc"></canvas>
+                <canvas id="chartjs_5189775d_831e_4112_ad48_138561833f89"></canvas>
               </div>
             </div>
           
@@ -47,11 +47,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 20.000,00€</h5>
-                <canvas id="chartjs_d726a75c_47ea_4189_a8ee_1c229bd33984"></canvas>
+                <canvas id="chartjs_79ab92b3_145c_4bec_9c17_c217bddc2a57"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -108.000,00€</h5>
-                <canvas id="chartjs_d4e7e3a3_f29f_4947_a1f2_5b1cf23f887d"></canvas>
+                <canvas id="chartjs_6401cfb7_22b8_41f5_ade7_0dc546c023a2"></canvas>
               </div>
             </div>
           
@@ -256,7 +256,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_4c79e638_03dc_495e_93a7_86da48f7cc0a'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_1182845d_abcf_4ba0_9a95_2f995ffa9d2a'), {
             type: 'doughnut',
             data: {
               labels: ["Einzahlungen aus Kostenerstattungen vom Bund","Einzahlungen aus Kostenerstattungen von privaten Unternehmen","Einzahlungen aus Kostenerstattungen von übrigen Bereichen"],
@@ -278,7 +278,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_bb492db1_86c9_448d_9d44_ea5639baf5dc'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_5189775d_831e_4112_ad48_138561833f89'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Dienstauszahlungen und dgl. an sonstige Beschäftigte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschäft.","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung des sonstigen unbeweglichen Vermögens","Auszahlungen für Mieten und Pachten","Auszahlungen für Leasing","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen"],
@@ -301,7 +301,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_d726a75c_47ea_4189_a8ee_1c229bd33984'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_79ab92b3_145c_4bec_9c17_c217bddc2a57'), {
             type: 'doughnut',
             data: {
               labels: ["Einzahl.a.d.Veräuß.von bewegl. Vermögensgegenst. von mehr als 1000 € ohne UmStr."],
@@ -323,7 +323,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_d4e7e3a3_f29f_4947_a1f2_5b1cf23f887d'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_6401cfb7_22b8_41f5_ade7_0dc546c023a2'), {
             type: 'doughnut',
             data: {
               labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],

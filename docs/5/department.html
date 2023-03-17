@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
+  <link rel="stylesheet" type="text/css" href="/css/styling.css">
 
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="/js/chart.js"></script>
 </head>
 <html>
   <body>
@@ -28,11 +28,11 @@
         <div class="row">
           <div class="col-6">
             <h5 class="center">Einnahmen: 317.800,00€</h5>
-            <canvas id="chartjs-5983806d-7f3d-48f0-81a2-9b9e5246bd23"></canvas>
+            <canvas id="chartjs-6c2cb07d-1ae9-483e-8541-ec8abc1eed0c"></canvas>
           </div>
           <div class="col-6">
             <h5 class="center">Ausgaben: -11.221.800,00€</h5>
-            <canvas id="chartjs-7a1b1f4c-6ae2-494a-9136-e1759d07d856"></canvas>
+            <canvas id="chartjs-a004ded6-add6-4ab0-b3f2-22bee000951d"></canvas>
           </div>
         </div>
       
@@ -168,7 +168,7 @@
     <script>
       
       var incomeProductLinks = ["/5/1/1/1/03/product.html"];
-      var incomeCanvas = document.getElementById('chartjs-5983806d-7f3d-48f0-81a2-9b9e5246bd23');
+      var incomeCanvas = document.getElementById('chartjs-6c2cb07d-1ae9-483e-8541-ec8abc1eed0c');
       var incomeChart = new Chart(incomeCanvas, {
         type: 'doughnut',
         data: {
@@ -195,7 +195,7 @@
 
       
       var expenesesProductLinks = ["/5/1/1/1/14/product.html","/5/1/1/1/15/product.html","/5/5/1/1/01/product.html","/5/5/1/1/02/product.html","/5/5/1/1/03/product.html","/5/5/1/1/04/product.html","/5/5/2/3/01/product.html","/5/5/2/3/02/product.html","/5/5/4/1/01/product.html","/5/5/4/5/02/product.html","/5/5/4/7/02/product.html","/5/5/5/2/01/product.html","/5/5/6/1/01/product.html","/5/5/7/5/03/product.html"];
-      var expensesCanvas = document.getElementById('chartjs-7a1b1f4c-6ae2-494a-9136-e1759d07d856');
+      var expensesCanvas = document.getElementById('chartjs-a004ded6-add6-4ab0-b3f2-22bee000951d');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {
