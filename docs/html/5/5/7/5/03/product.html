@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<head>
+  <title>Produkt</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<html>
+  <body>
+    <h1>Ortsentwicklung Schierke</h1>
+
+    <p>
+      Das Produkt -  Planung, Bau und Entwicklung des Ortsteils Schierke - wird in 2023
+    </p>
+
+    <h2 class="total-cashflow-expenses center">-50.000,00€</h2>
+
+    <p>
+      kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
+		Auflistung von Kostenstellen. Ganz am Ende dieser Seite findest du noch eine Beschreibung des Produkts.
+    </p>
+
+    <div class="container">
+      
+          <h3>- Investitionen kosten <span class="total-cashflow-expenses">-50.000,00€</span></h3>
+
+          
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 450.000,00€</h5>
+                <canvas id="chartjs_6673d3e6_da89_4c72_948d_d91f121f64f1"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: -500.000,00€</h5>
+                <canvas id="chartjs_9bb17656_c1c5_4cfe_8e5b_abfa95731806"></canvas>
+              </div>
+            </div>
+          
+      
+    </div>
+
+    <div class="info-sheet">
+      <h3>Aufgabe</h3>
+      <p> Beschlüsse der politischen Gremien</p>
+
+      <h3>Zielgruppe</h3>
+      <p>EinwohnerInnender Stadt Wernigerode und deren Ortsteilen sowie deren Gästen</p>
+
+      <h3>Dienstleistungen</h3>
+      <p> -Planungs- und Bauleistungen bzgl. Ortsmittenentwicklung -Errichtung und Weiterentwicklung der touristischen Infrastruktur im Außenbereich, z.B. Ausbau Loipen- und Wegesystem</p>
+
+      <h3>Klassifizierung</h3>
+      <ul>
+        <li>Fachbereich: Budget Stadtentwicklung</li>
+        <li>Produktklasse: Gestaltung der Umwelt</li>
+        <li>Produktbereich: Wirtschaft und Tourismus</li>
+        <li>Produktgruppe: Tourismus</li>
+        <li>Produkt: Ortsentwicklung Schierke</li>
+      </ul>
+
+      <table style="margin-top: 80px;">
+        <tbody>
+          <tr>
+            <th>Konto</th>
+            <th>Budget</th>
+            <th>oberhalb Wertgrenze</th>
+          </tr>
+
+          
+            <tr>
+              <td>Auszahlungen für sonstige Baumaßnahmen</td>
+              <td>-500.000,00€</td>
+              <td>Verkehrs-und Wegenetz in Schierke</td>
+            </tr>
+          
+            <tr>
+              <td>Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land</td>
+              <td>450.000,00€</td>
+              <td>Verkehrs-und Wegenetz in Schierke</td>
+            </tr>
+          
+        </tbody>
+      </table>
+    </div>
+
+    <div class="back-link center">
+      <a href="/5/department.html">Zurück zur Bereichsübersicht</a>
+    </div>
+
+    <p class="data-disclosure">
+      Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2022.
+			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
+			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
+			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
+    </p>
+
+    <footer>
+      <p>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Das Impression befindet sich <a href="/imprint.html">hier</a>.
+      </p>
+    </footer>
+
+    <script>
+      
+        
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_6673d3e6_da89_4c72_948d_d91f121f64f1'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land"],
+              datasets: [{
+                label: 'Euro',
+                data: [450000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_9bb17656_c1c5_4cfe_8e5b_abfa95731806'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Auszahlungen für sonstige Baumaßnahmen"],
+              datasets: [{
+                label: 'Euro',
+                data: [-500000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
+      
+    </script>
+  </body>
+</html>

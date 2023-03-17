@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<head>
+  <title>Produkt</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<html>
+  <body>
+    <h1>Brahms-Chorwettbewerb</h1>
+
+    <p>
+      Das Produkt -  Förderung der Musikpflege - wird in 2023
+    </p>
+
+    <h2 class="total-cashflow-expenses center">-10.000,00€</h2>
+
+    <p>
+      kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
+		Auflistung von Kostenstellen. Ganz am Ende dieser Seite findest du noch eine Beschreibung des Produkts.
+    </p>
+
+    <div class="container">
+      
+          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-10.000,00€</span></h3>
+
+          
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 63.000,00€</h5>
+                <canvas id="chartjs_dc56eebd_736c_4669_8dff_c2c341733559"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: -73.000,00€</h5>
+                <canvas id="chartjs_4a704b65_61c5_430f_8174_8326f5ad6f08"></canvas>
+              </div>
+            </div>
+          
+      
+    </div>
+
+    <div class="info-sheet">
+      <h3>Aufgabe</h3>
+      <p> Beschlüsse der politischen Gremien, sonstige Vereinbarungen</p>
+
+      <h3>Zielgruppe</h3>
+      <p>Besucher</p>
+
+      <h3>Dienstleistungen</h3>
+      <p> -In Kooperation mit dem Förderverein „Interkultur“ e.V. Pohlheim Vorbereitung, Durchführung, Nachbereitung eines Internationalen Johannes-Brahms-  Chorwettbewerbs/-festivals,</p>
+
+      <h3>Klassifizierung</h3>
+      <ul>
+        <li>Fachbereich: Budget Bürgerservice</li>
+        <li>Produktklasse: Schule und Kultur</li>
+        <li>Produktbereich: Kultureinrichtungen</li>
+        <li>Produktgruppe: Musikpflege</li>
+        <li>Produkt: Brahms-Chorwettbewerb</li>
+      </ul>
+
+      <table style="margin-top: 80px;">
+        <tbody>
+          <tr>
+            <th>Konto</th>
+            <th>Budget</th>
+            <th>oberhalb Wertgrenze</th>
+          </tr>
+
+          
+            <tr>
+              <td>Auszahlungen für Mieten und Pachten</td>
+              <td>-13.000,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Benutzungsgebühren und ähnliche Entgelte</td>
+              <td>5.500,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Besondere Verwaltungs- und Betriebsauszahlungen</td>
+              <td>-58.000,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Einzahlungen aus dem Verkauf von Vorräten</td>
+              <td>500,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Unterhaltung des sonstigen beweglichen Vermögens</td>
+              <td>-2.000,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Zuschüsse für laufende Zwecke von privaten Unternehmen (Spenden)</td>
+              <td>26.500,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Zuschüsse für laufende Zwecke von übrigen Bereichen</td>
+              <td>10.500,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Zuweisungen für laufende Zwecke vom Land</td>
+              <td>20.000,00€</td>
+              <td></td>
+            </tr>
+          
+        </tbody>
+      </table>
+    </div>
+
+    <div class="back-link center">
+      <a href="/4/department.html">Zurück zur Bereichsübersicht</a>
+    </div>
+
+    <p class="data-disclosure">
+      Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2022.
+			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
+			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
+			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
+    </p>
+
+    <footer>
+      <p>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Das Impression befindet sich <a href="/imprint.html">hier</a>.
+      </p>
+    </footer>
+
+    <script>
+      
+        
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_dc56eebd_736c_4669_8dff_c2c341733559'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Zuweisungen für laufende Zwecke vom Land","Zuschüsse für laufende Zwecke von privaten Unternehmen (Spenden)","Zuschüsse für laufende Zwecke von übrigen Bereichen","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus dem Verkauf von Vorräten"],
+              datasets: [{
+                label: 'Euro',
+                data: [20000,26500,10500,5500,500],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_4a704b65_61c5_430f_8174_8326f5ad6f08'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Auszahlungen für Mieten und Pachten","Unterhaltung des sonstigen beweglichen Vermögens","Besondere Verwaltungs- und Betriebsauszahlungen"],
+              datasets: [{
+                label: 'Euro',
+                data: [-13000,-2000,-58000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
+      
+    </script>
+  </body>
+</html>

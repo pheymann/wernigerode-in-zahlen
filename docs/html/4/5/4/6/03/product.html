@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<head>
+  <title>Produkt</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<html>
+  <body>
+    <h1>Pendlerparkplätze</h1>
+
+    <p>
+      Das Produkt -  Planung, Bau und Unterhaltung von Parkplätzen von Berufspendlern - wird in 2023
+    </p>
+
+    <h2 class="total-cashflow-income center">30.500,00€</h2>
+
+    <p>
+      einbringen. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
+		Auflistung von Kostenstellen. Ganz am Ende dieser Seite findest du noch eine Beschreibung des Produkts.
+    </p>
+
+    <div class="container">
+      
+          <h3>- Die Verwaltung erwirtschaftet <span class="total-cashflow-income">30.500,00€</span></h3>
+
+          
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 50.000,00€</h5>
+                <canvas id="chartjs_33c51887_0557_48fe_8a61_0c7ba4c12430"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: -19.500,00€</h5>
+                <canvas id="chartjs_fc825227_c9cd_4607_bf59_78156b91d46d"></canvas>
+              </div>
+            </div>
+          
+      
+    </div>
+
+    <div class="info-sheet">
+      <h3>Aufgabe</h3>
+      <p> Bundes-,Landes-und Ortsrecht; Ratsbeschlüsse, Nutzungsverträge</p>
+
+      <h3>Zielgruppe</h3>
+      <p>Berufspendler</p>
+
+      <h3>Dienstleistungen</h3>
+      <p> - Betrieb und Unterhaltung privater perkplätze un -flächen für Pendler - Erstellung von Nutzungsverträgen - Verwaltung und Abrechnung von Nutzungsentgelten,,</p>
+
+      <h3>Klassifizierung</h3>
+      <ul>
+        <li>Fachbereich: Budget Bürgerservice</li>
+        <li>Produktklasse: Gestaltung der Umwelt</li>
+        <li>Produktbereich: Verkehrsflächen und -anlagen, ÖPNV</li>
+        <li>Produktgruppe: Parkeinrichtungen</li>
+        <li>Produkt: Pendlerparkplätze</li>
+      </ul>
+
+      <table style="margin-top: 80px;">
+        <tbody>
+          <tr>
+            <th>Konto</th>
+            <th>Budget</th>
+            <th>oberhalb Wertgrenze</th>
+          </tr>
+
+          
+            <tr>
+              <td>Einzahlungen aus Mieten und Pachten</td>
+              <td>50.000,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Geschäftsauszahlungen</td>
+              <td>-1.500,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Unterhaltung des sonstigen beweglichen Vermögens</td>
+              <td>-3.000,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Unterhaltung des sonstigen unbeweglichen Vermögens</td>
+              <td>-15.000,00€</td>
+              <td></td>
+            </tr>
+          
+        </tbody>
+      </table>
+    </div>
+
+    <div class="back-link center">
+      <a href="/4/department.html">Zurück zur Bereichsübersicht</a>
+    </div>
+
+    <p class="data-disclosure">
+      Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2022.
+			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
+			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
+			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
+    </p>
+
+    <footer>
+      <p>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Das Impression befindet sich <a href="/imprint.html">hier</a>.
+      </p>
+    </footer>
+
+    <script>
+      
+        
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_33c51887_0557_48fe_8a61_0c7ba4c12430'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Einzahlungen aus Mieten und Pachten"],
+              datasets: [{
+                label: 'Euro',
+                data: [50000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_fc825227_c9cd_4607_bf59_78156b91d46d'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Unterhaltung des sonstigen unbeweglichen Vermögens","Unterhaltung des sonstigen beweglichen Vermögens","Geschäftsauszahlungen"],
+              datasets: [{
+                label: 'Euro',
+                data: [-15000,-3000,-1500],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<head>
+  <title>Produkt</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="/css/simple-grid.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<html>
+  <body>
+    <h1>Verwaltung d. Förderung v. Kindern in Tageseinrichtungen für Kinder</h1>
+
+    <p>
+      Das Produkt -  Aufgaben der leistungsverpflichteten Gemeinde nach Kinderförderungsgesetz - wird in 2023
+    </p>
+
+    <h2 class="total-cashflow-expenses center">-1.350.000,00€</h2>
+
+    <p>
+      kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
+		Auflistung von Kostenstellen. Ganz am Ende dieser Seite findest du noch eine Beschreibung des Produkts.
+    </p>
+
+    <div class="container">
+      
+          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-1.350.000,00€</span></h3>
+
+          
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 800.000,00€</h5>
+                <canvas id="chartjs_6786935e_f12b_426a_a7b9_b39bac929e87"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: -2.150.000,00€</h5>
+                <canvas id="chartjs_b3e12605_aae8_45f1_b839_0bf5b3874706"></canvas>
+              </div>
+            </div>
+          
+      
+    </div>
+
+    <div class="info-sheet">
+      <h3>Aufgabe</h3>
+      <p> Bundes-, Landes- und Ortsrecht, Beschlüsse von politischen Gremien</p>
+
+      <h3>Zielgruppe</h3>
+      <p>Träger der Kindertageseinrichtungen</p>
+
+      <h3>Dienstleistungen</h3>
+      <p> 1.Förderung von Kindern in Tageseinrichtungen und Tagespflege mit eigener Kostenbeteiligung im Wirkungskreis der Stadt Wernigerode mit:,-Annahme der Mittel-Verteilung auf die Einrichtungen -Verwendungsnachweise 2.Kostenerstattung für Kindereinrichtungen in freier Trägerschaft durch die leistungsverpflichtete Gemeinde mit:,-Antragsbearbeitung-Vertragsgestaltung bzw. Bescheiderteilung -Prüfung der Jahresrechnung 3.Verwaltung der Tageseinrichtungen für Kinder 4.Zusammenarbeit mit den einzelnen Trägern und Gewährung von Zuschüssen,</p>
+
+      <h3>Klassifizierung</h3>
+      <ul>
+        <li>Fachbereich: Budget Bürgerservice</li>
+        <li>Produktklasse: Soziales und Jugend</li>
+        <li>Produktbereich: Kinder-, Jugend- und Familienhilfe</li>
+        <li>Produktgruppe: Tageseinrichtungen für Kinder</li>
+        <li>Produkt: Verwaltung d. Förderung v. Kindern in Tageseinrichtungen für Kinder</li>
+      </ul>
+
+      <table style="margin-top: 80px;">
+        <tbody>
+          <tr>
+            <th>Konto</th>
+            <th>Budget</th>
+            <th>oberhalb Wertgrenze</th>
+          </tr>
+
+          
+            <tr>
+              <td>Benutzungsgebühren und ähnliche Entgelte</td>
+              <td>550.000,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Einzahlungen aus Kostenerstattungen von Gemeinden und Gemeindeverbänden</td>
+              <td>250.000,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Zuschüsse an übrige Bereiche (freie Träger)</td>
+              <td>-2.150.000,00€</td>
+              <td></td>
+            </tr>
+          
+        </tbody>
+      </table>
+    </div>
+
+    <div class="back-link center">
+      <a href="/4/department.html">Zurück zur Bereichsübersicht</a>
+    </div>
+
+    <p class="data-disclosure">
+      Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2022.
+			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
+			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
+			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
+    </p>
+
+    <footer>
+      <p>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Das Impression befindet sich <a href="/imprint.html">hier</a>.
+      </p>
+    </footer>
+
+    <script>
+      
+        
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_6786935e_f12b_426a_a7b9_b39bac929e87'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus Kostenerstattungen von Gemeinden und Gemeindeverbänden"],
+              datasets: [{
+                label: 'Euro',
+                data: [550000,250000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_b3e12605_aae8_45f1_b839_0bf5b3874706'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Zuschüsse an übrige Bereiche (freie Träger)"],
+              datasets: [{
+                label: 'Euro',
+                data: [-2150000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
+      
+    </script>
+  </body>
+</html>
