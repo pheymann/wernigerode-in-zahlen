@@ -84,7 +84,7 @@ func main() {
 		}
 	}
 
-	productHtml := htmlgenerator.Generate(
+	productHtml, cashflowTotal := htmlgenerator.Generate(
 		io.ReadCompleteFile(financialPlanFile),
 		io.ReadCompleteFile(metadataFile),
 		subProductData,
@@ -97,4 +97,13 @@ func main() {
 	target.Tpe = "html"
 
 	io.WriteFile(target, productHtml)
+
+	cashflowTarget := decodeTarget.Decode(financialPlanFile, "data/processed")
+	cashflowTarget.Name = "cashflow"
+	cashflowTarget.Tpe = "txt"
+
+	io.WriteFile(
+		cashflowTarget,
+		fmt.Sprintf("%f", cashflowTotal),
+	)
 }

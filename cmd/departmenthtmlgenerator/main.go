@@ -6,6 +6,7 @@ import (
 	"os"
 	"path/filepath"
 	"regexp"
+	"strconv"
 
 	"wernigode-in-zahlen.de/internal/cmd/departmenthtmlgenerator"
 	fpDecoder "wernigode-in-zahlen.de/internal/pkg/decoder/financialplan"
@@ -37,6 +38,14 @@ func main() {
 		panic("department name is required")
 	}
 
+	financialPlanFile, err := os.Open(*debugRootPath + "assets/data/processed/" + *department + "/financial_plan_a.json")
+	if err != nil {
+		panic(err)
+	}
+	defer financialPlanFile.Close()
+
+	financialPlan := fpDecoder.DecodeFromJSON(io.ReadCompleteFile(financialPlanFile))
+
 	var productData = []html.ProductData{}
 	errWalk := filepath.Walk(*debugRootPath+"assets/data/processed/"+*department, func(path string, info os.FileInfo, err error) error {
 		if err != nil {
@@ -59,12 +68,23 @@ func main() {
 			}
 			defer metadataFile.Close()
 
+			cashflowTotalFile, err := os.Open(path + "/cashflow.txt")
+			if err != nil {
+				panic(err)
+			}
+			defer cashflowTotalFile.Close()
+
 			financialPlan := fpDecoder.DecodeFromJSON(io.ReadCompleteFile(financialPlanFile))
 			metadata := metaDecoder.DecodeFromJSON(io.ReadCompleteFile(metadataFile))
+			cashflowTotal, err := strconv.ParseFloat(io.ReadCompleteFile(cashflowTotalFile), 64)
+			if err != nil {
+				panic(err)
+			}
 
 			productData = append(productData, html.ProductData{
 				FinancialPlan: financialPlan,
 				Metadata:      metadata,
+				CashflowTotal: cashflowTotal,
 			})
 			return nil
 		}
@@ -87,7 +107,7 @@ func main() {
 			Name: "department",
 			Tpe:  "html",
 		},
-		departmenthtmlgenerator.Generate(productData, compressed, year, *debugRootPath),
+		departmenthtmlgenerator.Generate(financialPlan, productData, compressed, year, *debugRootPath),
 	)
 
 	io.WriteFile(

@@ -10,9 +10,16 @@ import (
 	htmlDepartmentEncoder "wernigode-in-zahlen.de/internal/pkg/encoder/html/department"
 	"wernigode-in-zahlen.de/internal/pkg/model"
 	html "wernigode-in-zahlen.de/internal/pkg/model/html"
+	"wernigode-in-zahlen.de/internal/pkg/shared"
 )
 
-func Generate(productData []html.ProductData, compressed *model.CompressedDepartment, year model.BudgetYear, debugRootPath string) string {
+func Generate(
+	financialPlan model.FinancialPlan,
+	productData []html.ProductData,
+	compressed *model.CompressedDepartment,
+	year model.BudgetYear,
+	debugRootPath string,
+) string {
 	var incomeTotalCashFlow = 0.0
 	var incomeProductLinks = []string{}
 	chartIncomeDataPerProduct := html.ChartJSDataset{
@@ -54,6 +61,8 @@ func Generate(productData []html.ProductData, compressed *model.CompressedDepart
 
 	compressed.NumberOfProducts = len(productData)
 
+	sanityCheck(financialPlan, compressed, year)
+
 	departmentTmpl := template.Must(template.ParseFiles(debugRootPath + "assets/html/templates/department.template.html"))
 
 	var htmlBytes bytes.Buffer
@@ -77,6 +86,18 @@ func Generate(productData []html.ProductData, compressed *model.CompressedDepart
 	}
 
 	return htmlBytes.String()
+}
+
+func sanityCheck(financialPlan model.FinancialPlan, compressed *model.CompressedDepartment, year model.BudgetYear) {
+	var cashflowTotal = 0.0
+
+	for _, balance := range financialPlan.Balances {
+		cashflowTotal += balance.Budgets[year]
+	}
+
+	if shared.IsUnequal(cashflowTotal, compressed.CashflowTotal) {
+		panic(fmt.Sprintf("Compressed and financial plan cashflow divert. Expected %f, got %f", cashflowTotal, compressed.CashflowTotal))
+	}
 }
 
 func populateChartData(
@@ -108,6 +129,11 @@ func populateChartData(
 			}
 		}
 	}
+
+	if shared.IsUnequal(cashflowTotal, product.CashflowTotal) {
+		fmt.Printf("[WARNING] Product and financial plan cashflow divert. Expected %f, got %f\n", cashflowTotal, product.CashflowTotal)
+	}
+
 	compressed.CashflowTotal += cashflowTotal
 	compressed.CashflowB += cashflowB
 	data.CashflowTotal = cashflowTotal
