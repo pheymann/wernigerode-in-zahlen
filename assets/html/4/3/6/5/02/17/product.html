@@ -32,7 +32,7 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs_ded1d239_db7b_49d2_a8eb_5ef7f27d7f4b"></canvas>
+                <canvas id="chartjs_d4af32ec_52ca_48ab_b290_7fbda2e35b6b"></canvas>
               </div>
             
           
@@ -68,26 +68,26 @@
 
           
             <tr>
-              <td>.6.5.02.17.7012000 Dienstauszahlungen und dgl. an Arbeitnehmer</td>
+              <td>.7012000 Dienstauszahlungen und dgl. an Arbeitnehmer</td>
               <td>-456.600,00€</td>
               <td></td>
             </tr>
           
             <tr>
-              <td>.6.5.02.17.7022000 Beiträge zu Versorgungskassen für Arbeitnehmer</td>
+              <td>.7022000 Beiträge zu Versorgungskassen für Arbeitnehmer</td>
               <td>-19.000,00€</td>
               <td></td>
             </tr>
           
             <tr>
-              <td>.6.5.02.17.7032000 Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer 3.6.5.02.17.7041000 Beihilfen, Unterstützungsleistungen für Beschäftigte</td>
+              <td>.7032000 Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer</td>
               <td>-91.700,00€</td>
               <td></td>
             </tr>
           
             <tr>
-              <td>Personalauszahlungen</td>
-              <td>-569.500,00€</td>
+              <td>.7041000 Beihilfen, Unterstützungsleistungen für Beschäftigte</td>
+              <td>-2.200,00€</td>
               <td></td>
             </tr>
           
@@ -118,13 +118,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_ded1d239_db7b_49d2_a8eb_5ef7f27d7f4b'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_d4af32ec_52ca_48ab_b290_7fbda2e35b6b'), {
             type: 'doughnut',
             data: {
-              labels: ["Personalauszahlungen",".6.5.02.17.7012000 Dienstauszahlungen und dgl. an Arbeitnehmer",".6.5.02.17.7022000 Beiträge zu Versorgungskassen für Arbeitnehmer",".6.5.02.17.7032000 Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer 3.6.5.02.17.7041000 Beihilfen, Unterstützungsleistungen für Beschäftigte"],
+              labels: [".7012000 Dienstauszahlungen und dgl. an Arbeitnehmer",".7022000 Beiträge zu Versorgungskassen für Arbeitnehmer",".7032000 Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer",".7041000 Beihilfen, Unterstützungsleistungen für Beschäftigte"],
               datasets: [{
                 label: 'Euro',
-                data: [-569500,-456600,-19000,-91700],
+                data: [-456600,-19000,-91700,-2200],
                 borderWidth: 1
               }]
             },

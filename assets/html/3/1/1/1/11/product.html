@@ -32,11 +32,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 7.100,00€</h5>
-                <canvas id="chartjs_9cb21dfb_2e2d_4400_91c6_95778e91d1a0"></canvas>
+                <canvas id="chartjs_c2a7b173_540f_4742_a989_6d2e50dee718"></canvas>
               </div>
               <div class="col-6">
-                <h5 class="center">Ausgaben: -3.203.900,00€</h5>
-                <canvas id="chartjs_cf316dc2_c052_4d4f_8e89_4f2b59a54119"></canvas>
+                <h5 class="center">Ausgaben: -2.795.800,00€</h5>
+                <canvas id="chartjs_fb782741_9588_42ed_b061_4ffe5aee8dc2"></canvas>
               </div>
             </div>
           
@@ -47,11 +47,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 20.000,00€</h5>
-                <canvas id="chartjs_ec51fe32_743a_47f3_88e0_f8d4da7e05e8"></canvas>
+                <canvas id="chartjs_702498a7_3e48_40a8_97de_ab9f59fb7ac2"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -108.000,00€</h5>
-                <canvas id="chartjs_6d2ecb9b_c854_4da6_8eee_868cd5eef4ce"></canvas>
+                <canvas id="chartjs_00b2245d_1501_4829_98e0_da34bc1920bb"></canvas>
               </div>
             </div>
           
@@ -87,18 +87,6 @@
 
           
             <tr>
-              <td>.1.1.11.7221000Unterhaltung des sonstigen unbeweglichen Vermögens</td>
-              <td>-15.000,00€</td>
-              <td></td>
-            </tr>
-          
-            <tr>
-              <td>.1.1.11.7231000Auszahlungen für Mieten und Pachten</td>
-              <td>-1.500,00€</td>
-              <td></td>
-            </tr>
-          
-            <tr>
               <td>Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. &gt; 150  bis 1000 € o. UStr.</td>
               <td>-15.000,00€</td>
               <td>Anschaffungen 150 €  bis 1.000 € netto</td>
@@ -114,6 +102,18 @@
               <td>Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.</td>
               <td>-53.000,00€</td>
               <td>Betriebs-und Geschäftsausstattungen</td>
+            </tr>
+          
+            <tr>
+              <td>Auszahlungen für Leasing</td>
+              <td>-70.000,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Auszahlungen für Mieten und Pachten</td>
+              <td>-1.500,00€</td>
+              <td></td>
             </tr>
           
             <tr>
@@ -155,6 +155,12 @@
             <tr>
               <td>Bewirtschaftung der Grundstücke und baulichen Anlagen</td>
               <td>-14.000,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Dienstauszahlungen und dgl. an Arbeitnehmer</td>
+              <td>-1.902.500,00€</td>
               <td></td>
             </tr>
           
@@ -207,12 +213,6 @@
             </tr>
           
             <tr>
-              <td>Personalauszahlungen</td>
-              <td>-2.380.600,00€</td>
-              <td></td>
-            </tr>
-          
-            <tr>
               <td>Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)</td>
               <td>-200,00€</td>
               <td></td>
@@ -221,6 +221,12 @@
             <tr>
               <td>Unterhaltung des sonstigen beweglichen Vermögens</td>
               <td>-25.000,00€</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>Unterhaltung des sonstigen unbeweglichen Vermögens</td>
+              <td>-15.000,00€</td>
               <td></td>
             </tr>
           
@@ -250,7 +256,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_9cb21dfb_2e2d_4400_91c6_95778e91d1a0'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_c2a7b173_540f_4742_a989_6d2e50dee718'), {
             type: 'doughnut',
             data: {
               labels: ["Einzahlungen aus Kostenerstattungen vom Bund","Einzahlungen aus Kostenerstattungen von privaten Unternehmen","Einzahlungen aus Kostenerstattungen von übrigen Bereichen"],
@@ -272,13 +278,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_cf316dc2_c052_4d4f_8e89_4f2b59a54119'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_fb782741_9588_42ed_b061_4ffe5aee8dc2'), {
             type: 'doughnut',
             data: {
-              labels: ["Personalauszahlungen","Dienstauszahlungen und dgl. an sonstige Beschäftigte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschäft.","Beihilfen, Unterstützungsleistungen für Beschäftigte",".1.1.11.7221000Unterhaltung des sonstigen unbeweglichen Vermögens",".1.1.11.7231000Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen"],
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Dienstauszahlungen und dgl. an sonstige Beschäftigte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschäft.","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung des sonstigen unbeweglichen Vermögens","Auszahlungen für Mieten und Pachten","Auszahlungen für Leasing","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen"],
               datasets: [{
                 label: 'Euro',
-                data: [-2380600,-5300,-79300,-382200,-2200,-9100,-15000,-1500,-14000,-250000,-10000,-25000,-22000,-2500,-200,-5000],
+                data: [-1902500,-5300,-79300,-382200,-2200,-9100,-15000,-1500,-70000,-14000,-250000,-10000,-25000,-22000,-2500,-200,-5000],
                 borderWidth: 1
               }]
             },
@@ -295,7 +301,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_ec51fe32_743a_47f3_88e0_f8d4da7e05e8'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_702498a7_3e48_40a8_97de_ab9f59fb7ac2'), {
             type: 'doughnut',
             data: {
               labels: ["Einzahl.a.d.Veräuß.von bewegl. Vermögensgegenst. von mehr als 1000 € ohne UmStr."],
@@ -317,7 +323,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_6d2ecb9b_c854_4da6_8eee_868cd5eef4ce'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_00b2245d_1501_4829_98e0_da34bc1920bb'), {
             type: 'doughnut',
             data: {
               labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.","Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
