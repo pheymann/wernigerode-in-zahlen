@@ -30,11 +30,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 261.500,00€</h5>
-                <canvas id="chartjs_43331d2e_7834_47fd_9e99_e292242d5493"></canvas>
+                <canvas id="chartjs_6940cfed_4022_4d7e_a5c5_9f41dae377cc"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -1.303.000,00€</h5>
-                <canvas id="chartjs_04dfa4f0_d776_4518_be01_ba72491ebfb9"></canvas>
+                <canvas id="chartjs_239d343a_b464_43a6_860c_22c945098a8d"></canvas>
               </div>
             </div>
           
@@ -65,7 +65,7 @@
           <tr>
             <th>Konto</th>
             <th>Budget</th>
-            <th>oberhalb Wertgrenze</th>
+            <th>Kategorie falls über der Wertgrenze</th>
           </tr>
 
           
@@ -159,7 +159,7 @@
     <footer>
       <p>
         Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
-        Das Impression befindet sich <a href="/imprint.html">hier</a>.
+        Das Impressum befindet sich <a href="/imprint.html">hier</a>.
       </p>
     </footer>
 
@@ -168,7 +168,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_43331d2e_7834_47fd_9e99_e292242d5493'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_6940cfed_4022_4d7e_a5c5_9f41dae377cc'), {
             type: 'doughnut',
             data: {
               labels: ["Sonstige privatrechtliche Leistungsentgelte","Einzahlungen aus Kostenerstattungen vom Bund","Einzahlungen aus Kostenerstattungen von gesetzlichen Sozialversicherungen"],
@@ -190,7 +190,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_04dfa4f0_d776_4518_be01_ba72491ebfb9'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_239d343a_b464_43a6_860c_22c945098a8d'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Geschäftsauszahlungen","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten","Steuern, Versicherungen, Schadensfälle","Erstatt. f.d. Ausz. v. Dritten aus lfd. Verwaltungstätigkeit an Gemeinde\u0026 GV"],

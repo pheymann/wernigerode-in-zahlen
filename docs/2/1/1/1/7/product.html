@@ -30,11 +30,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 151.800,00€</h5>
-                <canvas id="chartjs_311302cc_0a6d_44ff_b48e_b2794eac01f5"></canvas>
+                <canvas id="chartjs_8065b410_66e3_40cf_a2e0_6b786c01b6ef"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -1.702.300,00€</h5>
-                <canvas id="chartjs_b09e885b_bf00_48e9_925e_6b4f58de770f"></canvas>
+                <canvas id="chartjs_cb57308d_9c3c_4910_b611_b6e547a98caa"></canvas>
               </div>
             </div>
           
@@ -65,7 +65,7 @@
           <tr>
             <th>Konto</th>
             <th>Budget</th>
-            <th>oberhalb Wertgrenze</th>
+            <th>Kategorie falls über der Wertgrenze</th>
           </tr>
 
           
@@ -165,7 +165,7 @@
     <footer>
       <p>
         Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
-        Das Impression befindet sich <a href="/imprint.html">hier</a>.
+        Das Impressum befindet sich <a href="/imprint.html">hier</a>.
       </p>
     </footer>
 
@@ -174,7 +174,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_311302cc_0a6d_44ff_b48e_b2794eac01f5'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_8065b410_66e3_40cf_a2e0_6b786c01b6ef'), {
             type: 'doughnut',
             data: {
               labels: ["Verwaltungsgebühren","Einzahlungen aus Kostenerstattungen von sonstigen öffentlichen Sonderrechnungen","Säumniszuschläge","Andere sonstige Einzahlungen aus laufender Verwaltungstätigkeit"],
@@ -196,7 +196,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_b09e885b_bf00_48e9_925e_6b4f58de770f'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_cb57308d_9c3c_4910_b611_b6e547a98caa'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für sonstige Dienstleistungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten"],

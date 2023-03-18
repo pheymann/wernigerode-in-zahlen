@@ -30,11 +30,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 7.200,00€</h5>
-                <canvas id="chartjs_69735a66_5fa4_414e_8de8_05b9cd4597fa"></canvas>
+                <canvas id="chartjs_dac1cd55_3784_4aca_8bfd_9e850fc0a67f"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -191.800,00€</h5>
-                <canvas id="chartjs_e2c60345_8791_47df_b084_dff9730da581"></canvas>
+                <canvas id="chartjs_c6d6d22c_bbba_4139_92e4_a60880e1b50c"></canvas>
               </div>
             </div>
           
@@ -65,7 +65,7 @@
           <tr>
             <th>Konto</th>
             <th>Budget</th>
-            <th>oberhalb Wertgrenze</th>
+            <th>Kategorie falls über der Wertgrenze</th>
           </tr>
 
           
@@ -177,7 +177,7 @@
     <footer>
       <p>
         Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
-        Das Impression befindet sich <a href="/imprint.html">hier</a>.
+        Das Impressum befindet sich <a href="/imprint.html">hier</a>.
       </p>
     </footer>
 
@@ -186,7 +186,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_69735a66_5fa4_414e_8de8_05b9cd4597fa'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_dac1cd55_3784_4aca_8bfd_9e850fc0a67f'), {
             type: 'doughnut',
             data: {
               labels: ["Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus dem Verkauf von Vorräten"],
@@ -208,7 +208,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_e2c60345_8791_47df_b084_dff9730da581'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_c6d6d22c_bbba_4139_92e4_a60880e1b50c'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere Verwaltungs- und Betriebsauszahlungen","Zuschüsse an übrige Bereiche","Geschäftsauszahlungen","Auszahlungen für Honorare"],

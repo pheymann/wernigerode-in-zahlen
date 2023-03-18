@@ -30,11 +30,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 400,00€</h5>
-                <canvas id="chartjs_87f227e3_9078_47db_b236_fb7cc7ccab0d"></canvas>
+                <canvas id="chartjs_ddbfecff_869f_468e_8142_2a9072d46560"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -329.200,00€</h5>
-                <canvas id="chartjs_5351af13_7747_45e5_85f2_d515f9902442"></canvas>
+                <canvas id="chartjs_3cad588b_f8ab_4469_8e71_813f4a910bdf"></canvas>
               </div>
             </div>
           
@@ -65,7 +65,7 @@
           <tr>
             <th>Konto</th>
             <th>Budget</th>
-            <th>oberhalb Wertgrenze</th>
+            <th>Kategorie falls über der Wertgrenze</th>
           </tr>
 
           
@@ -141,7 +141,7 @@
     <footer>
       <p>
         Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
-        Das Impression befindet sich <a href="/imprint.html">hier</a>.
+        Das Impressum befindet sich <a href="/imprint.html">hier</a>.
       </p>
     </footer>
 
@@ -150,7 +150,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_87f227e3_9078_47db_b236_fb7cc7ccab0d'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_ddbfecff_869f_468e_8142_2a9072d46560'), {
             type: 'doughnut',
             data: {
               labels: ["Einzahlungen aus Kostenerstattungen von übrigen Bereichen","Bußgelder"],
@@ -172,7 +172,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_5351af13_7747_45e5_85f2_d515f9902442'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_3cad588b_f8ab_4469_8e71_813f4a910bdf'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für sonstige Dienstleistungen","Geschäftsauszahlungen","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten"],

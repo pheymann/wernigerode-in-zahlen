@@ -30,11 +30,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 63.000,00€</h5>
-                <canvas id="chartjs_7e070811_d9e5_4371_8495_978153300c99"></canvas>
+                <canvas id="chartjs_d67ce4c3_f66d_4948_a9cf_74a3f33a8cf3"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -73.000,00€</h5>
-                <canvas id="chartjs_e4ec8adb_0fa1_4b9a_86e2_e4739e8113bf"></canvas>
+                <canvas id="chartjs_64ac3fce_dff4_4cc0_b361_c84b313362de"></canvas>
               </div>
             </div>
           
@@ -65,7 +65,7 @@
           <tr>
             <th>Konto</th>
             <th>Budget</th>
-            <th>oberhalb Wertgrenze</th>
+            <th>Kategorie falls über der Wertgrenze</th>
           </tr>
 
           
@@ -135,7 +135,7 @@
     <footer>
       <p>
         Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
-        Das Impression befindet sich <a href="/imprint.html">hier</a>.
+        Das Impressum befindet sich <a href="/imprint.html">hier</a>.
       </p>
     </footer>
 
@@ -144,7 +144,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_7e070811_d9e5_4371_8495_978153300c99'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_d67ce4c3_f66d_4948_a9cf_74a3f33a8cf3'), {
             type: 'doughnut',
             data: {
               labels: ["Zuweisungen für laufende Zwecke vom Land","Zuschüsse für laufende Zwecke von privaten Unternehmen (Spenden)","Zuschüsse für laufende Zwecke von übrigen Bereichen","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus dem Verkauf von Vorräten"],
@@ -166,7 +166,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_e4ec8adb_0fa1_4b9a_86e2_e4739e8113bf'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_64ac3fce_dff4_4cc0_b361_c84b313362de'), {
             type: 'doughnut',
             data: {
               labels: ["Auszahlungen für Mieten und Pachten","Unterhaltung des sonstigen beweglichen Vermögens","Besondere Verwaltungs- und Betriebsauszahlungen"],

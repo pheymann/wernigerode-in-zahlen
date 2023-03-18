@@ -30,11 +30,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 44.376.700,00€</h5>
-                <canvas id="chartjs_c3484352_edf5_4515_a949_e4e97c871aa3"></canvas>
+                <canvas id="chartjs_e8fbb5cb_4631_4885_86c3_a4f3769ae438"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -14.210.700,00€</h5>
-                <canvas id="chartjs_88945af7_f489_4f17_960a_85b4356fe15b"></canvas>
+                <canvas id="chartjs_5a6f45f1_62a5_4724_8a10_7980851d94d4"></canvas>
               </div>
             </div>
           
@@ -72,7 +72,7 @@
           <tr>
             <th>Konto</th>
             <th>Budget</th>
-            <th>oberhalb Wertgrenze</th>
+            <th>Kategorie falls über der Wertgrenze</th>
           </tr>
 
           
@@ -178,7 +178,7 @@
     <footer>
       <p>
         Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
-        Das Impression befindet sich <a href="/imprint.html">hier</a>.
+        Das Impressum befindet sich <a href="/imprint.html">hier</a>.
       </p>
     </footer>
 
@@ -187,7 +187,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_c3484352_edf5_4515_a949_e4e97c871aa3'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_e8fbb5cb_4631_4885_86c3_a4f3769ae438'), {
             type: 'doughnut',
             data: {
               labels: ["Grundsteuer A","Grundsteuer B","Gewerbesteuer","Gemeindeanteil an der Einkommensteuer","Gemeindeanteil an der Umsatzsteuer","Vergnügungssteuer","Hundesteuer","Schlüsselzuweisungen und Besondere Ergänzungszuweisungen vom Land","Sonstige allgemeine Zuweisungen vom Land","Sonstige Finanzeinzahlungen"],
@@ -209,7 +209,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_88945af7_f489_4f17_960a_85b4356fe15b'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_5a6f45f1_62a5_4724_8a10_7980851d94d4'), {
             type: 'doughnut',
             data: {
               labels: ["Gewerbesteuerumlage","Allgemeine Umlagen an Landkreise","Verzinsung von Steuererstattungen"],

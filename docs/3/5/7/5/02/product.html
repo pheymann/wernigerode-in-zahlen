@@ -30,11 +30,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 4.100,00€</h5>
-                <canvas id="chartjs_c5b43ce4_5857_439d_9533_2470b9944c3e"></canvas>
+                <canvas id="chartjs_a4fd6c1c_af7d_4f7e_870d_75c8baff93c0"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -117.400,00€</h5>
-                <canvas id="chartjs_a4940a6e_a622_4b40_802d_b38a889d4231"></canvas>
+                <canvas id="chartjs_7cb8c6b1_3e46_4f1c_994a_b65c78c47f26"></canvas>
               </div>
             </div>
           
@@ -72,7 +72,7 @@
           <tr>
             <th>Konto</th>
             <th>Budget</th>
-            <th>oberhalb Wertgrenze</th>
+            <th>Kategorie falls über der Wertgrenze</th>
           </tr>
 
           
@@ -172,7 +172,7 @@
     <footer>
       <p>
         Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
-        Das Impression befindet sich <a href="/imprint.html">hier</a>.
+        Das Impressum befindet sich <a href="/imprint.html">hier</a>.
       </p>
     </footer>
 
@@ -181,7 +181,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_c5b43ce4_5857_439d_9533_2470b9944c3e'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_a4fd6c1c_af7d_4f7e_870d_75c8baff93c0'), {
             type: 'doughnut',
             data: {
               labels: ["Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus dem Verkauf von Vorräten (Holzverkauf)","Einzahlungen aus Kostenerstattungen von übrigen Bereichen"],
@@ -203,7 +203,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_a4940a6e_a622_4b40_802d_b38a889d4231'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_7cb8c6b1_3e46_4f1c_994a_b65c78c47f26'), {
             type: 'doughnut',
             data: {
               labels: ["Unterhaltung des sonstigen unbeweglichen Vermögens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Erwerb geringwertiger Vermögensgegenstände","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten","Erstatt. f.d. Ausz. v. Dritten aus lfd Verwaltungstät. an so. öff. Sonderrechn."],

@@ -30,11 +30,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 9.405.000,00€</h5>
-                <canvas id="chartjs_96f2b14d_a3e9_4867_8fa9_086d60439939"></canvas>
+                <canvas id="chartjs_c4daa541_ea03_45bc_8d9e_189af67733fb"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -14.295.100,00€</h5>
-                <canvas id="chartjs_3107a41b_4a95_4acc_9f6f_6d8e24c84ead"></canvas>
+                <canvas id="chartjs_2441d494_26f5_44d0_853e_2fda30a7f116"></canvas>
               </div>
             </div>
           
@@ -52,11 +52,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 7.400,00€</h5>
-                <canvas id="chartjs_82b4dfa8_9af5_404e_95b3_983bcae62333"></canvas>
+                <canvas id="chartjs_a125c3a2_7281_49ce_b118_b704f3d61421"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -5.022.600,00€</h5>
-                <canvas id="chartjs_91bddfcc_cc1d_4afc_a911_ec66450b648b"></canvas>
+                <canvas id="chartjs_2cf93012_54c6_4fa3_87fd_05e9b8a37275"></canvas>
               </div>
             </div>
           
@@ -87,7 +87,7 @@
           <tr>
             <th>Konto</th>
             <th>Budget</th>
-            <th>oberhalb Wertgrenze</th>
+            <th>Kategorie falls über der Wertgrenze</th>
           </tr>
 
           
@@ -151,7 +151,7 @@
     <footer>
       <p>
         Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
-        Das Impression befindet sich <a href="/imprint.html">hier</a>.
+        Das Impressum befindet sich <a href="/imprint.html">hier</a>.
       </p>
     </footer>
 
@@ -160,7 +160,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_96f2b14d_a3e9_4867_8fa9_086d60439939'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_c4daa541_ea03_45bc_8d9e_189af67733fb'), {
             type: 'doughnut',
             data: {
               labels: ["Zuweisungen und allgemeine Umlagen","öffentlich-rechtliche Leistungsentgelte","privatrechtliche Leistungsentgelte, Kostenerstattungen, Kostenumlagen"],
@@ -182,7 +182,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_3107a41b_4a95_4acc_9f6f_6d8e24c84ead'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_2441d494_26f5_44d0_853e_2fda30a7f116'), {
             type: 'doughnut',
             data: {
               labels: ["Personalauszahlungen","Auszahlungen für Sach- und Dienstleistungen","Sonstige Auszahlungen"],
@@ -207,8 +207,8 @@
         
       
         
-          var incomeSubProductLinks_chartjs_82b4dfa8_9af5_404e_95b3_983bcae62333 = ["16/product.html"];
-          var incomeChart_chartjs_82b4dfa8_9af5_404e_95b3_983bcae62333 = new Chart(document.getElementById('chartjs_82b4dfa8_9af5_404e_95b3_983bcae62333'), {
+          var incomeSubProductLinks_chartjs_a125c3a2_7281_49ce_b118_b704f3d61421 = ["16/product.html"];
+          var incomeChart_chartjs_a125c3a2_7281_49ce_b118_b704f3d61421 = new Chart(document.getElementById('chartjs_a125c3a2_7281_49ce_b118_b704f3d61421'), {
             type: 'doughnut',
             data: {
               labels: ["Hort Grundschule Harzblick"],
@@ -226,16 +226,16 @@
               },
               
                 onClick: function(e){
-                  var activePoints = incomeChart_chartjs_82b4dfa8_9af5_404e_95b3_983bcae62333.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
-                  window.location.href = incomeSubProductLinks_chartjs_82b4dfa8_9af5_404e_95b3_983bcae62333[activePoints[0].index];
+                  var activePoints = incomeChart_chartjs_a125c3a2_7281_49ce_b118_b704f3d61421.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
+                  window.location.href = incomeSubProductLinks_chartjs_a125c3a2_7281_49ce_b118_b704f3d61421[activePoints[0].index];
                 },
               
             }
           });
         
         
-          var expensesSubProductLinks_chartjs_91bddfcc_cc1d_4afc_a911_ec66450b648b = ["01/product.html","02/product.html","03/product.html","04/product.html","05/product.html","06/product.html","07/product.html","08/product.html","09/product.html","10/product.html","11/product.html","12/product.html","13/product.html","14/product.html","15/product.html","17/product.html"];
-          var expensesChart_chartjs_91bddfcc_cc1d_4afc_a911_ec66450b648b = new Chart(document.getElementById('chartjs_91bddfcc_cc1d_4afc_a911_ec66450b648b'), {
+          var expensesSubProductLinks_chartjs_2cf93012_54c6_4fa3_87fd_05e9b8a37275 = ["01/product.html","02/product.html","03/product.html","04/product.html","05/product.html","06/product.html","07/product.html","08/product.html","09/product.html","10/product.html","11/product.html","12/product.html","13/product.html","14/product.html","15/product.html","17/product.html"];
+          var expensesChart_chartjs_2cf93012_54c6_4fa3_87fd_05e9b8a37275 = new Chart(document.getElementById('chartjs_2cf93012_54c6_4fa3_87fd_05e9b8a37275'), {
             type: 'doughnut',
             data: {
               labels: ["Kinderkrippe Lindenberg","Kinderkrippe Am Auerhahn","Kindertagesstätte Regenbogen","Kindertagesstätte Villa Sonnenschein","Kindertagesstätte Hummelhaus","Kindertagesstätte Musikus","Kindertagesstätte Pusteblume","Integrative Kindertagesstätte Löwenzahn","Kindertagesstätte Harzblick","Kindertagesstätte Am Schäferteich","Kindertagesstätte Kleine Strolche","Kindertagesstätte Benjamin Blümchen","Kindertagesstätte Brockenkinder","Hort Grundschule A. Diesterweg","Hort Grundschule A.H.Francke","Kindertagesstätten-Verwaltung"],
@@ -253,8 +253,8 @@
               },
               
                 onClick: function(e){
-                  var activePoints = expensesChart_chartjs_91bddfcc_cc1d_4afc_a911_ec66450b648b.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
-                  window.location.href = expensesSubProductLinks_chartjs_91bddfcc_cc1d_4afc_a911_ec66450b648b[activePoints[0].index];
+                  var activePoints = expensesChart_chartjs_2cf93012_54c6_4fa3_87fd_05e9b8a37275.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
+                  window.location.href = expensesSubProductLinks_chartjs_2cf93012_54c6_4fa3_87fd_05e9b8a37275[activePoints[0].index];
                 },
               
             }
