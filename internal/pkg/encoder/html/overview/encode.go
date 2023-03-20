@@ -39,10 +39,10 @@ func Encode(
 
 		Copy: html.OverviewCopy{
 			Headline: "Wernigerode in Zahlen",
-			IntroCashflowTotal: template.HTML(fmt.Sprintf(`Als Teil unserer Stadt und Gemeinde habe ich mich gefragt, wo wir eigentlich unser
-			Geld investieren und nach einigem Suchen habe ich den <a href="https://www.wernigerode.de/B%%C3%%BCrgerservice/Stadtrat/Haushaltsplan/">Haushaltsplan</a>
-			der Stadt gefunden. Der führt genau auf, wo Gelder gebraucht werden, ist aber alles andere als leicht zu lesen. Und so
-			ist die Idee bei mir für diese Webseite entstanden. Es soll eine Darstellung des Finanzhaushalts Wernigerodes sein, die gut zu lesen und verstehen ist.
+			IntroCashflowTotal: template.HTML(fmt.Sprintf(`Als Teil unserer Stadt und Gemeinde habe ich mich gefragt, wo wir eigentlich unsere
+			Gelder investieren. Nach einigem Suchen habe ich den Wernigeröder <a href="https://www.wernigerode.de/B%%C3%%BCrgerservice/Stadtrat/Haushaltsplan/">Haushaltsplan</a>
+			gefunden. Ein mehrere hundert Seiten langes Dokument, das genau aufführt, wo Gelder gebraucht werden. Leider ist es alles andere als leicht zu lesen und so
+			ist die Idee für diese Webseite bei mir entstanden. Es soll eine Darstellung des Finanzhaushalts Wernigerodes sein, die gut zu lesen und verstehen ist.
 			<br><br>
 			Alles startet mit der Gesamtübersicht. In %s planen wir`, year)),
 			IntroDescription: encodeIntroDescription(cashflowTotal, len(departments)),
@@ -52,6 +52,11 @@ func Encode(
 			IncomeCashflowTotal:   "Einnahmen: " + htmlEncoder.EncodeBudget(incomeTotalCashFlow, p),
 			ExpensesCashflowTotal: "Ausgaben: " + htmlEncoder.EncodeBudget(expensesTotalCashFlow, p),
 
+			AdditionalInfo: `Aktuell bildet diese Webseite die Finanzdaten aus den Teilfinanzplänen A und B ab. Zusätzliche finanzielle Mittel zum Beispiel aus
+			dem Finanzmittelüberschuss sind nicht enthalten. Die Gesamtausgaben würden sich dann auf <strong>-3.284.100,00€</strong> reduzieren (siehe Haushaltsplan).
+			Weiterhin scheint sich ein Fehler in dem PDF eingeschlichen zu haben. Es werden zusätzliche Ausgaben von 31.000,00 € im Fachbereich
+			Bürgerservices veranschlagt, die in keiner der Produkte dieses Bereichs auftauchen. Ich habe die Zahlen nochmals händisch geprüft und bin auf
+			dasselbe Ergebnis gekommen.`,
 			Departments: shared.MapSlice(departments, func(department model.CompressedDepartment) html.OverviewDepartmentCopy {
 				return encodeCompressedDepartment(department, p)
 			}),

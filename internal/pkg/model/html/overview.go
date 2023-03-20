@@ -26,7 +26,8 @@ type OverviewCopy struct {
 	IncomeCashflowTotal   string
 	ExpensesCashflowTotal string
 
-	Departments []OverviewDepartmentCopy
+	AdditionalInfo template.HTML
+	Departments    []OverviewDepartmentCopy
 
 	BackLink string
 
