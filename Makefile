@@ -1,3 +1,5 @@
+all: clean-up-all generate-html-all
+
 .PHONY: clean-up-all
 clean-up-all:
 	make clean-up department=1
