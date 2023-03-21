@@ -61,6 +61,8 @@ func Encode(
 			Departments: shared.MapSlice(departments, func(department model.CompressedDepartment) html.OverviewDepartmentCopy {
 				return encodeCompressedDepartment(department, p)
 			}),
+			AdditionalInfoAfterTable: `Du willst dir die Daten selber mal anschauen? Kein Problem. <a href="https://github.com/pheymann/wernigerode-in-zahlen/tree/main/assets">Hier</a> findest du eine Zusammenfassung der Daten. Die CSV Datei
+			kann einfach in ein Tabellenprogramm importiert werden. Falls du dich mit Datenanalyse auskennst, habe ich auch noch JSON Dateien bereitgestellt.`,
 
 			DataDisclosure: `Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2022.
 			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
