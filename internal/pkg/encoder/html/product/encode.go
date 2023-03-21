@@ -34,6 +34,7 @@ func Encode(
 		BalanceSections: sections,
 		Copy: html.ProductCopy{
 			BackLink: "Zurück zur Bereichsübersicht",
+			Year:     year,
 
 			IntroCashflowTotal: fmt.Sprintf("Das Produkt - %s - wird in %s", metadata.Description, year),
 			IntroDescription:   encodeIntroDescription(fpCashflowTotal, metadata),

@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Tageseinrichtungen für Kinder des Fachbereichs Budget Bürgerservice hat ein Budge von -270.900,00€."/>
+  <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Tageseinrichtungen für Kinder,Budget Bürgerservice"/>
+  <meta name="author" content="Paul Heymann"/>
+
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
 </head>
 <html>
@@ -30,11 +34,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 698.000,00€</h5>
-                <canvas id="chartjs_ef44216c_b0f9_45b1_a1f4_83297137d460"></canvas>
+                <canvas id="chartjs_67efe304_f330_46f3_9e46_2e118ed8ad51"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -953.900,00€</h5>
-                <canvas id="chartjs_672b90ff_402b_4b4c_be7f_35efc0ad3a25"></canvas>
+                <canvas id="chartjs_b7536677_0dba_4820_93c9_ff19f0b8408e"></canvas>
               </div>
             </div>
           
@@ -43,6 +47,10 @@
 
           
             
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_4420c064_211b_4ac9_a0e8_0b256bd8dbea"></canvas>
+              </div>
             
           
       
@@ -235,7 +243,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_ef44216c_b0f9_45b1_a1f4_83297137d460'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_67efe304_f330_46f3_9e46_2e118ed8ad51'), {
             type: 'doughnut',
             data: {
               labels: [".6142000 Zuweisungen für laufende Zwecke von Gemeinden und Gemeindeverbänden",".6321000 Benutzungsgebühren und ähnliche Entgelte",".6480001 Einzahlungen aus Kostenerstattungen vom Bund",".6482000 Einzahlungen aus Kostenerstattungen von Gemeinden und Gemeindeverbänden"],
@@ -257,7 +265,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_672b90ff_402b_4b4c_be7f_35efc0ad3a25'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_b7536677_0dba_4820_93c9_ff19f0b8408e'), {
             type: 'doughnut',
             data: {
               labels: [".7012000 Dienstauszahlungen und dgl. an Arbeitnehmer",".7019000 Dienstauszahlungen und dgl. an sonstige Beschäftigte",".7022000 Beiträge zu Versorgungskassen für Arbeitnehmer",".7032000 Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer",".7039000 Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschäft.",".7041000 Beihilfen, Unterstützungsleistungen für Beschäftigte",".7211000 Unterhaltung der Grundstücke und baulichen Anlagen",".7211014 Unterhaltung der Grundstücke und baulichen Anlagen-Gebäudemanagement",".7221000 Unterhaltung des sonstigen unbeweglichen Vermögens",".7231000 Auszahlungen für Mieten und Pachten",".7241000 Bewirtschaftung der Grundstücke und baulichen Anlagen",".7252000 Erwerb geringwertiger Vermögensgegenstände",".7255000 Unterhaltung des sonstigen beweglichen Vermögens",".7271000 Besondere Verwaltungs- und Betriebsauszahlungen",".7291000 Auszahlungen für sonstige Dienstleistungen",".7431000 Geschäftsauszahlungen",".7431200 Auszahlungen für Honorare"],
@@ -279,6 +287,27 @@
         
       
         
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_4420c064_211b_4ac9_a0e8_0b256bd8dbea'), {
+            type: 'doughnut',
+            data: {
+              labels: ["/0200.7831000 Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
+              datasets: [{
+                label: 'Euro',
+                data: [-15000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
       
     </script>

@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Park-und Garten GmbH des Fachbereichs Budget Oberbürgermeister hat ein Budge von -510.000,00€."/>
+  <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Park-und Garten GmbH,Budget Oberbürgermeister"/>
+  <meta name="author" content="Paul Heymann"/>
+
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
 </head>
 <html>
@@ -28,6 +32,10 @@
 
           
             
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_0a68a83d_bc23_4a6e_b40c_e33bc6931d64"></canvas>
+              </div>
             
           
       
@@ -93,6 +101,27 @@
     <script>
       
         
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_0a68a83d_bc23_4a6e_b40c_e33bc6931d64'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Zuschüsse an verbundene Unternehmen, Sondervermögen und Beteiligungen"],
+              datasets: [{
+                label: 'Euro',
+                data: [-510000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
       
     </script>

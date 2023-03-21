@@ -18,6 +18,7 @@ type Department struct {
 }
 
 type DepartmentCopy struct {
+	Year               string
 	Department         string
 	IntroCashflowTotal string
 	IntroDescription   template.HTML

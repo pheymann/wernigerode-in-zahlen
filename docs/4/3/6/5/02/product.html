@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Tageseinrichtungen für Kinder des Fachbereichs Budget Bürgerservice hat ein Budge von -5.015.200,00€."/>
+  <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Tageseinrichtungen für Kinder,Budget Bürgerservice"/>
+  <meta name="author" content="Paul Heymann"/>
+
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
 </head>
 <html>
@@ -30,11 +34,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 9.405.000,00€</h5>
-                <canvas id="chartjs_f733055b_8f2f_422e_a43d_accedc6e7e0c"></canvas>
+                <canvas id="chartjs_1f41ca98_1706_46a0_9cc6_e55dc18010d2"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -14.295.100,00€</h5>
-                <canvas id="chartjs_40ae06b9_d1be_41a3_8a7e_f88586ab7d1b"></canvas>
+                <canvas id="chartjs_0a5bd2f4_c037_40cb_8588_4612a7492ec1"></canvas>
               </div>
             </div>
           
@@ -44,6 +48,10 @@
           
             
             
+              <div class="padded-chart">
+                <canvas id="chartjs_f5f8926f_8dca_4c3b_b288_400783cae041"></canvas>
+              </div>
+            
           
       
           <h3>- Darin enthalten sind die folgenden Unter-Produkte:  <span class="total-cashflow-expenses">-5.015.200,00€</span></h3>
@@ -52,11 +60,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 7.400,00€</h5>
-                <canvas id="chartjs_a6001dd1_afa7_4404_a595_1fdeb95e9e8a"></canvas>
+                <canvas id="chartjs_7d3f6247_41f3_4f6d_9c63_af54dd0c5f6a"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -5.022.600,00€</h5>
-                <canvas id="chartjs_19f18882_5a28_4478_8baa_f940a8a04c9f"></canvas>
+                <canvas id="chartjs_0adf4984_be2e_47f4_85df_a88a0d9d0336"></canvas>
               </div>
             </div>
           
@@ -160,7 +168,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_f733055b_8f2f_422e_a43d_accedc6e7e0c'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_1f41ca98_1706_46a0_9cc6_e55dc18010d2'), {
             type: 'doughnut',
             data: {
               labels: ["Zuweisungen und allgemeine Umlagen","öffentlich-rechtliche Leistungsentgelte","privatrechtliche Leistungsentgelte, Kostenerstattungen, Kostenumlagen"],
@@ -182,7 +190,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_40ae06b9_d1be_41a3_8a7e_f88586ab7d1b'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_0a5bd2f4_c037_40cb_8588_4612a7492ec1'), {
             type: 'doughnut',
             data: {
               labels: ["Personalauszahlungen","Auszahlungen für Sach- und Dienstleistungen","Sonstige Auszahlungen"],
@@ -205,10 +213,31 @@
       
         
         
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_f5f8926f_8dca_4c3b_b288_400783cae041'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Erwerb von beweglichen Anlagevermögen und immateriellen Vermögensgegenständen"],
+              datasets: [{
+                label: 'Euro',
+                data: [-125100],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
       
         
-          var incomeSubProductLinks_chartjs_a6001dd1_afa7_4404_a595_1fdeb95e9e8a = ["16/product.html"];
-          var incomeChart_chartjs_a6001dd1_afa7_4404_a595_1fdeb95e9e8a = new Chart(document.getElementById('chartjs_a6001dd1_afa7_4404_a595_1fdeb95e9e8a'), {
+          var incomeSubProductLinks_chartjs_7d3f6247_41f3_4f6d_9c63_af54dd0c5f6a = ["16/product.html"];
+          var incomeChart_chartjs_7d3f6247_41f3_4f6d_9c63_af54dd0c5f6a = new Chart(document.getElementById('chartjs_7d3f6247_41f3_4f6d_9c63_af54dd0c5f6a'), {
             type: 'doughnut',
             data: {
               labels: ["Hort Grundschule Harzblick"],
@@ -226,16 +255,16 @@
               },
               
                 onClick: function(e){
-                  var activePoints = incomeChart_chartjs_a6001dd1_afa7_4404_a595_1fdeb95e9e8a.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
-                  window.location.href = incomeSubProductLinks_chartjs_a6001dd1_afa7_4404_a595_1fdeb95e9e8a[activePoints[0].index];
+                  var activePoints = incomeChart_chartjs_7d3f6247_41f3_4f6d_9c63_af54dd0c5f6a.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
+                  window.location.href = incomeSubProductLinks_chartjs_7d3f6247_41f3_4f6d_9c63_af54dd0c5f6a[activePoints[0].index];
                 },
               
             }
           });
         
         
-          var expensesSubProductLinks_chartjs_19f18882_5a28_4478_8baa_f940a8a04c9f = ["01/product.html","02/product.html","03/product.html","04/product.html","05/product.html","06/product.html","07/product.html","08/product.html","09/product.html","10/product.html","11/product.html","12/product.html","13/product.html","14/product.html","15/product.html","17/product.html"];
-          var expensesChart_chartjs_19f18882_5a28_4478_8baa_f940a8a04c9f = new Chart(document.getElementById('chartjs_19f18882_5a28_4478_8baa_f940a8a04c9f'), {
+          var expensesSubProductLinks_chartjs_0adf4984_be2e_47f4_85df_a88a0d9d0336 = ["01/product.html","02/product.html","03/product.html","04/product.html","05/product.html","06/product.html","07/product.html","08/product.html","09/product.html","10/product.html","11/product.html","12/product.html","13/product.html","14/product.html","15/product.html","17/product.html"];
+          var expensesChart_chartjs_0adf4984_be2e_47f4_85df_a88a0d9d0336 = new Chart(document.getElementById('chartjs_0adf4984_be2e_47f4_85df_a88a0d9d0336'), {
             type: 'doughnut',
             data: {
               labels: ["Kinderkrippe Lindenberg","Kinderkrippe Am Auerhahn","Kindertagesstätte Regenbogen","Kindertagesstätte Villa Sonnenschein","Kindertagesstätte Hummelhaus","Kindertagesstätte Musikus","Kindertagesstätte Pusteblume","Integrative Kindertagesstätte Löwenzahn","Kindertagesstätte Harzblick","Kindertagesstätte Am Schäferteich","Kindertagesstätte Kleine Strolche","Kindertagesstätte Benjamin Blümchen","Kindertagesstätte Brockenkinder","Hort Grundschule A. Diesterweg","Hort Grundschule A.H.Francke","Kindertagesstätten-Verwaltung"],
@@ -253,8 +282,8 @@
               },
               
                 onClick: function(e){
-                  var activePoints = expensesChart_chartjs_19f18882_5a28_4478_8baa_f940a8a04c9f.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
-                  window.location.href = expensesSubProductLinks_chartjs_19f18882_5a28_4478_8baa_f940a8a04c9f[activePoints[0].index];
+                  var activePoints = expensesChart_chartjs_0adf4984_be2e_47f4_85df_a88a0d9d0336.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
+                  window.location.href = expensesSubProductLinks_chartjs_0adf4984_be2e_47f4_85df_a88a0d9d0336[activePoints[0].index];
                 },
               
             }

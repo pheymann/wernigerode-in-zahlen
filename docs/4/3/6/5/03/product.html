@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Zentralküche des Fachbereichs Budget Bürgerservice hat ein Budge von 71.100,00€."/>
+  <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Zentralküche,Budget Bürgerservice"/>
+  <meta name="author" content="Paul Heymann"/>
+
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
 </head>
 <html>
@@ -30,11 +34,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 804.800,00€</h5>
-                <canvas id="chartjs_c6cf42f2_8384_45a2_877b_2c05111b668f"></canvas>
+                <canvas id="chartjs_b1e2b754_d576_41ae_9f1a_d664fbf3e964"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -716.700,00€</h5>
-                <canvas id="chartjs_b94d0080_1e8c_49f5_bc06_3a965dc95a69"></canvas>
+                <canvas id="chartjs_54c8a363_a5c7_474e_8b5a_aff02bd57e01"></canvas>
               </div>
             </div>
           
@@ -43,6 +47,10 @@
 
           
             
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_a277832e_8ba0_4cf3_9ed2_77efc6da589d"></canvas>
+              </div>
             
           
       
@@ -205,7 +213,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_c6cf42f2_8384_45a2_877b_2c05111b668f'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_b1e2b754_d576_41ae_9f1a_d664fbf3e964'), {
             type: 'doughnut',
             data: {
               labels: ["Benutzungsgebühren und ähnliche Entgelte (Essengeld)","Einzahlung aus Mitarbeiteressen"],
@@ -227,7 +235,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_b94d0080_1e8c_49f5_bc06_3a965dc95a69'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_54c8a363_a5c7_474e_8b5a_aff02bd57e01'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für den Erwerb von Vorräten (Verpflegungsleistungen)","Auszahlungen für sonstige Dienstleistungen","Geschäftsauszahlungen"],
@@ -249,6 +257,27 @@
         
       
         
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_a277832e_8ba0_4cf3_9ed2_77efc6da589d'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
+              datasets: [{
+                label: 'Euro',
+                data: [-17000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
       
     </script>

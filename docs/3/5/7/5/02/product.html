@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Touristische Wanderwege des Fachbereichs Budget Betriebsbereiche hat ein Budge von -115.800,00€."/>
+  <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Touristische Wanderwege,Budget Betriebsbereiche"/>
+  <meta name="author" content="Paul Heymann"/>
+
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
 </head>
 <html>
@@ -30,11 +34,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 4.100,00€</h5>
-                <canvas id="chartjs_5c2891a9_f329_4b62_9345_821bf3dc21f1"></canvas>
+                <canvas id="chartjs_9ce1755a_2e6c_4ee1_9a25_5f9f29aa998d"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -117.400,00€</h5>
-                <canvas id="chartjs_aec2f100_3ea2_4b48_bf5d_ff72470a35ec"></canvas>
+                <canvas id="chartjs_e74efb21_9017_46d6_9ded_3fb62f292fe2"></canvas>
               </div>
             </div>
           
@@ -43,6 +47,10 @@
 
           
             
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_440138d7_0f67_4ba5_b23d_18d55dbe16cc"></canvas>
+              </div>
             
           
       
@@ -181,7 +189,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_5c2891a9_f329_4b62_9345_821bf3dc21f1'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_9ce1755a_2e6c_4ee1_9a25_5f9f29aa998d'), {
             type: 'doughnut',
             data: {
               labels: ["Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus dem Verkauf von Vorräten (Holzverkauf)","Einzahlungen aus Kostenerstattungen von übrigen Bereichen"],
@@ -203,7 +211,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_aec2f100_3ea2_4b48_bf5d_ff72470a35ec'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_e74efb21_9017_46d6_9ded_3fb62f292fe2'), {
             type: 'doughnut',
             data: {
               labels: ["Unterhaltung des sonstigen unbeweglichen Vermögens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Erwerb geringwertiger Vermögensgegenstände","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten","Erstatt. f.d. Ausz. v. Dritten aus lfd Verwaltungstät. an so. öff. Sonderrechn."],
@@ -225,6 +233,27 @@
         
       
         
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_440138d7_0f67_4ba5_b23d_18d55dbe16cc'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr."],
+              datasets: [{
+                label: 'Euro',
+                data: [-2500],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
       
     </script>

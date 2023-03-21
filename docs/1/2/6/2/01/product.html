@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Philharmonisches Kammerorchester GmbH des Fachbereichs Budget Oberbürgermeister hat ein Budge von -360.400,00€."/>
+  <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Philharmonisches Kammerorchester GmbH,Budget Oberbürgermeister"/>
+  <meta name="author" content="Paul Heymann"/>
+
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
 </head>
 <html>
@@ -28,6 +32,10 @@
 
           
             
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_0e1a58e9_e724_4a9d_8706_b968438cb044"></canvas>
+              </div>
             
           
       
@@ -93,6 +101,27 @@
     <script>
       
         
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_0e1a58e9_e724_4a9d_8706_b968438cb044'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Zuschüsse an sonstige öffentliche Sonderrechnungen"],
+              datasets: [{
+                label: 'Euro',
+                data: [-360400],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
       
     </script>

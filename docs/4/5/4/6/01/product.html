@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Parkplätze/Parkflächen des Fachbereichs Budget Bürgerservice hat ein Budge von 699.200,00€."/>
+  <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Parkplätze/Parkflächen,Budget Bürgerservice"/>
+  <meta name="author" content="Paul Heymann"/>
+
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
 </head>
 <html>
@@ -30,11 +34,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 800.000,00€</h5>
-                <canvas id="chartjs_1bbc5167_2974_4d20_a443_5c1a9d197e29"></canvas>
+                <canvas id="chartjs_85016377_ebf3_4493_8846_b971cfe3c18c"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -80.800,00€</h5>
-                <canvas id="chartjs_96f00957_2d4d_4461_b730_f43e6effd216"></canvas>
+                <canvas id="chartjs_6e900d4c_e22d_41a8_a69a_09e43961ac78"></canvas>
               </div>
             </div>
           
@@ -43,6 +47,10 @@
 
           
             
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_92b21880_0cd8_43ba_9267_e8d3a1eea838"></canvas>
+              </div>
             
           
       
@@ -151,7 +159,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_1bbc5167_2974_4d20_a443_5c1a9d197e29'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_85016377_ebf3_4493_8846_b971cfe3c18c'), {
             type: 'doughnut',
             data: {
               labels: ["Benutzungsgebühren und ähnliche Entgelte"],
@@ -173,7 +181,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_96f00957_2d4d_4461_b730_f43e6effd216'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_6e900d4c_e22d_41a8_a69a_09e43961ac78'), {
             type: 'doughnut',
             data: {
               labels: ["Unterhaltung des sonstigen unbeweglichen Vermögens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Auszahlungen für sonstige Dienstleistungen"],
@@ -195,6 +203,27 @@
         
       
         
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_92b21880_0cd8_43ba_9267_e8d3a1eea838'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Auszahlungen für sonstige Baumaßnahmen"],
+              datasets: [{
+                label: 'Euro',
+                data: [-20000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
       
     </script>

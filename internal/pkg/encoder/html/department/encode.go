@@ -41,6 +41,7 @@ func Encode(
 		Expenses:             chartExpensesDataPerProduct,
 
 		Copy: html.DepartmentCopy{
+			Year:               year,
 			Department:         compressed.DepartmentName,
 			IntroCashflowTotal: fmt.Sprintf("In %s planen wir", year),
 			IntroDescription:   encodeIntroDescription(compressed.CashflowTotal, compressed.NumberOfProducts),

@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Wirtschaftsförderung des Fachbereichs Budget Oberbürgermeister hat ein Budge von -187.200,00€."/>
+  <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Wirtschaftsförderung,Budget Oberbürgermeister"/>
+  <meta name="author" content="Paul Heymann"/>
+
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
 </head>
 <html>
@@ -30,11 +34,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 37.500,00€</h5>
-                <canvas id="chartjs_014812e9_ccc9_4ba3_8b85_189824be0ac2"></canvas>
+                <canvas id="chartjs_3cbbd7a6_b301_449c_8445_fb9c88d780c6"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -374.700,00€</h5>
-                <canvas id="chartjs_04c14397_4919_44ba_88c4_83c9dc0584ac"></canvas>
+                <canvas id="chartjs_bd7f5235_e666_4f7b_9217_249220be9ad4"></canvas>
               </div>
             </div>
           
@@ -42,6 +46,10 @@
           <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">150.000,00€</span></h3>
 
           
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_a4c18856_011a_41e2_8d0f_8bc7ab392361"></canvas>
+              </div>
             
             
           
@@ -199,7 +207,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_014812e9_ccc9_4ba3_8b85_189824be0ac2'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_3cbbd7a6_b301_449c_8445_fb9c88d780c6'), {
             type: 'doughnut',
             data: {
               labels: ["Erträge aus Kostenerstattungen von privaten Unternehmen (HarzAG)"],
@@ -221,7 +229,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_04c14397_4919_44ba_88c4_83c9dc0584ac'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_bd7f5235_e666_4f7b_9217_249220be9ad4'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfe, Unterstützungsleistung für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Besondere Verwaltungs- und Betriebsauszahlungen","Zuweisungen an Zweckverbände","Zuschüsse an sonstige öffentliche Sonderrechnungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten","Erstatt. für die Auszahl. von Dritten aus lfd. Verwaltungstät. an priv. Untern."],
@@ -242,6 +250,27 @@
           });
         
       
+        
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_a4c18856_011a_41e2_8d0f_8bc7ab392361'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Einzahlungen aus Veräußerung von Grundstücken, Gebäuden, Infrastrukturvermögen"],
+              datasets: [{
+                label: 'Euro',
+                data: [150000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
         
       

@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Die Stadt hat ein Budge von -4.723.200,00€."/>
+  <meta name="keywords" content="Wernigerode,Haushaltsplan,2023"/>
+  <meta name="author" content="Paul Heymann"/>
+
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
 </head>
 <html>
@@ -31,11 +35,11 @@
         <div class="row">
           <div class="col-6">
             <h5 class="center">Einnahmen: 34.789.300,00€</h5>
-            <canvas id="chartjs-ea393bcf-ac23-420b-b0f0-af17ca729a87"></canvas>
+            <canvas id="chartjs-14ef1b78-530a-484d-980c-2ee631540910"></canvas>
           </div>
           <div class="col-6">
             <h5 class="center">Ausgaben: -39.512.500,00€</h5>
-            <canvas id="chartjs-615133fa-bbab-4f48-be70-fd49a1c1e432"></canvas>
+            <canvas id="chartjs-8519badc-f0ce-4cf5-9b05-cade6edda0b2"></canvas>
           </div>
         </div>
       </div>
@@ -115,7 +119,7 @@
     <script>
       
         var incomeDepartmentLinks = ["/2/department.html"];
-        var incomeCanvas = document.getElementById('chartjs-ea393bcf-ac23-420b-b0f0-af17ca729a87');
+        var incomeCanvas = document.getElementById('chartjs-14ef1b78-530a-484d-980c-2ee631540910');
         var incomeChart = new Chart(incomeCanvas, {
           type: 'doughnut',
           data: {
@@ -141,7 +145,7 @@
       
 
       var expensesDepartmentLinks = ["/1/department.html","/3/department.html","/4/department.html","/5/department.html"];
-      var expensesCanvas = document.getElementById('chartjs-615133fa-bbab-4f48-be70-fd49a1c1e432');
+      var expensesCanvas = document.getElementById('chartjs-8519badc-f0ce-4cf5-9b05-cade6edda0b2');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {

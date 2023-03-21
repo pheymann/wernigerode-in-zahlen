@@ -38,6 +38,7 @@ func Encode(
 		Expenses:                chartExpensesDataPerProduct,
 
 		Copy: html.OverviewCopy{
+			Year:     year,
 			Headline: "Wernigerode in Zahlen",
 			IntroCashflowTotal: template.HTML(fmt.Sprintf(`Als Teil unserer Stadt und Gemeinde habe ich mich gefragt, wo wir eigentlich unsere
 			Gelder investieren. Nach einigem Suchen habe ich den Wernigeröder <a href="https://www.wernigerode.de/B%%C3%%BCrgerservice/Stadtrat/Haushaltsplan/">Haushaltsplan</a>

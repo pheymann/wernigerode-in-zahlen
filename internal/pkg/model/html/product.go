@@ -15,6 +15,7 @@ type Product struct {
 
 type ProductCopy struct {
 	BackLink string
+	Year     string
 
 	IntroCashflowTotal string
 	IntroDescription   string

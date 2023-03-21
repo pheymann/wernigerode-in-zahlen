@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Harzer Verkehrsbetriebe GmbH des Fachbereichs Budget Stadtentwicklung hat ein Budge von -315.000,00€."/>
+  <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Harzer Verkehrsbetriebe GmbH,Budget Stadtentwicklung"/>
+  <meta name="author" content="Paul Heymann"/>
+
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
 </head>
 <html>
@@ -28,6 +32,10 @@
 
           
             
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_02432fae_57a0_4be3_bf97_bcc6a9499622"></canvas>
+              </div>
             
           
       
@@ -93,6 +101,27 @@
     <script>
       
         
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_02432fae_57a0_4be3_bf97_bcc6a9499622'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Zuweisungen an Gemeinden und GV (HVB)"],
+              datasets: [{
+                label: 'Euro',
+                data: [-315000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
       
     </script>

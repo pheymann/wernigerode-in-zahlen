@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Gewinnabführung Stadtwerke des Fachbereichs Budget Finanzen hat ein Budge von 3.900.000,00€."/>
+  <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Gewinnabführung Stadtwerke,Budget Finanzen"/>
+  <meta name="author" content="Paul Heymann"/>
+
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
 </head>
 <html>
@@ -27,6 +31,10 @@
           <h3>- Die Verwaltung erwirtschaftet <span class="total-cashflow-income">3.900.000,00€</span></h3>
 
           
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_933ad20f_442e_4a8b_be96_fde03561dc6f"></canvas>
+              </div>
             
             
           
@@ -92,6 +100,27 @@
     <script src="/js/chart.js"></script>
     <script>
       
+        
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_933ad20f_442e_4a8b_be96_fde03561dc6f'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Einzahlungen von Gewinnanteilen aus verbundenen Unternehmen und Beteiligungen"],
+              datasets: [{
+                label: 'Euro',
+                data: [3900000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
         
       

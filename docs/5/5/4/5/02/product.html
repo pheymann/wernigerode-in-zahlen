@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Straßenbeleuchtung des Fachbereichs Budget Stadtentwicklung hat ein Budge von -1.030.000,00€."/>
+  <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Straßenbeleuchtung,Budget Stadtentwicklung"/>
+  <meta name="author" content="Paul Heymann"/>
+
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
 </head>
 <html>
@@ -30,7 +34,7 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs_ddbcf2d9_aff5_4973_9a89_1c08349ec630"></canvas>
+                <canvas id="chartjs_17f834a9_6c81_4084_a8c9_1fa2f57e960c"></canvas>
               </div>
             
           
@@ -39,6 +43,10 @@
 
           
             
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_11672160_1bed_4c1a_9605_0250e6568484"></canvas>
+              </div>
             
           
       
@@ -118,7 +126,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_ddbcf2d9_aff5_4973_9a89_1c08349ec630'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_17f834a9_6c81_4084_a8c9_1fa2f57e960c'), {
             type: 'doughnut',
             data: {
               labels: ["Bewirtschaftung der Grundstücke und baulichen Anlagen","Erstatt. f.d. Ausz. v. Dritten a. lfd VerwTät. an verb. Unt., Sondverm.\u0026 Beteil."],
@@ -140,6 +148,27 @@
         
       
         
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_11672160_1bed_4c1a_9605_0250e6568484'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Auszahlungen für Tiefbaumaßnahmen"],
+              datasets: [{
+                label: 'Euro',
+                data: [-80000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
       
     </script>

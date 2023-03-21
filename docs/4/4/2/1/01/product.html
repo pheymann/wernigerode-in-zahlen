@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Förderung des Sports des Fachbereichs Budget Bürgerservice hat ein Budge von -154.000,00€."/>
+  <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Förderung des Sports,Budget Bürgerservice"/>
+  <meta name="author" content="Paul Heymann"/>
+
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
 </head>
 <html>
@@ -28,6 +32,10 @@
 
           
             
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_d2944494_8057_46ee_9344_21522516deac"></canvas>
+              </div>
             
           
       
@@ -93,6 +101,27 @@
     <script>
       
         
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_d2944494_8057_46ee_9344_21522516deac'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Zuschüsse an übrige Bereiche"],
+              datasets: [{
+                label: 'Euro',
+                data: [-154000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
       
     </script>

@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Spielplätze des Fachbereichs Budget Betriebsbereiche hat ein Budge von -111.600,00€."/>
+  <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Spielplätze,Budget Betriebsbereiche"/>
+  <meta name="author" content="Paul Heymann"/>
+
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
 </head>
 <html>
@@ -30,7 +34,7 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs_de713e5d_a177_4ea6_95c2_072e264f38b6"></canvas>
+                <canvas id="chartjs_2dfee024_02c5_4f2c_9e7e_c5d295c7a2da"></canvas>
               </div>
             
           
@@ -39,6 +43,10 @@
 
           
             
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_d5702cd1_a81f_4ae5_944a_65136804cd67"></canvas>
+              </div>
             
           
       
@@ -142,7 +150,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_de713e5d_a177_4ea6_95c2_072e264f38b6'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_2dfee024_02c5_4f2c_9e7e_c5d295c7a2da'), {
             type: 'doughnut',
             data: {
               labels: ["Unterhaltung des sonstigen unbeweglichen Vermögens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Geschäftsauszahlungen"],
@@ -164,6 +172,27 @@
         
       
         
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_d5702cd1_a81f_4ae5_944a_65136804cd67'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
+              datasets: [{
+                label: 'Euro',
+                data: [-60000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
       
     </script>

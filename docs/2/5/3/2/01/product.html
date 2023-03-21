@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Gasversorgung (Konzessionsabgabe) des Fachbereichs Budget Finanzen hat ein Budge von 187.800,00€."/>
+  <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Gasversorgung (Konzessionsabgabe),Budget Finanzen"/>
+  <meta name="author" content="Paul Heymann"/>
+
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
 </head>
 <html>
@@ -27,6 +31,10 @@
           <h3>- Die Verwaltung erwirtschaftet <span class="total-cashflow-income">187.800,00€</span></h3>
 
           
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_1c3aede0_3090_4137_a34d_126da8b20f27"></canvas>
+              </div>
             
             
           
@@ -92,6 +100,27 @@
     <script src="/js/chart.js"></script>
     <script>
       
+        
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_1c3aede0_3090_4137_a34d_126da8b20f27'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Konzessionsabgaben"],
+              datasets: [{
+                label: 'Euro',
+                data: [187800],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
         
       
