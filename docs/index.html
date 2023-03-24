@@ -13,6 +13,10 @@
 </head>
 <html>
   <body>
+    <p class="warning-banner">
+      Diese Seite ist noch in der Entwicklung. Es kann daher sein, dass sie noch Fehler enthält.
+    </p>
+
     <h1>Wernigerode in Zahlen</h1>
 
     <p>
@@ -35,11 +39,11 @@
         <div class="row">
           <div class="col-6">
             <h5 class="center">Einnahmen: 34.789.300,00€</h5>
-            <canvas id="chartjs-a2270aea-707e-4f30-8614-db7a0f71eea8"></canvas>
+            <canvas id="chartjs-77892248-8461-4bb9-9c11-00c9e04b797c"></canvas>
           </div>
           <div class="col-6">
             <h5 class="center">Ausgaben: -39.512.500,00€</h5>
-            <canvas id="chartjs-24c4ffcb-8e0d-4e5b-9853-d52023ced668"></canvas>
+            <canvas id="chartjs-37c10796-5061-4199-b16b-5a449d08a942"></canvas>
           </div>
         </div>
       </div>
@@ -123,7 +127,7 @@
     <script>
       
         var incomeDepartmentLinks = ["/2/department.html"];
-        var incomeCanvas = document.getElementById('chartjs-a2270aea-707e-4f30-8614-db7a0f71eea8');
+        var incomeCanvas = document.getElementById('chartjs-77892248-8461-4bb9-9c11-00c9e04b797c');
         var incomeChart = new Chart(incomeCanvas, {
           type: 'doughnut',
           data: {
@@ -149,7 +153,7 @@
       
 
       var expensesDepartmentLinks = ["/1/department.html","/3/department.html","/4/department.html","/5/department.html"];
-      var expensesCanvas = document.getElementById('chartjs-24c4ffcb-8e0d-4e5b-9853-d52023ced668');
+      var expensesCanvas = document.getElementById('chartjs-37c10796-5061-4199-b16b-5a449d08a942');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {

@@ -13,6 +13,10 @@
 </head>
 <html>
   <body>
+    <p class="warning-banner">
+      Diese Seite ist noch in der Entwicklung. Es kann daher sein, dass sie noch Fehler enthält.
+    </p>
+
     <h1>Steuern, allgemeine Zuweisungen, allgemeine Umlagen</h1>
 
     <p>
@@ -34,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 44.376.700,00€</h5>
-                <canvas id="chartjs_d93ceb51_2ace_41f5_a395_4a8bedaba6ca"></canvas>
+                <canvas id="chartjs_e373070c_cd2d_40aa_8d0e_c9b746a8411d"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -14.210.700,00€</h5>
-                <canvas id="chartjs_cc984ce5_1320_47b4_91e1_a018039f5c5f"></canvas>
+                <canvas id="chartjs_a23dd458_fab9_4808_bfdf_0ad1782533eb"></canvas>
               </div>
             </div>
           
@@ -48,7 +52,7 @@
           
             
               <div class="padded-chart">
-                <canvas id="chartjs_3f9e9660_d766_43c8_a67b_09ac01ae9f09"></canvas>
+                <canvas id="chartjs_ff4caf89_59be_47c1_a1ca_6380b63ff6fd"></canvas>
               </div>
             
             
@@ -195,7 +199,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_d93ceb51_2ace_41f5_a395_4a8bedaba6ca'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_e373070c_cd2d_40aa_8d0e_c9b746a8411d'), {
             type: 'doughnut',
             data: {
               labels: ["Grundsteuer A","Grundsteuer B","Gewerbesteuer","Gemeindeanteil an der Einkommensteuer","Gemeindeanteil an der Umsatzsteuer","Vergnügungssteuer","Hundesteuer","Schlüsselzuweisungen und Besondere Ergänzungszuweisungen vom Land","Sonstige allgemeine Zuweisungen vom Land","Sonstige Finanzeinzahlungen"],
@@ -217,7 +221,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_cc984ce5_1320_47b4_91e1_a018039f5c5f'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_a23dd458_fab9_4808_bfdf_0ad1782533eb'), {
             type: 'doughnut',
             data: {
               labels: ["Gewerbesteuerumlage","Allgemeine Umlagen an Landkreise","Verzinsung von Steuererstattungen"],
@@ -240,7 +244,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_3f9e9660_d766_43c8_a67b_09ac01ae9f09'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_ff4caf89_59be_47c1_a1ca_6380b63ff6fd'), {
             type: 'doughnut',
             data: {
               labels: ["Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land"],

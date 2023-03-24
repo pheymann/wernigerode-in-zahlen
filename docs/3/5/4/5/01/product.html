@@ -13,6 +13,10 @@
 </head>
 <html>
   <body>
+    <p class="warning-banner">
+      Diese Seite ist noch in der Entwicklung. Es kann daher sein, dass sie noch Fehler enthält.
+    </p>
+
     <h1>Straßenreinigung/Winterdienst</h1>
 
     <p>
@@ -34,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 440.000,00€</h5>
-                <canvas id="chartjs_132606be_2f2c_40b0_ac13_1cf9c8a0828e"></canvas>
+                <canvas id="chartjs_4e40df18_217c_4625_803c_40b1c5ffa718"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -191.000,00€</h5>
-                <canvas id="chartjs_7ba78acf_93e1_4c69_8c09_ebe7211f8d8b"></canvas>
+                <canvas id="chartjs_e752cc45_4b54_4d1b_b769_fa374eb7c52b"></canvas>
               </div>
             </div>
           
@@ -142,7 +146,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_132606be_2f2c_40b0_ac13_1cf9c8a0828e'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_4e40df18_217c_4625_803c_40b1c5ffa718'), {
             type: 'doughnut',
             data: {
               labels: ["Benutzungsgebühren und ähnliche Entgelte"],
@@ -164,7 +168,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_7ba78acf_93e1_4c69_8c09_ebe7211f8d8b'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_e752cc45_4b54_4d1b_b769_fa374eb7c52b'), {
             type: 'doughnut',
             data: {
               labels: ["Unterhaltung des sonstigen unbeweglichen Vermögens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Erstatt. für die Auszahl. von Dritten aus lfd. Verwaltungstät. an priv. Untern."],

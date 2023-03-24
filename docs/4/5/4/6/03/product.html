@@ -13,6 +13,10 @@
 </head>
 <html>
   <body>
+    <p class="warning-banner">
+      Diese Seite ist noch in der Entwicklung. Es kann daher sein, dass sie noch Fehler enthält.
+    </p>
+
     <h1>Pendlerparkplätze</h1>
 
     <p>
@@ -34,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 50.000,00€</h5>
-                <canvas id="chartjs_19d5782f_22a9_433a_85aa_6021cbaba9d5"></canvas>
+                <canvas id="chartjs_eeffb64c_1e2e_442a_bf54_0e6f0586107b"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -19.500,00€</h5>
-                <canvas id="chartjs_c51c8a80_76f5_404e_8389_6d73fae992b3"></canvas>
+                <canvas id="chartjs_4f57f363_1c4b_4da1_8ae9_238e0f37664e"></canvas>
               </div>
             </div>
           
@@ -124,7 +128,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_19d5782f_22a9_433a_85aa_6021cbaba9d5'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_eeffb64c_1e2e_442a_bf54_0e6f0586107b'), {
             type: 'doughnut',
             data: {
               labels: ["Einzahlungen aus Mieten und Pachten"],
@@ -146,7 +150,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_c51c8a80_76f5_404e_8389_6d73fae992b3'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_4f57f363_1c4b_4da1_8ae9_238e0f37664e'), {
             type: 'doughnut',
             data: {
               labels: ["Unterhaltung des sonstigen unbeweglichen Vermögens","Unterhaltung des sonstigen beweglichen Vermögens","Geschäftsauszahlungen"],

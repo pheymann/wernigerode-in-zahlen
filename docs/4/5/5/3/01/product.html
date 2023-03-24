@@ -13,6 +13,10 @@
 </head>
 <html>
   <body>
+    <p class="warning-banner">
+      Diese Seite ist noch in der Entwicklung. Es kann daher sein, dass sie noch Fehler enthält.
+    </p>
+
     <h1>Allgemeine Einrichtungen und Märkte</h1>
 
     <p>
@@ -34,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 32.500,00€</h5>
-                <canvas id="chartjs_4d7b0b8d_b567_46b8_8bef_eb32ef2c32ad"></canvas>
+                <canvas id="chartjs_33e7dcda_044b_46f1_87ba_de863ef9cb68"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -9.100,00€</h5>
-                <canvas id="chartjs_399803aa_d806_4b66_9cd7_4b39d7e83fc2"></canvas>
+                <canvas id="chartjs_79894f16_7869_4f16_8a08_d34a9e0ab9d5"></canvas>
               </div>
             </div>
           
@@ -136,7 +140,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_4d7b0b8d_b567_46b8_8bef_eb32ef2c32ad'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_33e7dcda_044b_46f1_87ba_de863ef9cb68'), {
             type: 'doughnut',
             data: {
               labels: ["Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus Mieten und Pachten"],
@@ -158,7 +162,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_399803aa_d806_4b66_9cd7_4b39d7e83fc2'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_79894f16_7869_4f16_8a08_d34a9e0ab9d5'), {
             type: 'doughnut',
             data: {
               labels: ["Unterhaltung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Erstatt. für die Auszahl. von Dritten aus lfd. Verwaltungstät. an übrige Ber."],

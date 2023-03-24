@@ -13,6 +13,10 @@
 </head>
 <html>
   <body>
+    <p class="warning-banner">
+      Diese Seite ist noch in der Entwicklung. Es kann daher sein, dass sie noch Fehler enthält.
+    </p>
+
     <h1>Brahms-Chorwettbewerb</h1>
 
     <p>
@@ -34,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 63.000,00€</h5>
-                <canvas id="chartjs_f271f326_202c_40a7_a34c_5b668fe0c795"></canvas>
+                <canvas id="chartjs_0e21f493_8993_4a2a_b476_dec699735b86"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -73.000,00€</h5>
-                <canvas id="chartjs_cd957cb0_3a39_4090_800b_85359dd8731a"></canvas>
+                <canvas id="chartjs_48645b42_9f25_4268_8fee_e208b8dcefa4"></canvas>
               </div>
             </div>
           
@@ -148,7 +152,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_f271f326_202c_40a7_a34c_5b668fe0c795'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_0e21f493_8993_4a2a_b476_dec699735b86'), {
             type: 'doughnut',
             data: {
               labels: ["Zuweisungen für laufende Zwecke vom Land","Zuschüsse für laufende Zwecke von privaten Unternehmen (Spenden)","Zuschüsse für laufende Zwecke von übrigen Bereichen","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus dem Verkauf von Vorräten"],
@@ -170,7 +174,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_cd957cb0_3a39_4090_800b_85359dd8731a'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_48645b42_9f25_4268_8fee_e208b8dcefa4'), {
             type: 'doughnut',
             data: {
               labels: ["Auszahlungen für Mieten und Pachten","Unterhaltung des sonstigen beweglichen Vermögens","Besondere Verwaltungs- und Betriebsauszahlungen"],

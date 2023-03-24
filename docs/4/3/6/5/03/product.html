@@ -13,6 +13,10 @@
 </head>
 <html>
   <body>
+    <p class="warning-banner">
+      Diese Seite ist noch in der Entwicklung. Es kann daher sein, dass sie noch Fehler enthält.
+    </p>
+
     <h1>Zentralküche</h1>
 
     <p>
@@ -34,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 804.800,00€</h5>
-                <canvas id="chartjs_b1e2b754_d576_41ae_9f1a_d664fbf3e964"></canvas>
+                <canvas id="chartjs_6016ceb5_033b_49f2_a3d9_6ac735a6c6ab"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -716.700,00€</h5>
-                <canvas id="chartjs_54c8a363_a5c7_474e_8b5a_aff02bd57e01"></canvas>
+                <canvas id="chartjs_b324d715_4d24_4ebe_ac2d_2bbe4bc82ee7"></canvas>
               </div>
             </div>
           
@@ -49,7 +53,7 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs_a277832e_8ba0_4cf3_9ed2_77efc6da589d"></canvas>
+                <canvas id="chartjs_5990fa3e_7166_4f80_b9de_a6e9e949b731"></canvas>
               </div>
             
           
@@ -213,7 +217,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_b1e2b754_d576_41ae_9f1a_d664fbf3e964'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_6016ceb5_033b_49f2_a3d9_6ac735a6c6ab'), {
             type: 'doughnut',
             data: {
               labels: ["Benutzungsgebühren und ähnliche Entgelte (Essengeld)","Einzahlung aus Mitarbeiteressen"],
@@ -235,7 +239,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_54c8a363_a5c7_474e_8b5a_aff02bd57e01'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_b324d715_4d24_4ebe_ac2d_2bbe4bc82ee7'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für den Erwerb von Vorräten (Verpflegungsleistungen)","Auszahlungen für sonstige Dienstleistungen","Geschäftsauszahlungen"],
@@ -259,7 +263,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_a277832e_8ba0_4cf3_9ed2_77efc6da589d'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_5990fa3e_7166_4f80_b9de_a6e9e949b731'), {
             type: 'doughnut',
             data: {
               labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],

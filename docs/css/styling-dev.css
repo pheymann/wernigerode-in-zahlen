@@ -70,6 +70,13 @@ footer a {
   font-size: 0.8em;
 }
 
+.warning-banner {
+  background-color: #ffd700;
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+  border-radius: 5px;
+}
+
 /* ROOT FONT STYLES */
 
 * {

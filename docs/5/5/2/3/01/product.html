@@ -13,6 +13,10 @@
 </head>
 <html>
   <body>
+    <p class="warning-banner">
+      Diese Seite ist noch in der Entwicklung. Es kann daher sein, dass sie noch Fehler enthält.
+    </p>
+
     <h1>Denkmalschutz</h1>
 
     <p>
@@ -34,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 983.000,00€</h5>
-                <canvas id="chartjs_ad3aceb4_f5a6_43c5_9d91_760b26002adf"></canvas>
+                <canvas id="chartjs_93a18500_f623_4f30_81f3_6f41fbf6e010"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -1.145.600,00€</h5>
-                <canvas id="chartjs_55d251b6_f704_41e7_8c13_8b20f0b216cf"></canvas>
+                <canvas id="chartjs_b41ed681_1d01_4eb0_8585_594e311aa3fd"></canvas>
               </div>
             </div>
           
@@ -142,7 +146,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_ad3aceb4_f5a6_43c5_9d91_760b26002adf'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_93a18500_f623_4f30_81f3_6f41fbf6e010'), {
             type: 'doughnut',
             data: {
               labels: ["Zuweisungen für laufende Zwecke vom Bund","Zuweisungen für laufende Zwecke vom Land"],
@@ -164,7 +168,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_55d251b6_f704_41e7_8c13_8b20f0b216cf'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_b41ed681_1d01_4eb0_8585_594e311aa3fd'), {
             type: 'doughnut',
             data: {
               labels: ["Unterhaltung des sonstigen unbeweglichen Vermögens","Zuschüsse an übrige Bereiche","Zuschüsse an übrige Bereiche","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten","Sonstige Finanzauszahlungen"],

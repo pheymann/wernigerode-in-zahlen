@@ -13,6 +13,10 @@
 </head>
 <html>
   <body>
+    <p class="warning-banner">
+      Diese Seite ist noch in der Entwicklung. Es kann daher sein, dass sie noch Fehler enthält.
+    </p>
+
     <h1>Gemeindestraßen</h1>
 
     <p>
@@ -34,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 29.000,00€</h5>
-                <canvas id="chartjs_d194ea7c_966e_475c_aab3_88c72da83e09"></canvas>
+                <canvas id="chartjs_1876fa2f_f34b_495c_99e1_1768838352a5"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -1.099.900,00€</h5>
-                <canvas id="chartjs_f7c42c5c_2296_483a_a449_08848f9e3124"></canvas>
+                <canvas id="chartjs_e2f18f0b_aceb_4b6e_b6da_539003c58445"></canvas>
               </div>
             </div>
           
@@ -49,7 +53,7 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs_ba3194ab_70cf_4f75_8625_5cc6832f2bc2"></canvas>
+                <canvas id="chartjs_1b0fd2b0_9afc_4397_b1d2_06c40c2b2fab"></canvas>
               </div>
             
           
@@ -225,7 +229,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_d194ea7c_966e_475c_aab3_88c72da83e09'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_1876fa2f_f34b_495c_99e1_1768838352a5'), {
             type: 'doughnut',
             data: {
               labels: ["Verwaltungsgebühren (Straßenaufbrüche)","Verwaltungsgebühren (Sondernutzung)"],
@@ -247,7 +251,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_f7c42c5c_2296_483a_a449_08848f9e3124'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_e2f18f0b_aceb_4b6e_b6da_539003c58445'), {
             type: 'doughnut',
             data: {
               labels: ["Unterhaltung des sonstigen unbeweglichen Vermögens (DIII)","Unterhaltung des sonstigen unbeweglichen Vermögens (D I/32)","Unterhaltung des sonstigen unbeweglichen Vermögens (D I/68)","Bewirtschaftung der Grundstücke und baulichen Anlagen","Unterhaltung des sonstigen beweglichen Vermögens","Auszahlungen für sonstige Dienstleistungen","Zuweisungen an Zweckverbände","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Auszahlungen für Planungsleistungen"],
@@ -271,7 +275,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_ba3194ab_70cf_4f75_8625_5cc6832f2bc2'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_1b0fd2b0_9afc_4397_b1d2_06c40c2b2fab'), {
             type: 'doughnut',
             data: {
               labels: ["Auszahlungen für Tiefbaumaßnahmen","Auszahlungen für Tiefbaumaßnahmen","Auszahlungen für Tiefbaumaßnahmen","Auszahlungen für Tiefbaumaßnahmen","Auszahlungen für Tiefbaumaßnahmen","Auszahlungen für Tiefbaumaßnahmen","Auszahlungen für sonstige Baumaßnahmen","Auszahlungen für Tiefbaumaßnahmen"],

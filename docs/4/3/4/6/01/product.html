@@ -13,6 +13,10 @@
 </head>
 <html>
   <body>
+    <p class="warning-banner">
+      Diese Seite ist noch in der Entwicklung. Es kann daher sein, dass sie noch Fehler enthält.
+    </p>
+
     <h1>Wohngeld</h1>
 
     <p>
@@ -34,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 400,00€</h5>
-                <canvas id="chartjs_a7850770_bf9a_4a95_ad17_56db1ee85dc7"></canvas>
+                <canvas id="chartjs_4f46df4e_461b_404a_be0e_7315507b16c4"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -329.200,00€</h5>
-                <canvas id="chartjs_e89681e3_27ce_4dde_b742_19514557cf19"></canvas>
+                <canvas id="chartjs_2884f820_b61e_464c_80f0_5609e6aef52b"></canvas>
               </div>
             </div>
           
@@ -154,7 +158,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_a7850770_bf9a_4a95_ad17_56db1ee85dc7'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_4f46df4e_461b_404a_be0e_7315507b16c4'), {
             type: 'doughnut',
             data: {
               labels: ["Einzahlungen aus Kostenerstattungen von übrigen Bereichen","Bußgelder"],
@@ -176,7 +180,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_e89681e3_27ce_4dde_b742_19514557cf19'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_2884f820_b61e_464c_80f0_5609e6aef52b'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für sonstige Dienstleistungen","Geschäftsauszahlungen","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten"],

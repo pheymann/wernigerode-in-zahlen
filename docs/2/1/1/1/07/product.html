@@ -13,6 +13,10 @@
 </head>
 <html>
   <body>
+    <p class="warning-banner">
+      Diese Seite ist noch in der Entwicklung. Es kann daher sein, dass sie noch Fehler enthält.
+    </p>
+
     <h1>Haushalts-,Kassen-und Rechnungswesen</h1>
 
     <p>
@@ -34,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 151.800,00€</h5>
-                <canvas id="chartjs_66963619_5b41_41f8_92c5_22c82703f008"></canvas>
+                <canvas id="chartjs_a1ecafec_957f_4b73_a12b_755688a348ca"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -1.702.300,00€</h5>
-                <canvas id="chartjs_3ca4e367_f980_4895_b054_1db07fb6886d"></canvas>
+                <canvas id="chartjs_7c16c4df_bf83_4037_8923_873594eae89d"></canvas>
               </div>
             </div>
           
@@ -178,7 +182,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_66963619_5b41_41f8_92c5_22c82703f008'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_a1ecafec_957f_4b73_a12b_755688a348ca'), {
             type: 'doughnut',
             data: {
               labels: ["Verwaltungsgebühren","Einzahlungen aus Kostenerstattungen von sonstigen öffentlichen Sonderrechnungen","Säumniszuschläge","Andere sonstige Einzahlungen aus laufender Verwaltungstätigkeit"],
@@ -200,7 +204,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_3ca4e367_f980_4895_b054_1db07fb6886d'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_7c16c4df_bf83_4037_8923_873594eae89d'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für sonstige Dienstleistungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten"],
