@@ -204,7 +204,6 @@ func encodeAccountCopy(data []html.AccountTableData, p *message.Printer) []html.
 		accountCopy = append(accountCopy, html.ProductAccountCopy{
 			Name:          row.Name,
 			CashflowTotal: encodeHtml.EncodeBudget(row.CashflowTotal, p),
-			AboveLimit:    row.AboveLimit,
 		})
 	}
 

@@ -42,7 +42,6 @@ type ProductCopy struct {
 type ProductAccountCopy struct {
 	Name          string
 	CashflowTotal string
-	AboveLimit    string
 }
 
 type ProductCSS struct {

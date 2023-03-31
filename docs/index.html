@@ -39,11 +39,11 @@
         <div class="row">
           <div class="col-6">
             <h5 class="center">Einnahmen: 34.789.300,00€</h5>
-            <canvas id="chartjs-18b143e6-e248-485d-9bce-cfe009fcbcac"></canvas>
+            <canvas id="chartjs-31a0dc8e-2189-4e82-a7dd-480a72b819dc"></canvas>
           </div>
           <div class="col-6">
             <h5 class="center">Ausgaben: -39.512.500,00€</h5>
-            <canvas id="chartjs-61bde819-970b-4b92-8513-452bdca17d7e"></canvas>
+            <canvas id="chartjs-fe7afb47-39b8-4b6f-8c3f-998efb671582"></canvas>
           </div>
         </div>
       </div>
@@ -59,43 +59,36 @@
           <tr>
             <th>Fachbereich</th>
             <th>Finanzplan</th>
-            <th>Davon über der Wertgrenze</th>
           </tr>
           <tr>
             <th></th>
             <th>-4.723.200,00€</th>
-            <th>-3.691.900,00€</th>
           </tr>
 
           
             <tr>
               <td><a href="/3/department.html">Budget Betriebsbereiche</a></td>
               <td>-5.804.200,00€</td>
-              <td>-329.800,00€</td>
             </tr>
           
             <tr>
               <td><a href="/4/department.html">Budget Bürgerservice</a></td>
               <td>-16.632.300,00€</td>
-              <td>-1.771.200,00€</td>
             </tr>
           
             <tr>
               <td><a href="/2/department.html">Budget Finanzen</a></td>
               <td>34.789.300,00€</td>
-              <td>1.399.900,00€</td>
             </tr>
           
             <tr>
               <td><a href="/5/department.html">Budget Stadtentwicklung</a></td>
               <td>-10.904.000,00€</td>
-              <td>-2.349.800,00€</td>
             </tr>
           
             <tr>
               <td><a href="/1/department.html">Budget des Bürgermeisters</a></td>
               <td>-6.172.000,00€</td>
-              <td>-641.000,00€</td>
             </tr>
           
         </tbody>
@@ -124,7 +117,7 @@
     <script>
       
         var incomeDepartmentLinks = ["/2/department.html"];
-        var incomeCanvas = document.getElementById('chartjs-18b143e6-e248-485d-9bce-cfe009fcbcac');
+        var incomeCanvas = document.getElementById('chartjs-31a0dc8e-2189-4e82-a7dd-480a72b819dc');
         var incomeChart = new Chart(incomeCanvas, {
           type: 'doughnut',
           data: {
@@ -150,7 +143,7 @@
       
 
       var expensesDepartmentLinks = ["/1/department.html","/3/department.html","/4/department.html","/5/department.html"];
-      var expensesCanvas = document.getElementById('chartjs-61bde819-970b-4b92-8513-452bdca17d7e');
+      var expensesCanvas = document.getElementById('chartjs-fe7afb47-39b8-4b6f-8c3f-998efb671582');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {

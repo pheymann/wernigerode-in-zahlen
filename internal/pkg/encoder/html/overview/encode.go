@@ -17,7 +17,6 @@ func Encode(
 	year model.BudgetYear,
 
 	cashflowTotal float64,
-	cashflowB float64,
 
 	incomeTotalCashFlow float64,
 	incomeDepartmentLinks []string,
@@ -49,7 +48,6 @@ func Encode(
 			IntroDescription: encodeIntroDescription(cashflowTotal, len(departments)),
 
 			CashflowTotal:         htmlEncoder.EncodeBudget(cashflowTotal, p),
-			CashflowB:             htmlEncoder.EncodeBudget(cashflowB, p),
 			IncomeCashflowTotal:   "Einnahmen: " + htmlEncoder.EncodeBudget(incomeTotalCashFlow, p),
 			ExpensesCashflowTotal: "Ausgaben: " + htmlEncoder.EncodeBudget(expensesTotalCashFlow, p),
 
@@ -76,7 +74,6 @@ func encodeCompressedDepartment(department model.CompressedDepartment, p *messag
 	return html.OverviewDepartmentCopy{
 		Name:          department.DepartmentName,
 		CashflowTotal: htmlEncoder.EncodeBudget(department.CashflowTotal, p),
-		CashflowB:     htmlEncoder.EncodeBudget(department.CashflowB, p),
 		Link:          department.GetDepartmentLink(),
 	}
 }

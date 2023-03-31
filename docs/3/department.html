@@ -34,11 +34,11 @@
         <div class="row">
           <div class="col-6">
             <h5 class="center">Einnahmen: 544.900,00€</h5>
-            <canvas id="chartjs-1c936881-233e-4bbb-a896-71bcc3fe653a"></canvas>
+            <canvas id="chartjs-86f334de-cf88-4530-ba98-525c1931d3cd"></canvas>
           </div>
           <div class="col-6">
             <h5 class="center">Ausgaben: -6.349.100,00€</h5>
-            <canvas id="chartjs-08984fbc-0308-43a7-ae1d-9b14fbf3acb8"></canvas>
+            <canvas id="chartjs-ec97ea12-b999-46df-bdad-a546123f199c"></canvas>
           </div>
         </div>
       
@@ -50,91 +50,76 @@
           <tr>
             <th>Produkt</th>
             <th>Finanzplan</th>
-            <th>Davon über der Wertgrenze</th>
           </tr>
           <tr>
             <th></th>
             <th>-5.804.200,00€</th>
-            <th>-329.800,00€</th>
           </tr>
 
           
             <tr>
               <td><a href="/3/1/1/1/11/product.html">Bauhof</a></td>
               <td>-2.876.700,00€</td>
-              <td>-108.000,00€</td>
             </tr>
           
             <tr>
               <td><a href="/3/5/5/1/03/product.html">Containerstellplätze</a></td>
               <td>34.100,00€</td>
-              <td>0,00€</td>
             </tr>
           
             <tr>
               <td><a href="/3/1/1/1/12/product.html">Dienstleistungen für Dritte (Bauhof)</a></td>
               <td>78.900,00€</td>
-              <td>-10.000,00€</td>
             </tr>
           
             <tr>
               <td><a href="/3/5/5/5/01/product.html">Forstwirtschaft und Wirtschaftswege</a></td>
               <td>-678.600,00€</td>
-              <td>-85.000,00€</td>
             </tr>
           
             <tr>
               <td><a href="/3/5/5/3/01/product.html">Friedhofs- und Bestattungswesen</a></td>
               <td>-224.700,00€</td>
-              <td>-5.800,00€</td>
             </tr>
           
             <tr>
               <td><a href="/3/5/4/6/02/product.html">Parkraumbewirtschaftung Schierke</a></td>
               <td>134.900,00€</td>
-              <td>-10.000,00€</td>
             </tr>
           
             <tr>
               <td><a href="/3/5/7/5/04/product.html">Schierker Feuerstein Arena</a></td>
               <td>-395.500,00€</td>
-              <td>-21.500,00€</td>
             </tr>
           
             <tr>
               <td><a href="/3/3/6/6/02/product.html">Spielplätze</a></td>
               <td>-111.600,00€</td>
-              <td>-60.000,00€</td>
             </tr>
           
             <tr>
               <td><a href="/3/5/4/5/01/product.html">Straßenreinigung/Winterdienst</a></td>
               <td>249.000,00€</td>
-              <td>0,00€</td>
             </tr>
           
             <tr>
               <td><a href="/3/5/7/5/02/product.html">Touristische Wanderwege</a></td>
               <td>-115.800,00€</td>
-              <td>-2.500,00€</td>
             </tr>
           
             <tr>
               <td><a href="/3/2/8/1/02/product.html">Weihnachtsmarkt</a></td>
               <td>48.000,00€</td>
-              <td>0,00€</td>
             </tr>
           
             <tr>
               <td><a href="/3/2/5/3/01/product.html">Wildpark</a></td>
               <td>-319.800,00€</td>
-              <td>-7.500,00€</td>
             </tr>
           
             <tr>
               <td><a href="/3/5/5/1/01/product.html">Öffentliches Grün</a></td>
               <td>-1.626.400,00€</td>
-              <td>-19.500,00€</td>
             </tr>
           
         </tbody>
@@ -163,7 +148,7 @@
     <script>
       
       var incomeProductLinks = ["/3/1/1/1/12/product.html","/3/2/8/1/02/product.html","/3/5/4/5/01/product.html","/3/5/4/6/02/product.html","/3/5/5/1/03/product.html"];
-      var incomeCanvas = document.getElementById('chartjs-1c936881-233e-4bbb-a896-71bcc3fe653a');
+      var incomeCanvas = document.getElementById('chartjs-86f334de-cf88-4530-ba98-525c1931d3cd');
       var incomeChart = new Chart(incomeCanvas, {
         type: 'doughnut',
         data: {
@@ -190,7 +175,7 @@
 
       
       var expenesesProductLinks = ["/3/1/1/1/11/product.html","/3/2/5/3/01/product.html","/3/3/6/6/02/product.html","/3/5/5/1/01/product.html","/3/5/5/3/01/product.html","/3/5/5/5/01/product.html","/3/5/7/5/02/product.html","/3/5/7/5/04/product.html"];
-      var expensesCanvas = document.getElementById('chartjs-08984fbc-0308-43a7-ae1d-9b14fbf3acb8');
+      var expensesCanvas = document.getElementById('chartjs-ec97ea12-b999-46df-bdad-a546123f199c');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {

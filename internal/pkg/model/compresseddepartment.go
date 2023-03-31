@@ -6,7 +6,6 @@ type CompressedDepartment struct {
 	ID               string
 	DepartmentName   string
 	CashflowTotal    float64
-	CashflowB        float64
 	NumberOfProducts int
 }
 

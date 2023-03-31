@@ -47,7 +47,6 @@ func Encode(
 			IntroDescription:   encodeIntroDescription(compressed.CashflowTotal, compressed.NumberOfProducts),
 
 			CashflowTotal:         htmlEncoder.EncodeBudget(compressed.CashflowTotal, p),
-			CashflowB:             htmlEncoder.EncodeBudget(compressed.CashflowB, p),
 			IncomeCashflowTotal:   "Einnahmen: " + htmlEncoder.EncodeBudget(incomeTotalCashFlow, p),
 			ExpensesCashflowTotal: "Ausgaben: " + htmlEncoder.EncodeBudget(expensesTotalCashFlow, p),
 
@@ -72,7 +71,6 @@ func encodeDepartmentProductData(data html.ProductTableData, p *message.Printer)
 	return html.DepartmentProductCopy{
 		Name:          data.Name,
 		CashflowTotal: htmlEncoder.EncodeBudget(data.CashflowTotal, p),
-		CashflowB:     htmlEncoder.EncodeBudget(data.CashflowB, p),
 		Link:          data.Link,
 	}
 }

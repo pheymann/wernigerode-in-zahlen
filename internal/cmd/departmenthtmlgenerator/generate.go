@@ -96,7 +96,7 @@ func sanityCheck(financialPlan model.FinancialPlan, compressed *model.Compressed
 	}
 
 	if shared.IsUnequal(cashflowTotal, compressed.CashflowTotal) {
-		fmt.Printf("[WARNING] Compressed and financial plan cashflow divert. Expected %f, got %f", cashflowTotal, compressed.CashflowTotal)
+		fmt.Printf("[WARNING] Compressed and financial plan cashflow divert. Expected %f, got %f\n", cashflowTotal, compressed.CashflowTotal)
 	}
 }
 
@@ -114,20 +114,9 @@ func populateChartData(
 	data := html.ProductTableData{}
 
 	var cashflowTotal = 0.0
-	var cashflowB = 0.0
 
 	for _, balance := range product.FinancialPlan.Balances {
 		cashflowTotal += balance.Budgets[year]
-
-		for _, account := range balance.Accounts {
-			for _, sub := range account.Subs {
-				for _, unit := range sub.Units {
-					if unit.AboveValueLimit != nil {
-						cashflowB += unit.Budgets[year]
-					}
-				}
-			}
-		}
 	}
 
 	if shared.IsUnequal(cashflowTotal, product.CashflowTotal) {
@@ -135,9 +124,7 @@ func populateChartData(
 	}
 
 	compressed.CashflowTotal += cashflowTotal
-	compressed.CashflowB += cashflowB
 	data.CashflowTotal = cashflowTotal
-	data.CashflowB = cashflowB
 
 	productLink := fmt.Sprintf(
 		"/%s/%s/%s/%s/%s/product.html",

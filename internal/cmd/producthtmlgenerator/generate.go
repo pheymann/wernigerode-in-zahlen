@@ -77,15 +77,9 @@ func readBalanceDataAndCashflow(fp model.FinancialPlan, year model.BudgetYear) (
 
 								balanceData[balanceIndex].AddDataPoint(dataPoint)
 
-								aboveLimitDesc := ""
-								if unit.AboveValueLimit != nil {
-									aboveLimitDesc = unit.AboveValueLimit.Category
-								}
-
 								tableData = append(tableData, html.AccountTableData{
 									Name:          unit.Desc,
 									CashflowTotal: unit.Budgets[year],
-									AboveLimit:    aboveLimitDesc,
 								})
 
 								subAccountCashflow += unit.Budgets[year]

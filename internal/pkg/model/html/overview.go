@@ -23,7 +23,6 @@ type OverviewCopy struct {
 	IntroDescription   template.HTML
 
 	CashflowTotal         string
-	CashflowB             string
 	IncomeCashflowTotal   string
 	ExpensesCashflowTotal string
 
@@ -40,7 +39,6 @@ type OverviewDepartmentCopy struct {
 	Name          string
 	Link          string
 	CashflowTotal string
-	CashflowB     string
 }
 
 type OverviewCSS struct {

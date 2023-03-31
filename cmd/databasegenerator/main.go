@@ -155,8 +155,6 @@ func databaseToCSV(database map[string]map[string]map[string]map[string]map[stri
 			"account description",
 			"sub account id",
 			"sub account description",
-			"above value limit category",
-			"above value limit sub category",
 			"budget 2020",
 			"budget 2021",
 			"budget 2022",
@@ -240,14 +238,6 @@ func financialPlanToCSV(
 							unit.Desc,
 						}...)
 
-						if unit.AboveValueLimit != nil {
-							row = append(row, unit.AboveValueLimit.Category)
-							row = append(row, unit.AboveValueLimit.SubCategory)
-						} else {
-							row = append(row, "")
-							row = append(row, "")
-						}
-
 						for _, budget := range unit.Budgets {
 							row = append(row, fmt.Sprintf("%f", budget))
 						}
@@ -275,9 +265,6 @@ func financialPlanToCSV(
 						sub.Id,
 						sub.Desc,
 					}...)
-
-					row = append(row, "")
-					row = append(row, "")
 
 					for _, budget := range sub.Budgets {
 						row = append(row, fmt.Sprintf("%f", budget))
