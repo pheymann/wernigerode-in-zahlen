@@ -6,9 +6,9 @@ import (
 	"sort"
 
 	"github.com/google/uuid"
-	htmlOverviewtEncoder "wernigode-in-zahlen.de/internal/pkg/encoder/html/overview"
-	"wernigode-in-zahlen.de/internal/pkg/model"
-	"wernigode-in-zahlen.de/internal/pkg/model/html"
+	htmlOverviewtEncoder "wernigerode-in-zahlen.de/internal/pkg/encoder/html/overview"
+	"wernigerode-in-zahlen.de/internal/pkg/model"
+	"wernigerode-in-zahlen.de/internal/pkg/model/html"
 )
 
 func Generate(departments []model.CompressedDepartment, debugRootPath string) string {

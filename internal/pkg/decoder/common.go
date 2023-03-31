@@ -33,3 +33,11 @@ func DecodeBudget(parser *regexp.Regexp, matchLabel string, matches []string) fl
 	}
 	return i
 }
+
+func DecodeFloat64(strFloat string) float64 {
+	i, err := strconv.ParseFloat(strFloat, 64)
+	if err != nil {
+		panic(err)
+	}
+	return i
+}

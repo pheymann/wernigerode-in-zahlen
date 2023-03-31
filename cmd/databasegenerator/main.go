@@ -11,11 +11,11 @@ import (
 	"path/filepath"
 	"regexp"
 
-	"wernigode-in-zahlen.de/internal/pkg/decoder"
-	fpDecoder "wernigode-in-zahlen.de/internal/pkg/decoder/financialplan"
-	"wernigode-in-zahlen.de/internal/pkg/io"
-	"wernigode-in-zahlen.de/internal/pkg/model"
-	"wernigode-in-zahlen.de/internal/pkg/shared"
+	"wernigerode-in-zahlen.de/internal/pkg/decoder"
+	fpDecoder "wernigerode-in-zahlen.de/internal/pkg/decoder/financialplan"
+	"wernigerode-in-zahlen.de/internal/pkg/io"
+	"wernigerode-in-zahlen.de/internal/pkg/model"
+	"wernigerode-in-zahlen.de/internal/pkg/shared"
 )
 
 var (

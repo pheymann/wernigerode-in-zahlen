@@ -3,7 +3,7 @@ package io
 import (
 	"os"
 
-	"wernigode-in-zahlen.de/internal/pkg/model"
+	"wernigerode-in-zahlen.de/internal/pkg/model"
 )
 
 func WriteFile(target model.TargetFile, content string) {

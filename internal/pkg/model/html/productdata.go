@@ -1,7 +1,7 @@
 package html
 
 import (
-	"wernigode-in-zahlen.de/internal/pkg/model"
+	"wernigerode-in-zahlen.de/internal/pkg/model"
 )
 
 type ProductData struct {

@@ -7,10 +7,10 @@ import (
 	"sort"
 
 	"github.com/google/uuid"
-	htmlDepartmentEncoder "wernigode-in-zahlen.de/internal/pkg/encoder/html/department"
-	"wernigode-in-zahlen.de/internal/pkg/model"
-	html "wernigode-in-zahlen.de/internal/pkg/model/html"
-	"wernigode-in-zahlen.de/internal/pkg/shared"
+	htmlDepartmentEncoder "wernigerode-in-zahlen.de/internal/pkg/encoder/html/department"
+	"wernigerode-in-zahlen.de/internal/pkg/model"
+	html "wernigerode-in-zahlen.de/internal/pkg/model/html"
+	"wernigerode-in-zahlen.de/internal/pkg/shared"
 )
 
 func Generate(

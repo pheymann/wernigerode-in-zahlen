@@ -1,6 +1,6 @@
 package html
 
-import "wernigode-in-zahlen.de/internal/pkg/model"
+import "wernigerode-in-zahlen.de/internal/pkg/model"
 
 type BalanceData struct {
 	Balance  model.AccountBalance

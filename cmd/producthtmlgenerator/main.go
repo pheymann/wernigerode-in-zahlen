@@ -7,13 +7,13 @@ import (
 	"path/filepath"
 	"regexp"
 
-	htmlgenerator "wernigode-in-zahlen.de/internal/cmd/producthtmlgenerator"
-	fpDecoder "wernigode-in-zahlen.de/internal/pkg/decoder/financialplan"
-	metaDecoder "wernigode-in-zahlen.de/internal/pkg/decoder/metadata"
-	decodeTarget "wernigode-in-zahlen.de/internal/pkg/decoder/targetfile"
-	"wernigode-in-zahlen.de/internal/pkg/io"
-	"wernigode-in-zahlen.de/internal/pkg/model"
-	"wernigode-in-zahlen.de/internal/pkg/model/html"
+	htmlgenerator "wernigerode-in-zahlen.de/internal/cmd/producthtmlgenerator"
+	fpDecoder "wernigerode-in-zahlen.de/internal/pkg/decoder/financialplan"
+	metaDecoder "wernigerode-in-zahlen.de/internal/pkg/decoder/metadata"
+	decodeTarget "wernigerode-in-zahlen.de/internal/pkg/decoder/targetfile"
+	"wernigerode-in-zahlen.de/internal/pkg/io"
+	"wernigerode-in-zahlen.de/internal/pkg/model"
+	"wernigerode-in-zahlen.de/internal/pkg/model/html"
 )
 
 var (

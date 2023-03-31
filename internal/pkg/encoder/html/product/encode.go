@@ -8,10 +8,10 @@ import (
 
 	"github.com/google/uuid"
 	"golang.org/x/text/message"
-	encodeHtml "wernigode-in-zahlen.de/internal/pkg/encoder/html"
-	"wernigode-in-zahlen.de/internal/pkg/model"
-	"wernigode-in-zahlen.de/internal/pkg/model/html"
-	"wernigode-in-zahlen.de/internal/pkg/shared"
+	encodeHtml "wernigerode-in-zahlen.de/internal/pkg/encoder/html"
+	"wernigerode-in-zahlen.de/internal/pkg/model"
+	"wernigerode-in-zahlen.de/internal/pkg/model/html"
+	"wernigerode-in-zahlen.de/internal/pkg/shared"
 )
 
 func Encode(

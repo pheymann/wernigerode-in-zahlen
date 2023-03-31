@@ -3,7 +3,7 @@ package html
 import (
 	"strings"
 
-	"wernigode-in-zahlen.de/internal/pkg/model"
+	"wernigerode-in-zahlen.de/internal/pkg/model"
 )
 
 type CashflowClass = string

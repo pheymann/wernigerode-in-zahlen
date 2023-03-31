@@ -8,12 +8,12 @@ import (
 	"golang.org/x/text/language"
 	"golang.org/x/text/message"
 
-	fpDecoder "wernigode-in-zahlen.de/internal/pkg/decoder/financialplan"
-	metaDecoder "wernigode-in-zahlen.de/internal/pkg/decoder/metadata"
-	htmlProductEncoder "wernigode-in-zahlen.de/internal/pkg/encoder/html/product"
-	"wernigode-in-zahlen.de/internal/pkg/model"
-	"wernigode-in-zahlen.de/internal/pkg/model/html"
-	"wernigode-in-zahlen.de/internal/pkg/shared"
+	fpDecoder "wernigerode-in-zahlen.de/internal/pkg/decoder/financialplan"
+	metaDecoder "wernigerode-in-zahlen.de/internal/pkg/decoder/metadata"
+	htmlProductEncoder "wernigerode-in-zahlen.de/internal/pkg/encoder/html/product"
+	"wernigerode-in-zahlen.de/internal/pkg/model"
+	"wernigerode-in-zahlen.de/internal/pkg/model/html"
+	"wernigerode-in-zahlen.de/internal/pkg/shared"
 )
 
 func Generate(financialPlanJSON string, metadataJSON string, subProductData []html.ProductData, year model.BudgetYear, debugRootPath string) (string, float64) {

@@ -4,6 +4,23 @@ type FinancialPlan struct {
 	Balances []AccountBalance
 }
 
+type FinancialPlan2 struct {
+	Balances []AccountBalance2
+}
+
+type AccountBalance2 struct {
+	Class    AccountClass
+	Budgets  map[BudgetYear]float64
+	Accounts []Account2
+}
+
+type Account2 struct {
+	ID          string
+	ProductID   string
+	Description string
+	Budget      map[BudgetYear]float64
+}
+
 type AccountClass = string
 
 const (
@@ -20,6 +37,7 @@ const (
 	BudgetYear2023 BudgetYear = "2023"
 	BudgetYear2024 BudgetYear = "2024"
 	BudgetYear2025 BudgetYear = "2025"
+	BudgetYear2026 BudgetYear = "2026"
 )
 
 type AccountBalance struct {

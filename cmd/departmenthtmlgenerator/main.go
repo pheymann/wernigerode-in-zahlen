@@ -8,13 +8,13 @@ import (
 	"regexp"
 	"strconv"
 
-	"wernigode-in-zahlen.de/internal/cmd/departmenthtmlgenerator"
-	fpDecoder "wernigode-in-zahlen.de/internal/pkg/decoder/financialplan"
-	metaDecoder "wernigode-in-zahlen.de/internal/pkg/decoder/metadata"
-	compressedEncoder "wernigode-in-zahlen.de/internal/pkg/encoder/compresseddepartment"
-	"wernigode-in-zahlen.de/internal/pkg/io"
-	"wernigode-in-zahlen.de/internal/pkg/model"
-	html "wernigode-in-zahlen.de/internal/pkg/model/html"
+	"wernigerode-in-zahlen.de/internal/cmd/departmenthtmlgenerator"
+	fpDecoder "wernigerode-in-zahlen.de/internal/pkg/decoder/financialplan"
+	metaDecoder "wernigerode-in-zahlen.de/internal/pkg/decoder/metadata"
+	compressedEncoder "wernigerode-in-zahlen.de/internal/pkg/encoder/compresseddepartment"
+	"wernigerode-in-zahlen.de/internal/pkg/io"
+	"wernigerode-in-zahlen.de/internal/pkg/model"
+	html "wernigerode-in-zahlen.de/internal/pkg/model/html"
 )
 
 var (

@@ -1,10 +1,10 @@
 package financialplanmerger
 
 import (
-	fpDecoder "wernigode-in-zahlen.de/internal/pkg/decoder/financialplan"
-	fpEncoder "wernigode-in-zahlen.de/internal/pkg/encoder/financialplan"
-	"wernigode-in-zahlen.de/internal/pkg/model"
-	"wernigode-in-zahlen.de/internal/pkg/model/html"
+	fpDecoder "wernigerode-in-zahlen.de/internal/pkg/decoder/financialplan"
+	fpEncoder "wernigerode-in-zahlen.de/internal/pkg/encoder/financialplan"
+	"wernigerode-in-zahlen.de/internal/pkg/model"
+	"wernigerode-in-zahlen.de/internal/pkg/model/html"
 )
 
 func Merge(fpaJSON string) string {

@@ -4,9 +4,9 @@ import (
 	"flag"
 	"os"
 
-	"wernigode-in-zahlen.de/internal/cmd/financialplanmerger"
-	decodeTarget "wernigode-in-zahlen.de/internal/pkg/decoder/targetfile"
-	"wernigode-in-zahlen.de/internal/pkg/io"
+	"wernigerode-in-zahlen.de/internal/cmd/financialplanmerger"
+	decodeTarget "wernigerode-in-zahlen.de/internal/pkg/decoder/targetfile"
+	"wernigerode-in-zahlen.de/internal/pkg/io"
 )
 
 func main() {

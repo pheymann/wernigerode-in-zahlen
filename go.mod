@@ -1,4 +1,4 @@
-module wernigode-in-zahlen.de
+module wernigerode-in-zahlen.de
 
 go 1.19
 
