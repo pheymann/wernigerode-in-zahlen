@@ -54,10 +54,7 @@ func Encode(
 			ExpensesCashflowTotal: "Ausgaben: " + htmlEncoder.EncodeBudget(expensesTotalCashFlow, p),
 
 			AdditionalInfo: `Aktuell bildet diese Webseite die Finanzdaten aus den Teilfinanzplänen A und B ab. Zusätzliche finanzielle Mittel zum Beispiel aus
-			dem Finanzmittelüberschuss sind nicht enthalten. Die Gesamtausgaben würden sich dann auf <strong>-3.284.100,00€</strong> reduzieren (siehe Haushaltsplan).
-			Weiterhin scheint sich ein Fehler in dem PDF eingeschlichen zu haben. Es werden zusätzliche Ausgaben von 31.000,00 € im Fachbereich
-			Bürgerservices veranschlagt, die in keiner der Produkte dieses Bereichs auftauchen. Ich habe die Zahlen nochmals händisch geprüft und bin auf
-			dasselbe Ergebnis gekommen.`,
+			dem Finanzmittelüberschuss sind nicht enthalten. Die Gesamtausgaben würden sich dann auf <strong>-3.284.100,00€</strong> reduzieren (siehe Haushaltsplan).`,
 			Departments: shared.MapSlice(departments, func(department model.CompressedDepartment) html.OverviewDepartmentCopy {
 				return encodeCompressedDepartment(department, p)
 			}),
