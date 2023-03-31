@@ -31,7 +31,8 @@
     <h2 class="total-cashflow-expenses center">-4.723.200,00€</h2>
 
     <p>
-      auszugeben. Die Gelder teilen sich auf <b>5 Fachbereiche</b> auf. Klicke auf einen in den Diagrammen um mehr zu erfahren.
+      auszugeben. Die Gelder teilen sich auf <b>5 Fachbereiche</b> auf und setzen sich aus den laufenden Verwaltungstätigkeiten
+		und gesonderten Investitionen, wie zum Beispiel Baumaßnahmen, zusammen. Klicke auf einen in den Diagrammen um mehr zu erfahren.
     </p>
 
     
@@ -39,11 +40,11 @@
         <div class="row">
           <div class="col-6">
             <h5 class="center">Einnahmen: 34.789.300,00€</h5>
-            <canvas id="chartjs-31a0dc8e-2189-4e82-a7dd-480a72b819dc"></canvas>
+            <canvas id="chartjs-af1ffc35-f2ce-442a-8385-6f076bef1bb8"></canvas>
           </div>
           <div class="col-6">
             <h5 class="center">Ausgaben: -39.512.500,00€</h5>
-            <canvas id="chartjs-fe7afb47-39b8-4b6f-8c3f-998efb671582"></canvas>
+            <canvas id="chartjs-3bf287b8-ca23-4912-ab9c-61a23d5ba3c5"></canvas>
           </div>
         </div>
       </div>
@@ -51,8 +52,11 @@
 
     <div class="info-sheet">
       <p>
-        Aktuell bildet diese Webseite die Finanzdaten aus den Teilfinanzplänen A und B ab. Zusätzliche finanzielle Mittel zum Beispiel aus
+        Aktuell bildet diese Webseite die Finanzdaten aus den Teilfinanzplänen A ab. Zusätzliche finanzielle Mittel zum Beispiel aus
 			dem Finanzmittelüberschuss sind nicht enthalten. Die Gesamtausgaben würden sich dann auf <strong>-3.284.100,00€</strong> reduzieren (siehe Haushaltsplan).
+			Zudem besteht eine Differenz wie Konten zusammengerechnet werden. Der Haushaltsplan summiert alle Einnahmen und Ausgaben für laufende Verwaltungstätigkeiten und
+			Investitionen separat auf. Diese Webseite dagegen summiert Einnahmen und Ausgaben basierend auf Produkten und Fachbereichen. Die finale Differenz stimmt jedoch
+			am Ende wieder überein.
       </p>
       <table>
         <tbody>
@@ -117,7 +121,7 @@
     <script>
       
         var incomeDepartmentLinks = ["/2/department.html"];
-        var incomeCanvas = document.getElementById('chartjs-31a0dc8e-2189-4e82-a7dd-480a72b819dc');
+        var incomeCanvas = document.getElementById('chartjs-af1ffc35-f2ce-442a-8385-6f076bef1bb8');
         var incomeChart = new Chart(incomeCanvas, {
           type: 'doughnut',
           data: {
@@ -143,7 +147,7 @@
       
 
       var expensesDepartmentLinks = ["/1/department.html","/3/department.html","/4/department.html","/5/department.html"];
-      var expensesCanvas = document.getElementById('chartjs-fe7afb47-39b8-4b6f-8c3f-998efb671582');
+      var expensesCanvas = document.getElementById('chartjs-3bf287b8-ca23-4912-ab9c-61a23d5ba3c5');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {

@@ -51,8 +51,11 @@ func Encode(
 			IncomeCashflowTotal:   "Einnahmen: " + htmlEncoder.EncodeBudget(incomeTotalCashFlow, p),
 			ExpensesCashflowTotal: "Ausgaben: " + htmlEncoder.EncodeBudget(expensesTotalCashFlow, p),
 
-			AdditionalInfo: `Aktuell bildet diese Webseite die Finanzdaten aus den Teilfinanzplänen A und B ab. Zusätzliche finanzielle Mittel zum Beispiel aus
-			dem Finanzmittelüberschuss sind nicht enthalten. Die Gesamtausgaben würden sich dann auf <strong>-3.284.100,00€</strong> reduzieren (siehe Haushaltsplan).`,
+			AdditionalInfo: `Aktuell bildet diese Webseite die Finanzdaten aus den Teilfinanzplänen A ab. Zusätzliche finanzielle Mittel zum Beispiel aus
+			dem Finanzmittelüberschuss sind nicht enthalten. Die Gesamtausgaben würden sich dann auf <strong>-3.284.100,00€</strong> reduzieren (siehe Haushaltsplan).
+			Zudem besteht eine Differenz wie Konten zusammengerechnet werden. Der Haushaltsplan summiert alle Einnahmen und Ausgaben für laufende Verwaltungstätigkeiten und
+			Investitionen separat auf. Diese Webseite dagegen summiert Einnahmen und Ausgaben basierend auf Produkten und Fachbereichen. Die finale Differenz stimmt jedoch
+			am Ende wieder überein.`,
 			Departments: shared.MapSlice(departments, func(department model.CompressedDepartment) html.OverviewDepartmentCopy {
 				return encodeCompressedDepartment(department, p)
 			}),
@@ -85,7 +88,8 @@ func encodeIntroDescription(cashflowTotal float64, numberOfProducts int) templat
 	}
 
 	return template.HTML(fmt.Sprintf(
-		"%s. Die Gelder teilen sich auf <b>%d Fachbereiche</b> auf. Klicke auf einen in den Diagrammen um mehr zu erfahren.",
+		`%s. Die Gelder teilen sich auf <b>%d Fachbereiche</b> auf und setzen sich aus den laufenden Verwaltungstätigkeiten
+		und gesonderten Investitionen, wie zum Beispiel Baumaßnahmen, zusammen. Klicke auf einen in den Diagrammen um mehr zu erfahren.`,
 		earnOrExpese,
 		numberOfProducts,
 	))
