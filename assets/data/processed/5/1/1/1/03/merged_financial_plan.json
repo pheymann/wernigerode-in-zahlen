@@ -40,7 +40,6 @@
                 {
                   "Id": "1.1.1.03.6311000",
                   "Desc": "Verwaltungsgebühren",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 160,
                     "2021": 0,
@@ -53,7 +52,6 @@
                 {
                   "Id": "1.1.1.03.6321000",
                   "Desc": "Benutzungsgebühren und ähnliche Entgelte",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 1000,
                     "2021": 1000,
@@ -80,7 +78,6 @@
                 {
                   "Id": "1.1.1.03.6411000",
                   "Desc": "Einzahlungen aus Mieten und Pachten",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 503356.29,
                     "2021": 500000,
@@ -93,7 +90,6 @@
                 {
                   "Id": "1.1.1.03.6488000",
                   "Desc": "Einzahlungen aus Kostenerstattungen von übrigen Bereichen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 5975.34,
                     "2021": 7000,
@@ -120,7 +116,6 @@
                 {
                   "Id": "1.1.1.03.6591000",
                   "Desc": "Andere sonstige Einzahlungen aus laufender Verwaltungstätigkeit",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 334,
                     "2021": 300,
@@ -161,7 +156,6 @@
                 {
                   "Id": "1.1.1.03.7012000",
                   "Desc": "Dienstauszahlungen und dgl. an Arbeitnehmer",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -320129.75,
                     "2021": -303800,
@@ -174,7 +168,6 @@
                 {
                   "Id": "1.1.1.03.7022000",
                   "Desc": "Beiträge zu Versorgungskassen für Arbeitnehmer",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -13083.24,
                     "2021": -12900,
@@ -187,7 +180,6 @@
                 {
                   "Id": "1.1.1.03.7032000",
                   "Desc": "Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -61624.3,
                     "2021": -59600,
@@ -200,7 +192,6 @@
                 {
                   "Id": "1.1.1.03.7041000",
                   "Desc": "Beihilfen, Unterstützungsleistungen für Beschäftigte",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -1332.51,
                     "2021": -1700,
@@ -227,7 +218,6 @@
                 {
                   "Id": "1.1.1.03.7211000",
                   "Desc": "Unterhaltung der Grundstücke und baulichen Anlagen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -12340.29,
                     "2021": -50000,
@@ -240,7 +230,6 @@
                 {
                   "Id": "1.1.1.03.7221000",
                   "Desc": "Unterhaltung des sonstigen unbeweglichen Vermögens",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -1726.46,
                     "2021": -100000,
@@ -253,7 +242,6 @@
                 {
                   "Id": "1.1.1.03.7231000",
                   "Desc": "Auszahlungen für Mieten und Pachten",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -17281.18,
                     "2021": -18000,
@@ -266,7 +254,6 @@
                 {
                   "Id": "1.1.1.03.7241000",
                   "Desc": "Bewirtschaftung der Grundstücke und baulichen Anlagen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -62937.93,
                     "2021": -70000,
@@ -279,7 +266,6 @@
                 {
                   "Id": "1.1.1.03.7291000",
                   "Desc": "Auszahlungen für sonstige Dienstleistungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -0,
                     "2021": -0,
@@ -306,7 +292,6 @@
                 {
                   "Id": "1.1.1.03.7411000",
                   "Desc": "Sonstige Personal- und Versorgungsauszahlungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -382.45,
                     "2021": -0,
@@ -319,7 +304,6 @@
                 {
                   "Id": "1.1.1.03.7431000",
                   "Desc": "Geschäftsauszahlungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -1608,
                     "2021": -100,
@@ -332,7 +316,6 @@
                 {
                   "Id": "1.1.1.03.7431100",
                   "Desc": "Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -8.5,
                     "2021": -3000,
@@ -345,7 +328,6 @@
                 {
                   "Id": "1.1.1.03.7458000",
                   "Desc": "Erstatt. für die Auszahl. von Dritten aus lfd. Verwaltungstät. an übrige Ber.",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -13974.6,
                     "2021": -50000,
@@ -358,7 +340,6 @@
                 {
                   "Id": "1.1.1.03.7482000",
                   "Desc": "Besondere Auszahlungen Säumniszuschläge",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -12.74,
                     "2021": -0,
@@ -427,11 +408,6 @@
                 {
                   "Id": "1.1.1.03/0003.6821000",
                   "Desc": "Einzahlungen aus Veräußerung von Grundstücken, Gebäuden, Infrastrukturvermögen",
-                  "AboveValueLimit": {
-                    "ID": "1.1.1.03/0003.6821000",
-                    "Category": "Verkauf von Grundstücken",
-                    "SubCategory": "Einzahlungen aus Verkauf von Grundstücken"
-                  },
                   "Budgets": {
                     "2020": 7630.3,
                     "2021": 1620200,
@@ -444,11 +420,6 @@
                 {
                   "Id": "1.1.1.03/0004.6821000",
                   "Desc": "Einzahlungen aus Veräußerung von Grundstücken, Gebäuden, Infrastrukturvermögen",
-                  "AboveValueLimit": {
-                    "ID": "1.1.1.03/0004.6821000",
-                    "Category": "Wohnbebauung Küchengarten",
-                    "SubCategory": "Einzahlungen aus Verkauf von Grundstücken"
-                  },
                   "Budgets": {
                     "2020": 0,
                     "2021": 0,
@@ -461,11 +432,6 @@
                 {
                   "Id": "1.1.1.03/0007.6821000",
                   "Desc": "Einzahlungen aus Veräußerung von Grundstücken, Gebäuden, Infrastrukturvermögen",
-                  "AboveValueLimit": {
-                    "ID": "1.1.1.03/0007.6821000",
-                    "Category": "Verkauf von Grundstücken im OT Schierke",
-                    "SubCategory": "Einzahlungen aus Verkauf von Grundstücken"
-                  },
                   "Budgets": {
                     "2020": 664658.74,
                     "2021": 0,
@@ -492,7 +458,6 @@
                 {
                   "Id": "1.1.1.03/1103.6851000",
                   "Desc": "Einzahlungen für Baumaßnahmen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 256514.33,
                     "2021": 0,
@@ -546,11 +511,6 @@
                 {
                   "Id": "1.1.1.03/0001.7821000",
                   "Desc": "Auszahlungen für den Erwerb von Grundstücken, Gebäuden und Infrastrukturvermögen",
-                  "AboveValueLimit": {
-                    "ID": "1.1.1.03/0001.7821000",
-                    "Category": "Erwerb von Grundstücken",
-                    "SubCategory": ""
-                  },
                   "Budgets": {
                     "2020": -69794.33,
                     "2021": -141000,
@@ -563,11 +523,6 @@
                 {
                   "Id": "1.1.1.03/0004.7821000",
                   "Desc": "Auszahlungen für den Erwerb von Grundstücken, Gebäuden und Infrastrukturvermögen",
-                  "AboveValueLimit": {
-                    "ID": "1.1.1.03/0004.7821000",
-                    "Category": "Wohnbebauung Küchengarten",
-                    "SubCategory": "Einzahlungen aus Verkauf von Grundstücken"
-                  },
                   "Budgets": {
                     "2020": -0,
                     "2021": -0,
@@ -580,11 +535,6 @@
                 {
                   "Id": "1.1.1.03/0008.7821000",
                   "Desc": "Auszahlungen für den Erwerb von Grundstücken, Gebäuden und Infrastrukturvermögen",
-                  "AboveValueLimit": {
-                    "ID": "1.1.1.03/0008.7821000",
-                    "Category": "Erwerb von Grundstücken im OT Schierke",
-                    "SubCategory": ""
-                  },
                   "Budgets": {
                     "2020": -15.37,
                     "2021": -50000,

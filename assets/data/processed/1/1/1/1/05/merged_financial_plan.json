@@ -53,7 +53,6 @@
                 {
                   "Id": "1.1.1.05.7011000",
                   "Desc": "Dienstauszahlungen und dgl. an Beamte",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -55464.4,
                     "2021": -56300,
@@ -66,7 +65,6 @@
                 {
                   "Id": "1.1.1.05.7021000",
                   "Desc": "Beiträge zu Versorgungskassen für Beamte",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -29505.37,
                     "2021": -30000,
@@ -93,7 +91,6 @@
                 {
                   "Id": "1.1.1.05.7261000",
                   "Desc": "Besondere zahlungswirksame Aufwendungen für Beschäftigte",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -205,
                     "2021": -3000,
@@ -106,7 +103,6 @@
                 {
                   "Id": "1.1.1.05.7271000",
                   "Desc": "Besondere Verwaltungs- und Betriebsauszahlungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -358.37,
                     "2021": -700,
@@ -133,7 +129,6 @@
                 {
                   "Id": "1.1.1.05.7411000",
                   "Desc": "Sonstige Personal- und Versorgungsauszahlungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -0,
                     "2021": -1000,
@@ -146,7 +141,6 @@
                 {
                   "Id": "1.1.1.05.7431000",
                   "Desc": "Geschäftsauszahlungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -1248.36,
                     "2021": -1400,

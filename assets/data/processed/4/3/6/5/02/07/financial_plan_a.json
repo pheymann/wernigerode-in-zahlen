@@ -40,7 +40,6 @@
                 {
                   "Id": "3.6.5.02.07",
                   "Desc": ".6140001 Zuweisungen für laufende Zwecke vom Bund",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 25000,
                     "2021": 25000,
@@ -53,7 +52,6 @@
                 {
                   "Id": "3.6.5.02.07",
                   "Desc": ".6142000 Zuweisungen für laufende Zwecke von Gemeinden und Gemeindeverbänden",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 599094.72,
                     "2021": 516700,
@@ -80,7 +78,6 @@
                 {
                   "Id": "3.6.5.02.07",
                   "Desc": ".6321000 Benutzungsgebühren und ähnliche Entgelte",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 228937.45,
                     "2021": 271400,
@@ -107,7 +104,6 @@
                 {
                   "Id": "3.6.5.02.07",
                   "Desc": ".6480001 Einzahlungen aus Kostenerstattungen vom Bund",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 5950,
                     "2021": 3000,
@@ -120,7 +116,6 @@
                 {
                   "Id": "3.6.5.02.07",
                   "Desc": ".6482000 Einzahlungen aus Kostenerstattungen von Gemeinden und Gemeindeverbänden",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 58858.48,
                     "2021": 20700,
@@ -133,7 +128,6 @@
                 {
                   "Id": "3.6.5.02.07",
                   "Desc": ".6484000 Einzahlungen aus Kostenerstattungen von gesetzlichen Sozialversicherungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 24502.88,
                     "2021": 0,
@@ -174,7 +168,6 @@
                 {
                   "Id": "3.6.5.02.07",
                   "Desc": ".7012000 Dienstauszahlungen und dgl. an Arbeitnehmer",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 608024.24,
                     "2021": 569500,
@@ -187,7 +180,6 @@
                 {
                   "Id": "3.6.5.02.07",
                   "Desc": ".7019000 Dienstauszahlungen und dgl. an sonstige Beschäftigte",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 3829.5,
                     "2021": 5000,
@@ -200,7 +192,6 @@
                 {
                   "Id": "3.6.5.02.07",
                   "Desc": ".7022000 Beiträge zu Versorgungskassen für Arbeitnehmer",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 24273.53,
                     "2021": 23900,
@@ -213,7 +204,6 @@
                 {
                   "Id": "3.6.5.02.07",
                   "Desc": ".7032000 Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 109948.92,
                     "2021": 111500,
@@ -226,7 +216,6 @@
                 {
                   "Id": "3.6.5.02.07",
                   "Desc": ".7039000 Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschäft.",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 1771.38,
                     "2021": 2000,
@@ -239,7 +228,6 @@
                 {
                   "Id": "3.6.5.02.07",
                   "Desc": ".7041000 Beihilfen, Unterstützungsleistungen für Beschäftigte",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 2425.98,
                     "2021": 3300,
@@ -266,7 +254,6 @@
                 {
                   "Id": "3.6.5.02.07",
                   "Desc": ".7211000 Unterhaltung der Grundstücke und baulichen Anlagen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 2686.64,
                     "2021": 5200,
@@ -279,7 +266,6 @@
                 {
                   "Id": "3.6.5.02.07",
                   "Desc": ".7211014 Unterhaltung der Grundstücke und baulichen Anlagen-Gebäudemanagement",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 19137.58,
                     "2021": 112000,
@@ -292,7 +278,6 @@
                 {
                   "Id": "3.6.5.02.07",
                   "Desc": ".7221000 Unterhaltung des sonstigen unbeweglichen Vermögens",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 1087.69,
                     "2021": 1100,
@@ -305,7 +290,6 @@
                 {
                   "Id": "3.6.5.02.07",
                   "Desc": ".7231000 Auszahlungen für Mieten und Pachten",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 552.34,
                     "2021": 400,
@@ -318,7 +302,6 @@
                 {
                   "Id": "3.6.5.02.07",
                   "Desc": ".7241000 Bewirtschaftung der Grundstücke und baulichen Anlagen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 20244.91,
                     "2021": 19500,
@@ -331,7 +314,6 @@
                 {
                   "Id": "3.6.5.02.07",
                   "Desc": ".7252000 Erwerb geringwertiger Vermögensgegenstände",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 1029.62,
                     "2021": 3300,
@@ -344,7 +326,6 @@
                 {
                   "Id": "3.6.5.02.07",
                   "Desc": ".7255000 Unterhaltung des sonstigen beweglichen Vermögens",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 353.06,
                     "2021": 400,
@@ -357,7 +338,6 @@
                 {
                   "Id": "3.6.5.02.07",
                   "Desc": ".7261000 Besondere zahlungswirksame Aufwendungen für Beschäftigte",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 894.15,
                     "2021": 2000,
@@ -370,7 +350,6 @@
                 {
                   "Id": "3.6.5.02.07",
                   "Desc": ".7271000 Besondere Verwaltungs- und Betriebsauszahlungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 1578.55,
                     "2021": 4900,
@@ -383,7 +362,6 @@
                 {
                   "Id": "3.6.5.02.07",
                   "Desc": ".7291000 Auszahlungen für sonstige Dienstleistungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 28018.91,
                     "2021": 21600,
@@ -410,7 +388,6 @@
                 {
                   "Id": "3.6.5.02.07",
                   "Desc": ".7431000 Geschäftsauszahlungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 1649.39,
                     "2021": 1300,
@@ -423,7 +400,6 @@
                 {
                   "Id": "3.6.5.02.07",
                   "Desc": ".7431200 Auszahlungen für Honorare",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 887.01,
                     "2021": 1000,
@@ -436,7 +412,6 @@
                 {
                   "Id": "3.6.5.02.07",
                   "Desc": ".7431400 Auszahlungen für Beitragsservice (GEZ)",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 69.96,
                     "2021": 0,
@@ -449,7 +424,6 @@
                 {
                   "Id": "3.6.5.02.07",
                   "Desc": ".7441000 Steuern, Versicherungen, Schadensfälle",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 2028.2,
                     "2021": 0,
@@ -518,7 +492,6 @@
                 {
                   "Id": "3.6.5.02.07",
                   "Desc": "/0100.6832000 Einz.a.d.Veräuß. v. bewegl. VermGegenst. v. mehr als 150 bis 1000 € ohne UmStr.",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 900,
                     "2021": 0,
@@ -572,7 +545,6 @@
                 {
                   "Id": "3.6.5.02.07",
                   "Desc": "/0100.7832000 Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 2515.76,
                     "2021": 0,
@@ -585,7 +557,6 @@
                 {
                   "Id": "3.6.5.02.07",
                   "Desc": "/0200.7831000 Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 0,

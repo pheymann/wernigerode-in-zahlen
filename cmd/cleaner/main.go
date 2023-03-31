@@ -39,18 +39,6 @@ func main() {
 			),
 			decodeTarget.Decode(metadataFile, "data/processed"),
 		)
-
-		financialPlanBFile, err := os.Open(*directory + "/financial_plan_b.csv")
-		if err == nil {
-			defer financialPlanBFile.Close()
-
-			writeFp.Write(
-				encodeFp.Encode(
-					cleaner.CleanUpFinancialPlanB(financialPlanBFile),
-				),
-				decodeTarget.Decode(financialPlanBFile, "data/processed"),
-			)
-		}
 	}
 
 	financialPlanAFile, err := os.Open(*directory + "/financial_plan_a.csv")

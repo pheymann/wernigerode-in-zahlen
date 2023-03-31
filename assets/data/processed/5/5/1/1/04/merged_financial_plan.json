@@ -94,11 +94,6 @@
                 {
                   "Id": "5.1.1.04/4009.6811000",
                   "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land",
-                  "AboveValueLimit": {
-                    "ID": "5.1.1.04/4009.6811000",
-                    "Category": "Wachstum u. nachhalt. Erneuerung, FM 66,7% PJ 21",
-                    "SubCategory": "Einzahlungen aus Investitionszuwendungen"
-                  },
                   "Budgets": {
                     "2020": 0,
                     "2021": 0,
@@ -111,11 +106,6 @@
                 {
                   "Id": "5.1.1.04/4010.6811000",
                   "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land",
-                  "AboveValueLimit": {
-                    "ID": "5.1.1.04/4010.6811000",
-                    "Category": "Wachstum u. nachhalt. Erneuerung, FM 66,7% PJ 22",
-                    "SubCategory": "Einzahlungen aus Investitionszuwendungen"
-                  },
                   "Budgets": {
                     "2020": 0,
                     "2021": 0,
@@ -169,11 +159,6 @@
                 {
                   "Id": "5.1.1.04/3352.7852000",
                   "Desc": "Auszahlungen für Tiefbaumaßnahmen",
-                  "AboveValueLimit": {
-                    "ID": "5.1.1.04/3352.7852000",
-                    "Category": "Wachstum u. nachhaltige Erneuerung Hasserode",
-                    "SubCategory": " -Auszahlungen für Baumaßnahmen"
-                  },
                   "Budgets": {
                     "2020": -0,
                     "2021": -0,

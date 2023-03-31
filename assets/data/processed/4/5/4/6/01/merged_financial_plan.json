@@ -40,7 +40,6 @@
                 {
                   "Id": "5.4.6.01.6311000",
                   "Desc": "Verwaltungsgebühren",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 5422.15,
                     "2021": 100,
@@ -53,7 +52,6 @@
                 {
                   "Id": "5.4.6.01.6321000",
                   "Desc": "Benutzungsgebühren und ähnliche Entgelte",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 507363.8,
                     "2021": 795000,
@@ -80,7 +78,6 @@
                 {
                   "Id": "5.4.6.01.6411000",
                   "Desc": "Einzahlungen aus Mieten und Pachten",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 38500,
                     "2021": 0,
@@ -121,7 +118,6 @@
                 {
                   "Id": "5.4.6.01.7221000",
                   "Desc": "Unterhaltung des sonstigen unbeweglichen Vermögens",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -39028.37,
                     "2021": -25000,
@@ -134,7 +130,6 @@
                 {
                   "Id": "5.4.6.01.7231000",
                   "Desc": "Auszahlungen für Mieten und Pachten",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -2844.3,
                     "2021": -2900,
@@ -147,7 +142,6 @@
                 {
                   "Id": "5.4.6.01.7241000",
                   "Desc": "Bewirtschaftung der Grundstücke und baulichen Anlagen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -19114.51,
                     "2021": -25000,
@@ -160,7 +154,6 @@
                 {
                   "Id": "5.4.6.01.7252000",
                   "Desc": "Erwerb geringwertiger Vermögensgegenstände",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -0,
                     "2021": -400,
@@ -173,7 +166,6 @@
                 {
                   "Id": "5.4.6.01.7255000",
                   "Desc": "Unterhaltung des sonstigen beweglichen Vermögens",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -15319.57,
                     "2021": -15000,
@@ -186,7 +178,6 @@
                 {
                   "Id": "5.4.6.01.7291000",
                   "Desc": "Auszahlungen für sonstige Dienstleistungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -0,
                     "2021": -0,
@@ -213,7 +204,6 @@
                 {
                   "Id": "5.4.6.01.7441000",
                   "Desc": "Steuern, Versicherungen, Schadensfälle",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -2030.62,
                     "2021": -0,
@@ -308,11 +298,6 @@
                 {
                   "Id": "5.4.6.01/5002.7853000",
                   "Desc": "Auszahlungen für sonstige Baumaßnahmen",
-                  "AboveValueLimit": {
-                    "ID": "5.4.6.01/5002.7853000",
-                    "Category": "Parkscheinautomaten",
-                    "SubCategory": " -Auszahlungen für Baumaßnahmen"
-                  },
                   "Budgets": {
                     "2020": -105.79,
                     "2021": -25000,

@@ -40,7 +40,6 @@
                 {
                   "Id": "5.3.3.01.6511000",
                   "Desc": "Konzessionsabgaben",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 428195.31,
                     "2021": 351400,

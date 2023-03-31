@@ -136,29 +136,12 @@ func (d *Decoder) Debug() {
 type DecodeType = string
 
 const (
-	DecodeTypeOneOffBudget DecodeType = "one-off"
 	DecodeTypeAccount      DecodeType = "account"
 	DecodeTypeUnit         DecodeType = "unit"
 	DeocdeTypeSeparateLine DecodeType = "separate"
 )
 
-func (p *Decoder) Decode(line string, isFinancialPlanB bool) model.RawCSVRow {
-	if isFinancialPlanB {
-		for _, regex := range p.oneOffBudgetParsers {
-			matches := regex.FindStringSubmatch(line)
-
-			if len(matches) == 0 {
-				continue
-			}
-
-			return model.RawCSVRow{
-				Tpe:     model.RowTypeOneOff,
-				Matches: matches,
-				Regexp:  regex,
-			}
-		}
-	}
-
+func (p *Decoder) Decode(line string) model.RawCSVRow {
 	for _, regex := range p.unitCostCenterBudgetParsers {
 		matches := regex.FindStringSubmatch(line)
 

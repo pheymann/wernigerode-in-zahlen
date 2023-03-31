@@ -40,7 +40,6 @@
                 {
                   "Id": "3.1.5.04.6321000",
                   "Desc": "Benutzungsgebühren und ähnliche Entgelte",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 8780,
                     "2021": 12000,
@@ -67,7 +66,6 @@
                 {
                   "Id": "3.1.5.04.6461000",
                   "Desc": "Sonstige privatrechtliche Leistungsentgelte",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 2320,
                     "2021": 0,
@@ -80,7 +78,6 @@
                 {
                   "Id": "3.1.5.04.6486000",
                   "Desc": "Einzahlungen aus Kostenerstattungen von sonstigen öffentlichen Sonderrechnungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 39218.13,
                     "2021": 36000,
@@ -121,7 +118,6 @@
                 {
                   "Id": "3.1.5.04.7012000",
                   "Desc": "Dienstauszahlungen und dgl. an Arbeitnehmer",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -37997.8,
                     "2021": -29600,
@@ -134,7 +130,6 @@
                 {
                   "Id": "3.1.5.04.7022000",
                   "Desc": "Beiträge zu Versorgungskassen für Arbeitnehmer",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -1387.03,
                     "2021": -1300,
@@ -147,7 +142,6 @@
                 {
                   "Id": "3.1.5.04.7032000",
                   "Desc": "Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -4613.22,
                     "2021": -5800,
@@ -160,7 +154,6 @@
                 {
                   "Id": "3.1.5.04.7041000",
                   "Desc": "Beihilfen, Unterstützungsleistungen für Beschäftigte",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -164.19,
                     "2021": -200,
@@ -187,7 +180,6 @@
                 {
                   "Id": "3.1.5.04.7211014",
                   "Desc": "Unterhaltung der Grundstücke und baulichen Anlagen-Gebäudemanagement",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -22652.39,
                     "2021": -6000,
@@ -200,7 +192,6 @@
                 {
                   "Id": "3.1.5.04.7231000",
                   "Desc": "Auszahlungen für Mieten und Pachten",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -0,
                     "2021": -6100,
@@ -213,7 +204,6 @@
                 {
                   "Id": "3.1.5.04.7241000",
                   "Desc": "Bewirtschaftung der Grundstücke und baulichen Anlagen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -438.99,
                     "2021": -66200,
@@ -226,7 +216,6 @@
                 {
                   "Id": "3.1.5.04.7252000",
                   "Desc": "Erwerb geringwertiger Vermögensgegenstände",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -758.69,
                     "2021": -900,
@@ -239,7 +228,6 @@
                 {
                   "Id": "3.1.5.04.7255000",
                   "Desc": "Unterhaltung des sonstigen beweglichen Vermögens",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -195.04,
                     "2021": -500,
@@ -252,7 +240,6 @@
                 {
                   "Id": "3.1.5.04.7271000",
                   "Desc": "Besondere Verwaltungs- und Betriebsauszahlungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -202.76,
                     "2021": -300,
@@ -279,7 +266,6 @@
                 {
                   "Id": "3.1.5.04.7411000",
                   "Desc": "Sonstige Personal- und Versorgungsauszahlungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -245.93,
                     "2021": -0,
@@ -292,7 +278,6 @@
                 {
                   "Id": "3.1.5.04.7431000",
                   "Desc": "Geschäftsauszahlungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -361.27,
                     "2021": -400,
@@ -305,7 +290,6 @@
                 {
                   "Id": "3.1.5.04.7456000",
                   "Desc": "Erstatt. f.d. Ausz. v. Dritten aus lfd Verwaltungstät. an so. öff. Sonderrechn.",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -661.67,
                     "2021": -0,
@@ -374,11 +358,6 @@
                 {
                   "Id": "3.1.5.04/0100.6817000",
                   "Desc": "Einz. a. Zuschüssen f. Investitionen u.Invest.fördermaßnahmen priv.Unternehmen",
-                  "AboveValueLimit": {
-                    "ID": "3.1.5.04/0100.6817000",
-                    "Category": "Anschaffungen 150 €  bis 1.000 € netto",
-                    "SubCategory": "Einzahlungen aus Investitionszuwendungen"
-                  },
                   "Budgets": {
                     "2020": 500,
                     "2021": 0,
@@ -432,11 +411,6 @@
                 {
                   "Id": "3.1.5.04/0100.7832000",
                   "Desc": "Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.",
-                  "AboveValueLimit": {
-                    "ID": "3.1.5.04/0100.7832000",
-                    "Category": "Anschaffungen 150 €  bis 1.000 € netto",
-                    "SubCategory": " -Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen"
-                  },
                   "Budgets": {
                     "2020": -457.17,
                     "2021": -500,

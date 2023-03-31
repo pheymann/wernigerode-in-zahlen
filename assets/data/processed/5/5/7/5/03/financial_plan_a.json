@@ -94,7 +94,6 @@
                 {
                   "Id": "5.7.5.03/3103.6811000",
                   "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 0,
@@ -148,7 +147,6 @@
                 {
                   "Id": "5.7.5.03/3103.7853000",
                   "Desc": "Auszahlungen für sonstige Baumaßnahmen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 0,

@@ -40,7 +40,6 @@
                 {
                   "Id": "2.1.1.01.6311000",
                   "Desc": "Verwaltungsgebühren",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 415.84,
                     "2021": 500,
@@ -53,7 +52,6 @@
                 {
                   "Id": "2.1.1.01.6321000",
                   "Desc": "Benutzungsgebühren und ähnliche Entgelte",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 1559.83,
                     "2021": 2600,
@@ -80,7 +78,6 @@
                 {
                   "Id": "2.1.1.01.6411000",
                   "Desc": "Einzahlungen aus Mieten und Pachten",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 32709.36,
                     "2021": 32700,
@@ -93,7 +90,6 @@
                 {
                   "Id": "2.1.1.01.6461000",
                   "Desc": "Sonstige privatrechtliche Leistungsentgelte",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 5456.99,
                     "2021": 0,
@@ -106,7 +102,6 @@
                 {
                   "Id": "2.1.1.01.6487000",
                   "Desc": "Einzahlungen aus Kostenerstattungen von privaten Unternehmen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 7023.02,
                     "2021": 14500,
@@ -147,7 +142,6 @@
                 {
                   "Id": "2.1.1.01.7012000",
                   "Desc": "Dienstauszahlungen und dgl. an Arbeitnehmer",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -260288.26,
                     "2021": -265900,
@@ -160,7 +154,6 @@
                 {
                   "Id": "2.1.1.01.7022000",
                   "Desc": "Beiträge zu Versorgungskassen für Arbeitnehmer",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -9992.93,
                     "2021": -11400,
@@ -173,7 +166,6 @@
                 {
                   "Id": "2.1.1.01.7032000",
                   "Desc": "Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -49788.81,
                     "2021": -52400,
@@ -186,7 +178,6 @@
                 {
                   "Id": "2.1.1.01.7041000",
                   "Desc": "Beihilfen, Unterstützungsleistungen für Beschäftigte",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -1077.05,
                     "2021": -1600,
@@ -213,7 +204,6 @@
                 {
                   "Id": "2.1.1.01.7211000",
                   "Desc": "Unterhaltung der Grundstücke und baulichen Anlagen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -44946.41,
                     "2021": -51500,
@@ -226,7 +216,6 @@
                 {
                   "Id": "2.1.1.01.7211014",
                   "Desc": "Unterhaltung der Grundstücke und baulichen Anlagen-Gebäudemanagement",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -563392.17,
                     "2021": -195000,
@@ -239,7 +228,6 @@
                 {
                   "Id": "2.1.1.01.7221000",
                   "Desc": "Unterhaltung des sonstigen unbeweglichen Vermögens",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -767.29,
                     "2021": -2900,
@@ -252,7 +240,6 @@
                 {
                   "Id": "2.1.1.01.7231000",
                   "Desc": "Auszahlungen für Mieten und Pachten",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -1035,
                     "2021": -2500,
@@ -265,7 +252,6 @@
                 {
                   "Id": "2.1.1.01.7241000",
                   "Desc": "Bewirtschaftung der Grundstücke und baulichen Anlagen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -221332.77,
                     "2021": -245900,
@@ -278,7 +264,6 @@
                 {
                   "Id": "2.1.1.01.7252000",
                   "Desc": "Erwerb geringwertiger Vermögensgegenstände",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -24276.28,
                     "2021": -29000,
@@ -291,7 +276,6 @@
                 {
                   "Id": "2.1.1.01.7255000",
                   "Desc": "Unterhaltung des sonstigen beweglichen Vermögens",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -2127.23,
                     "2021": -4900,
@@ -304,7 +288,6 @@
                 {
                   "Id": "2.1.1.01.7261000",
                   "Desc": "Besondere zahlungswirksame Aufwendungen für Beschäftigte",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -575.08,
                     "2021": -900,
@@ -317,7 +300,6 @@
                 {
                   "Id": "2.1.1.01.7271000",
                   "Desc": "Besondere Verwaltungs- und Betriebsauszahlungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -25250.29,
                     "2021": -35200,
@@ -330,7 +312,6 @@
                 {
                   "Id": "2.1.1.01.7291000",
                   "Desc": "Auszahlungen für sonstige Dienstleistungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -0,
                     "2021": -900,
@@ -357,7 +338,6 @@
                 {
                   "Id": "2.1.1.01.7429000",
                   "Desc": "Sonstige Auszahlungen für die Inanspruchnahme von Rechten und Diensten",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -11224.5,
                     "2021": -22900,
@@ -370,7 +350,6 @@
                 {
                   "Id": "2.1.1.01.7431000",
                   "Desc": "Geschäftsauszahlungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -11228.67,
                     "2021": -11000,
@@ -383,7 +362,6 @@
                 {
                   "Id": "2.1.1.01.7431400",
                   "Desc": "Auszahlungen für Beitragsservice (GEZ)",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -349.8,
                     "2021": -0,
@@ -396,7 +374,6 @@
                 {
                   "Id": "2.1.1.01.7441000",
                   "Desc": "Steuern, Versicherungen, Schadensfälle",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -13838.79,
                     "2021": -0,
@@ -465,11 +442,6 @@
                 {
                   "Id": "2.1.1.01/0100.6811000",
                   "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land",
-                  "AboveValueLimit": {
-                    "ID": "2.1.1.01/0100.6811000",
-                    "Category": "Anschaffungen 150 €  bis 1.000 € netto",
-                    "SubCategory": "Einzahlungen aus Investitionszuwendungen"
-                  },
                   "Budgets": {
                     "2020": 0,
                     "2021": 36800,
@@ -482,11 +454,6 @@
                 {
                   "Id": "2.1.1.01/0200.6811000",
                   "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land",
-                  "AboveValueLimit": {
-                    "ID": "2.1.1.01/0200.6811000",
-                    "Category": "Betriebs-und Geschäftsausstattungen",
-                    "SubCategory": "Einzahlungen aus Investitionszuwendungen"
-                  },
                   "Budgets": {
                     "2020": 0,
                     "2021": 108800,
@@ -499,11 +466,6 @@
                 {
                   "Id": "2.1.1.01/1207.6811000",
                   "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land",
-                  "AboveValueLimit": {
-                    "ID": "2.1.1.01/1207.6811000",
-                    "Category": "GS Harzblick Fenstererneuerungen",
-                    "SubCategory": "Einzahlungen aus Investitionszuwendungen"
-                  },
                   "Budgets": {
                     "2020": 0,
                     "2021": 0,
@@ -516,11 +478,6 @@
                 {
                   "Id": "2.1.1.01/1208.6811000",
                   "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land",
-                  "AboveValueLimit": {
-                    "ID": "2.1.1.01/1208.6811000",
-                    "Category": "GS Francke Lüftungssysysteme Corona",
-                    "SubCategory": "Einzahlungen aus Investitionszuwendungen"
-                  },
                   "Budgets": {
                     "2020": 0,
                     "2021": 0,
@@ -533,11 +490,6 @@
                 {
                   "Id": "2.1.1.01/1218.6811000",
                   "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land",
-                  "AboveValueLimit": {
-                    "ID": "2.1.1.01/1218.6811000",
-                    "Category": "GS Diesterweg Neubau Mensa",
-                    "SubCategory": "Einzahlungen aus Investitionszuwendungen"
-                  },
                   "Budgets": {
                     "2020": 0,
                     "2021": 0,
@@ -550,11 +502,6 @@
                 {
                   "Id": "2.1.1.01/1220.6811000",
                   "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land",
-                  "AboveValueLimit": {
-                    "ID": "2.1.1.01/1220.6811000",
-                    "Category": "GS Diesterweg Gebäudevernetznung Digitalpakt",
-                    "SubCategory": "Einzahlungen aus Investitionszuwendungen "
-                  },
                   "Budgets": {
                     "2020": 0,
                     "2021": 102300,
@@ -567,11 +514,6 @@
                 {
                   "Id": "2.1.1.01/1221.6811000",
                   "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land",
-                  "AboveValueLimit": {
-                    "ID": "2.1.1.01/1221.6811000",
-                    "Category": "GS Harzblick Gebäudevernetznung Digitalpakt",
-                    "SubCategory": "Einzahlungen aus Investitionszuwendungen"
-                  },
                   "Budgets": {
                     "2020": 0,
                     "2021": 106400,
@@ -584,11 +526,6 @@
                 {
                   "Id": "2.1.1.01/1222.6811000",
                   "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land",
-                  "AboveValueLimit": {
-                    "ID": "2.1.1.01/1222.6811000",
-                    "Category": "GS Silstedt Gebäudevernetznung Digitalpakt",
-                    "SubCategory": "Einzahlungen aus Investitionszuwendungen "
-                  },
                   "Budgets": {
                     "2020": 0,
                     "2021": 10100,
@@ -601,11 +538,6 @@
                 {
                   "Id": "2.1.1.01/1223.6811000",
                   "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land",
-                  "AboveValueLimit": {
-                    "ID": "2.1.1.01/1223.6811000",
-                    "Category": "GS Stadtfeld Gebäudevernetznung Digitalpakt",
-                    "SubCategory": "Einzahlungen aus Investitionszuwendungen"
-                  },
                   "Budgets": {
                     "2020": 0,
                     "2021": 96100,
@@ -618,11 +550,6 @@
                 {
                   "Id": "2.1.1.01/1226.6811000",
                   "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land",
-                  "AboveValueLimit": {
-                    "ID": "2.1.1.01/1226.6811000",
-                    "Category": "GS Silstedt Energetische Sanierung",
-                    "SubCategory": "Einzahlungen aus Investitionszuwendungen"
-                  },
                   "Budgets": {
                     "2020": 0,
                     "2021": 0,
@@ -649,7 +576,6 @@
                 {
                   "Id": "2.1.1.01/1217.6851000",
                   "Desc": "Einzahlungen für Baumaßnahmen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 4281.71,
                     "2021": 0,
@@ -703,11 +629,6 @@
                 {
                   "Id": "2.1.1.01/0100.7832000",
                   "Desc": "Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150 bis 1000 € o. UStr.",
-                  "AboveValueLimit": {
-                    "ID": "2.1.1.01/0100.7832000",
-                    "Category": "Anschaffungen 150 €  bis 1.000 € netto",
-                    "SubCategory": " -Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen"
-                  },
                   "Budgets": {
                     "2020": -23815.4,
                     "2021": -70600,
@@ -720,11 +641,6 @@
                 {
                   "Id": "2.1.1.01/0200.7831000",
                   "Desc": "Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.",
-                  "AboveValueLimit": {
-                    "ID": "2.1.1.01/0200.7831000",
-                    "Category": "Betriebs-und Geschäftsausstattungen",
-                    "SubCategory": " -Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen"
-                  },
                   "Budgets": {
                     "2020": -15675.13,
                     "2021": -146300,
@@ -737,11 +653,6 @@
                 {
                   "Id": "2.1.1.01/0300.7831000",
                   "Desc": "Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.",
-                  "AboveValueLimit": {
-                    "ID": "2.1.1.01/0300.7831000",
-                    "Category": "Betriebsvorrichtungen",
-                    "SubCategory": " -Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen"
-                  },
                   "Budgets": {
                     "2020": -0,
                     "2021": -0,
@@ -768,11 +679,6 @@
                 {
                   "Id": "2.1.1.01/1206.7851000",
                   "Desc": "Auszahlungen für Hochbaumaßnahmen",
-                  "AboveValueLimit": {
-                    "ID": "2.1.1.01/1206.7851000",
-                    "Category": "Sanierung Schule Harzblick",
-                    "SubCategory": " -Auszahlungen für Baumaßnahmen"
-                  },
                   "Budgets": {
                     "2020": -0,
                     "2021": -800000,
@@ -785,11 +691,6 @@
                 {
                   "Id": "2.1.1.01/1207.7851000",
                   "Desc": "Auszahlungen für Hochbaumaßnahmen",
-                  "AboveValueLimit": {
-                    "ID": "2.1.1.01/1207.7851000",
-                    "Category": "GS Harzblick Fenstererneuerungen",
-                    "SubCategory": " -Auszahlungen für Baumaßnahmen"
-                  },
                   "Budgets": {
                     "2020": -0,
                     "2021": -0,
@@ -802,11 +703,6 @@
                 {
                   "Id": "2.1.1.01/1208.7851000",
                   "Desc": "Auszahlungen für Hochbaumaßnahmen",
-                  "AboveValueLimit": {
-                    "ID": "2.1.1.01/1208.7851000",
-                    "Category": "GS Francke Lüftungssysysteme Corona",
-                    "SubCategory": " -Auszahlungen für Baumaßnahmen"
-                  },
                   "Budgets": {
                     "2020": -0,
                     "2021": -0,
@@ -819,11 +715,6 @@
                 {
                   "Id": "2.1.1.01/1217.7851000",
                   "Desc": "Auszahlungen für Hochbaumaßnahmen",
-                  "AboveValueLimit": {
-                    "ID": "2.1.1.01/1217.7851000",
-                    "Category": "GS Silstedt Erweiterungsanbau",
-                    "SubCategory": " -Auszahlungen für Baumaßnahmen"
-                  },
                   "Budgets": {
                     "2020": -455277.76,
                     "2021": -0,
@@ -836,11 +727,6 @@
                 {
                   "Id": "2.1.1.01/1218.7851000",
                   "Desc": "Auszahlungen für Hochbaumaßnahmen",
-                  "AboveValueLimit": {
-                    "ID": "2.1.1.01/1218.7851000",
-                    "Category": "GS Diesterweg Neubau Mensa",
-                    "SubCategory": "- Auszahlungen für Baumaßnahmen"
-                  },
                   "Budgets": {
                     "2020": -13655.17,
                     "2021": -0,
@@ -853,11 +739,6 @@
                 {
                   "Id": "2.1.1.01/1220.7853000",
                   "Desc": "Auszahlungen für sonstige Baumaßnahmen",
-                  "AboveValueLimit": {
-                    "ID": "2.1.1.01/1220.7853000",
-                    "Category": "GS Diesterweg Gebäudevernetznung Digitalpakt",
-                    "SubCategory": "- Auszahlungen für Baumaßnahmen "
-                  },
                   "Budgets": {
                     "2020": -0,
                     "2021": -113800,
@@ -870,11 +751,6 @@
                 {
                   "Id": "2.1.1.01/1221.7853000",
                   "Desc": "Auszahlungen für sonstige Baumaßnahmen",
-                  "AboveValueLimit": {
-                    "ID": "2.1.1.01/1221.7853000",
-                    "Category": "GS Harzblick Gebäudevernetznung Digitalpakt",
-                    "SubCategory": "- Auszahlungen für Baumaßnahmen"
-                  },
                   "Budgets": {
                     "2020": -0,
                     "2021": -118300,
@@ -887,11 +763,6 @@
                 {
                   "Id": "2.1.1.01/1222.7853000",
                   "Desc": "Auszahlungen für sonstige Baumaßnahmen",
-                  "AboveValueLimit": {
-                    "ID": "2.1.1.01/1222.7853000",
-                    "Category": "GS Silstedt Gebäudevernetznung Digitalpakt",
-                    "SubCategory": "- Auszahlungen für Baumaßnahmen"
-                  },
                   "Budgets": {
                     "2020": -0,
                     "2021": -11300,
@@ -904,11 +775,6 @@
                 {
                   "Id": "2.1.1.01/1223.7853000",
                   "Desc": "Auszahlungen für sonstige Baumaßnahmen",
-                  "AboveValueLimit": {
-                    "ID": "2.1.1.01/1223.7853000",
-                    "Category": "GS Stadtfeld Gebäudevernetznung Digitalpakt",
-                    "SubCategory": " -Auszahlungen für Baumaßnahmen"
-                  },
                   "Budgets": {
                     "2020": -0,
                     "2021": -106800,
@@ -921,11 +787,6 @@
                 {
                   "Id": "2.1.1.01/1224.7853000",
                   "Desc": "Auszahlungen für sonstige Baumaßnahmen",
-                  "AboveValueLimit": {
-                    "ID": "2.1.1.01/1224.7853000",
-                    "Category": "Neubau GS Francke durch GWW",
-                    "SubCategory": " -Auszahlungen für Baumaßnahmen"
-                  },
                   "Budgets": {
                     "2020": -0,
                     "2021": -0,
@@ -938,11 +799,6 @@
                 {
                   "Id": "2.1.1.01/1226.7851000",
                   "Desc": "Auszahlungen für Hochbaumaßnahmen",
-                  "AboveValueLimit": {
-                    "ID": "2.1.1.01/1226.7851000",
-                    "Category": "GS Silstedt Energetische Sanierung",
-                    "SubCategory": " -Auszahlungen für Baumaßnahmen"
-                  },
                   "Budgets": {
                     "2020": -0,
                     "2021": -0,

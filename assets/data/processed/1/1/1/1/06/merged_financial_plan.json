@@ -53,7 +53,6 @@
                 {
                   "Id": "1.1.1.06.7011000",
                   "Desc": "Dienstauszahlungen und dgl. an Beamte",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -61793.68,
                     "2021": -62700,
@@ -66,7 +65,6 @@
                 {
                   "Id": "1.1.1.06.7012000",
                   "Desc": "Dienstauszahlungen und dgl. an Arbeitnehmer",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -69142.47,
                     "2021": -65900,
@@ -79,7 +77,6 @@
                 {
                   "Id": "1.1.1.06.7021000",
                   "Desc": "Beiträge zu Versorgungskassen für Beamte",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -32130.66,
                     "2021": -32700,
@@ -92,7 +89,6 @@
                 {
                   "Id": "1.1.1.06.7022000",
                   "Desc": "Beiträge zu Versorgungskassen für Arbeitnehmer",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -4334.91,
                     "2021": -2900,
@@ -105,7 +101,6 @@
                 {
                   "Id": "1.1.1.06.7032000",
                   "Desc": "Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -18894.81,
                     "2021": -13000,
@@ -118,7 +113,6 @@
                 {
                   "Id": "1.1.1.06.7041000",
                   "Desc": "Beihilfen, Unterstützungsleistungen für Beschäftigte",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -233.7,
                     "2021": -400,
@@ -145,7 +139,6 @@
                 {
                   "Id": "1.1.1.06.7431100",
                   "Desc": "Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -0,
                     "2021": -10000,

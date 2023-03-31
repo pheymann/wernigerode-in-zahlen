@@ -7,7 +7,6 @@ import (
 	"wernigode-in-zahlen.de/internal/cmd/financialplanmerger"
 	decodeTarget "wernigode-in-zahlen.de/internal/pkg/decoder/targetfile"
 	"wernigode-in-zahlen.de/internal/pkg/io"
-	"wernigode-in-zahlen.de/internal/pkg/shared"
 )
 
 func main() {
@@ -26,17 +25,8 @@ func main() {
 	}
 	defer financialPlanAFile.Close()
 
-	financialPlanBJSONOpt := shared.Option[string]{IsSome: false}
-	financialPlanBFile, err := os.Open(*debugRootPath + *directory + "/financial_plan_b.json")
-	if err == nil {
-		financialPlanBJSONOpt.ToSome(io.ReadCompleteFile(financialPlanBFile))
-
-		defer financialPlanBFile.Close()
-	}
-
 	merged := financialplanmerger.Merge(
 		io.ReadCompleteFile(financialPlanAFile),
-		financialPlanBJSONOpt,
 	)
 
 	target := decodeTarget.Decode(financialPlanAFile, "data/processed")

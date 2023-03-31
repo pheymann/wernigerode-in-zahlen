@@ -40,7 +40,6 @@
                 {
                   "Id": "5.3.5.01.6651000",
                   "Desc": "Einzahlungen von Gewinnanteilen aus verbundenen Unternehmen und Beteiligungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 2999997,
                     "2021": 3600000,

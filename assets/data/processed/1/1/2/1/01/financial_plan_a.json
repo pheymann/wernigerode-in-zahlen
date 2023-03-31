@@ -40,7 +40,6 @@
                 {
                   "Id": "1.2.1.01.6481000",
                   "Desc": "Einzahlungen aus Kostenerstattungen vom Land",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 0,
@@ -53,7 +52,6 @@
                 {
                   "Id": "1.2.1.01.6482000",
                   "Desc": "Einzahlungen aus Kostenerstattungen von Gemeinden und Gemeindeverbänden",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 31794.04,
                     "2021": 40000,
@@ -94,7 +92,6 @@
                 {
                   "Id": "1.2.1.01.7231000",
                   "Desc": "Auszahlungen für Mieten und Pachten",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 340,
                     "2021": 1000,
@@ -107,7 +104,6 @@
                 {
                   "Id": "1.2.1.01.7252000",
                   "Desc": "Erwerb geringwertiger Vermögensgegenstände",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 157.08,
                     "2021": 1500,
@@ -120,7 +116,6 @@
                 {
                   "Id": "1.2.1.01.7255000",
                   "Desc": "Unterhaltung des sonstigen beweglichen Vermögens",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 6500,
@@ -133,7 +128,6 @@
                 {
                   "Id": "1.2.1.01.7291000",
                   "Desc": "Auszahlungen für sonstige Dienstleistungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 1000,
@@ -160,7 +154,6 @@
                 {
                   "Id": "1.2.1.01.7411000",
                   "Desc": "Sonstige Personal- und Versorgungsauszahlungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 25.6,
                     "2021": 500,
@@ -173,7 +166,6 @@
                 {
                   "Id": "1.2.1.01.7421000",
                   "Desc": "Auszahlungen für ehrenamtliche und sonstige Tätigkeit",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 7145,
                     "2021": 15600,
@@ -186,7 +178,6 @@
                 {
                   "Id": "1.2.1.01.7431000",
                   "Desc": "Geschäftsauszahlungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 14971.44,
                     "2021": 35000,

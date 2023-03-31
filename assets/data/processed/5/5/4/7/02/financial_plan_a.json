@@ -53,7 +53,6 @@
                 {
                   "Id": "5.4.7.02.7312000",
                   "Desc": "Zuweisungen an Gemeinden und GV (HVB)",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 22145.8,
                     "2021": 200000,

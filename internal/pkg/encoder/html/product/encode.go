@@ -262,12 +262,6 @@ func encodeAccountClass(class model.AccountClass, cashflowTotal float64) string 
 		}
 		return "Investitionen kosten"
 
-	case model.AccountClassOneOff:
-		if cashflowTotal >= 0 {
-			return "Investitionen oberhalb der Wertgrenze erwirtschaften"
-		}
-		return "Investitionen oberhalb der Wertgrenze kosten"
-
 	default:
 		panic(fmt.Sprintf("unknown account class '%s'", class))
 	}

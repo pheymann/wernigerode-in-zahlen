@@ -40,7 +40,6 @@
                 {
                   "Id": "5.1.1.01.6311000",
                   "Desc": "Verwaltungsgebühren",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 8549,
                     "2021": 10000,
@@ -67,7 +66,6 @@
                 {
                   "Id": "5.1.1.01.6488000",
                   "Desc": "Einzahlungen aus Kostenerstattungen von übrigen Bereichen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 476.8,
                     "2021": 0,
@@ -108,7 +106,6 @@
                 {
                   "Id": "5.1.1.01.7012000",
                   "Desc": "Dienstauszahlungen und dgl. an Arbeitnehmer",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -625221.88,
                     "2021": -608500,
@@ -121,7 +118,6 @@
                 {
                   "Id": "5.1.1.01.7022000",
                   "Desc": "Beiträge zu Versorgungskassen für Arbeitnehmer",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -25192.9,
                     "2021": -25800,
@@ -134,7 +130,6 @@
                 {
                   "Id": "5.1.1.01.7032000",
                   "Desc": "Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -118082.86,
                     "2021": -119200,
@@ -147,7 +142,6 @@
                 {
                   "Id": "5.1.1.01.7041000",
                   "Desc": "Beihilfen, Unterstützungsleistungen für Beschäftigte",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -2524.6,
                     "2021": -3500,
@@ -174,7 +168,6 @@
                 {
                   "Id": "5.1.1.01.7231000",
                   "Desc": "Auszahlungen für Mieten und Pachten",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 573.88,
                     "2021": -0,
@@ -187,7 +180,6 @@
                 {
                   "Id": "5.1.1.01.7251000",
                   "Desc": "Haltung von Fahrzeugen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -899.88,
                     "2021": -1500,
@@ -200,7 +192,6 @@
                 {
                   "Id": "5.1.1.01.7255000",
                   "Desc": "Unterhaltung des sonstigen beweglichen Vermögens",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -284.41,
                     "2021": -900,
@@ -213,7 +204,6 @@
                 {
                   "Id": "5.1.1.01.7261000",
                   "Desc": "Besondere zahlungswirksame Aufwendungen für Beschäftigte",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -0,
                     "2021": -100,
@@ -226,7 +216,6 @@
                 {
                   "Id": "5.1.1.01.7291000",
                   "Desc": "Auszahlungen für sonstige Dienstleistungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -0,
                     "2021": -0,
@@ -253,7 +242,6 @@
                 {
                   "Id": "5.1.1.01.7411000",
                   "Desc": "Sonstige Personal- und Versorgungsauszahlungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -375.6,
                     "2021": -0,
@@ -266,7 +254,6 @@
                 {
                   "Id": "5.1.1.01.7429000",
                   "Desc": "Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -1210,
                     "2021": -800,
@@ -279,7 +266,6 @@
                 {
                   "Id": "5.1.1.01.7431000",
                   "Desc": "Geschäftsauszahlungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -370.47,
                     "2021": -500,
@@ -292,7 +278,6 @@
                 {
                   "Id": "5.1.1.01.7431100",
                   "Desc": "Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -0,
                     "2021": -25000,
@@ -305,7 +290,6 @@
                 {
                   "Id": "5.1.1.01.7431300",
                   "Desc": "Auszahlungen für Planungsleistungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -62771.98,
                     "2021": -70000,
@@ -318,7 +302,6 @@
                 {
                   "Id": "5.1.1.01.7441000",
                   "Desc": "Steuern, Versicherungen, Schadensfälle",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -1353.05,
                     "2021": -0,
@@ -331,7 +314,6 @@
                 {
                   "Id": "5.1.1.01.7441200",
                   "Desc": "Abzugsfähige Vorsteuer 19%",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -15481.73,
                     "2021": -0,
@@ -358,7 +340,6 @@
                 {
                   "Id": "5.1.1.01.7599000",
                   "Desc": "Sonstige Finanzauszahlungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -0,
                     "2021": -2500,
@@ -453,11 +434,6 @@
                 {
                   "Id": "5.1.1.01/1410.7851000",
                   "Desc": "Auszahlungen für Hochbaumaßnahmen",
-                  "AboveValueLimit": {
-                    "ID": "5.1.1.01/1410.7851000",
-                    "Category": "Kita Schierke aus Stadtumbau Ost Schierke",
-                    "SubCategory": " -Auszahlungen für Baumaßnahmen"
-                  },
                   "Budgets": {
                     "2020": -2056.61,
                     "2021": -0,
@@ -470,11 +446,6 @@
                 {
                   "Id": "5.1.1.01/1411.7852000",
                   "Desc": "Auszahlungen für Tiefbaumaßnahmen",
-                  "AboveValueLimit": {
-                    "ID": "5.1.1.01/1411.7852000",
-                    "Category": "Schierker Feuerstein Arena aus Stadtumbau Ost Schierke",
-                    "SubCategory": " -Auszahlungen für Baumaßnahmen"
-                  },
                   "Budgets": {
                     "2020": -113134.9,
                     "2021": -0,
@@ -487,11 +458,6 @@
                 {
                   "Id": "5.1.1.01/3301.7852000",
                   "Desc": "Auszahlungen für Tiefbaumaßnahmen",
-                  "AboveValueLimit": {
-                    "ID": "5.1.1.01/3301.7852000",
-                    "Category": "Förderprogramm Soziale Stadt - Stadtfeld",
-                    "SubCategory": " -Auszahlungen für Baumaßnahmen"
-                  },
                   "Budgets": {
                     "2020": -79428.33,
                     "2021": -0,

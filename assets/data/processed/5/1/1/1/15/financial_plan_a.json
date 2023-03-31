@@ -40,7 +40,6 @@
                 {
                   "Id": "1.1.1.15.6484000",
                   "Desc": "Einzahlungen aus Kostenerstattungen von gesetzlichen Sozialversicherungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 90.15,
                     "2021": 0,
@@ -81,7 +80,6 @@
                 {
                   "Id": "1.1.1.15.7012000",
                   "Desc": "Dienstauszahlungen und dgl. an Arbeitnehmer",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 1451360.62,
                     "2021": 1366700,
@@ -94,7 +92,6 @@
                 {
                   "Id": "1.1.1.15.7022000",
                   "Desc": "Beiträge zu Versorgungskassen für Arbeitnehmer",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 55972.28,
                     "2021": 59300,
@@ -107,7 +104,6 @@
                 {
                   "Id": "1.1.1.15.7032000",
                   "Desc": "Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 271401.24,
                     "2021": 269100,
@@ -120,7 +116,6 @@
                 {
                   "Id": "1.1.1.15.7041000",
                   "Desc": "Beihilfen, Unterstützungsleistungen für Beschäftigte",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 5891.12,
                     "2021": 7700,
@@ -147,7 +142,6 @@
                 {
                   "Id": "1.1.1.15.7231000",
                   "Desc": "Auszahlungen für Mieten und Pachten",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 8979.31,
                     "2021": 19400,
@@ -160,7 +154,6 @@
                 {
                   "Id": "1.1.1.15.7241000",
                   "Desc": "Bewirtschaftung der Grundstücke und baulichen Anlagen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 318667.81,
                     "2021": 416100,
@@ -173,7 +166,6 @@
                 {
                   "Id": "1.1.1.15.7252000",
                   "Desc": "Erwerb geringwertiger Vermögensgegenstände",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 5496.79,
                     "2021": 7000,
@@ -186,7 +178,6 @@
                 {
                   "Id": "1.1.1.15.7255000",
                   "Desc": "Unterhaltung des sonstigen beweglichen Vermögens",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 2576.58,
                     "2021": 4000,
@@ -199,7 +190,6 @@
                 {
                   "Id": "1.1.1.15.7261000",
                   "Desc": "Besondere zahlungswirksame Aufwendungen für Beschäftigte",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 1955.75,
                     "2021": 2500,
@@ -226,7 +216,6 @@
                 {
                   "Id": "1.1.1.15.7411000",
                   "Desc": "Sonstige Personal- und Versorgungsauszahlungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 2789.09,
                     "2021": 0,
@@ -321,7 +310,6 @@
                 {
                   "Id": "1.1.1.15/0100.7832000",
                   "Desc": "Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr.",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 3779.97,
                     "2021": 2400,
@@ -334,7 +322,6 @@
                 {
                   "Id": "1.1.1.15/0200.7831000",
                   "Desc": "Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 4687,
                     "2021": 11300,

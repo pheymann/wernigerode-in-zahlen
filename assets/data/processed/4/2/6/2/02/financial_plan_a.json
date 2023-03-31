@@ -40,7 +40,6 @@
                 {
                   "Id": "2.6.2.02.6141000",
                   "Desc": "Zuweisungen für laufende Zwecke vom Land",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 20000,
@@ -53,7 +52,6 @@
                 {
                   "Id": "2.6.2.02.6147000",
                   "Desc": "Zuschüsse für laufende Zwecke von privaten Unternehmen (Spenden)",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 26500,
@@ -66,7 +64,6 @@
                 {
                   "Id": "2.6.2.02.6148000",
                   "Desc": "Zuschüsse für laufende Zwecke von übrigen Bereichen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 10500,
@@ -93,7 +90,6 @@
                 {
                   "Id": "2.6.2.02.6321000",
                   "Desc": "Benutzungsgebühren und ähnliche Entgelte",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 5500,
@@ -120,7 +116,6 @@
                 {
                   "Id": "2.6.2.02.6421000",
                   "Desc": "Einzahlungen aus dem Verkauf von Vorräten",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 500,
@@ -147,7 +142,6 @@
                 {
                   "Id": "2.6.2.02.6521100",
                   "Desc": "Einnahmen Mehrwertsteuer 7%",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 1100,
@@ -160,7 +154,6 @@
                 {
                   "Id": "2.6.2.02.6521105",
                   "Desc": "Einnahmen Mehrwertsteuer 5%",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 7000,
@@ -173,7 +166,6 @@
                 {
                   "Id": "2.6.2.02.6521300",
                   "Desc": "Erstattungen Vorsteuer",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 2127.79,
                     "2021": 9000,
@@ -214,7 +206,6 @@
                 {
                   "Id": "2.6.2.02.7231000",
                   "Desc": "Auszahlungen für Mieten und Pachten",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 13000,
@@ -227,7 +218,6 @@
                 {
                   "Id": "2.6.2.02.7255000",
                   "Desc": "Unterhaltung des sonstigen beweglichen Vermögens",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 2000,
@@ -240,7 +230,6 @@
                 {
                   "Id": "2.6.2.02.7271000",
                   "Desc": "Besondere Verwaltungs- und Betriebsauszahlungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 569.38,
                     "2021": 58000,
@@ -267,7 +256,6 @@
                 {
                   "Id": "2.6.2.02.7441200",
                   "Desc": "Abzugsfähige Vorsteuer 19%",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 9000,
@@ -280,7 +268,6 @@
                 {
                   "Id": "2.6.2.02.7441216",
                   "Desc": "Abzugsfähige Vorsteuer 16%",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 91.1,
                     "2021": 0,
@@ -293,7 +280,6 @@
                 {
                   "Id": "2.6.2.02.7441300",
                   "Desc": "Abführung Mehrwertsteuer",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 8100,

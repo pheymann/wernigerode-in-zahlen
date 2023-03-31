@@ -40,7 +40,6 @@
                 {
                   "Id": "5.4.6.03.6411000",
                   "Desc": "Einzahlungen aus Mieten und Pachten",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 22103.81,
                     "2021": 35000,
@@ -67,7 +66,6 @@
                 {
                   "Id": "5.4.6.03.6521200",
                   "Desc": "Einnahmen Mehrwertsteuer 19%",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 4199.72,
                     "2021": 6600,
@@ -80,7 +78,6 @@
                 {
                   "Id": "5.4.6.03.6521300",
                   "Desc": "Erstattungen Vorsteuer",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 6412.55,
                     "2021": 4800,
@@ -121,7 +118,6 @@
                 {
                   "Id": "5.4.6.03.7221000",
                   "Desc": "Unterhaltung des sonstigen unbeweglichen Vermögens",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 20000,
@@ -134,7 +130,6 @@
                 {
                   "Id": "5.4.6.03.7255000",
                   "Desc": "Unterhaltung des sonstigen beweglichen Vermögens",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 4000,
@@ -161,7 +156,6 @@
                 {
                   "Id": "5.4.6.03.7431000",
                   "Desc": "Geschäftsauszahlungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 1500,
@@ -174,7 +168,6 @@
                 {
                   "Id": "5.4.6.03.7441100",
                   "Desc": "Abzugsfähige Vorsteuer  7%",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 100,
@@ -187,7 +180,6 @@
                 {
                   "Id": "5.4.6.03.7441200",
                   "Desc": "Abzugsfähige Vorsteuer 19%",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 6600,
@@ -200,7 +192,6 @@
                 {
                   "Id": "5.4.6.03.7441300",
                   "Desc": "Abführung Mehrwertsteuer",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 2347.45,
                     "2021": 4800,

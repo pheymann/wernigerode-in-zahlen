@@ -5,10 +5,9 @@ import (
 	fpEncoder "wernigode-in-zahlen.de/internal/pkg/encoder/financialplan"
 	"wernigode-in-zahlen.de/internal/pkg/model"
 	"wernigode-in-zahlen.de/internal/pkg/model/html"
-	"wernigode-in-zahlen.de/internal/pkg/shared"
 )
 
-func Merge(fpaJSON string, fpbJSONOpt shared.Option[string]) string {
+func Merge(fpaJSON string) string {
 	fpa := fpDecoder.DecodeFromJSON(fpaJSON)
 
 	fixBudgetSigns(&fpa)

@@ -40,7 +40,6 @@
                 {
                   "Id": "3.4.6.01.6488000",
                   "Desc": "Einzahlungen aus Kostenerstattungen von übrigen Bereichen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 100,
@@ -67,7 +66,6 @@
                 {
                   "Id": "3.4.6.01.6561000",
                   "Desc": "Bußgelder",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 159.54,
                     "2021": 500,
@@ -108,7 +106,6 @@
                 {
                   "Id": "3.4.6.01.7012000",
                   "Desc": "Dienstauszahlungen und dgl. an Arbeitnehmer",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -214792.67,
                     "2021": -199900,
@@ -121,7 +118,6 @@
                 {
                   "Id": "3.4.6.01.7022000",
                   "Desc": "Beiträge zu Versorgungskassen für Arbeitnehmer",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -8883.03,
                     "2021": -8500,
@@ -134,7 +130,6 @@
                 {
                   "Id": "3.4.6.01.7032000",
                   "Desc": "Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -41271.98,
                     "2021": -39300,
@@ -147,7 +142,6 @@
                 {
                   "Id": "3.4.6.01.7041000",
                   "Desc": "Beihilfen, Unterstützungsleistungen für Beschäftigte",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -897.37,
                     "2021": -1100,
@@ -174,7 +168,6 @@
                 {
                   "Id": "3.4.6.01.7291000",
                   "Desc": "Auszahlungen für sonstige Dienstleistungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -0,
                     "2021": -100,
@@ -201,7 +194,6 @@
                 {
                   "Id": "3.4.6.01.7431000",
                   "Desc": "Geschäftsauszahlungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -852.63,
                     "2021": -1300,
@@ -214,7 +206,6 @@
                 {
                   "Id": "3.4.6.01.7431100",
                   "Desc": "Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -0,
                     "2021": -500,

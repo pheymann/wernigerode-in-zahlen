@@ -40,7 +40,6 @@
                 {
                   "Id": "5.5.2.01.6321000",
                   "Desc": "Benutzungsgebühren und ähnliche Entgelte",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 0,
@@ -67,7 +66,6 @@
                 {
                   "Id": "5.5.2.01.6481000",
                   "Desc": "Einzahlungen aus Kostenerstattungen vom Land (Kriegsgräber)",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 64520.04,
                     "2021": 70000,
@@ -80,7 +78,6 @@
                 {
                   "Id": "5.5.2.01.6487000",
                   "Desc": "Einzahlungen aus Kostenerstattungen von privaten Unternehmen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 57681.26,
                     "2021": 60000,
@@ -121,7 +118,6 @@
                 {
                   "Id": "5.5.2.01.7221000",
                   "Desc": "Unterhaltung des sonstigen unbeweglichen Vermögens",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -9397.07,
                     "2021": -50000,
@@ -134,7 +130,6 @@
                 {
                   "Id": "5.5.2.01.7221200",
                   "Desc": "Unterhaltung des sonstigen unbeweglichen Vermögens (D I/68)",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -16462.2,
                     "2021": -15000,
@@ -147,7 +142,6 @@
                 {
                   "Id": "5.5.2.01.7251000",
                   "Desc": "Haltung von Fahrzeugen (Wasserwehr)",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -1798.95,
                     "2021": -2000,
@@ -160,7 +154,6 @@
                 {
                   "Id": "5.5.2.01.7252000",
                   "Desc": "Erwerb geringwertiger Vermögensgegenstände (Wasserwehr)",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -0,
                     "2021": -1000,
@@ -173,7 +166,6 @@
                 {
                   "Id": "5.5.2.01.7255000",
                   "Desc": "Unterhaltung des sonstigen beweglichen Vermögens",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -0,
                     "2021": -1000,
@@ -186,7 +178,6 @@
                 {
                   "Id": "5.5.2.01.7261000",
                   "Desc": "Besondere Aufwendungen für Beschäftigte (Wasserwehr)",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -5233.63,
                     "2021": -2000,
@@ -213,7 +204,6 @@
                 {
                   "Id": "5.5.2.01.7311000",
                   "Desc": "Zuweisungen an das Land",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -0,
                     "2021": -10000,
@@ -226,7 +216,6 @@
                 {
                   "Id": "5.5.2.01.7313000",
                   "Desc": "Zuweisungen an Zweckverbände",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -182122.34,
                     "2021": -190000,
@@ -253,7 +242,6 @@
                 {
                   "Id": "5.5.2.01.7421000",
                   "Desc": "Aufwendungen für ehrenamtliche und sonstige Tätigkeit  (Wasserwehr)",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -950,
                     "2021": -5800,
@@ -322,11 +310,6 @@
                 {
                   "Id": "5.5.2.01/0200.6811000",
                   "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land",
-                  "AboveValueLimit": {
-                    "ID": "5.5.2.01/0200.6811000",
-                    "Category": "Betriebs-und Geschäftsausstattungen",
-                    "SubCategory": "Einzahlungen aus Investitionszuwendungen"
-                  },
                   "Budgets": {
                     "2020": 0,
                     "2021": 30600,
@@ -339,11 +322,6 @@
                 {
                   "Id": "5.5.2.01/3603.6813000",
                   "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Zweckverb.",
-                  "AboveValueLimit": {
-                    "ID": "5.5.2.01/3603.6813000",
-                    "Category": "Schierke Gewässerverrohrung Nr. 208.01 Bereich Dorfstraße/ Anteil UHV",
-                    "SubCategory": "Einzahlungen aus Investitionszuwendungen"
-                  },
                   "Budgets": {
                     "2020": 42009.26,
                     "2021": 0,
@@ -356,11 +334,6 @@
                 {
                   "Id": "5.5.2.01/3604.6811000",
                   "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land",
-                  "AboveValueLimit": {
-                    "ID": "5.5.2.01/3604.6811000",
-                    "Category": "Kuhbornbach (Bereich Am Eichberg)",
-                    "SubCategory": "Einzahlungen aus Investitionszuwendungen"
-                  },
                   "Budgets": {
                     "2020": 0,
                     "2021": 0,
@@ -373,11 +346,6 @@
                 {
                   "Id": "5.5.2.01/3607.6811000",
                   "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land",
-                  "AboveValueLimit": {
-                    "ID": "5.5.2.01/3607.6811000",
-                    "Category": "Schierke, Ottoweg",
-                    "SubCategory": "Einzahlungen aus Investitionszuwendungen"
-                  },
                   "Budgets": {
                     "2020": 0,
                     "2021": 53600,
@@ -390,11 +358,6 @@
                 {
                   "Id": "5.5.2.01/3608.6811000",
                   "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land",
-                  "AboveValueLimit": {
-                    "ID": "5.5.2.01/3608.6811000",
-                    "Category": "Minsleben, HW-Entlaster",
-                    "SubCategory": "Einzahlungen aus Investitionszuwendungen"
-                  },
                   "Budgets": {
                     "2020": 0,
                     "2021": 22500,
@@ -407,11 +370,6 @@
                 {
                   "Id": "5.5.2.01/3609.6811000",
                   "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land",
-                  "AboveValueLimit": {
-                    "ID": "5.5.2.01/3609.6811000",
-                    "Category": "Silstedt HW-Schutz Silstedter Bach",
-                    "SubCategory": "Einzahlungen aus Investitionszuwendungen"
-                  },
                   "Budgets": {
                     "2020": 0,
                     "2021": 22900,
@@ -424,11 +382,6 @@
                 {
                   "Id": "5.5.2.01/3611.6813000",
                   "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Zweckverb.",
-                  "AboveValueLimit": {
-                    "ID": "5.5.2.01/3611.6813000",
-                    "Category": "Sturzbach 3. BA Erneuerung Verrohrung",
-                    "SubCategory": "Einzahlungen aus Investitionszuwendungen"
-                  },
                   "Budgets": {
                     "2020": 0,
                     "2021": 0,
@@ -441,11 +394,6 @@
                 {
                   "Id": "5.5.2.01/8888.6813000",
                   "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Zweckverb.",
-                  "AboveValueLimit": {
-                    "ID": "5.5.2.01/8888.6813000",
-                    "Category": "mittelfristige Maßnahmen",
-                    "SubCategory": "Einzahlungen aus Investitionszuwendungen"
-                  },
                   "Budgets": {
                     "2020": 0,
                     "2021": 0,
@@ -499,11 +447,6 @@
                 {
                   "Id": "5.5.2.01/0200.7831000",
                   "Desc": "Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.",
-                  "AboveValueLimit": {
-                    "ID": "5.5.2.01/0200.7831000",
-                    "Category": "Betriebs-und Geschäftsausstattungen",
-                    "SubCategory": " -Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen"
-                  },
                   "Budgets": {
                     "2020": -0,
                     "2021": -38300,
@@ -516,11 +459,6 @@
                 {
                   "Id": "5.5.2.01/0500.7831000",
                   "Desc": "Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.",
-                  "AboveValueLimit": {
-                    "ID": "5.5.2.01/0500.7831000",
-                    "Category": "Fahrzeuge",
-                    "SubCategory": " -Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen"
-                  },
                   "Budgets": {
                     "2020": -2378,
                     "2021": -0,
@@ -547,11 +485,6 @@
                 {
                   "Id": "5.5.2.01/3602.7852000",
                   "Desc": "Auszahlungen für Tiefbaumaßnahmen",
-                  "AboveValueLimit": {
-                    "ID": "5.5.2.01/3602.7852000",
-                    "Category": "Verrohrung Sturzbach Frankenfeldstraße",
-                    "SubCategory": " -Auszahlungen für Baumaßnahmen"
-                  },
                   "Budgets": {
                     "2020": -131936.59,
                     "2021": -0,
@@ -564,11 +497,6 @@
                 {
                   "Id": "5.5.2.01/3604.7852000",
                   "Desc": "Auszahlungen für Tiefbaumaßnahmen",
-                  "AboveValueLimit": {
-                    "ID": "5.5.2.01/3604.7852000",
-                    "Category": "Kuhbornbach (Bereich Am Eichberg)",
-                    "SubCategory": " -Auszahlungen für Baumaßnahmen"
-                  },
                   "Budgets": {
                     "2020": -37898.79,
                     "2021": -0,
@@ -581,11 +509,6 @@
                 {
                   "Id": "5.5.2.01/3605.7852000",
                   "Desc": "Auszahlungen für Tiefbaumaßnahmen",
-                  "AboveValueLimit": {
-                    "ID": "5.5.2.01/3605.7852000",
-                    "Category": "Schierke, Hermann-Löns-Weg Entwässerung Nord",
-                    "SubCategory": " -Auszahlungen für Baumaßnahmen"
-                  },
                   "Budgets": {
                     "2020": -37705.19,
                     "2021": -0,
@@ -598,11 +521,6 @@
                 {
                   "Id": "5.5.2.01/3606.7852000",
                   "Desc": "Auszahlungen für Tiefbaumaßnahmen",
-                  "AboveValueLimit": {
-                    "ID": "5.5.2.01/3606.7852000",
-                    "Category": "Schierke, Barenberg, Entwässerung Süd",
-                    "SubCategory": " -Auszahlungen für Baumaßnahmen"
-                  },
                   "Budgets": {
                     "2020": -10793.83,
                     "2021": -0,
@@ -615,11 +533,6 @@
                 {
                   "Id": "5.5.2.01/3607.7852000",
                   "Desc": "Auszahlungen für Tiefbaumaßnahmen",
-                  "AboveValueLimit": {
-                    "ID": "5.5.2.01/3607.7852000",
-                    "Category": "Schierke, Ottoweg",
-                    "SubCategory": " -Auszahlungen für Baumaßnahmen"
-                  },
                   "Budgets": {
                     "2020": -0,
                     "2021": -67000,
@@ -632,11 +545,6 @@
                 {
                   "Id": "5.5.2.01/3608.7852000",
                   "Desc": "Auszahlungen für Tiefbaumaßnahmen",
-                  "AboveValueLimit": {
-                    "ID": "5.5.2.01/3608.7852000",
-                    "Category": "Minsleben, HW-Entlaster",
-                    "SubCategory": " -Auszahlungen für Baumaßnahmen"
-                  },
                   "Budgets": {
                     "2020": -0,
                     "2021": -28200,
@@ -649,11 +557,6 @@
                 {
                   "Id": "5.5.2.01/3609.7852000",
                   "Desc": "Auszahlungen für Tiefbaumaßnahmen",
-                  "AboveValueLimit": {
-                    "ID": "5.5.2.01/3609.7852000",
-                    "Category": "Silstedt HW-Schutz Silstedter Bach",
-                    "SubCategory": " -Auszahlungen für Baumaßnahmen"
-                  },
                   "Budgets": {
                     "2020": -0,
                     "2021": -28700,
@@ -666,11 +569,6 @@
                 {
                   "Id": "5.5.2.01/3610.7852000",
                   "Desc": "Auszahlungen für Tiefbaumaßnahmen",
-                  "AboveValueLimit": {
-                    "ID": "5.5.2.01/3610.7852000",
-                    "Category": "Hochwasserschutz Kleinmaßnahmen",
-                    "SubCategory": " -Auszahlungen für Baumaßnahmen"
-                  },
                   "Budgets": {
                     "2020": -0,
                     "2021": -50000,
@@ -683,11 +581,6 @@
                 {
                   "Id": "5.5.2.01/3611.7852000",
                   "Desc": "Auszahlungen für Tiefbaumaßnahmen",
-                  "AboveValueLimit": {
-                    "ID": "5.5.2.01/3611.7852000",
-                    "Category": "Sturzbach 3. BA Erneuerung Verrohrung",
-                    "SubCategory": " -Auszahlungen für Baumaßnahmen"
-                  },
                   "Budgets": {
                     "2020": -0,
                     "2021": -0,
@@ -700,11 +593,6 @@
                 {
                   "Id": "5.5.2.01/8888.7852000",
                   "Desc": "Auszahlungen für Tiefbaumaßnahmen",
-                  "AboveValueLimit": {
-                    "ID": "5.5.2.01/8888.7852000",
-                    "Category": "mittelfristige Maßnahmen",
-                    "SubCategory": " -Auszahlungen für Baumaßnahmen"
-                  },
                   "Budgets": {
                     "2020": -0,
                     "2021": -0,

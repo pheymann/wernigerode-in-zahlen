@@ -40,7 +40,6 @@
                 {
                   "Id": "5.7.5.01.6145000",
                   "Desc": "Zuschüsse für lfd. Zwecke von verbund. Untern., Beteiligungen und Sondervermögen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 129486.08,
                     "2021": 0,
@@ -67,7 +66,6 @@
                 {
                   "Id": "5.7.5.01.6361000",
                   "Desc": "Zweckgebundene Abgaben (Kurbeitrag)",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 2180235.08,
                     "2021": 2581000,
@@ -94,7 +92,6 @@
                 {
                   "Id": "5.7.5.01.6521100",
                   "Desc": "Einnahmen Mehrwertsteuer 7%",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 65232.71,
                     "2021": 180600,
@@ -107,7 +104,6 @@
                 {
                   "Id": "5.7.5.01.6521105",
                   "Desc": "Einnahmen Mehrwertsteuer 5%",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 62416.96,
                     "2021": 0,
@@ -120,7 +116,6 @@
                 {
                   "Id": "5.7.5.01.6521200",
                   "Desc": "Einnahmen Mehrwertsteuer 19%",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 23.23,
                     "2021": 100,
@@ -133,7 +128,6 @@
                 {
                   "Id": "5.7.5.01.6521300",
                   "Desc": "Erstattungen Vorsteuer",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 3082.18,
                     "2021": 58400,
@@ -174,7 +168,6 @@
                 {
                   "Id": "5.7.5.01.7316000",
                   "Desc": "Zuschüsse an sonstige öffentliche Sonderrechnungen (HSB)",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 199403,
                     "2021": 199500,
@@ -187,7 +180,6 @@
                 {
                   "Id": "5.7.5.01.7316100",
                   "Desc": "Zusch. öff. SondRechn. HSB",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 0,
@@ -200,7 +192,6 @@
                 {
                   "Id": "5.7.5.01.7316200",
                   "Desc": "Zusch. öff.SondRechn. HSB Kurb",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 0,
@@ -227,7 +218,6 @@
                 {
                   "Id": "5.7.5.01.7441200",
                   "Desc": "Abzugsfähige Vorsteuer 19%",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 28113.63,
                     "2021": 58400,
@@ -240,7 +230,6 @@
                 {
                   "Id": "5.7.5.01.7441216",
                   "Desc": "Abzugsfähige Vorsteuer 16%",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 10965.22,
                     "2021": 0,
@@ -253,7 +242,6 @@
                 {
                   "Id": "5.7.5.01.7441300",
                   "Desc": "Abführung Mehrwertsteuer",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 113395.05,
                     "2021": 180700,
@@ -266,7 +254,6 @@
                 {
                   "Id": "5.7.5.01.7455000",
                   "Desc": "Erstatt. f.d. Ausz. v. Dritte a. lfd VerwTät. an verb. Unternehmen (Kurbeitrag)",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 2284645.56,
                     "2021": 2464800,
@@ -279,7 +266,6 @@
                 {
                   "Id": "5.7.5.01.7455001",
                   "Desc": "Einbehalt für Entgelt WTG",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 116200,

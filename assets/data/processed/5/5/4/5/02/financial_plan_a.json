@@ -53,7 +53,6 @@
                 {
                   "Id": "5.4.5.02.7241000",
                   "Desc": "Bewirtschaftung der Grundstücke und baulichen Anlagen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 581404.11,
                     "2021": 580000,
@@ -80,7 +79,6 @@
                 {
                   "Id": "5.4.5.02.7455000",
                   "Desc": "Erstatt. f.d. Ausz. v. Dritten a. lfd VerwTät. an verb. Unt., Sondverm.\u0026 Beteil.",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 340072.06,
                     "2021": 380000,
@@ -149,7 +147,6 @@
                 {
                   "Id": "5.4.5.02/3003.6851000",
                   "Desc": "Erstatt.Land für Strab Straßenbeleuchtung",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 0,
@@ -176,7 +173,6 @@
                 {
                   "Id": "5.4.5.02/3003.6881000",
                   "Desc": "Strab für Straßenbeleuchtung",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 28827.18,
                     "2021": 20000,
@@ -230,7 +226,6 @@
                 {
                   "Id": "5.4.5.02/3003.7852000",
                   "Desc": "Auszahlungen für Tiefbaumaßnahmen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 74190.38,
                     "2021": 100000,

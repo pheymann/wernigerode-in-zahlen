@@ -40,7 +40,6 @@
                 {
                   "Id": "6.1.1.01.6011000",
                   "Desc": "Grundsteuer A",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 67493.68,
                     "2021": 67600,
@@ -53,7 +52,6 @@
                 {
                   "Id": "6.1.1.01.6012000",
                   "Desc": "Grundsteuer B",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 3657629.33,
                     "2021": 3689700,
@@ -66,7 +64,6 @@
                 {
                   "Id": "6.1.1.01.6013000",
                   "Desc": "Gewerbesteuer",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 13085101.38,
                     "2021": 15658300,
@@ -79,7 +76,6 @@
                 {
                   "Id": "6.1.1.01.6021000",
                   "Desc": "Gemeindeanteil an der Einkommensteuer",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 10631514.24,
                     "2021": 10470100,
@@ -92,7 +88,6 @@
                 {
                   "Id": "6.1.1.01.6022000",
                   "Desc": "Gemeindeanteil an der Umsatzsteuer",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 4436137.32,
                     "2021": 3911100,
@@ -105,7 +100,6 @@
                 {
                   "Id": "6.1.1.01.6031000",
                   "Desc": "Vergnügungssteuer",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 319703.77,
                     "2021": 397200,
@@ -118,7 +112,6 @@
                 {
                   "Id": "6.1.1.01.6032000",
                   "Desc": "Hundesteuer",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 142612.83,
                     "2021": 145400,
@@ -145,7 +138,6 @@
                 {
                   "Id": "6.1.1.01.6111000",
                   "Desc": "Schlüsselzuweisungen und Besondere Ergänzungszuweisungen vom Land",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 4198976,
                     "2021": 5383800,
@@ -158,7 +150,6 @@
                 {
                   "Id": "6.1.1.01.6131000",
                   "Desc": "Sonstige allgemeine Zuweisungen vom Land",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 4898347,
                     "2021": 2262000,
@@ -185,7 +176,6 @@
                 {
                   "Id": "6.1.1.01.6691000",
                   "Desc": "Sonstige Finanzeinzahlungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 82915.85,
                     "2021": 100000,
@@ -226,7 +216,6 @@
                 {
                   "Id": "6.1.1.01.7341000",
                   "Desc": "Gewerbesteuerumlage",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 1315939,
                     "2021": 1279900,
@@ -239,7 +228,6 @@
                 {
                   "Id": "6.1.1.01.7372000",
                   "Desc": "Allgemeine Umlagen an Landkreise",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 12925808,
                     "2021": 12485600,
@@ -266,7 +254,6 @@
                 {
                   "Id": "6.1.1.01.7592000",
                   "Desc": "Verzinsung von Steuererstattungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 18273.25,
                     "2021": 50000,
@@ -335,7 +322,6 @@
                 {
                   "Id": "6.1.1.01/8000.6811000",
                   "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 1171684,
                     "2021": 1171100,
@@ -348,7 +334,6 @@
                 {
                   "Id": "6.1.1.01/8001.6811000",
                   "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 749203,
                     "2021": 749500,

@@ -40,7 +40,6 @@
                 {
                   "Id": "5.4.5.01.6321000",
                   "Desc": "Benutzungsgebühren und ähnliche Entgelte",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 419073.56,
                     "2021": 420000,
@@ -81,7 +80,6 @@
                 {
                   "Id": "5.4.5.01.7221000",
                   "Desc": "Unterhaltung des sonstigen unbeweglichen Vermögens",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -16610.51,
                     "2021": -42500,
@@ -94,7 +92,6 @@
                 {
                   "Id": "5.4.5.01.7231000",
                   "Desc": "Auszahlungen für Mieten und Pachten",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -3252.06,
                     "2021": -2500,
@@ -107,7 +104,6 @@
                 {
                   "Id": "5.4.5.01.7241000",
                   "Desc": "Bewirtschaftung der Grundstücke und baulichen Anlagen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -48150.06,
                     "2021": -56000,
@@ -120,7 +116,6 @@
                 {
                   "Id": "5.4.5.01.7252000",
                   "Desc": "Erwerb geringwertiger Vermögensgegenstände",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -0,
                     "2021": -500,
@@ -133,7 +128,6 @@
                 {
                   "Id": "5.4.5.01.7255000",
                   "Desc": "Unterhaltung des sonstigen beweglichen Vermögens",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -5198.54,
                     "2021": -10000,
@@ -160,7 +154,6 @@
                 {
                   "Id": "5.4.5.01.7457000",
                   "Desc": "Erstatt. für die Auszahl. von Dritten aus lfd. Verwaltungstät. an priv. Untern.",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -50332.44,
                     "2021": -35000,

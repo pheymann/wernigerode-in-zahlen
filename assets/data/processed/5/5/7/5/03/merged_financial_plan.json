@@ -94,11 +94,6 @@
                 {
                   "Id": "5.7.5.03/3103.6811000",
                   "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land",
-                  "AboveValueLimit": {
-                    "ID": "5.7.5.03/3103.6811000",
-                    "Category": "Verkehrs-und Wegenetz in Schierke",
-                    "SubCategory": "Einzahlungen aus Investitionszuwendungen"
-                  },
                   "Budgets": {
                     "2020": 0,
                     "2021": 0,
@@ -152,11 +147,6 @@
                 {
                   "Id": "5.7.5.03/3103.7853000",
                   "Desc": "Auszahlungen für sonstige Baumaßnahmen",
-                  "AboveValueLimit": {
-                    "ID": "5.7.5.03/3103.7853000",
-                    "Category": "Verkehrs-und Wegenetz in Schierke",
-                    "SubCategory": " -Auszahlungen für Baumaßnahmen"
-                  },
                   "Budgets": {
                     "2020": -0,
                     "2021": -0,

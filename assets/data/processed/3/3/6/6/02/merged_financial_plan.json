@@ -53,7 +53,6 @@
                 {
                   "Id": "3.6.6.02.7221000",
                   "Desc": "Unterhaltung des sonstigen unbeweglichen Vermögens",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -13271.6,
                     "2021": -19000,
@@ -66,7 +65,6 @@
                 {
                   "Id": "3.6.6.02.7231000",
                   "Desc": "Auszahlungen für Mieten und Pachten",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -0,
                     "2021": -1000,
@@ -79,7 +77,6 @@
                 {
                   "Id": "3.6.6.02.7241000",
                   "Desc": "Bewirtschaftung der Grundstücke und baulichen Anlagen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -0,
                     "2021": -1000,
@@ -92,7 +89,6 @@
                 {
                   "Id": "3.6.6.02.7252000",
                   "Desc": "Erwerb geringwertiger Vermögensgegenstände",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -1190.6,
                     "2021": -500,
@@ -105,7 +101,6 @@
                 {
                   "Id": "3.6.6.02.7255000",
                   "Desc": "Unterhaltung des sonstigen beweglichen Vermögens",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -13548.45,
                     "2021": -19000,
@@ -132,7 +127,6 @@
                 {
                   "Id": "3.6.6.02.7431000",
                   "Desc": "Geschäftsauszahlungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -0,
                     "2021": -0,
@@ -201,7 +195,6 @@
                 {
                   "Id": "3.6.6.02/0300.6831000",
                   "Desc": "Einzahl.a.d.Veräuß.von bewegl. Vermögensgegenst. von mehr als 1000 € ohne UmStr.",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 2605.65,
                     "2021": 0,
@@ -255,11 +248,6 @@
                 {
                   "Id": "3.6.6.02/0300.7831000",
                   "Desc": "Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.",
-                  "AboveValueLimit": {
-                    "ID": "3.6.6.02/0300.7831000",
-                    "Category": "Betriebsvorrichtungen",
-                    "SubCategory": " -Auszahlungen für den Erwerb von beweglichen Vermögensgegenständen"
-                  },
                   "Budgets": {
                     "2020": -34519.84,
                     "2021": -60000,

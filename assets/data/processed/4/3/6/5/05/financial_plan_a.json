@@ -40,7 +40,6 @@
                 {
                   "Id": "3.6.5.05.6321000",
                   "Desc": "Benutzungsgebühren und ähnliche Entgelte",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 124,
                     "2021": 0,
@@ -67,7 +66,6 @@
                 {
                   "Id": "3.6.5.05.6482000",
                   "Desc": "Einzahlungen aus Kostenerstattungen von Gemeinden und Gemeindeverbänden",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 141030.03,
                     "2021": 150000,
@@ -108,7 +106,6 @@
                 {
                   "Id": "3.6.5.05.7452000",
                   "Desc": "Erstatt. f.d. Ausz. v. Dritten aus lfd. Verwaltungstätigkeit an Gemeinde\u0026 GV",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 110226.18,
                     "2021": 135000,

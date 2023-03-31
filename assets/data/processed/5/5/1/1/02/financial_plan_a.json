@@ -40,7 +40,6 @@
                 {
                   "Id": "5.1.1.02.6141000",
                   "Desc": "Zuweisungen für laufende Zwecke vom Land (Aktive Stadt-undOrtsteilzentren)",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 374100,
@@ -53,7 +52,6 @@
                 {
                   "Id": "5.1.1.02.6141300",
                   "Desc": "Zuweisungen für lfd. Zwecke vom Land (Stadtumbau Ost-Rückbau)",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 34680,
                     "2021": 59400,
@@ -80,7 +78,6 @@
                 {
                   "Id": "5.1.1.02.6311000",
                   "Desc": "Verwaltungsgebühren",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 1461.9,
                     "2021": 1400,
@@ -107,7 +104,6 @@
                 {
                   "Id": "5.1.1.02.6481000",
                   "Desc": "Einzahlungen aus Kostenerstattungen vom Land",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 9365.08,
                     "2021": 9200,
@@ -148,7 +144,6 @@
                 {
                   "Id": "5.1.1.02.7011000",
                   "Desc": "Dienstauszahlungen und dgl. an Beamte",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 55300,
@@ -161,7 +156,6 @@
                 {
                   "Id": "5.1.1.02.7012000",
                   "Desc": "Dienstauszahlungen und dgl. an Arbeitnehmer",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 834209.37,
                     "2021": 773000,
@@ -174,7 +168,6 @@
                 {
                   "Id": "5.1.1.02.7021000",
                   "Desc": "Beiträge zu Versorgungskassen für Beamte",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 32200,
@@ -187,7 +180,6 @@
                 {
                   "Id": "5.1.1.02.7022000",
                   "Desc": "Beiträge zu Versorgungskassen für Arbeitnehmer",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 36324.61,
                     "2021": 32800,
@@ -200,7 +192,6 @@
                 {
                   "Id": "5.1.1.02.7032000",
                   "Desc": "Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 169813,
                     "2021": 151700,
@@ -213,7 +204,6 @@
                 {
                   "Id": "5.1.1.02.7041000",
                   "Desc": "Beihilfen, Unterstützungsleistungen für Beschäftigte",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 3374.95,
                     "2021": 4400,
@@ -240,7 +230,6 @@
                 {
                   "Id": "5.1.1.02.7211000",
                   "Desc": "Unterhaltung der Grundstücke und baulichen Anlagen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 41626.33,
                     "2021": 0,
@@ -253,7 +242,6 @@
                 {
                   "Id": "5.1.1.02.7211100",
                   "Desc": "Unterhaltung der Grundstücke und baulichen Anlagen-Stadtumbau Ost",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 31654.57,
                     "2021": 0,
@@ -266,7 +254,6 @@
                 {
                   "Id": "5.1.1.02.7221000",
                   "Desc": "Unterhaltung des sonstigen unbeweglichen Vermögens",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 69944.52,
                     "2021": 0,
@@ -279,7 +266,6 @@
                 {
                   "Id": "5.1.1.02.7261000",
                   "Desc": "Besondere zahlungswirksame Aufwendungen für Beschäftigte",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 500,
@@ -292,7 +278,6 @@
                 {
                   "Id": "5.1.1.02.7271000",
                   "Desc": "Besondere Verwaltungs- und Betriebsauszahlungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 130.33,
                     "2021": 500,
@@ -319,7 +304,6 @@
                 {
                   "Id": "5.1.1.02.7318000",
                   "Desc": "Zuschüsse an übrige Bereiche (Aktive Stadt-und Ortsteilzentren)",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 265575.13,
                     "2021": 561200,
@@ -332,7 +316,6 @@
                 {
                   "Id": "5.1.1.02.7318100",
                   "Desc": "Zuschüsse an übrige Bereiche (Stadtumbau Ost Aufwertung Altstadt)",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 61566.87,
                     "2021": 0,
@@ -345,7 +328,6 @@
                 {
                   "Id": "5.1.1.02.7318300",
                   "Desc": "Zuschüsse an übrige Bereiche Stadtumbau-Ost Rückbau",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 9690,
                     "2021": 59400,
@@ -372,7 +354,6 @@
                 {
                   "Id": "5.1.1.02.7411000",
                   "Desc": "Sonstige Personal- und Versorgungsauszahlungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 881.55,
                     "2021": 0,
@@ -385,7 +366,6 @@
                 {
                   "Id": "5.1.1.02.7431000",
                   "Desc": "Geschäftsauszahlungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 9000,
@@ -398,7 +378,6 @@
                 {
                   "Id": "5.1.1.02.7431100",
                   "Desc": "Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 800,
                     "2021": 2000,
@@ -411,7 +390,6 @@
                 {
                   "Id": "5.1.1.02.7431300",
                   "Desc": "Auszahlungen für Planungsleistungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 21528.37,
                     "2021": 35000,
@@ -438,7 +416,6 @@
                 {
                   "Id": "5.1.1.02.7599000",
                   "Desc": "Sonstige Finanzauszahlungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 51051.43,
                     "2021": 35000,
@@ -507,7 +484,6 @@
                 {
                   "Id": "5.1.1.02/3301.6811000",
                   "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 240000,
@@ -520,7 +496,6 @@
                 {
                   "Id": "5.1.1.02/3340.6811000",
                   "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 100000,
@@ -533,7 +508,6 @@
                 {
                   "Id": "5.1.1.02/7777.6811001",
                   "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land (ASO)",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 80000,
                     "2021": 0,
@@ -560,7 +534,6 @@
                 {
                   "Id": "5.1.1.02/3301.6851000",
                   "Desc": "Erstatt.Land Wegfall Strab Soziale Stadt",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 7460.01,
                     "2021": 0,
@@ -587,7 +560,6 @@
                 {
                   "Id": "5.1.1.02/3301.6881000",
                   "Desc": "Einzahlungen aus Beiträge und ähnliche Entgelten",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 356813.85,
                     "2021": 141000,
@@ -641,7 +613,6 @@
                 {
                   "Id": "5.1.1.02/1425.7851000",
                   "Desc": "Auszahlungen für Hochbaumaßnahmen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 402000,
@@ -654,7 +625,6 @@
                 {
                   "Id": "5.1.1.02/3301.7852000",
                   "Desc": "Auszahlungen für Tiefbaumaßnahmen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 193514.53,
                     "2021": 99000,
@@ -667,7 +637,6 @@
                 {
                   "Id": "5.1.1.02/3322.7852000",
                   "Desc": "Auszahlungen für Tiefbaumaßnahmen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 25627.93,
                     "2021": 0,
@@ -680,7 +649,6 @@
                 {
                   "Id": "5.1.1.02/3334.7852000",
                   "Desc": "Auszahlungen für Tiefbaumaßnahmen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 154814.17,
                     "2021": 0,
@@ -693,7 +661,6 @@
                 {
                   "Id": "5.1.1.02/3335.7852000",
                   "Desc": "Auszahlungen für Tiefbaumaßnahmen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 219593.96,
                     "2021": 0,
@@ -706,7 +673,6 @@
                 {
                   "Id": "5.1.1.02/3340.7852000",
                   "Desc": "Auszahlungen für Tiefbaumaßnahmen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 150000,
@@ -719,7 +685,6 @@
                 {
                   "Id": "5.1.1.02/3343.7852000",
                   "Desc": "Auszahlungen für Tiefbaumaßnahmen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 0,

@@ -40,7 +40,6 @@
                 {
                   "Id": "4.2.1.01.6488000",
                   "Desc": "Einzahlungen aus Kostenerstattungen von übrigen Bereichen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 1428,
                     "2021": 0,
@@ -81,7 +80,6 @@
                 {
                   "Id": "4.2.1.01.7211014",
                   "Desc": "Unterhaltung der Grundstücke und baulichen Anlagen-Gebäudemanagement",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 5986.06,
                     "2021": 0,
@@ -108,7 +106,6 @@
                 {
                   "Id": "4.2.1.01.7318000",
                   "Desc": "Zuschüsse an übrige Bereiche",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 151249.96,
                     "2021": 148300,
@@ -203,7 +200,6 @@
                 {
                   "Id": "4.2.1.01/7006.7834000",
                   "Desc": "Auszahlung für den Erwerb immaterieller Vermögensgegenstände",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 25000,
                     "2021": 0,

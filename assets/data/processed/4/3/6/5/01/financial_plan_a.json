@@ -40,7 +40,6 @@
                 {
                   "Id": "3.6.5.01.6148000",
                   "Desc": "Zuschüsse für laufende Zwecke von übrigen Bereichen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 7635.56,
                     "2021": 0,
@@ -67,7 +66,6 @@
                 {
                   "Id": "3.6.5.01.6321000",
                   "Desc": "Benutzungsgebühren und ähnliche Entgelte",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 404570.07,
                     "2021": 526000,
@@ -94,7 +92,6 @@
                 {
                   "Id": "3.6.5.01.6482000",
                   "Desc": "Einzahlungen aus Kostenerstattungen von Gemeinden und Gemeindeverbänden",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 143534.9,
                     "2021": 204300,
@@ -135,7 +132,6 @@
                 {
                   "Id": "3.6.5.01.7318000",
                   "Desc": "Zuschüsse an übrige Bereiche (freie Träger)",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 1568677.92,
                     "2021": 2047000,

@@ -40,7 +40,6 @@
                 {
                   "Id": "5.2.3.01.6140001",
                   "Desc": "Zuweisungen für laufende Zwecke vom Bund",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 0,
@@ -53,7 +52,6 @@
                 {
                   "Id": "5.2.3.01.6141000",
                   "Desc": "Zuweisungen für laufende Zwecke vom Land",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 436000,
@@ -94,7 +92,6 @@
                 {
                   "Id": "5.2.3.01.7221000",
                   "Desc": "Unterhaltung des sonstigen unbeweglichen Vermögens",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 0,
@@ -121,7 +118,6 @@
                 {
                   "Id": "5.2.3.01.7318000",
                   "Desc": "Zuschüsse an übrige Bereiche",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 425228.59,
                     "2021": 545000,
@@ -134,7 +130,6 @@
                 {
                   "Id": "5.2.3.01.7318100",
                   "Desc": "Zuschüsse an übrige Bereiche",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 0,
@@ -161,7 +156,6 @@
                 {
                   "Id": "5.2.3.01.7431100",
                   "Desc": "Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 290,
                     "2021": 1000,
@@ -188,7 +182,6 @@
                 {
                   "Id": "5.2.3.01.7599000",
                   "Desc": "Sonstige Finanzauszahlungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 23323.62,
                     "2021": 18000,
@@ -257,7 +250,6 @@
                 {
                   "Id": "5.2.3.01/4005.6811000",
                   "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 100000,
                     "2021": 0,
@@ -270,7 +262,6 @@
                 {
                   "Id": "5.2.3.01/4006.6811000",
                   "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 160000,
@@ -283,7 +274,6 @@
                 {
                   "Id": "5.2.3.01/4007.6811000",
                   "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 255200,
@@ -296,7 +286,6 @@
                 {
                   "Id": "5.2.3.01/7777.6811000",
                   "Desc": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 464800,
                     "2021": 0,
@@ -323,7 +312,6 @@
                 {
                   "Id": "5.2.3.01/3012.6851000",
                   "Desc": "Einzahlungen für Baumaßnahmen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 9253.65,
                     "2021": 0,
@@ -336,7 +324,6 @@
                 {
                   "Id": "5.2.3.01/3322.6851000",
                   "Desc": "Einzahlungen für Baumaßnahmen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 76846.45,
                     "2021": 0,
@@ -390,7 +377,6 @@
                 {
                   "Id": "5.2.3.01/3012.7852000",
                   "Desc": "Auszahlungen für Tiefbaumaßnahmen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 324.62,
                     "2021": 0,
@@ -403,7 +389,6 @@
                 {
                   "Id": "5.2.3.01/3322.7852000",
                   "Desc": "Auszahlungen für Tiefbaumaßnahmen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 546034.26,
                     "2021": 694000,

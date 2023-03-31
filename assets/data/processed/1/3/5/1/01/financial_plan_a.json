@@ -40,7 +40,6 @@
                 {
                   "Id": "3.5.1.01.6140001",
                   "Desc": "Zuweisungen für laufende Zwecke vom Bund",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 30000,
@@ -81,7 +80,6 @@
                 {
                   "Id": "3.5.1.01.7019000",
                   "Desc": "Dienstauszahlungen und dgl. an sonstige Beschäftigte",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 58200,
@@ -94,7 +92,6 @@
                 {
                   "Id": "3.5.1.01.7029000",
                   "Desc": "Beiträge zu Versorgungskassen für sonstige Beschäftigte",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 2400,
@@ -107,7 +104,6 @@
                 {
                   "Id": "3.5.1.01.7039000",
                   "Desc": "Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschäft.",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 11400,
@@ -120,7 +116,6 @@
                 {
                   "Id": "3.5.1.01.7041000",
                   "Desc": "Beihilfen, Unterstützungsleistungen für Beschäftigte",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 300,

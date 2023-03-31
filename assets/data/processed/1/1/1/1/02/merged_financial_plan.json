@@ -40,7 +40,6 @@
                 {
                   "Id": "1.1.1.02.6651000",
                   "Desc": "Einzahlungen von Gewinnanteilen aus verbundenen Unternehmen und Beteiligungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 41111.07,
                     "2021": 277400,
@@ -53,7 +52,6 @@
                 {
                   "Id": "1.1.1.02.6651100",
                   "Desc": "Einz GewAnt a.vU\u0026 Bet. GWW",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 0,
@@ -66,7 +64,6 @@
                 {
                   "Id": "1.1.1.02.6651200",
                   "Desc": "Einz GewAnt a.vU\u0026 Bet. KOWISA",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 0,
@@ -107,7 +104,6 @@
                 {
                   "Id": "1.1.1.02.7315000",
                   "Desc": "Zuschüsse an verbundene Unternehme, Sondervermögen und Beteiligungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -100000,
                     "2021": -160000,
@@ -120,7 +116,6 @@
                 {
                   "Id": "1.1.1.02.7318000",
                   "Desc": "Zuschüsse an übrige Bereiche (Kulturstiftung)",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": -160000,
                     "2021": -160000,

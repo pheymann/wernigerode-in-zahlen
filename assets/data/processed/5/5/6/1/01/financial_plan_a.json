@@ -40,7 +40,6 @@
                 {
                   "Id": "5.6.1.01.6141000",
                   "Desc": "Zuweisungen für laufende Zwecke vom Land",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 7736.8,
                     "2021": 13500,
@@ -53,7 +52,6 @@
                 {
                   "Id": "5.6.1.01.6147000",
                   "Desc": "Zuschüsse für laufende Zwecke von privaten Unternehmen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 3000,
@@ -66,7 +64,6 @@
                 {
                   "Id": "5.6.1.01.6148000",
                   "Desc": "Zuschüsse für laufende Zwecke von übrigen Bereichen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 2500,
@@ -107,7 +104,6 @@
                 {
                   "Id": "5.6.1.01.7252000",
                   "Desc": "Erwerb geringwertiger Vermögensgegenstände",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 500,
@@ -120,7 +116,6 @@
                 {
                   "Id": "5.6.1.01.7271000",
                   "Desc": "Besondere Verwaltungs- und Betriebsauszahlungen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 1476.17,
                     "2021": 24000,
@@ -147,7 +142,6 @@
                 {
                   "Id": "5.6.1.01.7318000",
                   "Desc": "Zuschüsse an übrige Bereiche",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 0,
                     "2021": 10000,
@@ -174,7 +168,6 @@
                 {
                   "Id": "5.6.1.01.7429000",
                   "Desc": "Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 2545.04,
                     "2021": 3000,
@@ -187,7 +180,6 @@
                 {
                   "Id": "5.6.1.01.7431200",
                   "Desc": "Auszahlungen für Honorare",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 8470.2,
                     "2021": 16500,
@@ -282,7 +274,6 @@
                 {
                   "Id": "5.6.1.01/3006.7851000",
                   "Desc": "Auszahlungen für Hochbaumaßnahmen",
-                  "AboveValueLimit": null,
                   "Budgets": {
                     "2020": 26803.7,
                     "2021": 15000,
