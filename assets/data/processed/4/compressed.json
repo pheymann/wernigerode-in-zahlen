@@ -2,5 +2,7 @@
   "ID": "4",
   "DepartmentName": "Budget Bürgerservice",
   "CashflowTotal": -16632300,
+  "CashflowAdministration": -13744000,
+  "CashflowInvestments": -2888300,
   "NumberOfProducts": 28
 }

@@ -22,9 +22,11 @@ type OverviewCopy struct {
 	IntroCashflowTotal template.HTML
 	IntroDescription   template.HTML
 
-	CashflowTotal         string
-	IncomeCashflowTotal   string
-	ExpensesCashflowTotal string
+	CashflowTotal          string
+	CashflowAdministration string
+	CashflowInvestments    string
+	IncomeCashflowTotal    string
+	ExpensesCashflowTotal  string
 
 	AdditionalInfo           template.HTML
 	Departments              []OverviewDepartmentCopy
@@ -36,9 +38,11 @@ type OverviewCopy struct {
 }
 
 type OverviewDepartmentCopy struct {
-	Name          string
-	Link          string
-	CashflowTotal string
+	Name                   string
+	Link                   string
+	CashflowTotal          string
+	CashflowAdministration string
+	CashflowInvestments    string
 }
 
 type OverviewCSS struct {

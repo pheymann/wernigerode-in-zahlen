@@ -34,11 +34,11 @@
         <div class="row">
           <div class="col-6">
             <h5 class="center">Einnahmen: 37.294.200,00€</h5>
-            <canvas id="chartjs-594af6f6-1b49-4adb-acd6-1895cbe7a084"></canvas>
+            <canvas id="chartjs-06a8bce5-9402-4e38-9d9f-f28910307c10"></canvas>
           </div>
           <div class="col-6">
             <h5 class="center">Ausgaben: -2.504.900,00€</h5>
-            <canvas id="chartjs-3df0a15b-e34e-40bb-87aa-a7fcb1c4c1ad"></canvas>
+            <canvas id="chartjs-b7f9eb57-fde0-4ade-b83e-38fceac027b3"></canvas>
           </div>
         </div>
       
@@ -49,52 +49,72 @@
         <tbody>
           <tr>
             <th>Produkt</th>
-            <th>Finanzplan</th>
+            <th>Gesamt-Finanzplan</th>
+            <th>laufende Verwaltungstätigkeiten</th>
+            <th>Investitionen</th>
           </tr>
           <tr>
             <th></th>
             <th>34.789.300,00€</th>
+            <th>33.389.400,00€</th>
+            <th>1.399.900,00€</th>
           </tr>
 
           
             <tr>
               <td><a href="/2/5/3/1/01/product.html">Elektrizitätsversorgung (Konzessionsabgabe)</a></td>
               <td>1.170.500,00€</td>
+              <td>1.170.500,00€</td>
+              <td>0,00€</td>
             </tr>
           
             <tr>
               <td><a href="/2/5/3/4/01/product.html">Fernwärmeversorgung (Konzessionsabgabe)</a></td>
               <td>40.000,00€</td>
+              <td>40.000,00€</td>
+              <td>0,00€</td>
             </tr>
           
             <tr>
               <td><a href="/2/5/3/2/01/product.html">Gasversorgung (Konzessionsabgabe)</a></td>
               <td>187.800,00€</td>
+              <td>187.800,00€</td>
+              <td>0,00€</td>
             </tr>
           
             <tr>
               <td><a href="/2/5/3/5/01/product.html">Gewinnabführung Stadtwerke</a></td>
               <td>3.900.000,00€</td>
+              <td>3.900.000,00€</td>
+              <td>0,00€</td>
             </tr>
           
             <tr>
               <td><a href="/2/1/1/1/07/product.html">Haushalts-,Kassen-und Rechnungswesen</a></td>
               <td>-1.550.500,00€</td>
+              <td>-1.550.500,00€</td>
+              <td>0,00€</td>
             </tr>
           
             <tr>
               <td><a href="/2/6/1/2/01/product.html">Sonstige allgemeine Finanzwirtschaft</a></td>
               <td>-954.400,00€</td>
+              <td>-954.400,00€</td>
+              <td>0,00€</td>
             </tr>
           
             <tr>
               <td><a href="/2/6/1/1/01/product.html">Steuern, allgemeine Zuweisungen, allgemeine Umlagen</a></td>
               <td>31.565.900,00€</td>
+              <td>30.166.000,00€</td>
+              <td>1.399.900,00€</td>
             </tr>
           
             <tr>
               <td><a href="/2/5/3/3/01/product.html">Wasserversorgung (Konzessionsabgabe)</a></td>
               <td>430.000,00€</td>
+              <td>430.000,00€</td>
+              <td>0,00€</td>
             </tr>
           
         </tbody>
@@ -123,7 +143,7 @@
     <script>
       
       var incomeProductLinks = ["/2/5/3/1/01/product.html","/2/5/3/2/01/product.html","/2/5/3/3/01/product.html","/2/5/3/4/01/product.html","/2/5/3/5/01/product.html","/2/6/1/1/01/product.html"];
-      var incomeCanvas = document.getElementById('chartjs-594af6f6-1b49-4adb-acd6-1895cbe7a084');
+      var incomeCanvas = document.getElementById('chartjs-06a8bce5-9402-4e38-9d9f-f28910307c10');
       var incomeChart = new Chart(incomeCanvas, {
         type: 'doughnut',
         data: {
@@ -150,7 +170,7 @@
 
       
       var expenesesProductLinks = ["/2/1/1/1/07/product.html","/2/6/1/2/01/product.html"];
-      var expensesCanvas = document.getElementById('chartjs-3df0a15b-e34e-40bb-87aa-a7fcb1c4c1ad');
+      var expensesCanvas = document.getElementById('chartjs-b7f9eb57-fde0-4ade-b83e-38fceac027b3');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {

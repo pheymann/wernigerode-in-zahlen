@@ -56,17 +56,23 @@
         <tbody>
           <tr>
             <th>Fachbereich</th>
-            <th>Finanzplan</th>
+            <th>Gesamt-Finanzplan</th>
+            <th>laufende Verwaltungstätigkeiten</th>
+            <th>Investitionen</th>
           </tr>
           <tr>
             <th></th>
             <th>{{.Copy.CashflowTotal}}</th>
+            <th>{{.Copy.CashflowAdministration}}</th>
+            <th>{{.Copy.CashflowInvestments}}</th>
           </tr>
 
           {{range .Copy.Departments}}
             <tr>
               <td><a href="{{.Link}}">{{.Name}}</a></td>
               <td>{{.CashflowTotal}}</td>
+              <td>{{.CashflowAdministration}}</td>
+              <td>{{.CashflowInvestments}}</td>
             </tr>
           {{end}}
         </tbody>

@@ -90,13 +90,42 @@ func Generate(
 
 func sanityCheck(financialPlan model.FinancialPlan, compressed *model.CompressedDepartment, year model.BudgetYear) {
 	var cashflowTotal = 0.0
+	var cashflowAdministration = 0.0
+	var cashflowInvestmens = 0.0
 
 	for _, balance := range financialPlan.Balances {
-		cashflowTotal += balance.Budgets[year]
+		budget := balance.Budgets[year]
+		cashflowTotal += budget
+
+		switch balance.Class {
+		case model.AccountClassAdministration:
+			cashflowAdministration = budget
+
+		case model.AccountClassInvestments:
+			cashflowInvestmens = budget
+		}
 	}
 
 	if shared.IsUnequal(cashflowTotal, compressed.CashflowTotal) {
-		fmt.Printf("[WARNING] Compressed and financial plan cashflow divert. Expected %f, got %f\n", cashflowTotal, compressed.CashflowTotal)
+		fmt.Printf(
+			"[WARNING] Compressed and financial plan cashflow divert. Expected %f, got %f\n",
+			cashflowTotal,
+			compressed.CashflowTotal,
+		)
+	}
+	if shared.IsUnequal(cashflowAdministration, compressed.CashflowAdministration) {
+		fmt.Printf(
+			"[WARNING] Compressed and financial plan administration cashflow divert. Expected %f, got %f\n",
+			cashflowAdministration,
+			compressed.CashflowAdministration,
+		)
+	}
+	if shared.IsUnequal(cashflowInvestmens, compressed.CashflowInvestments) {
+		fmt.Printf(
+			"[WARNING] Compressed and financial plan investments cashflow divert. Expected %f, got %f\n",
+			cashflowInvestmens,
+			compressed.CashflowInvestments,
+		)
 	}
 }
 
@@ -116,7 +145,18 @@ func populateChartData(
 	var cashflowTotal = 0.0
 
 	for _, balance := range product.FinancialPlan.Balances {
-		cashflowTotal += balance.Budgets[year]
+		budget := balance.Budgets[year]
+		cashflowTotal += budget
+
+		switch balance.Class {
+		case model.AccountClassAdministration:
+			compressed.CashflowAdministration += budget
+			data.CashflowAdministration = budget
+
+		case model.AccountClassInvestments:
+			compressed.CashflowInvestments += budget
+			data.CashflowInvestments = budget
+		}
 	}
 
 	if shared.IsUnequal(cashflowTotal, product.CashflowTotal) {

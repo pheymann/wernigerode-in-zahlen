@@ -17,6 +17,8 @@ func Encode(
 	year model.BudgetYear,
 
 	cashflowTotal float64,
+	cashflowAdministration float64,
+	cashflowInvestments float64,
 
 	incomeTotalCashFlow float64,
 	incomeDepartmentLinks []string,
@@ -47,9 +49,11 @@ func Encode(
 			Alles startet mit der Gesamtübersicht. In %s planen wir`, year)),
 			IntroDescription: encodeIntroDescription(cashflowTotal, len(departments)),
 
-			CashflowTotal:         htmlEncoder.EncodeBudget(cashflowTotal, p),
-			IncomeCashflowTotal:   "Einnahmen: " + htmlEncoder.EncodeBudget(incomeTotalCashFlow, p),
-			ExpensesCashflowTotal: "Ausgaben: " + htmlEncoder.EncodeBudget(expensesTotalCashFlow, p),
+			CashflowTotal:          htmlEncoder.EncodeBudget(cashflowTotal, p),
+			CashflowAdministration: htmlEncoder.EncodeBudget(cashflowAdministration, p),
+			CashflowInvestments:    htmlEncoder.EncodeBudget(cashflowInvestments, p),
+			IncomeCashflowTotal:    "Einnahmen: " + htmlEncoder.EncodeBudget(incomeTotalCashFlow, p),
+			ExpensesCashflowTotal:  "Ausgaben: " + htmlEncoder.EncodeBudget(expensesTotalCashFlow, p),
 
 			AdditionalInfo: `Aktuell bildet diese Webseite die Finanzdaten aus den Teilfinanzplänen A ab. Zusätzliche finanzielle Mittel zum Beispiel aus
 			dem Finanzmittelüberschuss sind nicht enthalten. Die Gesamtausgaben würden sich dann auf <strong>-3.284.100,00€</strong> reduzieren (siehe Haushaltsplan).
@@ -75,9 +79,11 @@ func Encode(
 
 func encodeCompressedDepartment(department model.CompressedDepartment, p *message.Printer) html.OverviewDepartmentCopy {
 	return html.OverviewDepartmentCopy{
-		Name:          department.DepartmentName,
-		CashflowTotal: htmlEncoder.EncodeBudget(department.CashflowTotal, p),
-		Link:          department.GetDepartmentLink(),
+		Name:                   department.DepartmentName,
+		CashflowTotal:          htmlEncoder.EncodeBudget(department.CashflowTotal, p),
+		CashflowAdministration: htmlEncoder.EncodeBudget(department.CashflowAdministration, p),
+		CashflowInvestments:    htmlEncoder.EncodeBudget(department.CashflowInvestments, p),
+		Link:                   department.GetDepartmentLink(),
 	}
 }
 

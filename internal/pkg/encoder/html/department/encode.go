@@ -46,9 +46,11 @@ func Encode(
 			IntroCashflowTotal: fmt.Sprintf("In %s planen wir", year),
 			IntroDescription:   encodeIntroDescription(compressed.CashflowTotal, compressed.NumberOfProducts),
 
-			CashflowTotal:         htmlEncoder.EncodeBudget(compressed.CashflowTotal, p),
-			IncomeCashflowTotal:   "Einnahmen: " + htmlEncoder.EncodeBudget(incomeTotalCashFlow, p),
-			ExpensesCashflowTotal: "Ausgaben: " + htmlEncoder.EncodeBudget(expensesTotalCashFlow, p),
+			CashflowTotal:          htmlEncoder.EncodeBudget(compressed.CashflowTotal, p),
+			CashflowAdministration: htmlEncoder.EncodeBudget(compressed.CashflowAdministration, p),
+			CashflowInvestments:    htmlEncoder.EncodeBudget(compressed.CashflowInvestments, p),
+			IncomeCashflowTotal:    "Einnahmen: " + htmlEncoder.EncodeBudget(incomeTotalCashFlow, p),
+			ExpensesCashflowTotal:  "Ausgaben: " + htmlEncoder.EncodeBudget(expensesTotalCashFlow, p),
 
 			Products: shared.MapSlice(productData, func(productData html.ProductTableData) html.DepartmentProductCopy {
 				return encodeDepartmentProductData(productData, p)
@@ -69,9 +71,11 @@ func Encode(
 
 func encodeDepartmentProductData(data html.ProductTableData, p *message.Printer) html.DepartmentProductCopy {
 	return html.DepartmentProductCopy{
-		Name:          data.Name,
-		CashflowTotal: htmlEncoder.EncodeBudget(data.CashflowTotal, p),
-		Link:          data.Link,
+		Name:                   data.Name,
+		CashflowTotal:          htmlEncoder.EncodeBudget(data.CashflowTotal, p),
+		CashflowAdministration: htmlEncoder.EncodeBudget(data.CashflowAdministration, p),
+		CashflowInvestments:    htmlEncoder.EncodeBudget(data.CashflowInvestments, p),
+		Link:                   data.Link,
 	}
 }
 

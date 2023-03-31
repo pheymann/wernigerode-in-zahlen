@@ -40,11 +40,11 @@
         <div class="row">
           <div class="col-6">
             <h5 class="center">Einnahmen: 34.789.300,00€</h5>
-            <canvas id="chartjs-af1ffc35-f2ce-442a-8385-6f076bef1bb8"></canvas>
+            <canvas id="chartjs-6c5d3994-543a-4d38-aa16-4b9b39a2f359"></canvas>
           </div>
           <div class="col-6">
             <h5 class="center">Ausgaben: -39.512.500,00€</h5>
-            <canvas id="chartjs-3bf287b8-ca23-4912-ab9c-61a23d5ba3c5"></canvas>
+            <canvas id="chartjs-5bee6117-a98f-4a33-a9c4-66f0203475e9"></canvas>
           </div>
         </div>
       </div>
@@ -62,37 +62,51 @@
         <tbody>
           <tr>
             <th>Fachbereich</th>
-            <th>Finanzplan</th>
+            <th>Gesamt-Finanzplan</th>
+            <th>laufende Verwaltungstätigkeiten</th>
+            <th>Investitionen</th>
           </tr>
           <tr>
             <th></th>
             <th>-4.723.200,00€</th>
+            <th>-84.200,00€</th>
+            <th>-4.639.000,00€</th>
           </tr>
 
           
             <tr>
               <td><a href="/3/department.html">Budget Betriebsbereiche</a></td>
               <td>-5.804.200,00€</td>
+              <td>-5.494.400,00€</td>
+              <td>-309.800,00€</td>
             </tr>
           
             <tr>
               <td><a href="/4/department.html">Budget Bürgerservice</a></td>
               <td>-16.632.300,00€</td>
+              <td>-13.744.000,00€</td>
+              <td>-2.888.300,00€</td>
             </tr>
           
             <tr>
               <td><a href="/2/department.html">Budget Finanzen</a></td>
               <td>34.789.300,00€</td>
+              <td>33.389.400,00€</td>
+              <td>1.399.900,00€</td>
             </tr>
           
             <tr>
               <td><a href="/5/department.html">Budget Stadtentwicklung</a></td>
               <td>-10.904.000,00€</td>
+              <td>-8.554.200,00€</td>
+              <td>-2.349.800,00€</td>
             </tr>
           
             <tr>
               <td><a href="/1/department.html">Budget des Bürgermeisters</a></td>
               <td>-6.172.000,00€</td>
+              <td>-5.681.000,00€</td>
+              <td>-491.000,00€</td>
             </tr>
           
         </tbody>
@@ -121,7 +135,7 @@
     <script>
       
         var incomeDepartmentLinks = ["/2/department.html"];
-        var incomeCanvas = document.getElementById('chartjs-af1ffc35-f2ce-442a-8385-6f076bef1bb8');
+        var incomeCanvas = document.getElementById('chartjs-6c5d3994-543a-4d38-aa16-4b9b39a2f359');
         var incomeChart = new Chart(incomeCanvas, {
           type: 'doughnut',
           data: {
@@ -147,7 +161,7 @@
       
 
       var expensesDepartmentLinks = ["/1/department.html","/3/department.html","/4/department.html","/5/department.html"];
-      var expensesCanvas = document.getElementById('chartjs-3bf287b8-ca23-4912-ab9c-61a23d5ba3c5');
+      var expensesCanvas = document.getElementById('chartjs-5bee6117-a98f-4a33-a9c4-66f0203475e9');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {

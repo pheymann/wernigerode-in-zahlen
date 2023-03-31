@@ -2,5 +2,7 @@
   "ID": "1",
   "DepartmentName": "Budget des Bürgermeisters",
   "CashflowTotal": -6172000,
+  "CashflowAdministration": -5681000,
+  "CashflowInvestments": -491000,
   "NumberOfProducts": 16
 }

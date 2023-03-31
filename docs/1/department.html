@@ -34,11 +34,11 @@
         <div class="row">
           <div class="col-6">
             <h5 class="center">Einnahmen: 434.700,00€</h5>
-            <canvas id="chartjs-bed954bb-b0b9-4d44-bc07-606eff3f1a86"></canvas>
+            <canvas id="chartjs-cc4feea7-d698-4ecf-84ea-f2447383123d"></canvas>
           </div>
           <div class="col-6">
             <h5 class="center">Ausgaben: -6.606.700,00€</h5>
-            <canvas id="chartjs-4f688dfb-4b05-4429-9dd3-bca4a8817694"></canvas>
+            <canvas id="chartjs-4f2b082b-b33e-416a-9ed9-9d7aa6035659"></canvas>
           </div>
         </div>
       
@@ -49,92 +49,128 @@
         <tbody>
           <tr>
             <th>Produkt</th>
-            <th>Finanzplan</th>
+            <th>Gesamt-Finanzplan</th>
+            <th>laufende Verwaltungstätigkeiten</th>
+            <th>Investitionen</th>
           </tr>
           <tr>
             <th></th>
             <th>-6.172.000,00€</th>
+            <th>-5.681.000,00€</th>
+            <th>-491.000,00€</th>
           </tr>
 
           
             <tr>
               <td><a href="/1/1/1/1/02/product.html">Beteiligungen, Controlling</a></td>
               <td>277.400,00€</td>
+              <td>277.400,00€</td>
+              <td>0,00€</td>
             </tr>
           
             <tr>
               <td><a href="/1/3/5/1/01/product.html">Förderung von zusätzlichen Arbeitsplätzen</a></td>
               <td>-14.200,00€</td>
+              <td>-14.200,00€</td>
+              <td>0,00€</td>
             </tr>
           
             <tr>
               <td><a href="/1/1/1/1/08/product.html">Gemeindegremien</a></td>
               <td>-135.200,00€</td>
+              <td>-135.200,00€</td>
+              <td>0,00€</td>
             </tr>
           
             <tr>
               <td><a href="/1/1/1/1/04/product.html">Gleichstellungsbeauftragte</a></td>
               <td>-36.700,00€</td>
+              <td>-36.700,00€</td>
+              <td>0,00€</td>
             </tr>
           
             <tr>
               <td><a href="/1/5/5/1/02/product.html">Park-und Garten GmbH</a></td>
               <td>-510.000,00€</td>
+              <td>-510.000,00€</td>
+              <td>0,00€</td>
             </tr>
           
             <tr>
               <td><a href="/1/1/1/1/09/product.html">Personalangelegenheiten</a></td>
               <td>-1.041.500,00€</td>
+              <td>-1.041.500,00€</td>
+              <td>0,00€</td>
             </tr>
           
             <tr>
               <td><a href="/1/1/1/1/05/product.html">Personalvertretung</a></td>
               <td>-95.800,00€</td>
+              <td>-95.800,00€</td>
+              <td>0,00€</td>
             </tr>
           
             <tr>
               <td><a href="/1/2/6/2/01/product.html">Philharmonisches Kammerorchester GmbH</a></td>
               <td>-360.400,00€</td>
+              <td>-360.400,00€</td>
+              <td>0,00€</td>
             </tr>
           
             <tr>
               <td><a href="/1/1/1/1/06/product.html">Rechnungsprüfung</a></td>
               <td>-159.100,00€</td>
+              <td>-159.100,00€</td>
+              <td>0,00€</td>
             </tr>
           
             <tr>
               <td><a href="/1/1/1/1/16/product.html">Rechtsangelegenheiten</a></td>
               <td>-432.800,00€</td>
+              <td>-432.800,00€</td>
+              <td>0,00€</td>
             </tr>
           
             <tr>
               <td><a href="/1/1/1/1/17/product.html">Stiftungen</a></td>
               <td>-358.700,00€</td>
+              <td>-358.700,00€</td>
+              <td>0,00€</td>
             </tr>
           
             <tr>
               <td><a href="/1/5/7/5/01/product.html">Tourismusförderung</a></td>
               <td>157.300,00€</td>
+              <td>157.300,00€</td>
+              <td>0,00€</td>
             </tr>
           
             <tr>
               <td><a href="/1/1/1/1/01/product.html">Verwaltungssteuerung</a></td>
               <td>-689.000,00€</td>
+              <td>-689.000,00€</td>
+              <td>0,00€</td>
             </tr>
           
             <tr>
               <td><a href="/1/1/2/1/01/product.html">Wahlen und Statistik</a></td>
               <td>-500,00€</td>
+              <td>-500,00€</td>
+              <td>0,00€</td>
             </tr>
           
             <tr>
               <td><a href="/1/5/7/1/01/product.html">Wirtschaftsförderung</a></td>
               <td>-187.200,00€</td>
+              <td>-337.200,00€</td>
+              <td>150.000,00€</td>
             </tr>
           
             <tr>
               <td><a href="/1/1/1/1/10/product.html">Zentrale Dienste</a></td>
               <td>-2.585.600,00€</td>
+              <td>-1.944.600,00€</td>
+              <td>-641.000,00€</td>
             </tr>
           
         </tbody>
@@ -163,7 +199,7 @@
     <script>
       
       var incomeProductLinks = ["/1/1/1/1/02/product.html","/1/5/7/5/01/product.html"];
-      var incomeCanvas = document.getElementById('chartjs-bed954bb-b0b9-4d44-bc07-606eff3f1a86');
+      var incomeCanvas = document.getElementById('chartjs-cc4feea7-d698-4ecf-84ea-f2447383123d');
       var incomeChart = new Chart(incomeCanvas, {
         type: 'doughnut',
         data: {
@@ -190,7 +226,7 @@
 
       
       var expenesesProductLinks = ["/1/1/1/1/01/product.html","/1/1/1/1/04/product.html","/1/1/1/1/05/product.html","/1/1/1/1/06/product.html","/1/1/1/1/08/product.html","/1/1/1/1/09/product.html","/1/1/1/1/10/product.html","/1/1/1/1/16/product.html","/1/1/1/1/17/product.html","/1/1/2/1/01/product.html","/1/2/6/2/01/product.html","/1/3/5/1/01/product.html","/1/5/5/1/02/product.html","/1/5/7/1/01/product.html"];
-      var expensesCanvas = document.getElementById('chartjs-4f688dfb-4b05-4429-9dd3-bca4a8817694');
+      var expensesCanvas = document.getElementById('chartjs-4f2b082b-b33e-416a-9ed9-9d7aa6035659');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {
