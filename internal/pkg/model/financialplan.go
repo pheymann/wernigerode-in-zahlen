@@ -1,16 +1,33 @@
 package model
 
+import "wernigerode-in-zahlen.de/internal/pkg/shared"
+
+type ID = string
+
 type FinancialPlan struct {
 	Balances []AccountBalance
 }
 
-type FinancialPlan2 struct {
-	Balances []AccountBalance2
+type FinancialPlanProduct struct {
+	DepartmentID          ID
+	ProductClass          ID
+	ProductDomain         ID
+	ProductGroup          ID
+	Product               ID
+	SubProduct            shared.Option[ID]
+	AdministrationBalance AccountBalance2
+	InvestmentsBalance    AccountBalance2
+}
+
+type FinancialPlanDepartment struct {
+	DepartmentID          ID
+	AdministrationBalance AccountBalance2
+	InvestmentsBalance    AccountBalance2
+	Products              map[ID]FinancialPlanProduct
 }
 
 type AccountBalance2 struct {
-	Class    AccountClass
-	Budgets  map[BudgetYear]float64
+	Budget   map[BudgetYear]float64
 	Accounts []Account2
 }
 

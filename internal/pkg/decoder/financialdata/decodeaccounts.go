@@ -9,7 +9,7 @@ import (
 )
 
 var (
-	isFinancialPlanAccount = regexp.MustCompile(`^(\d\.)+(\d{2}\.)+[^45]\d+$`)
+	isFinancialPlanAccount = regexp.MustCompile(`^(\d\.)+(\d{2}\.)+(\/\d{4}\.)?[^45]\d+$`)
 )
 
 func DecodeAccounts(rows [][]string) map[string][]fd.Account {
@@ -35,10 +35,10 @@ func DecodeAccounts(rows [][]string) map[string][]fd.Account {
 
 		account.Budget = budget
 
-		if accounts[account.ID] == nil {
-			accounts[account.ID] = []fd.Account{account}
+		if accounts[account.ProductID] == nil {
+			accounts[account.ProductID] = []fd.Account{account}
 		} else {
-			accounts[account.ID] = append(accounts[account.ID], account)
+			accounts[account.ProductID] = append(accounts[account.ProductID], account)
 		}
 	}
 

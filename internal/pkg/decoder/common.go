@@ -4,6 +4,8 @@ import (
 	"regexp"
 	"strconv"
 	"strings"
+
+	"wernigerode-in-zahlen.de/internal/pkg/shared"
 )
 
 const (
@@ -13,6 +15,13 @@ const (
 
 func DecodeString(decoder *regexp.Regexp, matchLabel string, matches []string) string {
 	return matches[decoder.SubexpIndex(matchLabel)]
+}
+
+func DecodeOptString(decoder *regexp.Regexp, matchLabel string, matches []string) shared.Option[string] {
+	if decoder.SubexpIndex(matchLabel) < 0 {
+		return shared.None[string]()
+	}
+	return shared.Some(matches[decoder.SubexpIndex(matchLabel)])
 }
 
 func DecodeBudget(parser *regexp.Regexp, matchLabel string, matches []string) float64 {
