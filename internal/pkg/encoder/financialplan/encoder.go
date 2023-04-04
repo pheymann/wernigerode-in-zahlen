@@ -14,12 +14,3 @@ func Encode(financialPlan model.FinancialPlan) string {
 
 	return string(bytes)
 }
-
-func Encode2(financialPlan model.FinancialPlan2) string {
-	bytes, err := json.MarshalIndent(financialPlan, "", "  ")
-	if err != nil {
-		panic(err)
-	}
-
-	return string(bytes)
-}

@@ -17,13 +17,22 @@ type FinancialPlanProduct struct {
 	SubProduct            shared.Option[ID]
 	AdministrationBalance AccountBalance2
 	InvestmentsBalance    AccountBalance2
+	CashFlow              Cashflow
 }
 
 type FinancialPlanDepartment struct {
 	DepartmentID          ID
-	AdministrationBalance AccountBalance2
-	InvestmentsBalance    AccountBalance2
+	AdministrationBalance map[BudgetYear]float64
+	InvestmentsBalance    map[BudgetYear]float64
+	Cashflow              Cashflow
 	Products              map[ID]FinancialPlanProduct
+}
+
+type FinancialPlanCity struct {
+	AdministrationBalance map[BudgetYear]float64
+	InvestmentsBalance    map[BudgetYear]float64
+	Cashflow              Cashflow
+	Departments           map[ID]FinancialPlanDepartment
 }
 
 type AccountBalance2 struct {
@@ -36,6 +45,12 @@ type Account2 struct {
 	ProductID   string
 	Description string
 	Budget      map[BudgetYear]float64
+}
+
+type Cashflow struct {
+	Total    map[BudgetYear]float64
+	Income   map[BudgetYear]float64
+	Expenses map[BudgetYear]float64
 }
 
 type AccountClass = string
