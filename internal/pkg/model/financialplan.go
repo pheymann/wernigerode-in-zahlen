@@ -17,25 +17,21 @@ type FinancialPlanProduct struct {
 func NewFinancialPlanProduct() *FinancialPlanProduct {
 	return &FinancialPlanProduct{
 		AdministrationBalance: AccountBalance2{
-			Budget:   make(map[BudgetYear]float64),
+			Cashflow: NewCashFlow(),
 			Accounts: make([]Account2, 0),
 		},
 		InvestmentsBalance: AccountBalance2{
-			Budget:   make(map[BudgetYear]float64),
+			Cashflow: NewCashFlow(),
 			Accounts: make([]Account2, 0),
 		},
-		CashFlow: Cashflow{
-			Total:    make(map[BudgetYear]float64),
-			Income:   make(map[BudgetYear]float64),
-			Expenses: make(map[BudgetYear]float64),
-		},
+		CashFlow: NewCashFlow(),
 	}
 }
 
 type FinancialPlanDepartment struct {
 	DepartmentID          ID
-	AdministrationBalance map[BudgetYear]float64
-	InvestmentsBalance    map[BudgetYear]float64
+	AdministrationBalance map[BudgetYear]Cashflow
+	InvestmentsBalance    map[BudgetYear]Cashflow
 	Cashflow              Cashflow
 	Products              map[ID]FinancialPlanProduct
 }
@@ -48,7 +44,7 @@ type FinancialPlanCity struct {
 }
 
 type AccountBalance2 struct {
-	Budget   map[BudgetYear]float64
+	Cashflow Cashflow
 	Accounts []Account2
 }
 
@@ -63,6 +59,14 @@ type Cashflow struct {
 	Total    map[BudgetYear]float64
 	Income   map[BudgetYear]float64
 	Expenses map[BudgetYear]float64
+}
+
+func NewCashFlow() Cashflow {
+	return Cashflow{
+		Total:    make(map[BudgetYear]float64),
+		Income:   make(map[BudgetYear]float64),
+		Expenses: make(map[BudgetYear]float64),
+	}
 }
 
 type AccountClass = string
