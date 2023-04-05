@@ -1,7 +1,5 @@
 package model
 
-import "wernigerode-in-zahlen.de/internal/pkg/shared"
-
 type ID = string
 
 type FinancialPlan struct {
@@ -9,15 +7,29 @@ type FinancialPlan struct {
 }
 
 type FinancialPlanProduct struct {
-	DepartmentID          ID
-	ProductClass          ID
-	ProductDomain         ID
-	ProductGroup          ID
-	Product               ID
-	SubProduct            shared.Option[ID]
+	ID                    ID
 	AdministrationBalance AccountBalance2
 	InvestmentsBalance    AccountBalance2
 	CashFlow              Cashflow
+	Metadata              Metadata
+}
+
+func NewFinancialPlanProduct() *FinancialPlanProduct {
+	return &FinancialPlanProduct{
+		AdministrationBalance: AccountBalance2{
+			Budget:   make(map[BudgetYear]float64),
+			Accounts: make([]Account2, 0),
+		},
+		InvestmentsBalance: AccountBalance2{
+			Budget:   make(map[BudgetYear]float64),
+			Accounts: make([]Account2, 0),
+		},
+		CashFlow: Cashflow{
+			Total:    make(map[BudgetYear]float64),
+			Income:   make(map[BudgetYear]float64),
+			Expenses: make(map[BudgetYear]float64),
+		},
+	}
 }
 
 type FinancialPlanDepartment struct {

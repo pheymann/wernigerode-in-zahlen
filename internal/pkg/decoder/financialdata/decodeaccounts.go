@@ -27,11 +27,11 @@ func DecodeAccounts(rows [][]string) map[string][]fd.Account {
 		}
 
 		budget := make(map[string]float64)
-		budget[model.BudgetYear2022] = decoder.DecodeFloat64(row[8])
-		budget[model.BudgetYear2023] = decoder.DecodeFloat64(row[10])
-		budget[model.BudgetYear2024] = decoder.DecodeFloat64(row[11])
-		budget[model.BudgetYear2025] = decoder.DecodeFloat64(row[12])
-		budget[model.BudgetYear2026] = decoder.DecodeFloat64(row[13])
+		budget[model.BudgetYear2022] = decoder.DecodeGermanFloat(row[8])
+		budget[model.BudgetYear2023] = decoder.DecodeGermanFloat(row[10])
+		budget[model.BudgetYear2024] = decoder.DecodeGermanFloat(row[11])
+		budget[model.BudgetYear2025] = decoder.DecodeGermanFloat(row[12])
+		budget[model.BudgetYear2026] = decoder.DecodeGermanFloat(row[13])
 
 		account.Budget = budget
 

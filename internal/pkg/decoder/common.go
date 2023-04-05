@@ -43,6 +43,21 @@ func DecodeBudget(parser *regexp.Regexp, matchLabel string, matches []string) fl
 	return i
 }
 
+func DecodeGermanFloat(strFloat string) float64 {
+	// 123.456,78 -> 123456.78
+	normalizedFloat := strings.ReplaceAll(
+		strings.ReplaceAll(
+			strFloat,
+			".",
+			"",
+		),
+		",",
+		".",
+	)
+
+	return DecodeFloat64(normalizedFloat)
+}
+
 func DecodeFloat64(strFloat string) float64 {
 	i, err := strconv.ParseFloat(strFloat, 64)
 	if err != nil {

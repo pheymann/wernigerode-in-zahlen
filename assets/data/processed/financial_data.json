@@ -1,0 +1,511 @@
+{
+  "AdministrationBalance": {},
+  "InvestmentsBalance": {},
+  "Cashflow": {
+    "Total": null,
+    "Income": null,
+    "Expenses": null
+  },
+  "Departments": {
+    "": {
+      "DepartmentID": "",
+      "AdministrationBalance": null,
+      "InvestmentsBalance": null,
+      "Cashflow": {
+        "Total": null,
+        "Income": null,
+        "Expenses": null
+      },
+      "Products": {
+        "3.6.5.02.11": {
+          "ID": "3.6.5.02.11",
+          "AdministrationBalance": {
+            "Budget": {},
+            "Accounts": [
+              {
+                "ID": "3.6.5.02.11.6141000",
+                "ProductID": "3.6.5.02.11",
+                "Description": "Zuweisungen für laufende Zwecke vom Land",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 13300,
+                  "2024": 13300,
+                  "2025": 13300,
+                  "2026": 13300
+                }
+              },
+              {
+                "ID": "3.6.5.02.11.6142000",
+                "ProductID": "3.6.5.02.11",
+                "Description": "Zuweisungen für laufende Zwecke von Gemeinden und Gemeindeverbünden",
+                "Budget": {
+                  "2022": 355800,
+                  "2023": 333300,
+                  "2024": 333300,
+                  "2025": 333300,
+                  "2026": 333300
+                }
+              },
+              {
+                "ID": "3.6.5.02.11.6147000",
+                "ProductID": "3.6.5.02.11",
+                "Description": "Zuschüsse für laufende Zwecke von privaten Unternehmen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.11.6148000",
+                "ProductID": "3.6.5.02.11",
+                "Description": "Zuschüsse für laufende Zwecke von übrigen Bereichen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.11.6321000",
+                "ProductID": "3.6.5.02.11",
+                "Description": "Benutzungsgebühren und ähnliche Entgelte",
+                "Budget": {
+                  "2022": 97400,
+                  "2023": 81800,
+                  "2024": 81800,
+                  "2025": 81800,
+                  "2026": 81800
+                }
+              },
+              {
+                "ID": "3.6.5.02.11.6461000",
+                "ProductID": "3.6.5.02.11",
+                "Description": "Sonstige privatrechtliche Leistungsentgelte",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.11.6480001",
+                "ProductID": "3.6.5.02.11",
+                "Description": "Einzahlungen aus Kostenerstattungen vom Bund",
+                "Budget": {
+                  "2022": 3600,
+                  "2023": 3600,
+                  "2024": 3600,
+                  "2025": 3600,
+                  "2026": 3600
+                }
+              },
+              {
+                "ID": "3.6.5.02.11.6481000",
+                "ProductID": "3.6.5.02.11",
+                "Description": "Einzahlungen aus Kostenerstattungen vom Land",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.11.6482000",
+                "ProductID": "3.6.5.02.11",
+                "Description": "Einzahlungen aus Kostenerstattungen von Gemeinden und Gemeindeverbünden",
+                "Budget": {
+                  "2022": 41300,
+                  "2023": 47700,
+                  "2024": 48400,
+                  "2025": 49200,
+                  "2026": 49900
+                }
+              },
+              {
+                "ID": "3.6.5.02.11.6484000",
+                "ProductID": "3.6.5.02.11",
+                "Description": "Einzahlungen aus Kostenerstattungen von gesetzlichen Sozialversicherungen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.11.6485000",
+                "ProductID": "3.6.5.02.11",
+                "Description": "Einzahl. aus Kostenerstattungen von verbund. Untern., Sondervermü. und Beteilig.",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.11.6487000",
+                "ProductID": "3.6.5.02.11",
+                "Description": "Einzahlungen aus Kostenerstattungen von privaten Unternehmen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.11.7012000",
+                "ProductID": "3.6.5.02.11",
+                "Description": "Dienstauszahlungen und dgl. an Arbeitnehmer",
+                "Budget": {
+                  "2022": 542200,
+                  "2023": 544100,
+                  "2024": 557700,
+                  "2025": 571700,
+                  "2026": 586100
+                }
+              },
+              {
+                "ID": "3.6.5.02.11.7019000",
+                "ProductID": "3.6.5.02.11",
+                "Description": "Dienstauszahlungen und dgl. an sonstige Beschäftigte",
+                "Budget": {
+                  "2022": 5100,
+                  "2023": 4800,
+                  "2024": 5000,
+                  "2025": 5200,
+                  "2026": 5400
+                }
+              },
+              {
+                "ID": "3.6.5.02.11.7022000",
+                "ProductID": "3.6.5.02.11",
+                "Description": "Beiträge zu Versorgungskassen für Arbeitnehmer",
+                "Budget": {
+                  "2022": 22700,
+                  "2023": 21900,
+                  "2024": 22500,
+                  "2025": 23100,
+                  "2026": 23800
+                }
+              },
+              {
+                "ID": "3.6.5.02.11.7032000",
+                "ProductID": "3.6.5.02.11",
+                "Description": "Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer",
+                "Budget": {
+                  "2022": 109100,
+                  "2023": 109400,
+                  "2024": 112200,
+                  "2025": 115000,
+                  "2026": 118000
+                }
+              },
+              {
+                "ID": "3.6.5.02.11.7039000",
+                "ProductID": "3.6.5.02.11",
+                "Description": "Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschüft.",
+                "Budget": {
+                  "2022": 2100,
+                  "2023": 1900,
+                  "2024": 2000,
+                  "2025": 2100,
+                  "2026": 2200
+                }
+              },
+              {
+                "ID": "3.6.5.02.11.7041000",
+                "ProductID": "3.6.5.02.11",
+                "Description": "Beihilfen, Unterstützungsleistungen für Beschäftigte",
+                "Budget": {
+                  "2022": 2600,
+                  "2023": 2900,
+                  "2024": 3000,
+                  "2025": 3100,
+                  "2026": 3200
+                }
+              },
+              {
+                "ID": "3.6.5.02.11.7211000",
+                "ProductID": "3.6.5.02.11",
+                "Description": "Unterhaltung der Grundstücke und baulichen Anlagen",
+                "Budget": {
+                  "2022": 500,
+                  "2023": 500,
+                  "2024": 500,
+                  "2025": 500,
+                  "2026": 500
+                }
+              },
+              {
+                "ID": "3.6.5.02.11.7211014",
+                "ProductID": "3.6.5.02.11",
+                "Description": "Unterhaltung der Grundstücke und baulichen Anlagen-Gebüudemanagement",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.11.7221000",
+                "ProductID": "3.6.5.02.11",
+                "Description": "Unterhaltung des sonstigen unbeweglichen Vermügens",
+                "Budget": {
+                  "2022": 700,
+                  "2023": 700,
+                  "2024": 700,
+                  "2025": 700,
+                  "2026": 700
+                }
+              },
+              {
+                "ID": "3.6.5.02.11.7231000",
+                "ProductID": "3.6.5.02.11",
+                "Description": "Auszahlungen für Mieten und Pachten",
+                "Budget": {
+                  "2022": 110400,
+                  "2023": 110500,
+                  "2024": 110500,
+                  "2025": 110500,
+                  "2026": 110500
+                }
+              },
+              {
+                "ID": "3.6.5.02.11.7241000",
+                "ProductID": "3.6.5.02.11",
+                "Description": "Bewirtschaftung der Grundstücke und baulichen Anlagen",
+                "Budget": {
+                  "2022": 15400,
+                  "2023": 19400,
+                  "2024": 19700,
+                  "2025": 20000,
+                  "2026": 20300
+                }
+              },
+              {
+                "ID": "3.6.5.02.11.7252000",
+                "ProductID": "3.6.5.02.11",
+                "Description": "Erwerb geringwertiger Vermügensgegenstünde",
+                "Budget": {
+                  "2022": 1200,
+                  "2023": 1200,
+                  "2024": 1200,
+                  "2025": 1200,
+                  "2026": 1200
+                }
+              },
+              {
+                "ID": "3.6.5.02.11.7255000",
+                "ProductID": "3.6.5.02.11",
+                "Description": "Unterhaltung des sonstigen beweglichen Vermügens",
+                "Budget": {
+                  "2022": 300,
+                  "2023": 300,
+                  "2024": 300,
+                  "2025": 300,
+                  "2026": 300
+                }
+              },
+              {
+                "ID": "3.6.5.02.11.7261000",
+                "ProductID": "3.6.5.02.11",
+                "Description": "Besondere zahlungswirksame Aufwendungen für Beschäftigte",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.11.7271000",
+                "ProductID": "3.6.5.02.11",
+                "Description": "Besondere Verwaltungs- und Betriebsauszahlungen",
+                "Budget": {
+                  "2022": 2000,
+                  "2023": 1500,
+                  "2024": 1500,
+                  "2025": 1500,
+                  "2026": 1500
+                }
+              },
+              {
+                "ID": "3.6.5.02.11.7291000",
+                "ProductID": "3.6.5.02.11",
+                "Description": "Auszahlungen für sonstige Dienstleistungen",
+                "Budget": {
+                  "2022": 19600,
+                  "2023": 27600,
+                  "2024": 27800,
+                  "2025": 28000,
+                  "2026": 28200
+                }
+              },
+              {
+                "ID": "3.6.5.02.11.7411000",
+                "ProductID": "3.6.5.02.11",
+                "Description": "Sonstige Personal- und Versorgungsauszahlungen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.11.7431000",
+                "ProductID": "3.6.5.02.11",
+                "Description": "Geschüftsauszahlungen",
+                "Budget": {
+                  "2022": 800,
+                  "2023": 900,
+                  "2024": 900,
+                  "2025": 900,
+                  "2026": 900
+                }
+              },
+              {
+                "ID": "3.6.5.02.11.7431200",
+                "ProductID": "3.6.5.02.11",
+                "Description": "Auszahlungen für Honorare",
+                "Budget": {
+                  "2022": 1500,
+                  "2023": 2400,
+                  "2024": 2400,
+                  "2025": 2400,
+                  "2026": 2400
+                }
+              },
+              {
+                "ID": "3.6.5.02.11.7431300",
+                "ProductID": "3.6.5.02.11",
+                "Description": "Auszahlungen für Planungsleistungen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.11.7431400",
+                "ProductID": "3.6.5.02.11",
+                "Description": "Auszahlungen für Beitragsservice (GEZ)",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.11.7441000",
+                "ProductID": "3.6.5.02.11",
+                "Description": "Steuern, Versicherungen, Schadensfülle",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.11.8117000",
+                "ProductID": "3.6.5.02.11",
+                "Description": "Auszahlung interne Leistungen",
+                "Budget": {
+                  "2022": 36800,
+                  "2023": 38100,
+                  "2024": 39900,
+                  "2025": 41700,
+                  "2026": 43600
+                }
+              }
+            ]
+          },
+          "InvestmentsBalance": {
+            "Budget": {},
+            "Accounts": []
+          },
+          "CashFlow": {
+            "Total": {
+              "2022": 374900,
+              "2023": 408400,
+              "2024": 427400,
+              "2025": 446700,
+              "2026": 466900
+            },
+            "Income": {
+              "2022": 873000,
+              "2023": 888100,
+              "2024": 907800,
+              "2025": 927900,
+              "2026": 948800
+            },
+            "Expenses": {
+              "2022": -498100,
+              "2023": -479700,
+              "2024": -480400,
+              "2025": -481200,
+              "2026": -481900
+            }
+          },
+          "Metadata": {
+            "Department": {
+              "ID": "",
+              "Name": "",
+              "Accountable": ""
+            },
+            "ProductClass": {
+              "ID": "",
+              "Name": "",
+              "Accountable": ""
+            },
+            "ProductDomain": {
+              "ID": "",
+              "Name": "",
+              "Responsible": ""
+            },
+            "ProductGroup": {
+              "ID": "",
+              "Name": "",
+              "Desc": ""
+            },
+            "Product": {
+              "ID": "",
+              "Name": "",
+              "LegalRequirement": ""
+            },
+            "SubProduct": null,
+            "Description": "",
+            "Mission": "",
+            "Target": "",
+            "Objectives": "",
+            "Services": ""
+          }
+        }
+      }
+    }
+  }
+}

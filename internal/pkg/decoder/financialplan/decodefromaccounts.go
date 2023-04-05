@@ -15,16 +15,16 @@ var (
 	isInvestmentIncomeRegex  = regexp.MustCompile(`^(\d\.)+(\d{2})+\/\d{4}\.6\d+$`)
 	isInvestmentExpenseRegex = regexp.MustCompile(`^(\d\.)+(\d{2})+\/\d{4}\.7\d+$`)
 
-	metadataRegex = regexp.MustCompile(`^(?P<class>\d)\.(?P<domain>\d)\.(?P<group>\d)\.(?P<product>\d{2})(\.(?P<sub_product>\d{2}))?.*$`)
+	idRegex = regexp.MustCompile(`^(?P<id>\d\.\d\.\d\.\d{2}(\.\d{2})?).*$`)
 )
 
 func DecodeFromAccounts(accounts []fd.Account) model.FinancialPlanProduct {
 	var setMetadata = false
-	var financialPlan = &model.FinancialPlanProduct{}
+	var financialPlan = model.NewFinancialPlanProduct()
 
 	for _, account := range accounts {
 		if !setMetadata {
-			addMetadata(financialPlan, account)
+			addID(financialPlan, account)
 			setMetadata = true
 		}
 
@@ -44,14 +44,10 @@ func DecodeFromAccounts(accounts []fd.Account) model.FinancialPlanProduct {
 	return *financialPlan
 }
 
-func addMetadata(plan *model.FinancialPlanProduct, someAccount fd.Account) {
-	matches := metadataRegex.FindStringSubmatch(someAccount.ID)
+func addID(plan *model.FinancialPlanProduct, someAccount fd.Account) {
+	matches := idRegex.FindStringSubmatch(someAccount.ID)
 
-	plan.ProductClass = decoder.DecodeString(metadataRegex, "class", matches)
-	plan.ProductDomain = decoder.DecodeString(metadataRegex, "domain", matches)
-	plan.ProductGroup = decoder.DecodeString(metadataRegex, "group", matches)
-	plan.Product = decoder.DecodeString(metadataRegex, "product", matches)
-	plan.SubProduct = decoder.DecodeOptString(metadataRegex, "sub_product", matches)
+	plan.ID = decoder.DecodeString(idRegex, "id", matches)
 }
 
 func updateAdministrationBalance(plan *model.FinancialPlanProduct, account fd.Account, isExpense bool) {
