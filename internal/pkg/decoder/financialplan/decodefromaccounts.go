@@ -1,7 +1,6 @@
 package financialplan
 
 import (
-	"fmt"
 	"regexp"
 
 	"wernigerode-in-zahlen.de/internal/pkg/decoder"
@@ -13,8 +12,8 @@ var (
 	isAdminIncomeRegex  = regexp.MustCompile(`^(\d\.)+(\d{2}\.)+6\d+$`)
 	isAdminExpenseRegex = regexp.MustCompile(`^(\d\.)+(\d{2}\.)+7\d+$`)
 
-	isInvestmentIncomeRegex  = regexp.MustCompile(`^(\d\.)+(\d{2})+\/\d{4}\.6\d+$`)
-	isInvestmentExpenseRegex = regexp.MustCompile(`^(\d\.)+(\d{2})+\/\d{4}\.7\d+$`)
+	isInvestmentIncomeRegex  = regexp.MustCompile(`^(\d\.)+(\d{2}\.?)+\/\d{4}\.6\d+$`)
+	isInvestmentExpenseRegex = regexp.MustCompile(`^(\d\.)+(\d{2}\.?)+\/\d{4}\.7\d+$`)
 
 	idRegex = regexp.MustCompile(`^(?P<id>\d\.\d\.\d\.\d{2}(\.\d{2})?).*$`)
 )
@@ -37,9 +36,6 @@ func DecodeFromAccounts(accounts []fd.Account) model.FinancialPlanProduct {
 			updateInvestmentsBalance(financialPlan, account, false)
 		} else if isInvestmentExpenseRegex.MatchString(account.ID) {
 			updateInvestmentsBalance(financialPlan, account, true)
-		} else {
-			// panic("Unknown account type: " + account.ID)
-			fmt.Printf("WARN Unknown account type: %s\n", account.ID)
 		}
 	}
 

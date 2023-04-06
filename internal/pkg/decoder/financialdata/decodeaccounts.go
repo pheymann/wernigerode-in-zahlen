@@ -9,7 +9,8 @@ import (
 )
 
 var (
-	isFinancialPlanAccount = regexp.MustCompile(`^(\d\.)+(\d{2}\.?)+(\/\d{4}\.)?[^45]\d+$`)
+	isResultPlanAdminAccount      = regexp.MustCompile(`^(\d\.)+(\d{2}\.)+[45]\d+$`)
+	isResultPlanInvestmentAccount = regexp.MustCompile(`^(\d\.)+(\d{2}\.?)+\/\d{4}\.[45]\d+$`)
 )
 
 func DecodeAccounts(rows [][]string) map[string][]fd.Account {
@@ -22,7 +23,7 @@ func DecodeAccounts(rows [][]string) map[string][]fd.Account {
 			Description: row[2],
 		}
 
-		if !isFinancialPlanAccount.MatchString(account.ID) {
+		if isResultPlanAdminAccount.MatchString(account.ID) || isResultPlanInvestmentAccount.MatchString(account.ID) {
 			continue
 		}
 

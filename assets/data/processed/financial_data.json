@@ -1,21 +1,21 @@
 {
   "AdministrationBalance": {
     "Total": {
-      "2022": 69643500,
+      "2022": 67737500,
       "2023": 26798500,
       "2024": 26950400,
       "2025": 31750400,
       "2026": 26766500
     },
     "Income": {
-      "2022": 975907700,
+      "2022": 976226300,
       "2023": 993958600,
       "2024": 1014336900,
       "2025": 1038237300,
       "2026": 1051612900
     },
     "Expenses": {
-      "2022": -906264200,
+      "2022": -908488800,
       "2023": -967160100,
       "2024": -987386500,
       "2025": -1006486900,
@@ -24,48 +24,48 @@
   },
   "InvestmentsBalance": {
     "Total": {
-      "2022": -410756200,
-      "2023": -370665200,
-      "2024": -435888600,
-      "2025": -412080800,
-      "2026": -412513500
+      "2022": -435703100,
+      "2023": -406468900,
+      "2024": -474446600,
+      "2025": -451591400,
+      "2026": -454111300
     },
     "Income": {
-      "2022": 326528900,
-      "2023": 272422100,
-      "2024": 236073900,
-      "2025": 194763400,
-      "2026": 194602400
+      "2022": 381478700,
+      "2023": 323847000,
+      "2024": 287567000,
+      "2025": 246318700,
+      "2026": 246422000
     },
     "Expenses": {
-      "2022": -737285100,
-      "2023": -643087300,
-      "2024": -671962500,
-      "2025": -606844200,
-      "2026": -607115900
+      "2022": -817181800,
+      "2023": -730315900,
+      "2024": -762013600,
+      "2025": -697910100,
+      "2026": -700533300
     }
   },
   "Cashflow": {
     "Total": {
-      "2022": -1586200,
-      "2023": -3073100,
-      "2024": -6610200,
-      "2025": -4647900,
-      "2026": -3757900
+      "2022": -2060700,
+      "2023": -3379700,
+      "2024": -6698400,
+      "2025": -4733100,
+      "2026": -3847200
     },
     "Income": {
-      "2022": 82943000,
+      "2022": 83202700,
       "2023": 83642800,
       "2024": 83244800,
       "2025": 82361800,
       "2026": 83460100
     },
     "Expenses": {
-      "2022": -84529200,
-      "2023": -86715900,
-      "2024": -89855000,
-      "2025": -87009700,
-      "2026": -87218000
+      "2022": -85263400,
+      "2023": -87022500,
+      "2024": -89943200,
+      "2025": -87094900,
+      "2026": -87307300
     }
   },
   "Departments": {
@@ -73,186 +73,547 @@
       "DepartmentID": "",
       "AdministrationBalance": {
         "Total": {
-          "2022": 0,
-          "2023": -680700,
-          "2024": -699500,
-          "2025": -719600,
-          "2026": -739500
+          "2022": -1906000,
+          "2023": 0,
+          "2024": 0,
+          "2025": 0,
+          "2026": 0
         },
         "Income": {
-          "2022": 0,
-          "2023": 55200,
-          "2024": 55200,
-          "2025": 55200,
-          "2026": 55200
+          "2022": 318600,
+          "2023": 0,
+          "2024": 0,
+          "2025": 0,
+          "2026": 0
         },
         "Expenses": {
-          "2022": 0,
-          "2023": -735900,
-          "2024": -754700,
-          "2025": -774800,
-          "2026": -794700
+          "2022": -2224600,
+          "2023": 0,
+          "2024": 0,
+          "2025": 0,
+          "2026": 0
         }
       },
       "InvestmentsBalance": {
-        "Total": {},
-        "Income": {},
-        "Expenses": {}
+        "Total": {
+          "2022": -309000,
+          "2023": 0,
+          "2024": 0,
+          "2025": 0,
+          "2026": 0
+        },
+        "Income": {
+          "2022": 22600,
+          "2023": 0,
+          "2024": 0,
+          "2025": 0,
+          "2026": 0
+        },
+        "Expenses": {
+          "2022": -331600,
+          "2023": 0,
+          "2024": 0,
+          "2025": 0,
+          "2026": 0
+        }
       },
       "Cashflow": {
         "Total": {
-          "2022": 0,
-          "2023": -150500,
-          "2024": -154600,
-          "2025": -159000,
-          "2026": -163300
+          "2022": -154500,
+          "2023": 0,
+          "2024": 0,
+          "2025": 0,
+          "2026": 0
         },
         "Income": {
-          "2022": 0,
-          "2023": 9200,
-          "2024": 9200,
-          "2025": 9200,
-          "2026": 9200
+          "2022": 11300,
+          "2023": 0,
+          "2024": 0,
+          "2025": 0,
+          "2026": 0
         },
         "Expenses": {
-          "2022": 0,
-          "2023": -159700,
-          "2024": -163800,
-          "2025": -168200,
-          "2026": -172500
+          "2022": -165800,
+          "2023": 0,
+          "2024": 0,
+          "2025": 0,
+          "2026": 0
         }
       },
       "Products": {
-        "1.1.1.18": {
-          "ID": "1.1.1.18.44",
+        "3.1.5.01": {
+          "ID": "3.1.5.01.61",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
-                "2022": 0,
-                "2023": -680700,
-                "2024": -699500,
-                "2025": -719600,
-                "2026": -739500
+                "2022": -1906000,
+                "2023": 0,
+                "2024": 0,
+                "2025": 0,
+                "2026": 0
               },
               "Income": {
-                "2022": 0,
-                "2023": 55200,
-                "2024": 55200,
-                "2025": 55200,
-                "2026": 55200
+                "2022": 318600,
+                "2023": 0,
+                "2024": 0,
+                "2025": 0,
+                "2026": 0
               },
               "Expenses": {
-                "2022": 0,
-                "2023": -735900,
-                "2024": -754700,
-                "2025": -774800,
-                "2026": -794700
+                "2022": -2224600,
+                "2023": 0,
+                "2024": 0,
+                "2025": 0,
+                "2026": 0
               }
             },
             "Accounts": [
               {
-                "ID": "1.1.1.18.6481000",
-                "ProductID": "1.1.1.18",
-                "Description": "Einzahlungen aus Kostenerstattungen vom Land",
+                "ID": "3.1.5.01.6141000",
+                "ProductID": "3.1.5.01",
+                "Description": "Zuweisungen für laufende Zwecke vom Land",
                 "Budget": {
                   "2022": 0,
-                  "2023": 9200,
-                  "2024": 9200,
-                  "2025": 9200,
-                  "2026": 9200
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
                 }
               },
               {
-                "ID": "1.1.1.18.7012000",
-                "ProductID": "1.1.1.18",
+                "ID": "3.1.5.01.6142000",
+                "ProductID": "3.1.5.01",
+                "Description": "Zuweisungen für laufende Zwecke von Gemeinden und Gemeindeverbünden",
+                "Budget": {
+                  "2022": 800,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.1.5.01.6144000",
+                "ProductID": "3.1.5.01",
+                "Description": "Zuweisungen für laufende Zwecke von gesetzlichen Sozialversicherungen(Koba)",
+                "Budget": {
+                  "2022": 7200,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.1.5.01.6147000",
+                "ProductID": "3.1.5.01",
+                "Description": "Zuschüsse für laufende Zwecke von privaten Unternehmen (Spenden)",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.1.5.01.6148000",
+                "ProductID": "3.1.5.01",
+                "Description": "Zuschüsse für laufende Zwecke von übrigen Bereichen (Spenden)",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.1.5.01.6321000",
+                "ProductID": "3.1.5.01",
+                "Description": "Benutzungsgebühren und ähnliche Entgelte",
+                "Budget": {
+                  "2022": 3300,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.1.5.01.6321007",
+                "ProductID": "3.1.5.01",
+                "Description": "7 % USt BenutzGeb. \u0026 ähnl. Ent",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.1.5.01.6461000",
+                "ProductID": "3.1.5.01",
+                "Description": "Sonstige privatrechtliche Leistungsentgelte",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.1.5.01.6482000",
+                "ProductID": "3.1.5.01",
+                "Description": "Einzahlungen aus Kostenerstattungen von Gemeinden und Gemeindeverbünden",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.1.5.01.6484000",
+                "ProductID": "3.1.5.01",
+                "Description": "Einzahlungen aus Kostenerstattungen von gesetzlichen Sozialversicherungen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.1.5.01.6486000",
+                "ProductID": "3.1.5.01",
+                "Description": "Einzahlungen aus Kostenerstattungen von sonstigen öffentlichen Sonderrechnungen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.1.5.01.7012000",
+                "ProductID": "3.1.5.01",
                 "Description": "Dienstauszahlungen und dgl. an Arbeitnehmer",
                 "Budget": {
-                  "2022": 0,
-                  "2023": 127300,
-                  "2024": 130500,
-                  "2025": 133900,
-                  "2026": 137300
+                  "2022": 52600,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
                 }
               },
               {
-                "ID": "1.1.1.18.7022000",
-                "ProductID": "1.1.1.18",
+                "ID": "3.1.5.01.7019000",
+                "ProductID": "3.1.5.01",
+                "Description": "Dienstauszahlungen und dgl. an sonstige Beschäftigte",
+                "Budget": {
+                  "2022": 13300,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.1.5.01.7022000",
+                "ProductID": "3.1.5.01",
                 "Description": "Beiträge zu Versorgungskassen für Arbeitnehmer",
                 "Budget": {
-                  "2022": 0,
-                  "2023": 5000,
-                  "2024": 5200,
-                  "2025": 5400,
-                  "2026": 5600
+                  "2022": 2200,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
                 }
               },
               {
-                "ID": "1.1.1.18.7032000",
-                "ProductID": "1.1.1.18",
+                "ID": "3.1.5.01.7029000",
+                "ProductID": "3.1.5.01",
+                "Description": "Beiträge zu Versorgungskassen für sonstige Beschäftigte",
+                "Budget": {
+                  "2022": 600,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.1.5.01.7032000",
+                "ProductID": "3.1.5.01",
                 "Description": "Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer",
                 "Budget": {
-                  "2022": 0,
-                  "2023": 25600,
-                  "2024": 26200,
-                  "2025": 26900,
-                  "2026": 27600
+                  "2022": 10500,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
                 }
               },
               {
-                "ID": "1.1.1.18.7041000",
-                "ProductID": "1.1.1.18",
+                "ID": "3.1.5.01.7039000",
+                "ProductID": "3.1.5.01",
+                "Description": "Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschüft.",
+                "Budget": {
+                  "2022": 2700,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.1.5.01.7041000",
+                "ProductID": "3.1.5.01",
                 "Description": "Beihilfen, Unterstützungsleistungen für Beschäftigte",
                 "Budget": {
-                  "2022": 0,
-                  "2023": 800,
-                  "2024": 900,
-                  "2025": 1000,
-                  "2026": 1000
+                  "2022": 400,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
                 }
               },
               {
-                "ID": "1.1.1.18.7431000",
-                "ProductID": "1.1.1.18",
-                "Description": "Geschüftsauszahlungen",
+                "ID": "3.1.5.01.7211014",
+                "ProductID": "3.1.5.01",
+                "Description": "Unterhaltung der Grundstücke und baulichen Anlagen-Gebüudemanagement",
                 "Budget": {
                   "2022": 0,
-                  "2023": 1000,
-                  "2024": 1000,
-                  "2025": 1000,
-                  "2026": 1000
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.1.5.01.7241000",
+                "ProductID": "3.1.5.01",
+                "Description": "Bewirtschaftung der Grundstücke und baulichen Anlagen",
+                "Budget": {
+                  "2022": 8500,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.1.5.01.7252000",
+                "ProductID": "3.1.5.01",
+                "Description": "Erwerb geringwertiger Vermügensgegenstünde",
+                "Budget": {
+                  "2022": 300,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.1.5.01.7255000",
+                "ProductID": "3.1.5.01",
+                "Description": "Unterhaltung des sonstigen beweglichen Vermügens",
+                "Budget": {
+                  "2022": 3700,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.1.5.01.7271000",
+                "ProductID": "3.1.5.01",
+                "Description": "Besondere Verwaltungs- und Betriebsauszahlungen",
+                "Budget": {
+                  "2022": 16500,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.1.5.01.7291000",
+                "ProductID": "3.1.5.01",
+                "Description": "Auszahlungen für sonstige Dienstleistungen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.1.5.01.7318000",
+                "ProductID": "3.1.5.01",
+                "Description": "Zuschüsse an übrige Bereiche",
+                "Budget": {
+                  "2022": 49500,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.1.5.01.7411000",
+                "ProductID": "3.1.5.01",
+                "Description": "Sonstige Personal- und Versorgungsauszahlungen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.1.5.01.7421000",
+                "ProductID": "3.1.5.01",
+                "Description": "Auszahlungen für ehrenamtliche und sonstige Tütigkeit",
+                "Budget": {
+                  "2022": 3500,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.1.5.01.7429000",
+                "ProductID": "3.1.5.01",
+                "Description": "Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.1.5.01.7431000",
+                "ProductID": "3.1.5.01",
+                "Description": "Geschüftsauszahlungen",
+                "Budget": {
+                  "2022": 400,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.1.5.01.7431400",
+                "ProductID": "3.1.5.01",
+                "Description": "Auszahlungen für Beitragsservice (GEZ)",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.1.5.01.7441000",
+                "ProductID": "3.1.5.01",
+                "Description": "Steuern, Versicherungen, Schadensfülle",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
                 }
               }
             ]
           },
           "InvestmentsBalance": {
             "Cashflow": {
-              "Total": {},
-              "Income": {},
-              "Expenses": {}
+              "Total": {
+                "2022": -309000,
+                "2023": 0,
+                "2024": 0,
+                "2025": 0,
+                "2026": 0
+              },
+              "Income": {
+                "2022": 22600,
+                "2023": 0,
+                "2024": 0,
+                "2025": 0,
+                "2026": 0
+              },
+              "Expenses": {
+                "2022": -331600,
+                "2023": 0,
+                "2024": 0,
+                "2025": 0,
+                "2026": 0
+              }
             },
-            "Accounts": []
+            "Accounts": [
+              {
+                "ID": "3.1.5.01/0100.7832000",
+                "ProductID": "3.1.5.01",
+                "Description": "Ausz. f.d. Erw. v. beweg. Vermügensgegenstünden v. \u003e 150  bis 1000 ? o. UStr.",
+                "Budget": {
+                  "2022": 1100,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.1.5.01/0200.7831000",
+                "ProductID": "3.1.5.01",
+                "Description": "Auszahl. f.d. Erw. von bewegl. Vermügengeg.st. von mehr als 1000 Euro ohne UStr.",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              }
+            ]
           },
           "Cashflow": {
             "Total": {
-              "2022": 0,
-              "2023": -150500,
-              "2024": -154600,
-              "2025": -159000,
-              "2026": -163300
+              "2022": -154500,
+              "2023": 0,
+              "2024": 0,
+              "2025": 0,
+              "2026": 0
             },
             "Income": {
-              "2022": 0,
-              "2023": 9200,
-              "2024": 9200,
-              "2025": 9200,
-              "2026": 9200
+              "2022": 11300,
+              "2023": 0,
+              "2024": 0,
+              "2025": 0,
+              "2026": 0
             },
             "Expenses": {
-              "2022": 0,
-              "2023": -159700,
-              "2024": -163800,
-              "2025": -168200,
-              "2026": -172500
+              "2022": -165800,
+              "2023": 0,
+              "2024": 0,
+              "2025": 0,
+              "2026": 0
             }
           },
           "Metadata": {
@@ -296,24 +657,24 @@
       "AdministrationBalance": {
         "Total": {
           "2022": -43104000,
-          "2023": -51630500,
-          "2024": -53874400,
-          "2025": -51698200,
-          "2026": -52781500
+          "2023": -52311200,
+          "2024": -54573900,
+          "2025": -52417800,
+          "2026": -53521000
         },
         "Income": {
           "2022": 61819300,
-          "2023": 64031200,
-          "2024": 64609200,
-          "2025": 68769200,
-          "2026": 68769200
+          "2023": 64086400,
+          "2024": 64664400,
+          "2025": 68824400,
+          "2026": 68824400
         },
         "Expenses": {
           "2022": -104923300,
-          "2023": -115661700,
-          "2024": -118483600,
-          "2025": -120467400,
-          "2026": -121550700
+          "2023": -116397600,
+          "2024": -119238300,
+          "2025": -121242200,
+          "2026": -122345400
         }
       },
       "InvestmentsBalance": {
@@ -342,29 +703,29 @@
       "Cashflow": {
         "Total": {
           "2022": -5436700,
-          "2023": -6571300,
-          "2024": -6480700,
-          "2025": -6609300,
-          "2026": -6441700
+          "2023": -6721800,
+          "2024": -6635300,
+          "2025": -6768300,
+          "2026": -6605000
         },
         "Income": {
           "2022": 4391500,
-          "2023": 4487600,
-          "2024": 3571700,
-          "2025": 3766700,
-          "2026": 3766700
+          "2023": 4496800,
+          "2024": 3580900,
+          "2025": 3775900,
+          "2026": 3775900
         },
         "Expenses": {
           "2022": -9828200,
-          "2023": -11058900,
-          "2024": -10052400,
-          "2025": -10376000,
-          "2026": -10208400
+          "2023": -11218600,
+          "2024": -10216200,
+          "2025": -10544200,
+          "2026": -10380900
         }
       },
       "Products": {
         "1.1.1.01": {
-          "ID": "1.1.1.01.41",
+          "ID": "1.1.1.01.61",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -825,7 +1186,7 @@
           }
         },
         "1.1.1.02": {
-          "ID": "1.1.1.02.45",
+          "ID": "1.1.1.02.66",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -1022,7 +1383,7 @@
           }
         },
         "1.1.1.04": {
-          "ID": "1.1.1.04.43",
+          "ID": "1.1.1.04.63",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -1212,7 +1573,7 @@
           }
         },
         "1.1.1.05": {
-          "ID": "1.1.1.05.44",
+          "ID": "1.1.1.05.64",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -1390,7 +1751,7 @@
           }
         },
         "1.1.1.06": {
-          "ID": "1.1.1.06.44",
+          "ID": "1.1.1.06.64",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -1592,7 +1953,7 @@
           }
         },
         "1.1.1.08": {
-          "ID": "1.1.1.08.41",
+          "ID": "1.1.1.08.61",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -1758,7 +2119,7 @@
           }
         },
         "1.1.1.09": {
-          "ID": "1.1.1.09.41",
+          "ID": "1.1.1.09.61",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -2056,7 +2417,7 @@
           }
         },
         "1.1.1.10": {
-          "ID": "1.1.1.10.43",
+          "ID": "1.1.1.10.63",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -2817,7 +3178,7 @@
           }
         },
         "1.1.1.16": {
-          "ID": "1.1.1.16.44",
+          "ID": "1.1.1.16.64",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -3055,7 +3416,7 @@
           }
         },
         "1.1.1.17": {
-          "ID": "1.1.1.17.50",
+          "ID": "1.1.1.17.70",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -3220,8 +3581,174 @@
             "Services": " 1. Beteiligungsmanagement (nach §119 KVG LSA) -Beteiligungsverwaltung und -berichtswesen -Beteiligungscontrolling -Mandatsträgerbetreuung (Aufsichtsrat u. Gesellschafter) -Strategisches, Beteiligungsmanagement -Portfoliosteuerung (u.a Ausgliederung,Ankauf) 2.Zentrale Stiftungsverwaltung 3. Entwicklung u. Aufbau Verwaltungscontrolling -Strategisches Controlling -Unterstützung der, Führungsfunktionen 4. Interkommnale Zusammenarbeit,"
           }
         },
+        "1.1.1.18": {
+          "ID": "1.1.1.18.64",
+          "AdministrationBalance": {
+            "Cashflow": {
+              "Total": {
+                "2022": 0,
+                "2023": -680700,
+                "2024": -699500,
+                "2025": -719600,
+                "2026": -739500
+              },
+              "Income": {
+                "2022": 0,
+                "2023": 55200,
+                "2024": 55200,
+                "2025": 55200,
+                "2026": 55200
+              },
+              "Expenses": {
+                "2022": 0,
+                "2023": -735900,
+                "2024": -754700,
+                "2025": -774800,
+                "2026": -794700
+              }
+            },
+            "Accounts": [
+              {
+                "ID": "1.1.1.18.6481000",
+                "ProductID": "1.1.1.18",
+                "Description": "Einzahlungen aus Kostenerstattungen vom Land",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 9200,
+                  "2024": 9200,
+                  "2025": 9200,
+                  "2026": 9200
+                }
+              },
+              {
+                "ID": "1.1.1.18.7012000",
+                "ProductID": "1.1.1.18",
+                "Description": "Dienstauszahlungen und dgl. an Arbeitnehmer",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 127300,
+                  "2024": 130500,
+                  "2025": 133900,
+                  "2026": 137300
+                }
+              },
+              {
+                "ID": "1.1.1.18.7022000",
+                "ProductID": "1.1.1.18",
+                "Description": "Beiträge zu Versorgungskassen für Arbeitnehmer",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 5000,
+                  "2024": 5200,
+                  "2025": 5400,
+                  "2026": 5600
+                }
+              },
+              {
+                "ID": "1.1.1.18.7032000",
+                "ProductID": "1.1.1.18",
+                "Description": "Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 25600,
+                  "2024": 26200,
+                  "2025": 26900,
+                  "2026": 27600
+                }
+              },
+              {
+                "ID": "1.1.1.18.7041000",
+                "ProductID": "1.1.1.18",
+                "Description": "Beihilfen, Unterstützungsleistungen für Beschäftigte",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 800,
+                  "2024": 900,
+                  "2025": 1000,
+                  "2026": 1000
+                }
+              },
+              {
+                "ID": "1.1.1.18.7431000",
+                "ProductID": "1.1.1.18",
+                "Description": "Geschüftsauszahlungen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 1000,
+                  "2024": 1000,
+                  "2025": 1000,
+                  "2026": 1000
+                }
+              }
+            ]
+          },
+          "InvestmentsBalance": {
+            "Cashflow": {
+              "Total": {},
+              "Income": {},
+              "Expenses": {}
+            },
+            "Accounts": []
+          },
+          "Cashflow": {
+            "Total": {
+              "2022": 0,
+              "2023": -150500,
+              "2024": -154600,
+              "2025": -159000,
+              "2026": -163300
+            },
+            "Income": {
+              "2022": 0,
+              "2023": 9200,
+              "2024": 9200,
+              "2025": 9200,
+              "2026": 9200
+            },
+            "Expenses": {
+              "2022": 0,
+              "2023": -159700,
+              "2024": -163800,
+              "2025": -168200,
+              "2026": -172500
+            }
+          },
+          "Metadata": {
+            "Department": {
+              "ID": "1",
+              "Name": "Budget Oberbürgermeister",
+              "Accountable": "Herr Gaffert"
+            },
+            "ProductClass": {
+              "ID": "1",
+              "Name": "Zentrale Verwaltung",
+              "Accountable": "Oberbürgermeister"
+            },
+            "ProductDomain": {
+              "ID": "1",
+              "Name": "Innere Verwaltung",
+              "Responsible": "Herr Mendritzki"
+            },
+            "ProductGroup": {
+              "ID": "1",
+              "Name": "Verwaltungssteuerung und -service",
+              "Desc": "internes Produkt"
+            },
+            "Product": {
+              "ID": "18",
+              "Name": "Stiftungen",
+              "LegalRequirement": "Pflichtaufgaben"
+            },
+            "SubProduct": null,
+            "Description": " Durchführung von Vergabeverfahren für das Auftragswesen der Stadt",
+            "Mission": " Vorbereitung und Abwicklung von Vergabevorgängen (Bauleistungen sowie Lieferungen und Dienstleistungen)",
+            "Target": "Ämter und Sachgebiete der Stadt Wernigerode sowie an den Verfahren beteiligte Unternehmen",
+            "Objectives": " \"Vergabegesetze, Verordnungen und Richtlinien des Bundes und des Landes, örtl. Vergaberichtlinie\",,,,",
+            "Services": " 2a. Durchführung gesetzeskonformer Vergabeverfahren (Bauleistungen) - 2b. Durchführung gesetzeskonformer Vergabeverfahren (Lieferungen und Dienstleistungen),"
+          }
+        },
         "1.2.1.01": {
-          "ID": "1.2.1.01.44",
+          "ID": "1.2.1.01.64",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -3466,7 +3993,7 @@
           }
         },
         "2.6.2.01": {
-          "ID": "2.6.2.01.53",
+          "ID": "2.6.2.01.73",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -3560,7 +4087,7 @@
           }
         },
         "3.5.1.01": {
-          "ID": "3.5.1.01.41",
+          "ID": "3.5.1.01.61",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -3714,7 +4241,7 @@
           }
         },
         "5.5.1.02": {
-          "ID": "5.5.1.02.44",
+          "ID": "5.5.1.02.64",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -3995,7 +4522,7 @@
           }
         },
         "5.7.1.01": {
-          "ID": "5.7.1.01.44",
+          "ID": "5.7.1.01.64",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -4516,7 +5043,7 @@
           }
         },
         "5.7.5.01": {
-          "ID": "5.7.5.01.41",
+          "ID": "5.7.5.01.61",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -4960,7 +5487,7 @@
       },
       "Products": {
         "1.1.1.07": {
-          "ID": "1.1.1.07.41",
+          "ID": "1.1.1.07.61",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -5342,7 +5869,7 @@
           }
         },
         "5.3.1.01": {
-          "ID": "5.3.1.01.45",
+          "ID": "5.3.1.01.65",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -5460,7 +5987,7 @@
           }
         },
         "5.3.2.01": {
-          "ID": "5.3.2.01.45",
+          "ID": "5.3.2.01.65",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -5578,7 +6105,7 @@
           }
         },
         "5.3.3.01": {
-          "ID": "5.3.3.01.45",
+          "ID": "5.3.3.01.65",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -5696,7 +6223,7 @@
           }
         },
         "5.3.4.01": {
-          "ID": "5.3.4.01.45",
+          "ID": "5.3.4.01.65",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -5790,7 +6317,7 @@
           }
         },
         "5.3.5.01": {
-          "ID": "5.3.5.01.46",
+          "ID": "5.3.5.01.66",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -5884,7 +6411,7 @@
           }
         },
         "6.1.1.01": {
-          "ID": "6.1.1.01.40",
+          "ID": "6.1.1.01.60",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -6189,7 +6716,7 @@
           }
         },
         "6.1.2.01": {
-          "ID": "6.1.2.01.46",
+          "ID": "6.1.2.01.66",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -7084,7 +7611,7 @@
       },
       "Products": {
         "1.1.1.11": {
-          "ID": "1.1.1.11.41",
+          "ID": "1.1.1.11.61",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -7677,7 +8204,7 @@
           }
         },
         "1.1.1.12": {
-          "ID": "1.1.1.12.44",
+          "ID": "1.1.1.12.64",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -8150,7 +8677,7 @@
           }
         },
         "2.5.3.01": {
-          "ID": "2.5.3.01.41",
+          "ID": "2.5.3.01.61",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -8779,7 +9306,7 @@
           }
         },
         "2.8.1.02": {
-          "ID": "2.8.1.02.41",
+          "ID": "2.8.1.02.61",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -9204,7 +9731,7 @@
           }
         },
         "3.6.6.02": {
-          "ID": "3.6.6.02.45",
+          "ID": "3.6.6.02.65",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -9545,7 +10072,7 @@
           }
         },
         "5.4.5.01": {
-          "ID": "5.4.5.01.43",
+          "ID": "5.4.5.01.63",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -9723,7 +10250,7 @@
           }
         },
         "5.4.6.02": {
-          "ID": "5.4.6.02.43",
+          "ID": "5.4.6.02.63",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -10292,7 +10819,7 @@
           }
         },
         "5.5.1.01": {
-          "ID": "5.5.1.01.41",
+          "ID": "5.5.1.01.61",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -11029,7 +11556,7 @@
           }
         },
         "5.5.1.03": {
-          "ID": "5.5.1.03.44",
+          "ID": "5.5.1.03.64",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -11303,7 +11830,7 @@
           }
         },
         "5.5.3.01": {
-          "ID": "5.5.3.01.41",
+          "ID": "5.5.3.01.61",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -11836,7 +12363,7 @@
           }
         },
         "5.5.5.01": {
-          "ID": "5.5.5.01.41",
+          "ID": "5.5.5.01.61",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -12525,7 +13052,7 @@
           }
         },
         "5.7.5.02": {
-          "ID": "5.7.5.02.43",
+          "ID": "5.7.5.02.63",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -12974,7 +13501,7 @@
           }
         },
         "5.7.5.04": {
-          "ID": "5.7.5.04.41",
+          "ID": "5.7.5.04.61",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -13811,53 +14338,53 @@
       },
       "InvestmentsBalance": {
         "Total": {
-          "2022": -169573200,
-          "2023": -170677200,
-          "2024": -173313300,
-          "2025": -164130400,
-          "2026": -167813900
+          "2022": -194211100,
+          "2023": -206480900,
+          "2024": -211871300,
+          "2025": -203641000,
+          "2026": -209411700
         },
         "Income": {
-          "2022": 59106500,
-          "2023": 33833400,
-          "2024": 22621300,
-          "2025": 20324600,
-          "2026": 22434700
+          "2022": 114033700,
+          "2023": 85258300,
+          "2024": 74114400,
+          "2025": 71879900,
+          "2026": 74254300
         },
         "Expenses": {
-          "2022": -228679700,
-          "2023": -204510600,
-          "2024": -195934600,
-          "2025": -184455000,
-          "2026": -190248600
+          "2022": -308244800,
+          "2023": -291739200,
+          "2024": -285985700,
+          "2025": -275520900,
+          "2026": -283666000
         }
       },
       "Cashflow": {
         "Total": {
-          "2022": -15828500,
-          "2023": -19118400,
-          "2024": -19763500,
-          "2025": -19204600,
-          "2026": -19395000
+          "2022": -16148500,
+          "2023": -19425000,
+          "2024": -19851700,
+          "2025": -19289800,
+          "2026": -19484300
         },
         "Income": {
-          "2022": 15504800,
+          "2022": 15753200,
           "2023": 14541700,
           "2024": 13995700,
           "2025": 13579700,
           "2026": 13657000
         },
         "Expenses": {
-          "2022": -31333300,
-          "2023": -33660100,
-          "2024": -33759200,
-          "2025": -32784300,
-          "2026": -33052000
+          "2022": -31901700,
+          "2023": -33966700,
+          "2024": -33847400,
+          "2025": -32869500,
+          "2026": -33141300
         }
       },
       "Products": {
         "1.2.2.01": {
-          "ID": "1.2.2.01.43",
+          "ID": "1.2.2.01.63",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -14414,7 +14941,7 @@
           }
         },
         "1.2.2.02": {
-          "ID": "1.2.2.02.43",
+          "ID": "1.2.2.02.63",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -14707,7 +15234,7 @@
           }
         },
         "1.2.2.03": {
-          "ID": "1.2.2.03.43",
+          "ID": "1.2.2.03.63",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -15072,7 +15599,7 @@
           }
         },
         "1.2.6.01": {
-          "ID": "1.2.6.01.41",
+          "ID": "1.2.6.01.61",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -15869,7 +16396,7 @@
           }
         },
         "2.1.1.01": {
-          "ID": "2.1.1.01.41",
+          "ID": "2.1.1.01.61",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -16870,7 +17397,7 @@
           }
         },
         "2.4.3.01": {
-          "ID": "2.4.3.01.41",
+          "ID": "2.4.3.01.61",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -17168,7 +17695,7 @@
           }
         },
         "2.5.2.01": {
-          "ID": "2.5.2.01.41",
+          "ID": "2.5.2.01.61",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -17833,7 +18360,7 @@
           }
         },
         "2.5.2.02": {
-          "ID": "2.5.2.02.41",
+          "ID": "2.5.2.02.61",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -18186,7 +18713,7 @@
           }
         },
         "2.6.2.02": {
-          "ID": "2.6.2.02.41",
+          "ID": "2.6.2.02.61",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -18532,7 +19059,7 @@
           }
         },
         "2.7.2.01": {
-          "ID": "2.7.2.01.41",
+          "ID": "2.7.2.01.61",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -19065,7 +19592,7 @@
           }
         },
         "2.8.1.01": {
-          "ID": "2.8.1.01.41",
+          "ID": "2.8.1.01.61",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -19562,7 +20089,7 @@
           }
         },
         "3.1.5.10": {
-          "ID": "3.1.5.10.41",
+          "ID": "3.1.5.10.61",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -20059,7 +20586,7 @@
           }
         },
         "3.1.5.40": {
-          "ID": "3.1.5.40.43",
+          "ID": "3.1.5.40.63",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -20448,7 +20975,7 @@
           }
         },
         "3.1.5.60": {
-          "ID": "3.1.5.60.41",
+          "ID": "3.1.5.60.61",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -20801,7 +21328,7 @@
           }
         },
         "3.3.1.01": {
-          "ID": "3.3.1.01.53",
+          "ID": "3.3.1.01.73",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -20895,7 +21422,7 @@
           }
         },
         "3.4.6.01": {
-          "ID": "3.4.6.01.44",
+          "ID": "3.4.6.01.64",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -21145,7 +21672,7 @@
           }
         },
         "3.6.5.01": {
-          "ID": "3.6.5.01.41",
+          "ID": "3.6.5.01.61",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -21713,19 +22240,134 @@
           },
           "InvestmentsBalance": {
             "Cashflow": {
-              "Total": {},
-              "Income": {},
-              "Expenses": {}
+              "Total": {
+                "2022": -3389400,
+                "2023": -4174000,
+                "2024": -5339400,
+                "2025": -4419600,
+                "2026": -4568800
+              },
+              "Income": {
+                "2022": 4943200,
+                "2023": 4927200,
+                "2024": 4933600,
+                "2025": 4940800,
+                "2026": 4948000
+              },
+              "Expenses": {
+                "2022": -8332600,
+                "2023": -9101200,
+                "2024": -10273000,
+                "2025": -9360400,
+                "2026": -9516800
+              }
             },
-            "Accounts": []
+            "Accounts": [
+              {
+                "ID": "3.6.5.02.01/0100.6817000",
+                "ProductID": "3.6.5.02.01",
+                "Description": "Einz. a. Zuschüssen f. Investitionen u.Invest.fürdermaünahmen priv.Unternehmen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.01/0100.6818000",
+                "ProductID": "3.6.5.02.01",
+                "Description": "Einz. a. Zuschüssen f. Investitionen u.Investitionsfürderm. von übr. Bereichen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.01/0100.7832000",
+                "ProductID": "3.6.5.02.01",
+                "Description": "Ausz. f.d. Erw. v. beweg. Vermügensgegenstünden v. \u003e 150  bis 1000 ? o. UStr.",
+                "Budget": {
+                  "2022": 2100,
+                  "2023": 2600,
+                  "2024": 1900,
+                  "2025": 2200,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.01/0200.6817000",
+                "ProductID": "3.6.5.02.01",
+                "Description": "Einz. a. Zuschüssen f. Investitionen u.Invest.fürdermaünahmen priv.Unternehmen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.01/0200.6818000",
+                "ProductID": "3.6.5.02.01",
+                "Description": "Einz. a. Zuschüssen f. Investitionen u.Investitionsfürderm. von übr. Bereichen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.01/0200.7831000",
+                "ProductID": "3.6.5.02.01",
+                "Description": "Auszahl. f.d. Erw. von bewegl. Vermügengeg.st. von mehr als 1000 Euro ohne UStr.",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 2400
+                }
+              },
+              {
+                "ID": "3.6.5.02.01/0300.7831000",
+                "ProductID": "3.6.5.02.01",
+                "Description": "Auszahl. f.d. Erw. von bewegl. Vermügengeg.st. von mehr als 1000 Euro ohne UStr.",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.01/8888.7851000",
+                "ProductID": "3.6.5.02.01",
+                "Description": "Auszahlungen für Hochbaumaünahmen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              }
+            ]
           },
           "Cashflow": {
             "Total": {
-              "2022": -422100,
-              "2023": -519800,
-              "2024": -666000,
-              "2025": -550800,
-              "2026": -570200
+              "2022": -424200,
+              "2023": -522400,
+              "2024": -667900,
+              "2025": -553000,
+              "2026": -572600
             },
             "Income": {
               "2022": 617900,
@@ -21735,11 +22377,11 @@
               "2026": 618500
             },
             "Expenses": {
-              "2022": -1040000,
-              "2023": -1135700,
-              "2024": -1282700,
-              "2025": -1168400,
-              "2026": -1188700
+              "2022": -1042100,
+              "2023": -1138300,
+              "2024": -1284600,
+              "2025": -1170600,
+              "2026": -1191100
             }
           },
           "Metadata": {
@@ -22170,19 +22812,110 @@
           },
           "InvestmentsBalance": {
             "Cashflow": {
-              "Total": {},
-              "Income": {},
-              "Expenses": {}
+              "Total": {
+                "2022": -1506600,
+                "2023": -1570800,
+                "2024": -1483800,
+                "2025": -1579800,
+                "2026": -1678800
+              },
+              "Income": {
+                "2022": 2671800,
+                "2023": 2583000,
+                "2024": 2586000,
+                "2025": 2589000,
+                "2026": 2592000
+              },
+              "Expenses": {
+                "2022": -4178400,
+                "2023": -4153800,
+                "2024": -4069800,
+                "2025": -4168800,
+                "2026": -4270800
+              }
             },
-            "Accounts": []
+            "Accounts": [
+              {
+                "ID": "3.6.5.02.02/0100.6832000",
+                "ProductID": "3.6.5.02.02",
+                "Description": "Einz.a.d.Verüuü. v. bewegl. VermGegenst. v. mehr als 150 bis 1000 ? ohne UmStr.",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.02/0100.7832000",
+                "ProductID": "3.6.5.02.02",
+                "Description": "Ausz. f.d. Erw. v. beweg. Vermügensgegenstünden v. \u003e 150  bis 1000 ? o. UStr.",
+                "Budget": {
+                  "2022": 1800,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.02/0200.6817000",
+                "ProductID": "3.6.5.02.02",
+                "Description": "Einz. a. Zuschüssen f. Investitionen u.Invest.fürdermaünahmen priv.Unternehmen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.02/0200.6818000",
+                "ProductID": "3.6.5.02.02",
+                "Description": "Einz. a. Zuschüssen f. Investitionen u.Investitionsfürderm. von übr. Bereichen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.02/0200.7831000",
+                "ProductID": "3.6.5.02.02",
+                "Description": "Auszahl. f.d. Erw. von bewegl. Vermügengeg.st. von mehr als 1000 Euro ohne UStr.",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 1800,
+                  "2024": 1800,
+                  "2025": 1800,
+                  "2026": 1800
+                }
+              },
+              {
+                "ID": "3.6.5.02.02/0300.7831000",
+                "ProductID": "3.6.5.02.02",
+                "Description": "Auszahl. f.d. Erw. von bewegl. Vermügengeg.st. von mehr als 1000 Euro ohne UStr.",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              }
+            ]
           },
           "Cashflow": {
             "Total": {
-              "2022": -249600,
-              "2023": -261200,
-              "2024": -246700,
-              "2025": -262700,
-              "2026": -279200
+              "2022": -251400,
+              "2023": -263000,
+              "2024": -248500,
+              "2025": -264500,
+              "2026": -281000
             },
             "Income": {
               "2022": 445300,
@@ -22192,11 +22925,11 @@
               "2026": 432000
             },
             "Expenses": {
-              "2022": -694900,
-              "2023": -691700,
-              "2024": -677700,
-              "2025": -694200,
-              "2026": -711200
+              "2022": -696700,
+              "2023": -693500,
+              "2024": -679500,
+              "2025": -696000,
+              "2026": -713000
             }
           },
           "Metadata": {
@@ -22663,19 +23396,134 @@
           },
           "InvestmentsBalance": {
             "Cashflow": {
-              "Total": {},
-              "Income": {},
-              "Expenses": {}
+              "Total": {
+                "2022": -3930200,
+                "2023": -6585100,
+                "2024": -6910600,
+                "2025": -7112100,
+                "2026": -7337400
+              },
+              "Income": {
+                "2022": 7069600,
+                "2023": 6087200,
+                "2024": 6097600,
+                "2025": 6108000,
+                "2026": 6119200
+              },
+              "Expenses": {
+                "2022": -10999800,
+                "2023": -12672300,
+                "2024": -13008200,
+                "2025": -13220100,
+                "2026": -13456600
+              }
             },
-            "Accounts": []
+            "Accounts": [
+              {
+                "ID": "3.6.5.02.03/0100.6817000",
+                "ProductID": "3.6.5.02.03",
+                "Description": "Einz. a. Zuschüssen f. Investitionen u.Invest.fürdermaünahmen priv.Unternehmen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.03/0100.7832000",
+                "ProductID": "3.6.5.02.03",
+                "Description": "Ausz. f.d. Erw. v. beweg. Vermügensgegenstünden v. \u003e 150  bis 1000 ? o. UStr.",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 2900,
+                  "2024": 3600,
+                  "2025": 2000,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.03/0200.6817000",
+                "ProductID": "3.6.5.02.03",
+                "Description": "Einz. a. Zuschüssen f. Investitionen u.Invest.fürdermaünahmen priv.Unternehmen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.03/0200.7831000",
+                "ProductID": "3.6.5.02.03",
+                "Description": "Auszahl. f.d. Erw. von bewegl. Vermügengeg.st. von mehr als 1000 Euro ohne UStr.",
+                "Budget": {
+                  "2022": 2200,
+                  "2023": 0,
+                  "2024": 1400,
+                  "2025": 2500,
+                  "2026": 4600
+                }
+              },
+              {
+                "ID": "3.6.5.02.03/0300.7831000",
+                "ProductID": "3.6.5.02.03",
+                "Description": "Auszahl. f.d. Erw. von bewegl. Vermügengeg.st. von mehr als 1000 Euro ohne UStr.",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.03/1416.7851000",
+                "ProductID": "3.6.5.02.03",
+                "Description": "Auszahlungen für Hochbaumaünahmen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.03/1417.7851000",
+                "ProductID": "3.6.5.02.03",
+                "Description": "Auszahlungen für Hochbaumaünahmen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.03/1422.7851000",
+                "ProductID": "3.6.5.02.03",
+                "Description": "Auszahlungen für Hochbaumaünahmen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              }
+            ]
           },
           "Cashflow": {
             "Total": {
-              "2022": -489900,
-              "2023": -820600,
-              "2024": -859800,
-              "2025": -885700,
-              "2026": -914300
+              "2022": -492100,
+              "2023": -823500,
+              "2024": -864800,
+              "2025": -890200,
+              "2026": -918900
             },
             "Income": {
               "2022": 883700,
@@ -22685,11 +23533,11 @@
               "2026": 764900
             },
             "Expenses": {
-              "2022": -1373600,
-              "2023": -1581500,
-              "2024": -1622000,
-              "2025": -1649200,
-              "2026": -1679200
+              "2022": -1375800,
+              "2023": -1584400,
+              "2024": -1627000,
+              "2025": -1653700,
+              "2026": -1683800
             }
           },
           "Metadata": {
@@ -23108,19 +23956,98 @@
           },
           "InvestmentsBalance": {
             "Cashflow": {
-              "Total": {},
-              "Income": {},
-              "Expenses": {}
+              "Total": {
+                "2022": -1003100,
+                "2023": -2567000,
+                "2024": -2894600,
+                "2025": -2526600,
+                "2026": -2587000
+              },
+              "Income": {
+                "2022": 2256500,
+                "2023": 2158000,
+                "2024": 2161500,
+                "2025": 2165000,
+                "2026": 2168500
+              },
+              "Expenses": {
+                "2022": -3259600,
+                "2023": -4725000,
+                "2024": -5056100,
+                "2025": -4691600,
+                "2026": -4755500
+              }
             },
-            "Accounts": []
+            "Accounts": [
+              {
+                "ID": "3.6.5.02.04/0100.6817000",
+                "ProductID": "3.6.5.02.04",
+                "Description": "Einz. a. Zuschüssen f. Investitionen u.Invest.fürdermaünahmen priv.Unternehmen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.04/0100.6818000",
+                "ProductID": "3.6.5.02.04",
+                "Description": "Einz. a. Zuschüssen f. Investitionen u.Investitionsfürderm. von übr. Bereichen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.04/0100.7832000",
+                "ProductID": "3.6.5.02.04",
+                "Description": "Ausz. f.d. Erw. v. beweg. Vermügensgegenstünden v. \u003e 150  bis 1000 ? o. UStr.",
+                "Budget": {
+                  "2022": 2700,
+                  "2023": 3000,
+                  "2024": 2700,
+                  "2025": 2700,
+                  "2026": 3000
+                }
+              },
+              {
+                "ID": "3.6.5.02.04/0200.7831000",
+                "ProductID": "3.6.5.02.04",
+                "Description": "Auszahl. f.d. Erw. von bewegl. Vermügengeg.st. von mehr als 1000 Euro ohne UStr.",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.04/0300.7831000",
+                "ProductID": "3.6.5.02.04",
+                "Description": "Auszahl. f.d. Erw. von bewegl. Vermügengeg.st. von mehr als 1000 Euro ohne UStr.",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              }
+            ]
           },
           "Cashflow": {
             "Total": {
-              "2022": -199000,
-              "2023": -511600,
-              "2024": -577300,
-              "2025": -503700,
-              "2026": -515600
+              "2022": -201700,
+              "2023": -514600,
+              "2024": -580000,
+              "2025": -506400,
+              "2026": -518600
             },
             "Income": {
               "2022": 451300,
@@ -23130,11 +24057,11 @@
               "2026": 433700
             },
             "Expenses": {
-              "2022": -650300,
-              "2023": -943200,
-              "2024": -1009600,
-              "2025": -936700,
-              "2026": -949300
+              "2022": -653000,
+              "2023": -946200,
+              "2024": -1012300,
+              "2025": -939400,
+              "2026": -952300
             }
           },
           "Metadata": {
@@ -23577,19 +24504,134 @@
           },
           "InvestmentsBalance": {
             "Cashflow": {
-              "Total": {},
-              "Income": {},
-              "Expenses": {}
+              "Total": {
+                "2022": -2586300,
+                "2023": -3410800,
+                "2024": -3684000,
+                "2025": -4501400,
+                "2026": -4698000
+              },
+              "Income": {
+                "2022": 4920800,
+                "2023": 4437600,
+                "2024": 4444800,
+                "2025": 4452000,
+                "2026": 4459200
+              },
+              "Expenses": {
+                "2022": -7507100,
+                "2023": -7848400,
+                "2024": -8128800,
+                "2025": -8953400,
+                "2026": -9157200
+              }
             },
-            "Accounts": []
+            "Accounts": [
+              {
+                "ID": "3.6.5.02.05/0100.6817000",
+                "ProductID": "3.6.5.02.05",
+                "Description": "Einz. a. Zuschüssen f. Investitionen u.Invest.fürdermaünahmen priv.Unternehmen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.05/0100.6818000",
+                "ProductID": "3.6.5.02.05",
+                "Description": "Einz. a. Zuschüssen f. Investitionen u.Investitionsfürderm. von übr. Bereichen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.05/0100.7832000",
+                "ProductID": "3.6.5.02.05",
+                "Description": "Ausz. f.d. Erw. v. beweg. Vermügensgegenstünden v. \u003e 150  bis 1000 ? o. UStr.",
+                "Budget": {
+                  "2022": 1000,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 1300,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.05/0200.6817000",
+                "ProductID": "3.6.5.02.05",
+                "Description": "Einz. a. Zuschüssen f. Investitionen u.Invest.fürdermaünahmen priv.Unternehmen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.05/0200.6818000",
+                "ProductID": "3.6.5.02.05",
+                "Description": "Einz. a. Zuschüssen f. Investitionen u.Investitionsfürderm. von übr. Bereichen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.05/0200.7831000",
+                "ProductID": "3.6.5.02.05",
+                "Description": "Auszahl. f.d. Erw. von bewegl. Vermügengeg.st. von mehr als 1000 Euro ohne UStr.",
+                "Budget": {
+                  "2022": 2500,
+                  "2023": 2000,
+                  "2024": 5600,
+                  "2025": 0,
+                  "2026": 4400
+                }
+              },
+              {
+                "ID": "3.6.5.02.05/0300.7831000",
+                "ProductID": "3.6.5.02.05",
+                "Description": "Auszahl. f.d. Erw. von bewegl. Vermügengeg.st. von mehr als 1000 Euro ohne UStr.",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.05/1427.7851000",
+                "ProductID": "3.6.5.02.05",
+                "Description": "Auszahlungen für Hochbaumaünahmen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              }
+            ]
           },
           "Cashflow": {
             "Total": {
-              "2022": -321600,
-              "2023": -425600,
-              "2024": -458400,
-              "2025": -561700,
-              "2026": -585600
+              "2022": -325100,
+              "2023": -427600,
+              "2024": -464000,
+              "2025": -563000,
+              "2026": -590000
             },
             "Income": {
               "2022": 615100,
@@ -23599,11 +24641,11 @@
               "2026": 557400
             },
             "Expenses": {
-              "2022": -936700,
-              "2023": -980300,
-              "2024": -1014000,
-              "2025": -1118200,
-              "2026": -1143000
+              "2022": -940200,
+              "2023": -982300,
+              "2024": -1019600,
+              "2025": -1119500,
+              "2026": -1147400
             }
           },
           "Metadata": {
@@ -24070,19 +25112,86 @@
           },
           "InvestmentsBalance": {
             "Cashflow": {
-              "Total": {},
-              "Income": {},
-              "Expenses": {}
+              "Total": {
+                "2022": -695800,
+                "2023": -1654600,
+                "2024": -1792200,
+                "2025": -1919600,
+                "2026": -2055600
+              },
+              "Income": {
+                "2022": 4340400,
+                "2023": 3918400,
+                "2024": 3924400,
+                "2025": 3930000,
+                "2026": 3936000
+              },
+              "Expenses": {
+                "2022": -5036200,
+                "2023": -5573000,
+                "2024": -5716600,
+                "2025": -5849600,
+                "2026": -5991600
+              }
             },
-            "Accounts": []
+            "Accounts": [
+              {
+                "ID": "3.6.5.02.06/0100.7832000",
+                "ProductID": "3.6.5.02.06",
+                "Description": "Ausz. f.d. Erw. v. beweg. Vermügensgegenstünden v. \u003e 150  bis 1000 ? o. UStr.",
+                "Budget": {
+                  "2022": 1900,
+                  "2023": 500,
+                  "2024": 3400,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.06/0200.6818000",
+                "ProductID": "3.6.5.02.06",
+                "Description": "Einz. a. Zuschüssen f. Investitionen u.Investitionsfürderm. von übr. Bereichen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.06/0200.7831000",
+                "ProductID": "3.6.5.02.06",
+                "Description": "Auszahl. f.d. Erw. von bewegl. Vermügengeg.st. von mehr als 1000 Euro ohne UStr.",
+                "Budget": {
+                  "2022": 3700,
+                  "2023": 3100,
+                  "2024": 1700,
+                  "2025": 5600,
+                  "2026": 5600
+                }
+              },
+              {
+                "ID": "3.6.5.02.06/0300.7831000",
+                "ProductID": "3.6.5.02.06",
+                "Description": "Auszahl. f.d. Erw. von bewegl. Vermügengeg.st. von mehr als 1000 Euro ohne UStr.",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              }
+            ]
           },
           "Cashflow": {
             "Total": {
-              "2022": -170200,
-              "2023": -411600,
-              "2024": -443800,
-              "2025": -477100,
-              "2026": -511100
+              "2022": -175800,
+              "2023": -415200,
+              "2024": -448900,
+              "2025": -482700,
+              "2026": -516700
             },
             "Income": {
               "2022": 1085100,
@@ -24092,11 +25201,11 @@
               "2026": 984000
             },
             "Expenses": {
-              "2022": -1255300,
-              "2023": -1391200,
-              "2024": -1424900,
-              "2025": -1459600,
-              "2026": -1495100
+              "2022": -1260900,
+              "2023": -1394800,
+              "2024": -1430000,
+              "2025": -1465200,
+              "2026": -1500700
             }
           },
           "Metadata": {
@@ -24575,19 +25684,134 @@
           },
           "InvestmentsBalance": {
             "Cashflow": {
-              "Total": {},
-              "Income": {},
-              "Expenses": {}
+              "Total": {
+                "2022": -1809800,
+                "2023": -2170500,
+                "2024": -3100800,
+                "2025": -2794300,
+                "2026": -3817900
+              },
+              "Income": {
+                "2022": 5648000,
+                "2023": 5280800,
+                "2024": 5285600,
+                "2025": 5290400,
+                "2026": 5295200
+              },
+              "Expenses": {
+                "2022": -7457800,
+                "2023": -7451300,
+                "2024": -8386400,
+                "2025": -8084700,
+                "2026": -9113100
+              }
             },
-            "Accounts": []
+            "Accounts": [
+              {
+                "ID": "3.6.5.02.07/0100.6810001",
+                "ProductID": "3.6.5.02.07",
+                "Description": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfürdermaünahmen Bund",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.07/0100.6811000",
+                "ProductID": "3.6.5.02.07",
+                "Description": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfürdermaünahmen Land",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.07/0100.6817000",
+                "ProductID": "3.6.5.02.07",
+                "Description": "Einz. a. Zuschüssen f. Investitionen u.Invest.fürdermaünahmen priv.Unternehmen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.07/0100.6832000",
+                "ProductID": "3.6.5.02.07",
+                "Description": "Einz.a.d.Verüuü. v. bewegl. VermGegenst. v. mehr als 150 bis 1000 ? ohne UmStr.",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.07/0100.7832000",
+                "ProductID": "3.6.5.02.07",
+                "Description": "Ausz. f.d. Erw. v. beweg. Vermügensgegenstünden v. \u003e 150  bis 1000 ? o. UStr.",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 4800,
+                  "2025": 800,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.07/0200.7831000",
+                "ProductID": "3.6.5.02.07",
+                "Description": "Auszahl. f.d. Erw. von bewegl. Vermügengeg.st. von mehr als 1000 Euro ohne UStr.",
+                "Budget": {
+                  "2022": 15000,
+                  "2023": 7500,
+                  "2024": 0,
+                  "2025": 3700,
+                  "2026": 4900
+                }
+              },
+              {
+                "ID": "3.6.5.02.07/0300.7831000",
+                "ProductID": "3.6.5.02.07",
+                "Description": "Auszahl. f.d. Erw. von bewegl. Vermügengeg.st. von mehr als 1000 Euro ohne UStr.",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.07/1407.7851000",
+                "ProductID": "3.6.5.02.07",
+                "Description": "Auszahlungen für Hochbaumaünahmen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              }
+            ]
           },
           "Cashflow": {
             "Total": {
-              "2022": -220600,
-              "2023": -268500,
-              "2024": -385200,
-              "2025": -347500,
-              "2026": -475400
+              "2022": -235600,
+              "2023": -276000,
+              "2024": -390000,
+              "2025": -352000,
+              "2026": -480300
             },
             "Income": {
               "2022": 706000,
@@ -24597,11 +25821,11 @@
               "2026": 661900
             },
             "Expenses": {
-              "2022": -926600,
-              "2023": -928600,
-              "2024": -1045900,
-              "2025": -1008800,
-              "2026": -1137300
+              "2022": -941600,
+              "2023": -936100,
+              "2024": -1050700,
+              "2025": -1013300,
+              "2026": -1142200
             }
           },
           "Metadata": {
@@ -25092,19 +26316,134 @@
           },
           "InvestmentsBalance": {
             "Cashflow": {
-              "Total": {},
-              "Income": {},
-              "Expenses": {}
+              "Total": {
+                "2022": -2982400,
+                "2023": -4685400,
+                "2024": -4341900,
+                "2025": -5094900,
+                "2026": -4731000
+              },
+              "Income": {
+                "2022": 7726400,
+                "2023": 7360000,
+                "2024": 7374400,
+                "2025": 7381600,
+                "2026": 7589600
+              },
+              "Expenses": {
+                "2022": -10708800,
+                "2023": -12045400,
+                "2024": -11716300,
+                "2025": -12476500,
+                "2026": -12320600
+              }
             },
-            "Accounts": []
+            "Accounts": [
+              {
+                "ID": "3.6.5.02.08/0100.6810001",
+                "ProductID": "3.6.5.02.08",
+                "Description": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfürdermaünahmen Bund",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.08/0100.6817000",
+                "ProductID": "3.6.5.02.08",
+                "Description": "Einz. a. Zuschüssen f. Investitionen u.Invest.fürdermaünahmen priv.Unternehmen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.08/0100.6832000",
+                "ProductID": "3.6.5.02.08",
+                "Description": "Einz.a.d.Verüuü. v. bewegl. VermGegenst. v. mehr als 150 bis 1000 ? ohne UmStr.",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.08/0100.7832000",
+                "ProductID": "3.6.5.02.08",
+                "Description": "Ausz. f.d. Erw. v. beweg. Vermügensgegenstünden v. \u003e 150  bis 1000 ? o. UStr.",
+                "Budget": {
+                  "2022": 1800,
+                  "2023": 0,
+                  "2024": 1500,
+                  "2025": 700,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.08/0200.6810001",
+                "ProductID": "3.6.5.02.08",
+                "Description": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfürdermaünahmen Bund",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.08/0200.6811000",
+                "ProductID": "3.6.5.02.08",
+                "Description": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfürdermaünahmen Land",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.08/0200.7831000",
+                "ProductID": "3.6.5.02.08",
+                "Description": "Auszahl. f.d. Erw. von bewegl. Vermügengeg.st. von mehr als 1000 Euro ohne UStr.",
+                "Budget": {
+                  "2022": 2300,
+                  "2023": 5500,
+                  "2024": 1200,
+                  "2025": 3700,
+                  "2026": 4300
+                }
+              },
+              {
+                "ID": "3.6.5.02.08/0300.7831000",
+                "ProductID": "3.6.5.02.08",
+                "Description": "Auszahl. f.d. Erw. von bewegl. Vermügengeg.st. von mehr als 1000 Euro ohne UStr.",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              }
+            ]
           },
           "Cashflow": {
             "Total": {
-              "2022": -371100,
-              "2023": -584300,
-              "2024": -541500,
-              "2025": -635500,
-              "2026": -590300
+              "2022": -375200,
+              "2023": -589800,
+              "2024": -544200,
+              "2025": -639900,
+              "2026": -594600
             },
             "Income": {
               "2022": 965800,
@@ -25114,11 +26453,11 @@
               "2026": 948700
             },
             "Expenses": {
-              "2022": -1336900,
-              "2023": -1504300,
-              "2024": -1463300,
-              "2025": -1558200,
-              "2026": -1539000
+              "2022": -1341000,
+              "2023": -1509800,
+              "2024": -1466000,
+              "2025": -1562600,
+              "2026": -1543300
             }
           },
           "Metadata": {
@@ -25573,19 +26912,86 @@
           },
           "InvestmentsBalance": {
             "Cashflow": {
-              "Total": {},
-              "Income": {},
-              "Expenses": {}
+              "Total": {
+                "2022": -2051900,
+                "2023": -1660800,
+                "2024": -1868600,
+                "2025": -2003800,
+                "2026": -2139000
+              },
+              "Income": {
+                "2022": 3535200,
+                "2023": 3916400,
+                "2024": 3920400,
+                "2025": 3924800,
+                "2026": 3929200
+              },
+              "Expenses": {
+                "2022": -5587100,
+                "2023": -5577200,
+                "2024": -5789000,
+                "2025": -5928600,
+                "2026": -6068200
+              }
             },
-            "Accounts": []
+            "Accounts": [
+              {
+                "ID": "3.6.5.02.09/0100.7832000",
+                "ProductID": "3.6.5.02.09",
+                "Description": "Ausz. f.d. Erw. v. beweg. Vermügensgegenstünden v. \u003e 150  bis 1000 ? o. UStr.",
+                "Budget": {
+                  "2022": 3700,
+                  "2023": 5000,
+                  "2024": 13000,
+                  "2025": 13500,
+                  "2026": 13000
+                }
+              },
+              {
+                "ID": "3.6.5.02.09/0200.7831000",
+                "ProductID": "3.6.5.02.09",
+                "Description": "Auszahl. f.d. Erw. von bewegl. Vermügengeg.st. von mehr als 1000 Euro ohne UStr.",
+                "Budget": {
+                  "2022": 1700,
+                  "2023": 12000,
+                  "2024": 27000,
+                  "2025": 27000,
+                  "2026": 27000
+                }
+              },
+              {
+                "ID": "3.6.5.02.09/0300.7831000",
+                "ProductID": "3.6.5.02.09",
+                "Description": "Auszahl. f.d. Erw. von bewegl. Vermügengeg.st. von mehr als 1000 Euro ohne UStr.",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.09/1409.7851000",
+                "ProductID": "3.6.5.02.09",
+                "Description": "Auszahlungen für Hochbaumaünahmen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              }
+            ]
           },
           "Cashflow": {
             "Total": {
-              "2022": -508000,
-              "2023": -401200,
-              "2024": -433900,
-              "2025": -467200,
-              "2026": -501500
+              "2022": -513400,
+              "2023": -418200,
+              "2024": -473900,
+              "2025": -507700,
+              "2026": -541500
             },
             "Income": {
               "2022": 883800,
@@ -25595,11 +27001,11 @@
               "2026": 982300
             },
             "Expenses": {
-              "2022": -1391800,
-              "2023": -1380300,
-              "2024": -1414000,
-              "2025": -1448400,
-              "2026": -1483800
+              "2022": -1397200,
+              "2023": -1397300,
+              "2024": -1454000,
+              "2025": -1488900,
+              "2026": -1523800
             }
           },
           "Metadata": {
@@ -26018,19 +27424,74 @@
           },
           "InvestmentsBalance": {
             "Cashflow": {
-              "Total": {},
-              "Income": {},
-              "Expenses": {}
+              "Total": {
+                "2022": -629400,
+                "2023": -720600,
+                "2024": -753200,
+                "2025": -783600,
+                "2026": -817600
+              },
+              "Income": {
+                "2022": 745800,
+                "2023": 666000,
+                "2024": 667500,
+                "2025": 669000,
+                "2026": 670200
+              },
+              "Expenses": {
+                "2022": -1375200,
+                "2023": -1386600,
+                "2024": -1420700,
+                "2025": -1452600,
+                "2026": -1487800
+              }
             },
-            "Accounts": []
+            "Accounts": [
+              {
+                "ID": "3.6.5.02.10/0100.7832000",
+                "ProductID": "3.6.5.02.10",
+                "Description": "Ausz. f.d. Erw. v. beweg. Vermügensgegenstünden v. \u003e 150  bis 1000 ? o. UStr.",
+                "Budget": {
+                  "2022": 11300,
+                  "2023": 1400,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.10/0200.7831000",
+                "ProductID": "3.6.5.02.10",
+                "Description": "Auszahl. f.d. Erw. von bewegl. Vermügengeg.st. von mehr als 1000 Euro ohne UStr.",
+                "Budget": {
+                  "2022": 30000,
+                  "2023": 0,
+                  "2024": 2500,
+                  "2025": 1200,
+                  "2026": 1400
+                }
+              },
+              {
+                "ID": "3.6.5.02.10/0300.7831000",
+                "ProductID": "3.6.5.02.10",
+                "Description": "Auszahl. f.d. Erw. von bewegl. Vermügengeg.st. von mehr als 1000 Euro ohne UStr.",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              }
+            ]
           },
           "Cashflow": {
             "Total": {
-              "2022": -178500,
-              "2023": -238800,
-              "2024": -249400,
-              "2025": -260400,
-              "2026": -271600
+              "2022": -219800,
+              "2023": -240200,
+              "2024": -251900,
+              "2025": -261600,
+              "2026": -273000
             },
             "Income": {
               "2022": 248600,
@@ -26040,11 +27501,11 @@
               "2026": 223400
             },
             "Expenses": {
-              "2022": -427100,
-              "2023": -460800,
-              "2024": -471900,
-              "2025": -483400,
-              "2026": -495000
+              "2022": -468400,
+              "2023": -462200,
+              "2024": -474400,
+              "2025": -484600,
+              "2026": -496400
             }
           },
           "Metadata": {
@@ -26523,19 +27984,86 @@
           },
           "InvestmentsBalance": {
             "Cashflow": {
-              "Total": {},
-              "Income": {},
-              "Expenses": {}
+              "Total": {
+                "2022": -1362800,
+                "2023": -1490000,
+                "2024": -1560400,
+                "2025": -1627800,
+                "2026": -1703600
+              },
+              "Income": {
+                "2022": 1992400,
+                "2023": 1918800,
+                "2024": 1921600,
+                "2025": 1924800,
+                "2026": 1927600
+              },
+              "Expenses": {
+                "2022": -3355200,
+                "2023": -3408800,
+                "2024": -3482000,
+                "2025": -3552600,
+                "2026": -3631200
+              }
             },
-            "Accounts": []
+            "Accounts": [
+              {
+                "ID": "3.6.5.02.11/0100.7832000",
+                "ProductID": "3.6.5.02.11",
+                "Description": "Ausz. f.d. Erw. v. beweg. Vermügensgegenstünden v. \u003e 150  bis 1000 ? o. UStr.",
+                "Budget": {
+                  "2022": 2600,
+                  "2023": 1000,
+                  "2024": 2600,
+                  "2025": 0,
+                  "2026": 2600
+                }
+              },
+              {
+                "ID": "3.6.5.02.11/0200.7831000",
+                "ProductID": "3.6.5.02.11",
+                "Description": "Auszahl. f.d. Erw. von bewegl. Vermügengeg.st. von mehr als 1000 Euro ohne UStr.",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 1600,
+                  "2024": 0,
+                  "2025": 2600,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.11/0300.7831000",
+                "ProductID": "3.6.5.02.11",
+                "Description": "Auszahl. f.d. Erw. von bewegl. Vermügengeg.st. von mehr als 1000 Euro ohne UStr.",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.11/1426.7851000",
+                "ProductID": "3.6.5.02.11",
+                "Description": "Auszahlungen für Hochbaumaünahmen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              }
+            ]
           },
           "Cashflow": {
             "Total": {
-              "2022": -338100,
-              "2023": -370300,
-              "2024": -387500,
-              "2025": -405000,
-              "2026": -423300
+              "2022": -340700,
+              "2023": -372900,
+              "2024": -390100,
+              "2025": -407600,
+              "2026": -425900
             },
             "Income": {
               "2022": 498100,
@@ -26545,11 +28073,11 @@
               "2026": 481900
             },
             "Expenses": {
-              "2022": -836200,
-              "2023": -850000,
-              "2024": -867900,
-              "2025": -886200,
-              "2026": -905200
+              "2022": -838800,
+              "2023": -852600,
+              "2024": -870500,
+              "2025": -888800,
+              "2026": -907800
             }
           },
           "Metadata": {
@@ -26980,33 +28508,148 @@
           },
           "InvestmentsBalance": {
             "Cashflow": {
-              "Total": {},
-              "Income": {},
-              "Expenses": {}
+              "Total": {
+                "2022": -1319200,
+                "2023": -3259400,
+                "2024": -3120800,
+                "2025": -3276000,
+                "2026": -3425600
+              },
+              "Income": {
+                "2022": 4146400,
+                "2023": 3228800,
+                "2024": 3232000,
+                "2025": 3235200,
+                "2026": 3239200
+              },
+              "Expenses": {
+                "2022": -5465600,
+                "2023": -6488200,
+                "2024": -6352800,
+                "2025": -6511200,
+                "2026": -6664800
+              }
             },
-            "Accounts": []
+            "Accounts": [
+              {
+                "ID": "3.6.5.02.12/0100.6817000",
+                "ProductID": "3.6.5.02.12",
+                "Description": "Einz. a. Zuschüssen f. Investitionen u.Invest.fürdermaünahmen priv.Unternehmen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.12/0100.6818000",
+                "ProductID": "3.6.5.02.12",
+                "Description": "Einz. a. Zuschüssen f. Investitionen u.Investitionsfürderm. von übr. Bereichen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.12/0100.7832000",
+                "ProductID": "3.6.5.02.12",
+                "Description": "Ausz. f.d. Erw. v. beweg. Vermügensgegenstünden v. \u003e 150  bis 1000 ? o. UStr.",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 3200,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.12/0200.6817000",
+                "ProductID": "3.6.5.02.12",
+                "Description": "Einz. a. Zuschüssen f. Investitionen u.Invest.fürdermaünahmen priv.Unternehmen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.12/0200.7831000",
+                "ProductID": "3.6.5.02.12",
+                "Description": "Auszahl. f.d. Erw. von bewegl. Vermügengeg.st. von mehr als 1000 Euro ohne UStr.",
+                "Budget": {
+                  "2022": 15000,
+                  "2023": 6500,
+                  "2024": 3600,
+                  "2025": 0,
+                  "2026": 3600
+                }
+              },
+              {
+                "ID": "3.6.5.02.12/0300.7831000",
+                "ProductID": "3.6.5.02.12",
+                "Description": "Auszahl. f.d. Erw. von bewegl. Vermügengeg.st. von mehr als 1000 Euro ohne UStr.",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.12/1423.6812000",
+                "ProductID": "3.6.5.02.12",
+                "Description": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfürderm. Gemeinden \u0026 GV",
+                "Budget": {
+                  "2022": 248400,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.12/1423.7851000",
+                "ProductID": "3.6.5.02.12",
+                "Description": "Auszahlungen für Hochbaumaünahmen",
+                "Budget": {
+                  "2022": 440000,
+                  "2023": 235000,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              }
+            ]
           },
           "Cashflow": {
             "Total": {
-              "2022": -164500,
-              "2023": -374800,
-              "2024": -388300,
-              "2025": -407100,
-              "2026": -426400
+              "2022": -371100,
+              "2023": -616300,
+              "2024": -391900,
+              "2025": -410300,
+              "2026": -430000
             },
             "Income": {
-              "2022": 456200,
+              "2022": 704600,
               "2023": 403600,
               "2024": 404000,
               "2025": 404400,
               "2026": 404900
             },
             "Expenses": {
-              "2022": -620700,
-              "2023": -778400,
-              "2024": -792300,
-              "2025": -811500,
-              "2026": -831300
+              "2022": -1075700,
+              "2023": -1019900,
+              "2024": -795900,
+              "2025": -814700,
+              "2026": -834900
             }
           },
           "Metadata": {
@@ -27425,19 +29068,98 @@
           },
           "InvestmentsBalance": {
             "Cashflow": {
-              "Total": {},
-              "Income": {},
-              "Expenses": {}
+              "Total": {
+                "2022": -807900,
+                "2023": -1048400,
+                "2024": -835900,
+                "2025": -873400,
+                "2026": -911900
+              },
+              "Income": {
+                "2022": 871500,
+                "2023": 741500,
+                "2024": 742500,
+                "2025": 743500,
+                "2026": 744500
+              },
+              "Expenses": {
+                "2022": -1679400,
+                "2023": -1789900,
+                "2024": -1578400,
+                "2025": -1616900,
+                "2026": -1656400
+              }
             },
-            "Accounts": []
+            "Accounts": [
+              {
+                "ID": "3.6.5.02.13/0100.6817000",
+                "ProductID": "3.6.5.02.13",
+                "Description": "Einz. a. Zuschüssen f. Investitionen u.Invest.fürdermaünahmen priv.Unternehmen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.13/0100.7832000",
+                "ProductID": "3.6.5.02.13",
+                "Description": "Ausz. f.d. Erw. v. beweg. Vermügensgegenstünden v. \u003e 150  bis 1000 ? o. UStr.",
+                "Budget": {
+                  "2022": 600,
+                  "2023": 600,
+                  "2024": 600,
+                  "2025": 600,
+                  "2026": 600
+                }
+              },
+              {
+                "ID": "3.6.5.02.13/0200.7831000",
+                "ProductID": "3.6.5.02.13",
+                "Description": "Auszahl. f.d. Erw. von bewegl. Vermügengeg.st. von mehr als 1000 Euro ohne UStr.",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.13/0300.7831000",
+                "ProductID": "3.6.5.02.13",
+                "Description": "Auszahl. f.d. Erw. von bewegl. Vermügengeg.st. von mehr als 1000 Euro ohne UStr.",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.13/1424.7851000",
+                "ProductID": "3.6.5.02.13",
+                "Description": "Auszahlungen für Hochbaumaünahmen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              }
+            ]
           },
           "Cashflow": {
             "Total": {
-              "2022": -161100,
-              "2023": -209200,
-              "2024": -166700,
-              "2025": -174200,
-              "2026": -181900
+              "2022": -161700,
+              "2023": -209800,
+              "2024": -167300,
+              "2025": -174800,
+              "2026": -182500
             },
             "Income": {
               "2022": 174300,
@@ -27447,11 +29169,11 @@
               "2026": 148900
             },
             "Expenses": {
-              "2022": -335400,
-              "2023": -357500,
-              "2024": -315200,
-              "2025": -322900,
-              "2026": -330800
+              "2022": -336000,
+              "2023": -358100,
+              "2024": -315800,
+              "2025": -323500,
+              "2026": -331400
             }
           },
           "Metadata": {
@@ -27858,19 +29580,74 @@
           },
           "InvestmentsBalance": {
             "Cashflow": {
-              "Total": {},
-              "Income": {},
-              "Expenses": {}
+              "Total": {
+                "2022": -426300,
+                "2023": -638600,
+                "2024": -659400,
+                "2025": -716000,
+                "2026": -771800
+              },
+              "Income": {
+                "2022": 1563000,
+                "2023": 1539300,
+                "2024": 1539300,
+                "2025": 1539300,
+                "2026": 1539300
+              },
+              "Expenses": {
+                "2022": -1989300,
+                "2023": -2177900,
+                "2024": -2198700,
+                "2025": -2255300,
+                "2026": -2311100
+              }
             },
-            "Accounts": []
+            "Accounts": [
+              {
+                "ID": "3.6.5.02.14/0100.7832000",
+                "ProductID": "3.6.5.02.14",
+                "Description": "Ausz. f.d. Erw. v. beweg. Vermügensgegenstünden v. \u003e 150  bis 1000 ? o. UStr.",
+                "Budget": {
+                  "2022": 1000,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.14/0200.7831000",
+                "ProductID": "3.6.5.02.14",
+                "Description": "Auszahl. f.d. Erw. von bewegl. Vermügengeg.st. von mehr als 1000 Euro ohne UStr.",
+                "Budget": {
+                  "2022": 3000,
+                  "2023": 4000,
+                  "2024": 3000,
+                  "2025": 4000,
+                  "2026": 4000
+                }
+              },
+              {
+                "ID": "3.6.5.02.14/0300.7831000",
+                "ProductID": "3.6.5.02.14",
+                "Description": "Auszahl. f.d. Erw. von bewegl. Vermügengeg.st. von mehr als 1000 Euro ohne UStr.",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              }
+            ]
           },
           "Cashflow": {
             "Total": {
-              "2022": -139100,
-              "2023": -210200,
-              "2024": -217800,
-              "2025": -236000,
-              "2026": -254600
+              "2022": -143100,
+              "2023": -214200,
+              "2024": -220800,
+              "2025": -240000,
+              "2026": -258600
             },
             "Income": {
               "2022": 521000,
@@ -27880,11 +29657,11 @@
               "2026": 513100
             },
             "Expenses": {
-              "2022": -660100,
-              "2023": -723300,
-              "2024": -730900,
-              "2025": -749100,
-              "2026": -767700
+              "2022": -664100,
+              "2023": -727300,
+              "2024": -733900,
+              "2025": -753100,
+              "2026": -771700
             }
           },
           "Metadata": {
@@ -28279,19 +30056,74 @@
           },
           "InvestmentsBalance": {
             "Cashflow": {
-              "Total": {},
-              "Income": {},
-              "Expenses": {}
+              "Total": {
+                "2022": -153700,
+                "2023": -360000,
+                "2024": -373900,
+                "2025": -411600,
+                "2026": -450900
+              },
+              "Income": {
+                "2022": 1197000,
+                "2023": 1172700,
+                "2024": 1172700,
+                "2025": 1172700,
+                "2026": 1172700
+              },
+              "Expenses": {
+                "2022": -1350700,
+                "2023": -1532700,
+                "2024": -1546600,
+                "2025": -1584300,
+                "2026": -1623600
+              }
             },
-            "Accounts": []
+            "Accounts": [
+              {
+                "ID": "3.6.5.02.15/0100.7832000",
+                "ProductID": "3.6.5.02.15",
+                "Description": "Ausz. f.d. Erw. v. beweg. Vermügensgegenstünden v. \u003e 150  bis 1000 ? o. UStr.",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.15/0200.7831000",
+                "ProductID": "3.6.5.02.15",
+                "Description": "Auszahl. f.d. Erw. von bewegl. Vermügengeg.st. von mehr als 1000 Euro ohne UStr.",
+                "Budget": {
+                  "2022": 20000,
+                  "2023": 7500,
+                  "2024": 3200,
+                  "2025": 3000,
+                  "2026": 3000
+                }
+              },
+              {
+                "ID": "3.6.5.02.15/0300.7831000",
+                "ProductID": "3.6.5.02.15",
+                "Description": "Auszahl. f.d. Erw. von bewegl. Vermügengeg.st. von mehr als 1000 Euro ohne UStr.",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              }
+            ]
           },
           "Cashflow": {
             "Total": {
-              "2022": -37900,
-              "2023": -115000,
-              "2024": -122500,
-              "2025": -135200,
-              "2026": -148300
+              "2022": -57900,
+              "2023": -122500,
+              "2024": -125700,
+              "2025": -138200,
+              "2026": -151300
             },
             "Income": {
               "2022": 399000,
@@ -28301,11 +30133,11 @@
               "2026": 390900
             },
             "Expenses": {
-              "2022": -436900,
-              "2023": -505900,
-              "2024": -513400,
-              "2025": -526100,
-              "2026": -539200
+              "2022": -456900,
+              "2023": -513400,
+              "2024": -516600,
+              "2025": -529100,
+              "2026": -542200
             }
           },
           "Metadata": {
@@ -28688,19 +30520,86 @@
           },
           "InvestmentsBalance": {
             "Cashflow": {
-              "Total": {},
-              "Income": {},
-              "Expenses": {}
+              "Total": {
+                "2022": 16900,
+                "2023": 192300,
+                "2024": 161500,
+                "2025": 129900,
+                "2026": 97100
+              },
+              "Income": {
+                "2022": 1299200,
+                "2023": 1489200,
+                "2024": 1489200,
+                "2025": 1489200,
+                "2026": 1489200
+              },
+              "Expenses": {
+                "2022": -1282300,
+                "2023": -1296900,
+                "2024": -1327700,
+                "2025": -1359300,
+                "2026": -1392100
+              }
             },
-            "Accounts": []
+            "Accounts": [
+              {
+                "ID": "3.6.5.02.16/0100.6818000",
+                "ProductID": "3.6.5.02.16",
+                "Description": "Einz. a. Zuschüssen f. Investitionen u.Investitionsfürderm. von übr. Bereichen",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.16/0100.7832000",
+                "ProductID": "3.6.5.02.16",
+                "Description": "Ausz. f.d. Erw. v. beweg. Vermügensgegenstünden v. \u003e 150  bis 1000 ? o. UStr.",
+                "Budget": {
+                  "2022": 2500,
+                  "2023": 3100,
+                  "2024": 3100,
+                  "2025": 3100,
+                  "2026": 3100
+                }
+              },
+              {
+                "ID": "3.6.5.02.16/0200.7831000",
+                "ProductID": "3.6.5.02.16",
+                "Description": "Auszahl. f.d. Erw. von bewegl. Vermügengeg.st. von mehr als 1000 Euro ohne UStr.",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              },
+              {
+                "ID": "3.6.5.02.16/0300.7831000",
+                "ProductID": "3.6.5.02.16",
+                "Description": "Auszahl. f.d. Erw. von bewegl. Vermügengeg.st. von mehr als 1000 Euro ohne UStr.",
+                "Budget": {
+                  "2022": 0,
+                  "2023": 0,
+                  "2024": 0,
+                  "2025": 0,
+                  "2026": 0
+                }
+              }
+            ]
           },
           "Cashflow": {
             "Total": {
-              "2022": 6100,
-              "2023": 50400,
-              "2024": 42700,
-              "2025": 34800,
-              "2026": 26600
+              "2022": 3600,
+              "2023": 47300,
+              "2024": 39600,
+              "2025": 31700,
+              "2026": 23500
             },
             "Income": {
               "2022": 324800,
@@ -28710,11 +30609,11 @@
               "2026": 372300
             },
             "Expenses": {
-              "2022": -318700,
-              "2023": -321900,
-              "2024": -329600,
-              "2025": -337500,
-              "2026": -345700
+              "2022": -321200,
+              "2023": -325000,
+              "2024": -332700,
+              "2025": -340600,
+              "2026": -348800
             }
           },
           "Metadata": {
@@ -28924,7 +30823,7 @@
           }
         },
         "3.6.5.03": {
-          "ID": "3.6.5.03.43",
+          "ID": "3.6.5.03.63",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -29349,7 +31248,7 @@
           }
         },
         "3.6.5.05": {
-          "ID": "3.6.5.05.43",
+          "ID": "3.6.5.05.63",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -29479,7 +31378,7 @@
           }
         },
         "3.6.6.01": {
-          "ID": "3.6.6.01.41",
+          "ID": "3.6.6.01.61",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -30132,7 +32031,7 @@
           }
         },
         "4.2.1.01": {
-          "ID": "4.2.1.01.44",
+          "ID": "4.2.1.01.64",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -30293,7 +32192,7 @@
           }
         },
         "4.2.4.01": {
-          "ID": "4.2.4.01.41",
+          "ID": "4.2.4.01.61",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -31162,7 +33061,7 @@
           }
         },
         "4.2.4.02": {
-          "ID": "4.2.4.02.41",
+          "ID": "4.2.4.02.61",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -31923,7 +33822,7 @@
           }
         },
         "5.4.6.01": {
-          "ID": "5.4.6.01.43",
+          "ID": "5.4.6.01.63",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -32204,7 +34103,7 @@
           }
         },
         "5.4.6.03": {
-          "ID": "5.4.6.03.44",
+          "ID": "5.4.6.03.64",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -32550,7 +34449,7 @@
           }
         },
         "5.4.7.01": {
-          "ID": "5.4.7.01.45",
+          "ID": "5.4.7.01.72",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -32753,7 +34652,7 @@
           }
         },
         "5.7.3.01": {
-          "ID": "5.7.3.01.43",
+          "ID": "5.7.3.01.63",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -33084,7 +34983,7 @@
       },
       "Products": {
         "1.1.1.03": {
-          "ID": "1.1.1.03.41",
+          "ID": "1.1.1.03.61",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -33761,7 +35660,7 @@
           }
         },
         "1.1.1.14": {
-          "ID": "1.1.1.14.43",
+          "ID": "1.1.1.14.63",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -34294,7 +36193,7 @@
           }
         },
         "1.1.1.15": {
-          "ID": "1.1.1.15.44",
+          "ID": "1.1.1.15.64",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -34611,7 +36510,7 @@
           }
         },
         "5.1.1.01": {
-          "ID": "5.1.1.01.41",
+          "ID": "5.1.1.01.61",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -35252,7 +37151,7 @@
           }
         },
         "5.1.1.02": {
-          "ID": "5.1.1.02.41",
+          "ID": "5.1.1.02.61",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -36465,7 +38364,7 @@
           }
         },
         "5.2.3.01": {
-          "ID": "5.2.3.01.41",
+          "ID": "5.2.3.01.61",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -36938,7 +38837,7 @@
           }
         },
         "5.2.3.02": {
-          "ID": "5.2.3.02.41",
+          "ID": "5.2.3.02.61",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -37231,7 +39130,7 @@
           }
         },
         "5.4.1.01": {
-          "ID": "5.4.1.01.41",
+          "ID": "5.4.1.01.61",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -38388,7 +40287,7 @@
           }
         },
         "5.4.5.02": {
-          "ID": "5.4.5.02.44",
+          "ID": "5.4.5.02.64",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -38597,7 +40496,7 @@
           }
         },
         "5.4.7.02": {
-          "ID": "5.4.7.02.45",
+          "ID": "5.4.7.02.73",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -38740,7 +40639,7 @@
           }
         },
         "5.5.2.01": {
-          "ID": "5.5.2.01.41",
+          "ID": "5.5.2.01.61",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -39417,7 +41316,7 @@
           }
         },
         "5.6.1.01": {
-          "ID": "5.6.1.01.41",
+          "ID": "5.6.1.01.61",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -39734,7 +41633,7 @@
           }
         },
         "5.7.5.03": {
-          "ID": "5.7.5.03.44",
+          "ID": "5.7.5.03.64",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
