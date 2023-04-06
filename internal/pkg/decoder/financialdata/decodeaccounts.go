@@ -9,7 +9,7 @@ import (
 )
 
 var (
-	isFinancialPlanAccount = regexp.MustCompile(`^(\d\.)+(\d{2}\.)+(\/\d{4}\.)?[^45]\d+$`)
+	isFinancialPlanAccount = regexp.MustCompile(`^(\d\.)+(\d{2}\.?)+(\/\d{4}\.)?[^45]\d+$`)
 )
 
 func DecodeAccounts(rows [][]string) map[string][]fd.Account {

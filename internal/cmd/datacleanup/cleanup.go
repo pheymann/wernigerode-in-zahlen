@@ -93,32 +93,32 @@ func cleanupFinancialPlans(financialDataFile *os.File, productToMetadata map[mod
 
 		if departmentFinancialPlans[departmentID].DepartmentID == "" {
 			departmentFinancialPlans[departmentID] = model.FinancialPlanDepartment{
-				DepartmentID: departmentID,
-				Products:     make(map[model.ID]model.FinancialPlanProduct),
+				DepartmentID:          departmentID,
+				Products:              make(map[model.ID]model.FinancialPlanProduct),
+				AdministrationBalance: model.NewCashFlow(),
+				InvestmentsBalance:    model.NewCashFlow(),
+				Cashflow:              model.NewCashFlow(),
 			}
 		}
 
-		departmentFinancialPlans[departmentID].Products[productID] = productFinancialPlan
-		for budgetYear, budget := range productFinancialPlan.AdministrationBalance.Budget {
-			departmentFinancialPlans[departmentID].AdministrationBalance[budgetYear] += budget
-		}
-		for budgetYear, budget := range productFinancialPlan.InvestmentsBalance.Budget {
-			departmentFinancialPlans[departmentID].InvestmentsBalance[budgetYear] += budget
-		}
+		department := departmentFinancialPlans[departmentID]
+		department.Products[productID] = productFinancialPlan
+		department.AdministrationBalance = department.AdministrationBalance.AddCashflow(productFinancialPlan.AdministrationBalance.Cashflow)
+		department.InvestmentsBalance = department.InvestmentsBalance.AddCashflow(productFinancialPlan.InvestmentsBalance.Cashflow)
+		department.Cashflow = department.Cashflow.AddCashflow(productFinancialPlan.Cashflow)
+		departmentFinancialPlans[departmentID] = department
 	}
 
 	cityFinancialPlan := model.FinancialPlanCity{
-		AdministrationBalance: make(map[string]float64),
-		InvestmentsBalance:    make(map[string]float64),
+		AdministrationBalance: model.NewCashFlow(),
+		InvestmentsBalance:    model.NewCashFlow(),
+		Cashflow:              model.NewCashFlow(),
 		Departments:           departmentFinancialPlans,
 	}
 	for _, departmentFinancialPlan := range departmentFinancialPlans {
-		for budgetYear, budget := range departmentFinancialPlan.AdministrationBalance {
-			cityFinancialPlan.AdministrationBalance[budgetYear] += budget
-		}
-		for budgetYear, budget := range departmentFinancialPlan.InvestmentsBalance {
-			cityFinancialPlan.InvestmentsBalance[budgetYear] += budget
-		}
+		cityFinancialPlan.AdministrationBalance = cityFinancialPlan.AdministrationBalance.AddCashflow(departmentFinancialPlan.AdministrationBalance)
+		cityFinancialPlan.InvestmentsBalance = cityFinancialPlan.InvestmentsBalance.AddCashflow(departmentFinancialPlan.InvestmentsBalance)
+		cityFinancialPlan.Cashflow = cityFinancialPlan.Cashflow.AddCashflow(departmentFinancialPlan.Cashflow)
 	}
 
 	return cityFinancialPlan

@@ -10,7 +10,7 @@ type FinancialPlanProduct struct {
 	ID                    ID
 	AdministrationBalance AccountBalance2
 	InvestmentsBalance    AccountBalance2
-	CashFlow              Cashflow
+	Cashflow              Cashflow
 	Metadata              Metadata
 }
 
@@ -24,21 +24,21 @@ func NewFinancialPlanProduct() *FinancialPlanProduct {
 			Cashflow: NewCashFlow(),
 			Accounts: make([]Account2, 0),
 		},
-		CashFlow: NewCashFlow(),
+		Cashflow: NewCashFlow(),
 	}
 }
 
 type FinancialPlanDepartment struct {
 	DepartmentID          ID
-	AdministrationBalance map[BudgetYear]Cashflow
-	InvestmentsBalance    map[BudgetYear]Cashflow
+	AdministrationBalance Cashflow
+	InvestmentsBalance    Cashflow
 	Cashflow              Cashflow
 	Products              map[ID]FinancialPlanProduct
 }
 
 type FinancialPlanCity struct {
-	AdministrationBalance map[BudgetYear]float64
-	InvestmentsBalance    map[BudgetYear]float64
+	AdministrationBalance Cashflow
+	InvestmentsBalance    Cashflow
 	Cashflow              Cashflow
 	Departments           map[ID]FinancialPlanDepartment
 }
@@ -59,6 +59,19 @@ type Cashflow struct {
 	Total    map[BudgetYear]float64
 	Income   map[BudgetYear]float64
 	Expenses map[BudgetYear]float64
+}
+
+func (cf Cashflow) AddCashflow(other Cashflow) Cashflow {
+	for year, total := range other.Total {
+		cf.Total[year] += total
+	}
+	for year, income := range other.Income {
+		cf.Income[year] += income
+	}
+	for year, expenses := range other.Expenses {
+		cf.Expenses[year] += expenses
+	}
+	return cf
 }
 
 func NewCashFlow() Cashflow {

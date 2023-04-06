@@ -1,6 +1,7 @@
 package financialplan
 
 import (
+	"fmt"
 	"regexp"
 
 	"wernigerode-in-zahlen.de/internal/pkg/decoder"
@@ -9,8 +10,8 @@ import (
 )
 
 var (
-	isAdminIncomeRegex  = regexp.MustCompile(`^(\d\.)+(\d{2}\.)+[^6]\d+$`)
-	isAdminExpenseRegex = regexp.MustCompile(`^(\d\.)+(\d{2}\.)+[^7]\d+$`)
+	isAdminIncomeRegex  = regexp.MustCompile(`^(\d\.)+(\d{2}\.)+6\d+$`)
+	isAdminExpenseRegex = regexp.MustCompile(`^(\d\.)+(\d{2}\.)+7\d+$`)
 
 	isInvestmentIncomeRegex  = regexp.MustCompile(`^(\d\.)+(\d{2})+\/\d{4}\.6\d+$`)
 	isInvestmentExpenseRegex = regexp.MustCompile(`^(\d\.)+(\d{2})+\/\d{4}\.7\d+$`)
@@ -37,7 +38,8 @@ func DecodeFromAccounts(accounts []fd.Account) model.FinancialPlanProduct {
 		} else if isInvestmentExpenseRegex.MatchString(account.ID) {
 			updateInvestmentsBalance(financialPlan, account, true)
 		} else {
-			panic("Unknown account type: " + account.ID)
+			// panic("Unknown account type: " + account.ID)
+			fmt.Printf("WARN Unknown account type: %s\n", account.ID)
 		}
 	}
 
@@ -61,6 +63,7 @@ func updateAdministrationBalance(plan *model.FinancialPlanProduct, account fd.Ac
 		Description: account.Description,
 		Budget:      account.Budget,
 	})
+	plan.AdministrationBalance.Cashflow = plan.AdministrationBalance.Cashflow.AddCashflow(plan.Cashflow)
 }
 
 func updateInvestmentsBalance(plan *model.FinancialPlanProduct, account fd.Account, isExpense bool) {
@@ -74,6 +77,7 @@ func updateInvestmentsBalance(plan *model.FinancialPlanProduct, account fd.Accou
 		Description: account.Description,
 		Budget:      account.Budget,
 	})
+	plan.InvestmentsBalance.Cashflow = plan.InvestmentsBalance.Cashflow.AddCashflow(plan.Cashflow)
 }
 
 func signBudget(value float64, isExpense bool) float64 {
@@ -85,12 +89,12 @@ func signBudget(value float64, isExpense bool) float64 {
 }
 
 func updateCashflow(plan *model.FinancialPlanProduct, isExpense bool, year model.BudgetYear, value float64) {
-	plan.CashFlow.Total[year] += value
+	plan.Cashflow.Total[year] += value
 
 	if isExpense {
-		plan.CashFlow.Expenses[year] += value
+		plan.Cashflow.Expenses[year] += value
 	} else {
-		plan.CashFlow.Income[year] += value
+		plan.Cashflow.Income[year] += value
 	}
 }
 
