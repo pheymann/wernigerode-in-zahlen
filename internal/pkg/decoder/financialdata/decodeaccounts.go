@@ -1,16 +1,9 @@
 package financialdata
 
 import (
-	"regexp"
-
 	"wernigerode-in-zahlen.de/internal/pkg/decoder"
 	"wernigerode-in-zahlen.de/internal/pkg/model"
 	fd "wernigerode-in-zahlen.de/internal/pkg/model/financialdata"
-)
-
-var (
-	isResultPlanAdminAccount      = regexp.MustCompile(`^(\d\.)+(\d{2}\.)+[45]\d+$`)
-	isResultPlanInvestmentAccount = regexp.MustCompile(`^(\d\.)+(\d{2}\.?)+\/\d{4}\.[45]\d+$`)
 )
 
 func DecodeAccounts(rows [][]string) map[string][]fd.Account {
@@ -21,10 +14,6 @@ func DecodeAccounts(rows [][]string) map[string][]fd.Account {
 			ID:          row[0],
 			ProductID:   row[1],
 			Description: row[2],
-		}
-
-		if isResultPlanAdminAccount.MatchString(account.ID) || isResultPlanInvestmentAccount.MatchString(account.ID) {
-			continue
 		}
 
 		budget := make(map[string]float64)
