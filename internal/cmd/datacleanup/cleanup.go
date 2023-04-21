@@ -12,6 +12,7 @@ import (
 	decodeMeta "wernigerode-in-zahlen.de/internal/pkg/decoder/metadata"
 	"wernigerode-in-zahlen.de/internal/pkg/encoder"
 	"wernigerode-in-zahlen.de/internal/pkg/model"
+	"wernigerode-in-zahlen.de/internal/pkg/shared"
 )
 
 func Cleanup(financialDataFile *os.File, metadataFiles []*os.File) string {
@@ -83,8 +84,12 @@ func cleanupFinancialPlans(financialDataFile *os.File, productToMetadata map[mod
 	productFinancialPlans := make(map[string]model.FinancialPlanProduct)
 	for productID, accounts := range productAccounts {
 		plan := fp.DecodeFromAccounts(accounts)
-		plan.Metadata = findMetadata(productID, productToMetadata)
-		productFinancialPlans[productID] = plan
+		metaOpt := findMetadata(productID, productToMetadata)
+
+		if metaOpt.IsSome {
+			plan.Metadata = metaOpt.Value
+			productFinancialPlans[productID] = plan
+		}
 	}
 
 	departmentFinancialPlans := make(map[string]model.FinancialPlanDepartment)
@@ -124,11 +129,11 @@ func cleanupFinancialPlans(financialDataFile *os.File, productToMetadata map[mod
 	return cityFinancialPlan
 }
 
-func findMetadata(productID model.ID, productToMetadata map[model.ID]model.Metadata) model.Metadata {
+func findMetadata(productID model.ID, productToMetadata map[model.ID]model.Metadata) shared.Option[model.Metadata] {
 	if metadata, ok := productToMetadata[productID]; ok {
-		return metadata
+		return shared.Some(metadata)
 	}
 	// panic(fmt.Sprintf("No metadata found for product %s", productID))
 	fmt.Printf("WARN >> No metadata found for product %s\n", productID)
-	return model.Metadata{}
+	return shared.None[model.Metadata]()
 }

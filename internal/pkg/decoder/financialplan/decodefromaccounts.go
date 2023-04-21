@@ -20,17 +20,27 @@ func DecodeFromAccounts(accounts []fd.Account) model.FinancialPlanProduct {
 	var financialPlan = model.NewFinancialPlanProduct()
 
 	for _, account := range accounts {
-		var isAdminAccount = true
-		var matches = adminAccountIdRegex.FindStringSubmatch(account.ID)
+		var isAdminAccount = false
+		var matches = investmentAccountIdRegex.FindStringSubmatch(account.ID)
 		if matches == nil {
-			isAdminAccount = false
-			matches = investmentAccountIdRegex.FindStringSubmatch(account.ID)
+			isAdminAccount = true
+			matches = adminAccountIdRegex.FindStringSubmatch(account.ID)
 			if matches == nil {
 				panic("could not find id in account id: " + account.ID)
 			}
 		}
 
-		id := decoder.DecodeString(adminAccountIdRegex, "id", matches)
+		var id = ""
+		if !isAdminAccount {
+			id = decoder.DecodeString(investmentAccountIdRegex, "id", matches)
+		} else {
+			id = decoder.DecodeString(adminAccountIdRegex, "id", matches)
+		}
+
+		if !setMetadata {
+			addID(financialPlan, account)
+			setMetadata = true
+		}
 
 		switch id[0] {
 		case '4':
@@ -61,11 +71,6 @@ func DecodeFromAccounts(accounts []fd.Account) model.FinancialPlanProduct {
 
 		default:
 			panic("unknown id: " + id)
-		}
-
-		if !setMetadata {
-			addID(financialPlan, account)
-			setMetadata = true
 		}
 	}
 

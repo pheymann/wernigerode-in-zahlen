@@ -1,21 +1,21 @@
 {
   "AdministrationBalance": {
     "Total": {
-      "2022": -504200,
+      "2022": -437500,
       "2023": -1779500,
       "2024": -1710600,
       "2025": -1273200,
       "2026": -1031400
     },
     "Income": {
-      "2022": 70324900,
+      "2022": 70235700,
       "2023": 72990900,
       "2024": 74673000,
       "2025": 76804200,
       "2026": 77902600
     },
     "Expenses": {
-      "2022": -70829100,
+      "2022": -70673200,
       "2023": -74770400,
       "2024": -76383600,
       "2025": -78077400,
@@ -24,7 +24,7 @@
   },
   "InvestmentsBalance": {
     "Total": {
-      "2022": -1469500,
+      "2022": -1468700,
       "2023": -1600200,
       "2024": -4987800,
       "2025": -3459900,
@@ -38,7 +38,7 @@
       "2026": 5557500
     },
     "Expenses": {
-      "2022": -14425200,
+      "2022": -14424400,
       "2023": -12252100,
       "2024": -13559600,
       "2025": -9017500,
@@ -47,21 +47,21 @@
   },
   "Cashflow": {
     "Total": {
-      "2022": -1973700,
+      "2022": -1906200,
       "2023": -3379700,
       "2024": -6698400,
       "2025": -4733100,
       "2026": -3847200
     },
     "Income": {
-      "2022": 83280600,
+      "2022": 83191400,
       "2023": 83642800,
       "2024": 83244800,
       "2025": 82361800,
       "2026": 83460100
     },
     "Expenses": {
-      "2022": -85254300,
+      "2022": -85097600,
       "2023": -87022500,
       "2024": -89943200,
       "2025": -87094900,
@@ -69,457 +69,6 @@
     }
   },
   "Departments": {
-    "": {
-      "DepartmentID": "",
-      "AdministrationBalance": {
-        "Total": {
-          "2022": -66700,
-          "2023": 0,
-          "2024": 0,
-          "2025": 0,
-          "2026": 0
-        },
-        "Income": {
-          "2022": 89200,
-          "2023": 0,
-          "2024": 0,
-          "2025": 0,
-          "2026": 0
-        },
-        "Expenses": {
-          "2022": -155900,
-          "2023": 0,
-          "2024": 0,
-          "2025": 0,
-          "2026": 0
-        }
-      },
-      "InvestmentsBalance": {
-        "Total": {
-          "2022": -800,
-          "2023": 0,
-          "2024": 0,
-          "2025": 0,
-          "2026": 0
-        },
-        "Income": {
-          "2022": 0,
-          "2023": 0,
-          "2024": 0,
-          "2025": 0,
-          "2026": 0
-        },
-        "Expenses": {
-          "2022": -800,
-          "2023": 0,
-          "2024": 0,
-          "2025": 0,
-          "2026": 0
-        }
-      },
-      "Cashflow": {
-        "Total": {
-          "2022": -67500,
-          "2023": 0,
-          "2024": 0,
-          "2025": 0,
-          "2026": 0
-        },
-        "Income": {
-          "2022": 89200,
-          "2023": 0,
-          "2024": 0,
-          "2025": 0,
-          "2026": 0
-        },
-        "Expenses": {
-          "2022": -156700,
-          "2023": 0,
-          "2024": 0,
-          "2025": 0,
-          "2026": 0
-        }
-      },
-      "Products": {
-        "3.1.5.06": {
-          "ID": "3.1.5.06.61",
-          "AdministrationBalance": {
-            "Cashflow": {
-              "Total": {
-                "2022": -66700,
-                "2023": 0,
-                "2024": 0,
-                "2025": 0,
-                "2026": 0
-              },
-              "Income": {
-                "2022": 89200,
-                "2023": 0,
-                "2024": 0,
-                "2025": 0,
-                "2026": 0
-              },
-              "Expenses": {
-                "2022": -155900,
-                "2023": 0,
-                "2024": 0,
-                "2025": 0,
-                "2026": 0
-              }
-            },
-            "Accounts": [
-              {
-                "ID": "3.1.5.06.6141000",
-                "ProductID": "3.1.5.06",
-                "Description": "Zuweisungen für laufende Zwecke vom Land",
-                "Budget": {
-                  "2022": 69500,
-                  "2023": 0,
-                  "2024": 0,
-                  "2025": 0,
-                  "2026": 0
-                }
-              },
-              {
-                "ID": "3.1.5.06.6147000",
-                "ProductID": "3.1.5.06",
-                "Description": "Zuschüsse für laufende Zwecke von privaten Unternehmen",
-                "Budget": {
-                  "2022": 0,
-                  "2023": 0,
-                  "2024": 0,
-                  "2025": 0,
-                  "2026": 0
-                }
-              },
-              {
-                "ID": "3.1.5.06.6321000",
-                "ProductID": "3.1.5.06",
-                "Description": "Benutzungsgebühren und ähnliche Entgelte",
-                "Budget": {
-                  "2022": 1700,
-                  "2023": 0,
-                  "2024": 0,
-                  "2025": 0,
-                  "2026": 0
-                }
-              },
-              {
-                "ID": "3.1.5.06.6482000",
-                "ProductID": "3.1.5.06",
-                "Description": "Einzahlungen aus Kostenerstattungen von Gemeinden und Gemeindeverbünden",
-                "Budget": {
-                  "2022": 5000,
-                  "2023": 0,
-                  "2024": 0,
-                  "2025": 0,
-                  "2026": 0
-                }
-              },
-              {
-                "ID": "3.1.5.06.6486000",
-                "ProductID": "3.1.5.06",
-                "Description": "Einzahlungen aus Kostenerstattungen von sonstigen öffentlichen Sonderrechnungen",
-                "Budget": {
-                  "2022": 13000,
-                  "2023": 0,
-                  "2024": 0,
-                  "2025": 0,
-                  "2026": 0
-                }
-              },
-              {
-                "ID": "3.1.5.06.6817000",
-                "ProductID": "3.1.5.06",
-                "Description": "Einz. a. Zuschüssen f. Investitionen u.Invest.fürdermaünahmen priv.Unternehmen",
-                "Budget": {
-                  "2022": 0,
-                  "2023": 0,
-                  "2024": 0,
-                  "2025": 0,
-                  "2026": 0
-                }
-              },
-              {
-                "ID": "3.1.5.06.7012000",
-                "ProductID": "3.1.5.06",
-                "Description": "Dienstauszahlungen und dgl. an Arbeitnehmer",
-                "Budget": {
-                  "2022": 118600,
-                  "2023": 0,
-                  "2024": 0,
-                  "2025": 0,
-                  "2026": 0
-                }
-              },
-              {
-                "ID": "3.1.5.06.7022000",
-                "ProductID": "3.1.5.06",
-                "Description": "Beiträge zu Versorgungskassen für Arbeitnehmer",
-                "Budget": {
-                  "2022": 5100,
-                  "2023": 0,
-                  "2024": 0,
-                  "2025": 0,
-                  "2026": 0
-                }
-              },
-              {
-                "ID": "3.1.5.06.7032000",
-                "ProductID": "3.1.5.06",
-                "Description": "Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer",
-                "Budget": {
-                  "2022": 23900,
-                  "2023": 0,
-                  "2024": 0,
-                  "2025": 0,
-                  "2026": 0
-                }
-              },
-              {
-                "ID": "3.1.5.06.7041000",
-                "ProductID": "3.1.5.06",
-                "Description": "Beihilfen, Unterstützungsleistungen für Beschäftigte",
-                "Budget": {
-                  "2022": 600,
-                  "2023": 0,
-                  "2024": 0,
-                  "2025": 0,
-                  "2026": 0
-                }
-              },
-              {
-                "ID": "3.1.5.06.7211014",
-                "ProductID": "3.1.5.06",
-                "Description": "Unterhaltung der Grundstücke und baulichen Anlagen-Gebüudemanagement",
-                "Budget": {
-                  "2022": 0,
-                  "2023": 0,
-                  "2024": 0,
-                  "2025": 0,
-                  "2026": 0
-                }
-              },
-              {
-                "ID": "3.1.5.06.7241000",
-                "ProductID": "3.1.5.06",
-                "Description": "Bewirtschaftung der Grundstücke und baulichen Anlagen",
-                "Budget": {
-                  "2022": 5600,
-                  "2023": 0,
-                  "2024": 0,
-                  "2025": 0,
-                  "2026": 0
-                }
-              },
-              {
-                "ID": "3.1.5.06.7252000",
-                "ProductID": "3.1.5.06",
-                "Description": "Erwerb geringwertiger Vermügensgegenstünde",
-                "Budget": {
-                  "2022": 400,
-                  "2023": 0,
-                  "2024": 0,
-                  "2025": 0,
-                  "2026": 0
-                }
-              },
-              {
-                "ID": "3.1.5.06.7255000",
-                "ProductID": "3.1.5.06",
-                "Description": "Unterhaltung des sonstigen beweglichen Vermügens",
-                "Budget": {
-                  "2022": 400,
-                  "2023": 0,
-                  "2024": 0,
-                  "2025": 0,
-                  "2026": 0
-                }
-              },
-              {
-                "ID": "3.1.5.06.7271000",
-                "ProductID": "3.1.5.06",
-                "Description": "Besondere Verwaltungs- und Betriebsauszahlungen",
-                "Budget": {
-                  "2022": 400,
-                  "2023": 0,
-                  "2024": 0,
-                  "2025": 0,
-                  "2026": 0
-                }
-              },
-              {
-                "ID": "3.1.5.06.7411000",
-                "ProductID": "3.1.5.06",
-                "Description": "Sonstige Personal- und Versorgungsauszahlungen",
-                "Budget": {
-                  "2022": 0,
-                  "2023": 0,
-                  "2024": 0,
-                  "2025": 0,
-                  "2026": 0
-                }
-              },
-              {
-                "ID": "3.1.5.06.7429000",
-                "ProductID": "3.1.5.06",
-                "Description": "Sonstige Auszahlungen für die Inanspruchnahme von Rechten und Diensten",
-                "Budget": {
-                  "2022": 100,
-                  "2023": 0,
-                  "2024": 0,
-                  "2025": 0,
-                  "2026": 0
-                }
-              },
-              {
-                "ID": "3.1.5.06.7431000",
-                "ProductID": "3.1.5.06",
-                "Description": "Geschüftsauszahlungen",
-                "Budget": {
-                  "2022": 800,
-                  "2023": 0,
-                  "2024": 0,
-                  "2025": 0,
-                  "2026": 0
-                }
-              },
-              {
-                "ID": "3.1.5.06.7456000",
-                "ProductID": "3.1.5.06",
-                "Description": "Erstatt. f.d. Ausz. v. Dritten aus lfd Verwaltungstüt. an so. üff. Sonderrechn.",
-                "Budget": {
-                  "2022": 0,
-                  "2023": 0,
-                  "2024": 0,
-                  "2025": 0,
-                  "2026": 0
-                }
-              }
-            ]
-          },
-          "InvestmentsBalance": {
-            "Cashflow": {
-              "Total": {
-                "2022": -800,
-                "2023": 0,
-                "2024": 0,
-                "2025": 0,
-                "2026": 0
-              },
-              "Income": {
-                "2022": 0,
-                "2023": 0,
-                "2024": 0,
-                "2025": 0,
-                "2026": 0
-              },
-              "Expenses": {
-                "2022": -800,
-                "2023": 0,
-                "2024": 0,
-                "2025": 0,
-                "2026": 0
-              }
-            },
-            "Accounts": [
-              {
-                "ID": "3.1.5.06/0100.6811000",
-                "ProductID": "3.1.5.06",
-                "Description": "Einz. a. Zuweisungen f. Investitionen u.Investitionsfürdermaünahmen Land",
-                "Budget": {
-                  "2022": 0,
-                  "2023": 0,
-                  "2024": 0,
-                  "2025": 0,
-                  "2026": 0
-                }
-              },
-              {
-                "ID": "3.1.5.06/0100.6817000",
-                "ProductID": "3.1.5.06",
-                "Description": "Einz. a. Zuschüssen f. Investitionen u.Invest.fürdermaünahmen priv.Unternehmen",
-                "Budget": {
-                  "2022": 0,
-                  "2023": 0,
-                  "2024": 0,
-                  "2025": 0,
-                  "2026": 0
-                }
-              },
-              {
-                "ID": "3.1.5.06/0100.7832000",
-                "ProductID": "3.1.5.06",
-                "Description": "Ausz. f.d. Erw. v. beweg. Vermügensgegenstünden v. \u003e 150  bis 1000 ? o. UStr.",
-                "Budget": {
-                  "2022": 800,
-                  "2023": 0,
-                  "2024": 0,
-                  "2025": 0,
-                  "2026": 0
-                }
-              }
-            ]
-          },
-          "Cashflow": {
-            "Total": {
-              "2022": -67500,
-              "2023": 0,
-              "2024": 0,
-              "2025": 0,
-              "2026": 0
-            },
-            "Income": {
-              "2022": 89200,
-              "2023": 0,
-              "2024": 0,
-              "2025": 0,
-              "2026": 0
-            },
-            "Expenses": {
-              "2022": -156700,
-              "2023": 0,
-              "2024": 0,
-              "2025": 0,
-              "2026": 0
-            }
-          },
-          "Metadata": {
-            "Department": {
-              "ID": "",
-              "Name": "",
-              "Accountable": ""
-            },
-            "ProductClass": {
-              "ID": "",
-              "Name": "",
-              "Accountable": ""
-            },
-            "ProductDomain": {
-              "ID": "",
-              "Name": "",
-              "Responsible": ""
-            },
-            "ProductGroup": {
-              "ID": "",
-              "Name": "",
-              "Desc": ""
-            },
-            "Product": {
-              "ID": "",
-              "Name": "",
-              "LegalRequirement": ""
-            },
-            "SubProduct": null,
-            "Description": "",
-            "Mission": "",
-            "Target": "",
-            "Objectives": "",
-            "Services": ""
-          }
-        }
-      }
-    },
     "1": {
       "DepartmentID": "1",
       "AdministrationBalance": {
@@ -593,7 +142,7 @@
       },
       "Products": {
         "1.1.1.01": {
-          "ID": "1.1.1.01.61",
+          "ID": "1.1.1.01.41",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -1048,7 +597,7 @@
           }
         },
         "1.1.1.02": {
-          "ID": "1.1.1.02.66",
+          "ID": "1.1.1.02.45",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -1239,7 +788,7 @@
           }
         },
         "1.1.1.04": {
-          "ID": "1.1.1.04.63",
+          "ID": "1.1.1.04.43",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -1429,7 +978,7 @@
           }
         },
         "1.1.1.05": {
-          "ID": "1.1.1.05.64",
+          "ID": "1.1.1.05.44",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -1607,7 +1156,7 @@
           }
         },
         "1.1.1.06": {
-          "ID": "1.1.1.06.64",
+          "ID": "1.1.1.06.44",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -1809,7 +1358,7 @@
           }
         },
         "1.1.1.08": {
-          "ID": "1.1.1.08.61",
+          "ID": "1.1.1.08.41",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -1975,7 +1524,7 @@
           }
         },
         "1.1.1.09": {
-          "ID": "1.1.1.09.61",
+          "ID": "1.1.1.09.41",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -2273,7 +1822,7 @@
           }
         },
         "1.1.1.10": {
-          "ID": "1.1.1.10.63",
+          "ID": "1.1.1.10.43",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -3034,7 +2583,7 @@
           }
         },
         "1.1.1.16": {
-          "ID": "1.1.1.16.64",
+          "ID": "1.1.1.16.44",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -3272,7 +2821,7 @@
           }
         },
         "1.1.1.17": {
-          "ID": "1.1.1.17.70",
+          "ID": "1.1.1.17.50",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -3438,7 +2987,7 @@
           }
         },
         "1.1.1.18": {
-          "ID": "1.1.1.18.64",
+          "ID": "1.1.1.18.44",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -3604,7 +3153,7 @@
           }
         },
         "1.2.1.01": {
-          "ID": "1.2.1.01.64",
+          "ID": "1.2.1.01.44",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -3849,7 +3398,7 @@
           }
         },
         "2.6.2.01": {
-          "ID": "2.6.2.01.73",
+          "ID": "2.6.2.01.53",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -3943,7 +3492,7 @@
           }
         },
         "3.5.1.01": {
-          "ID": "3.5.1.01.61",
+          "ID": "3.5.1.01.41",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -4097,7 +3646,7 @@
           }
         },
         "5.5.1.02": {
-          "ID": "5.5.1.02.64",
+          "ID": "5.5.1.02.44",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -4378,7 +3927,7 @@
           }
         },
         "5.7.1.01": {
-          "ID": "5.7.1.01.64",
+          "ID": "5.7.1.01.44",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -4893,7 +4442,7 @@
           }
         },
         "5.7.5.01": {
-          "ID": "5.7.5.01.61",
+          "ID": "5.7.5.01.41",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -5337,7 +4886,7 @@
       },
       "Products": {
         "1.1.1.07": {
-          "ID": "1.1.1.07.61",
+          "ID": "1.1.1.07.41",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -5719,7 +5268,7 @@
           }
         },
         "5.3.1.01": {
-          "ID": "5.3.1.01.65",
+          "ID": "5.3.1.01.45",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -5837,7 +5386,7 @@
           }
         },
         "5.3.2.01": {
-          "ID": "5.3.2.01.65",
+          "ID": "5.3.2.01.45",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -5955,7 +5504,7 @@
           }
         },
         "5.3.3.01": {
-          "ID": "5.3.3.01.65",
+          "ID": "5.3.3.01.45",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -6073,7 +5622,7 @@
           }
         },
         "5.3.4.01": {
-          "ID": "5.3.4.01.65",
+          "ID": "5.3.4.01.45",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -6167,7 +5716,7 @@
           }
         },
         "5.3.5.01": {
-          "ID": "5.3.5.01.66",
+          "ID": "5.3.5.01.46",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -6261,7 +5810,7 @@
           }
         },
         "6.1.1.01": {
-          "ID": "6.1.1.01.60",
+          "ID": "6.1.1.01.40",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -6560,7 +6109,7 @@
           }
         },
         "6.1.2.01": {
-          "ID": "6.1.2.01.66",
+          "ID": "6.1.2.01.46",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -7455,7 +7004,7 @@
       },
       "Products": {
         "1.1.1.11": {
-          "ID": "1.1.1.11.61",
+          "ID": "1.1.1.11.41",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -8048,7 +7597,7 @@
           }
         },
         "1.1.1.12": {
-          "ID": "1.1.1.12.64",
+          "ID": "1.1.1.12.44",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -8515,7 +8064,7 @@
           }
         },
         "2.5.3.01": {
-          "ID": "2.5.3.01.61",
+          "ID": "2.5.3.01.41",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -9144,7 +8693,7 @@
           }
         },
         "2.8.1.02": {
-          "ID": "2.8.1.02.61",
+          "ID": "2.8.1.02.41",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -9563,7 +9112,7 @@
           }
         },
         "3.6.6.02": {
-          "ID": "3.6.6.02.65",
+          "ID": "3.6.6.02.45",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -9904,7 +9453,7 @@
           }
         },
         "5.4.5.01": {
-          "ID": "5.4.5.01.63",
+          "ID": "5.4.5.01.43",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -10082,7 +9631,7 @@
           }
         },
         "5.4.6.02": {
-          "ID": "5.4.6.02.63",
+          "ID": "5.4.6.02.43",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -10645,7 +10194,7 @@
           }
         },
         "5.5.1.01": {
-          "ID": "5.5.1.01.61",
+          "ID": "5.5.1.01.41",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -11382,7 +10931,7 @@
           }
         },
         "5.5.1.03": {
-          "ID": "5.5.1.03.64",
+          "ID": "5.5.1.03.44",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -11656,7 +11205,7 @@
           }
         },
         "5.5.3.01": {
-          "ID": "5.5.3.01.61",
+          "ID": "5.5.3.01.41",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -12183,7 +11732,7 @@
           }
         },
         "5.5.5.01": {
-          "ID": "5.5.5.01.61",
+          "ID": "5.5.5.01.41",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -12872,7 +12421,7 @@
           }
         },
         "5.7.5.02": {
-          "ID": "5.7.5.02.63",
+          "ID": "5.7.5.02.43",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -13321,7 +12870,7 @@
           }
         },
         "5.7.5.04": {
-          "ID": "5.7.5.04.61",
+          "ID": "5.7.5.04.41",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -14204,7 +13753,7 @@
       },
       "Products": {
         "1.2.2.01": {
-          "ID": "1.2.2.01.63",
+          "ID": "1.2.2.01.43",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -14761,7 +14310,7 @@
           }
         },
         "1.2.2.02": {
-          "ID": "1.2.2.02.63",
+          "ID": "1.2.2.02.43",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -15048,7 +14597,7 @@
           }
         },
         "1.2.2.03": {
-          "ID": "1.2.2.03.63",
+          "ID": "1.2.2.03.43",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -15407,7 +14956,7 @@
           }
         },
         "1.2.6.01": {
-          "ID": "1.2.6.01.61",
+          "ID": "1.2.6.01.41",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -16204,7 +15753,7 @@
           }
         },
         "2.1.1.01": {
-          "ID": "2.1.1.01.61",
+          "ID": "2.1.1.01.41",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -17205,7 +16754,7 @@
           }
         },
         "2.4.3.01": {
-          "ID": "2.4.3.01.61",
+          "ID": "2.4.3.01.41",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -17503,7 +17052,7 @@
           }
         },
         "2.5.2.01": {
-          "ID": "2.5.2.01.61",
+          "ID": "2.5.2.01.41",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -18168,7 +17717,7 @@
           }
         },
         "2.5.2.02": {
-          "ID": "2.5.2.02.61",
+          "ID": "2.5.2.02.41",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -18515,7 +18064,7 @@
           }
         },
         "2.6.2.02": {
-          "ID": "2.6.2.02.61",
+          "ID": "2.6.2.02.41",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -18861,7 +18410,7 @@
           }
         },
         "2.7.2.01": {
-          "ID": "2.7.2.01.61",
+          "ID": "2.7.2.01.41",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -19394,7 +18943,7 @@
           }
         },
         "2.8.1.01": {
-          "ID": "2.8.1.01.61",
+          "ID": "2.8.1.01.41",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -19891,7 +19440,7 @@
           }
         },
         "3.1.5.10": {
-          "ID": "3.1.5.10.61",
+          "ID": "3.1.5.10.41",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -20382,7 +19931,7 @@
           }
         },
         "3.1.5.40": {
-          "ID": "3.1.5.40.63",
+          "ID": "3.1.5.40.43",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -20771,7 +20320,7 @@
           }
         },
         "3.1.5.60": {
-          "ID": "3.1.5.60.61",
+          "ID": "3.1.5.60.41",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -21124,7 +20673,7 @@
           }
         },
         "3.3.1.01": {
-          "ID": "3.3.1.01.73",
+          "ID": "3.3.1.01.53",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -21218,7 +20767,7 @@
           }
         },
         "3.4.6.01": {
-          "ID": "3.4.6.01.64",
+          "ID": "3.4.6.01.44",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -21468,7 +21017,7 @@
           }
         },
         "3.6.5.01": {
-          "ID": "3.6.5.01.61",
+          "ID": "3.6.5.01.41",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -30589,7 +30138,7 @@
           }
         },
         "3.6.5.03": {
-          "ID": "3.6.5.03.63",
+          "ID": "3.6.5.03.43",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -31008,7 +30557,7 @@
           }
         },
         "3.6.5.05": {
-          "ID": "3.6.5.05.63",
+          "ID": "3.6.5.05.43",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -31138,7 +30687,7 @@
           }
         },
         "3.6.6.01": {
-          "ID": "3.6.6.01.61",
+          "ID": "3.6.6.01.41",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -31791,7 +31340,7 @@
           }
         },
         "4.2.1.01": {
-          "ID": "4.2.1.01.64",
+          "ID": "4.2.1.01.44",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -31946,7 +31495,7 @@
           }
         },
         "4.2.4.01": {
-          "ID": "4.2.4.01.61",
+          "ID": "4.2.4.01.41",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -32815,7 +32364,7 @@
           }
         },
         "4.2.4.02": {
-          "ID": "4.2.4.02.61",
+          "ID": "4.2.4.02.41",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -33570,7 +33119,7 @@
           }
         },
         "5.4.6.01": {
-          "ID": "5.4.6.01.63",
+          "ID": "5.4.6.01.43",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -33845,7 +33394,7 @@
           }
         },
         "5.4.6.03": {
-          "ID": "5.4.6.03.64",
+          "ID": "5.4.6.03.44",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -34191,7 +33740,7 @@
           }
         },
         "5.4.7.01": {
-          "ID": "5.4.7.01.72",
+          "ID": "5.4.7.01.45",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -34394,7 +33943,7 @@
           }
         },
         "5.7.3.01": {
-          "ID": "5.7.3.01.63",
+          "ID": "5.7.3.01.43",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -34719,7 +34268,7 @@
       },
       "Products": {
         "1.1.1.03": {
-          "ID": "1.1.1.03.61",
+          "ID": "1.1.1.03.41",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -35396,7 +34945,7 @@
           }
         },
         "1.1.1.14": {
-          "ID": "1.1.1.14.63",
+          "ID": "1.1.1.14.43",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -35929,7 +35478,7 @@
           }
         },
         "1.1.1.15": {
-          "ID": "1.1.1.15.64",
+          "ID": "1.1.1.15.44",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -36240,7 +35789,7 @@
           }
         },
         "5.1.1.01": {
-          "ID": "5.1.1.01.61",
+          "ID": "5.1.1.01.41",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -36881,7 +36430,7 @@
           }
         },
         "5.1.1.02": {
-          "ID": "5.1.1.02.61",
+          "ID": "5.1.1.02.41",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -38094,7 +37643,7 @@
           }
         },
         "5.2.3.01": {
-          "ID": "5.2.3.01.61",
+          "ID": "5.2.3.01.41",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -38567,7 +38116,7 @@
           }
         },
         "5.2.3.02": {
-          "ID": "5.2.3.02.61",
+          "ID": "5.2.3.02.41",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -38860,7 +38409,7 @@
           }
         },
         "5.4.1.01": {
-          "ID": "5.4.1.01.61",
+          "ID": "5.4.1.01.41",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -40017,7 +39566,7 @@
           }
         },
         "5.4.5.02": {
-          "ID": "5.4.5.02.64",
+          "ID": "5.4.5.02.44",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -40226,7 +39775,7 @@
           }
         },
         "5.4.7.02": {
-          "ID": "5.4.7.02.73",
+          "ID": "5.4.7.02.45",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -40369,7 +39918,7 @@
           }
         },
         "5.5.2.01": {
-          "ID": "5.5.2.01.61",
+          "ID": "5.5.2.01.41",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -41046,7 +40595,7 @@
           }
         },
         "5.6.1.01": {
-          "ID": "5.6.1.01.61",
+          "ID": "5.6.1.01.41",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
@@ -41363,7 +40912,7 @@
           }
         },
         "5.7.5.03": {
-          "ID": "5.7.5.03.64",
+          "ID": "5.7.5.03.44",
           "AdministrationBalance": {
             "Cashflow": {
               "Total": {
