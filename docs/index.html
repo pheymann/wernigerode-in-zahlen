@@ -40,11 +40,11 @@
         <div class="row">
           <div class="col-6">
             <h5 class="center">Einnahmen: 83.642.800,00€</h5>
-            <canvas id="chartjs-66490cd5-25c4-4c4f-bf7a-49c36533549c"></canvas>
+            <canvas id="chartjs-ab111a7a-92b1-4f3a-ae09-c30dfe244c4f"></canvas>
           </div>
           <div class="col-6">
             <h5 class="center">Ausgaben: -87.022.500,00€</h5>
-            <canvas id="chartjs-e38784f9-34ea-4563-af64-c15aa34d9586"></canvas>
+            <canvas id="chartjs-d141eae4-3805-435c-b352-5beb6b221d6b"></canvas>
           </div>
         </div>
       </div>
@@ -75,35 +75,35 @@
 
           
             <tr>
-              <td><a href="/1/department.html"></a></td>
-              <td>-6.721.800,00€</td>
-              <td>-6.314.200,00€</td>
-              <td>-407.600,00€</td>
-            </tr>
-          
-            <tr>
-              <td><a href="/2/department.html"></a></td>
-              <td>35.405.700,00€</td>
-              <td>35.603.300,00€</td>
-              <td>-197.600,00€</td>
-            </tr>
-          
-            <tr>
-              <td><a href="/3/department.html"></a></td>
+              <td><a href="/3/department.html">Budget Betriebsbereiche</a></td>
               <td>-5.705.900,00€</td>
               <td>-5.530.300,00€</td>
               <td>-175.600,00€</td>
             </tr>
           
             <tr>
-              <td><a href="/4/department.html"></a></td>
+              <td><a href="/4/department.html">Budget Bürgerservice</a></td>
               <td>-19.425.000,00€</td>
               <td>-16.458.700,00€</td>
               <td>-2.966.300,00€</td>
             </tr>
           
             <tr>
-              <td><a href="/5/department.html"></a></td>
+              <td><a href="/2/department.html">Budget Finanzen</a></td>
+              <td>35.405.700,00€</td>
+              <td>35.603.300,00€</td>
+              <td>-197.600,00€</td>
+            </tr>
+          
+            <tr>
+              <td><a href="/1/department.html">Budget Oberbürgermeister</a></td>
+              <td>-6.721.800,00€</td>
+              <td>-6.314.200,00€</td>
+              <td>-407.600,00€</td>
+            </tr>
+          
+            <tr>
+              <td><a href="/5/department.html">Budget Stadtentwicklung</a></td>
               <td>-6.932.700,00€</td>
               <td>-9.079.600,00€</td>
               <td>2.146.900,00€</td>
@@ -135,11 +135,11 @@
     <script>
       
         var incomeDepartmentLinks = ["/2/department.html"];
-        var incomeCanvas = document.getElementById('chartjs-66490cd5-25c4-4c4f-bf7a-49c36533549c');
+        var incomeCanvas = document.getElementById('chartjs-ab111a7a-92b1-4f3a-ae09-c30dfe244c4f');
         var incomeChart = new Chart(incomeCanvas, {
           type: 'doughnut',
           data: {
-            labels: [""],
+            labels: ["Budget Finanzen"],
             datasets: [{
               label: 'Euro',
               data: [35405700],
@@ -161,11 +161,11 @@
       
 
       var expensesDepartmentLinks = ["/1/department.html","/3/department.html","/4/department.html","/5/department.html"];
-      var expensesCanvas = document.getElementById('chartjs-e38784f9-34ea-4563-af64-c15aa34d9586');
+      var expensesCanvas = document.getElementById('chartjs-d141eae4-3805-435c-b352-5beb6b221d6b');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {
-          labels: ["","","",""],
+          labels: ["Budget Oberbürgermeister","Budget Betriebsbereiche","Budget Bürgerservice","Budget Stadtentwicklung"],
           datasets: [{
             label: 'Euro',
             data: [-6721800,-5705900,-19425000,-6932700],

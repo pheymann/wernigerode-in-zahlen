@@ -126,6 +126,7 @@ func cleanupFinancialPlans(financialDataFile *os.File, productToMetadata map[mod
 		if departmentFinancialPlans[departmentID].ID == "" {
 			departmentFinancialPlans[departmentID] = model.FinancialPlanDepartment{
 				ID:                    departmentID,
+				Name:                  departmentNames[departmentID],
 				Products:              make(map[model.ID]model.FinancialPlanProduct),
 				AdministrationBalance: model.NewCashFlow(),
 				InvestmentsBalance:    model.NewCashFlow(),
@@ -155,6 +156,16 @@ func cleanupFinancialPlans(financialDataFile *os.File, productToMetadata map[mod
 
 	return cityFinancialPlan
 }
+
+var (
+	departmentNames = map[string]string{
+		"1": "Budget Oberbürgermeister",
+		"2": "Budget Finanzen",
+		"3": "Budget Betriebsbereiche",
+		"4": "Budget Bürgerservice",
+		"5": "Budget Stadtentwicklung",
+	}
+)
 
 func findMetadata(productID model.ID, productToMetadata map[model.ID]model.Metadata) shared.Option[model.Metadata] {
 	if metadata, ok := productToMetadata[productID]; ok {

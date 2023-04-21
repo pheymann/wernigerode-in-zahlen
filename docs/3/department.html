@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Haushaltsplan Wernigerode 2023. Der Fachbereich  hat ein Budge von -5.705.900,00€."/>
-  <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,"/>
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Der Fachbereich Budget Betriebsbereiche hat ein Budge von -5.705.900,00€."/>
+  <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Budget Betriebsbereiche"/>
   <meta name="author" content="Paul Heymann"/>
 
   <link rel="stylesheet" type="text/css" href="/css/styling.css">
@@ -17,7 +17,7 @@
       Diese Seite ist noch in der Entwicklung. Es kann daher sein, dass sie noch Fehler enthält.
     </p>
 
-    <h1></h1>
+    <h1>Budget Betriebsbereiche</h1>
 
     <p>
       In 2023 planen wir
@@ -34,11 +34,11 @@
         <div class="row">
           <div class="col-6">
             <h5 class="center">Einnahmen: 2.073.400,00€</h5>
-            <canvas id="chartjs-d58c1a1b-a180-4a92-8b34-ad52abf0df50"></canvas>
+            <canvas id="chartjs-1b0e1331-03e6-4e9f-aea0-46a9f8bdd80e"></canvas>
           </div>
           <div class="col-6">
             <h5 class="center">Ausgaben: -7.779.300,00€</h5>
-            <canvas id="chartjs-f7e2a206-ea9d-4f93-b5a4-7ea0d0802d44"></canvas>
+            <canvas id="chartjs-4b6575e6-8447-4b24-a52d-d6b40ea05da7"></canvas>
           </div>
         </div>
       
@@ -177,15 +177,15 @@
     <script src="/js/chart.js"></script>
     <script>
       
-      var incomeProductLinks = ["/3/1/1/1/12/product.html","/3/2/8/1/02/product.html","/3/5/4/5/01/product.html","/3/5/4/6/02/product.html","/3/5/5/1/03/product.html"];
-      var incomeCanvas = document.getElementById('chartjs-d58c1a1b-a180-4a92-8b34-ad52abf0df50');
+      var incomeProductLinks = ["/3/1/1/1/12/product.html","/3/5/4/5/01/product.html","/3/5/5/1/03/product.html","/3/2/8/1/02/product.html","/3/5/4/6/02/product.html"];
+      var incomeCanvas = document.getElementById('chartjs-1b0e1331-03e6-4e9f-aea0-46a9f8bdd80e');
       var incomeChart = new Chart(incomeCanvas, {
         type: 'doughnut',
         data: {
-          labels: ["Dienstleistungen für Dritte (Bauhof)","Weihnachtsmarkt","Straßenreinigung/Winterdienst","Parkraumbewirtschaftung Schierke","Containerstellplätze"],
+          labels: ["Dienstleistungen für Dritte (Bauhof)","Straßenreinigung/Winterdienst","Containerstellplätze","Weihnachtsmarkt","Parkraumbewirtschaftung Schierke"],
           datasets: [{
             label: 'Euro',
-            data: [120600,44000,312000,112700,33900],
+            data: [120600,312000,33900,44000,112700],
             borderWidth: 1
           }]
         },
@@ -204,15 +204,15 @@
       
 
       
-      var expenesesProductLinks = ["/3/2/5/3/01/product.html","/3/3/6/6/02/product.html","/3/5/5/1/01/product.html","/3/1/1/1/11/product.html","/3/5/5/5/01/product.html","/3/5/7/5/02/product.html","/3/5/7/5/04/product.html","/3/5/5/3/01/product.html"];
-      var expensesCanvas = document.getElementById('chartjs-f7e2a206-ea9d-4f93-b5a4-7ea0d0802d44');
+      var expenesesProductLinks = ["/3/1/1/1/11/product.html","/3/2/5/3/01/product.html","/3/3/6/6/02/product.html","/3/5/5/1/01/product.html","/3/5/5/3/01/product.html","/3/5/5/5/01/product.html","/3/5/7/5/02/product.html","/3/5/7/5/04/product.html"];
+      var expensesCanvas = document.getElementById('chartjs-4b6575e6-8447-4b24-a52d-d6b40ea05da7');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {
-          labels: ["Wildpark","Spielplätze","Öffentliches Grün","Bauhof","Forstwirtschaft und Wirtschaftswege","Touristische Wanderwege","Schierker Feuerstein Arena","Friedhofs- und Bestattungswesen"],
+          labels: ["Bauhof","Wildpark","Spielplätze","Öffentliches Grün","Friedhofs- und Bestattungswesen","Forstwirtschaft und Wirtschaftswege","Touristische Wanderwege","Schierker Feuerstein Arena"],
           datasets: [{
             label: 'Euro',
-            data: [-270800,-47100,-1689100,-2901400,-513200,-124800,-476100,-306600],
+            data: [-2901400,-270800,-47100,-1689100,-306600,-513200,-124800,-476100],
             borderWidth: 1
           }]
         },
