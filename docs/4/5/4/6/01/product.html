@@ -38,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 750.000,00€</h5>
-                <canvas id="chartjs_d0ee0b3e_837b_4e76_9e1f_bd74441e2a7a"></canvas>
+                <canvas id="chartjs_d171ab71_3a7e_4429_b9d6_c64bf0b936ce"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -90.100,00€</h5>
-                <canvas id="chartjs_8045ed1f_1dcd_4b31_a66a_a6a7dae1796e"></canvas>
+                <canvas id="chartjs_d43dd643_62b4_4c17_9e65_94262dcf8aeb"></canvas>
               </div>
             </div>
           
@@ -51,6 +51,10 @@
 
           
             
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_98d476b5_19d6_43f5_b042_2023d1a69736"></canvas>
+              </div>
             
           
       
@@ -150,13 +154,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_d0ee0b3e_837b_4e76_9e1f_bd74441e2a7a'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_d171ab71_3a7e_4429_b9d6_c64bf0b936ce'), {
             type: 'doughnut',
             data: {
-              labels: ["Verwaltungsgebühren","Benutzungsgebühren und ähnliche Entgelte","19% Ust BenutzGeb. \u0026 ähnl. Ent","Einzahlungen aus Mieten und Pachten","Einzahlungen aus Kostenerstattungen von übrigen Bereichen"],
+              labels: ["Benutzungsgebühren und ähnliche Entgelte","19% Ust BenutzGeb. \u0026 ähnl. Ent"],
               datasets: [{
                 label: 'Euro',
-                data: [0,300000,450000,0,0],
+                data: [300000,450000],
                 borderWidth: 1
               }]
             },
@@ -172,13 +176,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_8045ed1f_1dcd_4b31_a66a_a6a7dae1796e'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_d43dd643_62b4_4c17_9e65_94262dcf8aeb'), {
             type: 'doughnut',
             data: {
-              labels: ["Unterhaltung des sonstigen unbeweglichen Vermügens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermügensgegenstünde","Unterhaltung des sonstigen beweglichen Vermügens","Auszahlungen für sonstige Dienstleistungen","Steuern, Versicherungen, Schadensfülle"],
+              labels: ["Unterhaltung des sonstigen unbeweglichen Vermügens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermügensgegenstünde","Unterhaltung des sonstigen beweglichen Vermügens","Auszahlungen für sonstige Dienstleistungen"],
               datasets: [{
                 label: 'Euro',
-                data: [20000,3200,27000,400,37000,2500,0],
+                data: [20000,3200,27000,400,37000,2500],
                 borderWidth: 1
               }]
             },
@@ -194,6 +198,27 @@
         
       
         
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_98d476b5_19d6_43f5_b042_2023d1a69736'), {
+            type: 'doughnut',
+            data: {
+              labels: [],
+              datasets: [{
+                label: 'Euro',
+                data: [],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
       
     </script>

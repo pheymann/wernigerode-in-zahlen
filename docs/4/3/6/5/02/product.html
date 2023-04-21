@@ -35,14 +35,26 @@
           <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-6.259.500,00€</span></h3>
 
           
-            
-            
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 8.862.300,00€</h5>
+                <canvas id="chartjs_05255cbe_8b3c_4066_ad1b_2113742ba56f"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: -15.121.800,00€</h5>
+                <canvas id="chartjs_1604ea04_88ea_4ae7_a5b4_2d2d2d4c7ba0"></canvas>
+              </div>
+            </div>
           
       
           <h3>- Investitionen kosten <span class="total-cashflow-expenses">-306.600,00€</span></h3>
 
           
             
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_80341e16_ec31_4763_b0d2_a223d9842359"></canvas>
+              </div>
             
           
       
@@ -52,11 +64,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 8.862.300,00€</h5>
-                <canvas id="chartjs_1c71c5c9_f032_444a_941b_63a933f96caa"></canvas>
+                <canvas id="chartjs_372833de_c12b_423b_be45_dc1f6e8c3568"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -15.428.400,00€</h5>
-                <canvas id="chartjs_276ab0b3_9884_446a_8247_6ed5b039bdf2"></canvas>
+                <canvas id="chartjs_134625fd_2b1a_4d3d_9b47_39908468fab7"></canvas>
               </div>
             </div>
           
@@ -116,14 +128,77 @@
     <script>
       
         
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_05255cbe_8b3c_4066_ad1b_2113742ba56f'), {
+            type: 'doughnut',
+            data: {
+              labels: [],
+              datasets: [{
+                label: 'Euro',
+                data: [],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_1604ea04_88ea_4ae7_a5b4_2d2d2d4c7ba0'), {
+            type: 'doughnut',
+            data: {
+              labels: [],
+              datasets: [{
+                label: 'Euro',
+                data: [],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
       
         
         
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_80341e16_ec31_4763_b0d2_a223d9842359'), {
+            type: 'doughnut',
+            data: {
+              labels: [],
+              datasets: [{
+                label: 'Euro',
+                data: [],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
       
         
-          var incomeSubProductLinks_chartjs_1c71c5c9_f032_444a_941b_63a933f96caa = ["16/product.html"];
-          var incomeChart_chartjs_1c71c5c9_f032_444a_941b_63a933f96caa = new Chart(document.getElementById('chartjs_1c71c5c9_f032_444a_941b_63a933f96caa'), {
+          var incomeSubProductLinks_chartjs_372833de_c12b_423b_be45_dc1f6e8c3568 = ["16/product.html"];
+          var incomeChart_chartjs_372833de_c12b_423b_be45_dc1f6e8c3568 = new Chart(document.getElementById('chartjs_372833de_c12b_423b_be45_dc1f6e8c3568'), {
             type: 'doughnut',
             data: {
               labels: ["Hort Grundschule Harzblick"],
@@ -141,16 +216,16 @@
               },
               
                 onClick: function(e){
-                  var activePoints = incomeChart_chartjs_1c71c5c9_f032_444a_941b_63a933f96caa.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
-                  window.location.href = incomeSubProductLinks_chartjs_1c71c5c9_f032_444a_941b_63a933f96caa[activePoints[0].index];
+                  var activePoints = incomeChart_chartjs_372833de_c12b_423b_be45_dc1f6e8c3568.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
+                  window.location.href = incomeSubProductLinks_chartjs_372833de_c12b_423b_be45_dc1f6e8c3568[activePoints[0].index];
                 },
               
             }
           });
         
         
-          var expensesSubProductLinks_chartjs_276ab0b3_9884_446a_8247_6ed5b039bdf2 = ["11/product.html","12/product.html","10/product.html","13/product.html","01/product.html","04/product.html","14/product.html","06/product.html","15/product.html","17/product.html","05/product.html","08/product.html","07/product.html","09/product.html","02/product.html","03/product.html"];
-          var expensesChart_chartjs_276ab0b3_9884_446a_8247_6ed5b039bdf2 = new Chart(document.getElementById('chartjs_276ab0b3_9884_446a_8247_6ed5b039bdf2'), {
+          var expensesSubProductLinks_chartjs_134625fd_2b1a_4d3d_9b47_39908468fab7 = ["11/product.html","12/product.html","10/product.html","13/product.html","01/product.html","04/product.html","14/product.html","06/product.html","15/product.html","17/product.html","05/product.html","08/product.html","07/product.html","09/product.html","02/product.html","03/product.html"];
+          var expensesChart_chartjs_134625fd_2b1a_4d3d_9b47_39908468fab7 = new Chart(document.getElementById('chartjs_134625fd_2b1a_4d3d_9b47_39908468fab7'), {
             type: 'doughnut',
             data: {
               labels: ["Kindertagesstätte Kleine Strolche","Kindertagesstätte Benjamin Blümchen","Kindertagesstätte Am Schäferteich","Kindertagesstätte Brockenkinder","Kinderkrippe Lindenberg","Kindertagesstätte Villa Sonnenschein","Hort Grundschule A. Diesterweg","Kindertagesstätte Musikus","Hort Grundschule A.H.Francke","Kindertagesstätten-Verwaltung","Kindertagesstätte Hummelhaus","Integrative Kindertagesstätte Löwenzahn","Kindertagesstätte Pusteblume","Kindertagesstätte Harzblick","Kinderkrippe Am Auerhahn","Kindertagesstätte Regenbogen"],
@@ -168,8 +243,8 @@
               },
               
                 onClick: function(e){
-                  var activePoints = expensesChart_chartjs_276ab0b3_9884_446a_8247_6ed5b039bdf2.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
-                  window.location.href = expensesSubProductLinks_chartjs_276ab0b3_9884_446a_8247_6ed5b039bdf2[activePoints[0].index];
+                  var activePoints = expensesChart_chartjs_134625fd_2b1a_4d3d_9b47_39908468fab7.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
+                  window.location.href = expensesSubProductLinks_chartjs_134625fd_2b1a_4d3d_9b47_39908468fab7[activePoints[0].index];
                 },
               
             }

@@ -38,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 8.600,00€</h5>
-                <canvas id="chartjs_1aa57cff_936d_4ac7_ba03_cc0989fa398d"></canvas>
+                <canvas id="chartjs_cdef09ed_196e_411e_9460_044d4f2b74e8"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -2.858.500,00€</h5>
-                <canvas id="chartjs_d6236f73_f831_4c65_8420_cf1ca6351b2d"></canvas>
+                <canvas id="chartjs_0763dda5_ef4c_4abe_b0ec_01f0d081bf26"></canvas>
               </div>
             </div>
           
@@ -50,8 +50,16 @@
           <h3>- Investitionen kosten <span class="total-cashflow-expenses">-51.500,00€</span></h3>
 
           
-            
-            
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 20.000,00€</h5>
+                <canvas id="chartjs_f5883023_e1bb_4c72_b4a4_4e13b8167329"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: -71.500,00€</h5>
+                <canvas id="chartjs_415a2c6f_6996_4572_8528_9b6c998ba702"></canvas>
+              </div>
+            </div>
           
       
     </div>
@@ -215,13 +223,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_1aa57cff_936d_4ac7_ba03_cc0989fa398d'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_cdef09ed_196e_411e_9460_044d4f2b74e8'), {
             type: 'doughnut',
             data: {
-              labels: ["Zuweisungen für laufende Zwecke vom Land","Zuweis.für lfd. Zwecke von gesetzlichen Sozialversicherungen (Agentur f. Arbeit)","Sonstige privatrechtliche Leistungsentgelte","Einzahlungen aus Kostenerstattungen vom Bund","Einzahlungen aus Kostenerstattungen vom Land","Einzahlungen aus Kostenerstattungen von Zweckverbünden","Einzahlungen aus Kostenerstattungen von gesetzlichen Sozialversicherungen","Einzahl. aus Kostenerstattungen von verbund. Untern., Sondervermü. und Beteilig.","Einzahlungen aus Kostenerstattungen von privaten Unternehmen","Einzahlungen aus Kostenerstattungen von übrigen Bereichen"],
+              labels: ["Einzahlungen aus Kostenerstattungen vom Bund","Einzahlungen aus Kostenerstattungen von Zweckverbünden","Einzahlungen aus Kostenerstattungen von privaten Unternehmen","Einzahlungen aus Kostenerstattungen von übrigen Bereichen"],
               datasets: [{
                 label: 'Euro',
-                data: [0,0,0,3600,0,500,0,0,2000,2500],
+                data: [3600,500,2000,2500],
                 borderWidth: 1
               }]
             },
@@ -237,13 +245,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_d6236f73_f831_4c65_8420_cf1ca6351b2d'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_0763dda5_ef4c_4abe_b0ec_01f0d081bf26'), {
             type: 'doughnut',
             data: {
-              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Dienstauszahlungen und dgl. an sonstige Beschäftigte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschüft.","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen-Gebüudemanagement","Unterhaltung des sonstigen unbeweglichen Vermügens","Auszahlungen für Mieten und Pachten","Auszahlungen für Leasing","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Erwerb geringwertiger Vermügensgegenstünde","Unterhaltung des sonstigen beweglichen Vermügens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Sonstige Personal- und Versorgungsauszahlungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschüftsauszahlungen","Auszahlungen für Beitragsservice (GEZ)","Steuern, Versicherungen, Schadensfülle","Besondere Auszahlungen Süumniszuschlüge"],
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Dienstauszahlungen und dgl. an sonstige Beschäftigte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschüft.","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung des sonstigen unbeweglichen Vermügens","Auszahlungen für Mieten und Pachten","Auszahlungen für Leasing","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Erwerb geringwertiger Vermügensgegenstünde","Unterhaltung des sonstigen beweglichen Vermügens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschüftsauszahlungen"],
               datasets: [{
                 label: 'Euro',
-                data: [1918700,9700,77100,385400,1900,9900,0,18000,2500,75000,17000,280000,12000,20000,23500,2500,0,300,5000,0,0,0],
+                data: [1918700,9700,77100,385400,1900,9900,18000,2500,75000,17000,280000,12000,20000,23500,2500,300,5000],
                 borderWidth: 1
               }]
             },
@@ -259,6 +267,48 @@
         
       
         
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_f5883023_e1bb_4c72_b4a4_4e13b8167329'), {
+            type: 'doughnut',
+            data: {
+              labels: [],
+              datasets: [{
+                label: 'Euro',
+                data: [],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_415a2c6f_6996_4572_8528_9b6c998ba702'), {
+            type: 'doughnut',
+            data: {
+              labels: [],
+              datasets: [{
+                label: 'Euro',
+                data: [],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
       
     </script>

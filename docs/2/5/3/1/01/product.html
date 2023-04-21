@@ -35,16 +35,12 @@
           <h3>- Die Verwaltung erwirtschaftet <span class="total-cashflow-income">1.148.400,00€</span></h3>
 
           
-            <div class="row">
-              <div class="col-6">
-                <h5 class="center">Einnahmen: 1.148.400,00€</h5>
-                <canvas id="chartjs_0c1569b6_94fc_4d69_9b8e_93a1a2b6f923"></canvas>
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_2d6f86e1_a45b_4206_a59e_6c0975565230"></canvas>
               </div>
-              <div class="col-6">
-                <h5 class="center">Ausgaben: 0,00€</h5>
-                <canvas id="chartjs_9184ed46_2b84_4e86_a3f5_14602d25fca7"></canvas>
-              </div>
-            </div>
+            
+            
           
       
           <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
@@ -115,7 +111,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_0c1569b6_94fc_4d69_9b8e_93a1a2b6f923'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_2d6f86e1_a45b_4206_a59e_6c0975565230'), {
             type: 'doughnut',
             data: {
               labels: ["Konzessionsabgaben"],
@@ -135,27 +131,6 @@
             }
           });
         
-        
-          var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_9184ed46_2b84_4e86_a3f5_14602d25fca7'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Erstatt. f.d. Ausz. v. Dritten a. lfd VerwTüt. an verb. Unt., Sondverm.\u0026 Beteil."],
-              datasets: [{
-                label: 'Euro',
-                data: [0],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              },
-              
-            }
-          });
         
       
         

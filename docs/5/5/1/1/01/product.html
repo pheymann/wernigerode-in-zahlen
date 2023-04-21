@@ -38,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 10.000,00€</h5>
-                <canvas id="chartjs_731051ad_41e5_410a_8878_486278716b4b"></canvas>
+                <canvas id="chartjs_11dee6b3_1c0c_4c75_9aa3_fdc9999c471e"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -951.800,00€</h5>
-                <canvas id="chartjs_f2795d11_828d_40b3_b314_a349cc460689"></canvas>
+                <canvas id="chartjs_7b3f8834_80ba_4370_b701_df346054b8de"></canvas>
               </div>
             </div>
           
@@ -165,13 +165,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_731051ad_41e5_410a_8878_486278716b4b'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_11dee6b3_1c0c_4c75_9aa3_fdc9999c471e'), {
             type: 'doughnut',
             data: {
-              labels: ["Zuweisungen für lfd. Zwecke vom Land (Sonderprogramme Fürdermittel)","Verwaltungsgebühren","Einzahlungen aus Kostenerstattungen von privaten Unternehmen","Einzahlungen aus Kostenerstattungen von übrigen Bereichen","Einnahmen Mehrwertsteuer 7%","Einnahmen Mehrwertsteuer 0%","Einnahmen Mehrwertsteuer 19%","Erstattungen Vorsteuer","Buügelder"],
+              labels: ["Verwaltungsgebühren"],
               datasets: [{
                 label: 'Euro',
-                data: [0,10000,0,0,0,0,0,0,0],
+                data: [10000],
                 borderWidth: 1
               }]
             },
@@ -187,13 +187,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_f2795d11_828d_40b3_b314_a349cc460689'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_7b3f8834_80ba_4370_b701_df346054b8de'), {
             type: 'doughnut',
             data: {
-              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Auszahlungen für Mieten und Pachten","Haltung von Fahrzeugen","Erwerb geringwertiger Vermügensgegenstünde","Unterhaltung des sonstigen beweglichen Vermügens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für sonstige Dienstleistungen","Sonstige Personal- und Versorgungsauszahlungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschüftsauszahlungen","Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten","Auszahlungen für Planungsleistungen","Steuern, Versicherungen, Schadensfülle","Abzugsfühige Vorsteuer  7%","Abzugsfühige Vorsteuer 0 %","Abzugsfühige Vorsteuer 19%","Abführung Mehrwertsteuer","Sonstige Finanzauszahlungen"],
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Haltung von Fahrzeugen","Unterhaltung des sonstigen beweglichen Vermügens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschüftsauszahlungen","Auszahlungen für Planungsleistungen"],
               datasets: [{
                 label: 'Euro',
-                data: [621200,24500,124700,3300,0,0,1200,0,300,300,0,0,0,800,500,0,175000,0,0,0,0,0,0],
+                data: [621200,24500,124700,3300,1200,300,300,800,500,175000],
                 borderWidth: 1
               }]
             },

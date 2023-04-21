@@ -35,16 +35,12 @@
           <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-147.200,00€</span></h3>
 
           
-            <div class="row">
-              <div class="col-6">
-                <h5 class="center">Einnahmen: 0,00€</h5>
-                <canvas id="chartjs_3558387a_ff7f_4989_84c4_fff3795c53d8"></canvas>
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_c7932a1b_770f_4d23_9c19_a0784f60a62d"></canvas>
               </div>
-              <div class="col-6">
-                <h5 class="center">Ausgaben: -147.200,00€</h5>
-                <canvas id="chartjs_2d8d14ae_b054_41a2_ae63_0154ee712fa2"></canvas>
-              </div>
-            </div>
+            
           
       
           <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
@@ -134,30 +130,9 @@
     <script>
       
         
-          var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_3558387a_ff7f_4989_84c4_fff3795c53d8'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Zuschüsse für laufende Zwecke von übrigen Bereichen"],
-              datasets: [{
-                label: 'Euro',
-                data: [0],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              },
-              
-            }
-          });
-        
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_2d8d14ae_b054_41a2_ae63_0154ee712fa2'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_c7932a1b_770f_4d23_9c19_a0784f60a62d'), {
             type: 'doughnut',
             data: {
               labels: ["Auszahlungen für Mieten und Pachten","Zuschüsse an übrige Bereiche","Auszahlungen für ehrenamtliche und sonstige Tütigkeit","Auszahlungen für Honorare","Fraktionszuwendungen"],

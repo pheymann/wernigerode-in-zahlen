@@ -35,23 +35,27 @@
           <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-495.000,00€</span></h3>
 
           
-            <div class="row">
-              <div class="col-6">
-                <h5 class="center">Einnahmen: 0,00€</h5>
-                <canvas id="chartjs_8a571231_dc89_450b_b700_d2e9b608b511"></canvas>
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_29a6fe35_6eb5_43fe_8f91_95bb8261ffa5"></canvas>
               </div>
-              <div class="col-6">
-                <h5 class="center">Ausgaben: -495.000,00€</h5>
-                <canvas id="chartjs_4dd6fa15_3427_4651_8437_9455cf5ff719"></canvas>
-              </div>
-            </div>
+            
           
       
           <h3>- Investitionen kosten <span class="total-cashflow-expenses">-600,00€</span></h3>
 
           
-            
-            
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 958.900,00€</h5>
+                <canvas id="chartjs_354e7c14_71f6_46bb_bdf8_2b6ebf36759d"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: -959.500,00€</h5>
+                <canvas id="chartjs_ec90d3f3_aa33_4d12_b6ab_83a428717b58"></canvas>
+              </div>
+            </div>
           
       
     </div>
@@ -114,36 +118,15 @@
     <script>
       
         
-          var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_8a571231_dc89_450b_b700_d2e9b608b511'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Einzahl. aus Kostenerstattungen von verbund. Untern., Sondervermü. und Beteilig.","Einnahmen Mehrwertsteuer 7%","Einnahmen Mehrwertsteuer 0%","Einnahmen Mehrwertsteuer 19%","Einnahmen Mehrwertsteuer 16%","Erstattungen Vorsteuer"],
-              datasets: [{
-                label: 'Euro',
-                data: [0,0,0,0,0,0],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              },
-              
-            }
-          });
-        
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_4dd6fa15_3427_4651_8437_9455cf5ff719'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_29a6fe35_6eb5_43fe_8f91_95bb8261ffa5'), {
             type: 'doughnut',
             data: {
-              labels: ["Zuschüsse an verbundene Unternehmen, Sondervermügen und Beteiligungen","Abzugsfühige Vorsteuer  7%","Abzugsfühige Vorsteuer 0%","Abzugsfühige Vorsteuer 19%","Abzugsfühige Vorsteuer 16%","Abführung Mehrwertsteuer"],
+              labels: ["Zuschüsse an verbundene Unternehmen, Sondervermügen und Beteiligungen"],
               datasets: [{
                 label: 'Euro',
-                data: [495000,0,0,0,0,0],
+                data: [495000],
                 borderWidth: 1
               }]
             },
@@ -159,6 +142,48 @@
         
       
         
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_354e7c14_71f6_46bb_bdf8_2b6ebf36759d'), {
+            type: 'doughnut',
+            data: {
+              labels: [],
+              datasets: [{
+                label: 'Euro',
+                data: [],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_ec90d3f3_aa33_4d12_b6ab_83a428717b58'), {
+            type: 'doughnut',
+            data: {
+              labels: [],
+              datasets: [{
+                label: 'Euro',
+                data: [],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
       
     </script>

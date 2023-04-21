@@ -38,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 63.000,00€</h5>
-                <canvas id="chartjs_1b02020c_761b_4a8b_960a_1e6ddfa4dad2"></canvas>
+                <canvas id="chartjs_6a4b6d6c_f805_4eb8_a67b_899289fce4e5"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -122.500,00€</h5>
-                <canvas id="chartjs_f25e8ad5_0c34_49ec_8e19_fc2e20546df1"></canvas>
+                <canvas id="chartjs_0ca4284e_0c4a_4dcb_af21_13d472f71968"></canvas>
               </div>
             </div>
           
@@ -51,6 +51,10 @@
 
           
             
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_44aeaa90_7e23_4e27_9eb4_f9ad63316350"></canvas>
+              </div>
             
           
       
@@ -170,13 +174,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_1b02020c_761b_4a8b_960a_1e6ddfa4dad2'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_6a4b6d6c_f805_4eb8_a67b_899289fce4e5'), {
             type: 'doughnut',
             data: {
-              labels: ["Benutzungsgebühren und ähnliche Entgelte","Sonstige privatrechtliche Leistungsentgelte","Einzahlungen aus Kostenerstattungen von sonstigen öffentlichen Sonderrechnungen"],
+              labels: ["Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus Kostenerstattungen von sonstigen öffentlichen Sonderrechnungen"],
               datasets: [{
                 label: 'Euro',
-                data: [3000,0,60000],
+                data: [3000,60000],
                 borderWidth: 1
               }]
             },
@@ -192,13 +196,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_f25e8ad5_0c34_49ec_8e19_fc2e20546df1'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_0ca4284e_0c4a_4dcb_af21_13d472f71968'), {
             type: 'doughnut',
             data: {
-              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen-Gebüudemanagement","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermügensgegenstünde","Unterhaltung des sonstigen beweglichen Vermügens","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für sonstige Dienstleistungen","Sonstige Personal- und Versorgungsauszahlungen","Geschüftsauszahlungen","Auszahlungen für Beitragsservice (GEZ)","Steuern, Versicherungen, Schadensfülle","Erstatt. f.d. Ausz. v. Dritten aus lfd. Verwaltungstütigkeit an Gemeinde\u0026 GV","Erstatt. f.d. Ausz. v. Dritten aus lfd Verwaltungstüt. an so. üff. Sonderrechn."],
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermügensgegenstünde","Unterhaltung des sonstigen beweglichen Vermügens","Besondere Verwaltungs- und Betriebsauszahlungen","Geschüftsauszahlungen"],
               datasets: [{
                 label: 'Euro',
-                data: [36800,1500,7400,300,0,6100,68400,800,500,300,0,0,400,0,0,0,0],
+                data: [36800,1500,7400,300,6100,68400,800,500,300,400],
                 borderWidth: 1
               }]
             },
@@ -214,6 +218,27 @@
         
       
         
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_44aeaa90_7e23_4e27_9eb4_f9ad63316350'), {
+            type: 'doughnut',
+            data: {
+              labels: [],
+              datasets: [{
+                label: 'Euro',
+                data: [],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
       
     </script>

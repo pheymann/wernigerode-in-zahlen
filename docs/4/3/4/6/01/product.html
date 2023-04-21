@@ -38,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 400,00€</h5>
-                <canvas id="chartjs_6a3a6b6a_18ba_4b0d_a259_a0a7503774f7"></canvas>
+                <canvas id="chartjs_5baaeebe_8983_4004_81f8_b1db8a7024b5"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -413.900,00€</h5>
-                <canvas id="chartjs_961a35dc_db73_4e6d_b7ba_8a6ca86cc175"></canvas>
+                <canvas id="chartjs_876a76be_6ef6_4e73_a744_9b7af8638287"></canvas>
               </div>
             </div>
           
@@ -155,13 +155,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_6a3a6b6a_18ba_4b0d_a259_a0a7503774f7'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_5baaeebe_8983_4004_81f8_b1db8a7024b5'), {
             type: 'doughnut',
             data: {
-              labels: ["Einzahlungen aus Kostenerstattungen vom Land","Einzahlungen aus Kostenerstattungen von gesetzlichen Sozialversicherungen","Einzahlungen aus Kostenerstattungen von übrigen Bereichen","Buügelder"],
+              labels: ["Einzahlungen aus Kostenerstattungen von übrigen Bereichen","Buügelder"],
               datasets: [{
                 label: 'Euro',
-                data: [0,0,100,300],
+                data: [100,300],
                 borderWidth: 1
               }]
             },
@@ -177,13 +177,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_961a35dc_db73_4e6d_b7ba_8a6ca86cc175'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_876a76be_6ef6_4e73_a744_9b7af8638287'), {
             type: 'doughnut',
             data: {
-              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für sonstige Dienstleistungen","Sonstige Personal- und Versorgungsauszahlungen","Geschüftsauszahlungen","Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten"],
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für sonstige Dienstleistungen","Geschüftsauszahlungen","Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten"],
               datasets: [{
                 label: 'Euro',
-                data: [330700,13100,66300,1900,0,100,0,1300,500],
+                data: [330700,13100,66300,1900,100,1300,500],
                 borderWidth: 1
               }]
             },

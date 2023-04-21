@@ -38,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 1.300,00€</h5>
-                <canvas id="chartjs_b0ba6345_1839_4436_a558_1021fe1e8e74"></canvas>
+                <canvas id="chartjs_fc9981aa_28e7_4d6b_9bb4_a579fb491641"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -2.046.500,00€</h5>
-                <canvas id="chartjs_799817b5_858f_429c_bd3b_7c8c752ad4c7"></canvas>
+                <canvas id="chartjs_b214f351_1382_4c0b_8da1_5d44421f006a"></canvas>
               </div>
             </div>
           
@@ -51,6 +51,10 @@
 
           
             
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_e70c8554_4dce_4305_9967_fad82515ce54"></canvas>
+              </div>
             
           
       
@@ -250,13 +254,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_b0ba6345_1839_4436_a558_1021fe1e8e74'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_fc9981aa_28e7_4d6b_9bb4_a579fb491641'), {
             type: 'doughnut',
             data: {
-              labels: ["Verwaltungsgebühren","Einzahlungen aus dem Verkauf von beweglichen Sachen","Einzahlungen aus dem Verkauf von geringwertigen Vermügensgegenstünden","Sonstige privatrechtliche Leistungsentgelte","19% USt So.Privatrechtl. Leist","Einzahlungen aus Kostenerstattungen vom Land","Einzahlungen aus Kostenerstattungen von gesetzlichen Sozialversicherungen","Einzahl. aus Kostenerstattungen von verbund. Untern., Sondervermü. und Beteilig.","Einzahlungen aus Kostenerstattungen von sonstigen öffentlichen Sonderrechnungen","Einzahlungen aus Kostenerstattungen von übrigen Bereichen","Erstattungen von Steuern","Einzahlungen von Gewinnanteilen aus verbundenen Unternehmen und Beteiligungen"],
+              labels: ["Verwaltungsgebühren","Einzahlungen aus dem Verkauf von beweglichen Sachen","Einzahlungen aus dem Verkauf von geringwertigen Vermügensgegenstünden","Sonstige privatrechtliche Leistungsentgelte","19% USt So.Privatrechtl. Leist"],
               datasets: [{
                 label: 'Euro',
-                data: [500,200,100,100,400,0,0,0,0,0,0,0],
+                data: [500,200,100,100,400],
                 borderWidth: 1
               }]
             },
@@ -272,13 +276,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_799817b5_858f_429c_bd3b_7c8c752ad4c7'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_b214f351_1382_4c0b_8da1_5d44421f006a'), {
             type: 'doughnut',
             data: {
-              labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für Mieten und Pachten","Auszahlungen für Mieten und Pachten EDV","Aufwendunge Miete Telefonanlage","Auszahlungen für Leasing","Auszahlungen für Leasing EDV","Haltung von Fahrzeugen","Erwerb geringwertiger Vermügensgegenstünde","Erwerb geringwertiger Vermügensgegenstünde EDV","Unterhaltung des sonstigen beweglichen Vermügens","Unterhaltung des sonstigen beweglichen Vermügens EDV","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für Getrünke","Auszahlungen für sonstige Dienstleistungen (EDV)","Zuschüsse an übrige Bereiche","Sonstige Personal- und Versorgungsauszahlungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschüftsauszahlungen","Geschüftsauszahlungen EDV","Geschüftsauszahlung Mobilfunk","Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten","Auszahlungen für Beitragsservice (GEZ)","Steuern, Versicherungen, Schadensfülle","Erstatt. für die Auszahl. von Dritten aus lfd. Verwaltungstüt. an übrige Ber.","Besondere Auszahlungen Süumniszuschlüge"],
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für Mieten und Pachten","Auszahlungen für Mieten und Pachten EDV","Aufwendunge Miete Telefonanlage","Auszahlungen für Leasing","Haltung von Fahrzeugen","Erwerb geringwertiger Vermügensgegenstünde","Erwerb geringwertiger Vermügensgegenstünde EDV","Unterhaltung des sonstigen beweglichen Vermügens","Unterhaltung des sonstigen beweglichen Vermügens EDV","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für Getrünke","Auszahlungen für sonstige Dienstleistungen (EDV)","Sonstige Personal- und Versorgungsauszahlungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschüftsauszahlungen","Geschüftsauszahlungen EDV","Geschüftsauszahlung Mobilfunk","Auszahlungen für Beitragsservice (GEZ)"],
               datasets: [{
                 label: 'Euro',
-                data: [0,960500,0,38500,192900,5000,2300,77500,52000,18000,0,35000,7000,7000,1500,165000,2500,2200,2500,205000,0,20000,31800,162800,34000,15500,0,8000,0,0,0],
+                data: [960500,38500,192900,5000,2300,77500,52000,18000,35000,7000,7000,1500,165000,2500,2200,2500,205000,20000,31800,162800,34000,15500,8000],
                 borderWidth: 1
               }]
             },
@@ -294,6 +298,27 @@
         
       
         
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_e70c8554_4dce_4305_9967_fad82515ce54'), {
+            type: 'doughnut',
+            data: {
+              labels: [],
+              datasets: [{
+                label: 'Euro',
+                data: [],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
       
     </script>

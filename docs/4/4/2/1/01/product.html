@@ -35,16 +35,12 @@
           <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-156.100,00€</span></h3>
 
           
-            <div class="row">
-              <div class="col-6">
-                <h5 class="center">Einnahmen: 0,00€</h5>
-                <canvas id="chartjs_a7b6700f_6c1c_4d82_ae4b_13a06aeb119d"></canvas>
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_9bdef188_490f_49ce_bd0a_65e201478338"></canvas>
               </div>
-              <div class="col-6">
-                <h5 class="center">Ausgaben: -156.100,00€</h5>
-                <canvas id="chartjs_fa8bf691_aeee_4846_907b_5cc925d6ee13"></canvas>
-              </div>
-            </div>
+            
           
       
           <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
@@ -114,36 +110,15 @@
     <script>
       
         
-          var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_a7b6700f_6c1c_4d82_ae4b_13a06aeb119d'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Einzahlungen aus Kostenerstattungen von übrigen Bereichen"],
-              datasets: [{
-                label: 'Euro',
-                data: [0],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              },
-              
-            }
-          });
-        
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_fa8bf691_aeee_4846_907b_5cc925d6ee13'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_9bdef188_490f_49ce_bd0a_65e201478338'), {
             type: 'doughnut',
             data: {
-              labels: ["Unterhaltung der Grundstücke und baulichen Anlagen-Gebüudemanagement","Zuschüsse an übrige Bereiche"],
+              labels: ["Zuschüsse an übrige Bereiche"],
               datasets: [{
                 label: 'Euro',
-                data: [0,156100],
+                data: [156100],
                 borderWidth: 1
               }]
             },

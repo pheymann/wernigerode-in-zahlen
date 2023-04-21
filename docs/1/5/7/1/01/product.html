@@ -35,21 +35,21 @@
           <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-396.200,00€</span></h3>
 
           
-            <div class="row">
-              <div class="col-6">
-                <h5 class="center">Einnahmen: 0,00€</h5>
-                <canvas id="chartjs_38a5809d_a6af_49c4_850f_296d3f2304ae"></canvas>
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_985c7cb6_b8a5_4dba_ac79_bbaae2386872"></canvas>
               </div>
-              <div class="col-6">
-                <h5 class="center">Ausgaben: -396.200,00€</h5>
-                <canvas id="chartjs_b0f58776_07bc_4c8d_98ec_59fb149e5b12"></canvas>
-              </div>
-            </div>
+            
           
       
           <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">150.000,00€</span></h3>
 
           
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_598df70e_8e51_43dd_b836_2f420f979f33"></canvas>
+              </div>
             
             
           
@@ -179,36 +179,15 @@
     <script>
       
         
-          var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_38a5809d_a6af_49c4_850f_296d3f2304ae'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Einzahlungen aus dem Verkauf von Grundstücken in Entwicklung","Einzahlungen aus Kostenerstattungen von Zweckverbünden","Einzahlungen aus Kostenerstattungen von sonstigen öffentlichen Sonderrechnungen","Erträge aus Kostenerstattungen von privaten Unternehmen  (Harz AG)","Einnahmen Mehrwertsteuer 7%","Einnahmen Mehrwertsteuer 0%","Einnahmen Mehrwertsteuer 19%","Einnahmen Mehrwertsteuer 16%","Erstattungen Vorsteuer"],
-              datasets: [{
-                label: 'Euro',
-                data: [0,0,0,0,0,0,0,0,0],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              },
-              
-            }
-          });
-        
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_b0f58776_07bc_4c8d_98ec_59fb149e5b12'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_985c7cb6_b8a5_4dba_ac79_bbaae2386872'), {
             type: 'doughnut',
             data: {
-              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Zuweisungen an Zweckverbünde","Zuschüsse an sonstige üffentliche Sonderrechnungen","Sonstige Transferauszahlungen","Sonstige Personal- und Versorgungsauszahlungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschüftsauszahlungen","Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten","Abzugsfühige Vorsteuer  7%","Abzugsfühige Vorsteuer 0%","Abzugsfühige Vorsteuer 19%","Abzugsfühige Vorsteuer 16%","Abführung Mehrwertsteuer","Erstatt. für die Auszahl. von Dritten aus lfd. Verwaltungstüt. an priv. Untern."],
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Besondere Verwaltungs- und Betriebsauszahlungen","Zuweisungen an Zweckverbünde","Zuschüsse an sonstige üffentliche Sonderrechnungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschüftsauszahlungen","Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten","Erstatt. für die Auszahl. von Dritten aus lfd. Verwaltungstüt. an priv. Untern."],
               datasets: [{
                 label: 'Euro',
-                data: [120800,4800,24200,600,5000,2700,1200,0,20000,150000,15000,0,0,900,15000,23000,0,0,0,0,0,13000],
+                data: [120800,4800,24200,600,5000,2700,1200,20000,150000,15000,900,15000,23000,13000],
                 borderWidth: 1
               }]
             },
@@ -223,6 +202,27 @@
           });
         
       
+        
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_598df70e_8e51_43dd_b836_2f420f979f33'), {
+            type: 'doughnut',
+            data: {
+              labels: [],
+              datasets: [{
+                label: 'Euro',
+                data: [],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
         
       

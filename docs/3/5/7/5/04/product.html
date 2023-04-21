@@ -38,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 338.400,00€</h5>
-                <canvas id="chartjs_4681343d_fe7e_45ac_a896_f08f26a6204b"></canvas>
+                <canvas id="chartjs_61266fb1_7c78_44d7_918a_6846ba93f3e6"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -789.500,00€</h5>
-                <canvas id="chartjs_06e921a1_4ff7_41b2_bb11_f7ec4100b532"></canvas>
+                <canvas id="chartjs_e612b5b7_247c_491b_88f6_ddc0de360c86"></canvas>
               </div>
             </div>
           
@@ -51,6 +51,10 @@
 
           
             
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_bc60c1ae_bf4a_404d_a650_d563ac2ac4c3"></canvas>
+              </div>
             
           
       
@@ -230,13 +234,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_4681343d_fe7e_45ac_a896_f08f26a6204b'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_61266fb1_7c78_44d7_918a_6846ba93f3e6'), {
             type: 'doughnut',
             data: {
-              labels: ["Sonstige allgemeine Zuweisungen vom Bund","Zuschüsse für laufende Zwecke von privaten Unternehmen","Benutzungsgebühren und ähnliche Entgelte","Benutzungsgebühren und ähnliche Entgelte individuell","Marketinggutscheine SFA","Einzahlungen aus Mieten und Pachten","Erträge aus dem Verkauf von Waren","Einzahlungen aus dem Verkauf von Waren 7%","Sonstige privatrechtliche Leistungsentgelte","Einzahlungen aus Kostenerstattungen vom Land","Einzahlungen aus Kostenerstattungen von gesetzlichen Sozialversicherungen","Einzahl. aus Kostenerstattungen von verbund. Untern., Sondervermü. und Beteilig.","Einzahlungen aus Kostenerstattungen von privaten Unternehmen","Einzahlungen aus Kostenerstattungen von übrigen Bereichen","Einnahmen Mehrwertsteuer 7%","Einnahmen Mehrwertsteuer 0%","Einnahmen Mehrwertsteuer 5%","Einnahmen Mehrwertsteuer 19%","Einnahmen Mehrwertsteuer 16%","Erstattungen Vorsteuer"],
+              labels: ["Zuschüsse für laufende Zwecke von privaten Unternehmen","Benutzungsgebühren und ähnliche Entgelte","Benutzungsgebühren und ähnliche Entgelte individuell","Einzahlungen aus Mieten und Pachten","Erträge aus dem Verkauf von Waren","Einzahlungen aus dem Verkauf von Waren 7%","Sonstige privatrechtliche Leistungsentgelte"],
               datasets: [{
                 label: 'Euro',
-                data: [0,23800,200000,2500,0,50000,2000,100,60000,0,0,0,0,0,0,0,0,0,0,0],
+                data: [23800,200000,2500,50000,2000,100,60000],
                 borderWidth: 1
               }]
             },
@@ -252,13 +256,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_06e921a1_4ff7_41b2_bb11_f7ec4100b532'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_e612b5b7_247c_491b_88f6_ddc0de360c86'), {
             type: 'doughnut',
             data: {
-              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Unterhaltung des sonstigen unbeweglichen Vermügens","Auszahlungen für Mieten und Pachten","Auszahlungen für Leasing","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Erwerb geringwertiger Vermügensgegenstünde","Unterhaltung des sonstigen beweglichen Vermügens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Harz Open Air","Auszahlungen für den Erwerb von Vorrüten","Auszahlungen für sonstige Dienstleistungen","Sonstige Personal- und Versorgungsauszahlungen","Geschüftsauszahlungen","Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten","Auszahlungen für Honorare","Auszahlungen für Beitragsservice (GEZ)","Steuern, Versicherungen, Schadensfülle","Abzugsfühige Vorsteuer  7%","Abzugsfühige Vorsteuer 0%","Abzugsfühige Vorsteuer 5%","Abzugsfühige Vorsteuer 19%","Abzugsfühige Vorsteuer 16%","Abführung Mehrwertsteuer","Erstatt. f.d. Ausz. v. Dritten a. lfd VerwTüt. an verb. Unt., Sondverm.\u0026 Beteil.","Besondere Auszahlungen Süumniszuschlüge"],
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Unterhaltung des sonstigen unbeweglichen Vermügens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Erwerb geringwertiger Vermügensgegenstünde","Unterhaltung des sonstigen beweglichen Vermügens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für den Erwerb von Vorrüten","Auszahlungen für sonstige Dienstleistungen","Geschüftsauszahlungen","Auszahlungen für Honorare"],
               datasets: [{
                 label: 'Euro',
-                data: [307300,12300,61800,1900,43600,5000,22000,0,131600,3500,5000,8500,5000,65000,0,2000,100000,0,2000,0,13000,0,0,0,0,0,0,0,0,0,0],
+                data: [307300,12300,61800,1900,43600,5000,22000,131600,3500,5000,8500,5000,65000,2000,100000,2000,13000],
                 borderWidth: 1
               }]
             },
@@ -274,6 +278,27 @@
         
       
         
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_bc60c1ae_bf4a_404d_a650_d563ac2ac4c3'), {
+            type: 'doughnut',
+            data: {
+              labels: [],
+              datasets: [{
+                label: 'Euro',
+                data: [],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
       
     </script>

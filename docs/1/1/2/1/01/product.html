@@ -35,16 +35,12 @@
           <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-10.500,00€</span></h3>
 
           
-            <div class="row">
-              <div class="col-6">
-                <h5 class="center">Einnahmen: 0,00€</h5>
-                <canvas id="chartjs_3a57956e_3909_4f70_8593_5b8761989ef9"></canvas>
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_f206e520_11a2_4945_8edd_6157b423bb80"></canvas>
               </div>
-              <div class="col-6">
-                <h5 class="center">Ausgaben: -10.500,00€</h5>
-                <canvas id="chartjs_e314bd13_5dff_44e7_b4ef_98fa21dde758"></canvas>
-              </div>
-            </div>
+            
           
       
           <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
@@ -129,36 +125,15 @@
     <script>
       
         
-          var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_3a57956e_3909_4f70_8593_5b8761989ef9'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Einzahlungen aus Kostenerstattungen vom Land","Einzahlungen aus Kostenerstattungen von Gemeinden und Gemeindeverbünden"],
-              datasets: [{
-                label: 'Euro',
-                data: [0,0],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              },
-              
-            }
-          });
-        
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_e314bd13_5dff_44e7_b4ef_98fa21dde758'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_f206e520_11a2_4945_8edd_6157b423bb80'), {
             type: 'doughnut',
             data: {
-              labels: ["Auszahlungen für Mieten und Pachten","Erwerb geringwertiger Vermügensgegenstünde","Unterhaltung des sonstigen beweglichen Vermügens","Auszahlungen für sonstige Dienstleistungen","Sonstige Personal- und Versorgungsauszahlungen","Auszahlungen für ehrenamtliche und sonstige Tütigkeit","Geschüftsauszahlungen"],
+              labels: ["Auszahlungen für sonstige Dienstleistungen","Sonstige Personal- und Versorgungsauszahlungen","Auszahlungen für ehrenamtliche und sonstige Tütigkeit","Geschüftsauszahlungen"],
               datasets: [{
                 label: 'Euro',
-                data: [0,0,0,500,800,8000,1200],
+                data: [500,800,8000,1200],
                 borderWidth: 1
               }]
             },

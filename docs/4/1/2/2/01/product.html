@@ -38,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 772.500,00€</h5>
-                <canvas id="chartjs_c3c84a61_92ab_4115_9ab5_be9e1d144812"></canvas>
+                <canvas id="chartjs_724cf48e_d098_48eb_968b_79431f226005"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -1.663.700,00€</h5>
-                <canvas id="chartjs_cc3816e3_08f4_473b_9bec_c6eee1dadd70"></canvas>
+                <canvas id="chartjs_ee1c5c2b_f5a3_428e_9e46_cd140c0ea12e"></canvas>
               </div>
             </div>
           
@@ -230,13 +230,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_c3c84a61_92ab_4115_9ab5_be9e1d144812'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_724cf48e_d098_48eb_968b_79431f226005'), {
             type: 'doughnut',
             data: {
-              labels: ["Verwaltungsgebühren","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus dem Verkauf von Vorrüten","Sonstige privatrechtliche Leistungsentgelte","Einzahlungen aus Kostenerstattungen vom Land","Einzahlungen aus Kostenerstattungen von gesetzlichen Sozialversicherungen","Einzahl. aus Kostenerstattungen von verbund. Untern., Sondervermü. und Beteilig.","Einzahlungen aus Kostenerstattungen von sonstigen öffentlichen Sonderrechnungen","Einzahlungen aus Kostenerstattungen von übrigen Bereichen","Buügelder","Andere sonstige Einzahlungen aus laufender Verwaltungstütigkeit"],
+              labels: ["Verwaltungsgebühren","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus Kostenerstattungen vom Land","Einzahlungen aus Kostenerstattungen von übrigen Bereichen","Buügelder"],
               datasets: [{
                 label: 'Euro',
-                data: [41500,200000,0,0,1000,0,0,0,40000,490000,0],
+                data: [41500,200000,1000,40000,490000],
                 borderWidth: 1
               }]
             },
@@ -252,13 +252,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_cc3816e3_08f4_473b_9bec_c6eee1dadd70'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_ee1c5c2b_f5a3_428e_9e46_cd140c0ea12e'), {
             type: 'doughnut',
             data: {
-              labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Erwerb geringwertiger Vermügensgegenstünde","Unterhaltung des sonstigen beweglichen Vermügens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für sonstige Dienstleistungen","Sonstige Personal- und Versorgungsauszahlungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschüftsauszahlungen","Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten","Steuern, Versicherungen, Schadensfülle","Erstattungen für die Auszahl. von Dritten aus lfd. Verwaltungstüt. an den Bund","Erstatt. für die Auszahl. von Dritten aus lfd. Verwaltungstüt. an übrige Ber.","Sonstige Finanzauszahlungen"],
+              labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Erwerb geringwertiger Vermügensgegenstünde","Unterhaltung des sonstigen beweglichen Vermügens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für sonstige Dienstleistungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschüftsauszahlungen","Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten","Erstattungen für die Auszahl. von Dritten aus lfd. Verwaltungstüt. an den Bund","Erstatt. für die Auszahl. von Dritten aus lfd. Verwaltungstüt. an übrige Ber."],
               datasets: [{
                 label: 'Euro',
-                data: [73900,1035600,72600,41400,207900,5700,45000,25000,3500,500,500,7500,7000,129000,0,600,2000,1500,0,1000,3500,0],
+                data: [73900,1035600,72600,41400,207900,5700,45000,25000,3500,500,500,7500,7000,129000,600,2000,1500,1000,3500],
                 borderWidth: 1
               }]
             },

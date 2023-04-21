@@ -38,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 10.700,00€</h5>
-                <canvas id="chartjs_4bf469f7_1279_49f1_ab81_d33ba587f569"></canvas>
+                <canvas id="chartjs_89d576bc_6c8b_410f_8cdc_47f814d4c8bf"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -869.200,00€</h5>
-                <canvas id="chartjs_2adb9ae0_fca6_4859_b620_3f5151226a1c"></canvas>
+                <canvas id="chartjs_39db4bc8_f574_4309_a9ef_8d0d15c3b2ee"></canvas>
               </div>
             </div>
           
@@ -50,8 +50,16 @@
           <h3>- Investitionen kosten <span class="total-cashflow-expenses">-255.000,00€</span></h3>
 
           
-            
-            
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 349.200,00€</h5>
+                <canvas id="chartjs_5e7c4d34_2cc2_4fb7_9039_4df4b9ba046e"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: -604.200,00€</h5>
+                <canvas id="chartjs_b1c80a85_6623_4991_af26_735779ba783a"></canvas>
+              </div>
+            </div>
           
       
     </div>
@@ -185,13 +193,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_4bf469f7_1279_49f1_ab81_d33ba587f569'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_89d576bc_6c8b_410f_8cdc_47f814d4c8bf'), {
             type: 'doughnut',
             data: {
-              labels: ["Zuweisungen für laufende Zwecke vom Land (Aktive Stadt-undOrtsteilzentren)","Zuweis.für lfd. Zwecke vom Land (Stadtumbau Ost Aufw.Altstadt)","Zuweisungen für lfd. Zwecke vom Land (Sonderprogramme Fürdermittel)","Zuweisungen für lfd. Zwecke vom Land (Stadtumbau Ost-Rückbau)","Zuschüsse für laufende Zwecke von übrigen Bereichen","Verwaltungsgebühren","Einzahlungen aus Kostenerstattungen vom Land","Einzahlungen aus Kostenerstattungen von privaten Unternehmen"],
+              labels: ["Verwaltungsgebühren","Einzahlungen aus Kostenerstattungen vom Land"],
               datasets: [{
                 label: 'Euro',
-                data: [0,0,0,0,0,1400,9300,0],
+                data: [1400,9300],
                 borderWidth: 1
               }]
             },
@@ -207,13 +215,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_2adb9ae0_fca6_4859_b620_3f5151226a1c'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_39db4bc8_f574_4309_a9ef_8d0d15c3b2ee'), {
             type: 'doughnut',
             data: {
-              labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Unterhaltung der Grundstücke und baulichen Anlagen-Stadtumbau Ost","Unterhaltung des sonstigen unbeweglichen Vermügens","Auszahlungen für Mieten und Pachten","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Zuweisungen an das Land","Zuschüsse an übrige Bereiche (Aktive Stadt-und Ortsteilzentren)","Zuschüsse an übrige Bereiche (Stadtumbau Ost Aufwertung Altstadt)","Zuschüsse an übrige Bereiche Stadtumbau-Ost Rückbau","Sonstige Personal- und Versorgungsauszahlungen","Geschüftsauszahlungen","Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten","Auszahlungen für Honorare","Auszahlungen für Planungsleistungen","Sonstige Finanzauszahlungen"],
+              labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Sonstige Personal- und Versorgungsauszahlungen","Geschüftsauszahlungen","Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten","Auszahlungen für Planungsleistungen","Sonstige Finanzauszahlungen"],
               datasets: [{
                 label: 'Euro',
-                data: [55900,534900,37600,21200,107500,3100,0,0,0,0,500,300,0,0,0,0,600,1100,1500,0,70000,35000],
+                data: [55900,534900,37600,21200,107500,3100,500,300,600,1100,1500,70000,35000],
                 borderWidth: 1
               }]
             },
@@ -229,6 +237,48 @@
         
       
         
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_5e7c4d34_2cc2_4fb7_9039_4df4b9ba046e'), {
+            type: 'doughnut',
+            data: {
+              labels: [],
+              datasets: [{
+                label: 'Euro',
+                data: [],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_b1c80a85_6623_4991_af26_735779ba783a'), {
+            type: 'doughnut',
+            data: {
+              labels: [],
+              datasets: [{
+                label: 'Euro',
+                data: [],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
       
     </script>

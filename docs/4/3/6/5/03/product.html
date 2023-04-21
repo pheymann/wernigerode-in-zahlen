@@ -38,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 957.400,00€</h5>
-                <canvas id="chartjs_49758d2e_3193_4136_9832_9efdb9da62ef"></canvas>
+                <canvas id="chartjs_095691b9_d955_4283_9a92_26c734ac4a69"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -893.200,00€</h5>
-                <canvas id="chartjs_00ace133_6a6a_4203_a4ec_4e62700052a4"></canvas>
+                <canvas id="chartjs_182fd87b_2393_464d_a0c0_26fb5f42172f"></canvas>
               </div>
             </div>
           
@@ -51,6 +51,10 @@
 
           
             
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_786a391d_a112_41a5_8479_68be88a1b2d7"></canvas>
+              </div>
             
           
       
@@ -190,13 +194,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_49758d2e_3193_4136_9832_9efdb9da62ef'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_095691b9_d955_4283_9a92_26c734ac4a69'), {
             type: 'doughnut',
             data: {
-              labels: ["Benutzungsgebühren und ähnliche Entgelte (Essengeld)","Einzahlung aus Mitarbeiteressen","Einzahl. Mittagessen Schulen"],
+              labels: ["Benutzungsgebühren und ähnliche Entgelte (Essengeld)","Einzahlung aus Mitarbeiteressen"],
               datasets: [{
                 label: 'Euro',
-                data: [921400,36000,0],
+                data: [921400,36000],
                 borderWidth: 1
               }]
             },
@@ -212,13 +216,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_00ace133_6a6a_4203_a4ec_4e62700052a4'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_182fd87b_2393_464d_a0c0_26fb5f42172f'), {
             type: 'doughnut',
             data: {
-              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Unterhaltung der Grundstücke und baulichen Anlagen-Gebüudemanagement","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermügensgegenstünde","Unterhaltung des sonstigen beweglichen Vermügens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für den Erwerb von Vorrüten (Verpflegungsleistungen)","Auszahlungen für sonstige Dienstleistungen","Sonstige Personal- und Versorgungsauszahlungen","Geschüftsauszahlungen","Auszahlungen für Beitragsservice (GEZ)","Steuern, Versicherungen, Schadensfülle","Erstatt. f.d. Ausz. v. Dritten aus lfd. Verwaltungstütigkeit an Gemeinde\u0026 GV"],
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermügensgegenstünde","Unterhaltung des sonstigen beweglichen Vermügens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für den Erwerb von Vorrüten (Verpflegungsleistungen)","Auszahlungen für sonstige Dienstleistungen","Geschüftsauszahlungen"],
               datasets: [{
                 label: 'Euro',
-                data: [195500,7900,39200,1300,500,0,500,30000,1300,1400,200,800,442200,171700,0,700,0,0,0],
+                data: [195500,7900,39200,1300,500,500,30000,1300,1400,200,800,442200,171700,700],
                 borderWidth: 1
               }]
             },
@@ -234,6 +238,27 @@
         
       
         
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_786a391d_a112_41a5_8479_68be88a1b2d7'), {
+            type: 'doughnut',
+            data: {
+              labels: [],
+              datasets: [{
+                label: 'Euro',
+                data: [],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
       
     </script>

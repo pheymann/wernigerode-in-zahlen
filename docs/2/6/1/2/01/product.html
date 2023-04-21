@@ -38,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 1.000,00€</h5>
-                <canvas id="chartjs_814e9f43_cc23_4c0f_8d76_651350883461"></canvas>
+                <canvas id="chartjs_6318c89e_9de9_4ffa_af2f_3b313c72e01e"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -903.600,00€</h5>
-                <canvas id="chartjs_8bb85a66_dee4_4732_be8b_d47bd99e69b6"></canvas>
+                <canvas id="chartjs_bc5bd788_9f69_460b_bd8d_1053fa2968ac"></canvas>
               </div>
             </div>
           
@@ -51,6 +51,10 @@
 
           
             
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_a2f53abe_29d9_43b8_920d_e094d5d4b3c1"></canvas>
+              </div>
             
           
       
@@ -205,13 +209,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_814e9f43_cc23_4c0f_8d76_651350883461'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_6318c89e_9de9_4ffa_af2f_3b313c72e01e'), {
             type: 'doughnut',
             data: {
-              labels: ["Zinseinzahlungen von Kreditinstituten","Einzahlungen Vorschuss","Einzahlungen Verwahr"],
+              labels: ["Zinseinzahlungen von Kreditinstituten"],
               datasets: [{
                 label: 'Euro',
-                data: [1000,0,0],
+                data: [1000],
                 borderWidth: 1
               }]
             },
@@ -227,13 +231,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_8bb85a66_dee4_4732_be8b_d47bd99e69b6'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_bc5bd788_9f69_460b_bd8d_1053fa2968ac'), {
             type: 'doughnut',
             data: {
-              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer (Leistungszulage)","ZinsAusz a.GWW f.Franckeschule","Zinsauszahlungen an Kreditinstitute","Zinsauszahlungen an Kreditinstitute 0 (Darl.-Nr. 6706746887 DKB)","Zinsauszahlungen an Kreditinstitute 1 (Darl.-Nr. 6694901613 HSK)","Zinsauszahlungen an Kreditinstitute 2 (Darl.-Nr. 6644900664 HSK)","Zinsauszahlungen an Kreditinstitute 3 (Darl.-Nr. 6674900450 HSK)","Zinsauszahlungen an Kreditinstitute 4 (Darl.-Nr. 0001327 KfWB)","Zinsauszahlungen an Kreditinstitute 6 (Darl.-Nr. 0200735300 Westf.Landsch.KB)","Zinsauszahlungen an Kreditinstitute 7 (Darl.-Nr. 7820169 KfWB)","Zinsauszahlungen an Kreditinstitute 8 (Darl.-Nr. 6700246447 DKB)","Zinsauszahlungen an Kreditinstitute 9 (Darl.-Nr. 33442380 KfWB)","Zinsauszahlungen an Kreditinstitute 12 (Darl.-Nr. 3220204600 DGHYB)","Zinsauszahlungen an Kreditinstitute 13 (Darl.-Nr. 016317012 Debeka Bauspk)","Zinsauszahlungen an Kreditinstitute 14 (Darl.-Nr. 6700272484 DKB)","Zinsauszahlungen an Kreditinstitute 15 (Darl.-Nr. 6260189654 HSK)","Zinsauszahlungen an Kreditinstitute 16 (Darl.Nr.07555840-20 Commerzbank)","Zinsauszahlungen an Kreditinstitute 17 (6702554533 DKB)","ZinsAufwDarl.6705346614 DKB 18","ZinsAufwDarl.6000174027 NORDLB","Zinsauszahlungen an Kreditinstitute für Kassenkredite","Auszahlungen für Negativzinsen","Auszahlungen Vorschuss","Auszahlungen Verwahr"],
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer (Leistungszulage)","ZinsAusz a.GWW f.Franckeschule","Zinsauszahlungen an Kreditinstitute","Zinsauszahlungen an Kreditinstitute 1 (Darl.-Nr. 6694901613 HSK)","Zinsauszahlungen an Kreditinstitute 2 (Darl.-Nr. 6644900664 HSK)","Zinsauszahlungen an Kreditinstitute 3 (Darl.-Nr. 6674900450 HSK)","Zinsauszahlungen an Kreditinstitute 4 (Darl.-Nr. 0001327 KfWB)","Zinsauszahlungen an Kreditinstitute 6 (Darl.-Nr. 0200735300 Westf.Landsch.KB)","Zinsauszahlungen an Kreditinstitute 7 (Darl.-Nr. 7820169 KfWB)","Zinsauszahlungen an Kreditinstitute 9 (Darl.-Nr. 33442380 KfWB)","Zinsauszahlungen an Kreditinstitute 14 (Darl.-Nr. 6700272484 DKB)","Zinsauszahlungen an Kreditinstitute 15 (Darl.-Nr. 6260189654 HSK)","Zinsauszahlungen an Kreditinstitute 16 (Darl.Nr.07555840-20 Commerzbank)","Zinsauszahlungen an Kreditinstitute 17 (6702554533 DKB)","ZinsAufwDarl.6705346614 DKB 18","ZinsAufwDarl.6000174027 NORDLB","Zinsauszahlungen an Kreditinstitute für Kassenkredite","Auszahlungen für Negativzinsen"],
               datasets: [{
                 label: 'Euro',
-                data: [528500,35000,25000,0,16200,50000,23000,600,10800,3600,0,15100,0,0,48700,17600,8500,44200,14900,50900,10000,1000,0,0],
+                data: [528500,35000,25000,16200,50000,23000,600,10800,3600,15100,48700,17600,8500,44200,14900,50900,10000,1000],
                 borderWidth: 1
               }]
             },
@@ -249,6 +253,27 @@
         
       
         
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_a2f53abe_29d9_43b8_920d_e094d5d4b3c1'), {
+            type: 'doughnut',
+            data: {
+              labels: [],
+              datasets: [{
+                label: 'Euro',
+                data: [],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
       
     </script>

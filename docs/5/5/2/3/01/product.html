@@ -35,23 +35,27 @@
           <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-28.800,00€</span></h3>
 
           
-            <div class="row">
-              <div class="col-6">
-                <h5 class="center">Einnahmen: 0,00€</h5>
-                <canvas id="chartjs_f6ce0135_771c_49c1_8586_5caa4ee302cb"></canvas>
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_fefb8b17_d3c7_4bd0_abb8_f0c074aa6084"></canvas>
               </div>
-              <div class="col-6">
-                <h5 class="center">Ausgaben: -28.800,00€</h5>
-                <canvas id="chartjs_be247fc5_6a29_422b_9879_eed76f265e1f"></canvas>
-              </div>
-            </div>
+            
           
       
           <h3>- Investitionen kosten <span class="total-cashflow-expenses">-50.000,00€</span></h3>
 
           
-            
-            
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 200.000,00€</h5>
+                <canvas id="chartjs_2620b0e3_1505_4649_8853_cc89ae57db15"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: -250.000,00€</h5>
+                <canvas id="chartjs_e344f89b_b2a2_4f6c_aef6_bdeae07e7532"></canvas>
+              </div>
+            </div>
           
       
     </div>
@@ -124,36 +128,15 @@
     <script>
       
         
-          var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_f6ce0135_771c_49c1_8586_5caa4ee302cb'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Zuweisungen für laufende Zwecke vom Bund","Zuweisungen für laufende Zwecke vom Land","Zuweisungen für lfd. Zwecke vom Land (Sonderprogramme Fürdermittel)"],
-              datasets: [{
-                label: 'Euro',
-                data: [0,0,0],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              },
-              
-            }
-          });
-        
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_be247fc5_6a29_422b_9879_eed76f265e1f'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_fefb8b17_d3c7_4bd0_abb8_f0c074aa6084'), {
             type: 'doughnut',
             data: {
-              labels: ["Unterhaltung der Grundstücke und baulichen Anlagen","Unterhaltung des sonstigen unbeweglichen Vermügens","Zuschüsse an übrige Bereiche","Zuschüsse an übrige Bereiche","Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten","Sonstige Finanzauszahlungen"],
+              labels: ["Unterhaltung des sonstigen unbeweglichen Vermügens","Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten","Sonstige Finanzauszahlungen"],
               datasets: [{
                 label: 'Euro',
-                data: [0,10000,0,0,800,18000],
+                data: [10000,800,18000],
                 borderWidth: 1
               }]
             },
@@ -169,6 +152,48 @@
         
       
         
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_2620b0e3_1505_4649_8853_cc89ae57db15'), {
+            type: 'doughnut',
+            data: {
+              labels: [],
+              datasets: [{
+                label: 'Euro',
+                data: [],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_e344f89b_b2a2_4f6c_aef6_bdeae07e7532'), {
+            type: 'doughnut',
+            data: {
+              labels: [],
+              datasets: [{
+                label: 'Euro',
+                data: [],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
       
     </script>

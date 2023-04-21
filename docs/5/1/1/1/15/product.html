@@ -35,22 +35,22 @@
           <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-2.593.200,00€</span></h3>
 
           
-            <div class="row">
-              <div class="col-6">
-                <h5 class="center">Einnahmen: 0,00€</h5>
-                <canvas id="chartjs_55091772_3ce7_4fcb_951a_c980494f4b4b"></canvas>
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_963620c3_dfbb_41cc_bb60_a68c0f862ff3"></canvas>
               </div>
-              <div class="col-6">
-                <h5 class="center">Ausgaben: -2.593.200,00€</h5>
-                <canvas id="chartjs_350f3093_3ce2_4c28_bed4_c02d027dcd70"></canvas>
-              </div>
-            </div>
+            
           
       
           <h3>- Investitionen kosten <span class="total-cashflow-expenses">-15.800,00€</span></h3>
 
           
             
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_b1039228_0967_4fe4_ab6b_d86ff8c6a15b"></canvas>
+              </div>
             
           
       
@@ -159,36 +159,15 @@
     <script>
       
         
-          var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_55091772_3ce7_4fcb_951a_c980494f4b4b'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Einzahlungen aus Kostenerstattungen vom Land","Einzahlungen aus Kostenerstattungen von gesetzlichen Sozialversicherungen"],
-              datasets: [{
-                label: 'Euro',
-                data: [0,0],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              },
-              
-            }
-          });
-        
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_350f3093_3ce2_4c28_bed4_c02d027dcd70'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_963620c3_dfbb_41cc_bb60_a68c0f862ff3'), {
             type: 'doughnut',
             data: {
-              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterh. Grdst.\u0026 baul. A Wartun","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermügensgegenstünde","Unterhaltung des sonstigen beweglichen Vermügens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Sonstige Personal- und Versorgungsauszahlungen"],
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterh. Grdst.\u0026 baul. A Wartun","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermügensgegenstünde","Unterhaltung des sonstigen beweglichen Vermügens","Besondere zahlungswirksame Aufwendungen für Beschäftigte"],
               datasets: [{
                 label: 'Euro',
-                data: [1510500,60800,303900,9700,135000,17000,542300,6000,5000,3000,0],
+                data: [1510500,60800,303900,9700,135000,17000,542300,6000,5000,3000],
                 borderWidth: 1
               }]
             },
@@ -204,6 +183,27 @@
         
       
         
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_b1039228_0967_4fe4_ab6b_d86ff8c6a15b'), {
+            type: 'doughnut',
+            data: {
+              labels: [],
+              datasets: [{
+                label: 'Euro',
+                data: [],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
       
     </script>

@@ -38,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 63.000,00€</h5>
-                <canvas id="chartjs_defd5189_acec_4092_a9e6_d563decf7dc2"></canvas>
+                <canvas id="chartjs_a5133798_6e2a_447a_bbd1_c87e1e0920ec"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -73.000,00€</h5>
-                <canvas id="chartjs_607cd16a_3f77_473f_8dd4_52da780811da"></canvas>
+                <canvas id="chartjs_c076ce2c_c6a8_4e75_b1af_324752497cc5"></canvas>
               </div>
             </div>
           
@@ -150,13 +150,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_defd5189_acec_4092_a9e6_d563decf7dc2'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_a5133798_6e2a_447a_bbd1_c87e1e0920ec'), {
             type: 'doughnut',
             data: {
-              labels: ["Zuweisungen für laufende Zwecke vom Land","Zuschüsse für laufende Zwecke von privaten Unternehmen (Spenden)","Zuschüsse für laufende Zwecke von übrigen Bereichen","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus dem Verkauf von Vorrüten","Einnahmen Mehrwertsteuer 7%","Einnahmen Mehrwertsteuer 0%","Einnahmen Mehrwertsteuer 5%","Einnahmen Mehrwertsteuer 19%","Einnahmen Mehrwertsteuer 16%","Erstattungen Vorsteuer"],
+              labels: ["Zuweisungen für laufende Zwecke vom Land","Zuschüsse für laufende Zwecke von privaten Unternehmen (Spenden)","Zuschüsse für laufende Zwecke von übrigen Bereichen","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus dem Verkauf von Vorrüten"],
               datasets: [{
                 label: 'Euro',
-                data: [20000,26500,10500,5500,500,0,0,0,0,0,0],
+                data: [20000,26500,10500,5500,500],
                 borderWidth: 1
               }]
             },
@@ -172,13 +172,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_607cd16a_3f77_473f_8dd4_52da780811da'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_c076ce2c_c6a8_4e75_b1af_324752497cc5'), {
             type: 'doughnut',
             data: {
-              labels: ["Auszahlungen für Mieten und Pachten","Erwerb geringwertiger Vermügensgegenstünde","Unterhaltung des sonstigen beweglichen Vermügens","Besondere Verwaltungs- und Betriebsauszahlungen","Abzugsfühige Vorsteuer  7%","Abzugsfühige Vorsteuer 0 %","Abzugsfühige Vorsteuer 5%","Abzugsfühige Vorsteuer 19%","Abzugsfühige Vorsteuer 16%","Abführung Mehrwertsteuer"],
+              labels: ["Auszahlungen für Mieten und Pachten","Unterhaltung des sonstigen beweglichen Vermügens","Besondere Verwaltungs- und Betriebsauszahlungen"],
               datasets: [{
                 label: 'Euro',
-                data: [13000,0,2000,58000,0,0,0,0,0,0],
+                data: [13000,2000,58000],
                 borderWidth: 1
               }]
             },

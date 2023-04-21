@@ -38,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 165.700,00€</h5>
-                <canvas id="chartjs_da529407_5623_46df_952e_c9d209acd5c4"></canvas>
+                <canvas id="chartjs_a655e052_cb06_4821_996f_bb25ae9f4a78"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -1.735.300,00€</h5>
-                <canvas id="chartjs_e16d8655_c43c_4eda_b8ea_f1458395bdc6"></canvas>
+                <canvas id="chartjs_1706788d_c792_4bd2_8658_ec682b4cb328"></canvas>
               </div>
             </div>
           
@@ -195,13 +195,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_da529407_5623_46df_952e_c9d209acd5c4'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_a655e052_cb06_4821_996f_bb25ae9f4a78'), {
             type: 'doughnut',
             data: {
-              labels: ["Zuweisungen für laufende Zwecke von gesetzlichen Sozialversicherungen  (Koba)","Verwaltungsgebühren","Einzahlungen aus Kostenerstattungen von gesetzlichen Sozialversicherungen","Einzahlungen aus Kostenerstattungen von sonstigen öffentlichen Sonderrechnungen","Erstattungen von Steuern","Erstattungen Vorsteuer","Süumniszuschlüge","Andere sonstige Einzahlungen aus laufender Verwaltungstütigkeit","Sonstige Finanzeinzahlungen"],
+              labels: ["Zuweisungen für laufende Zwecke von gesetzlichen Sozialversicherungen  (Koba)","Verwaltungsgebühren","Einzahlungen aus Kostenerstattungen von sonstigen öffentlichen Sonderrechnungen","Erstattungen von Steuern","Süumniszuschlüge","Andere sonstige Einzahlungen aus laufender Verwaltungstütigkeit"],
               datasets: [{
                 label: 'Euro',
-                data: [11000,600,0,22000,3900,0,125000,3200,0],
+                data: [11000,600,22000,3900,125000,3200],
                 borderWidth: 1
               }]
             },
@@ -217,13 +217,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_e16d8655_c43c_4eda_b8ea_f1458395bdc6'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_1706788d_c792_4bd2_8658_ec682b4cb328'), {
             type: 'doughnut',
             data: {
-              labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für Leasing","Auszahlungen für sonstige Dienstleistungen","Sonstige Personal- und Versorgungsauszahlungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschüftsauszahlungen","Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten","Auszahlungen für Honorare","Steuerauszahlungen aus Vorjahren","Besondere Auszahlungen Süumniszuschlüge"],
+              labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für Leasing","Auszahlungen für sonstige Dienstleistungen","Geschüftsauszahlungen","Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten","Auszahlungen für Honorare"],
               datasets: [{
                 label: 'Euro',
-                data: [217700,1027100,140800,40900,206600,5800,10000,55000,0,0,300,27600,3500,0,0],
+                data: [217700,1027100,140800,40900,206600,5800,10000,55000,300,27600,3500],
                 borderWidth: 1
               }]
             },

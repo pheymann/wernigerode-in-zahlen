@@ -42,8 +42,16 @@
           <h3>- Investitionen kosten <span class="total-cashflow-expenses">-50.000,00€</span></h3>
 
           
-            
-            
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 100.000,00€</h5>
+                <canvas id="chartjs_a6d5941d_c70d_405b_b658_059b4182bf01"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: -150.000,00€</h5>
+                <canvas id="chartjs_e04d3f0b_99e2_4500_a958_621953b5562e"></canvas>
+              </div>
+            </div>
           
       
     </div>
@@ -104,6 +112,48 @@
         
       
         
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_a6d5941d_c70d_405b_b658_059b4182bf01'), {
+            type: 'doughnut',
+            data: {
+              labels: [],
+              datasets: [{
+                label: 'Euro',
+                data: [],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_e04d3f0b_99e2_4500_a958_621953b5562e'), {
+            type: 'doughnut',
+            data: {
+              labels: [],
+              datasets: [{
+                label: 'Euro',
+                data: [],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
       
     </script>

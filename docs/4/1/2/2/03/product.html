@@ -38,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 64.500,00€</h5>
-                <canvas id="chartjs_50cd07f3_20fd_4112_ab39_91ab3702a8a3"></canvas>
+                <canvas id="chartjs_ab26f280_cec4_4e2f_86c5_63b9afcaf8a3"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -371.400,00€</h5>
-                <canvas id="chartjs_b3df271e_58e0_4879_9e7a_d2fc2975aa98"></canvas>
+                <canvas id="chartjs_58997446_62b9_4be6_8938_8e3133dbd4ec"></canvas>
               </div>
             </div>
           
@@ -190,13 +190,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_50cd07f3_20fd_4112_ab39_91ab3702a8a3'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_ab26f280_cec4_4e2f_86c5_63b9afcaf8a3'), {
             type: 'doughnut',
             data: {
-              labels: ["Verwaltungsgebühren","Einzahlungen aus dem Verkauf von Vorrüten (Stammbücher)","7 % USt Erträge aus dem Verkauf (Stammbücher)","Einzahlungen aus Kostenerstattungen vom Land","Einzahlungen aus Kostenerstattungen von sonstigen öffentlichen Sonderrechnungen"],
+              labels: ["Verwaltungsgebühren","7 % USt Erträge aus dem Verkauf (Stammbücher)"],
               datasets: [{
                 label: 'Euro',
-                data: [60000,0,4500,0,0],
+                data: [60000,4500],
                 borderWidth: 1
               }]
             },
@@ -212,13 +212,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_b3df271e_58e0_4879_9e7a_d2fc2975aa98'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_58997446_62b9_4be6_8938_8e3133dbd4ec'), {
             type: 'doughnut',
             data: {
-              labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für Mieten und Pachten","Erwerb geringwertiger Vermügensgegenstünde","Unterhaltung des sonstigen beweglichen Vermügens","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für den Erwerb von Vorrüten (Stammbücher)","Auszahlungen für sonstige Dienstleistungen","Sonstige Personal- und Versorgungsauszahlungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschüftsauszahlungen"],
+              labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für Mieten und Pachten","Erwerb geringwertiger Vermügensgegenstünde","Unterhaltung des sonstigen beweglichen Vermügens","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für den Erwerb von Vorrüten (Stammbücher)","Auszahlungen für sonstige Dienstleistungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschüftsauszahlungen"],
               datasets: [{
                 label: 'Euro',
-                data: [48900,221200,26000,8700,44400,1200,11000,200,1000,1200,4500,300,0,300,2500],
+                data: [48900,221200,26000,8700,44400,1200,11000,200,1000,1200,4500,300,300,2500],
                 borderWidth: 1
               }]
             },

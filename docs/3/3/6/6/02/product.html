@@ -35,16 +35,12 @@
           <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-47.100,00€</span></h3>
 
           
-            <div class="row">
-              <div class="col-6">
-                <h5 class="center">Einnahmen: 0,00€</h5>
-                <canvas id="chartjs_92bb5137_87b6_415b_a729_bf16809002cc"></canvas>
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_65d5c088_37e1_43de_a76f_c8409352e2a5"></canvas>
               </div>
-              <div class="col-6">
-                <h5 class="center">Ausgaben: -47.100,00€</h5>
-                <canvas id="chartjs_ad8f5df5_26ca_483d_a967_b575f9f8f611"></canvas>
-              </div>
-            </div>
+            
           
       
           <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
@@ -139,36 +135,15 @@
     <script>
       
         
-          var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_92bb5137_87b6_415b_a729_bf16809002cc'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Buügelder"],
-              datasets: [{
-                label: 'Euro',
-                data: [0],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              },
-              
-            }
-          });
-        
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_ad8f5df5_26ca_483d_a967_b575f9f8f611'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_65d5c088_37e1_43de_a76f_c8409352e2a5'), {
             type: 'doughnut',
             data: {
-              labels: ["Unterhaltung des sonstigen unbeweglichen Vermügens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermügensgegenstünde","Unterhaltung des sonstigen beweglichen Vermügens","Geschüftsauszahlungen","Auszahlungen für Planungsleistungen"],
+              labels: ["Unterhaltung des sonstigen unbeweglichen Vermügens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermügensgegenstünde","Unterhaltung des sonstigen beweglichen Vermügens","Geschüftsauszahlungen"],
               datasets: [{
                 label: 'Euro',
-                data: [25000,500,1000,500,20000,100,0],
+                data: [25000,500,1000,500,20000,100],
                 borderWidth: 1
               }]
             },

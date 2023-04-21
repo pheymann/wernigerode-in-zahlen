@@ -38,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 7.000,00€</h5>
-                <canvas id="chartjs_7c33fe95_10c4_4da7_82f2_5363f496e953"></canvas>
+                <canvas id="chartjs_67fca220_d99c_46d2_a802_cb8de209fd03"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -206.600,00€</h5>
-                <canvas id="chartjs_6d8fbdcc_3418_4b5b_83c7_9bacff3f077a"></canvas>
+                <canvas id="chartjs_f988fc73_45d5_4ff2_99a0_cef412b8af7c"></canvas>
               </div>
             </div>
           
@@ -185,13 +185,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_7c33fe95_10c4_4da7_82f2_5363f496e953'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_67fca220_d99c_46d2_a802_cb8de209fd03'), {
             type: 'doughnut',
             data: {
-              labels: ["Zuschüsse für laufende Zwecke von privaten Unternehmen (Spenden)","Zuschüsse für laufende Zwecke von übrigen Bereichen (Spenden)","Benutzungsgebühren und ähnliche Entgelte","7 % USt BenutzGeb. \u0026 ähnl. Ent","Einzahlungen aus dem Verkauf von Vorrüten","Sonstige privatrechtliche Leistungsentgelte","19% USt So.Privatrechtl. Leist","Einzahlungen aus Kostenerstattungen von gesetzlichen Sozialversicherungen","Einzahlungen aus Kostenerstattungen von übrigen Bereichen"],
+              labels: ["Benutzungsgebühren und ähnliche Entgelte","19% USt So.Privatrechtl. Leist"],
               datasets: [{
                 label: 'Euro',
-                data: [0,0,4000,0,0,0,3000,0,0],
+                data: [4000,3000],
                 borderWidth: 1
               }]
             },
@@ -207,13 +207,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_6d8fbdcc_3418_4b5b_83c7_9bacff3f077a'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_f988fc73_45d5_4ff2_99a0_cef412b8af7c'), {
             type: 'doughnut',
             data: {
-              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Unterhaltung der Grundstücke und baulichen Anlagen-Gebüudemanagement","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermügensgegenstünde","Unterhaltung des sonstigen beweglichen Vermügens","Besondere Verwaltungs- und Betriebsauszahlungen","Jubilüumsfeiern Ortsteile","Zuschüsse an übrige Bereiche","Sonstige Personal- und Versorgungsauszahlungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschüftsauszahlungen","Auszahlungen für Honorare","Steuern, Versicherungen, Schadensfülle","Sonstige Finanzauszahlungen"],
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermügensgegenstünde","Unterhaltung des sonstigen beweglichen Vermügens","Besondere Verwaltungs- und Betriebsauszahlungen","Zuschüsse an übrige Bereiche","Geschüftsauszahlungen","Auszahlungen für Honorare"],
               datasets: [{
                 label: 'Euro',
-                data: [72900,2900,14600,500,3000,0,1000,6000,5100,1000,40000,0,56000,0,0,600,3000,0,0],
+                data: [72900,2900,14600,500,3000,1000,6000,5100,1000,40000,56000,600,3000],
                 borderWidth: 1
               }]
             },

@@ -38,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 46.617.900,00€</h5>
-                <canvas id="chartjs_05f6c10a_b870_4f74_a5af_00a39387d12f"></canvas>
+                <canvas id="chartjs_dd68c170_4917_407c_be19_d014e4caf1ab"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -14.416.300,00€</h5>
-                <canvas id="chartjs_75b2f580_f32d_40b3_9818_54cf0e244fc9"></canvas>
+                <canvas id="chartjs_a9f4543c_f39f_435a_a482_7b41aeb2da59"></canvas>
               </div>
             </div>
           
@@ -50,6 +50,10 @@
           <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">1.402.600,00€</span></h3>
 
           
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_556739a7_846e_4d75_aa96_af97573cb027"></canvas>
+              </div>
             
             
           
@@ -175,7 +179,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_05f6c10a_b870_4f74_a5af_00a39387d12f'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_dd68c170_4917_407c_be19_d014e4caf1ab'), {
             type: 'doughnut',
             data: {
               labels: ["Grundsteuer A","Grundsteuer B","Gewerbesteuer","Gemeindeanteil an der Einkommensteuer","Gemeindeanteil an der Umsatzsteuer","Vergnügungssteuer","Hundesteuer","Schlüsselzuweisungen und Besondere Ergünzungszuweisungen vom Land","Sonstige allgemeine Zuweisungen vom Land","Sonstige Finanzeinzahlungen"],
@@ -197,13 +201,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_75b2f580_f32d_40b3_9818_54cf0e244fc9'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_a9f4543c_f39f_435a_a482_7b41aeb2da59'), {
             type: 'doughnut',
             data: {
-              labels: ["Gewerbesteuerumlage","Allgemeine Umlagen an Landkreise","Verzinsung von Steuererstattungen","Sonstige Finanzauszahlungen"],
+              labels: ["Gewerbesteuerumlage","Allgemeine Umlagen an Landkreise","Verzinsung von Steuererstattungen"],
               datasets: [{
                 label: 'Euro',
-                data: [1241800,13154500,20000,0],
+                data: [1241800,13154500,20000],
                 borderWidth: 1
               }]
             },
@@ -218,6 +222,27 @@
           });
         
       
+        
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_556739a7_846e_4d75_aa96_af97573cb027'), {
+            type: 'doughnut',
+            data: {
+              labels: [],
+              datasets: [{
+                label: 'Euro',
+                data: [],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
         
       

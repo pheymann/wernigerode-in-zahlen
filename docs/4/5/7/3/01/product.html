@@ -38,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 34.500,00€</h5>
-                <canvas id="chartjs_23a5e223_1a44_4210_aa65_4beb4b0d9a37"></canvas>
+                <canvas id="chartjs_9de053a3_0e72_4f0f_9c8b_50c038197ee9"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -14.400,00€</h5>
-                <canvas id="chartjs_b7a7aa52_bb97_4fa3_8089_7950bc3d9a75"></canvas>
+                <canvas id="chartjs_f8bc1d1a_5ccf_45ac_9533_4e0cc04a0599"></canvas>
               </div>
             </div>
           
@@ -145,13 +145,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_23a5e223_1a44_4210_aa65_4beb4b0d9a37'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_9de053a3_0e72_4f0f_9c8b_50c038197ee9'), {
             type: 'doughnut',
             data: {
-              labels: ["Benutzungsgebühren und ähnliche Entgelte","19% Ust Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus Mieten und Pachten","19 % USt Erträge Miete/ Pacht","Sonstige privatrechtliche Leistungsentgelte"],
+              labels: ["Benutzungsgebühren und ähnliche Entgelte","19% Ust Benutzungsgebühren und ähnliche Entgelte","19 % USt Erträge Miete/ Pacht"],
               datasets: [{
                 label: 'Euro',
-                data: [18000,6500,0,10000,0],
+                data: [18000,6500,10000],
                 borderWidth: 1
               }]
             },
@@ -167,13 +167,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_b7a7aa52_bb97_4fa3_8089_7950bc3d9a75'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_f8bc1d1a_5ccf_45ac_9533_4e0cc04a0599'), {
             type: 'doughnut',
             data: {
-              labels: ["Unterhaltung der Grundstücke und baulichen Anlagen","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermügensgegenstünde","Unterhaltung des sonstigen beweglichen Vermügens","Erstatt. für die Auszahl. von Dritten aus lfd. Verwaltungstüt. an priv. Untern.","Erstatt. für die Auszahl. von Dritten aus lfd. Verwaltungstüt. an übrige Ber."],
+              labels: ["Unterhaltung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermügensgegenstünde","Unterhaltung des sonstigen beweglichen Vermügens","Erstatt. für die Auszahl. von Dritten aus lfd. Verwaltungstüt. an priv. Untern."],
               datasets: [{
                 label: 'Euro',
-                data: [7200,0,200,200,6800,0],
+                data: [7200,200,200,6800],
                 borderWidth: 1
               }]
             },

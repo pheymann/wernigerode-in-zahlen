@@ -38,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 2.782.000,00€</h5>
-                <canvas id="chartjs_47cec800_6810_46d8_b71a_218271865ca0"></canvas>
+                <canvas id="chartjs_30cb0e72_7617_4763_b737_7451006720eb"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -2.789.500,00€</h5>
-                <canvas id="chartjs_ed95a19b_88ac_456e_a9d8_185a07e926ff"></canvas>
+                <canvas id="chartjs_282f5dc7_2882_4cf2_b250_fc8e6cdcdac6"></canvas>
               </div>
             </div>
           
@@ -135,13 +135,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_47cec800_6810_46d8_b71a_218271865ca0'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_30cb0e72_7617_4763_b737_7451006720eb'), {
             type: 'doughnut',
             data: {
-              labels: ["Sonstige allgemeine Zuweisungen vom Bund","Zuschüsse für lfd. Zwecke von verbund. Untern., Beteiligungen und Sondervermügen","Zweckgebundene Abgaben (Kurbeitrag)","Einnahmen Mehrwertsteuer 7%","Einnahmen Mehrwertsteuer 0%","Einnahmen Mehrwertsteuer 5%","Einnahmen Mehrwertsteuer 19%","Einnahmen Mehrwertsteuer 16%","Erstattungen Vorsteuer"],
+              labels: ["Zweckgebundene Abgaben (Kurbeitrag)"],
               datasets: [{
                 label: 'Euro',
-                data: [0,0,2782000,0,0,0,0,0,0],
+                data: [2782000],
                 borderWidth: 1
               }]
             },
@@ -157,13 +157,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_ed95a19b_88ac_456e_a9d8_185a07e926ff'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_282f5dc7_2882_4cf2_b250_fc8e6cdcdac6'), {
             type: 'doughnut',
             data: {
-              labels: ["Zuschüsse an verbundene Unternehmen, Sondervermügen und Beteiligungen (WTG)","Zuschüsse an verbundene Unternehmen, Sondervermügen und Beteiligungen Kurbeitrag","Zuschüsse an sonstige üffentliche Sonderrechnungen (HSB)","Zusch. üff. SondRechn. HSB","Zusch. üff.SondRechn. HSB Kurb","Zuschüsse an sonstige üffentliche Sonderrechnung Brockenhaus","Abzugsfühige Vorsteuer  7%","Abzugsfühige Vorsteuer 0 %","Abzugsfühige Vorsteuer 5%","Abzugsfühige Vorsteuer 19%","Abzugsfühige Vorsteuer 16%","Abführung Mehrwertsteuer","Erstatt. f.d. Ausz. v. Dritte a. lfd VerwTüt. an verb. Unternehmen (Kurbeitrag)","Einbehalt für Entgelt WTG"],
+              labels: ["Zuschüsse an verbundene Unternehmen, Sondervermügen und Beteiligungen Kurbeitrag","Zusch. üff. SondRechn. HSB","Zuschüsse an sonstige üffentliche Sonderrechnung Brockenhaus","Einbehalt für Entgelt WTG"],
               datasets: [{
                 label: 'Euro',
-                data: [0,2440000,0,199500,0,30000,0,0,0,0,0,0,0,120000],
+                data: [2440000,199500,30000,120000],
                 borderWidth: 1
               }]
             },

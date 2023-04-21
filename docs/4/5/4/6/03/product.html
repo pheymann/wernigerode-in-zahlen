@@ -38,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 44.700,00€</h5>
-                <canvas id="chartjs_47894b61_370b_40a9_8046_5e9e6b448ac5"></canvas>
+                <canvas id="chartjs_9a271563_9d7f_46c6_a02c_b85ca59c9a12"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -29.100,00€</h5>
-                <canvas id="chartjs_4cea8d97_3356_4adc_a8f9_4dc5799aedd3"></canvas>
+                <canvas id="chartjs_50b23fc5_76eb_46bf_8356_4ba17eaa456d"></canvas>
               </div>
             </div>
           
@@ -140,13 +140,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_47894b61_370b_40a9_8046_5e9e6b448ac5'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_9a271563_9d7f_46c6_a02c_b85ca59c9a12'), {
             type: 'doughnut',
             data: {
-              labels: ["Einzahlungen aus Mieten und Pachten","Sonstige privatrechtliche Leistungsentgelte","Einnahmen Mehrwertsteuer 7%","Einnahmen Mehrwertsteuer 0%","Einnahmen Mehrwertsteuer 5%","Einnahmen Mehrwertsteuer 19%","Einnahmen Mehrwertsteuer 16%","Erstattungen Vorsteuer"],
+              labels: ["Einzahlungen aus Mieten und Pachten","Sonstige privatrechtliche Leistungsentgelte"],
               datasets: [{
                 label: 'Euro',
-                data: [30000,14700,0,0,0,0,0,0],
+                data: [30000,14700],
                 borderWidth: 1
               }]
             },
@@ -162,13 +162,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_4cea8d97_3356_4adc_a8f9_4dc5799aedd3'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_50b23fc5_76eb_46bf_8356_4ba17eaa456d'), {
             type: 'doughnut',
             data: {
-              labels: ["Unterhaltung des sonstigen unbeweglichen Vermügens","Bewirtschaftung der Grundstücke und baulichen Anlagen","Unterhaltung des sonstigen beweglichen Vermügens","Auszahlungen für sonstige Dienstleistungen","Geschüftsauszahlungen","Steuern, Versicherungen, Schadensfülle","Abzugsfühige Vorsteuer  7%","Abzugsfühige Vorsteuer 0%","Abzugsfühige Vorsteuer 5%","Abzugsfühige Vorsteuer 19%","Abzugsfühige Vorsteuer 16%","Abführung Mehrwertsteuer","Kapitalertragssteuer/Kürperschaftssteuer/Gewerbesteuer"],
+              labels: ["Unterhaltung des sonstigen unbeweglichen Vermügens","Unterhaltung des sonstigen beweglichen Vermügens","Auszahlungen für sonstige Dienstleistungen","Geschüftsauszahlungen"],
               datasets: [{
                 label: 'Euro',
-                data: [15000,0,3000,9600,1500,0,0,0,0,0,0,0,0],
+                data: [15000,3000,9600,1500],
                 borderWidth: 1
               }]
             },

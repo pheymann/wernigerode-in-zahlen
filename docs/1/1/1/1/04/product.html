@@ -35,16 +35,12 @@
           <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-40.000,00€</span></h3>
 
           
-            <div class="row">
-              <div class="col-6">
-                <h5 class="center">Einnahmen: 0,00€</h5>
-                <canvas id="chartjs_ad7c521a_012d_4187_8a41_b422f450c709"></canvas>
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_ea5ec450_e416_4792_97ba_f181d4db6cfa"></canvas>
               </div>
-              <div class="col-6">
-                <h5 class="center">Ausgaben: -40.000,00€</h5>
-                <canvas id="chartjs_fadebdca_6564_4685_889a_aa0d96729d05"></canvas>
-              </div>
-            </div>
+            
           
       
           <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
@@ -139,36 +135,15 @@
     <script>
       
         
-          var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_ad7c521a_012d_4187_8a41_b422f450c709'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Benutzungsgebühren und ähnliche Entgelte"],
-              datasets: [{
-                label: 'Euro',
-                data: [0],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              },
-              
-            }
-          });
-        
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_fadebdca_6564_4685_889a_aa0d96729d05'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_ea5ec450_e416_4792_97ba_f181d4db6cfa'), {
             type: 'doughnut',
             data: {
-              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Zuschüsse an übrige Bereiche","Sonstige Personal- und Versorgungsauszahlungen"],
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Zuschüsse an übrige Bereiche"],
               datasets: [{
                 label: 'Euro',
-                data: [27200,1200,5500,300,2200,3600,0],
+                data: [27200,1200,5500,300,2200,3600],
                 borderWidth: 1
               }]
             },

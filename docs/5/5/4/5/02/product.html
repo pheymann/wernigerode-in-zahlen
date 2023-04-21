@@ -35,22 +35,22 @@
           <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-930.000,00€</span></h3>
 
           
-            <div class="row">
-              <div class="col-6">
-                <h5 class="center">Einnahmen: 0,00€</h5>
-                <canvas id="chartjs_6e483250_df65_49d8_843d_14c7cc2ccb7a"></canvas>
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_7a3c6c0a_1311_4637_b905_3f4c24a37c2a"></canvas>
               </div>
-              <div class="col-6">
-                <h5 class="center">Ausgaben: -930.000,00€</h5>
-                <canvas id="chartjs_931596e6_41cc_4347_8bcd_d02adc73a727"></canvas>
-              </div>
-            </div>
+            
           
       
           <h3>- Investitionen kosten <span class="total-cashflow-expenses">-25.000,00€</span></h3>
 
           
             
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_f23c1129_6093_4a13_9206_d27f76d1cb65"></canvas>
+              </div>
             
           
       
@@ -119,30 +119,9 @@
     <script>
       
         
-          var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_6e483250_df65_49d8_843d_14c7cc2ccb7a'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Sonstige privatrechtliche Leistungsentgelte","Einzahl. aus Kostenerstattungen von verbund. Untern., Sondervermü. und Beteilig."],
-              datasets: [{
-                label: 'Euro',
-                data: [0,0],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              },
-              
-            }
-          });
-        
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_931596e6_41cc_4347_8bcd_d02adc73a727'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_7a3c6c0a_1311_4637_b905_3f4c24a37c2a'), {
             type: 'doughnut',
             data: {
               labels: ["Bewirtschaftung der Grundstücke und baulichen Anlagen","Erstatt. f.d. Ausz. v. Dritten a. lfd VerwTüt. an verb. Unt., Sondverm.\u0026 Beteil."],
@@ -164,6 +143,27 @@
         
       
         
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_f23c1129_6093_4a13_9206_d27f76d1cb65'), {
+            type: 'doughnut',
+            data: {
+              labels: [],
+              datasets: [{
+                label: 'Euro',
+                data: [],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
       
     </script>

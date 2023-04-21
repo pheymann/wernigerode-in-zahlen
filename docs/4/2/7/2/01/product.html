@@ -38,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 32.200,00€</h5>
-                <canvas id="chartjs_f3485fc2_3dda_4dca_89c5_89bd92d3530a"></canvas>
+                <canvas id="chartjs_612186ed_d3f5_47bf_b951_5a69c4271898"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -507.700,00€</h5>
-                <canvas id="chartjs_5b466bd2_66f2_4f45_ade6_9e942ea09be6"></canvas>
+                <canvas id="chartjs_3031d22e_d7aa_439e_a25a_611df95bd8c3"></canvas>
               </div>
             </div>
           
@@ -220,13 +220,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_f3485fc2_3dda_4dca_89c5_89bd92d3530a'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_612186ed_d3f5_47bf_b951_5a69c4271898'), {
             type: 'doughnut',
             data: {
-              labels: ["Zuweisungen für laufende Zwecke vom Land","Zuschüsse für laufende Zwecke von übrigen Bereichen","Verwaltungsgebühren","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus der Verüuüerung von beweglichen Sachen","19% Einz. aus Verkauf Waren","Sonstige privatrechtliche Leistungsentgelte","Einzahlungen aus Kostenerstattungen vom Bund","Einzahlungen aus Kostenerstattungen von privaten Unternehmen"],
+              labels: ["Zuweisungen für laufende Zwecke vom Land","Verwaltungsgebühren","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus der Verüuüerung von beweglichen Sachen","19% Einz. aus Verkauf Waren","Einzahlungen aus Kostenerstattungen vom Bund"],
               datasets: [{
                 label: 'Euro',
-                data: [7000,0,4000,10000,7000,600,0,3600,0],
+                data: [7000,4000,10000,7000,600,3600],
                 borderWidth: 1
               }]
             },
@@ -242,13 +242,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_5b466bd2_66f2_4f45_ade6_9e942ea09be6'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_3031d22e_d7aa_439e_a25a_611df95bd8c3'), {
             type: 'doughnut',
             data: {
-              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Dienstauszahlungen und dgl. an sonstige Beschäftigte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschüft.","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen-Gebüudemanagement","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermügensgegenstünde","Unterhaltung des sonstigen beweglichen Vermügens","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für den Erwerb von Medien Bibliothek","Auszahlungen für den Erwerb von Vorrüten","Auszahlungen für sonstige Dienstleistungen","Zuweisungen an das Land","Sonstige Personal- und Versorgungsauszahlungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschüftsauszahlungen","Auszahlungen für Honorare","Auszahlungen für Beitragsservice (GEZ)","Steuern, Versicherungen, Schadensfülle"],
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Dienstauszahlungen und dgl. an sonstige Beschäftigte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschüft.","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für Mieten und Pachten","Erwerb geringwertiger Vermügensgegenstünde","Unterhaltung des sonstigen beweglichen Vermügens","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für den Erwerb von Medien Bibliothek","Auszahlungen für den Erwerb von Vorrüten","Auszahlungen für sonstige Dienstleistungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschüftsauszahlungen","Auszahlungen für Honorare"],
               datasets: [{
                 label: 'Euro',
-                data: [328000,9700,13100,65800,1900,1800,0,3000,0,500,200,9000,40000,800,19000,0,0,400,6000,8500,0,0],
+                data: [328000,9700,13100,65800,1900,1800,3000,500,200,9000,40000,800,19000,400,6000,8500],
                 borderWidth: 1
               }]
             },

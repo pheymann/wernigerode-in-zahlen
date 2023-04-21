@@ -35,16 +35,12 @@
           <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-89.300,00€</span></h3>
 
           
-            <div class="row">
-              <div class="col-6">
-                <h5 class="center">Einnahmen: 0,00€</h5>
-                <canvas id="chartjs_16e97e39_9a6c_4a98_abd1_8dd15744848c"></canvas>
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_1f602197_68b3_4163_8312_65589b17e9a1"></canvas>
               </div>
-              <div class="col-6">
-                <h5 class="center">Ausgaben: -89.300,00€</h5>
-                <canvas id="chartjs_49220b24_39f2_4505_ba14_dd11fae3c999"></canvas>
-              </div>
-            </div>
+            
           
       
           <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
@@ -139,30 +135,9 @@
     <script>
       
         
-          var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_16e97e39_9a6c_4a98_abd1_8dd15744848c'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Einzahlungen aus Kostenerstattungen von sonstigen öffentlichen Sonderrechnungen"],
-              datasets: [{
-                label: 'Euro',
-                data: [0],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              },
-              
-            }
-          });
-        
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_49220b24_39f2_4505_ba14_dd11fae3c999'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_1f602197_68b3_4163_8312_65589b17e9a1'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Beamte","Beiträge zu Versorgungskassen für Beamte","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Sonstige Personal- und Versorgungsauszahlungen","Geschüftsauszahlungen"],

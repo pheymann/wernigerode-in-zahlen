@@ -38,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 750.000,00€</h5>
-                <canvas id="chartjs_b21e6930_7880_4852_8edf_024f000fdc7d"></canvas>
+                <canvas id="chartjs_eeba7cc8_ffd2_4c08_b249_b47dcb14695b"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -2.700.000,00€</h5>
-                <canvas id="chartjs_c22f684d_6ca0_4984_b30d_4062c99d4aad"></canvas>
+                <canvas id="chartjs_9c7ed9a8_3f08_40ef_841c_2f42fcd641e2"></canvas>
               </div>
             </div>
           
@@ -125,13 +125,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_b21e6930_7880_4852_8edf_024f000fdc7d'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_eeba7cc8_ffd2_4c08_b249_b47dcb14695b'), {
             type: 'doughnut',
             data: {
-              labels: ["Zuschüsse für laufende Zwecke von übrigen Bereichen","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus Kostenerstattungen von Gemeinden und Gemeindeverbünden"],
+              labels: ["Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus Kostenerstattungen von Gemeinden und Gemeindeverbünden"],
               datasets: [{
                 label: 'Euro',
-                data: [0,500000,250000],
+                data: [500000,250000],
                 borderWidth: 1
               }]
             },
@@ -147,7 +147,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_c22f684d_6ca0_4984_b30d_4062c99d4aad'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_9c7ed9a8_3f08_40ef_841c_2f42fcd641e2'), {
             type: 'doughnut',
             data: {
               labels: ["Zuschüsse an übrige Bereiche (freie Trüger)"],

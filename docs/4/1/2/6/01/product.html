@@ -38,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 48.900,00€</h5>
-                <canvas id="chartjs_090a8287_f82d_4363_95a2_a8bf052aa927"></canvas>
+                <canvas id="chartjs_56e1e805_6172_4f08_b279_736b0cf5a21e"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -1.710.700,00€</h5>
-                <canvas id="chartjs_218fabb6_e520_4118_a045_7f8db39c5238"></canvas>
+                <canvas id="chartjs_ec9693fa_8b07_4d12_bca8_4ed76e2e3d71"></canvas>
               </div>
             </div>
           
@@ -50,8 +50,16 @@
           <h3>- Investitionen kosten <span class="total-cashflow-expenses">-1.095.400,00€</span></h3>
 
           
-            
-            
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 445.000,00€</h5>
+                <canvas id="chartjs_fe2d02c9_86ab_469e_9061_dffc45c34eab"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: -1.540.400,00€</h5>
+                <canvas id="chartjs_a3b98442_2e6d_4e64_a686_d4b855c0bea1"></canvas>
+              </div>
+            </div>
           
       
     </div>
@@ -240,13 +248,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_090a8287_f82d_4363_95a2_a8bf052aa927'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_56e1e805_6172_4f08_b279_736b0cf5a21e'), {
             type: 'doughnut',
             data: {
-              labels: ["Zuweisungen für laufende Zwecke vom Land","Zuweisungen für laufende Zwecke von Gemeinden und Gemeindeverbünden","Zuschüsse für laufende Zwecke von privaten Unternehmen (Spenden)","Zuschüsse für laufende Zwecke von übrigen Bereichen (Spenden)","Verwaltungsgebühren","Benutzungsgebühren und ähnliche Entgelte","Sonstige privatrechtliche Leistungsentgelte","Einzahlungen aus Kostenerstattungen vom Land","Einzahl. aus Kostenerstattungen von verbund. Untern., Sondervermü. und Beteilig.","Einzahlungen aus Kostenerstattungen von übrigen Bereichen"],
+              labels: ["Zuweisungen für laufende Zwecke vom Land","Zuweisungen für laufende Zwecke von Gemeinden und Gemeindeverbünden","Benutzungsgebühren und ähnliche Entgelte","Einzahl. aus Kostenerstattungen von verbund. Untern., Sondervermü. und Beteilig."],
               datasets: [{
                 label: 'Euro',
-                data: [19400,1500,0,0,0,21000,0,0,7000,0],
+                data: [19400,1500,21000,7000],
                 borderWidth: 1
               }]
             },
@@ -262,13 +270,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_218fabb6_e520_4118_a045_7f8db39c5238'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_ec9693fa_8b07_4d12_bca8_4ed76e2e3d71'), {
             type: 'doughnut',
             data: {
-              labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen-Gebüudemanagement","Unterhaltung des sonstigen unbeweglichen Vermügens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Erwerb geringwertiger Vermügensgegenstünde","Unterhaltung des sonstigen beweglichen Vermügens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für sonstige Dienstleistungen","Zuweisungen an Gemeinden und Gemeindeverbünde","Zuschüsse an übrige Bereiche","Sonstige Personal- und Versorgungsauszahlungen","Auszahlungen für ehrenamtliche und sonstige Tütigkeit","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschüftsauszahlungen","Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten","Auszahlungen für Beitragsservice (GEZ)","Steuern, Versicherungen, Schadensfülle","Erstatt. f.d. Ausz. v. Dritten aus lfd. Verwaltungstütigkeit an Gemeinde\u0026 GV","Besondere Auszahlungen Süumniszuschlüge","Sonstige Finanzauszahlungen"],
+              labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung des sonstigen unbeweglichen Vermügens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Erwerb geringwertiger Vermügensgegenstünde","Unterhaltung des sonstigen beweglichen Vermügens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für sonstige Dienstleistungen","Zuweisungen an Gemeinden und Gemeindeverbünde","Auszahlungen für ehrenamtliche und sonstige Tütigkeit","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschüftsauszahlungen","Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten","Steuern, Versicherungen, Schadensfülle","Erstatt. f.d. Ausz. v. Dritten aus lfd. Verwaltungstütigkeit an Gemeinde\u0026 GV"],
               datasets: [{
                 label: 'Euro',
-                data: [249000,590700,239900,23700,118500,3300,0,38000,2400,200,70000,15600,25000,137000,15000,1200,1000,0,0,110000,4000,8500,15000,0,4700,38000,0,0],
+                data: [249000,590700,239900,23700,118500,3300,38000,2400,200,70000,15600,25000,137000,15000,1200,1000,110000,4000,8500,15000,4700,38000],
                 borderWidth: 1
               }]
             },
@@ -284,6 +292,48 @@
         
       
         
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_fe2d02c9_86ab_469e_9061_dffc45c34eab'), {
+            type: 'doughnut',
+            data: {
+              labels: [],
+              datasets: [{
+                label: 'Euro',
+                data: [],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_a3b98442_2e6d_4e64_a686_d4b855c0bea1'), {
+            type: 'doughnut',
+            data: {
+              labels: [],
+              datasets: [{
+                label: 'Euro',
+                data: [],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
       
     </script>

@@ -38,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 36.000,00€</h5>
-                <canvas id="chartjs_644fc583_199e_4194_a65d_67c874183c2e"></canvas>
+                <canvas id="chartjs_5989fc75_c712_40f2_a616_02911a4988bc"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -2.100,00€</h5>
-                <canvas id="chartjs_8412e985_0797_4512_b854_de685da9378c"></canvas>
+                <canvas id="chartjs_6f2a27b3_8907_4560_87d4_275ec0f94f81"></canvas>
               </div>
             </div>
           
@@ -125,13 +125,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_644fc583_199e_4194_a65d_67c874183c2e'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_5989fc75_c712_40f2_a616_02911a4988bc'), {
             type: 'doughnut',
             data: {
-              labels: ["Einzahlungen aus Kostenerstattungen von Zweckverbünden","Einnahmen Mehrwertsteuer 7%","Einnahmen Mehrwertsteuer 0%","Einnahmen Mehrwertsteuer 5%","Einnahmen Mehrwertsteuer 19%","Einnahmen Mehrwertsteuer 16%","Erstattungen Vorsteuer"],
+              labels: ["Einzahlungen aus Kostenerstattungen von Zweckverbünden"],
               datasets: [{
                 label: 'Euro',
-                data: [36000,0,0,0,0,0,0],
+                data: [36000],
                 borderWidth: 1
               }]
             },
@@ -147,13 +147,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_8412e985_0797_4512_b854_de685da9378c'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_6f2a27b3_8907_4560_87d4_275ec0f94f81'), {
             type: 'doughnut',
             data: {
-              labels: ["Unterhaltung des sonstigen unbeweglichen Vermügens","Bewirtschaftung der Grundstücke und baulichen Anlagen","Abzugsfühige Vorsteuer  7%","Abzugsfühige Vorsteuer 0 %","Abzugsfühige Vorsteuer 5%","Abzugsfühige Vorsteuer 19%","Abzugsfühige Vorsteuer 16%","Abführung Mehrwertsteuer"],
+              labels: ["Unterhaltung des sonstigen unbeweglichen Vermügens","Bewirtschaftung der Grundstücke und baulichen Anlagen"],
               datasets: [{
                 label: 'Euro',
-                data: [400,1700,0,0,0,0,0,0],
+                data: [400,1700],
                 borderWidth: 1
               }]
             },

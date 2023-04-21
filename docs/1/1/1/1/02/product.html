@@ -35,16 +35,12 @@
           <h3>- Die Verwaltung erwirtschaftet <span class="total-cashflow-income">237.400,00€</span></h3>
 
           
-            <div class="row">
-              <div class="col-6">
-                <h5 class="center">Einnahmen: 237.400,00€</h5>
-                <canvas id="chartjs_a6e39a9d_5892_466e_a254_47ef8c36feec"></canvas>
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_2b6dab38_2f9c_410f_96f1_513cb0978dc8"></canvas>
               </div>
-              <div class="col-6">
-                <h5 class="center">Ausgaben: 0,00€</h5>
-                <canvas id="chartjs_5550a35b_8640_4c74_8631_9fab3c7dddd1"></canvas>
-              </div>
-            </div>
+            
+            
           
       
           <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
@@ -120,13 +116,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_a6e39a9d_5892_466e_a254_47ef8c36feec'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_2b6dab38_2f9c_410f_96f1_513cb0978dc8'), {
             type: 'doughnut',
             data: {
-              labels: ["Einzahlungen von Gewinnanteilen aus verbundenen Unternehmen und Beteiligungen","Einz GewAnt a.vU\u0026 Bet. GWW","Einz GewAnt a.vU\u0026 Bet. KOWISA"],
+              labels: ["Einz GewAnt a.vU\u0026 Bet. GWW","Einz GewAnt a.vU\u0026 Bet. KOWISA"],
               datasets: [{
                 label: 'Euro',
-                data: [0,210000,27400],
+                data: [210000,27400],
                 borderWidth: 1
               }]
             },
@@ -140,27 +136,6 @@
             }
           });
         
-        
-          var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_5550a35b_8640_4c74_8631_9fab3c7dddd1'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Zuschüsse an verbundene Unternehmen, Sondervermügen und Beteiligungen","Zuschüsse an übrige Bereiche (Kulturstiftung)","Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten"],
-              datasets: [{
-                label: 'Euro',
-                data: [0,0,0],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              },
-              
-            }
-          });
         
       
         

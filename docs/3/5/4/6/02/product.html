@@ -38,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 250.000,00€</h5>
-                <canvas id="chartjs_b7a42e7b_7fee_4b1c_9e9a_c4e2906c181e"></canvas>
+                <canvas id="chartjs_8effe64d_7c21_41e9_a95c_28dccc33f07b"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -137.300,00€</h5>
-                <canvas id="chartjs_56520f55_75af_413b_836a_ab5519413bd8"></canvas>
+                <canvas id="chartjs_70bde5e8_fa52_4cff_b46d_6745d65603c1"></canvas>
               </div>
             </div>
           
@@ -180,13 +180,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_b7a42e7b_7fee_4b1c_9e9a_c4e2906c181e'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_8effe64d_7c21_41e9_a95c_28dccc33f07b'), {
             type: 'doughnut',
             data: {
-              labels: ["Benutzungsgebühren und ähnliche Entgelte","Sonstige privatrechtliche Leistungsentgelte","Einnahmen Mehrwertsteuer 7%","Einnahmen Mehrwertsteuer 0%","Einnahmen Mehrwertsteuer 5%","Einnahmen Mehrwertsteuer 19%","Einnahmen Mehrwertsteuer 16%","Erstattungen Vorsteuer"],
+              labels: ["Benutzungsgebühren und ähnliche Entgelte"],
               datasets: [{
                 label: 'Euro',
-                data: [250000,0,0,0,0,0,0,0],
+                data: [250000],
                 borderWidth: 1
               }]
             },
@@ -202,13 +202,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_56520f55_75af_413b_836a_ab5519413bd8'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_70bde5e8_fa52_4cff_b46d_6745d65603c1'), {
             type: 'doughnut',
             data: {
-              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Unterhaltung der Grundstücke und baulichen Anlagen-Gebüudemanagement","Unterhaltung des sonstigen unbeweglichen Vermügens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermügensgegenstünde","Unterhaltung des sonstigen beweglichen Vermügens","Auszahlungen für sonstige Dienstleistungen","Sonstige Personal- und Versorgungsauszahlungen","Geschüftsauszahlungen","Steuern, Versicherungen, Schadensfülle","Abzugsfühige Vorsteuer  7%","Abzugsfühige Vorsteuer 0 %","Abzugsfühige Vorsteuer 5%","Abzugsfühige Vorsteuer 19%","Abzugsfühige Vorsteuer 16%","Abführung Mehrwertsteuer","Erstatt. f.d. Ausz. v. Dritten a. lfd VerwTüt. an verb. Unt., Sondverm.\u0026 Beteil.","Besondere Auszahlungen Süumniszuschlüge","Sonstige Finanzauszahlungen"],
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Unterhaltung der Grundstücke und baulichen Anlagen-Gebüudemanagement","Unterhaltung des sonstigen unbeweglichen Vermügens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermügensgegenstünde","Unterhaltung des sonstigen beweglichen Vermügens","Auszahlungen für sonstige Dienstleistungen","Geschüftsauszahlungen"],
               datasets: [{
                 label: 'Euro',
-                data: [31200,1400,6400,400,2200,11000,1000,2500,69200,1000,2500,7000,0,1500,0,0,0,0,0,0,0,0,0,0],
+                data: [31200,1400,6400,400,2200,11000,1000,2500,69200,1000,2500,7000,1500],
                 borderWidth: 1
               }]
             },

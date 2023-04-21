@@ -38,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 150.000,00€</h5>
-                <canvas id="chartjs_a11b0143_7c7f_4dbf_9b1b_94bbb44c5d99"></canvas>
+                <canvas id="chartjs_4f591c27_1a45_47e3_afe3_ea2e3d1ebb20"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -135.000,00€</h5>
-                <canvas id="chartjs_a318e37c_07f1_40c9_989c_eddc5d368b65"></canvas>
+                <canvas id="chartjs_cc8d9515_e29b_4299_966a_a4f9d7ab2315"></canvas>
               </div>
             </div>
           
@@ -120,13 +120,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_a11b0143_7c7f_4dbf_9b1b_94bbb44c5d99'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_4f591c27_1a45_47e3_afe3_ea2e3d1ebb20'), {
             type: 'doughnut',
             data: {
-              labels: ["Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus Kostenerstattungen von Gemeinden und Gemeindeverbünden"],
+              labels: ["Einzahlungen aus Kostenerstattungen von Gemeinden und Gemeindeverbünden"],
               datasets: [{
                 label: 'Euro',
-                data: [0,150000],
+                data: [150000],
                 borderWidth: 1
               }]
             },
@@ -142,7 +142,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_a318e37c_07f1_40c9_989c_eddc5d368b65'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_cc8d9515_e29b_4299_966a_a4f9d7ab2315'), {
             type: 'doughnut',
             data: {
               labels: ["Erstatt. f.d. Ausz. v. Dritten aus lfd. Verwaltungstütigkeit an Gemeinde\u0026 GV"],

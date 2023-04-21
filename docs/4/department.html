@@ -34,11 +34,11 @@
         <div class="row">
           <div class="col-6">
             <h5 class="center">Einnahmen: 14.541.700,00€</h5>
-            <canvas id="chartjs-f2c02276-8f0f-4182-a303-e901abed86f3"></canvas>
+            <canvas id="chartjs-f7e37a93-1c94-4b45-a643-dbbc80cd3e0d"></canvas>
           </div>
           <div class="col-6">
             <h5 class="center">Ausgaben: -33.966.700,00€</h5>
-            <canvas id="chartjs-be87d275-4949-4688-be07-218e68ef1bb8"></canvas>
+            <canvas id="chartjs-fce8e577-6f19-4849-be1e-0de1fed595ac"></canvas>
           </div>
         </div>
       
@@ -282,15 +282,15 @@
     <script src="/js/chart.js"></script>
     <script>
       
-      var incomeProductLinks = ["/4/5/4/6/01/product.html","/4/3/6/5/05/product.html","/4/3/6/5/03/product.html","/4/5/7/3/01/product.html","/4/5/4/6/03/product.html"];
-      var incomeCanvas = document.getElementById('chartjs-f2c02276-8f0f-4182-a303-e901abed86f3');
+      var incomeProductLinks = ["/4/5/4/6/01/product.html","/4/5/7/3/01/product.html","/4/5/4/6/03/product.html","/4/3/6/5/05/product.html","/4/3/6/5/03/product.html"];
+      var incomeCanvas = document.getElementById('chartjs-f7e37a93-1c94-4b45-a643-dbbc80cd3e0d');
       var incomeChart = new Chart(incomeCanvas, {
         type: 'doughnut',
         data: {
-          labels: ["Parkplätze/Parkflächen","Verwaltung der Förd. von Kindern in Tageseinrichtungen auswärtiger Gemeinden","Zentralküche","Allgemeine Einrichtungen und Märkte","Pendlerparkplätze"],
+          labels: ["Parkplätze/Parkflächen","Allgemeine Einrichtungen und Märkte","Pendlerparkplätze","Verwaltung der Förd. von Kindern in Tageseinrichtungen auswärtiger Gemeinden","Zentralküche"],
           datasets: [{
             label: 'Euro',
-            data: [632900,15000,46500,20100,15600],
+            data: [632900,20100,15600,15000,46500],
             borderWidth: 1
           }]
         },
@@ -309,15 +309,15 @@
       
 
       
-      var expenesesProductLinks = ["/4/1/2/2/01/product.html","/4/3/6/5/01/product.html","/4/4/2/4/02/product.html","/4/5/4/7/01/product.html","/4/3/6/6/01/product.html","/4/1/2/2/03/product.html","/4/1/2/6/01/product.html","/4/3/1/5/60/product.html","/4/2/8/1/01/product.html","/4/3/4/6/01/product.html","/4/3/6/5/02/product.html","/4/1/2/2/02/product.html","/4/2/5/2/01/product.html","/4/2/5/2/02/product.html","/4/2/7/2/01/product.html","/4/4/2/4/01/product.html","/4/3/3/1/01/product.html","/4/2/1/1/01/product.html","/4/2/4/3/01/product.html","/4/3/1/5/10/product.html","/4/3/1/5/40/product.html","/4/2/6/2/02/product.html","/4/4/2/1/01/product.html"];
-      var expensesCanvas = document.getElementById('chartjs-be87d275-4949-4688-be07-218e68ef1bb8');
+      var expenesesProductLinks = ["/4/3/1/5/60/product.html","/4/3/6/5/01/product.html","/4/4/2/4/02/product.html","/4/2/1/1/01/product.html","/4/3/3/1/01/product.html","/4/3/4/6/01/product.html","/4/4/2/1/01/product.html","/4/5/4/7/01/product.html","/4/3/6/5/02/product.html","/4/1/2/2/02/product.html","/4/1/2/2/03/product.html","/4/2/5/2/01/product.html","/4/3/1/5/40/product.html","/4/1/2/2/01/product.html","/4/1/2/6/01/product.html","/4/2/5/2/02/product.html","/4/2/6/2/02/product.html","/4/3/1/5/10/product.html","/4/2/4/3/01/product.html","/4/2/7/2/01/product.html","/4/2/8/1/01/product.html","/4/3/6/6/01/product.html","/4/4/2/4/01/product.html"];
+      var expensesCanvas = document.getElementById('chartjs-fce8e577-6f19-4849-be1e-0de1fed595ac');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {
-          labels: ["Ordnungsangelegenheiten","Verwaltung d. Förderung v. Kindern in Tageseinrichtungen für Kinder","Bäder","Buswartehallen","Einrichtungen der Jugendarbeit","Standesamt","Brandschutz","Frauenschutzwohnung","Heimat-und Kulturpflege","Wohngeld","Tageseinrichtungen für Kinder","Meldewesen","Museen","Archiv","Bibliotheken","Sportstätten","Förderung von Trägern der Wohlfahrtspflege","Grundschulen","Sonstige schulische Aufgaben","Senioren- und Familienhaus","Übergangswohnheim","Brahms-Chorwettbewerb","Förderung des Sports"],
+          labels: ["Frauenschutzwohnung","Verwaltung d. Förderung v. Kindern in Tageseinrichtungen für Kinder","Bäder","Grundschulen","Förderung von Trägern der Wohlfahrtspflege","Wohngeld","Förderung des Sports","Buswartehallen","Tageseinrichtungen für Kinder","Meldewesen","Standesamt","Museen","Übergangswohnheim","Ordnungsangelegenheiten","Brandschutz","Archiv","Brahms-Chorwettbewerb","Senioren- und Familienhaus","Sonstige schulische Aufgaben","Bibliotheken","Heimat-und Kulturpflege","Einrichtungen der Jugendarbeit","Sportstätten"],
           datasets: [{
             label: 'Euro',
-            data: [-891200,-1950000,-718600,-10000,-521600,-306900,-2757200,-70700,-199600,-413500,-6566100,-335700,-253700,-126300,-475500,-1696000,-19100,-1906900,-525900,-184100,-60400,-10000,-156100],
+            data: [-70700,-1950000,-718600,-1906900,-19100,-413500,-156100,-10000,-6566100,-335700,-306900,-253700,-60400,-891200,-2757200,-126300,-10000,-184100,-525900,-475500,-199600,-521600,-1696000],
             borderWidth: 1
           }]
         },

@@ -38,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 127.600,00€</h5>
-                <canvas id="chartjs_8ea5ca4a_6113_4276_aff8_6ef5560f6cda"></canvas>
+                <canvas id="chartjs_d3d54d04_82ee_49b6_9ac0_9741ad679c18"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -4.500,00€</h5>
-                <canvas id="chartjs_37bad75a_2eb6_4944_900c_3d688db9c180"></canvas>
+                <canvas id="chartjs_c2bb2e20_1999_488d_a51c_dcd7571cbd80"></canvas>
               </div>
             </div>
           
@@ -51,6 +51,10 @@
 
           
             
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_8b4cb28d_5d48_4486_adc9_9ef361bc482b"></canvas>
+              </div>
             
           
       
@@ -145,13 +149,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_8ea5ca4a_6113_4276_aff8_6ef5560f6cda'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_d3d54d04_82ee_49b6_9ac0_9741ad679c18'), {
             type: 'doughnut',
             data: {
-              labels: ["Einzahlungen aus Mieten und Pachten","Sonstige privatrechtliche Leistungsentgelte","Einzahlungen aus Kostenerstattungen von Zweckverbünden","Einzahl. aus Kostenerstattungen von verbund. Untern., Sondervermü. und Beteilig.","Einzahlungen aus Kostenerstattungen von sonstigen öffentlichen Sonderrechnungen","Einzahlungen aus Kostenerstattungen von privaten Unternehmen","Einzahlungen aus Kostenerstattungen von übrigen Bereichen","Einnahmen Mehrwertsteuer 7%","Einnahmen Mehrwertsteuer 0%","Einnahmen Mehrwertsteuer 5%","Einnahmen Mehrwertsteuer 19%","Einnahmen Mehrwertsteuer 16%","Erstattungen Vorsteuer"],
+              labels: ["Einzahlungen aus Mieten und Pachten","Sonstige privatrechtliche Leistungsentgelte","Einzahlungen aus Kostenerstattungen von Zweckverbünden","Einzahl. aus Kostenerstattungen von verbund. Untern., Sondervermü. und Beteilig."],
               datasets: [{
                 label: 'Euro',
-                data: [600,15000,82000,30000,0,0,0,0,0,0,0,0,0],
+                data: [600,15000,82000,30000],
                 borderWidth: 1
               }]
             },
@@ -167,13 +171,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_37bad75a_2eb6_4944_900c_3d688db9c180'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_c2bb2e20_1999_488d_a51c_dcd7571cbd80'), {
             type: 'doughnut',
             data: {
-              labels: ["Unterhaltung der Grundstücke und baulichen Anlagen-Gebüudemanagement","Unterhaltung des sonstigen unbeweglichen Vermügens","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermügensgegenstünde","Unterhaltung des sonstigen beweglichen Vermügens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Abzugsfühige Vorsteuer  7%","Abzugsfühige Vorsteuer 0%","Abzugsfühige Vorsteuer 5%","Abzugsfühige Vorsteuer 19%","Abzugsfühige Vorsteuer 16%","Abführung Mehrwertsteuer","Kapitalertragssteuer/Kürperschaftssteuer/Gewerbesteuer"],
+              labels: ["Unterhaltung des sonstigen unbeweglichen Vermügens","Unterhaltung des sonstigen beweglichen Vermügens","Besondere zahlungswirksame Aufwendungen für Beschäftigte"],
               datasets: [{
                 label: 'Euro',
-                data: [0,2000,0,0,500,2000,0,0,0,0,0,0,0],
+                data: [2000,500,2000],
                 borderWidth: 1
               }]
             },
@@ -189,6 +193,27 @@
         
       
         
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_8b4cb28d_5d48_4486_adc9_9ef361bc482b'), {
+            type: 'doughnut',
+            data: {
+              labels: [],
+              datasets: [{
+                label: 'Euro',
+                data: [],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
       
     </script>

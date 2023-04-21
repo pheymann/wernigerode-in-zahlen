@@ -38,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 128.000,00€</h5>
-                <canvas id="chartjs_db642eb5_a6b3_4ffd_b2fd_1ffa5665eee7"></canvas>
+                <canvas id="chartjs_eac9b0b2_5246_48d7_893e_db049e0a2f05"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -291.000,00€</h5>
-                <canvas id="chartjs_5670d884_f8c0_4459_8b5d_8d0969f02407"></canvas>
+                <canvas id="chartjs_211eedcc_3b31_4e39_a8aa_1e131a2e05f6"></canvas>
               </div>
             </div>
           
@@ -50,8 +50,16 @@
           <h3>- Investitionen kosten <span class="total-cashflow-expenses">-567.600,00€</span></h3>
 
           
-            
-            
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 227.400,00€</h5>
+                <canvas id="chartjs_49c0bac2_3227_4a0a_ac7b_27413acfebca"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: -795.000,00€</h5>
+                <canvas id="chartjs_9aced975_dc4e_48b6_8769_e48409f2d748"></canvas>
+              </div>
+            </div>
           
       
     </div>
@@ -150,13 +158,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_db642eb5_a6b3_4ffd_b2fd_1ffa5665eee7'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_eac9b0b2_5246_48d7_893e_db049e0a2f05'), {
             type: 'doughnut',
             data: {
-              labels: ["Zuweisungen für laufende Zwecke vom Land (Wasserwehr)","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus Kostenerstattungen vom Land (Kriegsgrüber)","Einzahlungen aus Kostenerstattungen von privaten Unternehmen","Einzahlungen aus Kostenerstattungen von übrigen Bereichen"],
+              labels: ["Benutzungsgebühren und ähnliche Entgelte"],
               datasets: [{
                 label: 'Euro',
-                data: [0,128000,0,0,0],
+                data: [128000],
                 borderWidth: 1
               }]
             },
@@ -172,13 +180,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_5670d884_f8c0_4459_8b5d_8d0969f02407'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_211eedcc_3b31_4e39_a8aa_1e131a2e05f6'), {
             type: 'doughnut',
             data: {
-              labels: ["Unterhaltung des sonstigen unbeweglichen Vermügens","Unterhaltung des sonstigen unbeweglichen Vermügens (D I/68)","Haltung von Fahrzeugen (Wasserwehr)","Erwerb geringwertiger Vermügensgegenstünde (Wasserwehr)","Unterhaltung des sonstigen beweglichen Vermügens","Besondere Aufwendungen für Beschäftigte  (Wasserwehr)","Zuweisungen an das Land","Zuweisungen an Zweckverbünde","Aufwendungen für ehrenamtliche und sonstige Tütigkeit  (Wasserwehr)","Erstatt. für die Auszahl. von Dritten aus lfd. Verwaltungstüt. an priv. Untern."],
+              labels: ["Unterhaltung des sonstigen unbeweglichen Vermügens","Unterhaltung des sonstigen unbeweglichen Vermügens (D I/68)","Haltung von Fahrzeugen (Wasserwehr)","Besondere Aufwendungen für Beschäftigte  (Wasserwehr)","Zuweisungen an das Land","Zuweisungen an Zweckverbünde","Aufwendungen für ehrenamtliche und sonstige Tütigkeit  (Wasserwehr)"],
               datasets: [{
                 label: 'Euro',
-                data: [40000,25000,2000,0,0,2000,5000,215000,2000,0],
+                data: [40000,25000,2000,2000,5000,215000,2000],
                 borderWidth: 1
               }]
             },
@@ -194,6 +202,48 @@
         
       
         
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_49c0bac2_3227_4a0a_ac7b_27413acfebca'), {
+            type: 'doughnut',
+            data: {
+              labels: [],
+              datasets: [{
+                label: 'Euro',
+                data: [],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_9aced975_dc4e_48b6_8769_e48409f2d748'), {
+            type: 'doughnut',
+            data: {
+              labels: [],
+              datasets: [{
+                label: 'Euro',
+                data: [],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
       
     </script>

@@ -38,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 280.000,00€</h5>
-                <canvas id="chartjs_f0591407_74dd_4be5_8065_d2a4295e59aa"></canvas>
+                <canvas id="chartjs_177d1e5f_6126_4794_925a_f4b2e7ea8a3f"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -400.500,00€</h5>
-                <canvas id="chartjs_0326fb8b_6776_40bd_b14f_32130672e6ed"></canvas>
+                <canvas id="chartjs_9c3ea0ab_931a_40ce_98e5_3e353821a2a9"></canvas>
               </div>
             </div>
           
@@ -50,8 +50,16 @@
           <h3>- Investitionen kosten <span class="total-cashflow-expenses">-60.000,00€</span></h3>
 
           
-            
-            
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 240.000,00€</h5>
+                <canvas id="chartjs_b46fd2e1_a5b0_4f65_8fde_97722fff75e2"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: -300.000,00€</h5>
+                <canvas id="chartjs_ab0fef7e_c0a3_4865_ab62_91586908cf57"></canvas>
+              </div>
+            </div>
           
       
     </div>
@@ -130,13 +138,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_f0591407_74dd_4be5_8065_d2a4295e59aa'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_177d1e5f_6126_4794_925a_f4b2e7ea8a3f'), {
             type: 'doughnut',
             data: {
-              labels: ["Zuweisungen für laufende Zwecke vom Land","Zuweisungen für lfd. Zwecke vom Land (Sonderprogramme Fürdermittel)"],
+              labels: ["Zuweisungen für laufende Zwecke vom Land"],
               datasets: [{
                 label: 'Euro',
-                data: [280000,0],
+                data: [280000],
                 borderWidth: 1
               }]
             },
@@ -152,7 +160,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_0326fb8b_6776_40bd_b14f_32130672e6ed'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_9c3ea0ab_931a_40ce_98e5_3e353821a2a9'), {
             type: 'doughnut',
             data: {
               labels: ["Zuschüsse an übrige Bereiche","Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten","Sonstige Finanzauszahlungen"],
@@ -174,6 +182,48 @@
         
       
         
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_b46fd2e1_a5b0_4f65_8fde_97722fff75e2'), {
+            type: 'doughnut',
+            data: {
+              labels: [],
+              datasets: [{
+                label: 'Euro',
+                data: [],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_ab0fef7e_c0a3_4865_ab62_91586908cf57'), {
+            type: 'doughnut',
+            data: {
+              labels: [],
+              datasets: [{
+                label: 'Euro',
+                data: [],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
       
     </script>

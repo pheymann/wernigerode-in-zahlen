@@ -38,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 203.300,00€</h5>
-                <canvas id="chartjs_ad5c62a4_738a_4e3c_9440_5a304959915b"></canvas>
+                <canvas id="chartjs_d3715cee_7f64_48cf_8e7d_a70a0c0d6a2f"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -539.000,00€</h5>
-                <canvas id="chartjs_f4cd561a_f9f0_419d_9696_37d7104734fd"></canvas>
+                <canvas id="chartjs_f661a703_d673_4a70_9f15_c832f72900af"></canvas>
               </div>
             </div>
           
@@ -165,13 +165,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_ad5c62a4_738a_4e3c_9440_5a304959915b'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_d3715cee_7f64_48cf_8e7d_a70a0c0d6a2f'), {
             type: 'doughnut',
             data: {
-              labels: ["Verwaltungsgebühren","Einzahlungen aus Kostenerstattungen vom Land","Einzahlungen aus Kostenerstattungen von Zweckverbünden","19% USt Ert. KostErst v Zweckv","Buügelder"],
+              labels: ["Verwaltungsgebühren","19% USt Ert. KostErst v Zweckv","Buügelder"],
               datasets: [{
                 label: 'Euro',
-                data: [200000,0,0,1300,2000],
+                data: [200000,1300,2000],
                 borderWidth: 1
               }]
             },
@@ -187,13 +187,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_f4cd561a_f9f0_419d_9696_37d7104734fd'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_f661a703_d673_4a70_9f15_c832f72900af'), {
             type: 'doughnut',
             data: {
-              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Zuschüsse an übrige Bereiche","Sonstige Personal- und Versorgungsauszahlungen","Geschüftsauszahlungen","Erstattungen für die Auszahl. von Dritten aus lfd. Verwaltungstüt. an den Bund"],
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Zuschüsse an übrige Bereiche","Geschüftsauszahlungen","Erstattungen für die Auszahl. von Dritten aus lfd. Verwaltungstüt. an den Bund"],
               datasets: [{
                 label: 'Euro',
-                data: [303100,12300,61000,1700,900,20000,0,5000,135000],
+                data: [303100,12300,61000,1700,900,20000,5000,135000],
                 borderWidth: 1
               }]
             },

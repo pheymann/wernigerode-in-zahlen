@@ -38,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 474.500,00€</h5>
-                <canvas id="chartjs_5e51d988_c0c4_4647_8f5d_41eaae09723b"></canvas>
+                <canvas id="chartjs_966d7b69_04ce_446b_a98c_b5e616102891"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -671.300,00€</h5>
-                <canvas id="chartjs_3d37bc0b_adb0_422d_a97f_97be54eba26e"></canvas>
+                <canvas id="chartjs_9e15e851_3f56_46ff_8f46_b5e4296253b1"></canvas>
               </div>
             </div>
           
@@ -50,8 +50,16 @@
           <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">4.202.300,00€</span></h3>
 
           
-            
-            
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 5.598.700,00€</h5>
+                <canvas id="chartjs_d774727b_40f6_4ae8_bf71_f40412a03b44"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: -1.396.400,00€</h5>
+                <canvas id="chartjs_a825087d_5ccf_4c12_a164_27da7ef7e776"></canvas>
+              </div>
+            </div>
           
       
     </div>
@@ -195,13 +203,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_5e51d988_c0c4_4647_8f5d_41eaae09723b'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_966d7b69_04ce_446b_a98c_b5e616102891'), {
             type: 'doughnut',
             data: {
-              labels: ["Zuweisungen für laufende Zwecke vom Land","Verwaltungsgebühren","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus Mieten und Pachten","19 % USt Einz. Miete/ Pacht","Sonstige privatrechtliche Leistungsentgelte","Einzahlungen aus Kostenerstattungen vom Land","Einzahlungen aus Kostenerstattungen von privaten Unternehmen","Einzahlungen aus Kostenerstattungen von übrigen Bereichen","Andere sonstige Einzahlungen aus laufender Verwaltungstütigkeit"],
+              labels: ["Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus Mieten und Pachten","19 % USt Einz. Miete/ Pacht","Einzahlungen aus Kostenerstattungen von übrigen Bereichen","Andere sonstige Einzahlungen aus laufender Verwaltungstütigkeit"],
               datasets: [{
                 label: 'Euro',
-                data: [0,0,1000,435700,20500,0,0,0,17000,300],
+                data: [1000,435700,20500,17000,300],
                 borderWidth: 1
               }]
             },
@@ -217,13 +225,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_3d37bc0b_adb0_422d_a97f_97be54eba26e'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_9e15e851_3f56_46ff_8f46_b5e4296253b1'), {
             type: 'doughnut',
             data: {
-              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Unterhaltung des sonstigen unbeweglichen Vermügens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermügensgegenstünde","Auszahlungen für sonstige Dienstleistungen","Sonstige Personal- und Versorgungsauszahlungen","Geschüftsauszahlungen","Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten","Steuern, Versicherungen, Schadensfülle","Erstattungen für die Auszahl. von Dritten aus lfd. Verwaltungstüt. an den Bund","Erstatt. für die Auszahl. von Dritten aus lfd. Verwaltungstüt. an übrige Ber.","Besondere Auszahlungen Süumniszuschlüge","Sonstige Finanzauszahlungen"],
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Unterhaltung des sonstigen unbeweglichen Vermügens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Auszahlungen für sonstige Dienstleistungen","Geschüftsauszahlungen","Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten","Erstatt. für die Auszahl. von Dritten aus lfd. Verwaltungstüt. an übrige Ber."],
               datasets: [{
                 label: 'Euro',
-                data: [344700,13800,69300,1900,24000,100000,18000,81000,0,3500,0,100,5000,0,0,10000,0,0],
+                data: [344700,13800,69300,1900,24000,100000,18000,81000,3500,100,5000,10000],
                 borderWidth: 1
               }]
             },
@@ -239,6 +247,48 @@
         
       
         
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_d774727b_40f6_4ae8_bf71_f40412a03b44'), {
+            type: 'doughnut',
+            data: {
+              labels: [],
+              datasets: [{
+                label: 'Euro',
+                data: [],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_a825087d_5ccf_4c12_a164_27da7ef7e776'), {
+            type: 'doughnut',
+            data: {
+              labels: [],
+              datasets: [{
+                label: 'Euro',
+                data: [],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
       
     </script>

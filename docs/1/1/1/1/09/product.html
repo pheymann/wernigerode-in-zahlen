@@ -38,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 322.000,00€</h5>
-                <canvas id="chartjs_3e9fbc56_a1f0_4343_a0cf_d82936b52154"></canvas>
+                <canvas id="chartjs_e5a6b7c7_de1c_441d_a10f_7bcaf5b22288"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -1.381.900,00€</h5>
-                <canvas id="chartjs_9b529a09_df8a_4fa2_83d4_44225cbb7965"></canvas>
+                <canvas id="chartjs_352f4b36_de82_4243_8e7a_be45ebbf764b"></canvas>
               </div>
             </div>
           
@@ -170,13 +170,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_3e9fbc56_a1f0_4343_a0cf_d82936b52154'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_e5a6b7c7_de1c_441d_a10f_7bcaf5b22288'), {
             type: 'doughnut',
             data: {
-              labels: ["Zuschüsse für laufende Zwecke von sonstigen öffentlichen Sonderrechnungen","Sonstige privatrechtliche Leistungsentgelte","Einzahlungen aus Kostenerstattungen vom Bund","Einzahlungen aus Kostenerstattungen vom Land","Einzahlungen aus Kostenerstattungen von gesetzlichen Sozialversicherungen","Einzahlungen aus Kostenerstattungen von übrigen Bereichen","Erstattungen von Steuern"],
+              labels: ["Sonstige privatrechtliche Leistungsentgelte","Einzahlungen aus Kostenerstattungen vom Bund","Einzahlungen aus Kostenerstattungen von gesetzlichen Sozialversicherungen"],
               datasets: [{
                 label: 'Euro',
-                data: [0,6000,6000,0,310000,0,0],
+                data: [6000,6000,310000],
                 borderWidth: 1
               }]
             },
@@ -192,13 +192,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_9b529a09_df8a_4fa2_83d4_44225cbb7965'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_352f4b36_de82_4243_8e7a_be45ebbf764b'), {
             type: 'doughnut',
             data: {
-              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Sonstige Personal- und Versorgungsauszahlungen","Geschüftsauszahlungen","Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten","Steuern, Versicherungen, Schadensfülle","Erstatt. f.d. Ausz. v. Dritten aus lfd. Verwaltungstütigkeit an Gemeinde\u0026 GV"],
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Geschüftsauszahlungen","Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten","Steuern, Versicherungen, Schadensfülle","Erstatt. f.d. Ausz. v. Dritten aus lfd. Verwaltungstütigkeit an Gemeinde\u0026 GV"],
               datasets: [{
                 label: 'Euro',
-                data: [707300,27900,141700,3700,265000,0,2300,12500,215000,6500],
+                data: [707300,27900,141700,3700,265000,2300,12500,215000,6500],
                 borderWidth: 1
               }]
             },

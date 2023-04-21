@@ -35,16 +35,12 @@
           <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-759.700,00€</span></h3>
 
           
-            <div class="row">
-              <div class="col-6">
-                <h5 class="center">Einnahmen: 0,00€</h5>
-                <canvas id="chartjs_735b8a73_7c6c_414b_b6e6_3f56bff3e0be"></canvas>
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_ccf77498_6e05_437e_88a2_a0336745f64e"></canvas>
               </div>
-              <div class="col-6">
-                <h5 class="center">Ausgaben: -759.700,00€</h5>
-                <canvas id="chartjs_a9b891ee_5e5d_47da_97a9_58157cd51c49"></canvas>
-              </div>
-            </div>
+            
           
       
           <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
@@ -159,36 +155,15 @@
     <script>
       
         
-          var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_735b8a73_7c6c_414b_b6e6_3f56bff3e0be'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Zuweisungen für laufende Zwecke vom Bund (Porjekt Hoi An)","Zuweisungen für laufende Zwecke vom Bund","Zuweisungen für laufende Zwecke vom Land","Zuschüsse für laufende Zwecke von sonstigen öffentlichen Sonderrechnungen","Zuschüsse für laufende Zwecke von privaten Unternehmen","Benutzungsgebühren und ähnliche Entgelte","19% Ust BenutzGeb. \u0026 ähnl. Ent","Einzahlungen aus dem Verkauf von Vorrüten","Sonstige privatrechtliche Leistungsentgelte","19% USt So.Privatrechtl. Leist","Einzahlungen aus Kostenerstattungen vom Land","Einzahlungen aus Kostenerstattungen von sonstigen öffentlichen Sonderrechnungen","Einzahlungen aus Kostenerstattungen von übrigen Bereichen"],
-              datasets: [{
-                label: 'Euro',
-                data: [0,0,0,0,0,0,0,0,0,0,0,0,0],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              },
-              
-            }
-          });
-        
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_a9b891ee_5e5d_47da_97a9_58157cd51c49'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_ccf77498_6e05_437e_88a2_a0336745f64e'), {
             type: 'doughnut',
             data: {
-              labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für Mieten und Pachten","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für Projekt Hoi An","Auszahlungen aus Kleinprojektefonds","Auszahlungen für sonstige Dienstleistungen","Sonstige Personal- und Versorgungsauszahlungen","Geschüftsauszahlungen","Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten","Verfügungsmittel"],
+              labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für Projekt Hoi An","Auszahlungen für sonstige Dienstleistungen","Geschüftsauszahlungen"],
               datasets: [{
                 label: 'Euro',
-                data: [129900,278400,85700,11200,56000,1800,0,84600,10500,0,1600,0,100000,0,0],
+                data: [129900,278400,85700,11200,56000,1800,84600,10500,1600,100000],
                 borderWidth: 1
               }]
             },

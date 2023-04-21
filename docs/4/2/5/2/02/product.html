@@ -38,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 3.400,00€</h5>
-                <canvas id="chartjs_1c67a0de_0337_43d4_aabb_77d28c8de40b"></canvas>
+                <canvas id="chartjs_513a14a7_7f3f_47f7_9a2e_215a721927a2"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -129.700,00€</h5>
-                <canvas id="chartjs_081fd0b3_42b1_42cb_8ad6_a56b69206a36"></canvas>
+                <canvas id="chartjs_04f6db6a_3ff1_43ba_8a4d_2121a60aa93c"></canvas>
               </div>
             </div>
           
@@ -155,13 +155,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_1c67a0de_0337_43d4_aabb_77d28c8de40b'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_513a14a7_7f3f_47f7_9a2e_215a721927a2'), {
             type: 'doughnut',
             data: {
-              labels: ["Zuschüsse für laufende Zwecke von übrigen Bereichen","Verwaltungsgebühren","Einzahlungen aus Kostenerstattungen vom Land"],
+              labels: ["Verwaltungsgebühren"],
               datasets: [{
                 label: 'Euro',
-                data: [0,3400,0],
+                data: [3400],
                 borderWidth: 1
               }]
             },
@@ -177,13 +177,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_081fd0b3_42b1_42cb_8ad6_a56b69206a36'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_04f6db6a_3ff1_43ba_8a4d_2121a60aa93c'), {
             type: 'doughnut',
             data: {
-              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen-Gebüudemanagement","Erwerb geringwertiger Vermügensgegenstünde","Unterhaltung des sonstigen beweglichen Vermügens","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für sonstige Dienstleistungen","Sonstige Personal- und Versorgungsauszahlungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschüftsauszahlungen","Auszahlungen für Honorare","Auszahlungen für Beitragsservice (GEZ)"],
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung des sonstigen beweglichen Vermügens","Besondere Verwaltungs- und Betriebsauszahlungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschüftsauszahlungen"],
               datasets: [{
                 label: 'Euro',
-                data: [94500,3800,19000,500,0,0,1000,10000,0,0,300,600,0,0],
+                data: [94500,3800,19000,500,1000,10000,300,600],
                 borderWidth: 1
               }]
             },

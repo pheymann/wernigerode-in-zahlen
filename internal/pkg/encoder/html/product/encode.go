@@ -87,17 +87,21 @@ func balanceToSection(balance model.AccountBalance2, year model.BudgetYear, p *m
 	adminAccountsSplit := splitAccountsByType(balance.Accounts)
 	adminAccountsIncome := adminAccountsSplit.First
 	adminAccountsExpenses := adminAccountsSplit.Second
+
+	hasIncome := shared.IsUnequal(balance.Cashflow.Income[year], 0.0)
+	hasExpenses := shared.IsUnequal(balance.Cashflow.Expenses[year], 0.0)
+
 	section := html.BalanceSection{
 		ID: strings.ReplaceAll("balance-"+uuid.New().String(), "-", ""),
 
-		HasIncomeAndExpenses: len(adminAccountsIncome) > 0 && len(adminAccountsExpenses) > 0,
+		HasIncomeAndExpenses: hasIncome && hasExpenses,
 
-		HasIncome:            len(adminAccountsIncome) > 0,
+		HasIncome:            hasIncome,
 		HasMoreThanOneIncome: len(adminAccountsIncome) > 1,
 		IncomeCashflowTotal:  balance.Cashflow.Income[year],
 		Income:               dataPointsToChartJSDataset(adminAccountsIncome, year),
 
-		HasExpenses:           len(adminAccountsExpenses) > 0,
+		HasExpenses:           hasExpenses,
 		HasMoreThanOneExpense: len(adminAccountsExpenses) > 1,
 		ExpensesCashflowTotal: balance.Cashflow.Expenses[year],
 		Expenses:              dataPointsToChartJSDataset(adminAccountsExpenses, year),
@@ -215,8 +219,10 @@ func dataPointsToChartJSDataset(accounts []model.Account2, year model.BudgetYear
 	var data = []float64{}
 
 	for _, account := range accounts {
-		labels = append(labels, account.Description)
-		data = append(data, account.Budget[year])
+		if shared.IsUnequal(account.Budget[year], 0) {
+			labels = append(labels, account.Description)
+			data = append(data, account.Budget[year])
+		}
 	}
 
 	return html.ChartJSDataset{

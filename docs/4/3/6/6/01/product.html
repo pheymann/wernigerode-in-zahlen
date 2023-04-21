@@ -38,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 100.600,00€</h5>
-                <canvas id="chartjs_de64b000_16fb_4700_b0e4_06c5a33d2de6"></canvas>
+                <canvas id="chartjs_2e24bd84_9dc8_4dce_a9c6_722c13101d03"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -617.900,00€</h5>
-                <canvas id="chartjs_f75dddaa_926a_4847_8127_800cbb83b645"></canvas>
+                <canvas id="chartjs_a370952a_2132_491b_a3bb_b72f6c9f73f2"></canvas>
               </div>
             </div>
           
@@ -51,6 +51,10 @@
 
           
             
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_2d8c7f7f_af4d_45ab_b930_dc91db01f8d3"></canvas>
+              </div>
             
           
       
@@ -220,13 +224,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_de64b000_16fb_4700_b0e4_06c5a33d2de6'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_2e24bd84_9dc8_4dce_a9c6_722c13101d03'), {
             type: 'doughnut',
             data: {
-              labels: ["Zuweisungen für laufende Zwecke von Gemeinden und Gemeindeverbünden","Zuschüsse für laufende Zwecke von privaten Unternehmen(Spenden)","Zuschüsse für laufende Zwecke von übrigen Bereichen  (Spenden)","Benutzungsgebühren und ähnliche Entgelte","7 % USt BenutzGeb. \u0026 ähnl. Ent","19 % USt Einz. Miete/ Pacht","Sonstige privatrechtliche Leistungsentgelte","19% USt So.Privatrechtl. Leist","Einzahlungen aus Kostenerstattungen vom Bund","Einzahlungen aus Kostenerstattungen vom Land","Einzahlungen aus Kostenerstattungen von übrigen Bereichen","Sonstige Finanzeinzahlungen"],
+              labels: ["Zuweisungen für laufende Zwecke von Gemeinden und Gemeindeverbünden","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus Kostenerstattungen vom Bund"],
               datasets: [{
                 label: 'Euro',
-                data: [80000,0,0,17000,0,0,0,0,3600,0,0,0],
+                data: [80000,17000,3600],
                 borderWidth: 1
               }]
             },
@@ -242,13 +246,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_f75dddaa_926a_4847_8127_800cbb83b645'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_a370952a_2132_491b_a3bb_b72f6c9f73f2'), {
             type: 'doughnut',
             data: {
-              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Dienstauszahlungen und dgl. an sonstige Beschäftigte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschüft.","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Unterhaltung der Grundstücke und baulichen Anlagen-Gebüudemanagement","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Erwerb geringwertiger Vermügensgegenstünde","Unterhaltung des sonstigen beweglichen Vermügens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für sonstige Dienstleistungen","Zuschüsse an übrige Bereiche","Sonstige Personal- und Versorgungsauszahlungen","Geschüftsauszahlungen","Auszahlungen für Honorare","Auszahlungen für Beitragsservice (GEZ)","Steuern, Versicherungen, Schadensfülle","Sonstige Finanzauszahlungen"],
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Dienstauszahlungen und dgl. an sonstige Beschäftigte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschüft.","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Unterhaltung der Grundstücke und baulichen Anlagen-Gebüudemanagement","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Erwerb geringwertiger Vermügensgegenstünde","Unterhaltung des sonstigen beweglichen Vermügens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für sonstige Dienstleistungen","Zuschüsse an übrige Bereiche","Geschüftsauszahlungen","Auszahlungen für Honorare"],
               datasets: [{
                 label: 'Euro',
-                data: [343900,4800,13800,69000,1900,2000,1000,60000,1300,37000,13000,1100,800,1500,33000,1600,23000,0,2400,6800,0,0,0],
+                data: [343900,4800,13800,69000,1900,2000,1000,60000,1300,37000,13000,1100,800,1500,33000,1600,23000,2400,6800],
                 borderWidth: 1
               }]
             },
@@ -264,6 +268,27 @@
         
       
         
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_2d8c7f7f_af4d_45ab_b930_dc91db01f8d3'), {
+            type: 'doughnut',
+            data: {
+              labels: [],
+              datasets: [{
+                label: 'Euro',
+                data: [],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
       
     </script>
