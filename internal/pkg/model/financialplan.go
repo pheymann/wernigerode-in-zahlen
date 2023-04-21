@@ -61,7 +61,7 @@ func (product FinancialPlanProduct) CreateLink() string {
 }
 
 func (product FinancialPlanProduct) GetPath() string {
-	return fmt.Sprintf(
+	var productPath = fmt.Sprintf(
 		"/%s/%s/%s/%s/%s/",
 		product.Metadata.Department.ID,
 		product.Metadata.ProductClass.ID,
@@ -69,6 +69,12 @@ func (product FinancialPlanProduct) GetPath() string {
 		product.Metadata.ProductGroup.ID,
 		product.Metadata.Product.ID,
 	)
+
+	if product.IsSubProduct() {
+		productPath = fmt.Sprintf("%s%s/", productPath, product.Metadata.SubProduct.ID)
+	}
+
+	return productPath
 }
 
 func (product FinancialPlanProduct) IsSubProduct() bool {

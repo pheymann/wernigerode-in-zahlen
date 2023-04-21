@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Tageseinrichtungen für Kinder des Fachbereichs Budget Bürgerservice hat ein Budge von -569.500,00€."/>
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Tageseinrichtungen für Kinder des Fachbereichs Budget Bürgerservice hat ein Budge von -587.200,00€."/>
   <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Tageseinrichtungen für Kinder,Budget Bürgerservice"/>
   <meta name="author" content="Paul Heymann"/>
 
@@ -23,7 +23,7 @@
       Das Produkt -  Aufgaben der Gemeinde nach Kinderförderungsgesetz - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-expenses center">-569.500,00€</h2>
+    <h2 class="total-cashflow-expenses center">-587.200,00€</h2>
 
     <p>
       kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
@@ -32,14 +32,21 @@
 
     <div class="container">
       
-          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-569.500,00€</span></h3>
+          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-587.200,00€</span></h3>
 
           
             
             
               <div class="padded-chart">
-                <canvas id="chartjs_7b95aee5_5309_4c14_bb65_dbab2bfa5393"></canvas>
+                <canvas id="chartjs_administration_expenses"></canvas>
               </div>
+            
+          
+      
+          <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
+
+          
+            
             
           
       
@@ -73,23 +80,23 @@
 
           
             <tr>
-              <td>.7012000 Dienstauszahlungen und dgl. an Arbeitnehmer</td>
-              <td>-456.600,00€</td>
+              <td>Beihilfen, Unterstützungsleistungen für Beschäftigte</td>
+              <td>2.600,00€</td>
             </tr>
           
             <tr>
-              <td>.7022000 Beiträge zu Versorgungskassen für Arbeitnehmer</td>
-              <td>-19.000,00€</td>
+              <td>Beiträge zu Versorgungskassen für Arbeitnehmer</td>
+              <td>18.900,00€</td>
             </tr>
           
             <tr>
-              <td>.7032000 Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer</td>
-              <td>-91.700,00€</td>
+              <td>Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer</td>
+              <td>94.500,00€</td>
             </tr>
           
             <tr>
-              <td>.7041000 Beihilfen, Unterstützungsleistungen für Beschäftigte</td>
-              <td>-2.200,00€</td>
+              <td>Dienstauszahlungen und dgl. an Arbeitnehmer</td>
+              <td>471.200,00€</td>
             </tr>
           
         </tbody>
@@ -120,13 +127,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_7b95aee5_5309_4c14_bb65_dbab2bfa5393'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_administration_expenses'), {
             type: 'doughnut',
             data: {
-              labels: [".7012000 Dienstauszahlungen und dgl. an Arbeitnehmer",".7022000 Beiträge zu Versorgungskassen für Arbeitnehmer",".7032000 Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer",".7041000 Beihilfen, Unterstützungsleistungen für Beschäftigte"],
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte"],
               datasets: [{
                 label: 'Euro',
-                data: [-456600,-19000,-91700,-2200],
+                data: [471200,18900,94500,2600],
                 borderWidth: 1
               }]
             },
@@ -139,6 +146,9 @@
               
             }
           });
+        
+      
+        
         
       
     </script>

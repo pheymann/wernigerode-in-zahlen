@@ -142,15 +142,15 @@
     <script src="/js/chart.js"></script>
     <script>
       
-      var incomeProductLinks = ["/2/5/3/2/01/product.html","/2/5/3/3/01/product.html","/2/5/3/4/01/product.html","/2/5/3/5/01/product.html","/2/6/1/1/01/product.html","/2/5/3/1/01/product.html"];
+      var incomeProductLinks = ["/2/5/3/5/01/product.html","/2/6/1/1/01/product.html","/2/5/3/1/01/product.html","/2/5/3/2/01/product.html","/2/5/3/3/01/product.html","/2/5/3/4/01/product.html"];
       var incomeCanvas = document.getElementById('chartjs_products_income');
       var incomeChart = new Chart(incomeCanvas, {
         type: 'doughnut',
         data: {
-          labels: ["Gasversorgung (Konzessionsabgabe)","Wasserversorgung (Konzessionsabgabe)","Fernwärmeversorgung (Konzessionsabgabe)","Gewinnabführung Stadtwerke","Steuern, allgemeine Zuweisungen, allgemeine Umlagen","Elektrizitätsversorgung (Konzessionsabgabe)"],
+          labels: ["Gewinnabführung Stadtwerke","Steuern, allgemeine Zuweisungen, allgemeine Umlagen","Elektrizitätsversorgung (Konzessionsabgabe)","Gasversorgung (Konzessionsabgabe)","Wasserversorgung (Konzessionsabgabe)","Fernwärmeversorgung (Konzessionsabgabe)"],
           datasets: [{
             label: 'Euro',
-            data: [138600,548900,38000,4000000,33604200,1148400],
+            data: [4000000,33604200,1148400,138600,548900,38000],
             borderWidth: 1
           }]
         },

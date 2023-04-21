@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Tageseinrichtungen für Kinder des Fachbereichs Budget Bürgerservice hat ein Budge von -587.200,00€."/>
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Tageseinrichtungen für Kinder des Fachbereichs Budget Bürgerservice hat ein Budge von -6.566.100,00€."/>
   <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Tageseinrichtungen für Kinder,Budget Bürgerservice"/>
   <meta name="author" content="Paul Heymann"/>
 
@@ -20,10 +20,10 @@
     <h1>Tageseinrichtungen für Kinder</h1>
 
     <p>
-      Das Produkt -  Aufgaben der Gemeinde nach Kinderförderungsgesetz - wird in 2023
+      Das Produkt -  Betreuung, Erziehung und Bildung von Kindern - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-expenses center">-587.200,00€</h2>
+    <h2 class="total-cashflow-expenses center">-6.566.100,00€</h2>
 
     <p>
       kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
@@ -32,22 +32,45 @@
 
     <div class="container">
       
-          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-587.200,00€</span></h3>
+          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-6.259.500,00€</span></h3>
+
+          
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 8.862.300,00€</h5>
+                <canvas id="chartjs_administration_income"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: -15.121.800,00€</h5>
+                <canvas id="chartjs_administration_expenses"></canvas>
+              </div>
+            </div>
+          
+      
+          <h3>- Investitionen kosten <span class="total-cashflow-expenses">-306.600,00€</span></h3>
 
           
             
             
               <div class="padded-chart">
-                <canvas id="chartjs_administration_expenses"></canvas>
+                <canvas id="chartjs_investments_expenses"></canvas>
               </div>
             
           
       
-          <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
+          <h3>- Darin enthalten sind die folgenden Unter-Produkte:  <span class="total-cashflow-expenses">-6.566.100,00€</span></h3>
 
           
-            
-            
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 8.862.300,00€</h5>
+                <canvas id="chartjs_sub_products_income"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: -15.428.400,00€</h5>
+                <canvas id="chartjs_sub_products_income"></canvas>
+              </div>
+            </div>
           
       
     </div>
@@ -57,10 +80,10 @@
       <p> Bundes-, Landes- und Ortsrecht, Beschlüsse der politischen Gremien</p>
 
       <h3>Zielgruppe</h3>
-      <p>Personensorgeberechtigte, Kinder und Familien, Träger von Kindertagesstätten</p>
+      <p>Kinder und Sorgeberechtigte</p>
 
       <h3>Dienstleistungen</h3>
-      <p> Verwaltung der Tageseinrichtungen für Kinder -Annahme der Zuwendung, Zuschüsse, Kostenbeiträge und Entgelte für Betreuungsverträge  zur Förderung von Kindern in Tageseinrichtungen und Tagespflege im Wirkungskreis der Stadt Wernigerode -Bearbeitung von Anträgen, vertragsgestaltung, Erteilung und Rücknahme,,von Bescheiden, Prüfung Kasseneingänge -Bearbeitung der Verpflegungsleistungen -Leistungen zur, Kostenerstattung für Kindereinrichtungen in Freier Trägerschaft -Zusammenarbeit mit einzelnen Trägern, Gremien -Gewährung von Zuschüsse -Haushaltsüberwachung und sonstige Verwaltungsarbeitn -Leistungen zur Kitaentwicklungsplanung des überörtlichen Trägers -Vorbereitung von Satzungen und Richtlinien -Qualitätsbetreuung und Beratung der Kindereinrichtungen</p>
+      <p> -Bildung und Betreuung von Kindern im Rahmen der Öffnungszeiten und der Betreuungsangebote -Elternkuratorien -Bewirtschaftung von Kindertageseinrichtungen,,</p>
 
       <h3>Klassifizierung</h3>
       <ul>
@@ -78,26 +101,6 @@
             <th>Budget</th>
           </tr>
 
-          
-            <tr>
-              <td>Beihilfen, Unterstützungsleistungen für Beschäftigte</td>
-              <td>2.600,00€</td>
-            </tr>
-          
-            <tr>
-              <td>Beiträge zu Versorgungskassen für Arbeitnehmer</td>
-              <td>18.900,00€</td>
-            </tr>
-          
-            <tr>
-              <td>Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer</td>
-              <td>94.500,00€</td>
-            </tr>
-          
-            <tr>
-              <td>Dienstauszahlungen und dgl. an Arbeitnehmer</td>
-              <td>471.200,00€</td>
-            </tr>
           
         </tbody>
       </table>
@@ -125,15 +128,36 @@
     <script>
       
         
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_administration_income'), {
+            type: 'doughnut',
+            data: {
+              labels: [],
+              datasets: [{
+                label: 'Euro',
+                data: [],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
         
           var expensesSubProductLinks_ =  null ;
           var expensesChart_ = new Chart(document.getElementById('chartjs_administration_expenses'), {
             type: 'doughnut',
             data: {
-              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte"],
+              labels: [],
               datasets: [{
                 label: 'Euro',
-                data: [471200,18900,94500,2600],
+                data: [],
                 borderWidth: 1
               }]
             },
@@ -149,6 +173,82 @@
         
       
         
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_investments_expenses'), {
+            type: 'doughnut',
+            data: {
+              labels: [],
+              datasets: [{
+                label: 'Euro',
+                data: [],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
+      
+        
+          var incomeSubProductLinks_chartjs_sub_products_income = ["16/product.html"];
+          var incomeChart_chartjs_sub_products_income = new Chart(document.getElementById('chartjs_sub_products_income'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Hort Grundschule Harzblick"],
+              datasets: [{
+                label: 'Euro',
+                data: [47300],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+                onClick: function(e){
+                  var activePoints = incomeChart_chartjs_sub_products_income.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
+                  window.location.href = incomeSubProductLinks_chartjs_sub_products_income[activePoints[0].index];
+                },
+              
+            }
+          });
+        
+        
+          var expensesSubProductLinks_chartjs_sub_products_income = ["12/product.html","09/product.html","14/product.html","08/product.html","06/product.html","05/product.html","02/product.html","07/product.html","15/product.html","10/product.html","13/product.html","03/product.html","04/product.html","11/product.html","01/product.html","17/product.html"];
+          var expensesChart_chartjs_sub_products_income = new Chart(document.getElementById('chartjs_sub_products_income'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Kindertagesstätte Benjamin Blümchen","Kindertagesstätte Harzblick","Hort Grundschule A. Diesterweg","Integrative Kindertagesstätte Löwenzahn","Kindertagesstätte Musikus","Kindertagesstätte Hummelhaus","Kinderkrippe Am Auerhahn","Kindertagesstätte Pusteblume","Hort Grundschule A.H.Francke","Kindertagesstätte Am Schäferteich","Kindertagesstätte Brockenkinder","Kindertagesstätte Regenbogen","Kindertagesstätte Villa Sonnenschein","Kindertagesstätte Kleine Strolche","Kinderkrippe Lindenberg","Kindertagesstätten-Verwaltung"],
+              datasets: [{
+                label: 'Euro',
+                data: [-616300,-418200,-214200,-589800,-415200,-427600,-263000,-276000,-122500,-240200,-209800,-823500,-514600,-372900,-522400,-587200],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+                onClick: function(e){
+                  var activePoints = expensesChart_chartjs_sub_products_income.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
+                  window.location.href = expensesSubProductLinks_chartjs_sub_products_income[activePoints[0].index];
+                },
+              
+            }
+          });
         
       
     </script>
