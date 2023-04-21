@@ -38,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 150.000,00€</h5>
-                <canvas id="chartjs_e858572b_f6d0_440f_8b86_074eaf60c76f"></canvas>
+                <canvas id="chartjs_administration_income"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -135.000,00€</h5>
-                <canvas id="chartjs_27a48bb5_91b6_4d5f_b48c_10e133c1a343"></canvas>
+                <canvas id="chartjs_administration_expenses"></canvas>
               </div>
             </div>
           
@@ -120,7 +120,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_e858572b_f6d0_440f_8b86_074eaf60c76f'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_administration_income'), {
             type: 'doughnut',
             data: {
               labels: ["Einzahlungen aus Kostenerstattungen von Gemeinden und Gemeindeverbünden"],
@@ -142,7 +142,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_27a48bb5_91b6_4d5f_b48c_10e133c1a343'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_administration_expenses'), {
             type: 'doughnut',
             data: {
               labels: ["Erstatt. f.d. Ausz. v. Dritten aus lfd. Verwaltungstütigkeit an Gemeinde\u0026 GV"],

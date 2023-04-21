@@ -38,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 98.700,00€</h5>
-                <canvas id="chartjs_3e2edadb_f760_403f_b6f6_fb7a05706748"></canvas>
+                <canvas id="chartjs_administration_income"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -366.000,00€</h5>
-                <canvas id="chartjs_aea66ba6_78b3_4bb9_96d6_83eb62bdec20"></canvas>
+                <canvas id="chartjs_administration_expenses"></canvas>
               </div>
             </div>
           
@@ -53,7 +53,7 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs_8eef174f_4118_41e6_811b_9b136854e246"></canvas>
+                <canvas id="chartjs_investments_expenses"></canvas>
               </div>
             
           
@@ -234,7 +234,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_3e2edadb_f760_403f_b6f6_fb7a05706748'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_administration_income'), {
             type: 'doughnut',
             data: {
               labels: ["Zuschüsse für laufende Zwecke von privaten Unternehmen (Spenden)","Zuschüsse für laufende Zwecke von übrigen Bereichen (Spenden)","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus dem Verkauf von beweglichen Sachen","Einzahlungen aus Kostenerstattungen vom Bund"],
@@ -256,7 +256,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_aea66ba6_78b3_4bb9_96d6_83eb62bdec20'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_administration_expenses'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Dienstauszahlungen und dgl. an sonstige Beschäftigte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschüft.","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Unterhaltung des sonstigen unbeweglichen Vermügens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Erwerb geringwertiger Vermügensgegenstünde","Unterhaltung des sonstigen beweglichen Vermügens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für sonstige Dienstleistungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschüftsauszahlungen","Erstatt. f.d. Ausz. v. Dritten aus lfd Verwaltungstüt. an so. üff. Sonderrechn."],
@@ -280,7 +280,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_8eef174f_4118_41e6_811b_9b136854e246'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_investments_expenses'), {
             type: 'doughnut',
             data: {
               labels: [],

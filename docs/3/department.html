@@ -34,11 +34,11 @@
         <div class="row">
           <div class="col-6">
             <h5 class="center">Einnahmen: 2.073.400,00€</h5>
-            <canvas id="chartjs-1b0e1331-03e6-4e9f-aea0-46a9f8bdd80e"></canvas>
+            <canvas id="chartjs_products_income"></canvas>
           </div>
           <div class="col-6">
             <h5 class="center">Ausgaben: -7.779.300,00€</h5>
-            <canvas id="chartjs-4b6575e6-8447-4b24-a52d-d6b40ea05da7"></canvas>
+            <canvas id="chartjs_products_expenses"></canvas>
           </div>
         </div>
       
@@ -177,15 +177,15 @@
     <script src="/js/chart.js"></script>
     <script>
       
-      var incomeProductLinks = ["/3/1/1/1/12/product.html","/3/5/4/5/01/product.html","/3/5/5/1/03/product.html","/3/2/8/1/02/product.html","/3/5/4/6/02/product.html"];
-      var incomeCanvas = document.getElementById('chartjs-1b0e1331-03e6-4e9f-aea0-46a9f8bdd80e');
+      var incomeProductLinks = ["/3/5/4/5/01/product.html","/3/5/4/6/02/product.html","/3/1/1/1/12/product.html","/3/2/8/1/02/product.html","/3/5/5/1/03/product.html"];
+      var incomeCanvas = document.getElementById('chartjs_products_income');
       var incomeChart = new Chart(incomeCanvas, {
         type: 'doughnut',
         data: {
-          labels: ["Dienstleistungen für Dritte (Bauhof)","Straßenreinigung/Winterdienst","Containerstellplätze","Weihnachtsmarkt","Parkraumbewirtschaftung Schierke"],
+          labels: ["Straßenreinigung/Winterdienst","Parkraumbewirtschaftung Schierke","Dienstleistungen für Dritte (Bauhof)","Weihnachtsmarkt","Containerstellplätze"],
           datasets: [{
             label: 'Euro',
-            data: [120600,312000,33900,44000,112700],
+            data: [312000,112700,120600,44000,33900],
             borderWidth: 1
           }]
         },
@@ -204,15 +204,15 @@
       
 
       
-      var expenesesProductLinks = ["/3/1/1/1/11/product.html","/3/2/5/3/01/product.html","/3/3/6/6/02/product.html","/3/5/5/1/01/product.html","/3/5/5/3/01/product.html","/3/5/5/5/01/product.html","/3/5/7/5/02/product.html","/3/5/7/5/04/product.html"];
-      var expensesCanvas = document.getElementById('chartjs-4b6575e6-8447-4b24-a52d-d6b40ea05da7');
+      var expenesesProductLinks = ["/3/5/7/5/04/product.html","/3/2/5/3/01/product.html","/3/3/6/6/02/product.html","/3/5/5/1/01/product.html","/3/5/5/5/01/product.html","/3/1/1/1/11/product.html","/3/5/5/3/01/product.html","/3/5/7/5/02/product.html"];
+      var expensesCanvas = document.getElementById('chartjs_products_expenses');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {
-          labels: ["Bauhof","Wildpark","Spielplätze","Öffentliches Grün","Friedhofs- und Bestattungswesen","Forstwirtschaft und Wirtschaftswege","Touristische Wanderwege","Schierker Feuerstein Arena"],
+          labels: ["Schierker Feuerstein Arena","Wildpark","Spielplätze","Öffentliches Grün","Forstwirtschaft und Wirtschaftswege","Bauhof","Friedhofs- und Bestattungswesen","Touristische Wanderwege"],
           datasets: [{
             label: 'Euro',
-            data: [-2901400,-270800,-47100,-1689100,-306600,-513200,-124800,-476100],
+            data: [-476100,-270800,-47100,-1689100,-513200,-2901400,-306600,-124800],
             borderWidth: 1
           }]
         },

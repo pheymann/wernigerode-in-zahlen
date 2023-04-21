@@ -38,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 3.200,00€</h5>
-                <canvas id="chartjs_584404b0_7106_4c08_a042_17c693b1e23b"></canvas>
+                <canvas id="chartjs_administration_income"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -128.000,00€</h5>
-                <canvas id="chartjs_fb441a14_a72f_4c92_8a79_fa0d70b41ad4"></canvas>
+                <canvas id="chartjs_administration_expenses"></canvas>
               </div>
             </div>
           
@@ -165,7 +165,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_584404b0_7106_4c08_a042_17c693b1e23b'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_administration_income'), {
             type: 'doughnut',
             data: {
               labels: ["Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus dem Verkauf von Vorrüten (Holzverkauf)","Einzahlungen aus Kostenerstattungen von übrigen Bereichen"],
@@ -187,7 +187,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_fb441a14_a72f_4c92_8a79_fa0d70b41ad4'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_administration_expenses'), {
             type: 'doughnut',
             data: {
               labels: ["Unterhaltung des sonstigen unbeweglichen Vermügens","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Erwerb geringwertiger Vermügensgegenstünde","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Geschüftsauszahlungen","Erstatt. f.d. Ausz. v. Dritten aus lfd Verwaltungstüt. an so. üff. Sonderrechn."],

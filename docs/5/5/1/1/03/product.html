@@ -45,11 +45,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 100.000,00€</h5>
-                <canvas id="chartjs_06ca6dba_21a4_447c_b0b0_06d72bd28e7a"></canvas>
+                <canvas id="chartjs_investments_income"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -150.000,00€</h5>
-                <canvas id="chartjs_bcaa3a5f_62a7_4353_94db_228f47170bfb"></canvas>
+                <canvas id="chartjs_investments_expenses"></canvas>
               </div>
             </div>
           
@@ -113,7 +113,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_06ca6dba_21a4_447c_b0b0_06d72bd28e7a'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_investments_income'), {
             type: 'doughnut',
             data: {
               labels: [],
@@ -135,7 +135,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_bcaa3a5f_62a7_4353_94db_228f47170bfb'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_investments_expenses'), {
             type: 'doughnut',
             data: {
               labels: [],

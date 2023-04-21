@@ -38,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 133.900,00€</h5>
-                <canvas id="chartjs_cdef5649_fbc0_41ad_971b_0007da71ec38"></canvas>
+                <canvas id="chartjs_administration_income"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -1.182.300,00€</h5>
-                <canvas id="chartjs_7d8a6ea5_4307_4677_9760_8e0790bcb31e"></canvas>
+                <canvas id="chartjs_administration_expenses"></canvas>
               </div>
             </div>
           
@@ -53,11 +53,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 180.000,00€</h5>
-                <canvas id="chartjs_56e4630f_a56d_434e_830d_1f07c44a7d62"></canvas>
+                <canvas id="chartjs_investments_income"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -827.600,00€</h5>
-                <canvas id="chartjs_ad5efc03_38f7_46e9_9db7_1ba18161403e"></canvas>
+                <canvas id="chartjs_investments_expenses"></canvas>
               </div>
             </div>
           
@@ -233,7 +233,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_cdef5649_fbc0_41ad_971b_0007da71ec38'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_administration_income'), {
             type: 'doughnut',
             data: {
               labels: ["Zuweisungen für laufende Zwecke vom Land","19% Ust Benutzungsgebühren \u0026 ähnl. Entgelte","19 % USt Erträge Miete/ Pacht","19% USt. Erträge aus Kostenerstattungen v Gemeinden und Gemeindeverbünden","Einzahlungen aus Kostenerstattungen von übrigen Bereichen"],
@@ -255,7 +255,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_7d8a6ea5_4307_4677_9760_8e0790bcb31e'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_administration_expenses'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung der Grundstücke und baulichen Anlagen","Unterhaltung der Grundstücke und baulichen Anlagen-Gebüudemanagement","Unterhaltung des sonstigen unbeweglichen Vermügens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Erwerb geringwertiger Vermügensgegenstünde","Unterhaltung des sonstigen beweglichen Vermügens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für sonstige Dienstleistungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschüftsauszahlungen","Erstatt. f.d. Ausz. v. Dritten aus lfd. Verwaltungstütigkeit an Gemeinde\u0026 GV"],
@@ -278,7 +278,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_56e4630f_a56d_434e_830d_1f07c44a7d62'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_investments_income'), {
             type: 'doughnut',
             data: {
               labels: [],
@@ -300,7 +300,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_ad5efc03_38f7_46e9_9db7_1ba18161403e'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_investments_expenses'), {
             type: 'doughnut',
             data: {
               labels: [],

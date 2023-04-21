@@ -4,7 +4,6 @@ import (
 	"bytes"
 	"html/template"
 
-	"github.com/google/uuid"
 	htmlOverviewtEncoder "wernigerode-in-zahlen.de/internal/pkg/encoder/html/overview"
 	"wernigerode-in-zahlen.de/internal/pkg/model"
 	"wernigerode-in-zahlen.de/internal/pkg/model/html"
@@ -13,13 +12,13 @@ import (
 func GenerateOverview(plan model.FinancialPlanCity, budgetYear model.BudgetYear, overviewTmpl *template.Template) (model.TargetFile, string) {
 	var incomeDepartmentLinks = []string{}
 	chartIncomeDataPerDepartment := html.ChartJSDataset{
-		ID:           "chartjs-" + uuid.New().String(),
+		ID:           "chartjs_departments_income",
 		DatasetLabel: "Einnahmen",
 	}
 
 	var expensesDepartmentLinks = []string{}
 	chartExpensesDataPerDepartment := html.ChartJSDataset{
-		ID:           "chartjs-" + uuid.New().String(),
+		ID:           "chartjs_departments_expenses",
 		DatasetLabel: "Ausgaben",
 	}
 

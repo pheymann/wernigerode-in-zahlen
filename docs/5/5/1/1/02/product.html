@@ -38,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 10.700,00€</h5>
-                <canvas id="chartjs_b8800489_1608_4cda_8ccf_c508eef78a9c"></canvas>
+                <canvas id="chartjs_administration_income"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -869.200,00€</h5>
-                <canvas id="chartjs_7b638a41_0d8e_46ad_a56f_40ad0112c722"></canvas>
+                <canvas id="chartjs_administration_expenses"></canvas>
               </div>
             </div>
           
@@ -53,11 +53,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 349.200,00€</h5>
-                <canvas id="chartjs_8b261fd4_1bb6_48e9_847d_e3fa214546f8"></canvas>
+                <canvas id="chartjs_investments_income"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -604.200,00€</h5>
-                <canvas id="chartjs_93e189d7_4999_458f_9df3_699593f479f3"></canvas>
+                <canvas id="chartjs_investments_expenses"></canvas>
               </div>
             </div>
           
@@ -193,7 +193,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_b8800489_1608_4cda_8ccf_c508eef78a9c'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_administration_income'), {
             type: 'doughnut',
             data: {
               labels: ["Verwaltungsgebühren","Einzahlungen aus Kostenerstattungen vom Land"],
@@ -215,7 +215,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_7b638a41_0d8e_46ad_a56f_40ad0112c722'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_administration_expenses'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Sonstige Personal- und Versorgungsauszahlungen","Geschüftsauszahlungen","Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten","Auszahlungen für Planungsleistungen","Sonstige Finanzauszahlungen"],
@@ -238,7 +238,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_8b261fd4_1bb6_48e9_847d_e3fa214546f8'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_investments_income'), {
             type: 'doughnut',
             data: {
               labels: [],
@@ -260,7 +260,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_93e189d7_4999_458f_9df3_699593f479f3'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_investments_expenses'), {
             type: 'doughnut',
             data: {
               labels: [],

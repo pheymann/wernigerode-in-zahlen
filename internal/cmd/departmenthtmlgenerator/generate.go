@@ -6,7 +6,6 @@ import (
 	"html/template"
 	"sort"
 
-	"github.com/google/uuid"
 	htmlDepartmentEncoder "wernigerode-in-zahlen.de/internal/pkg/encoder/html/department"
 	"wernigerode-in-zahlen.de/internal/pkg/model"
 	html "wernigerode-in-zahlen.de/internal/pkg/model/html"
@@ -23,14 +22,14 @@ func Generate(
 	var incomeTotalCashFlow = 0.0
 	var incomeProductLinks = []string{}
 	chartIncomeDataPerProduct := html.ChartJSDataset{
-		ID:           "chartjs-" + uuid.New().String(),
+		ID:           "chartjs_product_income",
 		DatasetLabel: "Einnahmen",
 	}
 
 	var expensesTotalCashFlow = 0.0
 	var expensesProductLinks = []string{}
 	chartExpensesDataPerProduct := html.ChartJSDataset{
-		ID:           "chartjs-" + uuid.New().String(),
+		ID:           "chartjs_product_expenses",
 		DatasetLabel: "Ausgaben",
 	}
 

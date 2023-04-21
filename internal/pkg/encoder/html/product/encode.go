@@ -4,9 +4,7 @@ import (
 	"fmt"
 	"html/template"
 	"sort"
-	"strings"
 
-	"github.com/google/uuid"
 	"golang.org/x/text/message"
 	encodeHtml "wernigerode-in-zahlen.de/internal/pkg/encoder/html"
 	"wernigerode-in-zahlen.de/internal/pkg/model"
@@ -91,20 +89,22 @@ func balanceToSection(balance model.AccountBalance2, year model.BudgetYear, p *m
 	hasIncome := shared.IsUnequal(balance.Cashflow.Income[year], 0.0)
 	hasExpenses := shared.IsUnequal(balance.Cashflow.Expenses[year], 0.0)
 
+	chartIDUniq := balance.Type
+
 	section := html.BalanceSection{
-		ID: strings.ReplaceAll("balance-"+uuid.New().String(), "-", ""),
+		ID: "balance_" + chartIDUniq,
 
 		HasIncomeAndExpenses: hasIncome && hasExpenses,
 
 		HasIncome:            hasIncome,
 		HasMoreThanOneIncome: len(adminAccountsIncome) > 1,
 		IncomeCashflowTotal:  balance.Cashflow.Income[year],
-		Income:               dataPointsToChartJSDataset(adminAccountsIncome, year),
+		Income:               dataPointsToChartJSDataset(adminAccountsIncome, year, chartIDUniq+"_income"),
 
 		HasExpenses:           hasExpenses,
 		HasMoreThanOneExpense: len(adminAccountsExpenses) > 1,
 		ExpensesCashflowTotal: balance.Cashflow.Expenses[year],
-		Expenses:              dataPointsToChartJSDataset(adminAccountsExpenses, year),
+		Expenses:              dataPointsToChartJSDataset(adminAccountsExpenses, year, chartIDUniq+"_expenses"),
 
 		Copy: html.BalanceSectionCopy{
 			Header:                encodeBalanceSectionHeader(balance, year, p),
@@ -140,13 +140,13 @@ func subProductsToSection(plan model.FinancialPlanProduct, year model.BudgetYear
 	}
 
 	section := html.BalanceSection{
-		ID: strings.ReplaceAll("balance-sub-product-"+uuid.New().String(), "-", "_"),
+		ID: "balance_sub_products",
 		Income: html.ChartJSDataset{
-			ID:           strings.ReplaceAll("chartjs-"+uuid.New().String(), "-", "_"),
+			ID:           "chartjs_sub_products_income",
 			DatasetLabel: "Einnahmen",
 		},
 		Expenses: html.ChartJSDataset{
-			ID:           strings.ReplaceAll("chartjs-"+uuid.New().String(), "-", "_"),
+			ID:           "chartjs_sub_products_income",
 			DatasetLabel: "Ausgaben",
 		},
 	}
@@ -214,7 +214,7 @@ func encodeAccountCopy(data []html.AccountTableData, p *message.Printer) []html.
 	return accountCopy
 }
 
-func dataPointsToChartJSDataset(accounts []model.Account2, year model.BudgetYear) html.ChartJSDataset {
+func dataPointsToChartJSDataset(accounts []model.Account2, year model.BudgetYear, chartIDUniq string) html.ChartJSDataset {
 	var labels = []string{}
 	var data = []float64{}
 
@@ -226,7 +226,7 @@ func dataPointsToChartJSDataset(accounts []model.Account2, year model.BudgetYear
 	}
 
 	return html.ChartJSDataset{
-		ID:           strings.ReplaceAll("chartjs-"+uuid.New().String(), "-", "_"),
+		ID:           "chartjs_" + chartIDUniq,
 		Labels:       labels,
 		DatasetLabel: "Budget",
 		Data:         data,

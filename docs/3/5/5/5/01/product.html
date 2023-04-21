@@ -38,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 317.000,00€</h5>
-                <canvas id="chartjs_da84c04e_1021_4b3a_b3ff_4ca65c4dcbfb"></canvas>
+                <canvas id="chartjs_administration_income"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -823.200,00€</h5>
-                <canvas id="chartjs_a6f8944b_fd77_4110_ba73_5e264a26ddca"></canvas>
+                <canvas id="chartjs_administration_expenses"></canvas>
               </div>
             </div>
           
@@ -53,7 +53,7 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs_c0e5accb_f610_4024_9cde_72028097938e"></canvas>
+                <canvas id="chartjs_investments_expenses"></canvas>
               </div>
             
           
@@ -224,7 +224,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_da84c04e_1021_4b3a_b3ff_4ca65c4dcbfb'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_administration_income'), {
             type: 'doughnut',
             data: {
               labels: ["Zuweisungen für laufende Zwecke vom Land","Verwaltungsgebühren","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus Mieten und Pachten","Einzahlungen aus dem Verkauf von Vorrüten","Einzahlungen aus Kostenerstattungen von übrigen Bereichen"],
@@ -246,7 +246,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_a6f8944b_fd77_4110_ba73_5e264a26ddca'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_administration_expenses'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung des sonstigen unbeweglichen Vermügens","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Erwerb geringwertiger Vermügensgegenstünde","Unterhaltung des sonstigen beweglichen Vermügens","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für sonstige Dienstleistungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten","Erstattungen für die Auszahl. von Dritten aus lfd. Verwaltungstüt. an das Land","Erstatt. für die Auszahl. von Dritten aus lfd. Verwaltungstüt. an übrige Ber."],
@@ -270,7 +270,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_c0e5accb_f610_4024_9cde_72028097938e'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_investments_expenses'), {
             type: 'doughnut',
             data: {
               labels: [],

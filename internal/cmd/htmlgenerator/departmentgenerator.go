@@ -5,7 +5,6 @@ import (
 	"html/template"
 	"sort"
 
-	"github.com/google/uuid"
 	htmlDepartmentEncoder "wernigerode-in-zahlen.de/internal/pkg/encoder/html/department"
 	"wernigerode-in-zahlen.de/internal/pkg/model"
 	"wernigerode-in-zahlen.de/internal/pkg/model/html"
@@ -25,13 +24,13 @@ func GenerateDepartments(plan model.FinancialPlanCity, budgetYear model.BudgetYe
 func generateDepartment(department model.FinancialPlanDepartment, budgetYear model.BudgetYear, departmentTmpl *template.Template) shared.Pair[model.TargetFile, string] {
 	var incomeProductLinks = []string{}
 	chartIncomeDataPerProduct := html.ChartJSDataset{
-		ID:           "chartjs-" + uuid.New().String(),
+		ID:           "chartjs_products_income",
 		DatasetLabel: "Einnahmen",
 	}
 
 	var expensesProductLinks = []string{}
 	chartExpensesDataPerProduct := html.ChartJSDataset{
-		ID:           "chartjs-" + uuid.New().String(),
+		ID:           "chartjs_products_expenses",
 		DatasetLabel: "Ausgaben",
 	}
 

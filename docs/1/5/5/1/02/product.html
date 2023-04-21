@@ -38,7 +38,7 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs_4f637d36_e336_4bb0_af8d_0a6ab6334e49"></canvas>
+                <canvas id="chartjs_administration_expenses"></canvas>
               </div>
             
           
@@ -49,11 +49,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 958.900,00€</h5>
-                <canvas id="chartjs_57da4d2b_857d_40a2_b535_3a4ddebf3101"></canvas>
+                <canvas id="chartjs_investments_income"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -959.500,00€</h5>
-                <canvas id="chartjs_4ab8fe7f_74be_4661_a89c_1b1d9425d535"></canvas>
+                <canvas id="chartjs_investments_expenses"></canvas>
               </div>
             </div>
           
@@ -120,7 +120,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_4f637d36_e336_4bb0_af8d_0a6ab6334e49'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_administration_expenses'), {
             type: 'doughnut',
             data: {
               labels: ["Zuschüsse an verbundene Unternehmen, Sondervermügen und Beteiligungen"],
@@ -143,7 +143,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_57da4d2b_857d_40a2_b535_3a4ddebf3101'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_investments_income'), {
             type: 'doughnut',
             data: {
               labels: [],
@@ -165,7 +165,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_4ab8fe7f_74be_4661_a89c_1b1d9425d535'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_investments_expenses'), {
             type: 'doughnut',
             data: {
               labels: [],

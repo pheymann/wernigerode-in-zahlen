@@ -38,11 +38,11 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 165.700,00€</h5>
-                <canvas id="chartjs_de451a7d_9213_4c01_84a1_43a4af2b5381"></canvas>
+                <canvas id="chartjs_administration_income"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -1.735.300,00€</h5>
-                <canvas id="chartjs_4f860ee7_8c0f_4d68_895b_392e648047d0"></canvas>
+                <canvas id="chartjs_administration_expenses"></canvas>
               </div>
             </div>
           
@@ -195,7 +195,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_de451a7d_9213_4c01_84a1_43a4af2b5381'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_administration_income'), {
             type: 'doughnut',
             data: {
               labels: ["Zuweisungen für laufende Zwecke von gesetzlichen Sozialversicherungen  (Koba)","Verwaltungsgebühren","Einzahlungen aus Kostenerstattungen von sonstigen öffentlichen Sonderrechnungen","Erstattungen von Steuern","Süumniszuschlüge","Andere sonstige Einzahlungen aus laufender Verwaltungstütigkeit"],
@@ -217,7 +217,7 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_4f860ee7_8c0f_4d68_895b_392e648047d0'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_administration_expenses'), {
             type: 'doughnut',
             data: {
               labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für Leasing","Auszahlungen für sonstige Dienstleistungen","Geschüftsauszahlungen","Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten","Auszahlungen für Honorare"],
