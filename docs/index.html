@@ -160,15 +160,15 @@
         });
       
 
-      var expensesDepartmentLinks = ["/1/department.html","/3/department.html","/4/department.html","/5/department.html"];
+      var expensesDepartmentLinks = ["/4/department.html","/5/department.html","/1/department.html","/3/department.html"];
       var expensesCanvas = document.getElementById('chartjs_departments_expenses');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {
-          labels: ["Budget Oberbürgermeister","Budget Betriebsbereiche","Budget Bürgerservice","Budget Stadtentwicklung"],
+          labels: ["Budget Bürgerservice","Budget Stadtentwicklung","Budget Oberbürgermeister","Budget Betriebsbereiche"],
           datasets: [{
             label: 'Euro',
-            data: [-6721800,-5705900,-19425000,-6932700],
+            data: [-19425000,-6932700,-6721800,-5705900],
             borderWidth: 1
           }]
         },

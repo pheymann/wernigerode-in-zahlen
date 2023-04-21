@@ -35,26 +35,14 @@
           <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-6.259.500,00€</span></h3>
 
           
-            <div class="row">
-              <div class="col-6">
-                <h5 class="center">Einnahmen: 8.862.300,00€</h5>
-                <canvas id="chartjs_administration_income"></canvas>
-              </div>
-              <div class="col-6">
-                <h5 class="center">Ausgaben: -15.121.800,00€</h5>
-                <canvas id="chartjs_administration_expenses"></canvas>
-              </div>
-            </div>
+            
+            
           
       
           <h3>- Investitionen kosten <span class="total-cashflow-expenses">-306.600,00€</span></h3>
 
           
             
-            
-              <div class="padded-chart">
-                <canvas id="chartjs_investments_expenses"></canvas>
-              </div>
             
           
       
@@ -128,72 +116,9 @@
     <script>
       
         
-          var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_administration_income'), {
-            type: 'doughnut',
-            data: {
-              labels: [],
-              datasets: [{
-                label: 'Euro',
-                data: [],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              },
-              
-            }
-          });
-        
-        
-          var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_administration_expenses'), {
-            type: 'doughnut',
-            data: {
-              labels: [],
-              datasets: [{
-                label: 'Euro',
-                data: [],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              },
-              
-            }
-          });
         
       
         
-        
-          var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_investments_expenses'), {
-            type: 'doughnut',
-            data: {
-              labels: [],
-              datasets: [{
-                label: 'Euro',
-                data: [],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              },
-              
-            }
-          });
         
       
         

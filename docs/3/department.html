@@ -177,15 +177,15 @@
     <script src="/js/chart.js"></script>
     <script>
       
-      var incomeProductLinks = ["/3/5/4/5/01/product.html","/3/1/1/1/12/product.html","/3/2/8/1/02/product.html","/3/5/4/6/02/product.html","/3/5/5/1/03/product.html"];
+      var incomeProductLinks = ["/3/5/5/1/03/product.html","/3/2/8/1/02/product.html","/3/5/4/5/01/product.html","/3/5/4/6/02/product.html","/3/1/1/1/12/product.html"];
       var incomeCanvas = document.getElementById('chartjs_products_income');
       var incomeChart = new Chart(incomeCanvas, {
         type: 'doughnut',
         data: {
-          labels: ["Straßenreinigung/Winterdienst","Dienstleistungen für Dritte (Bauhof)","Weihnachtsmarkt","Parkraumbewirtschaftung Schierke","Containerstellplätze"],
+          labels: ["Containerstellplätze","Weihnachtsmarkt","Straßenreinigung/Winterdienst","Parkraumbewirtschaftung Schierke","Dienstleistungen für Dritte (Bauhof)"],
           datasets: [{
             label: 'Euro',
-            data: [312000,120600,44000,112700,33900],
+            data: [33900,44000,312000,112700,120600],
             borderWidth: 1
           }]
         },
@@ -204,15 +204,15 @@
       
 
       
-      var expenesesProductLinks = ["/3/5/5/1/01/product.html","/3/5/5/5/01/product.html","/3/5/7/5/02/product.html","/3/5/7/5/04/product.html","/3/3/6/6/02/product.html","/3/5/5/3/01/product.html","/3/1/1/1/11/product.html","/3/2/5/3/01/product.html"];
+      var expenesesProductLinks = ["/3/5/5/3/01/product.html","/3/5/5/5/01/product.html","/3/3/6/6/02/product.html","/3/5/5/1/01/product.html","/3/5/7/5/04/product.html","/3/1/1/1/11/product.html","/3/2/5/3/01/product.html","/3/5/7/5/02/product.html"];
       var expensesCanvas = document.getElementById('chartjs_products_expenses');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {
-          labels: ["Öffentliches Grün","Forstwirtschaft und Wirtschaftswege","Touristische Wanderwege","Schierker Feuerstein Arena","Spielplätze","Friedhofs- und Bestattungswesen","Bauhof","Wildpark"],
+          labels: ["Friedhofs- und Bestattungswesen","Forstwirtschaft und Wirtschaftswege","Spielplätze","Öffentliches Grün","Schierker Feuerstein Arena","Bauhof","Wildpark","Touristische Wanderwege"],
           datasets: [{
             label: 'Euro',
-            data: [-1689100,-513200,-124800,-476100,-47100,-306600,-2901400,-270800],
+            data: [-306600,-513200,-47100,-1689100,-476100,-2901400,-270800,-124800],
             borderWidth: 1
           }]
         },

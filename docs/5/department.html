@@ -218,15 +218,15 @@
       
 
       
-      var expenesesProductLinks = ["/5/5/1/1/01/product.html","/5/5/1/1/02/product.html","/5/5/1/1/03/product.html","/5/5/4/5/02/product.html","/5/5/6/1/01/product.html","/5/1/1/1/14/product.html","/5/1/1/1/15/product.html","/5/5/2/3/01/product.html","/5/5/2/3/02/product.html","/5/5/5/2/01/product.html","/5/5/7/5/03/product.html","/5/5/1/1/04/product.html","/5/5/4/1/01/product.html","/5/5/4/7/02/product.html"];
+      var expenesesProductLinks = ["/5/5/1/1/01/product.html","/5/5/2/3/01/product.html","/5/5/4/5/02/product.html","/5/5/1/1/04/product.html","/5/5/2/3/02/product.html","/5/5/4/7/02/product.html","/5/5/6/1/01/product.html","/5/1/1/1/15/product.html","/5/5/1/1/03/product.html","/5/5/5/2/01/product.html","/5/1/1/1/14/product.html","/5/5/1/1/02/product.html","/5/5/4/1/01/product.html","/5/5/7/5/03/product.html"];
       var expensesCanvas = document.getElementById('chartjs_products_expenses');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {
-          labels: ["Räumliche Planung","Räumliche Entwicklung","Sozialer Zusammenhalt","Straßenbeleuchtung","Umweltschutz","Gebäudemanagement","Gebäudereinigung","Denkmalschutz","Lebendige Zentren","Öffentliche Gewässer/ Wasserbauliche Anlagen","Ortsentwicklung Schierke","Wachstum und nachhaltige Erneuerung","Gemeindestraßen","Harzer Verkehrsbetriebe GmbH"],
+          labels: ["Räumliche Planung","Denkmalschutz","Straßenbeleuchtung","Wachstum und nachhaltige Erneuerung","Lebendige Zentren","Harzer Verkehrsbetriebe GmbH","Umweltschutz","Gebäudereinigung","Sozialer Zusammenhalt","Öffentliche Gewässer/ Wasserbauliche Anlagen","Gebäudemanagement","Räumliche Entwicklung","Gemeindestraßen","Ortsentwicklung Schierke"],
           datasets: [{
             label: 'Euro',
-            data: [-941800,-1113500,-50000,-955000,-89000,-1550000,-2609000,-78800,-180500,-730600,-36000,-50000,-2207500,-346500],
+            data: [-941800,-78800,-955000,-50000,-180500,-346500,-89000,-2609000,-50000,-730600,-1550000,-1113500,-2207500,-36000],
             borderWidth: 1
           }]
         },

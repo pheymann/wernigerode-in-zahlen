@@ -82,12 +82,12 @@ func balanceDataToSections(plan model.FinancialPlanProduct, year model.BudgetYea
 }
 
 func balanceToSection(balance model.AccountBalance2, year model.BudgetYear, p *message.Printer) html.BalanceSection {
-	adminAccountsSplit := splitAccountsByType(balance.Accounts)
-	adminAccountsIncome := adminAccountsSplit.First
-	adminAccountsExpenses := adminAccountsSplit.Second
+	accountsSplit := splitAccountsByType(balance.Accounts, year)
+	accountsIncome := accountsSplit.First
+	accountsExpenses := accountsSplit.Second
 
-	hasIncome := shared.IsUnequal(balance.Cashflow.Income[year], 0.0)
-	hasExpenses := shared.IsUnequal(balance.Cashflow.Expenses[year], 0.0)
+	hasIncome := len(accountsIncome) > 0
+	hasExpenses := len(accountsExpenses) > 0
 
 	chartIDUniq := balance.Type
 
@@ -97,14 +97,14 @@ func balanceToSection(balance model.AccountBalance2, year model.BudgetYear, p *m
 		HasIncomeAndExpenses: hasIncome && hasExpenses,
 
 		HasIncome:            hasIncome,
-		HasMoreThanOneIncome: len(adminAccountsIncome) > 1,
+		HasMoreThanOneIncome: len(accountsIncome) > 1,
 		IncomeCashflowTotal:  balance.Cashflow.Income[year],
-		Income:               dataPointsToChartJSDataset(adminAccountsIncome, year, chartIDUniq+"_income"),
+		Income:               dataPointsToChartJSDataset(accountsIncome, year, chartIDUniq+"_income"),
 
 		HasExpenses:           hasExpenses,
-		HasMoreThanOneExpense: len(adminAccountsExpenses) > 1,
+		HasMoreThanOneExpense: len(accountsExpenses) > 1,
 		ExpensesCashflowTotal: balance.Cashflow.Expenses[year],
-		Expenses:              dataPointsToChartJSDataset(adminAccountsExpenses, year, chartIDUniq+"_expenses"),
+		Expenses:              dataPointsToChartJSDataset(accountsExpenses, year, chartIDUniq+"_expenses"),
 
 		Copy: html.BalanceSectionCopy{
 			Header:                encodeBalanceSectionHeader(balance, year, p),
@@ -119,11 +119,15 @@ func balanceToSection(balance model.AccountBalance2, year model.BudgetYear, p *m
 	return section
 }
 
-func splitAccountsByType(accounts []model.Account2) shared.Pair[[]model.Account2, []model.Account2] {
+func splitAccountsByType(accounts []model.Account2, year model.BudgetYear) shared.Pair[[]model.Account2, []model.Account2] {
 	var income = make([]model.Account2, 0)
 	var expenses = make([]model.Account2, 0)
 
 	for _, account := range accounts {
+		if !shared.IsUnequal(account.Budget[year], 0.0) {
+			continue
+		}
+
 		if account.Type == model.Account2TypeIncome {
 			income = append(income, account)
 		} else if account.Type == model.Account2TypeExpense {
