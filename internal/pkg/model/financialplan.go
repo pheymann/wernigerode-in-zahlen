@@ -1,9 +1,31 @@
 package model
 
+import "fmt"
+
 type ID = string
 
 type FinancialPlan struct {
 	Balances []AccountBalance
+}
+
+type FinancialPlanCity struct {
+	AdministrationBalance Cashflow
+	InvestmentsBalance    Cashflow
+	Cashflow              Cashflow
+	Departments           map[ID]FinancialPlanDepartment
+}
+
+type FinancialPlanDepartment struct {
+	ID                    ID
+	Name                  string
+	AdministrationBalance Cashflow
+	InvestmentsBalance    Cashflow
+	Cashflow              Cashflow
+	Products              map[ID]FinancialPlanProduct
+}
+
+func (department FinancialPlanDepartment) CreateLink() string {
+	return fmt.Sprintf("/%s/department.html", department.ID)
 }
 
 type FinancialPlanProduct struct {
@@ -26,21 +48,6 @@ func NewFinancialPlanProduct() *FinancialPlanProduct {
 		},
 		Cashflow: NewCashFlow(),
 	}
-}
-
-type FinancialPlanDepartment struct {
-	DepartmentID          ID
-	AdministrationBalance Cashflow
-	InvestmentsBalance    Cashflow
-	Cashflow              Cashflow
-	Products              map[ID]FinancialPlanProduct
-}
-
-type FinancialPlanCity struct {
-	AdministrationBalance Cashflow
-	InvestmentsBalance    Cashflow
-	Cashflow              Cashflow
-	Departments           map[ID]FinancialPlanDepartment
 }
 
 type AccountBalance2 struct {

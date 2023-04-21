@@ -96,9 +96,9 @@ func cleanupFinancialPlans(financialDataFile *os.File, productToMetadata map[mod
 	for productID, productFinancialPlan := range productFinancialPlans {
 		departmentID := productFinancialPlan.Metadata.Department.ID
 
-		if departmentFinancialPlans[departmentID].DepartmentID == "" {
+		if departmentFinancialPlans[departmentID].ID == "" {
 			departmentFinancialPlans[departmentID] = model.FinancialPlanDepartment{
-				DepartmentID:          departmentID,
+				ID:                    departmentID,
 				Products:              make(map[model.ID]model.FinancialPlanProduct),
 				AdministrationBalance: model.NewCashFlow(),
 				InvestmentsBalance:    model.NewCashFlow(),

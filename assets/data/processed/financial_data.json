@@ -70,7 +70,8 @@
   },
   "Departments": {
     "1": {
-      "DepartmentID": "1",
+      "ID": "1",
+      "Name": "",
       "AdministrationBalance": {
         "Total": {
           "2022": -6155000,
@@ -4814,7 +4815,8 @@
       }
     },
     "2": {
-      "DepartmentID": "2",
+      "ID": "2",
+      "Name": "",
       "AdministrationBalance": {
         "Total": {
           "2022": 33324100,
@@ -6932,7 +6934,8 @@
       }
     },
     "3": {
-      "DepartmentID": "3",
+      "ID": "3",
+      "Name": "",
       "AdministrationBalance": {
         "Total": {
           "2022": -5510800,
@@ -13681,7 +13684,8 @@
       }
     },
     "4": {
-      "DepartmentID": "4",
+      "ID": "4",
+      "Name": "",
       "AdministrationBalance": {
         "Total": {
           "2022": -13509800,
@@ -34196,7 +34200,8 @@
       }
     },
     "5": {
-      "DepartmentID": "5",
+      "ID": "5",
+      "Name": "",
       "AdministrationBalance": {
         "Total": {
           "2022": -8586000,

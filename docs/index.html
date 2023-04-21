@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Haushaltsplan Wernigerode 2023. Die Stadt hat ein Budge von -4.723.200,00€."/>
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Die Stadt hat ein Budge von -3.379.700,00€."/>
   <meta name="keywords" content="Wernigerode,Haushaltsplan,2023"/>
   <meta name="author" content="Paul Heymann"/>
 
@@ -28,7 +28,7 @@
 			Alles startet mit der Gesamtübersicht. In 2023 planen wir
     </p>
 
-    <h2 class="total-cashflow-expenses center">-4.723.200,00€</h2>
+    <h2 class="total-cashflow-expenses center">-3.379.700,00€</h2>
 
     <p>
       auszugeben. Die Gelder teilen sich auf <b>5 Fachbereiche</b> auf und setzen sich aus den laufenden Verwaltungstätigkeiten
@@ -39,12 +39,12 @@
       <div class="container">
         <div class="row">
           <div class="col-6">
-            <h5 class="center">Einnahmen: 34.789.300,00€</h5>
-            <canvas id="chartjs-6c5d3994-543a-4d38-aa16-4b9b39a2f359"></canvas>
+            <h5 class="center">Einnahmen: 83.642.800,00€</h5>
+            <canvas id="chartjs-b365cd27-7059-41ef-976b-a73dd57a3c6d"></canvas>
           </div>
           <div class="col-6">
-            <h5 class="center">Ausgaben: -39.512.500,00€</h5>
-            <canvas id="chartjs-5bee6117-a98f-4a33-a9c4-66f0203475e9"></canvas>
+            <h5 class="center">Ausgaben: -87.022.500,00€</h5>
+            <canvas id="chartjs-9e9f52ee-715c-41d8-800c-d6ba3917bc9d"></canvas>
           </div>
         </div>
       </div>
@@ -68,45 +68,45 @@
           </tr>
           <tr>
             <th></th>
-            <th>-4.723.200,00€</th>
-            <th>-84.200,00€</th>
-            <th>-4.639.000,00€</th>
+            <th>-3.379.700,00€</th>
+            <th>-1.779.500,00€</th>
+            <th>-1.600.200,00€</th>
           </tr>
 
           
             <tr>
-              <td><a href="/3/department.html">Budget Betriebsbereiche</a></td>
-              <td>-5.804.200,00€</td>
-              <td>-5.494.400,00€</td>
-              <td>-309.800,00€</td>
+              <td><a href="/4/department.html"></a></td>
+              <td>-19.425.000,00€</td>
+              <td>-16.458.700,00€</td>
+              <td>-2.966.300,00€</td>
             </tr>
           
             <tr>
-              <td><a href="/4/department.html">Budget Bürgerservice</a></td>
-              <td>-16.632.300,00€</td>
-              <td>-13.744.000,00€</td>
-              <td>-2.888.300,00€</td>
+              <td><a href="/5/department.html"></a></td>
+              <td>-6.932.700,00€</td>
+              <td>-9.079.600,00€</td>
+              <td>2.146.900,00€</td>
             </tr>
           
             <tr>
-              <td><a href="/2/department.html">Budget Finanzen</a></td>
-              <td>34.789.300,00€</td>
-              <td>33.389.400,00€</td>
-              <td>1.399.900,00€</td>
+              <td><a href="/1/department.html"></a></td>
+              <td>-6.721.800,00€</td>
+              <td>-6.314.200,00€</td>
+              <td>-407.600,00€</td>
             </tr>
           
             <tr>
-              <td><a href="/5/department.html">Budget Stadtentwicklung</a></td>
-              <td>-10.904.000,00€</td>
-              <td>-8.554.200,00€</td>
-              <td>-2.349.800,00€</td>
+              <td><a href="/2/department.html"></a></td>
+              <td>35.405.700,00€</td>
+              <td>35.603.300,00€</td>
+              <td>-197.600,00€</td>
             </tr>
           
             <tr>
-              <td><a href="/1/department.html">Budget des Bürgermeisters</a></td>
-              <td>-6.172.000,00€</td>
-              <td>-5.681.000,00€</td>
-              <td>-491.000,00€</td>
+              <td><a href="/3/department.html"></a></td>
+              <td>-5.705.900,00€</td>
+              <td>-5.530.300,00€</td>
+              <td>-175.600,00€</td>
             </tr>
           
         </tbody>
@@ -135,14 +135,14 @@
     <script>
       
         var incomeDepartmentLinks = ["/2/department.html"];
-        var incomeCanvas = document.getElementById('chartjs-6c5d3994-543a-4d38-aa16-4b9b39a2f359');
+        var incomeCanvas = document.getElementById('chartjs-b365cd27-7059-41ef-976b-a73dd57a3c6d');
         var incomeChart = new Chart(incomeCanvas, {
           type: 'doughnut',
           data: {
-            labels: ["Budget Finanzen"],
+            labels: [""],
             datasets: [{
               label: 'Euro',
-              data: [34789300],
+              data: [35405700],
               borderWidth: 1
             }]
           },
@@ -160,15 +160,15 @@
         });
       
 
-      var expensesDepartmentLinks = ["/1/department.html","/3/department.html","/4/department.html","/5/department.html"];
-      var expensesCanvas = document.getElementById('chartjs-5bee6117-a98f-4a33-a9c4-66f0203475e9');
+      var expensesDepartmentLinks = ["/3/department.html","/4/department.html","/5/department.html","/1/department.html"];
+      var expensesCanvas = document.getElementById('chartjs-9e9f52ee-715c-41d8-800c-d6ba3917bc9d');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {
-          labels: ["Budget des Bürgermeisters","Budget Betriebsbereiche","Budget Bürgerservice","Budget Stadtentwicklung"],
+          labels: ["","","",""],
           datasets: [{
             label: 'Euro',
-            data: [-6172000,-5804200,-16632300,-10904000],
+            data: [-5705900,-19425000,-6932700,-6721800],
             borderWidth: 1
           }]
         },

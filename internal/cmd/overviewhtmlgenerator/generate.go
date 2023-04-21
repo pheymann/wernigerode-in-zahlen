@@ -2,11 +2,9 @@ package overviewhtmlgenerator
 
 import (
 	"bytes"
-	"html/template"
 	"sort"
 
 	"github.com/google/uuid"
-	htmlOverviewtEncoder "wernigerode-in-zahlen.de/internal/pkg/encoder/html/overview"
 	"wernigerode-in-zahlen.de/internal/pkg/model"
 	"wernigerode-in-zahlen.de/internal/pkg/model/html"
 )
@@ -51,32 +49,7 @@ func Generate(departments []model.CompressedDepartment, debugRootPath string) st
 		return departments[i].DepartmentName < departments[j].DepartmentName
 	})
 
-	year := model.BudgetYear2023
-
-	overviewTmpl := template.Must(template.ParseFiles(debugRootPath + "assets/html/templates/overview.template.html"))
-
 	var htmlBytes bytes.Buffer
-	if err := overviewTmpl.Execute(
-		&htmlBytes,
-		htmlOverviewtEncoder.Encode(
-			departments,
-			year,
-
-			cashflowTotal,
-			cashflowAdministration,
-			cashflowInvestments,
-
-			incomeTotalCashFlow,
-			incomeDepartmentLinks,
-			chartIncomeDataPerDepartment,
-
-			expensesTotalCashFlow,
-			expensesDepartmentLinks,
-			chartExpensesDataPerDepartment,
-		),
-	); err != nil {
-		panic(err)
-	}
 
 	return htmlBytes.String()
 }
