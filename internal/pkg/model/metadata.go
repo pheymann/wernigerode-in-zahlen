@@ -51,6 +51,16 @@ type SubProduct struct {
 	Name string
 }
 
+func (metadata Metadata) GetCanonicalProductID() ID {
+	return ID(fmt.Sprintf(
+		"%s.%s.%s.%s",
+		metadata.ProductClass.ID,
+		metadata.ProductDomain.ID,
+		metadata.ProductGroup.ID,
+		metadata.Product.ID,
+	))
+}
+
 func (metadata *Metadata) Validate() {
 	if metadata.Department.ID == "" {
 		panic(fmt.Sprintf("metadata.Department.ID is empty. Got: %+v", metadata))

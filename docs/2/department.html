@@ -34,11 +34,11 @@
         <div class="row">
           <div class="col-6">
             <h5 class="center">Einnahmen: 54.061.100,00€</h5>
-            <canvas id="chartjs-e829f923-0776-4d53-978d-dfd0ef773e35"></canvas>
+            <canvas id="chartjs-648e3b11-cffa-4b06-b9ad-e9cdf9be30cf"></canvas>
           </div>
           <div class="col-6">
             <h5 class="center">Ausgaben: -18.655.400,00€</h5>
-            <canvas id="chartjs-e27fcb8f-68ae-45a0-8d5d-61998a839f99"></canvas>
+            <canvas id="chartjs-b8643632-a217-41be-9b2a-7d6eddf3b793"></canvas>
           </div>
         </div>
       
@@ -142,15 +142,15 @@
     <script src="/js/chart.js"></script>
     <script>
       
-      var incomeProductLinks = ["/2/6/1/1/01/product.html","/2/5/3/1/01/product.html","/2/5/3/2/01/product.html","/2/5/3/3/01/product.html","/2/5/3/4/01/product.html","/2/5/3/5/01/product.html"];
-      var incomeCanvas = document.getElementById('chartjs-e829f923-0776-4d53-978d-dfd0ef773e35');
+      var incomeProductLinks = ["/2/5/3/5/01/product.html","/2/6/1/1/01/product.html","/2/5/3/1/01/product.html","/2/5/3/2/01/product.html","/2/5/3/3/01/product.html","/2/5/3/4/01/product.html"];
+      var incomeCanvas = document.getElementById('chartjs-648e3b11-cffa-4b06-b9ad-e9cdf9be30cf');
       var incomeChart = new Chart(incomeCanvas, {
         type: 'doughnut',
         data: {
-          labels: ["Steuern, allgemeine Zuweisungen, allgemeine Umlagen","Elektrizitätsversorgung (Konzessionsabgabe)","Gasversorgung (Konzessionsabgabe)","Wasserversorgung (Konzessionsabgabe)","Fernwärmeversorgung (Konzessionsabgabe)","Gewinnabführung Stadtwerke"],
+          labels: ["Gewinnabführung Stadtwerke","Steuern, allgemeine Zuweisungen, allgemeine Umlagen","Elektrizitätsversorgung (Konzessionsabgabe)","Gasversorgung (Konzessionsabgabe)","Wasserversorgung (Konzessionsabgabe)","Fernwärmeversorgung (Konzessionsabgabe)"],
           datasets: [{
             label: 'Euro',
-            data: [33604200,1148400,138600,548900,38000,4000000],
+            data: [4000000,33604200,1148400,138600,548900,38000],
             borderWidth: 1
           }]
         },
@@ -170,7 +170,7 @@
 
       
       var expenesesProductLinks = ["/2/6/1/2/01/product.html","/2/1/1/1/07/product.html"];
-      var expensesCanvas = document.getElementById('chartjs-e27fcb8f-68ae-45a0-8d5d-61998a839f99');
+      var expensesCanvas = document.getElementById('chartjs-b8643632-a217-41be-9b2a-7d6eddf3b793');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {

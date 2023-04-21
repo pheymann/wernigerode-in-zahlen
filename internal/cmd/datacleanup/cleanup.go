@@ -81,6 +81,7 @@ func cleanupFinancialPlans(financialDataFile *os.File, productToMetadata map[mod
 
 	productAccounts := fd.DecodeAccounts(rows)
 
+	subProductFinancialPlans := make(map[string][]model.FinancialPlanProduct)
 	productFinancialPlans := make(map[string]model.FinancialPlanProduct)
 	for productID, accounts := range productAccounts {
 		plan := fp.DecodeFromAccounts(accounts)
@@ -88,6 +89,32 @@ func cleanupFinancialPlans(financialDataFile *os.File, productToMetadata map[mod
 
 		if metaOpt.IsSome {
 			plan.Metadata = metaOpt.Value
+
+			if plan.IsSubProduct() {
+				subs := subProductFinancialPlans[plan.Metadata.GetCanonicalProductID()]
+				subProductFinancialPlans[plan.Metadata.GetCanonicalProductID()] = append(subs, plan)
+			} else {
+				productFinancialPlans[productID] = plan
+			}
+		}
+	}
+
+	for productID, subPlans := range subProductFinancialPlans {
+		metaOpt := findMetadata(productID, productToMetadata)
+
+		if metaOpt.IsSome {
+			plan := *model.NewFinancialPlanProduct()
+
+			plan.ID = productID
+			plan.Metadata = metaOpt.Value
+			plan.SubProducts = subPlans
+
+			for _, subPlan := range subPlans {
+				plan.AdministrationBalance.Cashflow = plan.AdministrationBalance.Cashflow.AddCashflow(subPlan.AdministrationBalance.Cashflow)
+				plan.InvestmentsBalance.Cashflow = plan.InvestmentsBalance.Cashflow.AddCashflow(subPlan.InvestmentsBalance.Cashflow)
+				plan.Cashflow = plan.Cashflow.AddCashflow(subPlan.Cashflow)
+			}
+
 			productFinancialPlans[productID] = plan
 		}
 	}

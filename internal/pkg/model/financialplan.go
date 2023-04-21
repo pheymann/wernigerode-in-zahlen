@@ -34,6 +34,7 @@ type FinancialPlanProduct struct {
 	InvestmentsBalance    AccountBalance2
 	Cashflow              Cashflow
 	Metadata              Metadata
+	SubProducts           []FinancialPlanProduct
 }
 
 func NewFinancialPlanProduct() *FinancialPlanProduct {
@@ -46,7 +47,8 @@ func NewFinancialPlanProduct() *FinancialPlanProduct {
 			Cashflow: NewCashFlow(),
 			Accounts: make([]Account2, 0),
 		},
-		Cashflow: NewCashFlow(),
+		Cashflow:    NewCashFlow(),
+		SubProducts: make([]FinancialPlanProduct, 0),
 	}
 }
 
@@ -59,6 +61,10 @@ func (product FinancialPlanProduct) CreateLink() string {
 		product.Metadata.ProductGroup.ID,
 		product.Metadata.Product.ID,
 	)
+}
+
+func (product FinancialPlanProduct) IsSubProduct() bool {
+	return product.Metadata.SubProduct != nil
 }
 
 type AccountBalance2 struct {

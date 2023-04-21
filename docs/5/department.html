@@ -34,11 +34,11 @@
         <div class="row">
           <div class="col-6">
             <h5 class="center">Einnahmen: 8.469.800,00€</h5>
-            <canvas id="chartjs-cbdbdfeb-0a47-49ab-9b9c-b501facb4a88"></canvas>
+            <canvas id="chartjs-8ec98796-e227-4c1f-a12e-d0b946faf922"></canvas>
           </div>
           <div class="col-6">
             <h5 class="center">Ausgaben: -15.402.500,00€</h5>
-            <canvas id="chartjs-27097575-0d38-4a1c-b30c-3b605213ba08"></canvas>
+            <canvas id="chartjs-9b383f2b-4a97-49ee-8ed5-b056f4aee4c9"></canvas>
           </div>
         </div>
       
@@ -192,7 +192,7 @@
     <script>
       
       var incomeProductLinks = ["/5/1/1/1/03/product.html"];
-      var incomeCanvas = document.getElementById('chartjs-cbdbdfeb-0a47-49ab-9b9c-b501facb4a88');
+      var incomeCanvas = document.getElementById('chartjs-8ec98796-e227-4c1f-a12e-d0b946faf922');
       var incomeChart = new Chart(incomeCanvas, {
         type: 'doughnut',
         data: {
@@ -218,15 +218,15 @@
       
 
       
-      var expenesesProductLinks = ["/5/5/1/1/03/product.html","/5/5/4/5/02/product.html","/5/5/4/7/02/product.html","/5/5/5/2/01/product.html","/5/1/1/1/15/product.html","/5/5/1/1/01/product.html","/5/1/1/1/14/product.html","/5/5/2/3/02/product.html","/5/5/6/1/01/product.html","/5/5/4/1/01/product.html","/5/5/7/5/03/product.html","/5/5/1/1/02/product.html","/5/5/1/1/04/product.html","/5/5/2/3/01/product.html"];
-      var expensesCanvas = document.getElementById('chartjs-27097575-0d38-4a1c-b30c-3b605213ba08');
+      var expenesesProductLinks = ["/5/5/1/1/03/product.html","/5/5/6/1/01/product.html","/5/5/7/5/03/product.html","/5/5/2/3/01/product.html","/5/5/4/5/02/product.html","/5/5/1/1/02/product.html","/5/5/5/2/01/product.html","/5/1/1/1/14/product.html","/5/1/1/1/15/product.html","/5/5/1/1/01/product.html","/5/5/1/1/04/product.html","/5/5/2/3/02/product.html","/5/5/4/1/01/product.html","/5/5/4/7/02/product.html"];
+      var expensesCanvas = document.getElementById('chartjs-9b383f2b-4a97-49ee-8ed5-b056f4aee4c9');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {
-          labels: ["Sozialer Zusammenhalt","Straßenbeleuchtung","Harzer Verkehrsbetriebe GmbH","Öffentliche Gewässer/ Wasserbauliche Anlagen","Gebäudereinigung","Räumliche Planung","Gebäudemanagement","Lebendige Zentren","Umweltschutz","Gemeindestraßen","Ortsentwicklung Schierke","Räumliche Entwicklung","Wachstum und nachhaltige Erneuerung","Denkmalschutz"],
+          labels: ["Sozialer Zusammenhalt","Umweltschutz","Ortsentwicklung Schierke","Denkmalschutz","Straßenbeleuchtung","Räumliche Entwicklung","Öffentliche Gewässer/ Wasserbauliche Anlagen","Gebäudemanagement","Gebäudereinigung","Räumliche Planung","Wachstum und nachhaltige Erneuerung","Lebendige Zentren","Gemeindestraßen","Harzer Verkehrsbetriebe GmbH"],
           datasets: [{
             label: 'Euro',
-            data: [-50000,-955000,-346500,-730600,-2609000,-941800,-1550000,-180500,-89000,-2207500,-36000,-1113500,-50000,-78800],
+            data: [-50000,-89000,-36000,-78800,-955000,-1113500,-730600,-1550000,-2609000,-941800,-50000,-180500,-2207500,-346500],
             borderWidth: 1
           }]
         },
