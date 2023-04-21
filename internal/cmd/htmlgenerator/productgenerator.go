@@ -18,6 +18,10 @@ func GenerateProducts(plan model.FinancialPlanCity, budgetYear model.BudgetYear,
 	for _, department := range plan.Departments {
 		for _, product := range department.Products {
 			pairs = append(pairs, generateProduct(product, budgetYear, productTmpl))
+
+			for _, subProduct := range product.SubProducts {
+				pairs = append(pairs, generateProduct(subProduct, budgetYear, productTmpl))
+			}
 		}
 	}
 
