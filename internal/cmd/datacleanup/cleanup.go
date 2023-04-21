@@ -43,13 +43,13 @@ func cleanupMetadata(metadataFile *os.File) model.Metadata {
 
 	metadataDecoder := decodeMeta.NewMetadataDecoder()
 
-	// defer func() {
-	// 	if r := recover(); r != nil {
-	// 		metadataDecoder.Debug()
-	// 		fmt.Printf("\n%+v\n", r)
-	// 		os.Exit(1)
-	// 	}
-	// }()
+	defer func() {
+		if r := recover(); r != nil {
+			metadataDecoder.Debug()
+			fmt.Printf("\n%+v\n", r)
+			os.Exit(1)
+		}
+	}()
 
 	metadata := metadataDecoder.DecodeFromCSV(metadataLines)
 

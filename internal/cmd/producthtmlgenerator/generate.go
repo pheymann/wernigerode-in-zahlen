@@ -9,7 +9,6 @@ import (
 	"golang.org/x/text/message"
 
 	fpDecoder "wernigerode-in-zahlen.de/internal/pkg/decoder/financialplan"
-	metaDecoder "wernigerode-in-zahlen.de/internal/pkg/decoder/metadata"
 	htmlProductEncoder "wernigerode-in-zahlen.de/internal/pkg/encoder/html/product"
 	"wernigerode-in-zahlen.de/internal/pkg/model"
 	"wernigerode-in-zahlen.de/internal/pkg/model/html"
@@ -20,8 +19,7 @@ func Generate(financialPlanJSON string, metadataJSON string, subProductData []ht
 	p := message.NewPrinter(language.German)
 
 	fp := fpDecoder.DecodeFromJSON(financialPlanJSON)
-	fpBalanceData, tableData, fpCashflow := readBalanceDataAndCashflow(fp, year)
-	metadata := metaDecoder.DecodeFromJSON(metadataJSON)
+	_, tableData, fpCashflow := readBalanceDataAndCashflow(fp, year)
 
 	sanityCheck(fpCashflow, tableData)
 
@@ -30,7 +28,7 @@ func Generate(financialPlanJSON string, metadataJSON string, subProductData []ht
 	var htmlBytes bytes.Buffer
 	if err := productTmpl.Execute(
 		&htmlBytes,
-		htmlProductEncoder.Encode(metadata, fpBalanceData, fpCashflow, tableData, subProductData, year, p),
+		htmlProductEncoder.Encode(*model.NewFinancialPlanProduct(), tableData, year, p),
 	); err != nil {
 		panic(err)
 	}

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Verwaltung d. Förderung v. Kindern in Tageseinrichtungen für Kinder des Fachbereichs Budget Bürgerservice hat ein Budge von -1.350.000,00€."/>
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Verwaltung d. Förderung v. Kindern in Tageseinrichtungen für Kinder des Fachbereichs Budget Bürgerservice hat ein Budge von -1.950.000,00€."/>
   <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Verwaltung d. Förderung v. Kindern in Tageseinrichtungen für Kinder,Budget Bürgerservice"/>
   <meta name="author" content="Paul Heymann"/>
 
@@ -23,7 +23,7 @@
       Das Produkt -  Aufgaben der leistungsverpflichteten Gemeinde nach Kinderförderungsgesetz - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-expenses center">-1.350.000,00€</h2>
+    <h2 class="total-cashflow-expenses center">-1.950.000,00€</h2>
 
     <p>
       kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
@@ -32,19 +32,26 @@
 
     <div class="container">
       
-          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-1.350.000,00€</span></h3>
+          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-1.950.000,00€</span></h3>
 
           
             <div class="row">
               <div class="col-6">
-                <h5 class="center">Einnahmen: 800.000,00€</h5>
-                <canvas id="chartjs_00e5364a_116f_4d83_92df_a3537d05109f"></canvas>
+                <h5 class="center">Einnahmen: 750.000,00€</h5>
+                <canvas id="chartjs_b21e6930_7880_4852_8edf_024f000fdc7d"></canvas>
               </div>
               <div class="col-6">
-                <h5 class="center">Ausgaben: -2.150.000,00€</h5>
-                <canvas id="chartjs_c5b7d55f_4773_44c4_973e_070405f63c05"></canvas>
+                <h5 class="center">Ausgaben: -2.700.000,00€</h5>
+                <canvas id="chartjs_c22f684d_6ca0_4984_b30d_4062c99d4aad"></canvas>
               </div>
             </div>
+          
+      
+          <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
+
+          
+            
+            
           
       
     </div>
@@ -78,17 +85,17 @@
           
             <tr>
               <td>Benutzungsgebühren und ähnliche Entgelte</td>
-              <td>550.000,00€</td>
+              <td>500.000,00€</td>
             </tr>
           
             <tr>
-              <td>Einzahlungen aus Kostenerstattungen von Gemeinden und Gemeindeverbänden</td>
+              <td>Einzahlungen aus Kostenerstattungen von Gemeinden und Gemeindeverbünden</td>
               <td>250.000,00€</td>
             </tr>
           
             <tr>
-              <td>Zuschüsse an übrige Bereiche (freie Träger)</td>
-              <td>-2.150.000,00€</td>
+              <td>Zuschüsse an übrige Bereiche (freie Trüger)</td>
+              <td>2.700.000,00€</td>
             </tr>
           
         </tbody>
@@ -118,13 +125,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_00e5364a_116f_4d83_92df_a3537d05109f'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_b21e6930_7880_4852_8edf_024f000fdc7d'), {
             type: 'doughnut',
             data: {
-              labels: ["Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus Kostenerstattungen von Gemeinden und Gemeindeverbänden"],
+              labels: ["Zuschüsse für laufende Zwecke von übrigen Bereichen","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus Kostenerstattungen von Gemeinden und Gemeindeverbünden"],
               datasets: [{
                 label: 'Euro',
-                data: [550000,250000],
+                data: [0,500000,250000],
                 borderWidth: 1
               }]
             },
@@ -140,13 +147,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_c5b7d55f_4773_44c4_973e_070405f63c05'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_c22f684d_6ca0_4984_b30d_4062c99d4aad'), {
             type: 'doughnut',
             data: {
-              labels: ["Zuschüsse an übrige Bereiche (freie Träger)"],
+              labels: ["Zuschüsse an übrige Bereiche (freie Trüger)"],
               datasets: [{
                 label: 'Euro',
-                data: [-2150000],
+                data: [2700000],
                 borderWidth: 1
               }]
             },
@@ -159,6 +166,9 @@
               
             }
           });
+        
+      
+        
         
       
     </script>

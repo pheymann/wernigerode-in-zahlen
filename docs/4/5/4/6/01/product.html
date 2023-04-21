@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Parkplätze/Parkflächen des Fachbereichs Budget Bürgerservice hat ein Budge von 699.200,00€."/>
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Parkplätze/Parkflächen des Fachbereichs Budget Bürgerservice hat ein Budge von 632.900,00€."/>
   <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Parkplätze/Parkflächen,Budget Bürgerservice"/>
   <meta name="author" content="Paul Heymann"/>
 
@@ -23,7 +23,7 @@
       Das Produkt -  Planung, Bau und Unterhaltung von Parkplätzen - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-income center">699.200,00€</h2>
+    <h2 class="total-cashflow-income center">632.900,00€</h2>
 
     <p>
       einbringen. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
@@ -32,29 +32,25 @@
 
     <div class="container">
       
-          <h3>- Die Verwaltung erwirtschaftet <span class="total-cashflow-income">719.200,00€</span></h3>
+          <h3>- Die Verwaltung erwirtschaftet <span class="total-cashflow-income">659.900,00€</span></h3>
 
           
             <div class="row">
               <div class="col-6">
-                <h5 class="center">Einnahmen: 800.000,00€</h5>
-                <canvas id="chartjs_74017e89_ebb3_4e90_a08b_76be105179c0"></canvas>
+                <h5 class="center">Einnahmen: 750.000,00€</h5>
+                <canvas id="chartjs_d0ee0b3e_837b_4e76_9e1f_bd74441e2a7a"></canvas>
               </div>
               <div class="col-6">
-                <h5 class="center">Ausgaben: -80.800,00€</h5>
-                <canvas id="chartjs_616a0ca4_7e9e_4b1d_b425_5a7206aef5af"></canvas>
+                <h5 class="center">Ausgaben: -90.100,00€</h5>
+                <canvas id="chartjs_8045ed1f_1dcd_4b31_a66a_a6a7dae1796e"></canvas>
               </div>
             </div>
           
       
-          <h3>- Investitionen kosten <span class="total-cashflow-expenses">-20.000,00€</span></h3>
+          <h3>- Investitionen kosten <span class="total-cashflow-expenses">-27.000,00€</span></h3>
 
           
             
-            
-              <div class="padded-chart">
-                <canvas id="chartjs_5a1836a5_43df_4a2e_aa66_1db6ae2e0682"></canvas>
-              </div>
             
           
       
@@ -88,43 +84,43 @@
 
           
             <tr>
-              <td>Auszahlungen für Mieten und Pachten</td>
-              <td>-2.900,00€</td>
+              <td>19% Ust BenutzGeb. &amp; ähnl. Ent</td>
+              <td>450.000,00€</td>
             </tr>
           
             <tr>
-              <td>Auszahlungen für sonstige Baumaßnahmen</td>
-              <td>-20.000,00€</td>
+              <td>Auszahlungen für Mieten und Pachten</td>
+              <td>3.200,00€</td>
             </tr>
           
             <tr>
               <td>Auszahlungen für sonstige Dienstleistungen</td>
-              <td>-2.500,00€</td>
+              <td>2.500,00€</td>
             </tr>
           
             <tr>
               <td>Benutzungsgebühren und ähnliche Entgelte</td>
-              <td>800.000,00€</td>
+              <td>300.000,00€</td>
             </tr>
           
             <tr>
               <td>Bewirtschaftung der Grundstücke und baulichen Anlagen</td>
-              <td>-40.000,00€</td>
+              <td>27.000,00€</td>
             </tr>
           
             <tr>
-              <td>Erwerb geringwertiger Vermögensgegenstände</td>
-              <td>-400,00€</td>
+              <td>Erwerb geringwertiger Vermügensgegenstünde</td>
+              <td>400,00€</td>
             </tr>
           
             <tr>
-              <td>Unterhaltung des sonstigen beweglichen Vermögens</td>
-              <td>-15.000,00€</td>
+              <td>Unterhaltung des sonstigen beweglichen Vermügens</td>
+              <td>37.000,00€</td>
             </tr>
           
             <tr>
-              <td>Unterhaltung des sonstigen unbeweglichen Vermögens</td>
-              <td>-20.000,00€</td>
+              <td>Unterhaltung des sonstigen unbeweglichen Vermügens</td>
+              <td>20.000,00€</td>
             </tr>
           
         </tbody>
@@ -154,13 +150,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_74017e89_ebb3_4e90_a08b_76be105179c0'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_d0ee0b3e_837b_4e76_9e1f_bd74441e2a7a'), {
             type: 'doughnut',
             data: {
-              labels: ["Benutzungsgebühren und ähnliche Entgelte"],
+              labels: ["Verwaltungsgebühren","Benutzungsgebühren und ähnliche Entgelte","19% Ust BenutzGeb. \u0026 ähnl. Ent","Einzahlungen aus Mieten und Pachten","Einzahlungen aus Kostenerstattungen von übrigen Bereichen"],
               datasets: [{
                 label: 'Euro',
-                data: [800000],
+                data: [0,300000,450000,0,0],
                 borderWidth: 1
               }]
             },
@@ -176,13 +172,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_616a0ca4_7e9e_4b1d_b425_5a7206aef5af'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_8045ed1f_1dcd_4b31_a66a_a6a7dae1796e'), {
             type: 'doughnut',
             data: {
-              labels: ["Unterhaltung des sonstigen unbeweglichen Vermögens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Auszahlungen für sonstige Dienstleistungen"],
+              labels: ["Unterhaltung des sonstigen unbeweglichen Vermügens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermügensgegenstünde","Unterhaltung des sonstigen beweglichen Vermügens","Auszahlungen für sonstige Dienstleistungen","Steuern, Versicherungen, Schadensfülle"],
               datasets: [{
                 label: 'Euro',
-                data: [-20000,-2900,-40000,-400,-15000,-2500],
+                data: [20000,3200,27000,400,37000,2500,0],
                 borderWidth: 1
               }]
             },
@@ -198,27 +194,6 @@
         
       
         
-        
-          var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_5a1836a5_43df_4a2e_aa66_1db6ae2e0682'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Auszahlungen für sonstige Baumaßnahmen"],
-              datasets: [{
-                label: 'Euro',
-                data: [-20000],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              },
-              
-            }
-          });
         
       
     </script>

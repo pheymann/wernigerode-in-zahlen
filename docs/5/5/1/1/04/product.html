@@ -32,19 +32,18 @@
 
     <div class="container">
       
+          <h3>- Die Verwaltung erwirtschaftet <span class="total-cashflow-income">0,00€</span></h3>
+
+          
+            
+            
+          
+      
           <h3>- Investitionen kosten <span class="total-cashflow-expenses">-50.000,00€</span></h3>
 
           
-            <div class="row">
-              <div class="col-6">
-                <h5 class="center">Einnahmen: 100.000,00€</h5>
-                <canvas id="chartjs_800cbfc9_802d_41f9_9acb_3ed6e811f5c9"></canvas>
-              </div>
-              <div class="col-6">
-                <h5 class="center">Ausgaben: -150.000,00€</h5>
-                <canvas id="chartjs_b299afcf_2cdb_4e92_b4cd_1a009966960e"></canvas>
-              </div>
-            </div>
+            
+            
           
       
     </div>
@@ -76,16 +75,6 @@
           </tr>
 
           
-            <tr>
-              <td>Auszahlungen für Tiefbaumaßnahmen</td>
-              <td>-150.000,00€</td>
-            </tr>
-          
-            <tr>
-              <td>Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land</td>
-              <td>100.000,00€</td>
-            </tr>
-          
         </tbody>
       </table>
     </div>
@@ -112,48 +101,9 @@
     <script>
       
         
-          var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_800cbfc9_802d_41f9_9acb_3ed6e811f5c9'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land"],
-              datasets: [{
-                label: 'Euro',
-                data: [100000],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              },
-              
-            }
-          });
         
+      
         
-          var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_b299afcf_2cdb_4e92_b4cd_1a009966960e'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Auszahlungen für Tiefbaumaßnahmen"],
-              datasets: [{
-                label: 'Euro',
-                data: [-150000],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              },
-              
-            }
-          });
         
       
     </script>

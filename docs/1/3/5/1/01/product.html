@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Förderung von zusätzlichen Arbeitsplätzen des Fachbereichs Budget Oberbürgermeister hat ein Budge von -14.200,00€."/>
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Förderung von zusätzlichen Arbeitsplätzen des Fachbereichs Budget Oberbürgermeister hat ein Budge von -12.300,00€."/>
   <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Förderung von zusätzlichen Arbeitsplätzen,Budget Oberbürgermeister"/>
   <meta name="author" content="Paul Heymann"/>
 
@@ -23,7 +23,7 @@
       Das Produkt -  Unterstützung von einzelnen Fachbereichen durch zusätzliche, nicht im Stellenplan enthaltene Stellen - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-expenses center">-14.200,00€</h2>
+    <h2 class="total-cashflow-expenses center">-12.300,00€</h2>
 
     <p>
       kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
@@ -32,19 +32,26 @@
 
     <div class="container">
       
-          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-14.200,00€</span></h3>
+          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-12.300,00€</span></h3>
 
           
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 36.000,00€</h5>
-                <canvas id="chartjs_c986873a_0bd6_462e_a87a_ca5dad3cb397"></canvas>
+                <canvas id="chartjs_636fa4af_c6ea_4c2a_8da4_8ff42d8c999a"></canvas>
               </div>
               <div class="col-6">
-                <h5 class="center">Ausgaben: -50.200,00€</h5>
-                <canvas id="chartjs_542a6416_8376_432b_b118_e7e4922e7382"></canvas>
+                <h5 class="center">Ausgaben: -48.300,00€</h5>
+                <canvas id="chartjs_e4550920_ce50_43dd_a01a_5e56f4406648"></canvas>
               </div>
             </div>
+          
+      
+          <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
+
+          
+            
+            
           
       
     </div>
@@ -78,22 +85,22 @@
           
             <tr>
               <td>Beihilfen, Unterstützungsleistungen für Beschäftigte</td>
-              <td>-300,00€</td>
+              <td>200,00€</td>
             </tr>
           
             <tr>
-              <td>Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschäft.</td>
-              <td>-8.100,00€</td>
+              <td>Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschüft.</td>
+              <td>7.800,00€</td>
             </tr>
           
             <tr>
               <td>Beiträge zu Versorgungskassen für sonstige Beschäftigte</td>
-              <td>-1.700,00€</td>
+              <td>1.500,00€</td>
             </tr>
           
             <tr>
               <td>Dienstauszahlungen und dgl. an sonstige Beschäftigte</td>
-              <td>-40.100,00€</td>
+              <td>38.800,00€</td>
             </tr>
           
             <tr>
@@ -128,7 +135,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_c986873a_0bd6_462e_a87a_ca5dad3cb397'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_636fa4af_c6ea_4c2a_8da4_8ff42d8c999a'), {
             type: 'doughnut',
             data: {
               labels: ["Zuweisungen für laufende Zwecke vom Bund"],
@@ -150,13 +157,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_542a6416_8376_432b_b118_e7e4922e7382'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_e4550920_ce50_43dd_a01a_5e56f4406648'), {
             type: 'doughnut',
             data: {
-              labels: ["Dienstauszahlungen und dgl. an sonstige Beschäftigte","Beiträge zu Versorgungskassen für sonstige Beschäftigte","Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschäft.","Beihilfen, Unterstützungsleistungen für Beschäftigte"],
+              labels: ["Dienstauszahlungen und dgl. an sonstige Beschäftigte","Beiträge zu Versorgungskassen für sonstige Beschäftigte","Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschüft.","Beihilfen, Unterstützungsleistungen für Beschäftigte"],
               datasets: [{
                 label: 'Euro',
-                data: [-40100,-1700,-8100,-300],
+                data: [38800,1500,7800,200],
                 borderWidth: 1
               }]
             },
@@ -169,6 +176,9 @@
               
             }
           });
+        
+      
+        
         
       
     </script>

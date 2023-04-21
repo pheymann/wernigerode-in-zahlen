@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Park-und Garten GmbH des Fachbereichs Budget Oberbürgermeister hat ein Budge von -510.000,00€."/>
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Park-und Garten GmbH des Fachbereichs Budget Oberbürgermeister hat ein Budge von -495.600,00€."/>
   <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Park-und Garten GmbH,Budget Oberbürgermeister"/>
   <meta name="author" content="Paul Heymann"/>
 
@@ -23,7 +23,7 @@
       Das Produkt -  &#34;Betreiben der aus der Landesgartenschau 2006 hervorgegangenen Park- und Freizeitanlage, des Miniaturenparks „Kleiner Harz“ sowie weiterer öffentlicher Erholungs- und Freizeitanlagen im Stadtgebiet von&#34; Wernigerode - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-expenses center">-510.000,00€</h2>
+    <h2 class="total-cashflow-expenses center">-495.600,00€</h2>
 
     <p>
       kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
@@ -32,14 +32,25 @@
 
     <div class="container">
       
-          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-510.000,00€</span></h3>
+          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-495.000,00€</span></h3>
+
+          
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 0,00€</h5>
+                <canvas id="chartjs_8a571231_dc89_450b_b700_d2e9b608b511"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: -495.000,00€</h5>
+                <canvas id="chartjs_4dd6fa15_3427_4651_8437_9455cf5ff719"></canvas>
+              </div>
+            </div>
+          
+      
+          <h3>- Investitionen kosten <span class="total-cashflow-expenses">-600,00€</span></h3>
 
           
             
-            
-              <div class="padded-chart">
-                <canvas id="chartjs_0ac1da2b_1fef_4dd4_87f4_0529c5ebf8a7"></canvas>
-              </div>
             
           
       
@@ -73,8 +84,8 @@
 
           
             <tr>
-              <td>Zuschüsse an verbundene Unternehmen, Sondervermögen und Beteiligungen</td>
-              <td>-510.000,00€</td>
+              <td>Zuschüsse an verbundene Unternehmen, Sondervermügen und Beteiligungen</td>
+              <td>495.000,00€</td>
             </tr>
           
         </tbody>
@@ -103,15 +114,14 @@
     <script>
       
         
-        
-          var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_0ac1da2b_1fef_4dd4_87f4_0529c5ebf8a7'), {
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_8a571231_dc89_450b_b700_d2e9b608b511'), {
             type: 'doughnut',
             data: {
-              labels: ["Zuschüsse an verbundene Unternehmen, Sondervermögen und Beteiligungen"],
+              labels: ["Einzahl. aus Kostenerstattungen von verbund. Untern., Sondervermü. und Beteilig.","Einnahmen Mehrwertsteuer 7%","Einnahmen Mehrwertsteuer 0%","Einnahmen Mehrwertsteuer 19%","Einnahmen Mehrwertsteuer 16%","Erstattungen Vorsteuer"],
               datasets: [{
                 label: 'Euro',
-                data: [-510000],
+                data: [0,0,0,0,0,0],
                 borderWidth: 1
               }]
             },
@@ -124,6 +134,31 @@
               
             }
           });
+        
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_4dd6fa15_3427_4651_8437_9455cf5ff719'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Zuschüsse an verbundene Unternehmen, Sondervermügen und Beteiligungen","Abzugsfühige Vorsteuer  7%","Abzugsfühige Vorsteuer 0%","Abzugsfühige Vorsteuer 19%","Abzugsfühige Vorsteuer 16%","Abführung Mehrwertsteuer"],
+              datasets: [{
+                label: 'Euro',
+                data: [495000,0,0,0,0,0],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
+      
+        
         
       
     </script>

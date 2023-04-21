@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Beteiligungen, Controlling des Fachbereichs Budget Oberbürgermeister hat ein Budge von 277.400,00€."/>
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Beteiligungen, Controlling des Fachbereichs Budget Oberbürgermeister hat ein Budge von 237.400,00€."/>
   <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Beteiligungen, Controlling,Budget Oberbürgermeister"/>
   <meta name="author" content="Paul Heymann"/>
 
@@ -23,7 +23,7 @@
       Das Produkt -  Führungsunterstützung und- beratung - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-income center">277.400,00€</h2>
+    <h2 class="total-cashflow-income center">237.400,00€</h2>
 
     <p>
       einbringen. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
@@ -32,13 +32,24 @@
 
     <div class="container">
       
-          <h3>- Die Verwaltung erwirtschaftet <span class="total-cashflow-income">277.400,00€</span></h3>
+          <h3>- Die Verwaltung erwirtschaftet <span class="total-cashflow-income">237.400,00€</span></h3>
 
           
-            
-              <div class="padded-chart">
-                <canvas id="chartjs_4df20fd8_2f5c_4b99_acd0_a45ec149ccda"></canvas>
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 237.400,00€</h5>
+                <canvas id="chartjs_a6e39a9d_5892_466e_a254_47ef8c36feec"></canvas>
               </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: 0,00€</h5>
+                <canvas id="chartjs_5550a35b_8640_4c74_8631_9fab3c7dddd1"></canvas>
+              </div>
+            </div>
+          
+      
+          <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
+
+          
             
             
           
@@ -74,7 +85,7 @@
           
             <tr>
               <td>Einz GewAnt a.vU&amp; Bet. GWW</td>
-              <td>250.000,00€</td>
+              <td>210.000,00€</td>
             </tr>
           
             <tr>
@@ -109,13 +120,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_4df20fd8_2f5c_4b99_acd0_a45ec149ccda'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_a6e39a9d_5892_466e_a254_47ef8c36feec'), {
             type: 'doughnut',
             data: {
-              labels: ["Einz GewAnt a.vU\u0026 Bet. GWW","Einz GewAnt a.vU\u0026 Bet. KOWISA"],
+              labels: ["Einzahlungen von Gewinnanteilen aus verbundenen Unternehmen und Beteiligungen","Einz GewAnt a.vU\u0026 Bet. GWW","Einz GewAnt a.vU\u0026 Bet. KOWISA"],
               datasets: [{
                 label: 'Euro',
-                data: [250000,27400],
+                data: [0,210000,27400],
                 borderWidth: 1
               }]
             },
@@ -128,6 +139,30 @@
               
             }
           });
+        
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_5550a35b_8640_4c74_8631_9fab3c7dddd1'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Zuschüsse an verbundene Unternehmen, Sondervermügen und Beteiligungen","Zuschüsse an übrige Bereiche (Kulturstiftung)","Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten"],
+              datasets: [{
+                label: 'Euro',
+                data: [0,0,0],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
+      
         
         
       

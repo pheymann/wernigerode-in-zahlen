@@ -38,13 +38,20 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 63.000,00€</h5>
-                <canvas id="chartjs_98f80c18_c372_468f_a07f_263844b0316d"></canvas>
+                <canvas id="chartjs_defd5189_acec_4092_a9e6_d563decf7dc2"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -73.000,00€</h5>
-                <canvas id="chartjs_38892ed6_5209_477c_add0_6882c503df8c"></canvas>
+                <canvas id="chartjs_607cd16a_3f77_473f_8dd4_52da780811da"></canvas>
               </div>
             </div>
+          
+      
+          <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
+
+          
+            
+            
           
       
     </div>
@@ -78,7 +85,7 @@
           
             <tr>
               <td>Auszahlungen für Mieten und Pachten</td>
-              <td>-13.000,00€</td>
+              <td>13.000,00€</td>
             </tr>
           
             <tr>
@@ -88,17 +95,17 @@
           
             <tr>
               <td>Besondere Verwaltungs- und Betriebsauszahlungen</td>
-              <td>-58.000,00€</td>
+              <td>58.000,00€</td>
             </tr>
           
             <tr>
-              <td>Einzahlungen aus dem Verkauf von Vorräten</td>
+              <td>Einzahlungen aus dem Verkauf von Vorrüten</td>
               <td>500,00€</td>
             </tr>
           
             <tr>
-              <td>Unterhaltung des sonstigen beweglichen Vermögens</td>
-              <td>-2.000,00€</td>
+              <td>Unterhaltung des sonstigen beweglichen Vermügens</td>
+              <td>2.000,00€</td>
             </tr>
           
             <tr>
@@ -143,13 +150,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_98f80c18_c372_468f_a07f_263844b0316d'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_defd5189_acec_4092_a9e6_d563decf7dc2'), {
             type: 'doughnut',
             data: {
-              labels: ["Zuweisungen für laufende Zwecke vom Land","Zuschüsse für laufende Zwecke von privaten Unternehmen (Spenden)","Zuschüsse für laufende Zwecke von übrigen Bereichen","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus dem Verkauf von Vorräten"],
+              labels: ["Zuweisungen für laufende Zwecke vom Land","Zuschüsse für laufende Zwecke von privaten Unternehmen (Spenden)","Zuschüsse für laufende Zwecke von übrigen Bereichen","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus dem Verkauf von Vorrüten","Einnahmen Mehrwertsteuer 7%","Einnahmen Mehrwertsteuer 0%","Einnahmen Mehrwertsteuer 5%","Einnahmen Mehrwertsteuer 19%","Einnahmen Mehrwertsteuer 16%","Erstattungen Vorsteuer"],
               datasets: [{
                 label: 'Euro',
-                data: [20000,26500,10500,5500,500],
+                data: [20000,26500,10500,5500,500,0,0,0,0,0,0],
                 borderWidth: 1
               }]
             },
@@ -165,13 +172,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_38892ed6_5209_477c_add0_6882c503df8c'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_607cd16a_3f77_473f_8dd4_52da780811da'), {
             type: 'doughnut',
             data: {
-              labels: ["Auszahlungen für Mieten und Pachten","Unterhaltung des sonstigen beweglichen Vermögens","Besondere Verwaltungs- und Betriebsauszahlungen"],
+              labels: ["Auszahlungen für Mieten und Pachten","Erwerb geringwertiger Vermügensgegenstünde","Unterhaltung des sonstigen beweglichen Vermügens","Besondere Verwaltungs- und Betriebsauszahlungen","Abzugsfühige Vorsteuer  7%","Abzugsfühige Vorsteuer 0 %","Abzugsfühige Vorsteuer 5%","Abzugsfühige Vorsteuer 19%","Abzugsfühige Vorsteuer 16%","Abführung Mehrwertsteuer"],
               datasets: [{
                 label: 'Euro',
-                data: [-13000,-2000,-58000],
+                data: [13000,0,2000,58000,0,0,0,0,0,0],
                 borderWidth: 1
               }]
             },
@@ -184,6 +191,9 @@
               
             }
           });
+        
+      
+        
         
       
     </script>

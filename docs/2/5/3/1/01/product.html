@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Elektrizitätsversorgung (Konzessionsabgabe) des Fachbereichs Budget Finanzen hat ein Budge von 1.170.500,00€."/>
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Elektrizitätsversorgung (Konzessionsabgabe) des Fachbereichs Budget Finanzen hat ein Budge von 1.148.400,00€."/>
   <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Elektrizitätsversorgung (Konzessionsabgabe),Budget Finanzen"/>
   <meta name="author" content="Paul Heymann"/>
 
@@ -23,7 +23,7 @@
       Das Produkt -  Sicherung der Stromversorgung - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-income center">1.170.500,00€</h2>
+    <h2 class="total-cashflow-income center">1.148.400,00€</h2>
 
     <p>
       einbringen. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
@@ -32,13 +32,24 @@
 
     <div class="container">
       
-          <h3>- Die Verwaltung erwirtschaftet <span class="total-cashflow-income">1.170.500,00€</span></h3>
+          <h3>- Die Verwaltung erwirtschaftet <span class="total-cashflow-income">1.148.400,00€</span></h3>
 
           
-            
-              <div class="padded-chart">
-                <canvas id="chartjs_804a82bc_65a5_4546_a1a8_84d7df7c944c"></canvas>
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 1.148.400,00€</h5>
+                <canvas id="chartjs_0c1569b6_94fc_4d69_9b8e_93a1a2b6f923"></canvas>
               </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: 0,00€</h5>
+                <canvas id="chartjs_9184ed46_2b84_4e86_a3f5_14602d25fca7"></canvas>
+              </div>
+            </div>
+          
+      
+          <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
+
+          
             
             
           
@@ -74,7 +85,7 @@
           
             <tr>
               <td>Konzessionsabgaben</td>
-              <td>1.170.500,00€</td>
+              <td>1.148.400,00€</td>
             </tr>
           
         </tbody>
@@ -104,13 +115,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_804a82bc_65a5_4546_a1a8_84d7df7c944c'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_0c1569b6_94fc_4d69_9b8e_93a1a2b6f923'), {
             type: 'doughnut',
             data: {
               labels: ["Konzessionsabgaben"],
               datasets: [{
                 label: 'Euro',
-                data: [1170500],
+                data: [1148400],
                 borderWidth: 1
               }]
             },
@@ -123,6 +134,30 @@
               
             }
           });
+        
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_9184ed46_2b84_4e86_a3f5_14602d25fca7'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Erstatt. f.d. Ausz. v. Dritten a. lfd VerwTüt. an verb. Unt., Sondverm.\u0026 Beteil."],
+              datasets: [{
+                label: 'Euro',
+                data: [0],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
+      
         
         
       

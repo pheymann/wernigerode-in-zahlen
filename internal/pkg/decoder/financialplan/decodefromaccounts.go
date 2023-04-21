@@ -88,10 +88,16 @@ func updateAdministrationBalance(plan *model.FinancialPlanProduct, account fd.Ac
 		updateCashflow(plan, isExpense, true, year, signBudget(value, isExpense))
 	})
 
+	tpe := model.Account2TypeIncome
+	if isExpense {
+		tpe = model.Account2TypeExpense
+	}
+
 	plan.AdministrationBalance.Accounts = append(plan.AdministrationBalance.Accounts, model.Account2{
 		ID:          account.ID,
 		ProductID:   account.ProductID,
 		Description: account.Description,
+		Type:        tpe,
 		Budget:      account.Budget,
 	})
 }

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Stiftungen des Fachbereichs Budget Oberbürgermeister hat ein Budge von -358.700,00€."/>
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Stiftungen des Fachbereichs Budget Oberbürgermeister hat ein Budge von -358.600,00€."/>
   <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Stiftungen,Budget Oberbürgermeister"/>
   <meta name="author" content="Paul Heymann"/>
 
@@ -23,7 +23,7 @@
       Das Produkt -  Führungsunterstützung und- beratung - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-expenses center">-358.700,00€</h2>
+    <h2 class="total-cashflow-expenses center">-358.600,00€</h2>
 
     <p>
       kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
@@ -32,14 +32,21 @@
 
     <div class="container">
       
-          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-358.700,00€</span></h3>
+          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-358.600,00€</span></h3>
 
           
             
             
               <div class="padded-chart">
-                <canvas id="chartjs_f05c0dcf_8212_42cd_a196_e2a5f1e50219"></canvas>
+                <canvas id="chartjs_ea1546a0_bbce_4120_ac69_cb2c96965537"></canvas>
               </div>
+            
+          
+      
+          <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
+
+          
+            
             
           
       
@@ -74,27 +81,27 @@
           
             <tr>
               <td>Beihilfen, Unterstützungsleistungen für Beschäftigte</td>
-              <td>-800,00€</td>
-            </tr>
-          
-            <tr>
-              <td>Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschäft.</td>
-              <td>-28.200,00€</td>
+              <td>800,00€</td>
             </tr>
           
             <tr>
               <td>Beiträge zu Versorgungskassen für Arbeitnehmer</td>
-              <td>-5.600,00€</td>
+              <td>5.400,00€</td>
+            </tr>
+          
+            <tr>
+              <td>Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer</td>
+              <td>27.200,00€</td>
             </tr>
           
             <tr>
               <td>Dienstauszahlungen und dgl. an Arbeitnehmer</td>
-              <td>-134.100,00€</td>
+              <td>135.200,00€</td>
             </tr>
           
             <tr>
               <td>Zuschüsse übr.Ber.Schlossstift</td>
-              <td>-190.000,00€</td>
+              <td>190.000,00€</td>
             </tr>
           
         </tbody>
@@ -125,13 +132,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_f05c0dcf_8212_42cd_a196_e2a5f1e50219'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_ea1546a0_bbce_4120_ac69_cb2c96965537'), {
             type: 'doughnut',
             data: {
-              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschäft.","Beihilfen, Unterstützungsleistungen für Beschäftigte","Zuschüsse übr.Ber.Schlossstift"],
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beitr. zur gesetzl. Sozialvers. aus DienstAuszahl. und dgl. für sonst. Beschüft.","Beihilfen, Unterstützungsleistungen für Beschäftigte","Zuschüsse übr.Ber.Schlossstift","Zuachüsse übr.Ber.Kulturstiftu"],
               datasets: [{
                 label: 'Euro',
-                data: [-134100,-5600,-28200,-800,-190000],
+                data: [135200,5400,27200,0,800,190000,0],
                 borderWidth: 1
               }]
             },
@@ -144,6 +151,9 @@
               
             }
           });
+        
+      
+        
         
       
     </script>

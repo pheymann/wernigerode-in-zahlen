@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Pendlerparkplätze des Fachbereichs Budget Bürgerservice hat ein Budge von 30.500,00€."/>
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Pendlerparkplätze des Fachbereichs Budget Bürgerservice hat ein Budge von 15.600,00€."/>
   <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Pendlerparkplätze,Budget Bürgerservice"/>
   <meta name="author" content="Paul Heymann"/>
 
@@ -23,7 +23,7 @@
       Das Produkt -  Planung, Bau und Unterhaltung von Parkplätzen von Berufspendlern - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-income center">30.500,00€</h2>
+    <h2 class="total-cashflow-income center">15.600,00€</h2>
 
     <p>
       einbringen. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
@@ -32,19 +32,26 @@
 
     <div class="container">
       
-          <h3>- Die Verwaltung erwirtschaftet <span class="total-cashflow-income">30.500,00€</span></h3>
+          <h3>- Die Verwaltung erwirtschaftet <span class="total-cashflow-income">15.600,00€</span></h3>
 
           
             <div class="row">
               <div class="col-6">
-                <h5 class="center">Einnahmen: 50.000,00€</h5>
-                <canvas id="chartjs_c1fae05f_19bf_47eb_b4c8_97992d489319"></canvas>
+                <h5 class="center">Einnahmen: 44.700,00€</h5>
+                <canvas id="chartjs_47894b61_370b_40a9_8046_5e9e6b448ac5"></canvas>
               </div>
               <div class="col-6">
-                <h5 class="center">Ausgaben: -19.500,00€</h5>
-                <canvas id="chartjs_cd722bcd_33be_4d01_ae7c_d3f920d027d9"></canvas>
+                <h5 class="center">Ausgaben: -29.100,00€</h5>
+                <canvas id="chartjs_4cea8d97_3356_4adc_a8f9_4dc5799aedd3"></canvas>
               </div>
             </div>
+          
+      
+          <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
+
+          
+            
+            
           
       
     </div>
@@ -77,23 +84,33 @@
 
           
             <tr>
+              <td>Auszahlungen für sonstige Dienstleistungen</td>
+              <td>9.600,00€</td>
+            </tr>
+          
+            <tr>
               <td>Einzahlungen aus Mieten und Pachten</td>
-              <td>50.000,00€</td>
+              <td>30.000,00€</td>
             </tr>
           
             <tr>
-              <td>Geschäftsauszahlungen</td>
-              <td>-1.500,00€</td>
+              <td>Geschüftsauszahlungen</td>
+              <td>1.500,00€</td>
             </tr>
           
             <tr>
-              <td>Unterhaltung des sonstigen beweglichen Vermögens</td>
-              <td>-3.000,00€</td>
+              <td>Sonstige privatrechtliche Leistungsentgelte</td>
+              <td>14.700,00€</td>
             </tr>
           
             <tr>
-              <td>Unterhaltung des sonstigen unbeweglichen Vermögens</td>
-              <td>-15.000,00€</td>
+              <td>Unterhaltung des sonstigen beweglichen Vermügens</td>
+              <td>3.000,00€</td>
+            </tr>
+          
+            <tr>
+              <td>Unterhaltung des sonstigen unbeweglichen Vermügens</td>
+              <td>15.000,00€</td>
             </tr>
           
         </tbody>
@@ -123,13 +140,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_c1fae05f_19bf_47eb_b4c8_97992d489319'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_47894b61_370b_40a9_8046_5e9e6b448ac5'), {
             type: 'doughnut',
             data: {
-              labels: ["Einzahlungen aus Mieten und Pachten"],
+              labels: ["Einzahlungen aus Mieten und Pachten","Sonstige privatrechtliche Leistungsentgelte","Einnahmen Mehrwertsteuer 7%","Einnahmen Mehrwertsteuer 0%","Einnahmen Mehrwertsteuer 5%","Einnahmen Mehrwertsteuer 19%","Einnahmen Mehrwertsteuer 16%","Erstattungen Vorsteuer"],
               datasets: [{
                 label: 'Euro',
-                data: [50000],
+                data: [30000,14700,0,0,0,0,0,0],
                 borderWidth: 1
               }]
             },
@@ -145,13 +162,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_cd722bcd_33be_4d01_ae7c_d3f920d027d9'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_4cea8d97_3356_4adc_a8f9_4dc5799aedd3'), {
             type: 'doughnut',
             data: {
-              labels: ["Unterhaltung des sonstigen unbeweglichen Vermögens","Unterhaltung des sonstigen beweglichen Vermögens","Geschäftsauszahlungen"],
+              labels: ["Unterhaltung des sonstigen unbeweglichen Vermügens","Bewirtschaftung der Grundstücke und baulichen Anlagen","Unterhaltung des sonstigen beweglichen Vermügens","Auszahlungen für sonstige Dienstleistungen","Geschüftsauszahlungen","Steuern, Versicherungen, Schadensfülle","Abzugsfühige Vorsteuer  7%","Abzugsfühige Vorsteuer 0%","Abzugsfühige Vorsteuer 5%","Abzugsfühige Vorsteuer 19%","Abzugsfühige Vorsteuer 16%","Abführung Mehrwertsteuer","Kapitalertragssteuer/Kürperschaftssteuer/Gewerbesteuer"],
               datasets: [{
                 label: 'Euro',
-                data: [-15000,-3000,-1500],
+                data: [15000,0,3000,9600,1500,0,0,0,0,0,0,0,0],
                 borderWidth: 1
               }]
             },
@@ -164,6 +181,9 @@
               
             }
           });
+        
+      
+        
         
       
     </script>

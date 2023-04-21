@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Straßenbeleuchtung des Fachbereichs Budget Stadtentwicklung hat ein Budge von -1.030.000,00€."/>
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Straßenbeleuchtung des Fachbereichs Budget Stadtentwicklung hat ein Budge von -955.000,00€."/>
   <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Straßenbeleuchtung,Budget Stadtentwicklung"/>
   <meta name="author" content="Paul Heymann"/>
 
@@ -23,7 +23,7 @@
       Das Produkt -  Errichtung, Instandhaltung und investive Erweiterungen sowie Betreibung der Straßenbeleuchtung - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-expenses center">-1.030.000,00€</h2>
+    <h2 class="total-cashflow-expenses center">-955.000,00€</h2>
 
     <p>
       kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
@@ -32,25 +32,25 @@
 
     <div class="container">
       
-          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-950.000,00€</span></h3>
+          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-930.000,00€</span></h3>
 
           
-            
-            
-              <div class="padded-chart">
-                <canvas id="chartjs_1f19c9fe_c551_423b_85dc_25d8e4f7aa24"></canvas>
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 0,00€</h5>
+                <canvas id="chartjs_6e483250_df65_49d8_843d_14c7cc2ccb7a"></canvas>
               </div>
-            
+              <div class="col-6">
+                <h5 class="center">Ausgaben: -930.000,00€</h5>
+                <canvas id="chartjs_931596e6_41cc_4347_8bcd_d02adc73a727"></canvas>
+              </div>
+            </div>
           
       
-          <h3>- Investitionen kosten <span class="total-cashflow-expenses">-80.000,00€</span></h3>
+          <h3>- Investitionen kosten <span class="total-cashflow-expenses">-25.000,00€</span></h3>
 
           
             
-            
-              <div class="padded-chart">
-                <canvas id="chartjs_ee0d7976_c1b5_4495_a17f_488093b77534"></canvas>
-              </div>
             
           
       
@@ -84,18 +84,13 @@
 
           
             <tr>
-              <td>Auszahlungen für Tiefbaumaßnahmen</td>
-              <td>-80.000,00€</td>
-            </tr>
-          
-            <tr>
               <td>Bewirtschaftung der Grundstücke und baulichen Anlagen</td>
-              <td>-580.000,00€</td>
+              <td>550.000,00€</td>
             </tr>
           
             <tr>
-              <td>Erstatt. f.d. Ausz. v. Dritten a. lfd VerwTät. an verb. Unt., Sondverm.&amp; Beteil.</td>
-              <td>-370.000,00€</td>
+              <td>Erstatt. f.d. Ausz. v. Dritten a. lfd VerwTüt. an verb. Unt., Sondverm.&amp; Beteil.</td>
+              <td>380.000,00€</td>
             </tr>
           
         </tbody>
@@ -124,15 +119,36 @@
     <script>
       
         
-        
-          var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_1f19c9fe_c551_423b_85dc_25d8e4f7aa24'), {
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_6e483250_df65_49d8_843d_14c7cc2ccb7a'), {
             type: 'doughnut',
             data: {
-              labels: ["Bewirtschaftung der Grundstücke und baulichen Anlagen","Erstatt. f.d. Ausz. v. Dritten a. lfd VerwTät. an verb. Unt., Sondverm.\u0026 Beteil."],
+              labels: ["Sonstige privatrechtliche Leistungsentgelte","Einzahl. aus Kostenerstattungen von verbund. Untern., Sondervermü. und Beteilig."],
               datasets: [{
                 label: 'Euro',
-                data: [-580000,-370000],
+                data: [0,0],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_931596e6_41cc_4347_8bcd_d02adc73a727'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Bewirtschaftung der Grundstücke und baulichen Anlagen","Erstatt. f.d. Ausz. v. Dritten a. lfd VerwTüt. an verb. Unt., Sondverm.\u0026 Beteil."],
+              datasets: [{
+                label: 'Euro',
+                data: [550000,380000],
                 borderWidth: 1
               }]
             },
@@ -148,27 +164,6 @@
         
       
         
-        
-          var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_ee0d7976_c1b5_4495_a17f_488093b77534'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Auszahlungen für Tiefbaumaßnahmen"],
-              datasets: [{
-                label: 'Euro',
-                data: [-80000],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              },
-              
-            }
-          });
         
       
     </script>

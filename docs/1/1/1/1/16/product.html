@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Rechtsangelegenheiten des Fachbereichs Budget Oberbürgermeister hat ein Budge von -432.800,00€."/>
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Rechtsangelegenheiten des Fachbereichs Budget Oberbürgermeister hat ein Budge von -457.800,00€."/>
   <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Rechtsangelegenheiten,Budget Oberbürgermeister"/>
   <meta name="author" content="Paul Heymann"/>
 
@@ -23,7 +23,7 @@
       Das Produkt -  Abwicklung aller Rechtsangelegenheiten der Stadt, Versicherungs- und Datenschutz - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-expenses center">-432.800,00€</h2>
+    <h2 class="total-cashflow-expenses center">-457.800,00€</h2>
 
     <p>
       kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
@@ -32,14 +32,25 @@
 
     <div class="container">
       
-          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-432.800,00€</span></h3>
+          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-457.800,00€</span></h3>
+
+          
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 0,00€</h5>
+                <canvas id="chartjs_52e20123_96cb_49b0_8d08_9167d03804e5"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: -457.800,00€</h5>
+                <canvas id="chartjs_4d7110ff_71bd_4c4b_9b4f_7c258af5d2bf"></canvas>
+              </div>
+            </div>
+          
+      
+          <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
 
           
             
-            
-              <div class="padded-chart">
-                <canvas id="chartjs_2f971864_1d55_424d_a70d_268754e2bd4a"></canvas>
-              </div>
             
           
       
@@ -73,38 +84,38 @@
 
           
             <tr>
-              <td>Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten</td>
-              <td>-20.000,00€</td>
+              <td>Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten</td>
+              <td>15.000,00€</td>
             </tr>
           
             <tr>
               <td>Beihilfen, Unterstützungsleistungen für Beschäftigte</td>
-              <td>-600,00€</td>
+              <td>700,00€</td>
             </tr>
           
             <tr>
               <td>Beiträge zu Versorgungskassen für Arbeitnehmer</td>
-              <td>-5.000,00€</td>
+              <td>4.800,00€</td>
             </tr>
           
             <tr>
               <td>Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer</td>
-              <td>-23.800,00€</td>
+              <td>24.500,00€</td>
             </tr>
           
             <tr>
               <td>Dienstauszahlungen und dgl. an Arbeitnehmer</td>
-              <td>-117.900,00€</td>
+              <td>122.300,00€</td>
             </tr>
           
             <tr>
-              <td>Geschäftsauszahlungen</td>
-              <td>-500,00€</td>
+              <td>Geschüftsauszahlungen</td>
+              <td>500,00€</td>
             </tr>
           
             <tr>
-              <td>Steuern, Versicherungen, Schadensfälle</td>
-              <td>-265.000,00€</td>
+              <td>Steuern, Versicherungen, Schadensfülle</td>
+              <td>290.000,00€</td>
             </tr>
           
         </tbody>
@@ -133,15 +144,14 @@
     <script>
       
         
-        
-          var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_2f971864_1d55_424d_a70d_268754e2bd4a'), {
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_52e20123_96cb_49b0_8d08_9167d03804e5'), {
             type: 'doughnut',
             data: {
-              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Geschäftsauszahlungen","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten","Steuern, Versicherungen, Schadensfälle"],
+              labels: ["Sonstige privatrechtliche Leistungsentgelte","Einzahlungen aus Kostenerstattungen von gesetzlichen Sozialversicherungen","Einzahlungen aus Kostenerstattungen von übrigen Bereichen"],
               datasets: [{
                 label: 'Euro',
-                data: [-117900,-5000,-23800,-600,-500,-20000,-265000],
+                data: [0,0,0],
                 borderWidth: 1
               }]
             },
@@ -154,6 +164,31 @@
               
             }
           });
+        
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_4d7110ff_71bd_4c4b_9b4f_7c258af5d2bf'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Zuschüsse an übrige Bereiche","Sonstige Personal- und Versorgungsauszahlungen","Geschüftsauszahlungen","Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten","Steuern, Versicherungen, Schadensfülle"],
+              datasets: [{
+                label: 'Euro',
+                data: [122300,4800,24500,700,0,0,500,15000,290000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
+      
+        
         
       
     </script>

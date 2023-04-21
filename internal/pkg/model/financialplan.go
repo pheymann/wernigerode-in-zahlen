@@ -1,6 +1,8 @@
 package model
 
-import "fmt"
+import (
+	"fmt"
+)
 
 type ID = string
 
@@ -40,10 +42,12 @@ type FinancialPlanProduct struct {
 func NewFinancialPlanProduct() *FinancialPlanProduct {
 	return &FinancialPlanProduct{
 		AdministrationBalance: AccountBalance2{
+			Type:     AccountBalance2TypeAdministration,
 			Cashflow: NewCashFlow(),
 			Accounts: make([]Account2, 0),
 		},
 		InvestmentsBalance: AccountBalance2{
+			Type:     AccountBalance2TypeInvestments,
 			Cashflow: NewCashFlow(),
 			Accounts: make([]Account2, 0),
 		},
@@ -53,8 +57,12 @@ func NewFinancialPlanProduct() *FinancialPlanProduct {
 }
 
 func (product FinancialPlanProduct) CreateLink() string {
+	return product.GetPath() + "product.html"
+}
+
+func (product FinancialPlanProduct) GetPath() string {
 	return fmt.Sprintf(
-		"/%s/%s/%s/%s/%s/product.html",
+		"/%s/%s/%s/%s/%s/",
 		product.Metadata.Department.ID,
 		product.Metadata.ProductClass.ID,
 		product.Metadata.ProductDomain.ID,
@@ -68,16 +76,32 @@ func (product FinancialPlanProduct) IsSubProduct() bool {
 }
 
 type AccountBalance2 struct {
+	Type     AccountBalance2Type
 	Cashflow Cashflow
 	Accounts []Account2
 }
+
+type AccountBalance2Type = string
+
+const (
+	AccountBalance2TypeAdministration AccountBalance2Type = "administration"
+	AccountBalance2TypeInvestments    AccountBalance2Type = "investments"
+)
 
 type Account2 struct {
 	ID          string
 	ProductID   string
 	Description string
+	Type        Account2Type
 	Budget      map[BudgetYear]float64
 }
+
+type Account2Type = string
+
+const (
+	Account2TypeExpense Account2Type = "expense"
+	Account2TypeIncome  Account2Type = "income"
+)
 
 type Cashflow struct {
 	Total    map[BudgetYear]float64

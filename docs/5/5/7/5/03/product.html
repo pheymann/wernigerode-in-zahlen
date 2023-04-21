@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Ortsentwicklung Schierke des Fachbereichs Budget Stadtentwicklung hat ein Budge von -50.000,00€."/>
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Ortsentwicklung Schierke des Fachbereichs Budget Stadtentwicklung hat ein Budge von -36.000,00€."/>
   <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Ortsentwicklung Schierke,Budget Stadtentwicklung"/>
   <meta name="author" content="Paul Heymann"/>
 
@@ -23,7 +23,7 @@
       Das Produkt -  Planung, Bau und Entwicklung des Ortsteils Schierke - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-expenses center">-50.000,00€</h2>
+    <h2 class="total-cashflow-expenses center">-36.000,00€</h2>
 
     <p>
       kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
@@ -32,19 +32,26 @@
 
     <div class="container">
       
-          <h3>- Investitionen kosten <span class="total-cashflow-expenses">-50.000,00€</span></h3>
+          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-36.000,00€</span></h3>
 
           
             <div class="row">
               <div class="col-6">
-                <h5 class="center">Einnahmen: 450.000,00€</h5>
-                <canvas id="chartjs_3cb28dcf_2849_46b1_8fc6_f836d41798d9"></canvas>
+                <h5 class="center">Einnahmen: 0,00€</h5>
+                <canvas id="chartjs_8e2cfe8d_e2f5_4485_9836_f601df08f700"></canvas>
               </div>
               <div class="col-6">
-                <h5 class="center">Ausgaben: -500.000,00€</h5>
-                <canvas id="chartjs_a8e56311_bcef_4cf6_88ad_9de0590fc553"></canvas>
+                <h5 class="center">Ausgaben: -36.000,00€</h5>
+                <canvas id="chartjs_c5bd4df2_884d_488e_80bb_993647c67bc8"></canvas>
               </div>
             </div>
+          
+      
+          <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
+
+          
+            
+            
           
       
     </div>
@@ -77,13 +84,18 @@
 
           
             <tr>
-              <td>Auszahlungen für sonstige Baumaßnahmen</td>
-              <td>-500.000,00€</td>
+              <td>Auszahlungen für Honorare</td>
+              <td>20.000,00€</td>
             </tr>
           
             <tr>
-              <td>Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land</td>
-              <td>450.000,00€</td>
+              <td>Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten</td>
+              <td>15.000,00€</td>
+            </tr>
+          
+            <tr>
+              <td>Besondere Verwaltungs- und Betriebsauszahlungen</td>
+              <td>1.000,00€</td>
             </tr>
           
         </tbody>
@@ -113,13 +125,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_3cb28dcf_2849_46b1_8fc6_f836d41798d9'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_8e2cfe8d_e2f5_4485_9836_f601df08f700'), {
             type: 'doughnut',
             data: {
-              labels: ["Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land"],
+              labels: ["Einzahl. aus Kostenerstattungen von verbund. Untern., Sondervermü. und Beteilig.","Einzahlungen aus Kostenerstattungen von sonstigen öffentlichen Sonderrechnungen","Einzahlungen aus Kostenerstattungen von übrigen Bereichen"],
               datasets: [{
                 label: 'Euro',
-                data: [450000],
+                data: [0,0,0],
                 borderWidth: 1
               }]
             },
@@ -135,13 +147,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_a8e56311_bcef_4cf6_88ad_9de0590fc553'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_c5bd4df2_884d_488e_80bb_993647c67bc8'), {
             type: 'doughnut',
             data: {
-              labels: ["Auszahlungen für sonstige Baumaßnahmen"],
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für Mieten und Pachten","Auszahlungen für Leasing","Bewirtschaftung der Grundstücke und baulichen Anlagen","Haltung von Fahrzeugen","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für sonstige Dienstleistungen","Sonstige Personal- und Versorgungsauszahlungen","Geschüftsauszahlungen","Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten","Auszahlungen für Honorare","Auszahlungen für Planungsleistungen","Steuern, Versicherungen, Schadensfülle","Besondere Auszahlungen Süumniszuschlüge"],
               datasets: [{
                 label: 'Euro',
-                data: [-500000],
+                data: [0,0,0,0,0,0,0,0,1000,0,0,0,15000,20000,0,0,0],
                 borderWidth: 1
               }]
             },
@@ -154,6 +166,9 @@
               
             }
           });
+        
+      
+        
         
       
     </script>

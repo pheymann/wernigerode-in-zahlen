@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Förderung des Sports des Fachbereichs Budget Bürgerservice hat ein Budge von -154.000,00€."/>
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Förderung des Sports des Fachbereichs Budget Bürgerservice hat ein Budge von -156.100,00€."/>
   <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Förderung des Sports,Budget Bürgerservice"/>
   <meta name="author" content="Paul Heymann"/>
 
@@ -23,7 +23,7 @@
       Das Produkt -  Förderung des Sports - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-expenses center">-154.000,00€</h2>
+    <h2 class="total-cashflow-expenses center">-156.100,00€</h2>
 
     <p>
       kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
@@ -32,14 +32,25 @@
 
     <div class="container">
       
-          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-154.000,00€</span></h3>
+          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-156.100,00€</span></h3>
+
+          
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 0,00€</h5>
+                <canvas id="chartjs_a7b6700f_6c1c_4d82_ae4b_13a06aeb119d"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: -156.100,00€</h5>
+                <canvas id="chartjs_fa8bf691_aeee_4846_907b_5cc925d6ee13"></canvas>
+              </div>
+            </div>
+          
+      
+          <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
 
           
             
-            
-              <div class="padded-chart">
-                <canvas id="chartjs_7db3fe07_312f_4067_b5cd_2e519d4074b6"></canvas>
-              </div>
             
           
       
@@ -74,7 +85,7 @@
           
             <tr>
               <td>Zuschüsse an übrige Bereiche</td>
-              <td>-154.000,00€</td>
+              <td>156.100,00€</td>
             </tr>
           
         </tbody>
@@ -103,15 +114,14 @@
     <script>
       
         
-        
-          var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_7db3fe07_312f_4067_b5cd_2e519d4074b6'), {
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_a7b6700f_6c1c_4d82_ae4b_13a06aeb119d'), {
             type: 'doughnut',
             data: {
-              labels: ["Zuschüsse an übrige Bereiche"],
+              labels: ["Einzahlungen aus Kostenerstattungen von übrigen Bereichen"],
               datasets: [{
                 label: 'Euro',
-                data: [-154000],
+                data: [0],
                 borderWidth: 1
               }]
             },
@@ -124,6 +134,31 @@
               
             }
           });
+        
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_fa8bf691_aeee_4846_907b_5cc925d6ee13'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Unterhaltung der Grundstücke und baulichen Anlagen-Gebüudemanagement","Zuschüsse an übrige Bereiche"],
+              datasets: [{
+                label: 'Euro',
+                data: [0,156100],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
+      
+        
         
       
     </script>

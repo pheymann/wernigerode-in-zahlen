@@ -41,4 +41,13 @@ func main() {
 
 		io.WriteFile(pair.First, pair.Second)
 	}
+
+	productTmpl := template.Must(template.ParseFiles(*debugRootPath + "assets/html/templates/product.template.html"))
+	productPairs := htmlgenerator.GenerateProducts(financialCityData, budgetYear, productTmpl)
+
+	for _, pair := range productPairs {
+		pair.First.Path = *debugRootPath + pair.First.Path
+
+		io.WriteFile(pair.First, pair.Second)
+	}
 }
