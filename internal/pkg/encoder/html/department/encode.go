@@ -13,22 +13,20 @@ import (
 )
 
 func Encode(
-	compressed model.CompressedDepartment,
+	department model.FinancialPlanDepartment,
 	year model.BudgetYear,
-	productData []html.ProductTableData,
+	productTable []html.ProductTableData,
 
-	incomeTotalCashFlow float64,
 	incomeProductLinks []string,
 	chartIncomeDataPerProduct html.ChartJSDataset,
 
-	expensesTotalCashFlow float64,
 	expensesProductLinks []string,
 	chartExpensesDataPerProduct html.ChartJSDataset,
 ) html.Department {
 	p := message.NewPrinter(language.German)
 
-	hasIncome := shared.IsUnequal(incomeTotalCashFlow, 0)
-	hasExpenses := shared.IsUnequal(expensesTotalCashFlow, 0)
+	hasIncome := shared.IsUnequal(department.Cashflow.Income[year], 0)
+	hasExpenses := shared.IsUnequal(department.Cashflow.Expenses[year], 0)
 	return html.Department{
 		HasIncomeAndExpenses: hasIncome && hasExpenses,
 
@@ -42,17 +40,17 @@ func Encode(
 
 		Copy: html.DepartmentCopy{
 			Year:               year,
-			Department:         compressed.DepartmentName,
+			Department:         department.Name,
 			IntroCashflowTotal: fmt.Sprintf("In %s planen wir", year),
-			IntroDescription:   encodeIntroDescription(compressed.CashflowTotal, compressed.NumberOfProducts),
+			IntroDescription:   encodeIntroDescription(department.Cashflow.Total[year], len(productTable)),
 
-			CashflowTotal:          htmlEncoder.EncodeBudget(compressed.CashflowTotal, p),
-			CashflowAdministration: htmlEncoder.EncodeBudget(compressed.CashflowAdministration, p),
-			CashflowInvestments:    htmlEncoder.EncodeBudget(compressed.CashflowInvestments, p),
-			IncomeCashflowTotal:    "Einnahmen: " + htmlEncoder.EncodeBudget(incomeTotalCashFlow, p),
-			ExpensesCashflowTotal:  "Ausgaben: " + htmlEncoder.EncodeBudget(expensesTotalCashFlow, p),
+			CashflowTotal:          htmlEncoder.EncodeBudget(department.Cashflow.Total[year], p),
+			CashflowAdministration: htmlEncoder.EncodeBudget(department.AdministrationBalance.Total[year], p),
+			CashflowInvestments:    htmlEncoder.EncodeBudget(department.InvestmentsBalance.Total[year], p),
+			IncomeCashflowTotal:    "Einnahmen: " + htmlEncoder.EncodeBudget(department.Cashflow.Income[year], p),
+			ExpensesCashflowTotal:  "Ausgaben: " + htmlEncoder.EncodeBudget(department.Cashflow.Expenses[year], p),
 
-			Products: shared.MapSlice(productData, func(productData html.ProductTableData) html.DepartmentProductCopy {
+			Products: shared.MapSlice(productTable, func(productData html.ProductTableData) html.DepartmentProductCopy {
 				return encodeDepartmentProductData(productData, p)
 			}),
 
@@ -64,7 +62,7 @@ func Encode(
 			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>.`,
 		},
 		CSS: html.DepartmentCSS{
-			TotalCashflowClass: htmlEncoder.EncodeCSSCashflowClass(compressed.CashflowTotal),
+			TotalCashflowClass: htmlEncoder.EncodeCSSCashflowClass(department.Cashflow.Total[year]),
 		},
 	}
 }

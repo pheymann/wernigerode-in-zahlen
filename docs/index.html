@@ -40,11 +40,11 @@
         <div class="row">
           <div class="col-6">
             <h5 class="center">Einnahmen: 83.642.800,00€</h5>
-            <canvas id="chartjs-b365cd27-7059-41ef-976b-a73dd57a3c6d"></canvas>
+            <canvas id="chartjs-75c1c4ea-0521-4f95-b553-f70db6c689d7"></canvas>
           </div>
           <div class="col-6">
             <h5 class="center">Ausgaben: -87.022.500,00€</h5>
-            <canvas id="chartjs-9e9f52ee-715c-41d8-800c-d6ba3917bc9d"></canvas>
+            <canvas id="chartjs-470a1937-342d-4b8b-abf5-d1e1735b1afd"></canvas>
           </div>
         </div>
       </div>
@@ -75,20 +75,6 @@
 
           
             <tr>
-              <td><a href="/4/department.html"></a></td>
-              <td>-19.425.000,00€</td>
-              <td>-16.458.700,00€</td>
-              <td>-2.966.300,00€</td>
-            </tr>
-          
-            <tr>
-              <td><a href="/5/department.html"></a></td>
-              <td>-6.932.700,00€</td>
-              <td>-9.079.600,00€</td>
-              <td>2.146.900,00€</td>
-            </tr>
-          
-            <tr>
               <td><a href="/1/department.html"></a></td>
               <td>-6.721.800,00€</td>
               <td>-6.314.200,00€</td>
@@ -107,6 +93,20 @@
               <td>-5.705.900,00€</td>
               <td>-5.530.300,00€</td>
               <td>-175.600,00€</td>
+            </tr>
+          
+            <tr>
+              <td><a href="/4/department.html"></a></td>
+              <td>-19.425.000,00€</td>
+              <td>-16.458.700,00€</td>
+              <td>-2.966.300,00€</td>
+            </tr>
+          
+            <tr>
+              <td><a href="/5/department.html"></a></td>
+              <td>-6.932.700,00€</td>
+              <td>-9.079.600,00€</td>
+              <td>2.146.900,00€</td>
             </tr>
           
         </tbody>
@@ -135,7 +135,7 @@
     <script>
       
         var incomeDepartmentLinks = ["/2/department.html"];
-        var incomeCanvas = document.getElementById('chartjs-b365cd27-7059-41ef-976b-a73dd57a3c6d');
+        var incomeCanvas = document.getElementById('chartjs-75c1c4ea-0521-4f95-b553-f70db6c689d7');
         var incomeChart = new Chart(incomeCanvas, {
           type: 'doughnut',
           data: {
@@ -160,15 +160,15 @@
         });
       
 
-      var expensesDepartmentLinks = ["/3/department.html","/4/department.html","/5/department.html","/1/department.html"];
-      var expensesCanvas = document.getElementById('chartjs-9e9f52ee-715c-41d8-800c-d6ba3917bc9d');
+      var expensesDepartmentLinks = ["/1/department.html","/3/department.html","/4/department.html","/5/department.html"];
+      var expensesCanvas = document.getElementById('chartjs-470a1937-342d-4b8b-abf5-d1e1735b1afd');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {
           labels: ["","","",""],
           datasets: [{
             label: 'Euro',
-            data: [-5705900,-19425000,-6932700,-6721800],
+            data: [-6721800,-5705900,-19425000,-6932700],
             borderWidth: 1
           }]
         },

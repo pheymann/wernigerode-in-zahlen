@@ -50,6 +50,17 @@ func NewFinancialPlanProduct() *FinancialPlanProduct {
 	}
 }
 
+func (product FinancialPlanProduct) CreateLink() string {
+	return fmt.Sprintf(
+		"/%s/%s/%s/%s/%s/product.html",
+		product.Metadata.Department.ID,
+		product.Metadata.ProductClass.ID,
+		product.Metadata.ProductDomain.ID,
+		product.Metadata.ProductGroup.ID,
+		product.Metadata.Product.ID,
+	)
+}
+
 type AccountBalance2 struct {
 	Cashflow Cashflow
 	Accounts []Account2

@@ -69,15 +69,13 @@ func Generate(
 	if err := departmentTmpl.Execute(
 		&htmlBytes,
 		htmlDepartmentEncoder.Encode(
-			*compressed,
+			model.FinancialPlanDepartment{},
 			year,
 			depProductData,
 
-			incomeTotalCashFlow,
 			incomeProductLinks,
 			chartIncomeDataPerProduct,
 
-			expensesTotalCashFlow,
 			expensesProductLinks,
 			chartExpensesDataPerProduct,
 		),

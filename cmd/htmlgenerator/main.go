@@ -27,9 +27,18 @@ func main() {
 	financialCityData := fpDecoder.DecodeFromJSON2(io.ReadCompleteFile(financialCityDataFile))
 
 	overviewTmpl := template.Must(template.ParseFiles(*debugRootPath + "assets/html/templates/overview.template.html"))
-	file, content := htmlgenerator.GenerateOverview(financialCityData, budgetYear, overviewTmpl)
+	overviewFile, overviewContent := htmlgenerator.GenerateOverview(financialCityData, budgetYear, overviewTmpl)
 
-	file.Path = *debugRootPath + file.Path
+	overviewFile.Path = *debugRootPath + overviewFile.Path
 
-	io.WriteFile(file, content)
+	io.WriteFile(overviewFile, overviewContent)
+
+	departmentTmpl := template.Must(template.ParseFiles(*debugRootPath + "assets/html/templates/department.template.html"))
+	departmentPairs := htmlgenerator.GenerateDepartments(financialCityData, budgetYear, departmentTmpl)
+
+	for _, pair := range departmentPairs {
+		pair.First.Path = *debugRootPath + pair.First.Path
+
+		io.WriteFile(pair.First, pair.Second)
+	}
 }
