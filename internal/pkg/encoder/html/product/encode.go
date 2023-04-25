@@ -19,10 +19,6 @@ func Encode(
 	p *message.Printer,
 ) html.Product {
 	var sections = balanceDataToSections(plan, year, p)
-	subProductSection := subProductsToSection(plan, year, p)
-	if subProductSection != nil {
-		sections = append(sections, *subProductSection)
-	}
 
 	return html.Product{
 		Meta:            plan.Metadata,

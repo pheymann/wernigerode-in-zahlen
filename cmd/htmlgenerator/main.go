@@ -43,7 +43,8 @@ func main() {
 	}
 
 	productTmpl := template.Must(template.ParseFiles(*debugRootPath + "assets/html/templates/product.template.html"))
-	productPairs := htmlgenerator.GenerateProducts(financialCityData, budgetYear, productTmpl)
+	productWithSubsTempl := template.Must(template.ParseFiles(*debugRootPath + "assets/html/templates/product_with_subs.template.html"))
+	productPairs := htmlgenerator.GenerateProducts(financialCityData, budgetYear, productTmpl, productWithSubsTempl)
 
 	for _, pair := range productPairs {
 		pair.First.Path = *debugRootPath + pair.First.Path

@@ -7,20 +7,30 @@ import (
 	"golang.org/x/text/language"
 	"golang.org/x/text/message"
 	htmlProductEncoder "wernigerode-in-zahlen.de/internal/pkg/encoder/html/product"
+	htmlProductWithSubsEncoder "wernigerode-in-zahlen.de/internal/pkg/encoder/html/productwithsubs"
 	"wernigerode-in-zahlen.de/internal/pkg/model"
 	"wernigerode-in-zahlen.de/internal/pkg/model/html"
 	"wernigerode-in-zahlen.de/internal/pkg/shared"
 )
 
-func GenerateProducts(plan model.FinancialPlanCity, budgetYear model.BudgetYear, productTmpl *template.Template) []shared.Pair[model.TargetFile, string] {
+func GenerateProducts(
+	plan model.FinancialPlanCity,
+	budgetYear model.BudgetYear,
+	productTmpl *template.Template,
+	productWithSubsTempl *template.Template,
+) []shared.Pair[model.TargetFile, string] {
 	var pairs = []shared.Pair[model.TargetFile, string]{}
 
 	for _, department := range plan.Departments {
 		for _, product := range department.Products {
-			pairs = append(pairs, generateProduct(product, budgetYear, productTmpl))
+			if product.SubProducts == nil || len(product.SubProducts) == 0 {
+				pairs = append(pairs, generateProduct(product, budgetYear, productTmpl))
+			} else {
+				pairs = append(pairs, generateProductWithSubs(product, budgetYear, productWithSubsTempl))
 
-			for _, subProduct := range product.SubProducts {
-				pairs = append(pairs, generateProduct(subProduct, budgetYear, productTmpl))
+				for _, subProduct := range product.SubProducts {
+					pairs = append(pairs, generateProduct(subProduct, budgetYear, productTmpl))
+				}
 			}
 		}
 	}
@@ -28,7 +38,11 @@ func GenerateProducts(plan model.FinancialPlanCity, budgetYear model.BudgetYear,
 	return pairs
 }
 
-func generateProduct(plan model.FinancialPlanProduct, budgetYear model.BudgetYear, productTmpl *template.Template) shared.Pair[model.TargetFile, string] {
+func generateProduct(
+	plan model.FinancialPlanProduct,
+	budgetYear model.BudgetYear,
+	productTmpl *template.Template,
+) shared.Pair[model.TargetFile, string] {
 	p := message.NewPrinter(language.German)
 
 	accountTable := generateAccountTable(plan, budgetYear)
@@ -64,4 +78,29 @@ func generateAccountTable(plan model.FinancialPlanProduct, budgetYear model.Budg
 	}
 
 	return tableData
+}
+
+func generateProductWithSubs(
+	plan model.FinancialPlanProduct,
+	budgetYear model.BudgetYear,
+	productWithSubs *template.Template,
+) shared.Pair[model.TargetFile, string] {
+	p := message.NewPrinter(language.German)
+
+	var htmlBytes bytes.Buffer
+	if err := productWithSubs.Execute(
+		&htmlBytes,
+		htmlProductWithSubsEncoder.Encode(plan, budgetYear, p),
+	); err != nil {
+		panic(err)
+	}
+
+	content := htmlBytes.String()
+	file := model.TargetFile{
+		Path: "docs/" + plan.GetPath(),
+		Name: "product",
+		Tpe:  "html",
+	}
+
+	return shared.NewPair(file, content)
 }

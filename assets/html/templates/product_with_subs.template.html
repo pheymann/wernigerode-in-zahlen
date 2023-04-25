@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<head>
+  <title>Produkt</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="Haushaltsplan Wernigerode {{.Copy.Year}}. Das Produkt {{.Meta.Product.Name}} des Fachbereichs {{.Meta.Department.Name}} hat ein Budge von {{.Copy.CashflowTotal}}."/>
+  <meta name="keywords" content="Wernigerode,Haushaltsplan,{{.Copy.Year}},{{.Meta.Product.Name}},{{.Meta.Department.Name}}"/>
+  <meta name="author" content="Paul Heymann"/>
+
+  <link rel="stylesheet" type="text/css" href="/css/styling.css">
+</head>
+<html>
+  <body>
+    <p class="warning-banner">
+      Diese Seite ist noch in der Entwicklung. Es kann daher sein, dass sie noch Fehler enthält.
+    </p>
+
+    <h1>{{.Meta.Product.Name}}</h1>
+
+    <p>
+      {{.Copy.IntroCashflowTotal}}
+    </p>
+
+    <h2 class="{{.CSS.TotalCashflowClass}} center">{{.Copy.CashflowTotal}}</h2>
+
+    <p>
+      {{.Copy.IntroDescription}}
+    </p>
+
+    <div class="container">
+      {{if .HasIncomeAndExpenses}}
+        <div class="row">
+          <div class="col-6">
+            <h5 class="center">{{.Copy.IncomeCashflowTotal}}</h5>
+            <canvas id="{{.Income.ID}}"></canvas>
+          </div>
+          <div class="col-6">
+            <h5 class="center">{{.Copy.ExpensesCashflowTotal}}</h5>
+            <canvas id="{{.Expenses.ID}}"></canvas>
+          </div>
+        </div>
+      {{else}}
+        {{if .HasIncome}}
+          <div class="padded-chart">
+            <canvas id="{{.Income.ID}}"></canvas>
+          </div>
+        {{end}}
+        {{if .HasExpenses}}
+          <div class="padded-chart">
+            <canvas id="{{.Expenses.ID}}"></canvas>
+          </div>
+        {{end}}
+      {{end}}
+    </div>
+
+    <div class="info-sheet">
+      <h3>{{.Copy.MetaMission}}</h3>
+      <p>{{.Meta.Mission}}</p>
+
+      <h3>{{.Copy.MetaTargets}}</h3>
+      <p>{{.Meta.Target}}</p>
+
+      <h3>{{.Copy.MetaServices}}</h3>
+      <p>{{.Meta.Services}}</p>
+
+      <h3>{{.Copy.MetaGrouping}}</h3>
+      <ul>
+        <li>{{.Copy.MetaDepartment}}: {{.Meta.Department.Name}}</li>
+        <li>{{.Copy.MetaProductClass}}: {{.Meta.ProductClass.Name}}</li>
+        <li>{{.Copy.MetaProductDomain}}: {{.Meta.ProductDomain.Name}}</li>
+        <li>{{.Copy.MetaProductGroup}}: {{.Meta.ProductGroup.Name}}</li>
+        <li>{{.Copy.MetaProduct}}: {{.Meta.Product.Name}}</li>
+      </ul>
+
+      <table>
+        <tbody>
+          <tr>
+            <th>Unterprodukt</th>
+            <th>Gesamt-Finanzplan</th>
+            <th>laufende Verwaltungstätigkeiten</th>
+            <th>Investitionen</th>
+          </tr>
+          <tr>
+            <th></th>
+            <th>{{.Copy.CashflowTotal}}</th>
+            <th>{{.Copy.CashflowAdministration}}</th>
+            <th>{{.Copy.CashflowInvestments}}</th>
+          </tr>
+
+          {{range .Copy.SubProducts}}
+            <tr>
+              <td><a href="{{.Link}}">{{.Name}}</a></td>
+              <td>{{.CashflowTotal}}</td>
+              <td>{{.CashflowAdministration}}</td>
+              <td>{{.CashflowInvestments}}</td>
+            </tr>
+          {{end}}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="back-link center">
+      <a href="/{{.Meta.Department.ID}}/department.html">{{.Copy.BackLink}}</a>
+    </div>
+
+    <p class="data-disclosure">
+      {{.Copy.DataDisclosure}}
+    </p>
+
+    <footer>
+      <p>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Das Impressum befindet sich <a href="/imprint.html">hier</a>.
+      </p>
+    </footer>
+
+    <script src="/js/chart.js"></script>
+    <script>
+      {{if .HasIncome}}
+      var incomeProductLinks = {{.IncomeProductLinks}};
+      var incomeCanvas = document.getElementById('{{.Income.ID}}');
+      var incomeChart = new Chart(incomeCanvas, {
+        type: 'doughnut',
+        data: {
+          labels: {{.Income.Labels}},
+          datasets: [{
+            label: 'Euro',
+            data: {{.Income.Data}},
+            borderWidth: 1
+          }]
+        },
+        options: {
+          plugins: {
+            legend: {
+              display: false
+            }
+          },
+          onClick: function(e){
+            var activePoints = incomeChart.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
+            window.location.href = incomeProductLinks[activePoints[0].index];
+          },
+        }
+      });
+      {{end}}
+
+      {{if .HasExpenses}}
+      var expenesesProductLinks = {{.ExpensesProductLinks}};
+      var expensesCanvas = document.getElementById('{{.Expenses.ID}}');
+      var expensesChart = new Chart(expensesCanvas, {
+        type: 'doughnut',
+        data: {
+          labels: {{.Expenses.Labels}},
+          datasets: [{
+            label: 'Euro',
+            data: {{.Expenses.Data}},
+            borderWidth: 1
+          }]
+        },
+        options: {
+          plugins: {
+            legend: {
+              display: false
+            }
+          },
+          onClick: function(e){
+            var activePoints = expensesChart.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
+            window.location.href = expenesesProductLinks[activePoints[0].index];
+          },
+        },
+      });
+      {{end}}
+    </script>
+    <script defer data-domain="wernigerode-in-zahlen.de" src="https://plausible.io/js/script.js"></script>
+  </body>
+</html>
