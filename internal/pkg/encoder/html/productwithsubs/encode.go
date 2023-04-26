@@ -8,15 +8,35 @@ import (
 	encodeHtml "wernigerode-in-zahlen.de/internal/pkg/encoder/html"
 	"wernigerode-in-zahlen.de/internal/pkg/model"
 	"wernigerode-in-zahlen.de/internal/pkg/model/html"
+	"wernigerode-in-zahlen.de/internal/pkg/shared"
 )
 
 func Encode(
 	plan model.FinancialPlanProduct,
 	year model.BudgetYear,
+
+	incomeProductLinks []string,
+	chartIncomeDataPerProduct html.ChartJSDataset,
+
+	expensesProductLinks []string,
+	chartExpensesDataPerProduct html.ChartJSDataset,
+
 	p *message.Printer,
 ) html.ProductWithSubs {
+	hasIncome := shared.IsUnequal(plan.Cashflow.Income[year], 0)
+	hasExpenses := shared.IsUnequal(plan.Cashflow.Expenses[year], 0)
+
 	return html.ProductWithSubs{
-		Meta: plan.Metadata,
+		Meta:                 plan.Metadata,
+		HasIncomeAndExpenses: hasIncome && hasExpenses,
+
+		HasIncome:          hasIncome,
+		IncomeProductLinks: incomeProductLinks,
+		Income:             chartIncomeDataPerProduct,
+
+		HasExpenses:          hasExpenses,
+		ExpensesProductLinks: expensesProductLinks,
+		Expenses:             chartExpensesDataPerProduct,
 		Copy: html.ProductWithSubsCopy{
 			BackLink: "Zurück zur Bereichsübersicht",
 			Year:     year,
@@ -24,7 +44,9 @@ func Encode(
 			IntroCashflowTotal: fmt.Sprintf("Das Produkt - %s - wird in %s", plan.Metadata.Description, year),
 			IntroDescription:   encodeIntroDescription(plan.Cashflow.Total[year], len(plan.SubProducts), plan.Metadata),
 
-			CashflowTotal: encodeHtml.EncodeBudget(plan.Cashflow.Total[year], p),
+			CashflowTotal:         encodeHtml.EncodeBudget(plan.Cashflow.Total[year], p),
+			IncomeCashflowTotal:   "Einnahmen: " + encodeHtml.EncodeBudget(plan.Cashflow.Income[year], p),
+			ExpensesCashflowTotal: "Ausgaben: " + encodeHtml.EncodeBudget(plan.Cashflow.Expenses[year], p),
 
 			SubProducts: encodeSubProducts(plan.SubProducts, p),
 

@@ -87,10 +87,39 @@ func generateProductWithSubs(
 ) shared.Pair[model.TargetFile, string] {
 	p := message.NewPrinter(language.German)
 
+	var incomeSubProductLinks = []string{}
+	chartIncomeDataPerSubProduct := html.ChartJSDataset{
+		ID:           "chartjs_sub_products_income",
+		DatasetLabel: "Einnahmen",
+	}
+
+	var expensesSubProductLinks = []string{}
+	chartExpensesDataPerSubProduct := html.ChartJSDataset{
+		ID:           "chartjs_sub_products_expenses",
+		DatasetLabel: "Ausgaben",
+	}
+
+	populateSubProductChartData(
+		plan,
+		budgetYear,
+		&expensesSubProductLinks,
+		&chartExpensesDataPerSubProduct,
+		&incomeSubProductLinks,
+		&chartIncomeDataPerSubProduct,
+	)
+
 	var htmlBytes bytes.Buffer
 	if err := productWithSubs.Execute(
 		&htmlBytes,
-		htmlProductWithSubsEncoder.Encode(plan, budgetYear, p),
+		htmlProductWithSubsEncoder.Encode(
+			plan,
+			budgetYear,
+			incomeSubProductLinks,
+			chartIncomeDataPerSubProduct,
+			expensesSubProductLinks,
+			chartExpensesDataPerSubProduct,
+			p,
+		),
 	); err != nil {
 		panic(err)
 	}
@@ -103,4 +132,27 @@ func generateProductWithSubs(
 	}
 
 	return shared.NewPair(file, content)
+}
+
+func populateSubProductChartData(
+	plan model.FinancialPlanProduct,
+	budgetYear model.BudgetYear,
+
+	expensesSubProductLinks *[]string,
+	chartExpensesDataPerSubProduct *html.ChartJSDataset,
+
+	incomeSubProductLinks *[]string,
+	chartIncomeDataPerSubProduct *html.ChartJSDataset,
+) {
+	for _, subProduct := range plan.SubProducts {
+		if subProduct.Cashflow.Total[budgetYear] < 0 {
+			*expensesSubProductLinks = append(*expensesSubProductLinks, subProduct.CreateLink())
+			chartExpensesDataPerSubProduct.Labels = append(chartExpensesDataPerSubProduct.Labels, subProduct.Metadata.Product.Name)
+			chartExpensesDataPerSubProduct.Data = append(chartExpensesDataPerSubProduct.Data, subProduct.Cashflow.Total[budgetYear])
+		} else {
+			*incomeSubProductLinks = append(*incomeSubProductLinks, subProduct.CreateLink())
+			chartIncomeDataPerSubProduct.Labels = append(chartIncomeDataPerSubProduct.Labels, subProduct.Metadata.Product.Name)
+			chartIncomeDataPerSubProduct.Data = append(chartIncomeDataPerSubProduct.Data, subProduct.Cashflow.Total[budgetYear])
+		}
+	}
 }
