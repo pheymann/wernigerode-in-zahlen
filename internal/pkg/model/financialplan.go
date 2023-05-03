@@ -6,10 +6,6 @@ import (
 
 type ID = string
 
-type FinancialPlan struct {
-	Balances []AccountBalance
-}
-
 type FinancialPlanCity struct {
 	AdministrationBalance Cashflow
 	InvestmentsBalance    Cashflow
@@ -32,8 +28,8 @@ func (department FinancialPlanDepartment) CreateLink() string {
 
 type FinancialPlanProduct struct {
 	ID                    ID
-	AdministrationBalance AccountBalance2
-	InvestmentsBalance    AccountBalance2
+	AdministrationBalance AccountBalance
+	InvestmentsBalance    AccountBalance
 	Cashflow              Cashflow
 	Metadata              Metadata
 	SubProducts           []FinancialPlanProduct
@@ -41,15 +37,15 @@ type FinancialPlanProduct struct {
 
 func NewFinancialPlanProduct() *FinancialPlanProduct {
 	return &FinancialPlanProduct{
-		AdministrationBalance: AccountBalance2{
-			Type:     AccountBalance2TypeAdministration,
+		AdministrationBalance: AccountBalance{
+			Type:     AccountBalanceTypeAdministration,
 			Cashflow: NewCashFlow(),
-			Accounts: make([]Account2, 0),
+			Accounts: make([]Account, 0),
 		},
-		InvestmentsBalance: AccountBalance2{
-			Type:     AccountBalance2TypeInvestments,
+		InvestmentsBalance: AccountBalance{
+			Type:     AccountBalanceTypeInvestments,
 			Cashflow: NewCashFlow(),
-			Accounts: make([]Account2, 0),
+			Accounts: make([]Account, 0),
 		},
 		Cashflow:    NewCashFlow(),
 		SubProducts: make([]FinancialPlanProduct, 0),
@@ -81,32 +77,32 @@ func (product FinancialPlanProduct) IsSubProduct() bool {
 	return product.Metadata.SubProduct != nil
 }
 
-type AccountBalance2 struct {
-	Type     AccountBalance2Type
+type AccountBalance struct {
+	Type     AccountBalanceType
 	Cashflow Cashflow
-	Accounts []Account2
+	Accounts []Account
 }
 
-type AccountBalance2Type = string
+type AccountBalanceType = string
 
 const (
-	AccountBalance2TypeAdministration AccountBalance2Type = "administration"
-	AccountBalance2TypeInvestments    AccountBalance2Type = "investments"
+	AccountBalanceTypeAdministration AccountBalanceType = "administration"
+	AccountBalanceTypeInvestments    AccountBalanceType = "investments"
 )
 
-type Account2 struct {
+type Account struct {
 	ID          string
 	ProductID   string
 	Description string
-	Type        Account2Type
+	Type        AccountType
 	Budget      map[BudgetYear]float64
 }
 
-type Account2Type = string
+type AccountType = string
 
 const (
-	Account2TypeExpense Account2Type = "expense"
-	Account2TypeIncome  Account2Type = "income"
+	AccountTypeExpense AccountType = "expense"
+	AccountTypeIncome  AccountType = "income"
 )
 
 type Cashflow struct {
@@ -136,13 +132,6 @@ func NewCashFlow() Cashflow {
 	}
 }
 
-type AccountClass = string
-
-const (
-	AccountClassAdministration AccountClass = "admininstration"
-	AccountClassInvestments    AccountClass = "balance-investments"
-)
-
 type BudgetYear = string
 
 const (
@@ -154,127 +143,3 @@ const (
 	BudgetYear2025 BudgetYear = "2025"
 	BudgetYear2026 BudgetYear = "2026"
 )
-
-type AccountBalance struct {
-	Id       string
-	Class    AccountClass
-	Desc     string
-	Budgets  map[BudgetYear]float64
-	Accounts []Account
-}
-
-type Account struct {
-	Id      string
-	Desc    string
-	Budgets map[BudgetYear]float64
-	Subs    []SubAccount
-}
-
-type SubAccount struct {
-	Id      string
-	Desc    string
-	Budgets map[BudgetYear]float64
-	Units   []UnitAccount
-}
-
-type UnitAccount struct {
-	Id      string
-	Desc    string
-	Budgets map[BudgetYear]float64
-}
-
-func (fpa *FinancialPlan) AddAccountBalance(balance AccountBalance) {
-	fpa.Balances = append(fpa.Balances, balance)
-}
-
-func (fpa *FinancialPlan) RemoveLastAccountBalance() {
-	fpa.Balances = fpa.Balances[:len(fpa.Balances)-1]
-}
-
-func (fpa *FinancialPlan) UpdateLastAccountBalance(f func(AccountBalance) AccountBalance) {
-	lastBalanceIndex := len(fpa.Balances) - 1
-
-	if lastBalanceIndex < 0 {
-		fpa.AddAccountBalance(f(AccountBalance{}))
-	} else {
-		fpa.Balances[lastBalanceIndex] = f(fpa.Balances[lastBalanceIndex])
-	}
-}
-
-func (fpa *FinancialPlan) AddAccount(account Account) {
-	fpa.UpdateLastAccountBalance(func(balance AccountBalance) AccountBalance {
-		balance.Accounts = append(balance.Accounts, account)
-
-		return balance
-	})
-}
-
-func (fpa *FinancialPlan) RemoveLastAccount() {
-	fpa.UpdateLastAccountBalance(func(balance AccountBalance) AccountBalance {
-		balance.Accounts = balance.Accounts[:len(balance.Accounts)-1]
-
-		return balance
-	})
-}
-
-func (fpa *FinancialPlan) UpdateLastAccount(f func(Account) Account) {
-	fpa.UpdateLastAccountBalance(func(balance AccountBalance) AccountBalance {
-		lastAccountIndex := len(balance.Accounts) - 1
-
-		if lastAccountIndex < 0 {
-			balance.Accounts = append(balance.Accounts, f(Account{}))
-		} else {
-			balance.Accounts[lastAccountIndex] = f(balance.Accounts[lastAccountIndex])
-		}
-
-		return balance
-	})
-}
-
-func (fpa *FinancialPlan) AddSubAccount(subAccount SubAccount) {
-	fpa.UpdateLastAccount(func(account Account) Account {
-		account.Subs = append(account.Subs, subAccount)
-
-		return account
-	})
-}
-
-func (fpa *FinancialPlan) UpdateLastSubAccount(f func(SubAccount) SubAccount) {
-	fpa.UpdateLastAccount(func(account Account) Account {
-		lastSubAccountIndex := len(account.Subs) - 1
-
-		if lastSubAccountIndex < 0 {
-			account.Subs = append(account.Subs, f(SubAccount{}))
-		} else {
-			account.Subs[lastSubAccountIndex] = f(account.Subs[lastSubAccountIndex])
-		}
-
-		return account
-	})
-}
-
-func (fpa *FinancialPlan) AddUnitAccount(unitAccount UnitAccount) {
-	fpa.UpdateLastSubAccount(func(subAccount SubAccount) SubAccount {
-		subAccount.Units = append(subAccount.Units, unitAccount)
-
-		return subAccount
-	})
-}
-
-func (fpa *FinancialPlan) UpdateLastUnitAccount(f func(UnitAccount) UnitAccount) {
-	fpa.UpdateLastSubAccount(func(subAccount SubAccount) SubAccount {
-		lastUnitAccountIndex := len(subAccount.Units) - 1
-
-		if lastUnitAccountIndex < 0 {
-			subAccount.Units = append(subAccount.Units, f(UnitAccount{}))
-		} else {
-			subAccount.Units[lastUnitAccountIndex] = f(subAccount.Units[lastUnitAccountIndex])
-		}
-
-		return subAccount
-	})
-}
-
-func (sub SubAccount) HasUnits() bool {
-	return len(sub.Units) > 0
-}

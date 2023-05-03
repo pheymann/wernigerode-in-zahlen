@@ -98,12 +98,12 @@ func updateAdministrationBalance(plan *model.FinancialPlanProduct, account fd.Ac
 		updateCashflow(plan, isExpense, true, year, signBudget(value, isExpense))
 	})
 
-	tpe := model.Account2TypeIncome
+	tpe := model.AccountTypeIncome
 	if isExpense {
-		tpe = model.Account2TypeExpense
+		tpe = model.AccountTypeExpense
 	}
 
-	plan.AdministrationBalance.Accounts = append(plan.AdministrationBalance.Accounts, model.Account2{
+	plan.AdministrationBalance.Accounts = append(plan.AdministrationBalance.Accounts, model.Account{
 		ID:          account.ID,
 		ProductID:   account.ProductID,
 		Description: account.Description,
@@ -117,12 +117,12 @@ func updateInvestmentsBalance(plan *model.FinancialPlanProduct, account fd.Accou
 		updateCashflow(plan, isExpense, false, year, signBudget(value, isExpense))
 	})
 
-	tpe := model.Account2TypeIncome
+	tpe := model.AccountTypeIncome
 	if isExpense {
-		tpe = model.Account2TypeExpense
+		tpe = model.AccountTypeExpense
 	}
 
-	plan.InvestmentsBalance.Accounts = append(plan.InvestmentsBalance.Accounts, model.Account2{
+	plan.InvestmentsBalance.Accounts = append(plan.InvestmentsBalance.Accounts, model.Account{
 		ID:          account.ID,
 		ProductID:   account.ProductID,
 		Description: account.Description,

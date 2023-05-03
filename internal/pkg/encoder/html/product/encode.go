@@ -77,7 +77,7 @@ func balanceDataToSections(plan model.FinancialPlanProduct, year model.BudgetYea
 	}
 }
 
-func balanceToSection(balance model.AccountBalance2, year model.BudgetYear, p *message.Printer) html.BalanceSection {
+func balanceToSection(balance model.AccountBalance, year model.BudgetYear, p *message.Printer) html.BalanceSection {
 	accountsSplit := splitAccountsByType(balance.Accounts, year)
 	accountsIncome := accountsSplit.First
 	accountsExpenses := accountsSplit.Second
@@ -113,18 +113,18 @@ func balanceToSection(balance model.AccountBalance2, year model.BudgetYear, p *m
 	return section
 }
 
-func splitAccountsByType(accounts []model.Account2, year model.BudgetYear) shared.Pair[[]model.Account2, []model.Account2] {
-	var income = make([]model.Account2, 0)
-	var expenses = make([]model.Account2, 0)
+func splitAccountsByType(accounts []model.Account, year model.BudgetYear) shared.Pair[[]model.Account, []model.Account] {
+	var income = make([]model.Account, 0)
+	var expenses = make([]model.Account, 0)
 
 	for _, account := range accounts {
 		if !shared.IsUnequal(account.Budget[year], 0.0) {
 			continue
 		}
 
-		if account.Type == model.Account2TypeIncome {
+		if account.Type == model.AccountTypeIncome {
 			income = append(income, account)
-		} else if account.Type == model.Account2TypeExpense {
+		} else if account.Type == model.AccountTypeExpense {
 			expenses = append(expenses, account)
 		} else {
 			panic("Unknown account type: " + account.Type)
@@ -150,7 +150,7 @@ func encodeAccountCopy(data []html.AccountTableData, p *message.Printer) []html.
 	return accountCopy
 }
 
-func dataPointsToChartJSDataset(accounts []model.Account2, year model.BudgetYear, chartIDUniq string) html.ChartJSDataset {
+func dataPointsToChartJSDataset(accounts []model.Account, year model.BudgetYear, chartIDUniq string) html.ChartJSDataset {
 	var labels = []string{}
 	var data = []float64{}
 
@@ -169,7 +169,7 @@ func dataPointsToChartJSDataset(accounts []model.Account2, year model.BudgetYear
 	}
 }
 
-func encodeBalanceSectionHeader(balance model.AccountBalance2, year model.BudgetYear, p *message.Printer) template.HTML {
+func encodeBalanceSectionHeader(balance model.AccountBalance, year model.BudgetYear, p *message.Printer) template.HTML {
 	return template.HTML(fmt.Sprintf(
 		`- %s <span class="%s">%s</span>`,
 		encodeAccountClass(balance.Type, balance.Cashflow.Total[year]),
@@ -178,15 +178,15 @@ func encodeBalanceSectionHeader(balance model.AccountBalance2, year model.Budget
 	))
 }
 
-func encodeAccountClass(tpe model.AccountBalance2Type, cashflowTotal float64) string {
+func encodeAccountClass(tpe model.AccountBalanceType, cashflowTotal float64) string {
 	switch tpe {
-	case model.AccountBalance2TypeAdministration:
+	case model.AccountBalanceTypeAdministration:
 		if cashflowTotal >= 0 {
 			return "Die Verwaltung erwirtschaftet"
 		}
 		return "Die Verwaltung kostet"
 
-	case model.AccountBalance2TypeInvestments:
+	case model.AccountBalanceTypeInvestments:
 		if cashflowTotal >= 0 {
 			return "Investitionen erwirtschaften"
 		}
