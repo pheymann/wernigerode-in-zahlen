@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Gewinnabführung Stadtwerke des Fachbereichs Budget Finanzen hat ein Budge von 3.900.000,00€."/>
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Gewinnabführung Stadtwerke des Fachbereichs Budget Finanzen hat ein Budge von 4.000.000,00€."/>
   <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Gewinnabführung Stadtwerke,Budget Finanzen"/>
   <meta name="author" content="Paul Heymann"/>
 
@@ -23,7 +23,7 @@
       Das Produkt -  Jahresüberschuss aus den Sparten Elektrizitäts-, Gas-, Fernwärme- und Wasserversorgung im Konzessionsgebiet der Stadtwerke Wernigerode GmbH - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-income center">3.900.000,00€</h2>
+    <h2 class="total-cashflow-income center">4.000.000,00€</h2>
 
     <p>
       einbringen. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
@@ -32,13 +32,20 @@
 
     <div class="container">
       
-          <h3>- Die Verwaltung erwirtschaftet <span class="total-cashflow-income">3.900.000,00€</span></h3>
+          <h3>- Die Verwaltung erwirtschaftet <span class="total-cashflow-income">4.000.000,00€</span></h3>
 
           
             
               <div class="padded-chart">
-                <canvas id="chartjs_b1744690_4a1d_46d7_ad13_4cbac4d7e634"></canvas>
+                <canvas id="chartjs_administration_income"></canvas>
               </div>
+            
+            
+          
+      
+          <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
+
+          
             
             
           
@@ -74,7 +81,7 @@
           
             <tr>
               <td>Einzahlungen von Gewinnanteilen aus verbundenen Unternehmen und Beteiligungen</td>
-              <td>3.900.000,00€</td>
+              <td>4.000.000,00€</td>
             </tr>
           
         </tbody>
@@ -94,7 +101,7 @@
 
     <footer>
       <p>
-        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/wernigerode-in-zahlen">Github</a>.
         Das Impressum befindet sich <a href="/imprint.html">hier</a>.
       </p>
     </footer>
@@ -104,13 +111,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_b1744690_4a1d_46d7_ad13_4cbac4d7e634'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_administration_income'), {
             type: 'doughnut',
             data: {
               labels: ["Einzahlungen von Gewinnanteilen aus verbundenen Unternehmen und Beteiligungen"],
               datasets: [{
                 label: 'Euro',
-                data: [3900000],
+                data: [4000000],
                 borderWidth: 1
               }]
             },
@@ -123,6 +130,9 @@
               
             }
           });
+        
+        
+      
         
         
       

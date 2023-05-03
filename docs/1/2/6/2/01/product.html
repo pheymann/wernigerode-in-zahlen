@@ -38,8 +38,15 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs_d4123dd8_1d8b_4b74_b1f2_5b34e47e6319"></canvas>
+                <canvas id="chartjs_administration_expenses"></canvas>
               </div>
+            
+          
+      
+          <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
+
+          
+            
             
           
       
@@ -73,8 +80,8 @@
 
           
             <tr>
-              <td>Zuschüsse an sonstige öffentliche Sonderrechnungen</td>
-              <td>-360.400,00€</td>
+              <td>Zuschüsse an sonstige üffentliche Sonderrechnungen</td>
+              <td>360.400,00€</td>
             </tr>
           
         </tbody>
@@ -94,7 +101,7 @@
 
     <footer>
       <p>
-        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/wernigerode-in-zahlen">Github</a>.
         Das Impressum befindet sich <a href="/imprint.html">hier</a>.
       </p>
     </footer>
@@ -105,13 +112,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_d4123dd8_1d8b_4b74_b1f2_5b34e47e6319'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_administration_expenses'), {
             type: 'doughnut',
             data: {
-              labels: ["Zuschüsse an sonstige öffentliche Sonderrechnungen"],
+              labels: ["Zuschüsse an sonstige üffentliche Sonderrechnungen"],
               datasets: [{
                 label: 'Euro',
-                data: [-360400],
+                data: [360400],
                 borderWidth: 1
               }]
             },
@@ -124,6 +131,9 @@
               
             }
           });
+        
+      
+        
         
       
     </script>

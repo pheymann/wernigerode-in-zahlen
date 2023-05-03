@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Personalvertretung des Fachbereichs Budget Oberbürgermeister hat ein Budge von -95.800,00€."/>
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Personalvertretung des Fachbereichs Budget Oberbürgermeister hat ein Budge von -89.300,00€."/>
   <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Personalvertretung,Budget Oberbürgermeister"/>
   <meta name="author" content="Paul Heymann"/>
 
@@ -23,7 +23,7 @@
       Das Produkt -  Überwachung der Einhaltung von geltenden Rechtsvorschriften, Tarifverträgen und sonstigen Vorschriften, Mitbestimmung im Rahmen der rechtlichen Möglichkeiten - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-expenses center">-95.800,00€</h2>
+    <h2 class="total-cashflow-expenses center">-89.300,00€</h2>
 
     <p>
       kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
@@ -32,14 +32,21 @@
 
     <div class="container">
       
-          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-95.800,00€</span></h3>
+          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-89.300,00€</span></h3>
 
           
             
             
               <div class="padded-chart">
-                <canvas id="chartjs_50611442_d10e_44e0_8fa3_596fcd170be7"></canvas>
+                <canvas id="chartjs_administration_expenses"></canvas>
               </div>
+            
+          
+      
+          <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
+
+          
+            
             
           
       
@@ -74,32 +81,32 @@
           
             <tr>
               <td>Beiträge zu Versorgungskassen für Beamte</td>
-              <td>-31.200,00€</td>
+              <td>31.400,00€</td>
             </tr>
           
             <tr>
               <td>Besondere Verwaltungs- und Betriebsauszahlungen</td>
-              <td>-700,00€</td>
+              <td>700,00€</td>
             </tr>
           
             <tr>
               <td>Besondere zahlungswirksame Aufwendungen für Beschäftigte</td>
-              <td>-3.000,00€</td>
+              <td>1.000,00€</td>
             </tr>
           
             <tr>
               <td>Dienstauszahlungen und dgl. an Beamte</td>
-              <td>-58.500,00€</td>
+              <td>54.900,00€</td>
             </tr>
           
             <tr>
-              <td>Geschäftsauszahlungen</td>
-              <td>-1.400,00€</td>
+              <td>Geschüftsauszahlungen</td>
+              <td>800,00€</td>
             </tr>
           
             <tr>
               <td>Sonstige Personal- und Versorgungsauszahlungen</td>
-              <td>-1.000,00€</td>
+              <td>500,00€</td>
             </tr>
           
         </tbody>
@@ -119,7 +126,7 @@
 
     <footer>
       <p>
-        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/wernigerode-in-zahlen">Github</a>.
         Das Impressum befindet sich <a href="/imprint.html">hier</a>.
       </p>
     </footer>
@@ -130,13 +137,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_50611442_d10e_44e0_8fa3_596fcd170be7'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_administration_expenses'), {
             type: 'doughnut',
             data: {
-              labels: ["Dienstauszahlungen und dgl. an Beamte","Beiträge zu Versorgungskassen für Beamte","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Sonstige Personal- und Versorgungsauszahlungen","Geschäftsauszahlungen"],
+              labels: ["Dienstauszahlungen und dgl. an Beamte","Beiträge zu Versorgungskassen für Beamte","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Sonstige Personal- und Versorgungsauszahlungen","Geschüftsauszahlungen"],
               datasets: [{
                 label: 'Euro',
-                data: [-58500,-31200,-3000,-700,-1000,-1400],
+                data: [54900,31400,1000,700,500,800],
                 borderWidth: 1
               }]
             },
@@ -149,6 +156,9 @@
               
             }
           });
+        
+      
+        
         
       
     </script>

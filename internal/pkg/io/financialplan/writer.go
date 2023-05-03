@@ -1,8 +1,8 @@
 package financialplan_a
 
 import (
-	"wernigode-in-zahlen.de/internal/pkg/io"
-	"wernigode-in-zahlen.de/internal/pkg/model"
+	"wernigerode-in-zahlen.de/internal/pkg/io"
+	"wernigerode-in-zahlen.de/internal/pkg/model"
 )
 
 func Write(FinancialPlan string, target model.TargetFile) {

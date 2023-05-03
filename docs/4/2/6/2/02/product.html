@@ -38,13 +38,20 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 63.000,00€</h5>
-                <canvas id="chartjs_98f80c18_c372_468f_a07f_263844b0316d"></canvas>
+                <canvas id="chartjs_administration_income"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -73.000,00€</h5>
-                <canvas id="chartjs_38892ed6_5209_477c_add0_6882c503df8c"></canvas>
+                <canvas id="chartjs_administration_expenses"></canvas>
               </div>
             </div>
+          
+      
+          <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
+
+          
+            
+            
           
       
     </div>
@@ -78,7 +85,7 @@
           
             <tr>
               <td>Auszahlungen für Mieten und Pachten</td>
-              <td>-13.000,00€</td>
+              <td>13.000,00€</td>
             </tr>
           
             <tr>
@@ -88,17 +95,17 @@
           
             <tr>
               <td>Besondere Verwaltungs- und Betriebsauszahlungen</td>
-              <td>-58.000,00€</td>
+              <td>58.000,00€</td>
             </tr>
           
             <tr>
-              <td>Einzahlungen aus dem Verkauf von Vorräten</td>
+              <td>Einzahlungen aus dem Verkauf von Vorrüten</td>
               <td>500,00€</td>
             </tr>
           
             <tr>
-              <td>Unterhaltung des sonstigen beweglichen Vermögens</td>
-              <td>-2.000,00€</td>
+              <td>Unterhaltung des sonstigen beweglichen Vermügens</td>
+              <td>2.000,00€</td>
             </tr>
           
             <tr>
@@ -133,7 +140,7 @@
 
     <footer>
       <p>
-        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/wernigerode-in-zahlen">Github</a>.
         Das Impressum befindet sich <a href="/imprint.html">hier</a>.
       </p>
     </footer>
@@ -143,10 +150,10 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_98f80c18_c372_468f_a07f_263844b0316d'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_administration_income'), {
             type: 'doughnut',
             data: {
-              labels: ["Zuweisungen für laufende Zwecke vom Land","Zuschüsse für laufende Zwecke von privaten Unternehmen (Spenden)","Zuschüsse für laufende Zwecke von übrigen Bereichen","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus dem Verkauf von Vorräten"],
+              labels: ["Zuweisungen für laufende Zwecke vom Land","Zuschüsse für laufende Zwecke von privaten Unternehmen (Spenden)","Zuschüsse für laufende Zwecke von übrigen Bereichen","Benutzungsgebühren und ähnliche Entgelte","Einzahlungen aus dem Verkauf von Vorrüten"],
               datasets: [{
                 label: 'Euro',
                 data: [20000,26500,10500,5500,500],
@@ -165,13 +172,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_38892ed6_5209_477c_add0_6882c503df8c'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_administration_expenses'), {
             type: 'doughnut',
             data: {
-              labels: ["Auszahlungen für Mieten und Pachten","Unterhaltung des sonstigen beweglichen Vermögens","Besondere Verwaltungs- und Betriebsauszahlungen"],
+              labels: ["Auszahlungen für Mieten und Pachten","Unterhaltung des sonstigen beweglichen Vermügens","Besondere Verwaltungs- und Betriebsauszahlungen"],
               datasets: [{
                 label: 'Euro',
-                data: [-13000,-2000,-58000],
+                data: [13000,2000,58000],
                 borderWidth: 1
               }]
             },
@@ -184,6 +191,9 @@
               
             }
           });
+        
+      
+        
         
       
     </script>

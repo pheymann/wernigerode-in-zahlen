@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Wohngeld des Fachbereichs Budget Bürgerservice hat ein Budge von -328.800,00€."/>
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Wohngeld des Fachbereichs Budget Bürgerservice hat ein Budge von -413.500,00€."/>
   <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Wohngeld,Budget Bürgerservice"/>
   <meta name="author" content="Paul Heymann"/>
 
@@ -23,7 +23,7 @@
       Das Produkt -  Bearbeitung von Wohngeld - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-expenses center">-328.800,00€</h2>
+    <h2 class="total-cashflow-expenses center">-413.500,00€</h2>
 
     <p>
       kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
@@ -32,19 +32,26 @@
 
     <div class="container">
       
-          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-328.800,00€</span></h3>
+          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-413.500,00€</span></h3>
 
           
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 400,00€</h5>
-                <canvas id="chartjs_0fd76e78_07d1_4a15_b3bf_8f65a2b254ce"></canvas>
+                <canvas id="chartjs_administration_income"></canvas>
               </div>
               <div class="col-6">
-                <h5 class="center">Ausgaben: -329.200,00€</h5>
-                <canvas id="chartjs_d008016d_928e_4fcd_9b5e_9fa94550a8ef"></canvas>
+                <h5 class="center">Ausgaben: -413.900,00€</h5>
+                <canvas id="chartjs_administration_expenses"></canvas>
               </div>
             </div>
+          
+      
+          <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
+
+          
+            
+            
           
       
     </div>
@@ -77,38 +84,38 @@
 
           
             <tr>
-              <td>Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten</td>
-              <td>-500,00€</td>
+              <td>Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten</td>
+              <td>500,00€</td>
             </tr>
           
             <tr>
               <td>Auszahlungen für sonstige Dienstleistungen</td>
-              <td>-100,00€</td>
+              <td>100,00€</td>
             </tr>
           
             <tr>
               <td>Beihilfen, Unterstützungsleistungen für Beschäftigte</td>
-              <td>-1.400,00€</td>
+              <td>1.900,00€</td>
             </tr>
           
             <tr>
               <td>Beiträge zu Versorgungskassen für Arbeitnehmer</td>
-              <td>-11.100,00€</td>
+              <td>13.100,00€</td>
             </tr>
           
             <tr>
               <td>Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer</td>
-              <td>-52.600,00€</td>
+              <td>66.300,00€</td>
             </tr>
           
             <tr>
-              <td>Bußgelder</td>
+              <td>Buügelder</td>
               <td>300,00€</td>
             </tr>
           
             <tr>
               <td>Dienstauszahlungen und dgl. an Arbeitnehmer</td>
-              <td>-262.200,00€</td>
+              <td>330.700,00€</td>
             </tr>
           
             <tr>
@@ -117,8 +124,8 @@
             </tr>
           
             <tr>
-              <td>Geschäftsauszahlungen</td>
-              <td>-1.300,00€</td>
+              <td>Geschüftsauszahlungen</td>
+              <td>1.300,00€</td>
             </tr>
           
         </tbody>
@@ -138,7 +145,7 @@
 
     <footer>
       <p>
-        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/wernigerode-in-zahlen">Github</a>.
         Das Impressum befindet sich <a href="/imprint.html">hier</a>.
       </p>
     </footer>
@@ -148,10 +155,10 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_0fd76e78_07d1_4a15_b3bf_8f65a2b254ce'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_administration_income'), {
             type: 'doughnut',
             data: {
-              labels: ["Einzahlungen aus Kostenerstattungen von übrigen Bereichen","Bußgelder"],
+              labels: ["Einzahlungen aus Kostenerstattungen von übrigen Bereichen","Buügelder"],
               datasets: [{
                 label: 'Euro',
                 data: [100,300],
@@ -170,13 +177,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_d008016d_928e_4fcd_9b5e_9fa94550a8ef'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_administration_expenses'), {
             type: 'doughnut',
             data: {
-              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für sonstige Dienstleistungen","Geschäftsauszahlungen","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten"],
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für sonstige Dienstleistungen","Geschüftsauszahlungen","Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten"],
               datasets: [{
                 label: 'Euro',
-                data: [-262200,-11100,-52600,-1400,-100,-1300,-500],
+                data: [330700,13100,66300,1900,100,1300,500],
                 borderWidth: 1
               }]
             },
@@ -189,6 +196,9 @@
               
             }
           });
+        
+      
+        
         
       
     </script>

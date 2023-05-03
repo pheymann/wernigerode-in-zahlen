@@ -5,8 +5,8 @@ import (
 	"regexp"
 	"strings"
 
-	"wernigode-in-zahlen.de/internal/pkg/decoder"
-	"wernigode-in-zahlen.de/internal/pkg/model"
+	"wernigerode-in-zahlen.de/internal/pkg/decoder"
+	"wernigerode-in-zahlen.de/internal/pkg/model"
 )
 
 type MetadataDecoder struct {

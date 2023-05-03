@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Meldewesen des Fachbereichs Budget Bürgerservice hat ein Budge von -399.400,00€."/>
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Meldewesen des Fachbereichs Budget Bürgerservice hat ein Budge von -335.700,00€."/>
   <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Meldewesen,Budget Bürgerservice"/>
   <meta name="author" content="Paul Heymann"/>
 
@@ -23,7 +23,7 @@
       Das Produkt -  Bearbeiten sämtlicher Angelegenheiten des Melde- und Passwesens - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-expenses center">-399.400,00€</h2>
+    <h2 class="total-cashflow-expenses center">-335.700,00€</h2>
 
     <p>
       kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
@@ -32,19 +32,26 @@
 
     <div class="container">
       
-          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-399.400,00€</span></h3>
+          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-335.700,00€</span></h3>
 
           
             <div class="row">
               <div class="col-6">
-                <h5 class="center">Einnahmen: 168.600,00€</h5>
-                <canvas id="chartjs_3801f996_7181_4dd5_98d6_418956f1c084"></canvas>
+                <h5 class="center">Einnahmen: 203.300,00€</h5>
+                <canvas id="chartjs_administration_income"></canvas>
               </div>
               <div class="col-6">
-                <h5 class="center">Ausgaben: -568.000,00€</h5>
-                <canvas id="chartjs_48d7dad4_b49b_4c0f_958f_393219ed53f0"></canvas>
+                <h5 class="center">Ausgaben: -539.000,00€</h5>
+                <canvas id="chartjs_administration_expenses"></canvas>
               </div>
             </div>
+          
+      
+          <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
+
+          
+            
+            
           
       
     </div>
@@ -77,58 +84,58 @@
 
           
             <tr>
+              <td>19% USt Ert. KostErst v Zweckv</td>
+              <td>1.300,00€</td>
+            </tr>
+          
+            <tr>
               <td>Beihilfen, Unterstützungsleistungen für Beschäftigte</td>
-              <td>-1.700,00€</td>
+              <td>1.700,00€</td>
             </tr>
           
             <tr>
               <td>Beiträge zu Versorgungskassen für Arbeitnehmer</td>
-              <td>-14.400,00€</td>
+              <td>12.300,00€</td>
             </tr>
           
             <tr>
               <td>Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer</td>
-              <td>-68.000,00€</td>
+              <td>61.000,00€</td>
             </tr>
           
             <tr>
               <td>Besondere Verwaltungs- und Betriebsauszahlungen</td>
-              <td>-900,00€</td>
+              <td>900,00€</td>
             </tr>
           
             <tr>
-              <td>Bußgelder</td>
-              <td>2.500,00€</td>
+              <td>Buügelder</td>
+              <td>2.000,00€</td>
             </tr>
           
             <tr>
               <td>Dienstauszahlungen und dgl. an Arbeitnehmer</td>
-              <td>-338.000,00€</td>
+              <td>303.100,00€</td>
             </tr>
           
             <tr>
-              <td>Einzahlungen aus Kostenerstattungen von Zweckverbänden</td>
-              <td>1.100,00€</td>
+              <td>Erstattungen für die Auszahl. von Dritten aus lfd. Verwaltungstüt. an den Bund</td>
+              <td>135.000,00€</td>
             </tr>
           
             <tr>
-              <td>Erstattungen für die Auszahl. von Dritten aus lfd. Verwaltungstät. an den Bund</td>
-              <td>-115.000,00€</td>
-            </tr>
-          
-            <tr>
-              <td>Geschäftsauszahlungen</td>
-              <td>-5.000,00€</td>
+              <td>Geschüftsauszahlungen</td>
+              <td>5.000,00€</td>
             </tr>
           
             <tr>
               <td>Verwaltungsgebühren</td>
-              <td>165.000,00€</td>
+              <td>200.000,00€</td>
             </tr>
           
             <tr>
               <td>Zuschüsse an übrige Bereiche</td>
-              <td>-25.000,00€</td>
+              <td>20.000,00€</td>
             </tr>
           
         </tbody>
@@ -148,7 +155,7 @@
 
     <footer>
       <p>
-        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/wernigerode-in-zahlen">Github</a>.
         Das Impressum befindet sich <a href="/imprint.html">hier</a>.
       </p>
     </footer>
@@ -158,13 +165,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_3801f996_7181_4dd5_98d6_418956f1c084'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_administration_income'), {
             type: 'doughnut',
             data: {
-              labels: ["Verwaltungsgebühren","Einzahlungen aus Kostenerstattungen von Zweckverbänden","Bußgelder"],
+              labels: ["Verwaltungsgebühren","19% USt Ert. KostErst v Zweckv","Buügelder"],
               datasets: [{
                 label: 'Euro',
-                data: [165000,1100,2500],
+                data: [200000,1300,2000],
                 borderWidth: 1
               }]
             },
@@ -180,13 +187,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_48d7dad4_b49b_4c0f_958f_393219ed53f0'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_administration_expenses'), {
             type: 'doughnut',
             data: {
-              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Zuschüsse an übrige Bereiche","Geschäftsauszahlungen","Erstattungen für die Auszahl. von Dritten aus lfd. Verwaltungstät. an den Bund"],
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Zuschüsse an übrige Bereiche","Geschüftsauszahlungen","Erstattungen für die Auszahl. von Dritten aus lfd. Verwaltungstüt. an den Bund"],
               datasets: [{
                 label: 'Euro',
-                data: [-338000,-14400,-68000,-1700,-900,-25000,-5000,-115000],
+                data: [303100,12300,61000,1700,900,20000,5000,135000],
                 borderWidth: 1
               }]
             },
@@ -199,6 +206,9 @@
               
             }
           });
+        
+      
+        
         
       
     </script>

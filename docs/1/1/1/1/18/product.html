@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<head>
+  <title>Produkt</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Stiftungen des Fachbereichs Budget Oberbürgermeister hat ein Budge von -150.500,00€."/>
+  <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Stiftungen,Budget Oberbürgermeister"/>
+  <meta name="author" content="Paul Heymann"/>
+
+  <link rel="stylesheet" type="text/css" href="/css/styling.css">
+</head>
+<html>
+  <body>
+    <p class="warning-banner">
+      Diese Seite ist noch in der Entwicklung. Es kann daher sein, dass sie noch Fehler enthält.
+    </p>
+
+    <h1>Stiftungen</h1>
+
+    <p>
+      Das Produkt -  Durchführung von Vergabeverfahren für das Auftragswesen der Stadt - wird in 2023
+    </p>
+
+    <h2 class="total-cashflow-expenses center">-150.500,00€</h2>
+
+    <p>
+      kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
+		Auflistung von Kostenstellen. Ganz am Ende dieser Seite findest du noch eine Beschreibung des Produkts.
+    </p>
+
+    <div class="container">
+      
+          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-150.500,00€</span></h3>
+
+          
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 9.200,00€</h5>
+                <canvas id="chartjs_administration_income"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: -159.700,00€</h5>
+                <canvas id="chartjs_administration_expenses"></canvas>
+              </div>
+            </div>
+          
+      
+          <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
+
+          
+            
+            
+          
+      
+    </div>
+
+    <div class="info-sheet">
+      <h3>Aufgabe</h3>
+      <p> Vorbereitung und Abwicklung von Vergabevorgängen (Bauleistungen sowie Lieferungen und Dienstleistungen)</p>
+
+      <h3>Zielgruppe</h3>
+      <p>Ämter und Sachgebiete der Stadt Wernigerode sowie an den Verfahren beteiligte Unternehmen</p>
+
+      <h3>Dienstleistungen</h3>
+      <p> 2a. Durchführung gesetzeskonformer Vergabeverfahren (Bauleistungen) - 2b. Durchführung gesetzeskonformer Vergabeverfahren (Lieferungen und Dienstleistungen),</p>
+
+      <h3>Klassifizierung</h3>
+      <ul>
+        <li>Fachbereich: Budget Oberbürgermeister</li>
+        <li>Produktklasse: Zentrale Verwaltung</li>
+        <li>Produktbereich: Innere Verwaltung</li>
+        <li>Produktgruppe: Verwaltungssteuerung und -service</li>
+        <li>Produkt: Stiftungen</li>
+      </ul>
+
+      <table style="margin-top: 80px;">
+        <tbody>
+          <tr>
+            <th>Konto</th>
+            <th>Budget</th>
+          </tr>
+
+          
+            <tr>
+              <td>Beihilfen, Unterstützungsleistungen für Beschäftigte</td>
+              <td>800,00€</td>
+            </tr>
+          
+            <tr>
+              <td>Beiträge zu Versorgungskassen für Arbeitnehmer</td>
+              <td>5.000,00€</td>
+            </tr>
+          
+            <tr>
+              <td>Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer</td>
+              <td>25.600,00€</td>
+            </tr>
+          
+            <tr>
+              <td>Dienstauszahlungen und dgl. an Arbeitnehmer</td>
+              <td>127.300,00€</td>
+            </tr>
+          
+            <tr>
+              <td>Einzahlungen aus Kostenerstattungen vom Land</td>
+              <td>9.200,00€</td>
+            </tr>
+          
+            <tr>
+              <td>Geschüftsauszahlungen</td>
+              <td>1.000,00€</td>
+            </tr>
+          
+        </tbody>
+      </table>
+    </div>
+
+    <div class="back-link center">
+      <a href="/1/department.html">Zurück zur Bereichsübersicht</a>
+    </div>
+
+    <p class="data-disclosure">
+      Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2022.
+			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
+			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
+			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>
+    </p>
+
+    <footer>
+      <p>
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/wernigerode-in-zahlen">Github</a>.
+        Das Impressum befindet sich <a href="/imprint.html">hier</a>.
+      </p>
+    </footer>
+
+    <script src="/js/chart.js"></script>
+    <script>
+      
+        
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_administration_income'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Einzahlungen aus Kostenerstattungen vom Land"],
+              datasets: [{
+                label: 'Euro',
+                data: [9200],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_administration_expenses'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Geschüftsauszahlungen"],
+              datasets: [{
+                label: 'Euro',
+                data: [127300,5000,25600,800,1000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
+      
+        
+        
+      
+    </script>
+    <script defer data-domain="wernigerode-in-zahlen.de" src="https://plausible.io/js/script.js"></script>
+  </body>
+</html>

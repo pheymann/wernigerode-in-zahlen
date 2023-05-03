@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Buswartehallen des Fachbereichs Budget Bürgerservice hat ein Budge von -24.000,00€."/>
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Buswartehallen des Fachbereichs Budget Bürgerservice hat ein Budge von -10.000,00€."/>
   <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Buswartehallen,Budget Bürgerservice"/>
   <meta name="author" content="Paul Heymann"/>
 
@@ -23,7 +23,7 @@
       Das Produkt -  Sicherstellung und Unterstützung eines ÖPNV-Betriebes auf Stadtgebiet in fremder Trägerschaft - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-expenses center">-24.000,00€</h2>
+    <h2 class="total-cashflow-expenses center">-10.000,00€</h2>
 
     <p>
       kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
@@ -38,24 +38,16 @@
             
             
               <div class="padded-chart">
-                <canvas id="chartjs_9ef0e5bb_556e_4f7d_97be_af7f5b4f3726"></canvas>
+                <canvas id="chartjs_administration_expenses"></canvas>
               </div>
             
           
       
-          <h3>- Investitionen kosten <span class="total-cashflow-expenses">-14.000,00€</span></h3>
+          <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
 
           
-            <div class="row">
-              <div class="col-6">
-                <h5 class="center">Einnahmen: 21.000,00€</h5>
-                <canvas id="chartjs_1d183e39_6973_4c08_8408_fcf6a5fc50fc"></canvas>
-              </div>
-              <div class="col-6">
-                <h5 class="center">Ausgaben: -35.000,00€</h5>
-                <canvas id="chartjs_e31914c5_79b2_45a4_9dcb_f04b990665e2"></canvas>
-              </div>
-            </div>
+            
+            
           
       
     </div>
@@ -88,28 +80,18 @@
 
           
             <tr>
-              <td>Auszahlungen für Hochbaumaßnahmen</td>
-              <td>-35.000,00€</td>
-            </tr>
-          
-            <tr>
               <td>Bewirtschaftung der Grundstücke und baulichen Anlagen</td>
-              <td>-3.500,00€</td>
-            </tr>
-          
-            <tr>
-              <td>Einz. a. Zuweisungen f. Investitionen u.Investitionsförderm. Gemeinden &amp; GV</td>
-              <td>21.000,00€</td>
+              <td>3.500,00€</td>
             </tr>
           
             <tr>
               <td>Unterhaltung der Grundstücke und baulichen Anlagen</td>
-              <td>-4.500,00€</td>
+              <td>4.500,00€</td>
             </tr>
           
             <tr>
-              <td>Unterhaltung des sonstigen beweglichen Vermögens</td>
-              <td>-2.000,00€</td>
+              <td>Unterhaltung des sonstigen beweglichen Vermügens</td>
+              <td>2.000,00€</td>
             </tr>
           
         </tbody>
@@ -129,7 +111,7 @@
 
     <footer>
       <p>
-        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/wernigerode-in-zahlen">Github</a>.
         Das Impressum befindet sich <a href="/imprint.html">hier</a>.
       </p>
     </footer>
@@ -140,13 +122,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_9ef0e5bb_556e_4f7d_97be_af7f5b4f3726'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_administration_expenses'), {
             type: 'doughnut',
             data: {
-              labels: ["Unterhaltung der Grundstücke und baulichen Anlagen","Bewirtschaftung der Grundstücke und baulichen Anlagen","Unterhaltung des sonstigen beweglichen Vermögens"],
+              labels: ["Unterhaltung der Grundstücke und baulichen Anlagen","Bewirtschaftung der Grundstücke und baulichen Anlagen","Unterhaltung des sonstigen beweglichen Vermügens"],
               datasets: [{
                 label: 'Euro',
-                data: [-4500,-3500,-2000],
+                data: [4500,3500,2000],
                 borderWidth: 1
               }]
             },
@@ -162,48 +144,6 @@
         
       
         
-          var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_1d183e39_6973_4c08_8408_fcf6a5fc50fc'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Einz. a. Zuweisungen f. Investitionen u.Investitionsförderm. Gemeinden \u0026 GV"],
-              datasets: [{
-                label: 'Euro',
-                data: [21000],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              },
-              
-            }
-          });
-        
-        
-          var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_e31914c5_79b2_45a4_9dcb_f04b990665e2'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Auszahlungen für Hochbaumaßnahmen"],
-              datasets: [{
-                label: 'Euro',
-                data: [-35000],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              },
-              
-            }
-          });
         
       
     </script>

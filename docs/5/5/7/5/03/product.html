@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Ortsentwicklung Schierke des Fachbereichs Budget Stadtentwicklung hat ein Budge von -50.000,00€."/>
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Ortsentwicklung Schierke des Fachbereichs Budget Stadtentwicklung hat ein Budge von -36.000,00€."/>
   <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Ortsentwicklung Schierke,Budget Stadtentwicklung"/>
   <meta name="author" content="Paul Heymann"/>
 
@@ -23,7 +23,7 @@
       Das Produkt -  Planung, Bau und Entwicklung des Ortsteils Schierke - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-expenses center">-50.000,00€</h2>
+    <h2 class="total-cashflow-expenses center">-36.000,00€</h2>
 
     <p>
       kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
@@ -32,19 +32,22 @@
 
     <div class="container">
       
-          <h3>- Investitionen kosten <span class="total-cashflow-expenses">-50.000,00€</span></h3>
+          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-36.000,00€</span></h3>
 
           
-            <div class="row">
-              <div class="col-6">
-                <h5 class="center">Einnahmen: 450.000,00€</h5>
-                <canvas id="chartjs_3cb28dcf_2849_46b1_8fc6_f836d41798d9"></canvas>
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_administration_expenses"></canvas>
               </div>
-              <div class="col-6">
-                <h5 class="center">Ausgaben: -500.000,00€</h5>
-                <canvas id="chartjs_a8e56311_bcef_4cf6_88ad_9de0590fc553"></canvas>
-              </div>
-            </div>
+            
+          
+      
+          <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
+
+          
+            
+            
           
       
     </div>
@@ -77,13 +80,18 @@
 
           
             <tr>
-              <td>Auszahlungen für sonstige Baumaßnahmen</td>
-              <td>-500.000,00€</td>
+              <td>Auszahlungen für Honorare</td>
+              <td>20.000,00€</td>
             </tr>
           
             <tr>
-              <td>Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land</td>
-              <td>450.000,00€</td>
+              <td>Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten</td>
+              <td>15.000,00€</td>
+            </tr>
+          
+            <tr>
+              <td>Besondere Verwaltungs- und Betriebsauszahlungen</td>
+              <td>1.000,00€</td>
             </tr>
           
         </tbody>
@@ -103,7 +111,7 @@
 
     <footer>
       <p>
-        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/wernigerode-in-zahlen">Github</a>.
         Das Impressum befindet sich <a href="/imprint.html">hier</a>.
       </p>
     </footer>
@@ -112,36 +120,15 @@
     <script>
       
         
-          var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_3cb28dcf_2849_46b1_8fc6_f836d41798d9'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land"],
-              datasets: [{
-                label: 'Euro',
-                data: [450000],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              },
-              
-            }
-          });
-        
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_a8e56311_bcef_4cf6_88ad_9de0590fc553'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_administration_expenses'), {
             type: 'doughnut',
             data: {
-              labels: ["Auszahlungen für sonstige Baumaßnahmen"],
+              labels: ["Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten","Auszahlungen für Honorare"],
               datasets: [{
                 label: 'Euro',
-                data: [-500000],
+                data: [1000,15000,20000],
                 borderWidth: 1
               }]
             },
@@ -154,6 +141,9 @@
               
             }
           });
+        
+      
+        
         
       
     </script>

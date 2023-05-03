@@ -32,17 +32,24 @@
 
     <div class="container">
       
+          <h3>- Die Verwaltung erwirtschaftet <span class="total-cashflow-income">0,00€</span></h3>
+
+          
+            
+            
+          
+      
           <h3>- Investitionen kosten <span class="total-cashflow-expenses">-50.000,00€</span></h3>
 
           
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 100.000,00€</h5>
-                <canvas id="chartjs_31ae8d2f_5f11_4f7d_bcbc_83ba753174bf"></canvas>
+                <canvas id="chartjs_investments_income"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -150.000,00€</h5>
-                <canvas id="chartjs_f0a19d39_42ed_403d_8955_201adeb957e2"></canvas>
+                <canvas id="chartjs_investments_expenses"></canvas>
               </div>
             </div>
           
@@ -76,16 +83,6 @@
           </tr>
 
           
-            <tr>
-              <td>Auszahlungen für Tiefbaumaßnahmen</td>
-              <td>-150.000,00€</td>
-            </tr>
-          
-            <tr>
-              <td>Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land</td>
-              <td>100.000,00€</td>
-            </tr>
-          
         </tbody>
       </table>
     </div>
@@ -103,7 +100,7 @@
 
     <footer>
       <p>
-        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/wernigerode-in-zahlen">Github</a>.
         Das Impressum befindet sich <a href="/imprint.html">hier</a>.
       </p>
     </footer>
@@ -112,11 +109,14 @@
     <script>
       
         
+        
+      
+        
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_31ae8d2f_5f11_4f7d_bcbc_83ba753174bf'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_investments_income'), {
             type: 'doughnut',
             data: {
-              labels: ["Einz. a. Zuweisungen f. Investitionen u.Investitionsfördermaßnahmen Land"],
+              labels: ["Einz. a. Zuweisungen f. Investitionen u.Investitionsfürdermaünahmen Land"],
               datasets: [{
                 label: 'Euro',
                 data: [100000],
@@ -135,13 +135,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_f0a19d39_42ed_403d_8955_201adeb957e2'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_investments_expenses'), {
             type: 'doughnut',
             data: {
-              labels: ["Auszahlungen für Tiefbaumaßnahmen"],
+              labels: ["Auszahlungen für Hochbaumaünahmen"],
               datasets: [{
                 label: 'Euro',
-                data: [-150000],
+                data: [150000],
                 borderWidth: 1
               }]
             },

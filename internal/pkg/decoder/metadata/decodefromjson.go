@@ -3,7 +3,7 @@ package metadata
 import (
 	"encoding/json"
 
-	"wernigode-in-zahlen.de/internal/pkg/model"
+	"wernigerode-in-zahlen.de/internal/pkg/model"
 )
 
 func DecodeFromJSON(metadataJSON string) model.Metadata {

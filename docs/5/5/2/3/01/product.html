@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Denkmalschutz des Fachbereichs Budget Stadtentwicklung hat ein Budge von -162.600,00€."/>
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Denkmalschutz des Fachbereichs Budget Stadtentwicklung hat ein Budge von -78.800,00€."/>
   <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Denkmalschutz,Budget Stadtentwicklung"/>
   <meta name="author" content="Paul Heymann"/>
 
@@ -23,7 +23,7 @@
       Das Produkt -  Erhalt und Sanierung des historischen Stadtkerns inkl. Schlossareal - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-expenses center">-162.600,00€</h2>
+    <h2 class="total-cashflow-expenses center">-78.800,00€</h2>
 
     <p>
       kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
@@ -32,17 +32,28 @@
 
     <div class="container">
       
-          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-162.600,00€</span></h3>
+          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-28.800,00€</span></h3>
+
+          
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_administration_expenses"></canvas>
+              </div>
+            
+          
+      
+          <h3>- Investitionen kosten <span class="total-cashflow-expenses">-50.000,00€</span></h3>
 
           
             <div class="row">
               <div class="col-6">
-                <h5 class="center">Einnahmen: 983.000,00€</h5>
-                <canvas id="chartjs_ee52b65c_500d_4d3d_abf4_a7ef54f8e9d4"></canvas>
+                <h5 class="center">Einnahmen: 200.000,00€</h5>
+                <canvas id="chartjs_investments_income"></canvas>
               </div>
               <div class="col-6">
-                <h5 class="center">Ausgaben: -1.145.600,00€</h5>
-                <canvas id="chartjs_6b833584_7e79_43be_b267_8beab911148a"></canvas>
+                <h5 class="center">Ausgaben: -250.000,00€</h5>
+                <canvas id="chartjs_investments_expenses"></canvas>
               </div>
             </div>
           
@@ -77,38 +88,18 @@
 
           
             <tr>
-              <td>Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten</td>
-              <td>-600,00€</td>
+              <td>Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten</td>
+              <td>800,00€</td>
             </tr>
           
             <tr>
               <td>Sonstige Finanzauszahlungen</td>
-              <td>-15.000,00€</td>
+              <td>18.000,00€</td>
             </tr>
           
             <tr>
-              <td>Unterhaltung des sonstigen unbeweglichen Vermögens</td>
-              <td>-10.000,00€</td>
-            </tr>
-          
-            <tr>
-              <td>Zuschüsse an übrige Bereiche</td>
-              <td>-250.000,00€</td>
-            </tr>
-          
-            <tr>
-              <td>Zuschüsse an übrige Bereiche</td>
-              <td>-870.000,00€</td>
-            </tr>
-          
-            <tr>
-              <td>Zuweisungen für laufende Zwecke vom Bund</td>
-              <td>783.000,00€</td>
-            </tr>
-          
-            <tr>
-              <td>Zuweisungen für laufende Zwecke vom Land</td>
-              <td>200.000,00€</td>
+              <td>Unterhaltung des sonstigen unbeweglichen Vermügens</td>
+              <td>10.000,00€</td>
             </tr>
           
         </tbody>
@@ -128,7 +119,7 @@
 
     <footer>
       <p>
-        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/wernigerode-in-zahlen">Github</a>.
         Das Impressum befindet sich <a href="/imprint.html">hier</a>.
       </p>
     </footer>
@@ -137,14 +128,38 @@
     <script>
       
         
-          var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_ee52b65c_500d_4d3d_abf4_a7ef54f8e9d4'), {
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_administration_expenses'), {
             type: 'doughnut',
             data: {
-              labels: ["Zuweisungen für laufende Zwecke vom Bund","Zuweisungen für laufende Zwecke vom Land"],
+              labels: ["Unterhaltung des sonstigen unbeweglichen Vermügens","Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten","Sonstige Finanzauszahlungen"],
               datasets: [{
                 label: 'Euro',
-                data: [783000,200000],
+                data: [10000,800,18000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
+      
+        
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_investments_income'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Einz. a. Zuweisungen f. Investitionen u.Investitionsfürdermaünahmen Land"],
+              datasets: [{
+                label: 'Euro',
+                data: [200000],
                 borderWidth: 1
               }]
             },
@@ -160,13 +175,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_6b833584_7e79_43be_b267_8beab911148a'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_investments_expenses'), {
             type: 'doughnut',
             data: {
-              labels: ["Unterhaltung des sonstigen unbeweglichen Vermögens","Zuschüsse an übrige Bereiche","Zuschüsse an übrige Bereiche","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten","Sonstige Finanzauszahlungen"],
+              labels: ["Auszahlungen für Tiefbaumaünahmen"],
               datasets: [{
                 label: 'Euro',
-                data: [-10000,-250000,-870000,-600,-15000],
+                data: [250000],
                 borderWidth: 1
               }]
             },

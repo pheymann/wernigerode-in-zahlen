@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Spielplätze des Fachbereichs Budget Betriebsbereiche hat ein Budge von -111.600,00€."/>
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Spielplätze des Fachbereichs Budget Betriebsbereiche hat ein Budge von -47.100,00€."/>
   <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Spielplätze,Budget Betriebsbereiche"/>
   <meta name="author" content="Paul Heymann"/>
 
@@ -23,7 +23,7 @@
       Das Produkt -  Bereitstellung von öffentlichen Spielplätzen - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-expenses center">-111.600,00€</h2>
+    <h2 class="total-cashflow-expenses center">-47.100,00€</h2>
 
     <p>
       kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
@@ -32,25 +32,21 @@
 
     <div class="container">
       
-          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-51.600,00€</span></h3>
+          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-47.100,00€</span></h3>
 
           
             
             
               <div class="padded-chart">
-                <canvas id="chartjs_76e39021_87c3_4ac3_be6e_b01f8eddce8e"></canvas>
+                <canvas id="chartjs_administration_expenses"></canvas>
               </div>
             
           
       
-          <h3>- Investitionen kosten <span class="total-cashflow-expenses">-60.000,00€</span></h3>
+          <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
 
           
             
-            
-              <div class="padded-chart">
-                <canvas id="chartjs_fa2c8c46_bc80_4206_a0b1_4cf895c5204e"></canvas>
-              </div>
             
           
       
@@ -84,38 +80,33 @@
 
           
             <tr>
-              <td>Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.</td>
-              <td>-60.000,00€</td>
-            </tr>
-          
-            <tr>
               <td>Auszahlungen für Mieten und Pachten</td>
-              <td>-500,00€</td>
+              <td>500,00€</td>
             </tr>
           
             <tr>
               <td>Bewirtschaftung der Grundstücke und baulichen Anlagen</td>
-              <td>-500,00€</td>
+              <td>1.000,00€</td>
             </tr>
           
             <tr>
-              <td>Erwerb geringwertiger Vermögensgegenstände</td>
-              <td>-500,00€</td>
+              <td>Erwerb geringwertiger Vermügensgegenstünde</td>
+              <td>500,00€</td>
             </tr>
           
             <tr>
-              <td>Geschäftsauszahlungen</td>
-              <td>-100,00€</td>
+              <td>Geschüftsauszahlungen</td>
+              <td>100,00€</td>
             </tr>
           
             <tr>
-              <td>Unterhaltung des sonstigen beweglichen Vermögens</td>
-              <td>-20.000,00€</td>
+              <td>Unterhaltung des sonstigen beweglichen Vermügens</td>
+              <td>20.000,00€</td>
             </tr>
           
             <tr>
-              <td>Unterhaltung des sonstigen unbeweglichen Vermögens</td>
-              <td>-30.000,00€</td>
+              <td>Unterhaltung des sonstigen unbeweglichen Vermügens</td>
+              <td>25.000,00€</td>
             </tr>
           
         </tbody>
@@ -135,7 +126,7 @@
 
     <footer>
       <p>
-        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/wernigerode-in-zahlen">Github</a>.
         Das Impressum befindet sich <a href="/imprint.html">hier</a>.
       </p>
     </footer>
@@ -146,13 +137,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_76e39021_87c3_4ac3_be6e_b01f8eddce8e'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_administration_expenses'), {
             type: 'doughnut',
             data: {
-              labels: ["Unterhaltung des sonstigen unbeweglichen Vermögens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermögensgegenstände","Unterhaltung des sonstigen beweglichen Vermögens","Geschäftsauszahlungen"],
+              labels: ["Unterhaltung des sonstigen unbeweglichen Vermügens","Auszahlungen für Mieten und Pachten","Bewirtschaftung der Grundstücke und baulichen Anlagen","Erwerb geringwertiger Vermügensgegenstünde","Unterhaltung des sonstigen beweglichen Vermügens","Geschüftsauszahlungen"],
               datasets: [{
                 label: 'Euro',
-                data: [-30000,-500,-500,-500,-20000,-100],
+                data: [25000,500,1000,500,20000,100],
                 borderWidth: 1
               }]
             },
@@ -168,27 +159,6 @@
         
       
         
-        
-          var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_fa2c8c46_bc80_4206_a0b1_4cf895c5204e'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
-              datasets: [{
-                label: 'Euro',
-                data: [-60000],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              },
-              
-            }
-          });
         
       
     </script>

@@ -15,11 +15,11 @@ func DecodeString(decoder *regexp.Regexp, matchLabel string, matches []string) s
 	return matches[decoder.SubexpIndex(matchLabel)]
 }
 
-func DecodeBudget(parser *regexp.Regexp, matchLabel string, matches []string) float64 {
+func DecodeGermanFloat(strFloat string) float64 {
 	// 123.456,78 -> 123456.78
-	strNumber := strings.ReplaceAll(
+	normalizedFloat := strings.ReplaceAll(
 		strings.ReplaceAll(
-			matches[parser.SubexpIndex(matchLabel)],
+			strFloat,
 			".",
 			"",
 		),
@@ -27,7 +27,11 @@ func DecodeBudget(parser *regexp.Regexp, matchLabel string, matches []string) fl
 		".",
 	)
 
-	i, err := strconv.ParseFloat(strNumber, 64)
+	return DecodeFloat64(normalizedFloat)
+}
+
+func DecodeFloat64(strFloat string) float64 {
+	i, err := strconv.ParseFloat(strFloat, 64)
 	if err != nil {
 		panic(err)
 	}

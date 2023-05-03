@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Harzer Verkehrsbetriebe GmbH des Fachbereichs Budget Stadtentwicklung hat ein Budge von -315.000,00€."/>
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Harzer Verkehrsbetriebe GmbH des Fachbereichs Budget Stadtentwicklung hat ein Budge von -346.500,00€."/>
   <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Harzer Verkehrsbetriebe GmbH,Budget Stadtentwicklung"/>
   <meta name="author" content="Paul Heymann"/>
 
@@ -23,7 +23,7 @@
       Das Produkt -  Durchführung des Öffentlichen Personennahverkehrs - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-expenses center">-315.000,00€</h2>
+    <h2 class="total-cashflow-expenses center">-346.500,00€</h2>
 
     <p>
       kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
@@ -32,14 +32,21 @@
 
     <div class="container">
       
-          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-315.000,00€</span></h3>
+          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-346.500,00€</span></h3>
 
           
             
             
               <div class="padded-chart">
-                <canvas id="chartjs_9d40ff59_f72a_48d5_8586_75c8dcc82b14"></canvas>
+                <canvas id="chartjs_administration_expenses"></canvas>
               </div>
+            
+          
+      
+          <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
+
+          
+            
             
           
       
@@ -73,8 +80,8 @@
 
           
             <tr>
-              <td>Zuweisungen an Gemeinden und GV (HVB)</td>
-              <td>-315.000,00€</td>
+              <td>Erstatt.f.d. Aufwendungen v. Dritt. aus lfd. Verwaltungstüt. an Gemeinden HVB</td>
+              <td>346.500,00€</td>
             </tr>
           
         </tbody>
@@ -94,7 +101,7 @@
 
     <footer>
       <p>
-        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/wernigerode-in-zahlen">Github</a>.
         Das Impressum befindet sich <a href="/imprint.html">hier</a>.
       </p>
     </footer>
@@ -105,13 +112,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_9d40ff59_f72a_48d5_8586_75c8dcc82b14'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_administration_expenses'), {
             type: 'doughnut',
             data: {
-              labels: ["Zuweisungen an Gemeinden und GV (HVB)"],
+              labels: ["Erstatt.f.d. Aufwendungen v. Dritt. aus lfd. Verwaltungstüt. an Gemeinden HVB"],
               datasets: [{
                 label: 'Euro',
-                data: [-315000],
+                data: [346500],
                 borderWidth: 1
               }]
             },
@@ -124,6 +131,9 @@
               
             }
           });
+        
+      
+        
         
       
     </script>

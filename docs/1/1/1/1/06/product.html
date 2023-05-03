@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Rechnungsprüfung des Fachbereichs Budget Oberbürgermeister hat ein Budge von -159.100,00€."/>
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Rechnungsprüfung des Fachbereichs Budget Oberbürgermeister hat ein Budge von -161.500,00€."/>
   <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Rechnungsprüfung,Budget Oberbürgermeister"/>
   <meta name="author" content="Paul Heymann"/>
 
@@ -23,7 +23,7 @@
       Das Produkt -  Prüfung der Rechtmäßigkeit des Verwaltungshandelns - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-expenses center">-159.100,00€</h2>
+    <h2 class="total-cashflow-expenses center">-161.500,00€</h2>
 
     <p>
       kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
@@ -32,14 +32,21 @@
 
     <div class="container">
       
-          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-159.100,00€</span></h3>
+          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-161.500,00€</span></h3>
 
           
             
             
               <div class="padded-chart">
-                <canvas id="chartjs_d450c15e_095d_420a_889c_ec9ee97c860a"></canvas>
+                <canvas id="chartjs_administration_expenses"></canvas>
               </div>
+            
+          
+      
+          <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
+
+          
+            
             
           
       
@@ -73,38 +80,38 @@
 
           
             <tr>
-              <td>Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten</td>
-              <td>-20.000,00€</td>
+              <td>Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten</td>
+              <td>25.000,00€</td>
             </tr>
           
             <tr>
               <td>Beihilfen, Unterstützungsleistungen für Beschäftigte</td>
-              <td>-200,00€</td>
+              <td>300,00€</td>
             </tr>
           
             <tr>
               <td>Beiträge zu Versorgungskassen für Arbeitnehmer</td>
-              <td>-1.400,00€</td>
+              <td>1.400,00€</td>
             </tr>
           
             <tr>
               <td>Beiträge zu Versorgungskassen für Beamte</td>
-              <td>-33.900,00€</td>
+              <td>34.300,00€</td>
             </tr>
           
             <tr>
               <td>Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer</td>
-              <td>-6.400,00€</td>
+              <td>6.600,00€</td>
             </tr>
           
             <tr>
               <td>Dienstauszahlungen und dgl. an Arbeitnehmer</td>
-              <td>-32.100,00€</td>
+              <td>32.700,00€</td>
             </tr>
           
             <tr>
               <td>Dienstauszahlungen und dgl. an Beamte</td>
-              <td>-65.100,00€</td>
+              <td>61.200,00€</td>
             </tr>
           
         </tbody>
@@ -124,7 +131,7 @@
 
     <footer>
       <p>
-        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/wernigerode-in-zahlen">Github</a>.
         Das Impressum befindet sich <a href="/imprint.html">hier</a>.
       </p>
     </footer>
@@ -135,13 +142,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_d450c15e_095d_420a_889c_ec9ee97c860a'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_administration_expenses'), {
             type: 'doughnut',
             data: {
-              labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten"],
+              labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten"],
               datasets: [{
                 label: 'Euro',
-                data: [-65100,-32100,-33900,-1400,-6400,-200,-20000],
+                data: [61200,32700,34300,1400,6600,300,25000],
                 borderWidth: 1
               }]
             },
@@ -154,6 +161,9 @@
               
             }
           });
+        
+      
+        
         
       
     </script>

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Containerstellplätze des Fachbereichs Budget Betriebsbereiche hat ein Budge von 34.100,00€."/>
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Containerstellplätze des Fachbereichs Budget Betriebsbereiche hat ein Budge von 33.900,00€."/>
   <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Containerstellplätze,Budget Betriebsbereiche"/>
   <meta name="author" content="Paul Heymann"/>
 
@@ -23,7 +23,7 @@
       Das Produkt -  Unterhaltung und Sauberhaltung der Wertstoffcontainerplätze - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-income center">34.100,00€</h2>
+    <h2 class="total-cashflow-income center">33.900,00€</h2>
 
     <p>
       einbringen. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
@@ -32,19 +32,26 @@
 
     <div class="container">
       
-          <h3>- Die Verwaltung erwirtschaftet <span class="total-cashflow-income">34.100,00€</span></h3>
+          <h3>- Die Verwaltung erwirtschaftet <span class="total-cashflow-income">33.900,00€</span></h3>
 
           
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 36.000,00€</h5>
-                <canvas id="chartjs_b28fde5c_1b23_44ae_989e_c58c8e58ddfa"></canvas>
+                <canvas id="chartjs_administration_income"></canvas>
               </div>
               <div class="col-6">
-                <h5 class="center">Ausgaben: -1.900,00€</h5>
-                <canvas id="chartjs_af3a0239_f4d4_4c1d_adfc_3d1d2b1a2b9c"></canvas>
+                <h5 class="center">Ausgaben: -2.100,00€</h5>
+                <canvas id="chartjs_administration_expenses"></canvas>
               </div>
             </div>
+          
+      
+          <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
+
+          
+            
+            
           
       
     </div>
@@ -78,17 +85,17 @@
           
             <tr>
               <td>Bewirtschaftung der Grundstücke und baulichen Anlagen</td>
-              <td>-1.500,00€</td>
+              <td>1.700,00€</td>
             </tr>
           
             <tr>
-              <td>Einzahlungen aus Kostenerstattungen von Zweckverbänden</td>
+              <td>Einzahlungen aus Kostenerstattungen von Zweckverbünden</td>
               <td>36.000,00€</td>
             </tr>
           
             <tr>
-              <td>Unterhaltung des sonstigen unbeweglichen Vermögens</td>
-              <td>-400,00€</td>
+              <td>Unterhaltung des sonstigen unbeweglichen Vermügens</td>
+              <td>400,00€</td>
             </tr>
           
         </tbody>
@@ -108,7 +115,7 @@
 
     <footer>
       <p>
-        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/wernigerode-in-zahlen">Github</a>.
         Das Impressum befindet sich <a href="/imprint.html">hier</a>.
       </p>
     </footer>
@@ -118,10 +125,10 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_b28fde5c_1b23_44ae_989e_c58c8e58ddfa'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_administration_income'), {
             type: 'doughnut',
             data: {
-              labels: ["Einzahlungen aus Kostenerstattungen von Zweckverbänden"],
+              labels: ["Einzahlungen aus Kostenerstattungen von Zweckverbünden"],
               datasets: [{
                 label: 'Euro',
                 data: [36000],
@@ -140,13 +147,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_af3a0239_f4d4_4c1d_adfc_3d1d2b1a2b9c'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_administration_expenses'), {
             type: 'doughnut',
             data: {
-              labels: ["Unterhaltung des sonstigen unbeweglichen Vermögens","Bewirtschaftung der Grundstücke und baulichen Anlagen"],
+              labels: ["Unterhaltung des sonstigen unbeweglichen Vermügens","Bewirtschaftung der Grundstücke und baulichen Anlagen"],
               datasets: [{
                 label: 'Euro',
-                data: [-400,-1500],
+                data: [400,1700],
                 borderWidth: 1
               }]
             },
@@ -159,6 +166,9 @@
               
             }
           });
+        
+      
+        
         
       
     </script>

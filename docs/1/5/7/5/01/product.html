@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Tourismusförderung des Fachbereichs Budget Oberbürgermeister hat ein Budge von 157.300,00€."/>
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Tourismusförderung des Fachbereichs Budget Oberbürgermeister hat ein Budge von -7.500,00€."/>
   <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Tourismusförderung,Budget Oberbürgermeister"/>
   <meta name="author" content="Paul Heymann"/>
 
@@ -23,28 +23,35 @@
       Das Produkt -  Förderung des Tourismus - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-income center">157.300,00€</h2>
+    <h2 class="total-cashflow-expenses center">-7.500,00€</h2>
 
     <p>
-      einbringen. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
+      kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
 		Auflistung von Kostenstellen. Ganz am Ende dieser Seite findest du noch eine Beschreibung des Produkts.
     </p>
 
     <div class="container">
       
-          <h3>- Die Verwaltung erwirtschaftet <span class="total-cashflow-income">157.300,00€</span></h3>
+          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-7.500,00€</span></h3>
 
           
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 2.782.000,00€</h5>
-                <canvas id="chartjs_edb5d380_7277_4022_becb_a1fe51e48051"></canvas>
+                <canvas id="chartjs_administration_income"></canvas>
               </div>
               <div class="col-6">
-                <h5 class="center">Ausgaben: -2.624.700,00€</h5>
-                <canvas id="chartjs_d5a5e992_ffbc_4d37_89d2_ec6d1dae42e9"></canvas>
+                <h5 class="center">Ausgaben: -2.789.500,00€</h5>
+                <canvas id="chartjs_administration_expenses"></canvas>
               </div>
             </div>
+          
+      
+          <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
+
+          
+            
+            
           
       
     </div>
@@ -78,17 +85,22 @@
           
             <tr>
               <td>Einbehalt für Entgelt WTG</td>
-              <td>-125.200,00€</td>
+              <td>120.000,00€</td>
             </tr>
           
             <tr>
-              <td>Zusch. öff. SondRechn. HSB</td>
-              <td>-199.500,00€</td>
+              <td>Zusch. üff. SondRechn. HSB</td>
+              <td>199.500,00€</td>
             </tr>
           
             <tr>
-              <td>Zusch. öff.SondRechn. HSB Kurb</td>
-              <td>-2.300.000,00€</td>
+              <td>Zuschüsse an sonstige üffentliche Sonderrechnung Brockenhaus</td>
+              <td>30.000,00€</td>
+            </tr>
+          
+            <tr>
+              <td>Zuschüsse an verbundene Unternehmen, Sondervermügen und Beteiligungen Kurbeitrag</td>
+              <td>2.440.000,00€</td>
             </tr>
           
             <tr>
@@ -113,7 +125,7 @@
 
     <footer>
       <p>
-        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/wernigerode-in-zahlen">Github</a>.
         Das Impressum befindet sich <a href="/imprint.html">hier</a>.
       </p>
     </footer>
@@ -123,7 +135,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_edb5d380_7277_4022_becb_a1fe51e48051'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_administration_income'), {
             type: 'doughnut',
             data: {
               labels: ["Zweckgebundene Abgaben (Kurbeitrag)"],
@@ -145,13 +157,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_d5a5e992_ffbc_4d37_89d2_ec6d1dae42e9'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_administration_expenses'), {
             type: 'doughnut',
             data: {
-              labels: ["Zusch. öff. SondRechn. HSB","Zusch. öff.SondRechn. HSB Kurb","Einbehalt für Entgelt WTG"],
+              labels: ["Zuschüsse an verbundene Unternehmen, Sondervermügen und Beteiligungen Kurbeitrag","Zusch. üff. SondRechn. HSB","Zuschüsse an sonstige üffentliche Sonderrechnung Brockenhaus","Einbehalt für Entgelt WTG"],
               datasets: [{
                 label: 'Euro',
-                data: [-199500,-2300000,-125200],
+                data: [2440000,199500,30000,120000],
                 borderWidth: 1
               }]
             },
@@ -164,6 +176,9 @@
               
             }
           });
+        
+      
+        
         
       
     </script>

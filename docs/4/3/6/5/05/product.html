@@ -38,13 +38,20 @@
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 150.000,00€</h5>
-                <canvas id="chartjs_07e4fcec_b985_456c_9daf_90ca3c210c49"></canvas>
+                <canvas id="chartjs_administration_income"></canvas>
               </div>
               <div class="col-6">
                 <h5 class="center">Ausgaben: -135.000,00€</h5>
-                <canvas id="chartjs_640d6bcb_3fb5_4410_b33f_182d1c53e7bf"></canvas>
+                <canvas id="chartjs_administration_expenses"></canvas>
               </div>
             </div>
+          
+      
+          <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
+
+          
+            
+            
           
       
     </div>
@@ -77,13 +84,13 @@
 
           
             <tr>
-              <td>Einzahlungen aus Kostenerstattungen von Gemeinden und Gemeindeverbänden</td>
+              <td>Einzahlungen aus Kostenerstattungen von Gemeinden und Gemeindeverbünden</td>
               <td>150.000,00€</td>
             </tr>
           
             <tr>
-              <td>Erstatt. f.d. Ausz. v. Dritten aus lfd. Verwaltungstätigkeit an Gemeinde&amp; GV</td>
-              <td>-135.000,00€</td>
+              <td>Erstatt. f.d. Ausz. v. Dritten aus lfd. Verwaltungstütigkeit an Gemeinde&amp; GV</td>
+              <td>135.000,00€</td>
             </tr>
           
         </tbody>
@@ -103,7 +110,7 @@
 
     <footer>
       <p>
-        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/wernigerode-in-zahlen">Github</a>.
         Das Impressum befindet sich <a href="/imprint.html">hier</a>.
       </p>
     </footer>
@@ -113,10 +120,10 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_07e4fcec_b985_456c_9daf_90ca3c210c49'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_administration_income'), {
             type: 'doughnut',
             data: {
-              labels: ["Einzahlungen aus Kostenerstattungen von Gemeinden und Gemeindeverbänden"],
+              labels: ["Einzahlungen aus Kostenerstattungen von Gemeinden und Gemeindeverbünden"],
               datasets: [{
                 label: 'Euro',
                 data: [150000],
@@ -135,13 +142,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_640d6bcb_3fb5_4410_b33f_182d1c53e7bf'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_administration_expenses'), {
             type: 'doughnut',
             data: {
-              labels: ["Erstatt. f.d. Ausz. v. Dritten aus lfd. Verwaltungstätigkeit an Gemeinde\u0026 GV"],
+              labels: ["Erstatt. f.d. Ausz. v. Dritten aus lfd. Verwaltungstütigkeit an Gemeinde\u0026 GV"],
               datasets: [{
                 label: 'Euro',
-                data: [-135000],
+                data: [135000],
                 borderWidth: 1
               }]
             },
@@ -154,6 +161,9 @@
               
             }
           });
+        
+      
+        
         
       
     </script>

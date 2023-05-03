@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Dienstleistungen für Dritte (Bauhof) des Fachbereichs Budget Betriebsbereiche hat ein Budge von 78.900,00€."/>
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Dienstleistungen für Dritte (Bauhof) des Fachbereichs Budget Betriebsbereiche hat ein Budge von 120.600,00€."/>
   <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Dienstleistungen für Dritte (Bauhof),Budget Betriebsbereiche"/>
   <meta name="author" content="Paul Heymann"/>
 
@@ -23,7 +23,7 @@
       Das Produkt -  Bereitstellung eines Recyclinghofes und Handwerkerleistungen - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-income center">78.900,00€</h2>
+    <h2 class="total-cashflow-income center">120.600,00€</h2>
 
     <p>
       einbringen. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
@@ -32,28 +32,28 @@
 
     <div class="container">
       
-          <h3>- Die Verwaltung erwirtschaftet <span class="total-cashflow-income">88.900,00€</span></h3>
+          <h3>- Die Verwaltung erwirtschaftet <span class="total-cashflow-income">123.100,00€</span></h3>
 
           
             <div class="row">
               <div class="col-6">
-                <h5 class="center">Einnahmen: 92.100,00€</h5>
-                <canvas id="chartjs_8800a6c2_b88e_49b6_af9a_feb3881b7a04"></canvas>
+                <h5 class="center">Einnahmen: 127.600,00€</h5>
+                <canvas id="chartjs_administration_income"></canvas>
               </div>
               <div class="col-6">
-                <h5 class="center">Ausgaben: -3.200,00€</h5>
-                <canvas id="chartjs_da143e4f_15a2_485c_bf7e_2c9ea6b44a4c"></canvas>
+                <h5 class="center">Ausgaben: -4.500,00€</h5>
+                <canvas id="chartjs_administration_expenses"></canvas>
               </div>
             </div>
           
       
-          <h3>- Investitionen kosten <span class="total-cashflow-expenses">-10.000,00€</span></h3>
+          <h3>- Investitionen kosten <span class="total-cashflow-expenses">-2.500,00€</span></h3>
 
           
             
             
               <div class="padded-chart">
-                <canvas id="chartjs_36b88171_daf4_4db9_aeee_33feeff1974e"></canvas>
+                <canvas id="chartjs_investments_expenses"></canvas>
               </div>
             
           
@@ -88,23 +88,18 @@
 
           
             <tr>
-              <td>Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr.</td>
-              <td>-10.000,00€</td>
-            </tr>
-          
-            <tr>
               <td>Besondere zahlungswirksame Aufwendungen für Beschäftigte</td>
-              <td>-1.700,00€</td>
+              <td>2.000,00€</td>
             </tr>
           
             <tr>
-              <td>Einzahlungen aus Kostenerstattungen von Zweckverbänden</td>
-              <td>75.500,00€</td>
+              <td>Einzahl. aus Kostenerstattungen von verbund. Untern., Sondervermü. und Beteilig.</td>
+              <td>30.000,00€</td>
             </tr>
           
             <tr>
-              <td>Einzahlungen aus Kostenerstattungen von sonstigen öffentlichen Sonderrechnungen</td>
-              <td>9.000,00€</td>
+              <td>Einzahlungen aus Kostenerstattungen von Zweckverbünden</td>
+              <td>82.000,00€</td>
             </tr>
           
             <tr>
@@ -114,12 +109,17 @@
           
             <tr>
               <td>Sonstige privatrechtliche Leistungsentgelte</td>
-              <td>7.000,00€</td>
+              <td>15.000,00€</td>
             </tr>
           
             <tr>
-              <td>Unterhaltung des sonstigen unbeweglichen Vermögens</td>
-              <td>-1.500,00€</td>
+              <td>Unterhaltung des sonstigen beweglichen Vermügens</td>
+              <td>500,00€</td>
+            </tr>
+          
+            <tr>
+              <td>Unterhaltung des sonstigen unbeweglichen Vermügens</td>
+              <td>2.000,00€</td>
             </tr>
           
         </tbody>
@@ -139,7 +139,7 @@
 
     <footer>
       <p>
-        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/wernigerode-in-zahlen">Github</a>.
         Das Impressum befindet sich <a href="/imprint.html">hier</a>.
       </p>
     </footer>
@@ -149,13 +149,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_8800a6c2_b88e_49b6_af9a_feb3881b7a04'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_administration_income'), {
             type: 'doughnut',
             data: {
-              labels: ["Einzahlungen aus Mieten und Pachten","Sonstige privatrechtliche Leistungsentgelte","Einzahlungen aus Kostenerstattungen von Zweckverbänden","Einzahlungen aus Kostenerstattungen von sonstigen öffentlichen Sonderrechnungen"],
+              labels: ["Einzahlungen aus Mieten und Pachten","Sonstige privatrechtliche Leistungsentgelte","Einzahlungen aus Kostenerstattungen von Zweckverbünden","Einzahl. aus Kostenerstattungen von verbund. Untern., Sondervermü. und Beteilig."],
               datasets: [{
                 label: 'Euro',
-                data: [600,7000,75500,9000],
+                data: [600,15000,82000,30000],
                 borderWidth: 1
               }]
             },
@@ -171,13 +171,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_da143e4f_15a2_485c_bf7e_2c9ea6b44a4c'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_administration_expenses'), {
             type: 'doughnut',
             data: {
-              labels: ["Unterhaltung des sonstigen unbeweglichen Vermögens","Besondere zahlungswirksame Aufwendungen für Beschäftigte"],
+              labels: ["Unterhaltung des sonstigen unbeweglichen Vermügens","Unterhaltung des sonstigen beweglichen Vermügens","Besondere zahlungswirksame Aufwendungen für Beschäftigte"],
               datasets: [{
                 label: 'Euro',
-                data: [-1500,-1700],
+                data: [2000,500,2000],
                 borderWidth: 1
               }]
             },
@@ -195,13 +195,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_36b88171_daf4_4db9_aeee_33feeff1974e'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_investments_expenses'), {
             type: 'doughnut',
             data: {
-              labels: ["Auszahl. f.d. Erw. von bewegl. Vermögengeg.st. von mehr als 1000 Euro ohne UStr."],
+              labels: ["Ausz. f.d. Erw. v. beweg. Vermügensgegenstünden v. \u003e 150  bis 1000 ? o. UStr.","Auszahl. f.d. Erw. von bewegl. Vermügengeg.st. von mehr als 1000 Euro ohne UStr."],
               datasets: [{
                 label: 'Euro',
-                data: [-10000],
+                data: [1000,1500],
                 borderWidth: 1
               }]
             },

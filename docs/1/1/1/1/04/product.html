@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Gleichstellungsbeauftragte des Fachbereichs Budget Oberbürgermeister hat ein Budge von -36.700,00€."/>
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Gleichstellungsbeauftragte des Fachbereichs Budget Oberbürgermeister hat ein Budge von -40.000,00€."/>
   <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Gleichstellungsbeauftragte,Budget Oberbürgermeister"/>
   <meta name="author" content="Paul Heymann"/>
 
@@ -23,7 +23,7 @@
       Das Produkt -  Förderung der Gleichstellung, Beiträge zur Verwirklichung der Gleichberechtigung von Frauen und Männern auf kommunaler Ebene leisten - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-expenses center">-36.700,00€</h2>
+    <h2 class="total-cashflow-expenses center">-40.000,00€</h2>
 
     <p>
       kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
@@ -32,14 +32,21 @@
 
     <div class="container">
       
-          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-36.700,00€</span></h3>
+          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-40.000,00€</span></h3>
 
           
             
             
               <div class="padded-chart">
-                <canvas id="chartjs_1f30e320_3072_40a8_9ebf_fa72e0599881"></canvas>
+                <canvas id="chartjs_administration_expenses"></canvas>
               </div>
+            
+          
+      
+          <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
+
+          
+            
             
           
       
@@ -73,33 +80,33 @@
 
           
             <tr>
-              <td>Beihilfen, Unterstützungsleistungen fü Beschäftigter</td>
-              <td>-300,00€</td>
+              <td>Beihilfen, Unterstützungsleistungen für Beschäftigte</td>
+              <td>300,00€</td>
             </tr>
           
             <tr>
               <td>Beiträge zu Versorgungskassen für Arbeitnehmer</td>
-              <td>-1.100,00€</td>
+              <td>1.200,00€</td>
             </tr>
           
             <tr>
               <td>Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer</td>
-              <td>-5.000,00€</td>
+              <td>5.500,00€</td>
             </tr>
           
             <tr>
               <td>Besondere Verwaltungs- und Betriebsauszahlungen</td>
-              <td>-2.100,00€</td>
+              <td>2.200,00€</td>
             </tr>
           
             <tr>
               <td>Dienstauszahlungen und dgl. an Arbeitnehmer</td>
-              <td>-24.700,00€</td>
+              <td>27.200,00€</td>
             </tr>
           
             <tr>
               <td>Zuschüsse an übrige Bereiche</td>
-              <td>-3.500,00€</td>
+              <td>3.600,00€</td>
             </tr>
           
         </tbody>
@@ -119,7 +126,7 @@
 
     <footer>
       <p>
-        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/wernigerode-in-zahlen">Github</a>.
         Das Impressum befindet sich <a href="/imprint.html">hier</a>.
       </p>
     </footer>
@@ -130,13 +137,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_1f30e320_3072_40a8_9ebf_fa72e0599881'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_administration_expenses'), {
             type: 'doughnut',
             data: {
-              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen fü Beschäftigter","Besondere Verwaltungs- und Betriebsauszahlungen","Zuschüsse an übrige Bereiche"],
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Zuschüsse an übrige Bereiche"],
               datasets: [{
                 label: 'Euro',
-                data: [-24700,-1100,-5000,-300,-2100,-3500],
+                data: [27200,1200,5500,300,2200,3600],
                 borderWidth: 1
               }]
             },
@@ -149,6 +156,9 @@
               
             }
           });
+        
+      
+        
         
       
     </script>

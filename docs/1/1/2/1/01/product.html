@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Wahlen und Statistik des Fachbereichs Budget Oberbürgermeister hat ein Budge von -500,00€."/>
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Wahlen und Statistik des Fachbereichs Budget Oberbürgermeister hat ein Budge von -10.500,00€."/>
   <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Wahlen und Statistik,Budget Oberbürgermeister"/>
   <meta name="author" content="Paul Heymann"/>
 
@@ -23,7 +23,7 @@
       Das Produkt -  &#34;Vorbereitung, Durchführung und Nachbereitung sowie die öffentliche Darstellung von Wahlen und Abstimmungen; Statistische Angelegenheiten&#34; - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-expenses center">-500,00€</h2>
+    <h2 class="total-cashflow-expenses center">-10.500,00€</h2>
 
     <p>
       kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
@@ -32,14 +32,21 @@
 
     <div class="container">
       
-          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-500,00€</span></h3>
+          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-10.500,00€</span></h3>
 
           
             
             
               <div class="padded-chart">
-                <canvas id="chartjs_939868a2_f31c_448e_9fd0_1fa6c22f05d6"></canvas>
+                <canvas id="chartjs_administration_expenses"></canvas>
               </div>
+            
+          
+      
+          <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
+
+          
+            
             
           
       
@@ -73,13 +80,23 @@
 
           
             <tr>
-              <td>Geschäftsauszahlungen</td>
-              <td>-200,00€</td>
+              <td>Auszahlungen für ehrenamtliche und sonstige Tütigkeit</td>
+              <td>8.000,00€</td>
+            </tr>
+          
+            <tr>
+              <td>Auszahlungen für sonstige Dienstleistungen</td>
+              <td>500,00€</td>
+            </tr>
+          
+            <tr>
+              <td>Geschüftsauszahlungen</td>
+              <td>1.200,00€</td>
             </tr>
           
             <tr>
               <td>Sonstige Personal- und Versorgungsauszahlungen</td>
-              <td>-300,00€</td>
+              <td>800,00€</td>
             </tr>
           
         </tbody>
@@ -99,7 +116,7 @@
 
     <footer>
       <p>
-        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/wernigerode-in-zahlen">Github</a>.
         Das Impressum befindet sich <a href="/imprint.html">hier</a>.
       </p>
     </footer>
@@ -110,13 +127,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_939868a2_f31c_448e_9fd0_1fa6c22f05d6'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_administration_expenses'), {
             type: 'doughnut',
             data: {
-              labels: ["Sonstige Personal- und Versorgungsauszahlungen","Geschäftsauszahlungen"],
+              labels: ["Auszahlungen für sonstige Dienstleistungen","Sonstige Personal- und Versorgungsauszahlungen","Auszahlungen für ehrenamtliche und sonstige Tütigkeit","Geschüftsauszahlungen"],
               datasets: [{
                 label: 'Euro',
-                data: [-300,-200],
+                data: [500,800,8000,1200],
                 borderWidth: 1
               }]
             },
@@ -129,6 +146,9 @@
               
             }
           });
+        
+      
+        
         
       
     </script>

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Archiv des Fachbereichs Budget Bürgerservice hat ein Budge von -132.200,00€."/>
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Archiv des Fachbereichs Budget Bürgerservice hat ein Budge von -126.300,00€."/>
   <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Archiv,Budget Bürgerservice"/>
   <meta name="author" content="Paul Heymann"/>
 
@@ -23,7 +23,7 @@
       Das Produkt -  Verwaltung und Betreuung des Archivs - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-expenses center">-132.200,00€</h2>
+    <h2 class="total-cashflow-expenses center">-126.300,00€</h2>
 
     <p>
       kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
@@ -32,29 +32,25 @@
 
     <div class="container">
       
-          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-130.200,00€</span></h3>
+          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-126.300,00€</span></h3>
 
           
             <div class="row">
               <div class="col-6">
                 <h5 class="center">Einnahmen: 3.400,00€</h5>
-                <canvas id="chartjs_da654df6_203b_4ae1_9f85_7f74078651e3"></canvas>
+                <canvas id="chartjs_administration_income"></canvas>
               </div>
               <div class="col-6">
-                <h5 class="center">Ausgaben: -133.600,00€</h5>
-                <canvas id="chartjs_5f061faf_679f_4153_aa81_723d074a342f"></canvas>
+                <h5 class="center">Ausgaben: -129.700,00€</h5>
+                <canvas id="chartjs_administration_expenses"></canvas>
               </div>
             </div>
           
       
-          <h3>- Investitionen kosten <span class="total-cashflow-expenses">-2.000,00€</span></h3>
+          <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
 
           
             
-            
-              <div class="padded-chart">
-                <canvas id="chartjs_9df84aac_bff4_4bc9_82e6_2bbbd5da2fae"></canvas>
-              </div>
             
           
       
@@ -88,48 +84,43 @@
 
           
             <tr>
-              <td>Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. &gt; 150  bis 1000 € o. UStr.</td>
-              <td>-2.000,00€</td>
-            </tr>
-          
-            <tr>
               <td>Beihilfen, Unterstützungsleistungen für Beschäftigte</td>
-              <td>-600,00€</td>
+              <td>500,00€</td>
             </tr>
           
             <tr>
               <td>Beiträge zu Versorgungskassen für Arbeitnehmer</td>
-              <td>-4.000,00€</td>
+              <td>3.800,00€</td>
             </tr>
           
             <tr>
               <td>Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer</td>
-              <td>-19.200,00€</td>
+              <td>19.000,00€</td>
             </tr>
           
             <tr>
               <td>Besondere Verwaltungs- und Betriebsauszahlungen</td>
-              <td>-12.000,00€</td>
+              <td>10.000,00€</td>
             </tr>
           
             <tr>
               <td>Dienstauszahlungen und dgl. an Arbeitnehmer</td>
-              <td>-96.000,00€</td>
+              <td>94.500,00€</td>
             </tr>
           
             <tr>
-              <td>Geschäftsauszahlungen</td>
-              <td>-600,00€</td>
+              <td>Geschüftsauszahlungen</td>
+              <td>600,00€</td>
             </tr>
           
             <tr>
               <td>Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)</td>
-              <td>-300,00€</td>
+              <td>300,00€</td>
             </tr>
           
             <tr>
-              <td>Unterhaltung des sonstigen beweglichen Vermögens</td>
-              <td>-900,00€</td>
+              <td>Unterhaltung des sonstigen beweglichen Vermügens</td>
+              <td>1.000,00€</td>
             </tr>
           
             <tr>
@@ -154,7 +145,7 @@
 
     <footer>
       <p>
-        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/wernigerode-in-zahlen">Github</a>.
         Das Impressum befindet sich <a href="/imprint.html">hier</a>.
       </p>
     </footer>
@@ -164,7 +155,7 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_da654df6_203b_4ae1_9f85_7f74078651e3'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_administration_income'), {
             type: 'doughnut',
             data: {
               labels: ["Verwaltungsgebühren"],
@@ -186,13 +177,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_5f061faf_679f_4153_aa81_723d074a342f'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_administration_expenses'), {
             type: 'doughnut',
             data: {
-              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung des sonstigen beweglichen Vermögens","Besondere Verwaltungs- und Betriebsauszahlungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschäftsauszahlungen"],
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Unterhaltung des sonstigen beweglichen Vermügens","Besondere Verwaltungs- und Betriebsauszahlungen","Sonstige Auszahl. f. d. Inanspruchnahme von Rechten u.Diensten (Mitgliedsbeitr.)","Geschüftsauszahlungen"],
               datasets: [{
                 label: 'Euro',
-                data: [-96000,-4000,-19200,-600,-900,-12000,-300,-600],
+                data: [94500,3800,19000,500,1000,10000,300,600],
                 borderWidth: 1
               }]
             },
@@ -208,27 +199,6 @@
         
       
         
-        
-          var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_9df84aac_bff4_4bc9_82e6_2bbbd5da2fae'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Ausz. f.d. Erw. v. beweg. Vermögensgegenständen v. \u003e 150  bis 1000 € o. UStr."],
-              datasets: [{
-                label: 'Euro',
-                data: [-2000],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              },
-              
-            }
-          });
         
       
     </script>

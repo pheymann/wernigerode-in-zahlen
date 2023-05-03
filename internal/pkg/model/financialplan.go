@@ -1,15 +1,136 @@
 package model
 
-type FinancialPlan struct {
-	Balances []AccountBalance
+import (
+	"fmt"
+)
+
+type ID = string
+
+type FinancialPlanCity struct {
+	AdministrationBalance Cashflow
+	InvestmentsBalance    Cashflow
+	Cashflow              Cashflow
+	Departments           map[ID]FinancialPlanDepartment
 }
 
-type AccountClass = string
+type FinancialPlanDepartment struct {
+	ID                    ID
+	Name                  string
+	AdministrationBalance Cashflow
+	InvestmentsBalance    Cashflow
+	Cashflow              Cashflow
+	Products              map[ID]FinancialPlanProduct
+}
+
+func (department FinancialPlanDepartment) CreateLink() string {
+	return fmt.Sprintf("/%s/department.html", department.ID)
+}
+
+type FinancialPlanProduct struct {
+	ID                    ID
+	AdministrationBalance AccountBalance
+	InvestmentsBalance    AccountBalance
+	Cashflow              Cashflow
+	Metadata              Metadata
+	SubProducts           []FinancialPlanProduct
+}
+
+func NewFinancialPlanProduct() *FinancialPlanProduct {
+	return &FinancialPlanProduct{
+		AdministrationBalance: AccountBalance{
+			Type:     AccountBalanceTypeAdministration,
+			Cashflow: NewCashFlow(),
+			Accounts: make([]Account, 0),
+		},
+		InvestmentsBalance: AccountBalance{
+			Type:     AccountBalanceTypeInvestments,
+			Cashflow: NewCashFlow(),
+			Accounts: make([]Account, 0),
+		},
+		Cashflow:    NewCashFlow(),
+		SubProducts: make([]FinancialPlanProduct, 0),
+	}
+}
+
+func (product FinancialPlanProduct) CreateLink() string {
+	return product.GetPath() + "product.html"
+}
+
+func (product FinancialPlanProduct) GetPath() string {
+	var productPath = fmt.Sprintf(
+		"/%s/%s/%s/%s/%s/",
+		product.Metadata.Department.ID,
+		product.Metadata.ProductClass.ID,
+		product.Metadata.ProductDomain.ID,
+		product.Metadata.ProductGroup.ID,
+		product.Metadata.Product.ID,
+	)
+
+	if product.IsSubProduct() {
+		productPath = fmt.Sprintf("%s%s/", productPath, product.Metadata.SubProduct.ID)
+	}
+
+	return productPath
+}
+
+func (product FinancialPlanProduct) IsSubProduct() bool {
+	return product.Metadata.SubProduct != nil
+}
+
+type AccountBalance struct {
+	Type     AccountBalanceType
+	Cashflow Cashflow
+	Accounts []Account
+}
+
+type AccountBalanceType = string
 
 const (
-	AccountClassAdministration AccountClass = "admininstration"
-	AccountClassInvestments    AccountClass = "balance-investments"
+	AccountBalanceTypeAdministration AccountBalanceType = "administration"
+	AccountBalanceTypeInvestments    AccountBalanceType = "investments"
 )
+
+type Account struct {
+	ID          string
+	ProductID   string
+	Description string
+	Type        AccountType
+	Budget      map[BudgetYear]float64
+}
+
+type AccountType = string
+
+const (
+	AccountTypeExpense AccountType = "expense"
+	AccountTypeIncome  AccountType = "income"
+)
+
+type Cashflow struct {
+	Total    map[BudgetYear]float64
+	Income   map[BudgetYear]float64
+	Expenses map[BudgetYear]float64
+}
+
+func (cf Cashflow) AddCashflow(other Cashflow) Cashflow {
+	for year, total := range other.Total {
+		cf.Total[year] += total
+	}
+	for year, income := range other.Income {
+		cf.Income[year] += income
+	}
+	for year, expenses := range other.Expenses {
+		cf.Expenses[year] += expenses
+	}
+	return cf
+}
+
+func NewCashFlow() Cashflow {
+	return Cashflow{
+		Total:    make(map[BudgetYear]float64),
+		Income:   make(map[BudgetYear]float64),
+		Expenses: make(map[BudgetYear]float64),
+	}
+}
 
 type BudgetYear = string
 
@@ -20,128 +141,5 @@ const (
 	BudgetYear2023 BudgetYear = "2023"
 	BudgetYear2024 BudgetYear = "2024"
 	BudgetYear2025 BudgetYear = "2025"
+	BudgetYear2026 BudgetYear = "2026"
 )
-
-type AccountBalance struct {
-	Id       string
-	Class    AccountClass
-	Desc     string
-	Budgets  map[BudgetYear]float64
-	Accounts []Account
-}
-
-type Account struct {
-	Id      string
-	Desc    string
-	Budgets map[BudgetYear]float64
-	Subs    []SubAccount
-}
-
-type SubAccount struct {
-	Id      string
-	Desc    string
-	Budgets map[BudgetYear]float64
-	Units   []UnitAccount
-}
-
-type UnitAccount struct {
-	Id      string
-	Desc    string
-	Budgets map[BudgetYear]float64
-}
-
-func (fpa *FinancialPlan) AddAccountBalance(balance AccountBalance) {
-	fpa.Balances = append(fpa.Balances, balance)
-}
-
-func (fpa *FinancialPlan) RemoveLastAccountBalance() {
-	fpa.Balances = fpa.Balances[:len(fpa.Balances)-1]
-}
-
-func (fpa *FinancialPlan) UpdateLastAccountBalance(f func(AccountBalance) AccountBalance) {
-	lastBalanceIndex := len(fpa.Balances) - 1
-
-	if lastBalanceIndex < 0 {
-		fpa.AddAccountBalance(f(AccountBalance{}))
-	} else {
-		fpa.Balances[lastBalanceIndex] = f(fpa.Balances[lastBalanceIndex])
-	}
-}
-
-func (fpa *FinancialPlan) AddAccount(account Account) {
-	fpa.UpdateLastAccountBalance(func(balance AccountBalance) AccountBalance {
-		balance.Accounts = append(balance.Accounts, account)
-
-		return balance
-	})
-}
-
-func (fpa *FinancialPlan) RemoveLastAccount() {
-	fpa.UpdateLastAccountBalance(func(balance AccountBalance) AccountBalance {
-		balance.Accounts = balance.Accounts[:len(balance.Accounts)-1]
-
-		return balance
-	})
-}
-
-func (fpa *FinancialPlan) UpdateLastAccount(f func(Account) Account) {
-	fpa.UpdateLastAccountBalance(func(balance AccountBalance) AccountBalance {
-		lastAccountIndex := len(balance.Accounts) - 1
-
-		if lastAccountIndex < 0 {
-			balance.Accounts = append(balance.Accounts, f(Account{}))
-		} else {
-			balance.Accounts[lastAccountIndex] = f(balance.Accounts[lastAccountIndex])
-		}
-
-		return balance
-	})
-}
-
-func (fpa *FinancialPlan) AddSubAccount(subAccount SubAccount) {
-	fpa.UpdateLastAccount(func(account Account) Account {
-		account.Subs = append(account.Subs, subAccount)
-
-		return account
-	})
-}
-
-func (fpa *FinancialPlan) UpdateLastSubAccount(f func(SubAccount) SubAccount) {
-	fpa.UpdateLastAccount(func(account Account) Account {
-		lastSubAccountIndex := len(account.Subs) - 1
-
-		if lastSubAccountIndex < 0 {
-			account.Subs = append(account.Subs, f(SubAccount{}))
-		} else {
-			account.Subs[lastSubAccountIndex] = f(account.Subs[lastSubAccountIndex])
-		}
-
-		return account
-	})
-}
-
-func (fpa *FinancialPlan) AddUnitAccount(unitAccount UnitAccount) {
-	fpa.UpdateLastSubAccount(func(subAccount SubAccount) SubAccount {
-		subAccount.Units = append(subAccount.Units, unitAccount)
-
-		return subAccount
-	})
-}
-
-func (fpa *FinancialPlan) UpdateLastUnitAccount(f func(UnitAccount) UnitAccount) {
-	fpa.UpdateLastSubAccount(func(subAccount SubAccount) SubAccount {
-		lastUnitAccountIndex := len(subAccount.Units) - 1
-
-		if lastUnitAccountIndex < 0 {
-			subAccount.Units = append(subAccount.Units, f(UnitAccount{}))
-		} else {
-			subAccount.Units[lastUnitAccountIndex] = f(subAccount.Units[lastUnitAccountIndex])
-		}
-
-		return subAccount
-	})
-}
-
-func (sub SubAccount) HasUnits() bool {
-	return len(sub.Units) > 0
-}

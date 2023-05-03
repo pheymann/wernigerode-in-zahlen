@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Personalangelegenheiten des Fachbereichs Budget Oberbürgermeister hat ein Budge von -1.041.500,00€."/>
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Personalangelegenheiten des Fachbereichs Budget Oberbürgermeister hat ein Budge von -1.059.900,00€."/>
   <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Personalangelegenheiten,Budget Oberbürgermeister"/>
   <meta name="author" content="Paul Heymann"/>
 
@@ -23,7 +23,7 @@
       Das Produkt -  Wahrnehmung aller personalrelevanten Leistungen - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-expenses center">-1.041.500,00€</h2>
+    <h2 class="total-cashflow-expenses center">-1.059.900,00€</h2>
 
     <p>
       kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
@@ -32,19 +32,26 @@
 
     <div class="container">
       
-          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-1.041.500,00€</span></h3>
+          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-1.059.900,00€</span></h3>
 
           
             <div class="row">
               <div class="col-6">
-                <h5 class="center">Einnahmen: 261.500,00€</h5>
-                <canvas id="chartjs_e352d35d_0fa6_47ed_8b1e_97f2436cc088"></canvas>
+                <h5 class="center">Einnahmen: 322.000,00€</h5>
+                <canvas id="chartjs_administration_income"></canvas>
               </div>
               <div class="col-6">
-                <h5 class="center">Ausgaben: -1.303.000,00€</h5>
-                <canvas id="chartjs_5d9e11ad_56a0_4da1_bef4_85aac15f75ad"></canvas>
+                <h5 class="center">Ausgaben: -1.381.900,00€</h5>
+                <canvas id="chartjs_administration_expenses"></canvas>
               </div>
             </div>
+          
+      
+          <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
+
+          
+            
+            
           
       
     </div>
@@ -77,33 +84,33 @@
 
           
             <tr>
-              <td>Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten</td>
-              <td>-30.000,00€</td>
+              <td>Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten</td>
+              <td>12.500,00€</td>
             </tr>
           
             <tr>
               <td>Beihilfen, Unterstützungsleistungen für Beschäftigte</td>
-              <td>-3.400,00€</td>
+              <td>3.700,00€</td>
             </tr>
           
             <tr>
               <td>Beiträge zu Versorgungskassen für Arbeitnehmer</td>
-              <td>-29.500,00€</td>
+              <td>27.900,00€</td>
             </tr>
           
             <tr>
               <td>Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer</td>
-              <td>-142.800,00€</td>
+              <td>141.700,00€</td>
             </tr>
           
             <tr>
               <td>Besondere zahlungswirksame Aufwendungen für Beschäftigte</td>
-              <td>-170.000,00€</td>
+              <td>265.000,00€</td>
             </tr>
           
             <tr>
               <td>Dienstauszahlungen und dgl. an Arbeitnehmer</td>
-              <td>-711.700,00€</td>
+              <td>707.300,00€</td>
             </tr>
           
             <tr>
@@ -113,27 +120,27 @@
           
             <tr>
               <td>Einzahlungen aus Kostenerstattungen von gesetzlichen Sozialversicherungen</td>
-              <td>250.000,00€</td>
+              <td>310.000,00€</td>
             </tr>
           
             <tr>
-              <td>Erstatt. f.d. Ausz. v. Dritten aus lfd. Verwaltungstätigkeit an Gemeinde&amp; GV</td>
-              <td>-6.400,00€</td>
+              <td>Erstatt. f.d. Ausz. v. Dritten aus lfd. Verwaltungstütigkeit an Gemeinde&amp; GV</td>
+              <td>6.500,00€</td>
             </tr>
           
             <tr>
-              <td>Geschäftsauszahlungen</td>
-              <td>-2.200,00€</td>
+              <td>Geschüftsauszahlungen</td>
+              <td>2.300,00€</td>
             </tr>
           
             <tr>
               <td>Sonstige privatrechtliche Leistungsentgelte</td>
-              <td>5.500,00€</td>
+              <td>6.000,00€</td>
             </tr>
           
             <tr>
-              <td>Steuern, Versicherungen, Schadensfälle</td>
-              <td>-207.000,00€</td>
+              <td>Steuern, Versicherungen, Schadensfülle</td>
+              <td>215.000,00€</td>
             </tr>
           
         </tbody>
@@ -153,7 +160,7 @@
 
     <footer>
       <p>
-        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/wernigerode-in-zahlen">Github</a>.
         Das Impressum befindet sich <a href="/imprint.html">hier</a>.
       </p>
     </footer>
@@ -163,13 +170,13 @@
       
         
           var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_e352d35d_0fa6_47ed_8b1e_97f2436cc088'), {
+          var incomeChart_ = new Chart(document.getElementById('chartjs_administration_income'), {
             type: 'doughnut',
             data: {
               labels: ["Sonstige privatrechtliche Leistungsentgelte","Einzahlungen aus Kostenerstattungen vom Bund","Einzahlungen aus Kostenerstattungen von gesetzlichen Sozialversicherungen"],
               datasets: [{
                 label: 'Euro',
-                data: [5500,6000,250000],
+                data: [6000,6000,310000],
                 borderWidth: 1
               }]
             },
@@ -185,13 +192,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_5d9e11ad_56a0_4da1_bef4_85aac15f75ad'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_administration_expenses'), {
             type: 'doughnut',
             data: {
-              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Geschäftsauszahlungen","Auszahlungen für Sachverständigen-,Gerichts-und ähnl.Kosten","Steuern, Versicherungen, Schadensfälle","Erstatt. f.d. Ausz. v. Dritten aus lfd. Verwaltungstätigkeit an Gemeinde\u0026 GV"],
+              labels: ["Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Besondere zahlungswirksame Aufwendungen für Beschäftigte","Geschüftsauszahlungen","Auszahlungen für Sachverstündigen-,Gerichts-und ähnl.Kosten","Steuern, Versicherungen, Schadensfülle","Erstatt. f.d. Ausz. v. Dritten aus lfd. Verwaltungstütigkeit an Gemeinde\u0026 GV"],
               datasets: [{
                 label: 'Euro',
-                data: [-711700,-29500,-142800,-3400,-170000,-2200,-30000,-207000,-6400],
+                data: [707300,27900,141700,3700,265000,2300,12500,215000,6500],
                 borderWidth: 1
               }]
             },
@@ -204,6 +211,9 @@
               
             }
           });
+        
+      
+        
         
       
     </script>

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Verwaltungssteuerung des Fachbereichs Budget Oberbürgermeister hat ein Budge von -689.000,00€."/>
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Verwaltungssteuerung des Fachbereichs Budget Oberbürgermeister hat ein Budge von -759.700,00€."/>
   <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Verwaltungssteuerung,Budget Oberbürgermeister"/>
   <meta name="author" content="Paul Heymann"/>
 
@@ -23,7 +23,7 @@
       Das Produkt -  Führung, Entwicklung und Überwachung der Verwaltung - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-expenses center">-689.000,00€</h2>
+    <h2 class="total-cashflow-expenses center">-759.700,00€</h2>
 
     <p>
       kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
@@ -32,19 +32,22 @@
 
     <div class="container">
       
-          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-689.000,00€</span></h3>
+          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-759.700,00€</span></h3>
 
           
-            <div class="row">
-              <div class="col-6">
-                <h5 class="center">Einnahmen: 8.100,00€</h5>
-                <canvas id="chartjs_971443c9_0933_4352_b8be_76a6f7d62d71"></canvas>
+            
+            
+              <div class="padded-chart">
+                <canvas id="chartjs_administration_expenses"></canvas>
               </div>
-              <div class="col-6">
-                <h5 class="center">Ausgaben: -697.100,00€</h5>
-                <canvas id="chartjs_276106e9_4796_4fdd_9333_3fb8f781f6c9"></canvas>
-              </div>
-            </div>
+            
+          
+      
+          <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
+
+          
+            
+            
           
       
     </div>
@@ -77,58 +80,53 @@
 
           
             <tr>
+              <td>Auszahlungen für Projekt Hoi An</td>
+              <td>10.500,00€</td>
+            </tr>
+          
+            <tr>
               <td>Auszahlungen für sonstige Dienstleistungen</td>
-              <td>-1.500,00€</td>
+              <td>1.600,00€</td>
             </tr>
           
             <tr>
               <td>Beihilfen, Unterstützungsleistungen für Beschäftigte</td>
-              <td>-1.800,00€</td>
+              <td>1.800,00€</td>
             </tr>
           
             <tr>
               <td>Beiträge zu Versorgungskassen für Arbeitnehmer</td>
-              <td>-11.500,00€</td>
+              <td>11.200,00€</td>
             </tr>
           
             <tr>
               <td>Beiträge zu Versorgungskassen für Beamte</td>
-              <td>-84.400,00€</td>
+              <td>85.700,00€</td>
             </tr>
           
             <tr>
               <td>Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer</td>
-              <td>-55.200,00€</td>
-            </tr>
-          
-            <tr>
-              <td>Benutzungsgebühren und ähnliche Entgelte</td>
-              <td>8.100,00€</td>
+              <td>56.000,00€</td>
             </tr>
           
             <tr>
               <td>Besondere Verwaltungs- und Betriebsauszahlungen</td>
-              <td>-70.000,00€</td>
+              <td>84.600,00€</td>
             </tr>
           
             <tr>
               <td>Dienstauszahlungen und dgl. an Arbeitnehmer</td>
-              <td>-274.000,00€</td>
+              <td>278.400,00€</td>
             </tr>
           
             <tr>
               <td>Dienstauszahlungen und dgl. an Beamte</td>
-              <td>-118.200,00€</td>
+              <td>129.900,00€</td>
             </tr>
           
             <tr>
-              <td>Geschäftsauszahlungen</td>
-              <td>-80.000,00€</td>
-            </tr>
-          
-            <tr>
-              <td>Verfügungsmittel</td>
-              <td>-500,00€</td>
+              <td>Geschüftsauszahlungen</td>
+              <td>100.000,00€</td>
             </tr>
           
         </tbody>
@@ -148,7 +146,7 @@
 
     <footer>
       <p>
-        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/wernigerode-in-zahlen">Github</a>.
         Das Impressum befindet sich <a href="/imprint.html">hier</a>.
       </p>
     </footer>
@@ -157,36 +155,15 @@
     <script>
       
         
-          var incomeSubProductLinks_ =  null ;
-          var incomeChart_ = new Chart(document.getElementById('chartjs_971443c9_0933_4352_b8be_76a6f7d62d71'), {
-            type: 'doughnut',
-            data: {
-              labels: ["Benutzungsgebühren und ähnliche Entgelte"],
-              datasets: [{
-                label: 'Euro',
-                data: [8100],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              plugins: {
-                legend: {
-                  display: false
-                }
-              },
-              
-            }
-          });
-        
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_276106e9_4796_4fdd_9333_3fb8f781f6c9'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_administration_expenses'), {
             type: 'doughnut',
             data: {
-              labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für sonstige Dienstleistungen","Geschäftsauszahlungen","Verfügungsmittel"],
+              labels: ["Dienstauszahlungen und dgl. an Beamte","Dienstauszahlungen und dgl. an Arbeitnehmer","Beiträge zu Versorgungskassen für Beamte","Beiträge zu Versorgungskassen für Arbeitnehmer","Beiträge zur gesetzlichen Sozialver.aus DienstAusz und dgl. für Arbeitnehmer","Beihilfen, Unterstützungsleistungen für Beschäftigte","Besondere Verwaltungs- und Betriebsauszahlungen","Auszahlungen für Projekt Hoi An","Auszahlungen für sonstige Dienstleistungen","Geschüftsauszahlungen"],
               datasets: [{
                 label: 'Euro',
-                data: [-118200,-274000,-84400,-11500,-55200,-1800,-70000,-1500,-80000,-500],
+                data: [129900,278400,85700,11200,56000,1800,84600,10500,1600,100000],
                 borderWidth: 1
               }]
             },
@@ -199,6 +176,9 @@
               
             }
           });
+        
+      
+        
         
       
     </script>

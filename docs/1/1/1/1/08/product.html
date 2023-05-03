@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Gemeindegremien des Fachbereichs Budget Oberbürgermeister hat ein Budge von -135.200,00€."/>
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Gemeindegremien des Fachbereichs Budget Oberbürgermeister hat ein Budge von -147.200,00€."/>
   <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Gemeindegremien,Budget Oberbürgermeister"/>
   <meta name="author" content="Paul Heymann"/>
 
@@ -23,7 +23,7 @@
       Das Produkt -  Angelegenheiten des Stadtrates und seiner Ausschüsse - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-expenses center">-135.200,00€</h2>
+    <h2 class="total-cashflow-expenses center">-147.200,00€</h2>
 
     <p>
       kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
@@ -32,14 +32,21 @@
 
     <div class="container">
       
-          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-135.200,00€</span></h3>
+          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-147.200,00€</span></h3>
 
           
             
             
               <div class="padded-chart">
-                <canvas id="chartjs_f9c77965_3d5e_47e6_9da8_1e5ee7304ffc"></canvas>
+                <canvas id="chartjs_administration_expenses"></canvas>
               </div>
+            
+          
+      
+          <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
+
+          
+            
             
           
       
@@ -74,22 +81,27 @@
           
             <tr>
               <td>Auszahlungen für Honorare</td>
-              <td>-7.000,00€</td>
+              <td>7.000,00€</td>
             </tr>
           
             <tr>
-              <td>Auszahlungen für ehrenamtliche und sonstige Tätigkeit</td>
-              <td>-115.000,00€</td>
+              <td>Auszahlungen für Mieten und Pachten</td>
+              <td>12.000,00€</td>
+            </tr>
+          
+            <tr>
+              <td>Auszahlungen für ehrenamtliche und sonstige Tütigkeit</td>
+              <td>115.000,00€</td>
             </tr>
           
             <tr>
               <td>Fraktionszuwendungen</td>
-              <td>-12.000,00€</td>
+              <td>12.000,00€</td>
             </tr>
           
             <tr>
               <td>Zuschüsse an übrige Bereiche</td>
-              <td>-1.200,00€</td>
+              <td>1.200,00€</td>
             </tr>
           
         </tbody>
@@ -109,7 +121,7 @@
 
     <footer>
       <p>
-        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/wernigerode-in-zahlen">Github</a>.
         Das Impressum befindet sich <a href="/imprint.html">hier</a>.
       </p>
     </footer>
@@ -120,13 +132,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_f9c77965_3d5e_47e6_9da8_1e5ee7304ffc'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_administration_expenses'), {
             type: 'doughnut',
             data: {
-              labels: ["Zuschüsse an übrige Bereiche","Auszahlungen für ehrenamtliche und sonstige Tätigkeit","Auszahlungen für Honorare","Fraktionszuwendungen"],
+              labels: ["Auszahlungen für Mieten und Pachten","Zuschüsse an übrige Bereiche","Auszahlungen für ehrenamtliche und sonstige Tütigkeit","Auszahlungen für Honorare","Fraktionszuwendungen"],
               datasets: [{
                 label: 'Euro',
-                data: [-1200,-115000,-7000,-12000],
+                data: [12000,1200,115000,7000,12000],
                 borderWidth: 1
               }]
             },
@@ -139,6 +151,9 @@
               
             }
           });
+        
+      
+        
         
       
     </script>

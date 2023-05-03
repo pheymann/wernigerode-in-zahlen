@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Förderung des Sports des Fachbereichs Budget Bürgerservice hat ein Budge von -154.000,00€."/>
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Das Produkt Förderung des Sports des Fachbereichs Budget Bürgerservice hat ein Budge von -156.100,00€."/>
   <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Förderung des Sports,Budget Bürgerservice"/>
   <meta name="author" content="Paul Heymann"/>
 
@@ -23,7 +23,7 @@
       Das Produkt -  Förderung des Sports - wird in 2023
     </p>
 
-    <h2 class="total-cashflow-expenses center">-154.000,00€</h2>
+    <h2 class="total-cashflow-expenses center">-156.100,00€</h2>
 
     <p>
       kosten. Unten werden die verschiedenen Ausgaben aufgeführt, die das Budget ausmachen. Jede Ausgabe hat dann nochmal eine
@@ -32,14 +32,21 @@
 
     <div class="container">
       
-          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-154.000,00€</span></h3>
+          <h3>- Die Verwaltung kostet <span class="total-cashflow-expenses">-156.100,00€</span></h3>
 
           
             
             
               <div class="padded-chart">
-                <canvas id="chartjs_7db3fe07_312f_4067_b5cd_2e519d4074b6"></canvas>
+                <canvas id="chartjs_administration_expenses"></canvas>
               </div>
+            
+          
+      
+          <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">0,00€</span></h3>
+
+          
+            
             
           
       
@@ -74,7 +81,7 @@
           
             <tr>
               <td>Zuschüsse an übrige Bereiche</td>
-              <td>-154.000,00€</td>
+              <td>156.100,00€</td>
             </tr>
           
         </tbody>
@@ -94,7 +101,7 @@
 
     <footer>
       <p>
-        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/paulheymann-website">Github</a>.
+        Daten und Code für diese Webseite findest du auf <a href="https://github.com/pheymann/wernigerode-in-zahlen">Github</a>.
         Das Impressum befindet sich <a href="/imprint.html">hier</a>.
       </p>
     </footer>
@@ -105,13 +112,13 @@
         
         
           var expensesSubProductLinks_ =  null ;
-          var expensesChart_ = new Chart(document.getElementById('chartjs_7db3fe07_312f_4067_b5cd_2e519d4074b6'), {
+          var expensesChart_ = new Chart(document.getElementById('chartjs_administration_expenses'), {
             type: 'doughnut',
             data: {
               labels: ["Zuschüsse an übrige Bereiche"],
               datasets: [{
                 label: 'Euro',
-                data: [-154000],
+                data: [156100],
                 borderWidth: 1
               }]
             },
@@ -124,6 +131,9 @@
               
             }
           });
+        
+      
+        
         
       
     </script>
