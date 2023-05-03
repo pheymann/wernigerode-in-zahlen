@@ -10,7 +10,7 @@ import (
 
 var (
 	adminAccountIdRegex      = regexp.MustCompile(`^(\d\.)+(\d{2}\.)+(?P<id>\d+)$`)
-	investmentAccountIdRegex = regexp.MustCompile(`^(\d\.)+(\d{2}\.?)+\/\d{4}\.(?P<id>\d+)$`)
+	investmentAccountIdRegex = regexp.MustCompile(`^(\d\.)+(\d{2}\.?)+\/(?P<investment_class>\d{4})\.(?P<id>\d+)$`)
 
 	idRegex = regexp.MustCompile(`^(?P<id>\d\.\d\.\d\.\d{2}(\.\d{2})?).*$`)
 )
@@ -31,8 +31,10 @@ func DecodeFromAccounts(accounts []fd.Account) model.FinancialPlanProduct {
 		}
 
 		var id = ""
+		var investmentClass = ""
 		if !isAdminAccount {
 			id = decoder.DecodeString(investmentAccountIdRegex, "id", matches)
+			investmentClass = decoder.DecodeString(investmentAccountIdRegex, "investment_class", matches)
 		} else {
 			id = decoder.DecodeString(adminAccountIdRegex, "id", matches)
 		}
@@ -55,14 +57,18 @@ func DecodeFromAccounts(accounts []fd.Account) model.FinancialPlanProduct {
 			if isAdminAccount {
 				updateAdministrationBalance(financialPlan, account, false)
 			} else {
-				updateInvestmentsBalance(financialPlan, account, false)
+				if !isFinancialActivity(investmentClass) {
+					updateInvestmentsBalance(financialPlan, account, false)
+				}
 			}
 
 		case '7':
 			if isAdminAccount {
 				updateAdministrationBalance(financialPlan, account, true)
 			} else {
-				updateInvestmentsBalance(financialPlan, account, true)
+				if !isFinancialActivity(investmentClass) {
+					updateInvestmentsBalance(financialPlan, account, true)
+				}
 			}
 
 		case '8':
@@ -81,6 +87,10 @@ func addID(plan *model.FinancialPlanProduct, someAccount fd.Account) {
 	matches := idRegex.FindStringSubmatch(someAccount.ID)
 
 	plan.ID = decoder.DecodeString(idRegex, "id", matches)
+}
+
+func isFinancialActivity(investmentClass string) bool {
+	return investmentClass[0] == '9'
 }
 
 func updateAdministrationBalance(plan *model.FinancialPlanProduct, account fd.Account, isExpense bool) {
