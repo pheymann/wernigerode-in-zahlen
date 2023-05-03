@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Haushaltsplan Wernigerode 2023. Der Fachbereich Budget Finanzen hat ein Budge von 35.405.700,00€."/>
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Der Fachbereich Budget Finanzen hat ein Budge von 37.005.900,00€."/>
   <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Budget Finanzen"/>
   <meta name="author" content="Paul Heymann"/>
 
@@ -23,7 +23,7 @@
       In 2023 planen wir
     </p>
 
-    <h2 class="total-cashflow-income center">35.405.700,00€</h2>
+    <h2 class="total-cashflow-income center">37.005.900,00€</h2>
 
     <p>
       über diesen Fachbereich einzunehmen. Dabei geht das Geld an die folgenden <b>8 Produkte</b>. Klicke auf eines in den Diagrammen, um mehr zu erfahren.
@@ -37,7 +37,7 @@
             <canvas id="chartjs_products_income"></canvas>
           </div>
           <div class="col-6">
-            <h5 class="center">Ausgaben: -18.655.400,00€</h5>
+            <h5 class="center">Ausgaben: -17.055.200,00€</h5>
             <canvas id="chartjs_products_expenses"></canvas>
           </div>
         </div>
@@ -55,9 +55,9 @@
           </tr>
           <tr>
             <th></th>
-            <th>35.405.700,00€</th>
+            <th>37.005.900,00€</th>
             <th>35.603.300,00€</th>
-            <th>-197.600,00€</th>
+            <th>1.402.600,00€</th>
           </tr>
 
           
@@ -98,9 +98,9 @@
           
             <tr>
               <td><a href="/2/6/1/2/01/product.html">Sonstige allgemeine Finanzwirtschaft</a></td>
-              <td>-2.502.800,00€</td>
               <td>-902.600,00€</td>
-              <td>-1.600.200,00€</td>
+              <td>-902.600,00€</td>
+              <td>0,00€</td>
             </tr>
           
             <tr>
@@ -142,15 +142,15 @@
     <script src="/js/chart.js"></script>
     <script>
       
-      var incomeProductLinks = ["/2/5/3/4/01/product.html","/2/5/3/5/01/product.html","/2/6/1/1/01/product.html","/2/5/3/1/01/product.html","/2/5/3/2/01/product.html","/2/5/3/3/01/product.html"];
+      var incomeProductLinks = ["/2/5/3/1/01/product.html","/2/5/3/4/01/product.html","/2/5/3/2/01/product.html","/2/5/3/5/01/product.html","/2/6/1/1/01/product.html","/2/5/3/3/01/product.html"];
       var incomeCanvas = document.getElementById('chartjs_products_income');
       var incomeChart = new Chart(incomeCanvas, {
         type: 'doughnut',
         data: {
-          labels: ["Fernwärmeversorgung (Konzessionsabgabe)","Gewinnabführung Stadtwerke","Steuern, allgemeine Zuweisungen, allgemeine Umlagen","Elektrizitätsversorgung (Konzessionsabgabe)","Gasversorgung (Konzessionsabgabe)","Wasserversorgung (Konzessionsabgabe)"],
+          labels: ["Elektrizitätsversorgung (Konzessionsabgabe)","Fernwärmeversorgung (Konzessionsabgabe)","Gasversorgung (Konzessionsabgabe)","Gewinnabführung Stadtwerke","Steuern, allgemeine Zuweisungen, allgemeine Umlagen","Wasserversorgung (Konzessionsabgabe)"],
           datasets: [{
             label: 'Euro',
-            data: [38000,4000000,33604200,1148400,138600,548900],
+            data: [1148400,38000,138600,4000000,33604200,548900],
             borderWidth: 1
           }]
         },
@@ -169,15 +169,15 @@
       
 
       
-      var expenesesProductLinks = ["/2/6/1/2/01/product.html","/2/1/1/1/07/product.html"];
+      var expenesesProductLinks = ["/2/1/1/1/07/product.html","/2/6/1/2/01/product.html"];
       var expensesCanvas = document.getElementById('chartjs_products_expenses');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {
-          labels: ["Sonstige allgemeine Finanzwirtschaft","Haushalts-,Kassen-und Rechnungswesen"],
+          labels: ["Haushalts-,Kassen-und Rechnungswesen","Sonstige allgemeine Finanzwirtschaft"],
           datasets: [{
             label: 'Euro',
-            data: [-2502800,-1569600],
+            data: [-1569600,-902600],
             borderWidth: 1
           }]
         },

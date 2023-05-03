@@ -282,15 +282,15 @@
     <script src="/js/chart.js"></script>
     <script>
       
-      var incomeProductLinks = ["/4/3/6/5/05/product.html","/4/5/4/6/01/product.html","/4/5/7/3/01/product.html","/4/3/6/5/03/product.html","/4/5/4/6/03/product.html"];
+      var incomeProductLinks = ["/4/5/7/3/01/product.html","/4/5/4/6/01/product.html","/4/5/4/6/03/product.html","/4/3/6/5/05/product.html","/4/3/6/5/03/product.html"];
       var incomeCanvas = document.getElementById('chartjs_products_income');
       var incomeChart = new Chart(incomeCanvas, {
         type: 'doughnut',
         data: {
-          labels: ["Verwaltung der Förd. von Kindern in Tageseinrichtungen auswärtiger Gemeinden","Parkplätze/Parkflächen","Allgemeine Einrichtungen und Märkte","Zentralküche","Pendlerparkplätze"],
+          labels: ["Allgemeine Einrichtungen und Märkte","Parkplätze/Parkflächen","Pendlerparkplätze","Verwaltung der Förd. von Kindern in Tageseinrichtungen auswärtiger Gemeinden","Zentralküche"],
           datasets: [{
             label: 'Euro',
-            data: [15000,632900,20100,46500,15600],
+            data: [20100,632900,15600,15000,46500],
             borderWidth: 1
           }]
         },
@@ -309,15 +309,15 @@
       
 
       
-      var expenesesProductLinks = ["/4/3/1/5/10/product.html","/4/5/4/7/01/product.html","/4/1/2/2/01/product.html","/4/2/4/3/01/product.html","/4/2/6/2/02/product.html","/4/2/7/2/01/product.html","/4/2/8/1/01/product.html","/4/3/6/5/01/product.html","/4/3/6/6/01/product.html","/4/1/2/6/01/product.html","/4/2/5/2/01/product.html","/4/3/4/6/01/product.html","/4/1/2/2/02/product.html","/4/1/2/2/03/product.html","/4/2/5/2/02/product.html","/4/3/1/5/60/product.html","/4/4/2/1/01/product.html","/4/4/2/4/01/product.html","/4/2/1/1/01/product.html","/4/3/1/5/40/product.html","/4/3/3/1/01/product.html","/4/4/2/4/02/product.html","/4/3/6/5/02/product.html"];
+      var expenesesProductLinks = ["/4/2/5/2/02/product.html","/4/2/7/2/01/product.html","/4/2/6/2/02/product.html","/4/1/2/6/01/product.html","/4/5/4/7/01/product.html","/4/4/2/4/02/product.html","/4/3/6/6/01/product.html","/4/3/1/5/60/product.html","/4/4/2/1/01/product.html","/4/3/3/1/01/product.html","/4/2/1/1/01/product.html","/4/2/8/1/01/product.html","/4/1/2/2/02/product.html","/4/2/5/2/01/product.html","/4/1/2/2/01/product.html","/4/3/1/5/10/product.html","/4/2/4/3/01/product.html","/4/4/2/4/01/product.html","/4/1/2/2/03/product.html","/4/3/6/5/02/product.html","/4/3/6/5/01/product.html","/4/3/4/6/01/product.html","/4/3/1/5/40/product.html"];
       var expensesCanvas = document.getElementById('chartjs_products_expenses');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {
-          labels: ["Senioren- und Familienhaus","Buswartehallen","Ordnungsangelegenheiten","Sonstige schulische Aufgaben","Brahms-Chorwettbewerb","Bibliotheken","Heimat-und Kulturpflege","Verwaltung d. Förderung v. Kindern in Tageseinrichtungen für Kinder","Einrichtungen der Jugendarbeit","Brandschutz","Museen","Wohngeld","Meldewesen","Standesamt","Archiv","Frauenschutzwohnung","Förderung des Sports","Sportstätten","Grundschulen","Übergangswohnheim","Förderung von Trägern der Wohlfahrtspflege","Bäder","Tageseinrichtungen für Kinder"],
+          labels: ["Archiv","Bibliotheken","Brahms-Chorwettbewerb","Brandschutz","Buswartehallen","Bäder","Einrichtungen der Jugendarbeit","Frauenschutzwohnung","Förderung des Sports","Förderung von Trägern der Wohlfahrtspflege","Grundschulen","Heimat-und Kulturpflege","Meldewesen","Museen","Ordnungsangelegenheiten","Senioren- und Familienhaus","Sonstige schulische Aufgaben","Sportstätten","Standesamt","Tageseinrichtungen für Kinder","Verwaltung d. Förderung v. Kindern in Tageseinrichtungen für Kinder","Wohngeld","Übergangswohnheim"],
           datasets: [{
             label: 'Euro',
-            data: [-184100,-10000,-891200,-525900,-10000,-475500,-199600,-1950000,-521600,-2757200,-253700,-413500,-335700,-306900,-126300,-70700,-156100,-1696000,-1906900,-60400,-19100,-718600,-6566100],
+            data: [-126300,-475500,-10000,-2757200,-10000,-718600,-521600,-70700,-156100,-19100,-1906900,-199600,-335700,-253700,-891200,-184100,-525900,-1696000,-306900,-6566100,-1950000,-413500,-60400],
             borderWidth: 1
           }]
         },

@@ -34,12 +34,17 @@ func generateDepartment(department model.FinancialPlanDepartment, budgetYear mod
 		DatasetLabel: "Ausgaben",
 	}
 
-	populateChartData(department, budgetYear, &expensesProductLinks, &chartExpensesDataPerProduct, &incomeProductLinks, &chartIncomeDataPerProduct)
-
-	productTable := generateProductTable(department, budgetYear)
-	sort.Slice(productTable, func(i, j int) bool {
-		return productTable[i].Name < productTable[j].Name
+	sortedProducts := []model.FinancialPlanProduct{}
+	for _, product := range department.Products {
+		sortedProducts = append(sortedProducts, product)
+	}
+	sort.Slice(sortedProducts, func(i, j int) bool {
+		return sortedProducts[i].Metadata.Product.Name < sortedProducts[j].Metadata.Product.Name
 	})
+
+	populateChartData(sortedProducts, budgetYear, &expensesProductLinks, &chartExpensesDataPerProduct, &incomeProductLinks, &chartIncomeDataPerProduct)
+
+	productTable := generateProductTable(sortedProducts, budgetYear)
 
 	var htmlBytes bytes.Buffer
 	if err := departmentTmpl.Execute(
@@ -70,12 +75,12 @@ func generateDepartment(department model.FinancialPlanDepartment, budgetYear mod
 }
 
 func generateProductTable(
-	department model.FinancialPlanDepartment,
+	sortedProducts []model.FinancialPlanProduct,
 	budgetYear model.BudgetYear,
 ) []html.ProductTableData {
 	table := []html.ProductTableData{}
 
-	for _, product := range department.Products {
+	for _, product := range sortedProducts {
 		data := html.ProductTableData{
 			Name:                   product.Metadata.Product.Name,
 			CashflowTotal:          product.Cashflow.Total[budgetYear],
@@ -90,7 +95,7 @@ func generateProductTable(
 }
 
 func populateChartData(
-	department model.FinancialPlanDepartment,
+	sortedProducts []model.FinancialPlanProduct,
 	budgetYear model.BudgetYear,
 
 	expensesProductLinks *[]string,
@@ -99,7 +104,7 @@ func populateChartData(
 	incomeProductLinks *[]string,
 	chartIncomeDataPerProduct *html.ChartJSDataset,
 ) {
-	for _, product := range department.Products {
+	for _, product := range sortedProducts {
 		if product.Cashflow.Total[budgetYear] < 0 {
 			*expensesProductLinks = append(*expensesProductLinks, product.CreateLink())
 			chartExpensesDataPerProduct.Labels = append(chartExpensesDataPerProduct.Labels, product.Metadata.Product.Name)

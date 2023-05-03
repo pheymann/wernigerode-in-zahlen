@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Haushaltsplan Wernigerode 2023. Die Stadt hat ein Budge von -3.379.700,00€."/>
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Die Stadt hat ein Budge von -1.779.500,00€."/>
   <meta name="keywords" content="Wernigerode,Haushaltsplan,2023"/>
   <meta name="author" content="Paul Heymann"/>
 
@@ -28,7 +28,7 @@
 			Alles startet mit der Gesamtübersicht. In 2023 planen wir
     </p>
 
-    <h2 class="total-cashflow-expenses center">-3.379.700,00€</h2>
+    <h2 class="total-cashflow-expenses center">-1.779.500,00€</h2>
 
     <p>
       auszugeben. Die Gelder teilen sich auf <b>5 Fachbereiche</b> auf und setzen sich aus den laufenden Verwaltungstätigkeiten
@@ -43,7 +43,7 @@
             <canvas id="chartjs_departments_income"></canvas>
           </div>
           <div class="col-6">
-            <h5 class="center">Ausgaben: -87.022.500,00€</h5>
+            <h5 class="center">Ausgaben: -85.422.300,00€</h5>
             <canvas id="chartjs_departments_expenses"></canvas>
           </div>
         </div>
@@ -68,9 +68,9 @@
           </tr>
           <tr>
             <th></th>
-            <th>-3.379.700,00€</th>
             <th>-1.779.500,00€</th>
-            <th>-1.600.200,00€</th>
+            <th>-1.779.500,00€</th>
+            <th>0,00€</th>
           </tr>
 
           
@@ -90,9 +90,9 @@
           
             <tr>
               <td><a href="/2/department.html">Budget Finanzen</a></td>
-              <td>35.405.700,00€</td>
+              <td>37.005.900,00€</td>
               <td>35.603.300,00€</td>
-              <td>-197.600,00€</td>
+              <td>1.402.600,00€</td>
             </tr>
           
             <tr>
@@ -142,7 +142,7 @@
             labels: ["Budget Finanzen"],
             datasets: [{
               label: 'Euro',
-              data: [35405700],
+              data: [37005900],
               borderWidth: 1
             }]
           },
@@ -160,15 +160,15 @@
         });
       
 
-      var expensesDepartmentLinks = ["/4/department.html","/5/department.html","/1/department.html","/3/department.html"];
+      var expensesDepartmentLinks = ["/3/department.html","/4/department.html","/1/department.html","/5/department.html"];
       var expensesCanvas = document.getElementById('chartjs_departments_expenses');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {
-          labels: ["Budget Bürgerservice","Budget Stadtentwicklung","Budget Oberbürgermeister","Budget Betriebsbereiche"],
+          labels: ["Budget Betriebsbereiche","Budget Bürgerservice","Budget Oberbürgermeister","Budget Stadtentwicklung"],
           datasets: [{
             label: 'Euro',
-            data: [-19425000,-6932700,-6721800,-5705900],
+            data: [-5705900,-19425000,-6721800,-6932700],
             borderWidth: 1
           }]
         },

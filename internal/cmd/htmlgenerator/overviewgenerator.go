@@ -3,6 +3,7 @@ package htmlgenerator
 import (
 	"bytes"
 	"html/template"
+	"sort"
 
 	htmlOverviewtEncoder "wernigerode-in-zahlen.de/internal/pkg/encoder/html/overview"
 	"wernigerode-in-zahlen.de/internal/pkg/model"
@@ -22,7 +23,15 @@ func GenerateOverview(plan model.FinancialPlanCity, budgetYear model.BudgetYear,
 		DatasetLabel: "Ausgaben",
 	}
 
+	sortedDepartments := []model.FinancialPlanDepartment{}
 	for _, department := range plan.Departments {
+		sortedDepartments = append(sortedDepartments, department)
+	}
+	sort.Slice(sortedDepartments, func(i, j int) bool {
+		return sortedDepartments[i].Name < sortedDepartments[j].Name
+	})
+
+	for _, department := range sortedDepartments {
 		departmentLink := department.CreateLink()
 
 		if department.Cashflow.Total[budgetYear] > 0 {
