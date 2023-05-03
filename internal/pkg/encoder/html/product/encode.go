@@ -134,68 +134,6 @@ func splitAccountsByType(accounts []model.Account2, year model.BudgetYear) share
 	return shared.NewPair(income, expenses)
 }
 
-func subProductsToSection(plan model.FinancialPlanProduct, year model.BudgetYear, p *message.Printer) *html.BalanceSection {
-	if len(plan.SubProducts) == 0 {
-		return nil
-	}
-
-	section := html.BalanceSection{
-		ID: "balance_sub_products",
-		Income: html.ChartJSDataset{
-			ID:           "chartjs_sub_products_income",
-			DatasetLabel: "Einnahmen",
-		},
-		Expenses: html.ChartJSDataset{
-			ID:           "chartjs_sub_products_income",
-			DatasetLabel: "Ausgaben",
-		},
-	}
-
-	section.IncomeID = template.JS(section.Income.ID)
-	section.ExpensesID = template.JS(section.Expenses.ID)
-
-	for _, plan := range plan.SubProducts {
-		link := fmt.Sprintf("%s/product.html", plan.Metadata.SubProduct.ID)
-
-		if plan.Cashflow.Total[year] < 0 {
-			section.Expenses.Labels = append(section.Expenses.Labels, plan.Metadata.SubProduct.Name)
-			section.Expenses.Data = append(section.Expenses.Data, plan.Cashflow.Total[year])
-			section.ExpensesSubProductLinks = append(section.ExpensesSubProductLinks, link)
-		} else {
-			section.Income.Labels = append(section.Income.Labels, plan.Metadata.SubProduct.Name)
-			section.Income.Data = append(section.Income.Data, plan.Cashflow.Total[year])
-			section.IncomeSubProductLinks = append(section.IncomeSubProductLinks, link)
-		}
-	}
-
-	if shared.IsUnequal(plan.Cashflow.Expenses[year], 0.0) {
-		section.HasExpenses = true
-		section.ExpensesCashflowTotal = plan.Cashflow.Expenses[year]
-		section.HasExpensesSubProductLinks = true
-	}
-	if shared.IsUnequal(plan.Cashflow.Income[year], 0.0) {
-		section.HasIncome = true
-		section.IncomeCashflowTotal = plan.Cashflow.Income[year]
-		section.HasIncomeSubProductLinks = true
-	}
-
-	if section.HasIncome && section.HasExpenses {
-		section.HasIncomeAndExpenses = true
-	}
-
-	section.Copy = html.BalanceSectionCopy{
-		Header:                encodeSubProductBalanceSectionHeader(plan.Cashflow.Total[year], p),
-		IncomeCashflowTotal:   "Einnahmen: " + encodeHtml.EncodeBudget(plan.Cashflow.Income[year], p),
-		ExpensesCashflowTotal: "Ausgaben: " + encodeHtml.EncodeBudget(plan.Cashflow.Expenses[year], p),
-	}
-
-	section.CSS = html.BalanceSectionCSS{
-		CashflowTotalClass: encodeHtml.EncodeCSSCashflowClass(plan.Cashflow.Total[year]),
-	}
-
-	return &section
-}
-
 func encodeAccountCopy(data []html.AccountTableData, p *message.Printer) []html.ProductAccountCopy {
 	var accountCopy = []html.ProductAccountCopy{}
 
@@ -237,15 +175,6 @@ func encodeBalanceSectionHeader(balance model.AccountBalance2, year model.Budget
 		encodeAccountClass(balance.Type, balance.Cashflow.Total[year]),
 		encodeHtml.EncodeCSSCashflowClass(balance.Cashflow.Total[year]),
 		encodeHtml.EncodeBudget(balance.Cashflow.Total[year], p),
-	))
-}
-
-func encodeSubProductBalanceSectionHeader(cashflowTotal float64, p *message.Printer) template.HTML {
-	return template.HTML(fmt.Sprintf(
-		`- %s <span class="%s">%s</span>`,
-		"Darin enthalten sind die folgenden Unter-Produkte: ",
-		encodeHtml.EncodeCSSCashflowClass(cashflowTotal),
-		encodeHtml.EncodeBudget(cashflowTotal, p),
 	))
 }
 
