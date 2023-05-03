@@ -12,7 +12,7 @@ var (
 	adminAccountIdRegex      = regexp.MustCompile(`^(\d\.)+(\d{2}\.)+(?P<id>\d+)$`)
 	investmentAccountIdRegex = regexp.MustCompile(`^(\d\.)+(\d{2}\.?)+\/(?P<investment_class>\d{4})\.(?P<id>\d+)$`)
 
-	idRegex = regexp.MustCompile(`^(?P<id>\d\.\d\.\d\.\d{2}(\.\d{2})?).*$`)
+	idRegex = regexp.MustCompile(`^(?P<id>\d\.\d\.\d\.\d{2}(\.\d{2})?)[^\d].+$`)
 )
 
 func DecodeFromAccounts(accounts []fd.Account) model.FinancialPlanProduct {
