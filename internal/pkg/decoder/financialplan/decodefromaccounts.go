@@ -117,10 +117,16 @@ func updateInvestmentsBalance(plan *model.FinancialPlanProduct, account fd.Accou
 		updateCashflow(plan, isExpense, false, year, signBudget(value, isExpense))
 	})
 
+	tpe := model.Account2TypeIncome
+	if isExpense {
+		tpe = model.Account2TypeExpense
+	}
+
 	plan.InvestmentsBalance.Accounts = append(plan.InvestmentsBalance.Accounts, model.Account2{
 		ID:          account.ID,
 		ProductID:   account.ProductID,
 		Description: account.Description,
+		Type:        tpe,
 		Budget:      account.Budget,
 	})
 }
