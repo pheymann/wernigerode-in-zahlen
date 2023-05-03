@@ -50,8 +50,16 @@
           <h3>- Investitionen erwirtschaften <span class="total-cashflow-income">4.202.300,00€</span></h3>
 
           
-            
-            
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 5.598.700,00€</h5>
+                <canvas id="chartjs_investments_income"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: -1.396.400,00€</h5>
+                <canvas id="chartjs_investments_expenses"></canvas>
+              </div>
+            </div>
           
       
     </div>
@@ -239,6 +247,48 @@
         
       
         
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_investments_income'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Einzahlungen aus Verüuüerung von Grundstücken, Gebüuden, Infrastrukturvermügen","Einzahlungen aus Verüuüerung von Grundstücken, Gebüuden, Infrastrukturvermügen","Einzahlungen aus Verüuüerung von Grundstücken, Gebüuden, Infrastrukturvermügen"],
+              datasets: [{
+                label: 'Euro',
+                data: [1296000,3443500,859200],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_investments_expenses'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Auszahlungen für den Erwerb von Grundstücken, Gebüuden und Infrastrukturvermügen","Ausz. für Erschlieüungskosten","Auszahlungen für Erschlieüungskosten"],
+              datasets: [{
+                label: 'Euro',
+                data: [80200,316200,1000000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
       
     </script>

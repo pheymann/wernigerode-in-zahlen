@@ -50,8 +50,16 @@
           <h3>- Investitionen kosten <span class="total-cashflow-expenses">-865.800,00€</span></h3>
 
           
-            
-            
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 447.100,00€</h5>
+                <canvas id="chartjs_investments_income"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: -1.312.900,00€</h5>
+                <canvas id="chartjs_investments_expenses"></canvas>
+              </div>
+            </div>
           
       
     </div>
@@ -244,6 +252,48 @@
         
       
         
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_investments_income'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Einz. a. Zuweisungen f. Investitionen u.Investitionsfürdermaünahmen Land","Einz. a. Zuweisungen f. Investitionen u.Investitionsfürdermaünahmen Land","Einz. a. Zuweisungen f. Investitionen u.Investitionsfürdermaünahmen Land","Einz. a. Zuweisungen f. Investitionen u.Investitionsfürdermaünahmen Land","Einz. a. Zuweisungen f. Investitionen u.Investitionsfürdermaünahmen Land"],
+              datasets: [{
+                label: 'Euro',
+                data: [40500,19800,128500,130700,127600],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_investments_expenses'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Ausz. f.d. Erw. v. beweg. Vermügensgegenstünden v. \u003e 150  bis 1000 ? o. UStr.","Auszahl. f.d. Erw. von bewegl. Vermügengeg.st. von mehr als 1000 Euro ohne UStr.","Auszahlungen für Hochbaumaünahmen","Auszahlungen für Hochbaumaünahmen","Auszahlungen für Hochbaumaünahmen","Auszahlungen für Hochbaumaünahmen","Auszahlungen für Hochbaumaünahmen","Ausz.f.Zusch. f.InvestFürdMaün. an verbund. Untern., Sonderverm. u.Beteiligungen","Auszahlungen für Hochbaumaünahmen"],
+              datasets: [{
+                label: 'Euro',
+                data: [64100,138000,600000,120000,29000,27000,35000,264800,35000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
       
     </script>

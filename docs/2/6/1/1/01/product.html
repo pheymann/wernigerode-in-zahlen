@@ -51,6 +51,10 @@
 
           
             
+              <div class="padded-chart">
+                <canvas id="chartjs_investments_income"></canvas>
+              </div>
+            
             
           
       
@@ -218,6 +222,27 @@
           });
         
       
+        
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_investments_income'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Einz. a. Zuweisungen f. Investitionen u.Investitionsfürdermaünahmen Land"],
+              datasets: [{
+                label: 'Euro',
+                data: [1402600],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
         
       

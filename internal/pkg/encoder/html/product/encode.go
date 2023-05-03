@@ -92,13 +92,11 @@ func balanceToSection(balance model.AccountBalance2, year model.BudgetYear, p *m
 
 		HasIncomeAndExpenses: hasIncome && hasExpenses,
 
-		HasIncome:            hasIncome,
-		HasMoreThanOneIncome: len(accountsIncome) > 1,
-		IncomeCashflowTotal:  balance.Cashflow.Income[year],
-		Income:               dataPointsToChartJSDataset(accountsIncome, year, chartIDUniq+"_income"),
+		HasIncome:           hasIncome,
+		IncomeCashflowTotal: balance.Cashflow.Income[year],
+		Income:              dataPointsToChartJSDataset(accountsIncome, year, chartIDUniq+"_income"),
 
 		HasExpenses:           hasExpenses,
-		HasMoreThanOneExpense: len(accountsExpenses) > 1,
 		ExpensesCashflowTotal: balance.Cashflow.Expenses[year],
 		Expenses:              dataPointsToChartJSDataset(accountsExpenses, year, chartIDUniq+"_expenses"),
 
@@ -128,6 +126,8 @@ func splitAccountsByType(accounts []model.Account2, year model.BudgetYear) share
 			income = append(income, account)
 		} else if account.Type == model.Account2TypeExpense {
 			expenses = append(expenses, account)
+		} else {
+			panic("Unknown account type: " + account.Type)
 		}
 	}
 
@@ -170,13 +170,11 @@ func subProductsToSection(plan model.FinancialPlanProduct, year model.BudgetYear
 
 	if shared.IsUnequal(plan.Cashflow.Expenses[year], 0.0) {
 		section.HasExpenses = true
-		section.HasMoreThanOneExpense = len(section.ExpensesSubProductLinks) > 1
 		section.ExpensesCashflowTotal = plan.Cashflow.Expenses[year]
 		section.HasExpensesSubProductLinks = true
 	}
 	if shared.IsUnequal(plan.Cashflow.Income[year], 0.0) {
 		section.HasIncome = true
-		section.HasMoreThanOneIncome = len(section.IncomeSubProductLinks) > 1
 		section.IncomeCashflowTotal = plan.Cashflow.Income[year]
 		section.HasIncomeSubProductLinks = true
 	}

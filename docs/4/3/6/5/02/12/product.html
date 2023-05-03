@@ -52,6 +52,10 @@
           
             
             
+              <div class="padded-chart">
+                <canvas id="chartjs_investments_expenses"></canvas>
+              </div>
+            
           
       
     </div>
@@ -254,6 +258,27 @@
         
       
         
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_investments_expenses'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Auszahl. f.d. Erw. von bewegl. Vermügengeg.st. von mehr als 1000 Euro ohne UStr.","Auszahlungen für Hochbaumaünahmen"],
+              datasets: [{
+                label: 'Euro',
+                data: [6500,235000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
       
     </script>

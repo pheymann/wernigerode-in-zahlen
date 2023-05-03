@@ -50,8 +50,16 @@
           <h3>- Investitionen kosten <span class="total-cashflow-expenses">-567.600,00€</span></h3>
 
           
-            
-            
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 227.400,00€</h5>
+                <canvas id="chartjs_investments_income"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: -795.000,00€</h5>
+                <canvas id="chartjs_investments_expenses"></canvas>
+              </div>
+            </div>
           
       
     </div>
@@ -194,6 +202,48 @@
         
       
         
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_investments_income'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Einz. a. Zuweisungen f. Investitionen u.Investitionsfürdermaünahmen Land","Einz. a. Zuweisungen f. Investitionen u.Investitionsfürdermaünahmen Land","Einz. a. Zuweisungen f. Investitionen u.Investitionsfürdermaünahmen Land","Einz. a. Zuweisungen f. Investitionen u.Investitionsfürdermaünahmen Land","Einz. a. Zuweisungen f. Investitionen u.Investitionsfürdermaünahmen Zweckverb."],
+              datasets: [{
+                label: 'Euro',
+                data: [36000,27000,22500,45000,96900],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_investments_expenses'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Auszahl. f.d. Erw. von bewegl. Vermügengeg.st. von mehr als 1000 Euro ohne UStr.","Auszahlungen für Tiefbaumaünahmen","Auszahlungen für Tiefbaumaünahmen","Auszahlungen für Tiefbaumaünahmen","Auszahlungen für Tiefbaumaünahmen","Auszahlungen für Tiefbaumaünahmen"],
+              datasets: [{
+                label: 'Euro',
+                data: [40000,30000,25000,50000,50000,600000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
       
     </script>

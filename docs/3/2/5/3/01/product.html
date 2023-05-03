@@ -52,6 +52,10 @@
           
             
             
+              <div class="padded-chart">
+                <canvas id="chartjs_investments_expenses"></canvas>
+              </div>
+            
           
       
     </div>
@@ -274,6 +278,27 @@
         
       
         
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_investments_expenses'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Ausz. f.d. Erw. v. beweg. Vermügensgegenstünden v. \u003e 150  bis 1000 ? o. UStr.","Auszahl. f.d. Erw. von bewegl. Vermügengeg.st. von mehr als 1000 Euro ohne UStr."],
+              datasets: [{
+                label: 'Euro',
+                data: [1000,2500],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
       
     </script>

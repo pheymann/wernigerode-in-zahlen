@@ -50,8 +50,16 @@
           <h3>- Investitionen kosten <span class="total-cashflow-expenses">-922.000,00€</span></h3>
 
           
-            
-            
+            <div class="row">
+              <div class="col-6">
+                <h5 class="center">Einnahmen: 233.000,00€</h5>
+                <canvas id="chartjs_investments_income"></canvas>
+              </div>
+              <div class="col-6">
+                <h5 class="center">Ausgaben: -1.155.000,00€</h5>
+                <canvas id="chartjs_investments_expenses"></canvas>
+              </div>
+            </div>
           
       
     </div>
@@ -209,6 +217,48 @@
         
       
         
+          var incomeSubProductLinks_ =  null ;
+          var incomeChart_ = new Chart(document.getElementById('chartjs_investments_income'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Einzahlungen für Baumaünahmen","Mehrbelastungsausgleich"],
+              datasets: [{
+                label: 'Euro',
+                data: [100000,133000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
+        
+        
+          var expensesSubProductLinks_ =  null ;
+          var expensesChart_ = new Chart(document.getElementById('chartjs_investments_expenses'), {
+            type: 'doughnut',
+            data: {
+              labels: ["Auszahlungen für Tiefbaumaünahmen","Auszahlungen für Tiefbaumaünahmen","Auszahlungen für Tiefbaumaünahmen","Auszahlungen für Tiefbaumaünahmen","Auszahlungen für Tiefbaumaünahmen","Auszahlungen für sonstige Baumaünahmen","Auszahlung für den Erwerb immaterieller Vermügensgegenstünde"],
+              datasets: [{
+                label: 'Euro',
+                data: [200000,300000,80000,50000,15000,10000,500000],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                }
+              },
+              
+            }
+          });
         
       
     </script>
