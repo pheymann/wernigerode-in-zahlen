@@ -62,10 +62,10 @@ func Encode(
 			MetaServices:      "Dienstleistungen",
 			MetaGrouping:      "Klassifizierung",
 
-			DataDisclosure: `Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2022.
+			DataDisclosure: `Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2023.
 			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
 			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
-			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>`,
+			<a href="https://www.wernigerode.de/buergerinformationssystem/vo020.asp?VOLFDNR=3344">hier findet</a>.`,
 		},
 		CSS: html.ProductWithSubsCSS{
 			TotalCashflowClass: encodeHtml.EncodeCSSCashflowClass(plan.Cashflow.Total[year]),

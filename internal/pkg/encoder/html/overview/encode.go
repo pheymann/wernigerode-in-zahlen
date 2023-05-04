@@ -58,8 +58,8 @@ func Encode(
 			IncomeCashflowTotal:    "Einnahmen: " + htmlEncoder.EncodeBudget(plan.Cashflow.Income[year], p),
 			ExpensesCashflowTotal:  "Ausgaben: " + htmlEncoder.EncodeBudget(plan.Cashflow.Expenses[year], p),
 
-			AdditionalInfo: `Aktuell bildet diese Webseite die Finanzdaten aus den Teilfinanzplänen A ab. Zusätzliche finanzielle Mittel zum Beispiel aus
-			dem Finanzmittelüberschuss sind nicht enthalten. Die Gesamtausgaben würden sich dann auf <strong>-3.284.100,00€</strong> reduzieren (siehe Haushaltsplan).
+			AdditionalInfo: `Aktuell bildet diese Webseite die Finanzdaten aus den Teilfinanzplänen A (Verwaltungs- und Investitionstätigkeiten) ab. Zusätzliche Ausgaben und Einnahmen zum Beispiel aus
+			dem Finanzierungstätigkeiten sind nicht enthalten. Die Gesamtausgaben belaufen sich für 2023 auf <strong>-3.379.700€</strong> (siehe Haushaltsplan).
 			Zudem besteht eine Differenz wie Konten zusammengerechnet werden. Der Haushaltsplan summiert alle Einnahmen und Ausgaben für laufende Verwaltungstätigkeiten und
 			Investitionen separat auf. Diese Webseite dagegen summiert Einnahmen und Ausgaben basierend auf Produkten und Fachbereichen. Die finale Differenz stimmt jedoch
 			am Ende wieder überein.`,
@@ -67,10 +67,10 @@ func Encode(
 			AdditionalInfoAfterTable: `Du willst dir die Daten selber mal anschauen? Kein Problem. <a href="https://github.com/pheymann/wernigerode-in-zahlen/tree/main/assets">Hier</a> findest du eine Zusammenfassung der Daten. Die CSV Datei
 			kann einfach in ein Tabellenprogramm importiert werden. Falls du dich mit Datenanalyse auskennst, habe ich auch noch JSON Dateien bereitgestellt.`,
 
-			DataDisclosure: `Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2022.
+			DataDisclosure: `Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2023.
 			Da dieser Plan sehr umfangreich ist, muss ich die Daten automatisiert auslesen. Dieser Prozess ist nicht fehlerfrei
 			und somit kann ich keine Garantie für die Richtigkeit geben. Schaut zur Kontrolle immer auf das Original, dass ihr
-			hier findet: <a href="https://www.wernigerode.de/B%C3%BCrgerservice/Stadtrat/Haushaltsplan/">https://www.wernigerode.de/Bürgerservice/Stadtrat/Haushaltsplan/</a>.`,
+			<a href="https://www.wernigerode.de/buergerinformationssystem/vo020.asp?VOLFDNR=3344">hier findet</a>.`,
 		},
 		CSS: html.OverviewCSS{
 			TotalCashflowClass: htmlEncoder.EncodeCSSCashflowClass(plan.Cashflow.Total[year]),
