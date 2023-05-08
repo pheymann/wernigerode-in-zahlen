@@ -323,6 +323,134 @@ func Test_SanityCheck_FinancialPlan_Departments(t *testing.T) {
 	})
 }
 
+func Test_ProductAssignment(t *testing.T) {
+	department1Assertion := testDepartmentAssertion{
+		numberOfProducts: 16,
+		products: map[string]bool{
+			"1.1.1.01": true,
+			"1.1.1.02": true,
+			"1.1.1.04": true,
+			"1.1.1.05": true,
+			"1.1.1.06": true,
+			"1.1.1.17": true,
+			"2.6.2.01": true,
+			"5.5.1.02": true,
+			"5.7.1.01": true,
+			"1.1.1.08": true,
+			"1.1.1.09": true,
+			"1.1.1.10": true,
+			"1.1.1.16": true,
+			"1.2.1.01": true,
+			"3.5.1.01": true,
+			"5.7.5.01": true,
+		},
+	}
+
+	department1 := financialPlanCity.Departments["1"]
+	checkProducts(t, department1Assertion, department1)
+
+	department2Assertion := testDepartmentAssertion{
+		numberOfProducts: 8,
+		products: map[string]bool{
+			"1.1.1.07": true,
+			"5.3.1.01": true,
+			"5.3.2.01": true,
+			"5.3.3.01": true,
+			"5.3.4.01": true,
+			"5.3.5.01": true,
+			"6.1.1.01": true,
+			"6.1.2.01": true,
+		},
+	}
+
+	department2 := financialPlanCity.Departments["2"]
+	checkProducts(t, department2Assertion, department2)
+
+	department3Assertion := testDepartmentAssertion{
+		numberOfProducts: 13,
+		products: map[string]bool{
+			"1.1.1.11": true,
+			"1.1.1.12": true,
+			"5.4.5.01": true,
+			"2.5.3.01": true,
+			"3.6.6.02": true,
+			"5.5.1.01": true,
+			"5.5.1.03": true,
+			"5.5.3.01": true,
+			"5.5.5.01": true,
+			"5.7.5.02": true,
+			"5.4.6.02": true,
+			"5.7.5.04": true,
+			"2.8.1.02": true,
+		},
+	}
+
+	department3 := financialPlanCity.Departments["3"]
+	checkProducts(t, department3Assertion, department3)
+
+	department4Assertion := testDepartmentAssertion{
+		numberOfProducts: 28,
+		products: map[string]bool{
+			"2.1.1.01": true,
+			"2.4.3.01": true,
+			"4.2.1.01": true,
+			"4.2.4.01": true,
+			"4.2.4.02": true,
+			"3.1.5.10": true,
+			"3.1.5.40": true,
+			"3.1.5.60": true,
+			"3.3.1.01": true,
+			"3.4.6.01": true,
+			"3.6.5.01": true,
+			"3.6.5.02": true,
+			"3.6.5.03": true,
+			"3.6.5.05": true,
+			"3.6.6.01": true,
+			"2.5.2.01": true,
+			"2.5.2.02": true,
+			"2.6.2.02": true,
+			"2.7.2.01": true,
+			"2.8.1.01": true,
+			"1.2.2.01": true,
+			"1.2.2.02": true,
+			"1.2.2.03": true,
+			"1.2.6.01": true,
+			"5.4.6.01": true,
+			"5.4.6.03": true,
+			"5.4.7.01": true,
+			"5.7.3.01": true,
+		},
+	}
+
+	department4 := financialPlanCity.Departments["4"]
+	checkProducts(t, department4Assertion, department4)
+
+	department5Assertion := testDepartmentAssertion{
+		numberOfProducts: 16,
+		products: map[string]bool{
+			"1.1.1.03": true,
+			"1.1.1.14": true,
+			"1.1.1.15": true,
+			"5.4.1.01": true,
+			"5.4.5.02": true,
+			"5.5.2.01": true,
+			"5.1.1.01": true,
+			"5.4.7.02": true,
+			"5.6.1.01": true,
+			"5.7.5.03": true,
+			"1.1.1.18": true,
+			"5.1.1.02": true,
+			"5.1.1.03": true,
+			"5.1.1.04": true,
+			"5.2.3.01": true,
+			"5.2.3.02": true,
+		},
+	}
+
+	department5 := financialPlanCity.Departments["5"]
+	checkProducts(t, department5Assertion, department5)
+}
+
 func checkBalance(t *testing.T, department string, balance string, actual model.Cashflow, expected model.Cashflow) {
 	checkTotalCashflow(t, expected, department, balance, "expected")
 	checkTotalCashflow(t, actual, department, balance, "actual")
@@ -356,6 +484,32 @@ func checkCashflowType(
 	for year, value := range expected {
 		if shared.IsUnequal(value, actual[year]) {
 			t.Errorf("%s.%s.%s: year %s with difference %.2f:\n  > expected=%.2f\n  >   actual=%.2f", department, balance, cashflow, year, value-actual[year], value, actual[year])
+		}
+	}
+}
+
+type testDepartmentAssertion struct {
+	numberOfProducts int
+	products         map[string]bool
+}
+
+func checkProducts(t *testing.T, expected testDepartmentAssertion, actual model.FinancialPlanDepartment) {
+	if len(expected.products) != expected.numberOfProducts {
+		t.Errorf("BUG Department - %s: number of expected products is wrong: expected: %d, actual: %d", actual.Name, expected.numberOfProducts, len(expected.products))
+	}
+
+	if len(expected.products) != len(actual.Products) {
+		t.Errorf("Department - %s: number of products: expected: %d, actual: %d", actual.Name, len(expected.products), len(actual.Products))
+	}
+
+	for _, product := range actual.Products {
+		if _, ok := expected.products[product.ID]; !ok {
+			t.Errorf("Department - %s: unexpected actual product %s", actual.Name, product.ID)
+		}
+	}
+	for productID := range expected.products {
+		if _, ok := actual.Products[productID]; !ok {
+			t.Errorf("Department - %s: expected product %s", actual.Name, productID)
 		}
 	}
 }
