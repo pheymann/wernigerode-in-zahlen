@@ -10,15 +10,23 @@ import (
 	"wernigerode-in-zahlen.de/internal/pkg/shared"
 )
 
-func Test_SanityCheck(t *testing.T) {
+var (
+	financialPlanCity model.FinancialPlanCity
+)
+
+func TestMain(t *testing.M) {
 	financialPlanCityFile, err := os.Open("/Users/paul/Projects/wernigerode-in-zahlen/assets/data/processed/financial_data.json")
 	if err != nil {
-		t.Fatal(err)
+		panic(err)
 	}
 	defer financialPlanCityFile.Close()
 
-	financialPlanCity := decodeFp.DecodeFromJSON2(io.ReadCompleteFile(financialPlanCityFile))
+	financialPlanCity = decodeFp.DecodeFromJSON(io.ReadCompleteFile(financialPlanCityFile))
 
+	os.Exit(t.Run())
+}
+
+func Test_SanityCheck_FinancialPlan_City(t *testing.T) {
 	checkBalance(t, "City", "Administration", financialPlanCity.AdministrationBalance, model.Cashflow{
 		Total: map[model.BudgetYear]float64{
 			model.BudgetYear2022: -710_700.00,
@@ -66,7 +74,9 @@ func Test_SanityCheck(t *testing.T) {
 			model.BudgetYear2026: -7_193_500.00,
 		},
 	})
+}
 
+func Test_SanityCheck_FinancialPlan_Departments(t *testing.T) {
 	department1 := financialPlanCity.Departments["1"]
 	checkBalance(t, "Department - "+department1.Name, "Administration", department1.AdministrationBalance, model.Cashflow{
 		Total: map[model.BudgetYear]float64{
@@ -164,8 +174,6 @@ func Test_SanityCheck(t *testing.T) {
 			model.BudgetYear2026: 0,
 		},
 	})
-
-	// (\d)\.(\d)
 
 	department3 := financialPlanCity.Departments["3"]
 	checkBalance(t, "Department - "+department3.Name, "Administration", department3.AdministrationBalance, model.Cashflow{

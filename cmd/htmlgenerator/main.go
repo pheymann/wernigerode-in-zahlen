@@ -24,7 +24,7 @@ func main() {
 	}
 	defer financialCityDataFile.Close()
 
-	financialCityData := fpDecoder.DecodeFromJSON2(io.ReadCompleteFile(financialCityDataFile))
+	financialCityData := fpDecoder.DecodeFromJSON(io.ReadCompleteFile(financialCityDataFile))
 
 	overviewTmpl := template.Must(template.ParseFiles(*debugRootPath + "assets/html/templates/overview.template.html"))
 	overviewFile, overviewContent := htmlgenerator.GenerateOverview(financialCityData, budgetYear, overviewTmpl)

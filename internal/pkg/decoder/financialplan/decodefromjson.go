@@ -6,7 +6,7 @@ import (
 	"wernigerode-in-zahlen.de/internal/pkg/model"
 )
 
-func DecodeFromJSON2(financialPlanJSON string) model.FinancialPlanCity {
+func DecodeFromJSON(financialPlanJSON string) model.FinancialPlanCity {
 	var financialPlan = model.FinancialPlanCity{}
 	json.Unmarshal([]byte(financialPlanJSON), &financialPlan)
 
