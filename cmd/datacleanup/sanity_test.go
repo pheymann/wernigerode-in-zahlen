@@ -101,18 +101,18 @@ func Test_SanityCheck(t *testing.T) {
 			model.BudgetYear2026: -160_000,
 		},
 		Income: map[model.BudgetYear]float64{
-			model.BudgetYear2022: 3_340_200,
-			model.BudgetYear2023: 3_378_700,
-			model.BudgetYear2024: 3_421_700,
-			model.BudgetYear2025: 3_616_700,
-			model.BudgetYear2026: 3_616_700,
+			model.BudgetYear2022: 1_051_300,
+			model.BudgetYear2023: 1_108_900,
+			model.BudgetYear2024: 150_000,
+			model.BudgetYear2025: 150_000,
+			model.BudgetYear2026: 150_000,
 		},
 		Expenses: map[model.BudgetYear]float64{
-			model.BudgetYear2022: -1_051_300,
-			model.BudgetYear2023: -1_108_900,
-			model.BudgetYear2024: -150_000,
-			model.BudgetYear2025: -150_000,
-			model.BudgetYear2026: -150_000,
+			model.BudgetYear2022: -333_000,
+			model.BudgetYear2023: -1_516_500,
+			model.BudgetYear2024: -315_000,
+			model.BudgetYear2025: -310_000,
+			model.BudgetYear2026: -310_000,
 		},
 	})
 
