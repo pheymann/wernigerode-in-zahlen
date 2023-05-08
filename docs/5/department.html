@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Haushaltsplan Wernigerode 2023. Der Fachbereich Budget Stadtentwicklung hat ein Budge von -6.932.700,00€."/>
+  <meta name="description" content="Haushaltsplan Wernigerode 2023. Der Fachbereich Budget Stadtentwicklung hat ein Budge von -7.083.200,00€."/>
   <meta name="keywords" content="Wernigerode,Haushaltsplan,2023,Budget Stadtentwicklung"/>
   <meta name="author" content="Paul Heymann"/>
 
@@ -21,21 +21,21 @@
       In 2023 planen wir
     </p>
 
-    <h2 class="total-cashflow-expenses center">-6.932.700,00€</h2>
+    <h2 class="total-cashflow-expenses center">-7.083.200,00€</h2>
 
     <p>
-      für diesen Fachbereich auszugeben. Dabei geht das Geld an die folgenden <b>15 Produkte</b>. Klicke auf eines in den Diagrammen, um mehr zu erfahren.
+      für diesen Fachbereich auszugeben. Dabei geht das Geld an die folgenden <b>16 Produkte</b>. Klicke auf eines in den Diagrammen, um mehr zu erfahren.
     </p>
 
     <div class="container">
       
         <div class="row">
           <div class="col-6">
-            <h5 class="center">Einnahmen: 8.469.800,00€</h5>
+            <h5 class="center">Einnahmen: 8.479.000,00€</h5>
             <canvas id="chartjs_products_income"></canvas>
           </div>
           <div class="col-6">
-            <h5 class="center">Ausgaben: -15.402.500,00€</h5>
+            <h5 class="center">Ausgaben: -15.562.200,00€</h5>
             <canvas id="chartjs_products_expenses"></canvas>
           </div>
         </div>
@@ -53,8 +53,8 @@
           </tr>
           <tr>
             <th></th>
-            <th>-6.932.700,00€</th>
-            <th>-9.079.600,00€</th>
+            <th>-7.083.200,00€</th>
+            <th>-9.230.100,00€</th>
             <th>2.146.900,00€</th>
           </tr>
 
@@ -137,6 +137,13 @@
             </tr>
           
             <tr>
+              <td><a href="/5/1/1/1/18/product.html">Stiftungen</a></td>
+              <td>-150.500,00€</td>
+              <td>-150.500,00€</td>
+              <td>0,00€</td>
+            </tr>
+          
+            <tr>
               <td><a href="/5/5/4/5/02/product.html">Straßenbeleuchtung</a></td>
               <td>-955.000,00€</td>
               <td>-930.000,00€</td>
@@ -216,15 +223,15 @@
       
 
       
-      var expenesesProductLinks = ["/5/5/2/3/01/product.html","/5/1/1/1/14/product.html","/5/1/1/1/15/product.html","/5/5/4/1/01/product.html","/5/5/4/7/02/product.html","/5/5/2/3/02/product.html","/5/5/7/5/03/product.html","/5/5/1/1/02/product.html","/5/5/1/1/01/product.html","/5/5/1/1/03/product.html","/5/5/4/5/02/product.html","/5/5/6/1/01/product.html","/5/5/1/1/04/product.html","/5/5/5/2/01/product.html"];
+      var expenesesProductLinks = ["/5/5/2/3/01/product.html","/5/1/1/1/14/product.html","/5/1/1/1/15/product.html","/5/5/4/1/01/product.html","/5/5/4/7/02/product.html","/5/5/2/3/02/product.html","/5/5/7/5/03/product.html","/5/5/1/1/02/product.html","/5/5/1/1/01/product.html","/5/5/1/1/03/product.html","/5/1/1/1/18/product.html","/5/5/4/5/02/product.html","/5/5/6/1/01/product.html","/5/5/1/1/04/product.html","/5/5/5/2/01/product.html"];
       var expensesCanvas = document.getElementById('chartjs_products_expenses');
       var expensesChart = new Chart(expensesCanvas, {
         type: 'doughnut',
         data: {
-          labels: ["Denkmalschutz","Gebäudemanagement","Gebäudereinigung","Gemeindestraßen","Harzer Verkehrsbetriebe GmbH","Lebendige Zentren","Ortsentwicklung Schierke","Räumliche Entwicklung","Räumliche Planung","Sozialer Zusammenhalt","Straßenbeleuchtung","Umweltschutz","Wachstum und nachhaltige Erneuerung","Öffentliche Gewässer/ Wasserbauliche Anlagen"],
+          labels: ["Denkmalschutz","Gebäudemanagement","Gebäudereinigung","Gemeindestraßen","Harzer Verkehrsbetriebe GmbH","Lebendige Zentren","Ortsentwicklung Schierke","Räumliche Entwicklung","Räumliche Planung","Sozialer Zusammenhalt","Stiftungen","Straßenbeleuchtung","Umweltschutz","Wachstum und nachhaltige Erneuerung","Öffentliche Gewässer/ Wasserbauliche Anlagen"],
           datasets: [{
             label: 'Euro',
-            data: [-78800,-1550000,-2609000,-2207500,-346500,-180500,-36000,-1113500,-941800,-50000,-955000,-89000,-50000,-730600],
+            data: [-78800,-1550000,-2609000,-2207500,-346500,-180500,-36000,-1113500,-941800,-50000,-150500,-955000,-89000,-50000,-730600],
             borderWidth: 1
           }]
         },
