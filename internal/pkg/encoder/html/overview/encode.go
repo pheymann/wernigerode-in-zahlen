@@ -42,15 +42,10 @@ func Encode(
 		Expenses:                chartExpensesDataPerProduct,
 
 		Copy: html.OverviewCopy{
-			Year:     year,
-			Headline: "Wernigerode in Zahlen",
-			IntroCashflowTotal: template.HTML(fmt.Sprintf(`Als Teil unserer Stadt und Gemeinde habe ich mich gefragt, wo wir eigentlich unsere
-			Gelder investieren. Nach einigem Suchen habe ich den Wernigeröder <a href="https://www.wernigerode.de/B%%C3%%BCrgerservice/Stadtrat/Haushaltsplan/">Haushaltsplan</a>
-			gefunden. Ein mehrere hundert Seiten langes Dokument, das genau aufführt, wo Gelder gebraucht werden. Leider ist es alles andere als leicht zu lesen und so
-			ist die Idee für diese Webseite bei mir entstanden. Es soll eine Darstellung des Finanzhaushalts Wernigerodes sein, die gut zu lesen und verstehen ist.
-			<br><br>
-			Alles startet mit der Gesamtübersicht. In %s planen wir`, year)),
-			IntroDescription: encodeIntroDescription(plan.Cashflow.Total[year], len(plan.Departments)),
+			Year:               year,
+			Headline:           "Wernigerode in Zahlen",
+			IntroCashflowTotal: template.HTML(fmt.Sprintf(`Im Jahr %s werden wir`, year)),
+			IntroDescription:   encodeIntroDescription(plan.Cashflow.Total[year], len(plan.Departments)),
 
 			CashflowTotal:          htmlEncoder.EncodeBudget(plan.Cashflow.Total[year], p),
 			CashflowAdministration: htmlEncoder.EncodeBudget(plan.AdministrationBalance.Total[year], p),
@@ -61,7 +56,7 @@ func Encode(
 			AdditionalInfo: `Aktuell bildet diese Webseite die Finanzdaten aus den Teilfinanzplänen A (Verwaltungs- und Investitionstätigkeiten) ab. Zusätzliche Ausgaben und Einnahmen zum Beispiel aus
 			dem Finanzierungstätigkeiten sind nicht enthalten. Die Gesamtausgaben belaufen sich für 2023 auf <strong>-3.379.700€</strong> (siehe Haushaltsplan).
 			Zudem besteht eine Differenz wie Konten zusammengerechnet werden. Der Haushaltsplan summiert alle Einnahmen und Ausgaben für laufende Verwaltungstätigkeiten und
-			Investitionen separat auf. Diese Webseite dagegen summiert Einnahmen und Ausgaben basierend auf Produkten und Fachbereichen. Die finale Differenz stimmt jedoch
+			Investitionen separat auf. Diese Webseite dagegen summiert Einnahmen und Ausgaben basierend auf Produkten und Fachbereichen. Die finalen Werte stimmen jedoch
 			am Ende wieder überein.`,
 			Departments: departmentsTable,
 			AdditionalInfoAfterTable: `Du willst dir die Daten selber mal anschauen? Kein Problem. <a href="https://github.com/pheymann/wernigerode-in-zahlen/tree/main/assets">Hier</a> findest du eine Zusammenfassung der Daten. Die CSV Datei
