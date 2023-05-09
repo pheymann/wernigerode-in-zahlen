@@ -91,7 +91,8 @@ func encodeIntroDescription(cashflowTotal float64, numberOfProducts int) templat
 
 	return template.HTML(fmt.Sprintf(
 		`%s. Die Gelder teilen sich auf <b>%d Fachbereiche</b> auf und setzen sich aus den laufenden Verwaltungstätigkeiten
-		und gesonderten Investitionen, wie zum Beispiel Baumaßnahmen, zusammen. Klicke auf einen in den Diagrammen um mehr zu erfahren.`,
+		und gesonderten Investitionen, wie zum Beispiel Baumaßnahmen, zusammen. Klicke auf einen Bereich in den Diagrammen
+		oder schaue in der Tabelle unten nach, um mehr zu erfahren.`,
 		earnOrExpese,
 		numberOfProducts,
 	))
