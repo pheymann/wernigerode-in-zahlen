@@ -59,7 +59,8 @@ func Encode(
 			Investitionen separat auf. Diese Webseite dagegen summiert Einnahmen und Ausgaben basierend auf Produkten und Fachbereichen. Die finalen Werte stimmen jedoch
 			am Ende wieder überein.`,
 			Departments: departmentsTable,
-			AdditionalInfoAfterTable: `Du willst dir die Daten selber mal anschauen? Kein Problem. <a href="https://github.com/pheymann/wernigerode-in-zahlen/tree/main/assets">Hier</a> findest du eine Zusammenfassung der Daten. Die CSV Datei
+			AdditionalInfoAfterTable: `Du hast Fragen oder Anregungen? Dann schreibe mir eine Nachricht an
+			<a href="mailto:kontakt@wernigerode-in-zahlen.de">kontakt@wernigerode-in-zahlen.de</a>. Du willst dir die Daten selber mal anschauen? Kein Problem. <a href="https://github.com/pheymann/wernigerode-in-zahlen/tree/main/assets">Hier</a> findest du eine Zusammenfassung der Daten. Die CSV Datei
 			kann einfach in ein Tabellenprogramm importiert werden. Falls du dich mit Datenanalyse auskennst, habe ich auch noch JSON Dateien bereitgestellt.`,
 
 			DataDisclosure: `Die Daten auf dieser Webseite beruhen auf dem Haushaltsplan der Stadt Wernigerode aus dem Jahr 2023.
